@@ -4,6 +4,8 @@
   var HEALTH_URL = "./api/v1/health.json";
   var CITIES_URL = "./api/v1/cities.json";
   var TYPE_LABELS = { concert: "演出 / 演唱会", exhibition: "展会", sports: "赛事", festival: "节庆", holiday: "假期", other: "其他" };
+  var CONTENT_LABELS = { event_announcement: "活动公告", uncertain: "活动线索待核实", ticketing_notice: "开票 / 售票信息", registration_notice: "报名信息", schedule_roundup: "排期汇总", guide: "攻略 / 购票资讯", past_report: "历史报道", other: "其他资讯" };
+  var NON_EVENT_KINDS = { guide: true, schedule_roundup: true, ticketing_notice: true, registration_notice: true, other: true };
   var state = { events: [], meta: {}, health: {}, cities: [] };
   var $ = function (id) { return document.getElementById(id); };
 
@@ -25,12 +27,55 @@
     if (!/^https:\/\//i.test(href)) return "来源链接不可用";
     return '<a href="' + escapeHtml(href) + '" target="_blank" rel="noopener">查看来源 ↗</a>';
   }
+  function contentKind(event) {
+    if (event.content_kind) return event.content_kind;
+    var title = String(event.event_name || "");
+    if (/有哪些|有什么|攻略|指南|购票平台|票务平台|怎么买票|怎么买|如何|怎么预约|靠谱|推荐|观演攻略|出行攻略|门票价格|购票教程|抢票技巧/.test(title)) return "guide";
+    if (/排期|排期表|节目单|时间表|日程安排|演出安排|展会安排|演出汇总|演出合集|演出一览|演出清单|月度演出|本月演出|活动日历|活动汇总|展会日历/.test(title)) return "schedule_roundup";
+    if (/冠军诞生|夺冠|圆满落幕|圆满结束|成功举办|顺利举行|现场回顾|精彩回顾|赛后|完美收官|圆满收官|已结束|落幕了|比赛结束|赛事回顾|演出回顾/.test(title)) return "past_report";
+    if (/报名启动|报名开启|报名时间|报名截止|报名通道|开放报名|开始报名|报名即将开始|报名啦/.test(title)) return "registration_notice";
+    if (/开票|开售|售票|预售|抢票|门票|票价|发售/.test(title) && !/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间/.test(title)) return "ticketing_notice";
+    if (/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间/.test(title) && /演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "event_announcement";
+    if (/演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "uncertain";
+    return "other";
+  }
+  function beijingToday() {
+    var parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(new Date());
+    var values = {};
+    parts.forEach(function (part) { if (part.type !== "literal") values[part.type] = part.value; });
+    return values.year + "-" + values.month + "-" + values.day;
+  }
+  function isExpiredEvent(event, today) {
+    var kind = contentKind(event);
+    if (NON_EVENT_KINDS[kind] || !event.start_at) return false;
+    var end = event.end_at || event.start_at;
+    return end < today;
+  }
+  function isUpcomingDatedEvent(event, today) {
+    var kind = contentKind(event);
+    if (kind !== "event_announcement" && kind !== "uncertain") return false;
+    if (!event.start_at || event.date_precision === "month" || event.date_precision === "month_range") return false;
+    if (event.event_date_role === "ticket_sale" || event.event_date_role === "registration" || event.event_date_role === "reference_period") return false;
+    return (event.end_at || event.start_at) >= today;
+  }
   function eventDateLabel(event) {
-    if (!event.start_at) return "日期待核实";
+    var kind = contentKind(event);
+    var extras = [];
+    if (event.ticket_sale_at) extras.push("开票/售票：" + event.ticket_sale_at + "（不是举办日期）");
+    if (event.registration_at) extras.push("报名日期：" + event.registration_at + "（不是举办日期）");
+    if (event.reference_period_start) {
+      var period = event.reference_period_start;
+      if (event.reference_period_end && event.reference_period_end !== period) period += " 至 " + event.reference_period_end;
+      extras.push("内容提及期间：" + period + "（不是单场举办日期）");
+    }
+    if (NON_EVENT_KINDS[kind]) return extras.length ? "非单场活动 · " + extras.join("；") : "非单场活动信息，日期不作为举办日期";
+    if (!event.start_at) return extras.length ? "活动日期待核实 · " + extras.join("；") : "活动日期待核实";
     var label = event.start_at;
     if (event.end_at && event.end_at !== event.start_at) label += " 至 " + event.end_at;
-    if (event.date_precision === "month") label += "（月份范围）";
+    if (event.date_precision === "month" || event.date_precision === "month_range") label = "仅知月份：" + label + "（非具体举办日）";
+    if (event.event_date_role === "ambiguous") label += " · 日期语义待核实";
     if (event.date_confidence === "inferred_year") label += " · 年份推断";
+    if (extras.length) label += "；" + extras.join("；");
     return label;
   }
   function renderMetrics() {
@@ -38,7 +83,7 @@
     var sources = {};
     events.forEach(function (event) { (event.sources || []).forEach(function (source) { if (source.source_url) sources[source.source_url] = true; }); });
     $("metricTotal").textContent = String(events.length);
-    $("metricDated").textContent = String(events.filter(function (event) { return Boolean(event.start_at); }).length);
+    $("metricDated").textContent = String(events.filter(function (event) { return isUpcomingDatedEvent(event, beijingToday()); }).length);
     $("metricSources").textContent = String(Object.keys(sources).length);
     $("metricCities").textContent = String(state.cities.length || state.meta.city_count || 0);
     $("updatedAt").textContent = "数据更新于 " + formatTime(state.meta.generated_at || state.health.last_run_at);
@@ -73,17 +118,32 @@
     var city = $("cityFilter").value;
     var type = $("typeFilter").value;
     var review = $("reviewFilter").value;
+    var content = $("contentFilter").value || "future";
     var from = $("dateFrom").value;
     var to = $("dateTo").value;
+    var today = beijingToday();
     return state.events.filter(function (event) {
       var sourceText = (event.sources || []).map(function (s) { return [s.publisher, s.source_url].join(" "); }).join(" ");
       var haystack = [event.event_name, event.city_name, event.venue_name, sourceText].join(" ").toLowerCase();
+      var kind = contentKind(event);
+      var upcoming = isUpcomingDatedEvent(event, today);
+      var expired = isExpiredEvent(event, today);
+      var eventCandidate = kind === "event_announcement" || kind === "uncertain";
+
+      if (content === "future" && !upcoming) return false;
+      if (content === "undated" && (!eventCandidate || upcoming || expired)) return false;
+      if (content === "ticketing" && kind !== "ticketing_notice" && kind !== "registration_notice") return false;
+      if (content === "schedule" && kind !== "schedule_roundup") return false;
+      if (content === "guide" && kind !== "guide" && kind !== "other") return false;
+      if (content === "past" && kind !== "past_report" && !expired) return false;
       if (q && haystack.indexOf(q) === -1) return false;
       if (city && event.city_name !== city) return false;
       if (type && event.event_type !== type) return false;
       if (review && event.review_status !== review) return false;
-      if (from && (!event.start_at || (event.end_at || event.start_at) < from)) return false;
-      if (to && (!event.start_at || event.start_at > to)) return false;
+      var filterStart = event.start_at || event.reference_period_start || event.ticket_sale_at || event.registration_at;
+      var filterEnd = event.end_at || event.reference_period_end || filterStart;
+      if (from && (!filterStart || filterEnd < from)) return false;
+      if (to && (!filterStart || filterStart > to)) return false;
       return true;
     });
   }
@@ -96,10 +156,12 @@
     }
     $("eventsList").innerHTML = events.map(function (event) {
       var review = event.review_status === "verified" ? '<span class="badge badge-verified">已核验</span>' : '<span class="badge badge-pending">待核验</span>';
+      var kind = contentKind(event);
+      var kindBadge = '<span class="badge badge-neutral">' + escapeHtml(CONTENT_LABELS[kind] || "其他资讯") + '</span>';
       var cityMatch = event.city_match === "text_confirmed" ? '<span class="badge badge-neutral">正文出现城市名</span>' : '<span class="badge badge-neutral">按城市检索命中</span>';
       var sourceCount = (event.sources || []).length;
       var sourcePublish = event.sources && event.sources[0] ? event.sources[0].source_published_at : null;
-      var confidence = event.date_confidence === "explicit_year" ? "标题/摘要含年份" : event.date_confidence === "inferred_year" ? "年份推断，需核验" : "未提取到日期";
+      var confidence = event.event_date_role === "ticket_sale" ? "开票日期，不是举办日期" : event.event_date_role === "registration" ? "报名日期，不是举办日期" : event.event_date_role === "ambiguous" ? "日期语义待核实" : event.date_confidence === "explicit_year" ? "标题/摘要含年份" : event.date_confidence === "inferred_year" ? "年份推断，需核验" : "未提取到举办日期";
       return '<article class="event-card"><div class="event-main">' +
         '<div class="event-title-row"><span class="event-title">' + escapeHtml(text(event.event_name, "未命名事件")) + '</span>' + review +
         '<span class="badge badge-neutral">' + escapeHtml(TYPE_LABELS[event.event_type] || "其他") + '</span></div>' +
@@ -112,12 +174,13 @@
   }
   function applyFilters() { renderEvents(); }
   function bindEvents() {
-    ["searchInput", "cityFilter", "typeFilter", "reviewFilter", "dateFrom", "dateTo"].forEach(function (id) {
+    ["searchInput", "cityFilter", "typeFilter", "reviewFilter", "contentFilter", "dateFrom", "dateTo"].forEach(function (id) {
       $(id).addEventListener("input", applyFilters);
       $(id).addEventListener("change", applyFilters);
     });
     $("clearBtn").addEventListener("click", function () {
       ["searchInput", "cityFilter", "typeFilter", "reviewFilter", "dateFrom", "dateTo"].forEach(function (id) { $(id).value = ""; });
+      $("contentFilter").value = "future";
       renderEvents();
     });
     $("refreshBtn").addEventListener("click", loadData);
