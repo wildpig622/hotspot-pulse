@@ -1,0 +1,134 @@
+{
+  "checked_at": "2026-10-29T16:22:56+08:00",
+  "round_id": "round_6",
+  "baseline_commit": "75e83e9978786bf0eb0401def17b3c42d096c96d",
+  "rules_review_base_commit": "422bab9",
+  "review_status_policy": "Consolidated review of original 45 sample dispositions. All 49 worksheet rows remain not_verified/pending. Exclusion is not confirmation that an event exists, happened or was cancelled.",
+  "source_corrections": [
+    {"url": "https://m.thepaper.cn/newsDetail_forward_33996441", "source_type": "media_commentary_republication", "issuer": "潘湉月/红网时刻新闻；文中另标来源大众日报，澎湃转载", "reason": "原E26被标为徐州12345政务转载，现撤回该政府发布身份。正文是媒体评论，只能辅助说明48795件/4.8万为诉求数量；演出日期另用徐州警方政务号原文。"}
+  ],
+  "groups": [
+    {
+      "id": "W01", "event_ids": ["evt_a3fea5891c78"],
+      "manual_event_date": "2026-11-12 to 2026-11-16 for Zhengzhou; the Suzhou row has an identity conflict",
+      "event_status": "identity_conflict_pending",
+      "evidence_result": "government_body_confirms_zhengzhou_identity_suzhou_row_withheld",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "重新读取郑州市政府门户正文，车展为郑州国际会展中心11月12日至16日。苏州是标题附带人物/商品描述，不能作为举办城市；该苏州记录维持身份复核，不自动改城或删除原记录。",
+      "sources": [{"url": "https://www.zhengzhou.gov.cn/news1/10310944.jhtml", "source_type": "government_portal_republication", "issuer": "郑州市政府门户；来源郑州日报", "access_status": "body_reopened_and_read", "supports": "2026郑州国际车展、郑州国际会展中心、11月12日至16日；不支持苏州举办地。"}]
+    },
+    {
+      "id": "W02", "event_ids": ["evt_5ed7a3f7e80b"],
+      "manual_event_date": "2026-09-06, resolved from the article's explicit 2026 publication year and September context",
+      "event_status": "past_reported_pending",
+      "evidence_result": "government_portal_past_report_supports_exclusion_of_quantity_date",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "沈马官网重开超时，改读辽宁省政府转载新华社的2026-09-16报道；同文明确9月，记述6日沈阳马拉松已经开跑。支持2026-09-06的上下文日级日期。报道仅称两万余人，不把标题2.2万人当成已核实精确人数，更不能解析为2027-02-02。",
+      "sources": [
+        {"url": "https://www.symarathon.com/", "source_type": "official_race_site", "issuer": "沈阳马拉松", "access_status": "web_and_alternate_reader_timeout", "supports": "本轮未直接读取；旧官网证据不伪装成重开成功。"},
+        {"url": "https://www.ln.gov.cn/web/ywdt/zymtkln/2026091608333329211/index.shtml", "source_type": "government_portal_republication", "issuer": "辽宁省政府门户；来源新华社", "access_status": "body_read", "supports": "2026-09-16发布，9月语境下6日沈阳马拉松开跑；精确2.2万人不在本轮确认范围。"}
+      ]
+    },
+    {
+      "id": "W03", "event_ids": ["evt_7f2d19a3cfcd", "evt_18791852e997"],
+      "manual_event_date": "2026-10-18", "event_status": "past_reported_pending",
+      "evidence_result": "police_primary_after_event_report_supports_date_and_quantity_role",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "郑州公安2026-10-19赛后正文确认10月18日鸣枪及赛事平稳落幕，近2.5万为参赛人数。两条记录不得使用由数量误读生成的2027-02-05；保持原来的保守非未来分类，不把人工日期写回生产。",
+      "sources": [{"url": "https://zzga.zhengzhou.gov.cn/jwzx/10303020.jhtml", "source_type": "police_department_primary_report", "issuer": "郑州市公安局", "access_status": "body_read", "supports": "2026郑州马拉松10月18日，赛后报告明确平稳落幕；2.5万为人数。"}]
+    },
+    {
+      "id": "W04", "event_ids": ["evt_9e0e0a6d2bfd", "evt_7c6b2e43c359", "evt_815557cbb864", "evt_05f5019ebcbd"],
+      "manual_event_date": "2026-10-25", "event_status": "past_scheduled_pending",
+      "evidence_result": "official_race_rules_support_day_not_quantity_date",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "成都赛事官网竞赛规程明确2026-10-25和35000人，列出成都市政府主办、成都市体育局等承办。3.5万不是2027-03-05。规程本身只证明原定日期，实际完成状态不单凭规程确认；标题中的已开跑/昨等内容作为报道分类信号，继续排除未来视图。",
+      "sources": [{"url": "https://chengdumarathon.cn/column/articleDetail/95?column_id=66&lang=cn", "source_type": "official_race_competition_rules", "issuer": "成都马拉松官网；页面列主承办单位", "access_status": "body_read", "supports": "2026-10-25比赛日期及35000人规模；不单独证明实际完成。"}]
+    },
+    {
+      "id": "W05", "event_ids": ["evt_556a9203ea87"],
+      "manual_event_date": "2026-11-15 07:00; this individual headline only gives the month",
+      "event_status": "future_event_but_row_date_review_pending",
+      "evidence_result": "official_race_body_rejects_quantity_date_row_stays_in_review",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "重新读取长沙马拉松官网：举办日11月15日7时、规模3.5万、报名192052人。本条标题只给11月，不能解析3.5万为2027-03-05。该赛事确有未来安排，但本条继续待日期复核；不因人工找到日期而自动回填或新增未来候选。",
+      "sources": [{"url": "https://www.marathonchangsha.com/Detail/411", "source_type": "official_race_site", "issuer": "长沙马拉松官网；页面列湖南省体育局/长沙市政府主办", "access_status": "body_reopened_and_read", "supports": "2026-11-15 07:00举办，3.5万名额及192052报名者为不同数量。"}]
+    },
+    {
+      "id": "W06", "event_ids": ["evt_d0785cb71e17", "evt_e28f38e55bf9", "evt_298f298695e9", "evt_dc1c06214c53", "evt_d494c40ed023"],
+      "manual_event_date": "2026-10-18; exact start time and winner details are not independently rechecked in this round",
+      "event_status": "past_reported_pending",
+      "evidence_result": "sports_department_notice_and_government_after_event_body_support_past_day",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "西安体育局正文区分8月4日报名与10月18日比赛；曲江新区政府正文确认10月18日圆满收官。支持原日期边界/历史样本及数量误读记录的日级日期和非未来处理。3.6万为人数；不把相邻10月15日领物/消费嘉年华日期借给比赛。不自动补全缺日期社交内容，不独立确认标题中的7:30、冠军姓名和成绩。",
+      "sources": [
+        {"url": "https://xatyj.xa.gov.cn/xwzx/tzgg/2084571318943485954.html", "source_type": "municipal_sports_department_primary_notice", "issuer": "西安市体育局", "access_status": "body_read", "supports": "2026西安马拉松10月18日；8月4日为报名节点，36000为人数。"},
+        {"url": "https://qjxq.xa.gov.cn/xwzx/xwdt/2115015022137151490.html", "source_type": "district_government_after_event_report", "issuer": "西安曲江新区管理委员会", "access_status": "first_reader_cache_miss_alternate_reader_body_read", "supports": "2026西安马拉松10月18日圆满收官；另述10月15日领物和消费活动，不能混用。"}
+      ]
+    },
+    {
+      "id": "W07", "event_ids": ["evt_b28af2f94dde", "evt_260252919845"],
+      "manual_event_date": "2026-08-25, 2026-08-26, 2026-08-28, 2026-08-29",
+      "event_status": "past_schedule_with_secondary_completion_report_pending",
+      "evidence_result": "police_official_account_dates_read_media_commentary_authority_corrected",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "网页正文读取演出日期，浏览器截图实际确认发布账号为徐州警方且标澎湃号政务：2026年8月25/26/28/29日、徐州奥体中心、TOP登陆少年。另篇4.8万诉求稿是媒体评论，已撤回E26政务来源身份。4.8万为诉求数量，不是2027-04-08；四场日期不强行合成一场连续区间，继续排除未来视图。",
+      "sources": [
+        {"url": "https://www.thepaper.cn/newsDetail_forward_33850638", "source_type": "police_official_account_primary_post", "issuer": "徐州警方；浏览器可见认证署名与澎湃号政务标识", "access_status": "body_read_and_publisher_visually_checked_browser_screenshot", "supports": "2026年8月25、26、28、29日19时，徐州奥体中心主体育场，TOP登陆少年演唱会。"},
+        {"url": "https://m.thepaper.cn/newsDetail_forward_33996441", "source_type": "media_commentary_republication", "issuer": "潘湉月/红网时刻新闻；文中来源大众日报", "access_status": "body_read_authority_class_corrected", "supports": "只辅助说明48795件/4.8万为诉求数量及媒体记述已经举办；不是徐州12345原始政务发布。"}
+      ]
+    },
+    {
+      "id": "W08", "event_ids": ["evt_5f7457414239"],
+      "manual_event_date": "2026-10-15 to 2026-10-17; headline month alone remains insufficient for automatic extraction",
+      "event_status": "past_scheduled_and_opening_reported_pending",
+      "evidence_result": "exhibition_official_pages_support_range_month_headline_correctly_held",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "重新读取再生时代原文章和同站展会详情，明确2026-10-15至17日、珠海国际会展中心；页尾主体为珠海市再生时代会展服务有限公司。开幕稿另记10月15日开幕。月份标题不能变成整月活动或未来单日；仍留日期复核，不自动回填。",
+      "sources": [
+        {"url": "https://www.rtmworld.cn/news/exhibition/view_id/6167", "source_type": "exhibition_official_announcement", "issuer": "再生时代 / 珠海市再生时代会展服务有限公司", "access_status": "body_read", "supports": "与样本同标题，2026-10-15至17日及珠海国际会展中心。"},
+        {"url": "https://www.rtmworld.cn/events/detail/5962", "source_type": "exhibition_official_details", "issuer": "珠海市再生时代会展服务有限公司；页尾披露主体", "access_status": "body_and_footer_read", "supports": "ReWork展期、珠海场馆、展商/观众联系渠道及网站主体。"},
+        {"url": "https://www.rtmworld.cn/news/exhibition/view_id/6198", "source_type": "exhibition_official_opening_report", "issuer": "再生时代", "access_status": "body_read", "supports": "10月22日发布稿回顾10月15日已经开幕；不单独证明全部场次完成。"}
+      ]
+    },
+    {
+      "id": "W09", "event_ids": ["evt_339b4ee162ac", "evt_77c03fd30d3e"],
+      "manual_event_date": null, "event_status": "not_a_single_event_pending",
+      "evidence_result": "original_roundup_bodies_read_classification_only",
+      "strict_authority_result": "classification_supported_non_event_body",
+      "conclusion": "两篇凤凰平台原页实际列出多个不同活动、场馆和日期，并自述关注南昌本地宝；国庆排期页明确不销售门票。只确认排期汇总分类，既不确认其中每个子活动的日期，也不为整篇设一个活动日期；保持pending和排期分类。",
+      "sources": [
+        {"url": "https://i.ifeng.com/c/8wu0o2SgHkL", "source_type": "commercial_multi_event_roundup", "issuer": "城市速递 / 南昌本地宝内容，凤凰平台", "access_status": "body_read_for_content_classification_only", "supports": "2026年南昌10月演出排期；多活动、多日期、多场馆，不是单场官方公告。"},
+        {"url": "https://feng.ifeng.com/c/8wnNDlCO9Ud", "source_type": "commercial_multi_event_roundup", "issuer": "城市速递 / 南昌本地宝内容，凤凰平台", "access_status": "body_read_for_content_classification_only", "supports": "国庆演出、脱口秀、展览汇总；页面明确不销售门票。"}
+      ]
+    },
+    {
+      "id": "W10", "event_ids": ["evt_61b0ee16b856"],
+      "manual_event_date": null, "event_status": "not_a_single_event_pending",
+      "evidence_result": "commercial_guide_title_publisher_and_page_metadata_reviewed",
+      "strict_authority_result": "classification_supported_non_event_body",
+      "conclusion": "替代读取工具可见原页面标题、普通作者生活好物云分享、2026-10-15发布信息及平台AI摘要。标题的10-12月与购票指南足以支持攻略分类；没有把平台AI摘要里的子活动日期、售票保证或推荐平台采纳为事实。原文全文未在当前页面展开的限制保留。",
+      "sources": [{"url": "https://post.smzdm.com/zz/p/a82p57p7/", "source_type": "commercial_guide_metadata_and_platform_summary", "issuer": "生活好物云分享；什么值得买转载页", "access_status": "first_reader_cache_miss_alternate_reader_title_author_metadata_and_ai_summary_read", "supports": "仅确认原标题与攻略/月份参考期分类；不将平台AI摘要当原文或权威活动依据。"}]
+    },
+    {
+      "id": "W11", "event_ids": ["evt_5a8603876112"],
+      "manual_event_date": null, "event_status": "not_a_single_event_pending",
+      "evidence_result": "commercial_guide_original_body_read_classification_only",
+      "strict_authority_result": "classification_supported_non_event_body",
+      "conclusion": "凤凰海南原页标商讯、企业宣传资讯，正文罗列多场演出并对比购票平台。可确认攻略分类，不把商业稿的售票保证、价格、子活动日期或平台推荐升级为权威事实；整篇没有单一举办日。",
+      "sources": [{"url": "https://hainan.ifeng.com/c/8wfugIizdYz", "source_type": "commercial_promotional_guide", "issuer": "凤凰海南商讯 / 企业宣传资讯", "access_status": "body_and_disclaimer_read_for_classification_only", "supports": "多场活动和购票策略的攻略；页面声明为企业宣传资讯，不是主办方公告。"}]
+    },
+    {
+      "id": "W12", "event_ids": ["evt_21064dd8a66c"],
+      "manual_event_date": null, "event_status": "unconfirmed_conditional_pending",
+      "evidence_result": "explicit_withheld_pending_exception_supported_by_fixed_snapshot",
+      "strict_authority_result": "excluded_unconfirmed_pending",
+      "disposition_exception": {"policy_quote": "有权威日期证据，或已明确标记为不应进入未来视图并继续保持pending", "scope": "candidate_disposition_only", "reason_code": "conditional_event", "event_confirmed": false, "requires_official_confirmation_to_promote": true},
+      "conclusion": "集中复核固定快照原文明确审批中/或定档，规则输出conditional_event，记录不进未来视图且保持pending、人工确认日期为空。满足原33条候选处置的排除例外，不再把缺少官宣当作候选处置单点阻塞。但活动存在、举办日期、取消状态均未确认；原E12无关工作室链接不用于证明本条，不以搜索无结果完成事实核验。",
+      "sources": [{"url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XWGRNVk93MjFIZFhHM2dMT0NHcXNEQzJSSWd4TFJoZlFfYWZRbkNORk54MjZ5d3oyX3VqazN6NVlVbm1pMDdxUlZ4SjhOR1J6RUNwei1fSVFDdEJVaGwzNVZZdnRsR1k?oc=5", "source_type": "discovery_reference_from_fixed_snapshot_only", "issuer": "原快照记录发布方搜狐网；Google News发现入口", "access_status": "read_from_fixed_snapshot_not_opened_or_used_as_authoritative_event_evidence", "supports": "只留存候选原文及来源追溯：刘宇成都演唱会正在审批中，或定档2027年1月1日-2日凤凰山体育公园。不能证明活动举办或取消。"}]
+    }
+  ],
+  "explicit_evidence_gaps": [
+    {"event_id": "evt_21064dd8a66c", "scope": "factual_confirmation_only", "blocks_candidate_disposition_acceptance": false, "blocks_factual_verification": true, "reason": "原33条排除例外已满足；该2027成都场仍无匹配官方确认，保留NOT VERIFIED，不写成事实已核验。"}
+  ]
+}

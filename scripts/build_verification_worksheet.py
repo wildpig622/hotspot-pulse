@@ -26,6 +26,7 @@ SUPPLEMENTS = (
     ROOT / "docs/evidence-round3-2026-10-29.json",
     ROOT / "docs/evidence-round4-2026-10-29.json",
     ROOT / "docs/evidence-round5-2026-10-29.json",
+    ROOT / "docs/evidence-round6-2026-10-29.json",
 )
 SUPPORTED_DATE_RESULTS = {"date_supported_primary_body", "date_supported_day_precision"}
 COMPLETE_DATE_EVIDENCE_RESULTS = SUPPORTED_DATE_RESULTS | {"date_supported_for_exclusion"}
@@ -117,6 +118,14 @@ def build_worksheet():
                 source["issuer"] = correction["issuer"]
                 source["authority_claim_withdrawn"] = True
                 source["source_correction"] = correction
+        if additional and additional.get("disposition_exception"):
+            next_action = "retain pending and excluded; official confirmation is required before factual promotion, not to justify the documented exclusion"
+        elif additional and additional["strict_authority_result"] == "classification_supported_non_event_body":
+            next_action = "retain pending; classification only, do not promote advertised sub-events without separate authority evidence"
+        elif additional and additional["strict_authority_result"] in COMPLETE_DATE_EVIDENCE_RESULTS:
+            next_action = "retain pending; human sign-off still required"
+        else:
+            next_action = "retain pending; complete primary source/body and identity check before any release"
         rows.append({
             "event_id": event_id,
             "sample_group": old.get("sample_group", "expanded_4"),
@@ -143,11 +152,12 @@ def build_worksheet():
             "sources": sources,
             "evidence_result": additional["evidence_result"] if additional else old["evidence_result"],
             "strict_authority_result": additional["strict_authority_result"] if additional else "not_reassessed_after_initial_report",
+            "disposition_exception": additional.get("disposition_exception") if additional else None,
             "conclusion": additional["conclusion"] if additional else old["conclusion"],
             "latest_primary_bucket": audited["primary_bucket"],
             "is_future_candidate_after_fix": audited["primary_bucket"] == "future_dated_event",
             "future_exclusion_reasons": audited["future_exclusion_reasons"],
-            "next_action": "retain pending; human sign-off still required" if additional and additional["strict_authority_result"] in COMPLETE_DATE_EVIDENCE_RESULTS else "retain pending; complete primary source/body and identity check before any release",
+            "next_action": next_action,
         })
     if SNAPSHOT.read_bytes() != original_bytes:
         raise RuntimeError("input snapshot changed while building the worksheet")
@@ -186,7 +196,7 @@ def build_worksheet():
                 "missing_expected_future_event_ids": sorted(expected_future_ids - actual_future_ids),
                 "scope": "Known fixed-snapshot errors and exact candidate set only; not proof that all factual fields are error-free.",
             },
-            "complete_authority_evidence": {"result": "FAIL" if evidence_gaps else "REQUIRES_FINAL_MANUAL_REVIEW", "explicit_gap_event_ids": [gap["event_id"] for gap in evidence_gaps], "scope": "Known gaps in 49 records; inherited evidence is not claimed re-opened."},
+            "complete_authority_evidence": {"result": "FAIL" if evidence_gaps else "REQUIRES_FINAL_MANUAL_REVIEW", "explicit_gap_event_ids": [gap["event_id"] for gap in evidence_gaps], "scope": "Factual verification gaps; distinct from documented withheld/pending disposition exceptions. No promotion to verified."},
             "no_automatic_verified": {"result": "PASS" if all(row["review_status_after"] == "pending" and row["verification_status"] == "not_verified" for row in rows) else "FAIL"},
         },
         "snapshot_sha256": hashlib.sha256(original_bytes).hexdigest(),
