@@ -192,7 +192,7 @@ def future_exclusion_reasons(event: dict[str, Any]) -> list[str]:
         reasons.append("conditional_event")
     city_match = event.get("city_match")
     if event.get("city_slug"):
-        city_match = assess_event_city(event, title)
+        city_match = assess_event_city(event, title, event.get("discovery_summary") or "")
     if city_match == "event_city_conflict":
         reasons.append("event_city_conflict")
     elif city_match == "query_only":
@@ -318,6 +318,9 @@ def _collect_day_candidates(text: str, today: date) -> tuple[list[dict[str, Any]
         for match in pattern.finditer(text):
             if any(not (match.end() <= left or match.start() >= right) for left, right in occupied):
                 continue
+            # Reserve even invalid ranges so their endpoints cannot fall back
+            # to separate, apparently valid single-day events.
+            occupied.append((match.start(), match.end()))
             groups = match.groups()
             year1 = int(groups[0]) if groups[0] else None
             month1 = int(groups[1])
@@ -329,6 +332,8 @@ def _collect_day_candidates(text: str, today: date) -> tuple[list[dict[str, Any]
                 year2 = int(groups[3]) if groups[3] else (year1 if year1 else start_day.year)
                 month2 = int(groups[4])
                 day2 = int(groups[5])
+                if not groups[3] and month2 < month1:
+                    year2 = start_day.year + 1
             else:
                 year2 = year1 if year1 else start_day.year
                 month2 = month1
@@ -337,11 +342,8 @@ def _collect_day_candidates(text: str, today: date) -> tuple[list[dict[str, Any]
                 end_day = date(year2, month2, day2)
             except ValueError:
                 continue
-            if end_day < start_day and not (groups[3] if range_kind == "full" else False):
-                try:
-                    end_day = date(start_day.year + 1, month2, day2)
-                except ValueError:
-                    continue
+            if end_day < start_day:
+                continue
             if not _date_is_in_window(start_day, end_day, today):
                 continue
             explicit_year = bool(year1) or (range_kind == "full" and bool(groups[3]))
@@ -352,7 +354,6 @@ def _collect_day_candidates(text: str, today: date) -> tuple[list[dict[str, Any]
                 "date_precision": "day", "date_confidence": confidence,
                 "event_date_role": _date_role(text, match.start(), match.end()),
             })
-            occupied.append((match.start(), match.end()))
 
     patterns = [
         re.compile(r"(?<!\d)(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?!\d)"),
@@ -553,10 +554,11 @@ def is_upcoming_event(event: dict[str, Any], today: date) -> bool:
     if event.get("event_date_role") in {"ticket_sale", "registration", "reference_period"}:
         return False
     try:
+        start_day = date.fromisoformat(start_value)
         end_value = date.fromisoformat(event.get("end_at") or start_value)
     except (TypeError, ValueError):
         return False
-    return end_value >= today
+    return end_value >= start_day and end_value >= today
 
 
 def enrich_existing_event(event: dict[str, Any], today: date) -> dict[str, Any]:
@@ -564,12 +566,13 @@ def enrich_existing_event(event: dict[str, Any], today: date) -> dict[str, Any]:
     if event.get("review_status") == "verified":
         return event
     title = event.get("event_name") or ""
-    kind = classify_content(title)
-    parsed = extract_event_date(title, "", today)
+    description = event.get("discovery_summary") or ""
+    kind = classify_content(title, description)
+    parsed = extract_event_date(title, description, today)
     event["content_kind"] = kind
     if event.get("city_slug"):
-        event["city_match"] = assess_event_city(event, title)
-    event["event_confirmation"] = "unconfirmed" if CONDITIONAL_EVENT_PATTERN.search(title) or event.get("event_confirmation") == "unconfirmed" else "unknown"
+        event["city_match"] = assess_event_city(event, title, description)
+    event["event_confirmation"] = "unconfirmed" if CONDITIONAL_EVENT_PATTERN.search(title + " " + description) or event.get("event_confirmation") == "unconfirmed" else "unknown"
 
     if kind in NON_EVENT_CONTENT_KINDS and parsed.get("event_date_role") != "event":
         event["start_at"] = None
@@ -704,6 +707,8 @@ def build_candidate(city: dict[str, Any], item: dict[str, Any], observed_at: str
         "first_seen_at": observed_at, "last_seen_at": observed_at, "knowable_at": knowable_at,
         "source_count": 1, "sources": [source],
         "discovery_query": city["aliases"][0] + " + public event keywords",
+        "discovery_summary": description,
+        "discovery_summary_source_url": item["url"],
         "candidate_note": note_by_kind.get(content_kind, "自动发现候选；未完成人工核验，不作为正式经营结论。"),
     }
 
@@ -743,6 +748,10 @@ def merge_candidate(existing: dict[str, Any] | None, candidate: dict[str, Any]) 
                 "registration_date_confidence", "reference_period_start", "reference_period_end",
             ):
                 merged[field] = candidate.get(field)
+            # Keep the text used by this parser result for reproducible refreshes.
+            # Never pair a new result with an older source's summary.
+            merged["discovery_summary"] = candidate.get("discovery_summary") or ""
+            merged["discovery_summary_source_url"] = candidate.get("discovery_summary_source_url")
     first_seen = existing.get("first_seen_at") or candidate.get("first_seen_at")
     merged["first_seen_at"] = first_seen
     published = [s.get("source_published_at") for s in merged["sources"] if s.get("source_published_at")]
@@ -819,6 +828,9 @@ def run_collection() -> int:
     upper_date = today + timedelta(days=MAX_FUTURE_DAYS)
     kept: list[dict[str, Any]] = []
     for event in events_to_process:
+        if all_failed:
+            kept.append(event)
+            continue
         try:
             last_seen = datetime.fromisoformat((event.get("last_seen_at") or "").replace("Z", "+00:00"))
             if last_seen.tzinfo is None:
@@ -838,7 +850,8 @@ def run_collection() -> int:
                 pass
         kept.append(event)
 
-    kept.sort(key=lambda e: (e.get("start_at") or "9999-12-31", e.get("city_name") or "", e.get("event_name") or ""))
+    if not all_failed:
+        kept.sort(key=lambda e: (e.get("start_at") or "9999-12-31", e.get("city_name") or "", e.get("event_name") or ""))
     overall_status = "failed" if all_failed else ("degraded" if successful_feeds < len(cities) else "healthy")
     dated_count = sum(
         1 for event in kept
@@ -898,9 +911,10 @@ def run_collection() -> int:
             for city in cities
         ]
     }
-    write_json(SITE_API / "hotspots.json", payload)
+    if not all_failed:
+        write_json(SITE_API / "hotspots.json", payload)
+        write_json(SITE_API / "cities.json", city_payload)
     write_json(SITE_API / "health.json", health)
-    write_json(SITE_API / "cities.json", city_payload)
     print(json.dumps({
         "status": overall_status, "cities": len(cities), "successful_feeds": successful_feeds,
         "failed_feeds": len(cities) - successful_feeds, "rss_items_seen": total_items,

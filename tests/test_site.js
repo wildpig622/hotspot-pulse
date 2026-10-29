@@ -93,3 +93,17 @@ test("failed city catalogue cannot silently admit an event-city mismatch", async
   assert.equal(nodes.resultCount.textContent, "1 条");
   assert.match(nodes.eventsList.innerHTML, /举办城市暂时无法核对/);
 });
+
+test("invalid calendar dates and reversed ranges stay available for review without entering the future view", async () => {
+  const base = {event_name: "杭州演唱会", city_name: "杭州市", city_slug: "hangzhou",
+    content_kind: "event_announcement", date_precision: "day", event_date_role: "event"};
+  for (const dates of [{start_at: "2026-11-31"}, {start_at: "2026-11-10", end_at: "2026-11-08"},
+    {start_at: "2026-11-08", end_at: "2026-12-32"}, {start_at: "unknown", end_at: "2026-12-01"}]) {
+    const nodes = await loadPage([{...base, ...dates}]);
+    assert.equal(nodes.resultCount.textContent, "0 条");
+    nodes.contentFilter.value = "all";
+    nodes.contentFilter.listeners.input();
+    assert.equal(nodes.resultCount.textContent, "1 条");
+    assert.match(nodes.eventsList.innerHTML, /日期区间无效，需复核/);
+  }
+});

@@ -62,8 +62,15 @@
     if (event.event_date_role === "ticket_sale" || event.event_date_role === "registration" || event.event_date_role === "reference_period") return false;
     return (event.end_at || event.start_at) >= today;
   }
+  function validCalendarDate(value) {
+    if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+    try { return new Date(value + "T00:00:00Z").toISOString().slice(0, 10) === value; }
+    catch (e) { return false; }
+  }
   function futureExclusion(event) {
     var title = String(event.event_name || "");
+    if (event.start_at && (!validCalendarDate(event.start_at) ||
+        (event.end_at && (!validCalendarDate(event.end_at) || event.end_at < event.start_at)))) return "日期区间无效，需复核";
     if (CONDITIONAL_EVENT.test(title) || event.event_confirmation === "unconfirmed") return "举办安排尚未确认";
     if (event.city_match === "event_city_conflict") return "举办城市与记录城市不符";
     if (!state.cities.length && event.city_slug) return "举办城市暂时无法核对";

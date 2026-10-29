@@ -68,6 +68,24 @@ class ManualAuditRegressions(unittest.TestCase):
             with self.subTest(value=value):
                 self.assertIsNone(extract_event_date(f"展会定于{value}开幕", today=self.today)["start_at"])
 
+    def test_reversed_or_impossible_date_ranges_cannot_become_future_events(self):
+        for value in ("2026年11月10日至8日", "2026年11月10日至2026年11月8日",
+                      "2026年11月10日至2025年12月8日", "2026年11月31日至12月2日"):
+            with self.subTest(value=value):
+                self.assertIsNone(extract_event_date(f"杭州展会将于{value}举行", today=self.today)["start_at"])
+        parsed = extract_event_date("杭州展会将于2026年12月30日至1月2日举行", today=self.today)
+        self.assertEqual((parsed["start_at"], parsed["end_at"]), ("2026-12-30", "2027-01-02"))
+        parsed = extract_event_date("杭州展会将于2027年12月30日至2月29日举行", today=date(2027, 10, 29))
+        self.assertEqual((parsed["start_at"], parsed["end_at"]), ("2027-12-30", "2028-02-29"))
+        self.assertIsNone(extract_event_date("杭州展会2028年12月30日至2月29日举行", today=date(2028, 10, 29))["start_at"])
+
+    def test_invalid_persisted_intervals_do_not_enter_future_view(self):
+        for start, end in (("2026-11-31", None), ("2026-11-10", "2026-11-08"),
+                           ("invalid", "2026-12-01"), ("2026-11-08", "2026-12-32")):
+            with self.subTest(start=start, end=end):
+                self.assertFalse(is_upcoming_event({"event_name": "杭州展会", "content_kind": "event_announcement",
+                    "start_at": start, "end_at": end, "date_precision": "day", "event_date_role": "event"}, self.today))
+
     def test_stale_legacy_date_is_cleared_even_after_merge(self):
         raw = self.raw["evt_9e0e0a6d2bfd"]
         city = {"city_slug": "chengdu", "city_name": "成都市", "aliases": ["成都"]}
