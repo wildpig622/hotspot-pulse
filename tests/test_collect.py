@@ -4,7 +4,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from scripts.collect import build_candidate, classify_content, classify_event, extract_event_date, is_upcoming_event, merge_candidate, normalize_title, parse_feed
+from scripts.collect import build_candidate, classify_content, classify_event, enrich_existing_event, extract_event_date, is_upcoming_event, merge_candidate, normalize_title, parse_feed
 
 
 class CollectorTests(unittest.TestCase):
@@ -139,6 +139,20 @@ class CollectorTests(unittest.TestCase):
         self.assertIsNone(candidate["start_at"])
         self.assertEqual(candidate["registration_at"], None)
         self.assertEqual(candidate["content_kind"], "registration_notice")
+
+
+    def test_current_public_snapshot_can_be_reclassified_without_losing_records(self):
+        repo_root = Path(__file__).resolve().parents[1]
+        snapshot_path = repo_root / "site" / "api" / "v1" / "hotspots.json"
+        import json
+        payload = json.loads(snapshot_path.read_text(encoding="utf-8"))
+        events = payload["data"]
+        original_count = len(events)
+        today = date(2026, 10, 29)
+        enriched = [enrich_existing_event(dict(event), today) for event in events]
+        self.assertEqual(len(enriched), original_count)
+        self.assertTrue(all(event.get("content_kind") for event in enriched))
+        self.assertTrue(all(not event.get("start_at") or len(event["start_at"]) == 10 for event in enriched))
 
 
 if __name__ == "__main__":
