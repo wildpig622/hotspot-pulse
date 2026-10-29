@@ -25,8 +25,10 @@ SUPPLEMENTS = (
     ROOT / "docs/evidence-supplement-2026-10-29.json",
     ROOT / "docs/evidence-round3-2026-10-29.json",
     ROOT / "docs/evidence-round4-2026-10-29.json",
+    ROOT / "docs/evidence-round5-2026-10-29.json",
 )
 SUPPORTED_DATE_RESULTS = {"date_supported_primary_body", "date_supported_day_precision"}
+COMPLETE_DATE_EVIDENCE_RESULTS = SUPPORTED_DATE_RESULTS | {"date_supported_for_exclusion"}
 SELECTION = ROOT / "tests/fixtures/manual-audit-2026-10-29.json"
 JSON_OUTPUT = ROOT / "docs/verification-worksheet-2026-10-29.json"
 MD_OUTPUT = ROOT / "docs/verification-worksheet-2026-10-29.md"
@@ -145,7 +147,7 @@ def build_worksheet():
             "latest_primary_bucket": audited["primary_bucket"],
             "is_future_candidate_after_fix": audited["primary_bucket"] == "future_dated_event",
             "future_exclusion_reasons": audited["future_exclusion_reasons"],
-            "next_action": "retain pending; human sign-off still required" if additional and additional["strict_authority_result"] in SUPPORTED_DATE_RESULTS else "retain pending; complete primary source/body and identity check before any release",
+            "next_action": "retain pending; human sign-off still required" if additional and additional["strict_authority_result"] in COMPLETE_DATE_EVIDENCE_RESULTS else "retain pending; complete primary source/body and identity check before any release",
         })
     if SNAPSHOT.read_bytes() != original_bytes:
         raise RuntimeError("input snapshot changed while building the worksheet")

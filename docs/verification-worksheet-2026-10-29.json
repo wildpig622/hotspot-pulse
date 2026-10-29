@@ -3,11 +3,12 @@
   "release_result": "FAIL",
   "baseline_commit": "75e83e9978786bf0eb0401def17b3c42d096c96d",
   "audit_date": "2026-10-29",
-  "supplement_checked_at": "2026-10-29T15:48:16+08:00",
+  "supplement_checked_at": "2026-10-29T16:05:48+08:00",
   "evidence_round_files": [
     "docs/evidence-supplement-2026-10-29.json",
     "docs/evidence-round3-2026-10-29.json",
-    "docs/evidence-round4-2026-10-29.json"
+    "docs/evidence-round4-2026-10-29.json",
+    "docs/evidence-round5-2026-10-29.json"
   ],
   "source_corrections": [
     {
@@ -21,34 +22,9 @@
   ],
   "explicit_evidence_gaps": [
     {
-      "event_id": "evt_3644cdd4c268",
-      "scope": "original_boundary_12",
-      "reason": "政府原文证书错误；官方工作室镜像与政府索引不能伪装成已直接读取的原始正文。"
-    },
-    {
-      "event_id": "evt_203cc4315104",
-      "scope": "original_boundary_12",
-      "reason": "已有合格授权票务佐证，尚缺主办/场馆/政府原文；旧E18官方身份撤回。"
-    },
-    {
-      "event_id": "evt_b178c8b5c408",
-      "scope": "original_boundary_12",
-      "reason": "同上；首轮10月15日10:05的准确售票时刻仍缺合格原文确认。"
-    },
-    {
       "event_id": "evt_21064dd8a66c",
       "scope": "original_future_33_excluded",
-      "reason": "条件性消息已明确排除且保持pending；无官方确认，不认定活动存在、取消或核验完成。"
-    },
-    {
-      "event_id": "evt_bf7cd401e149",
-      "scope": "expanded_4",
-      "reason": "遂宁孙楠演出协办方原帖未读取，沿用S05缺口；不影响已排除未来视图的处理。"
-    },
-    {
-      "event_id": "evt_5c82713cc03a",
-      "scope": "expanded_4",
-      "reason": "贵阳咖啡展主办方账号主体未独立认证，沿用S06缺口；不影响已排除未来视图的处理。"
+      "reason": "仍缺匹配2027-01-01至02日成都场的官方确认；只确认保守排除处理正确，不认定活动已核验、取消或不存在。"
     }
   ],
   "release_gates": {
@@ -86,12 +62,7 @@
     "complete_authority_evidence": {
       "result": "FAIL",
       "explicit_gap_event_ids": [
-        "evt_3644cdd4c268",
-        "evt_203cc4315104",
-        "evt_b178c8b5c408",
-        "evt_21064dd8a66c",
-        "evt_bf7cd401e149",
-        "evt_5c82713cc03a"
+        "evt_21064dd8a66c"
       ],
       "scope": "Known gaps in 49 records; inherited evidence is not claimed re-opened."
     },
@@ -1530,11 +1501,12 @@
       "review_status_before": "pending",
       "review_status_after": "pending",
       "verification_status": "not_verified",
-      "checked_at": "2026-10-29T15:16:30+08:00",
+      "checked_at": "2026-10-29T16:05:48+08:00",
       "prior_checked_at": "2026-10-29T14:52:42+08:00",
       "evidence_refs": [
         "E12",
-        "S03"
+        "S03",
+        "V06"
       ],
       "evidence_observation_history": [
         {
@@ -1544,6 +1516,14 @@
           "evidence_result": "no_matching_authoritative_confirmation_found",
           "strict_authority_result": "incomplete",
           "conclusion": "未找到刘宇成都2027-01-01至02日的匹配主办方、场馆或主管部门确认。搜索无结果不能证明活动取消或不存在；继续排除未来视图并保持pending。"
+        },
+        {
+          "id": "V06",
+          "round_id": "round_5",
+          "checked_at": "2026-10-29T16:05:48+08:00",
+          "evidence_result": "matching_official_confirmation_still_unavailable",
+          "strict_authority_result": "incomplete",
+          "conclusion": "本轮仍未找到匹配刘宇、成都凤凰山、2027年1月1日至2日的主办方/场馆/政府原文。检索出现2024成都个人巡演和四川卫视2026新年演唱会等异年/异活动结果，均未采纳为该条证据。原记录的审批中/或定档足以维持排除未来视图的处理，但搜索无结果不能证明取消或不存在，更不能升级verified。"
         }
       ],
       "sources": [
@@ -1555,9 +1535,9 @@
           "checked_at": "2026-10-29T14:52:42+08:00"
         }
       ],
-      "evidence_result": "no_matching_authoritative_confirmation_found",
+      "evidence_result": "matching_official_confirmation_still_unavailable",
       "strict_authority_result": "incomplete",
-      "conclusion": "未找到刘宇成都2027-01-01至02日的匹配主办方、场馆或主管部门确认。搜索无结果不能证明活动取消或不存在；继续排除未来视图并保持pending。",
+      "conclusion": "本轮仍未找到匹配刘宇、成都凤凰山、2027年1月1日至2日的主办方/场馆/政府原文。检索出现2024成都个人巡演和四川卫视2026新年演唱会等异年/异活动结果，均未采纳为该条证据。原记录的审批中/或定档足以维持排除未来视图的处理，但搜索无结果不能证明取消或不存在，更不能升级verified。",
       "latest_primary_bucket": "event_date_review",
       "is_future_candidate_after_fix": false,
       "future_exclusion_reasons": [
@@ -2154,17 +2134,18 @@
       "rule_start_at": null,
       "rule_end_at": null,
       "rule_event_date_role": "unknown",
-      "manual_event_date": "2026-10-23 and 2026-10-25; initial presale 10-15 10:05 still lacks a directly read organizer/venue/government source",
+      "manual_event_date": "2026-10-23; separate performance also on 2026-10-25",
       "event_status": "past_scheduled_pending",
       "snapshot_event_status": "unknown",
       "review_status_before": "pending",
       "review_status_after": "pending",
       "verification_status": "not_verified",
-      "checked_at": "2026-10-29T15:48:16+08:00",
+      "checked_at": "2026-10-29T16:05:48+08:00",
       "prior_checked_at": "2026-10-29T14:52:42+08:00",
       "evidence_refs": [
         "E18",
-        "U03"
+        "U03",
+        "V02"
       ],
       "evidence_observation_history": [
         {
@@ -2174,6 +2155,14 @@
           "evidence_result": "authorized_ticketing_primary_body_supports_event_dates_only",
           "strict_authority_result": "corroboration_only",
           "conclusion": "大麦APP原微博正文已直接读取，包含2026肖战巡演南京站、梦之蓝青奥体育公园体育馆、10月23日及25日，符合用户对授权票务佐证的名称/城市/日期要求。该帖是购票提醒，没有首轮10月15日10:05节点；按用户规则仅作票务佐证，不替代主办方/场馆/政府核验。原E18普通账号身份已撤回。紧凑日期记录保持日期复核，开售记录保持开票通知。"
+        },
+        {
+          "id": "V02",
+          "round_id": "round_5",
+          "checked_at": "2026-10-29T16:05:48+08:00",
+          "evidence_result": "producer_studio_original_poster_supports_compact_day",
+          "strict_authority_result": "date_supported_primary_body",
+          "conclusion": "直接读取肖战工作室原帖和完整开售海报；海报列2026.10.23、2026.10.25、南京站与梦之蓝青奥体育公园体育馆，并在下方列出工作室出品身份。20261023有出品方原始海报支持；10月25日是另场，不自动赋给该紧凑日期记录。不恢复已撤回的E18普通账号权威身份，不自动补写日期或verified。"
         }
       ],
       "sources": [
@@ -2228,15 +2217,32 @@
             "reason": "直接读取原微博后，发布者为普通账号，不是初始E18所称的官方/艺人侧账号。正文中引用大麦不使该账号成为官方来源。保留旧分类作为历史，并撤回其权威身份判断。",
             "checked_at": "2026-10-29T15:48:16+08:00"
           }
+        },
+        {
+          "url": "https://weibo.com/2/detail/5353861654511891",
+          "source_type": "artist_studio_event_producer_primary_post_and_poster",
+          "issuer": "肖战工作室；海报列其为出品方",
+          "published_at": "2026-10-14T10:05:00+08:00",
+          "access_status": "primary_body_and_full_poster_visually_read_browser_screenshot",
+          "supports": "2026肖战［出口·我们］巡回演唱会南京站，2026-10-23/25，梦之蓝青奥体育公园体育馆；原始海报同时列出品、主办和票务单位。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://sina.cn/news/detail/5353861654511891.html",
+          "source_type": "artist_official_account_authenticated_mirror",
+          "issuer": "肖战工作室；页面明确显示官方微博认证",
+          "access_status": "mirror_body_read",
+          "supports": "辅助核对原帖发布者及2026-10-14发布时间；举办日来自已读原帖海报。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
         }
       ],
-      "evidence_result": "authorized_ticketing_primary_body_supports_event_dates_only",
-      "strict_authority_result": "corroboration_only",
-      "conclusion": "大麦APP原微博正文已直接读取，包含2026肖战巡演南京站、梦之蓝青奥体育公园体育馆、10月23日及25日，符合用户对授权票务佐证的名称/城市/日期要求。该帖是购票提醒，没有首轮10月15日10:05节点；按用户规则仅作票务佐证，不替代主办方/场馆/政府核验。原E18普通账号身份已撤回。紧凑日期记录保持日期复核，开售记录保持开票通知。",
+      "evidence_result": "producer_studio_original_poster_supports_compact_day",
+      "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "直接读取肖战工作室原帖和完整开售海报；海报列2026.10.23、2026.10.25、南京站与梦之蓝青奥体育公园体育馆，并在下方列出工作室出品身份。20261023有出品方原始海报支持；10月25日是另场，不自动赋给该紧凑日期记录。不恢复已撤回的E18普通账号权威身份，不自动补写日期或verified。",
       "latest_primary_bucket": "event_date_review",
       "is_future_candidate_after_fix": false,
       "future_exclusion_reasons": [],
-      "next_action": "retain pending; complete primary source/body and identity check before any release"
+      "next_action": "retain pending; human sign-off still required"
     },
     {
       "event_id": "evt_5f7457414239",
@@ -2298,18 +2304,19 @@
       "rule_start_at": null,
       "rule_end_at": null,
       "rule_event_date_role": "unknown",
-      "manual_event_date": "2026-10-24; the government index also lists 10-25 and separate November dates",
+      "manual_event_date": "2026-10-24; separate 2026-10-25 performance also listed by the studio",
       "event_status": "past_scheduled_pending",
       "snapshot_event_status": "unknown",
       "review_status_before": "pending",
       "review_status_after": "pending",
       "verification_status": "not_verified",
-      "checked_at": "2026-10-29T15:48:16+08:00",
+      "checked_at": "2026-10-29T16:05:48+08:00",
       "prior_checked_at": "2026-10-29T14:52:42+08:00",
       "evidence_refs": [
         "E24",
         "S02",
-        "U02"
+        "U02",
+        "V01"
       ],
       "evidence_observation_history": [
         {
@@ -2327,6 +2334,14 @@
           "evidence_result": "government_index_supports_date_primary_blocked_by_certificate",
           "strict_authority_result": "incomplete",
           "conclusion": "找到江宁区政府交通管控通告，官方域名索引明确2026华晨宇演唱会10月24日至25日在汤山音乐谷举行。但两个网页工具打开超时，浏览器报证书机构无效；未绕过警告，不能把索引文字记为直接读到政府正文。261024仍需最终权威正文复核；不能将同一通告中的11月场次赋给本条10月社交内容。"
+        },
+        {
+          "id": "V01",
+          "round_id": "round_5",
+          "checked_at": "2026-10-29T16:05:48+08:00",
+          "evidence_result": "artist_studio_original_post_visually_read_supports_day",
+          "strict_authority_result": "date_supported_primary_body",
+          "conclusion": "浏览器直接读取华晨宇工作室原微博的正文与认证标识，原文同时给出2026、南京站及10月24日/25日场，补齐原S02/U02的原始正文缺口。原记录261024只映射10月24日；10月25日属于另场，不自动扩展本条日期。原文是售罄公告，只支持原定场次，不单独证明实际演出完成；仍保持日期复核和pending。"
         }
       ],
       "sources": [
@@ -2370,15 +2385,32 @@
           "supports": "索引列2026华晨宇演唱会10月24日至25日及11月若干场次，南京江宁汤山音乐谷；当前原始正文访问仍受阻。",
           "access_notes": "浏览器net::ERR_CERT_AUTHORITY_INVALID。未忽略证书验证、未改用HTTP、未绕过警告。",
           "checked_at": "2026-10-29T15:48:16+08:00"
+        },
+        {
+          "url": "https://weibo.com/2/detail/5353666943123948",
+          "source_type": "artist_official_studio_primary_post",
+          "issuer": "华晨宇工作室",
+          "access_status": "primary_body_visually_read_browser_screenshot",
+          "published_at": "2026-10-13T21:12:00+08:00",
+          "supports": "2026华晨宇火星演唱会、南京站、10月24日及25日场；原帖已实际读取，不再仅为镜像。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://www.sina.cn/news/detail/5353666943123948.html",
+          "source_type": "artist_official_account_authenticated_mirror",
+          "issuer": "华晨宇工作室；页面明确显示官方微博认证",
+          "access_status": "mirror_body_read",
+          "supports": "与原帖ID、署名、发布时间及日期一致，辅助核对发布者身份。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
         }
       ],
-      "evidence_result": "government_index_supports_date_primary_blocked_by_certificate",
-      "strict_authority_result": "incomplete",
-      "conclusion": "找到江宁区政府交通管控通告，官方域名索引明确2026华晨宇演唱会10月24日至25日在汤山音乐谷举行。但两个网页工具打开超时，浏览器报证书机构无效；未绕过警告，不能把索引文字记为直接读到政府正文。261024仍需最终权威正文复核；不能将同一通告中的11月场次赋给本条10月社交内容。",
+      "evidence_result": "artist_studio_original_post_visually_read_supports_day",
+      "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "浏览器直接读取华晨宇工作室原微博的正文与认证标识，原文同时给出2026、南京站及10月24日/25日场，补齐原S02/U02的原始正文缺口。原记录261024只映射10月24日；10月25日属于另场，不自动扩展本条日期。原文是售罄公告，只支持原定场次，不单独证明实际演出完成；仍保持日期复核和pending。",
       "latest_primary_bucket": "event_date_review",
       "is_future_candidate_after_fix": false,
       "future_exclusion_reasons": [],
-      "next_action": "retain pending; complete primary source/body and identity check before any release"
+      "next_action": "retain pending; human sign-off still required"
     },
     {
       "event_id": "evt_b178c8b5c408",
@@ -2392,17 +2424,18 @@
       "rule_start_at": null,
       "rule_end_at": null,
       "rule_event_date_role": "ticket_sale",
-      "manual_event_date": "2026-10-23 and 2026-10-25; initial presale 10-15 10:05 still lacks a directly read organizer/venue/government source",
+      "manual_event_date": "event performances 2026-10-23 and 2026-10-25; ticket presale 2026-10-15 10:05",
       "event_status": "past_scheduled_pending",
       "snapshot_event_status": "unknown",
       "review_status_before": "pending",
       "review_status_after": "pending",
       "verification_status": "not_verified",
-      "checked_at": "2026-10-29T15:48:16+08:00",
+      "checked_at": "2026-10-29T16:05:48+08:00",
       "prior_checked_at": "2026-10-29T14:52:42+08:00",
       "evidence_refs": [
         "E18",
-        "U03"
+        "U03",
+        "V03"
       ],
       "evidence_observation_history": [
         {
@@ -2412,6 +2445,14 @@
           "evidence_result": "authorized_ticketing_primary_body_supports_event_dates_only",
           "strict_authority_result": "corroboration_only",
           "conclusion": "大麦APP原微博正文已直接读取，包含2026肖战巡演南京站、梦之蓝青奥体育公园体育馆、10月23日及25日，符合用户对授权票务佐证的名称/城市/日期要求。该帖是购票提醒，没有首轮10月15日10:05节点；按用户规则仅作票务佐证，不替代主办方/场馆/政府核验。原E18普通账号身份已撤回。紧凑日期记录保持日期复核，开售记录保持开票通知。"
+        },
+        {
+          "id": "V03",
+          "round_id": "round_5",
+          "checked_at": "2026-10-29T16:05:48+08:00",
+          "evidence_result": "producer_original_poster_separates_ticket_presale_from_event_days",
+          "strict_authority_result": "date_supported_primary_body",
+          "conclusion": "肖战工作室完整原海报明确10月15日10:05预售开启；右下方列南京站2026.10.23/25与场馆。准确开票时刻缺口已补齐，且与举办日分离。原帖发布于10月14日10:05，不把发布时间、次日开票时刻和两场举办日混为同一角色；本条继续为开票通知、pending。"
         }
       ],
       "sources": [
@@ -2466,15 +2507,32 @@
             "reason": "直接读取原微博后，发布者为普通账号，不是初始E18所称的官方/艺人侧账号。正文中引用大麦不使该账号成为官方来源。保留旧分类作为历史，并撤回其权威身份判断。",
             "checked_at": "2026-10-29T15:48:16+08:00"
           }
+        },
+        {
+          "url": "https://weibo.com/2/detail/5353861654511891",
+          "source_type": "artist_studio_event_producer_primary_post_and_poster",
+          "issuer": "肖战工作室；海报列其为出品方",
+          "published_at": "2026-10-14T10:05:00+08:00",
+          "access_status": "primary_body_and_full_poster_visually_read_browser_screenshot",
+          "supports": "10月15日10:05预售；南京站2026-10-23、2026-10-25，梦之蓝青奥体育公园体育馆。准确时刻来自完整海报，不是原帖发布时间。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://weibo.com/2/detail/5353562416351919",
+          "source_type": "authorized_ticketing_official_account_primary_post",
+          "issuer": "大麦APP",
+          "access_status": "not_reopened_round4_evidence_retained",
+          "supports": "沿用U03对名称、城市、举办日的授权票务佐证；本轮新增出品方原文。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
         }
       ],
-      "evidence_result": "authorized_ticketing_primary_body_supports_event_dates_only",
-      "strict_authority_result": "corroboration_only",
-      "conclusion": "大麦APP原微博正文已直接读取，包含2026肖战巡演南京站、梦之蓝青奥体育公园体育馆、10月23日及25日，符合用户对授权票务佐证的名称/城市/日期要求。该帖是购票提醒，没有首轮10月15日10:05节点；按用户规则仅作票务佐证，不替代主办方/场馆/政府核验。原E18普通账号身份已撤回。紧凑日期记录保持日期复核，开售记录保持开票通知。",
+      "evidence_result": "producer_original_poster_separates_ticket_presale_from_event_days",
+      "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "肖战工作室完整原海报明确10月15日10:05预售开启；右下方列南京站2026.10.23/25与场馆。准确开票时刻缺口已补齐，且与举办日分离。原帖发布于10月14日10:05，不把发布时间、次日开票时刻和两场举办日混为同一角色；本条继续为开票通知、pending。",
       "latest_primary_bucket": "ticketing_registration",
       "is_future_candidate_after_fix": false,
       "future_exclusion_reasons": [],
-      "next_action": "retain pending; complete primary source/body and identity check before any release"
+      "next_action": "retain pending; human sign-off still required"
     },
     {
       "event_id": "evt_c582cfbe9c6b",
@@ -3000,15 +3058,16 @@
       "rule_end_at": null,
       "rule_event_date_role": "ticket_sale",
       "manual_event_date": "2026-10-24 19:30; ticket presale 2026-09-16 11:00",
-      "event_status": "past_reported_pending",
+      "event_status": "past_scheduled_pending",
       "snapshot_event_status": "unknown",
       "review_status_before": "pending",
       "review_status_after": "pending",
       "verification_status": "not_verified",
-      "checked_at": "2026-10-29T15:16:30+08:00",
+      "checked_at": "2026-10-29T16:05:48+08:00",
       "prior_checked_at": null,
       "evidence_refs": [
-        "S05"
+        "S05",
+        "V04"
       ],
       "evidence_observation_history": [
         {
@@ -3018,6 +3077,14 @@
           "evidence_result": "operator_index_and_media_support_past_event",
           "strict_authority_result": "incomplete",
           "conclusion": "协办方咪咕国风索引及演出当晚媒体报道对应遂宁孙楠演唱会2026-10-24；原发现标题9月16日11点为开抢节点。协办方原帖未读取，不将其标为已核验。"
+        },
+        {
+          "id": "V04",
+          "round_id": "round_5",
+          "checked_at": "2026-10-29T16:05:48+08:00",
+          "evidence_result": "event_partner_original_posts_separate_presale_and_performance",
+          "strict_authority_result": "date_supported_for_exclusion",
+          "conclusion": "浏览器直接读取咪咕国风两条原微博及可见认证标识：9月16日开票帖同时列9月16日11:00预售、2026年10月24日19:30演出和遂宁市体育中心；9月17日孙楠邀约帖再次给出举办日期/场馆。S05的原帖访问缺口已补齐。咪咕音乐的协办角色由源点新闻转载披露，未把平台账号或协办单位写成主办方；只支持日期角色与排除旧2027日期，不单凭预告证明演出实际完成。"
         }
       ],
       "sources": [
@@ -3044,15 +3111,49 @@
           "access_status": "search_index_text",
           "supports": "2026-09-16 11:00开售、2026-10-24开唱，两个日期角色不同",
           "checked_at": "2026-10-29T15:16:30+08:00"
+        },
+        {
+          "url": "https://weibo.com/2/detail/5343727038235952",
+          "source_type": "event_partner_and_ticketing_platform_account_primary_post",
+          "issuer": "咪咕国风；页面可见认证标识",
+          "published_at": "2026-09-16T10:54:00+08:00",
+          "access_status": "primary_body_visually_read_browser_screenshot",
+          "supports": "孙楠给所有朋友们的歌巡回演唱会遂宁站；9月16日11:00预售；2026-10-24 19:30演出；遂宁市体育中心。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://weibo.com/2/detail/5344168849445632",
+          "source_type": "event_partner_account_primary_post",
+          "issuer": "咪咕国风；页面可见认证标识",
+          "published_at": "2026-09-17T16:10:00+08:00",
+          "access_status": "primary_body_visually_read_browser_screenshot",
+          "supports": "孙楠遂宁邀约，2026-10-24 19:30，遂宁市体育中心体育场。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://yule.360.com/detail/5208394",
+          "source_type": "media_republication_identifying_event_partner",
+          "issuer": "源点新闻转载",
+          "access_status": "search_result_body_text_read",
+          "supports": "披露咪咕音乐为协办、列主承办单位；仅作角色佐证，不冒充主办方公告。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_34318540",
+          "source_type": "local_tourism_publication_account",
+          "issuer": "文旅遂宁；页面标澎湃号媒体",
+          "access_status": "browser_header_and_opening_body_read",
+          "supports": "只读到署名、标题和开头的遂宁站身份；没有把页面中尚未读到的日期段记作本轮日期依据，也没有仅据账号名认定政府主体。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
         }
       ],
-      "evidence_result": "operator_index_and_media_support_past_event",
-      "strict_authority_result": "incomplete",
-      "conclusion": "协办方咪咕国风索引及演出当晚媒体报道对应遂宁孙楠演唱会2026-10-24；原发现标题9月16日11点为开抢节点。协办方原帖未读取，不将其标为已核验。",
+      "evidence_result": "event_partner_original_posts_separate_presale_and_performance",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "浏览器直接读取咪咕国风两条原微博及可见认证标识：9月16日开票帖同时列9月16日11:00预售、2026年10月24日19:30演出和遂宁市体育中心；9月17日孙楠邀约帖再次给出举办日期/场馆。S05的原帖访问缺口已补齐。咪咕音乐的协办角色由源点新闻转载披露，未把平台账号或协办单位写成主办方；只支持日期角色与排除旧2027日期，不单凭预告证明演出实际完成。",
       "latest_primary_bucket": "ticketing_registration",
       "is_future_candidate_after_fix": false,
       "future_exclusion_reasons": [],
-      "next_action": "retain pending; complete primary source/body and identity check before any release"
+      "next_action": "retain pending; human sign-off still required"
     },
     {
       "event_id": "evt_c9b487791db8",
@@ -3111,7 +3212,7 @@
       "latest_primary_bucket": "past_expired",
       "is_future_candidate_after_fix": false,
       "future_exclusion_reasons": [],
-      "next_action": "retain pending; complete primary source/body and identity check before any release"
+      "next_action": "retain pending; human sign-off still required"
     },
     {
       "event_id": "evt_5c82713cc03a",
@@ -3126,15 +3227,16 @@
       "rule_end_at": null,
       "rule_event_date_role": "event",
       "manual_event_date": "2026-09-24 to 2026-09-26",
-      "event_status": "past_reported_pending",
+      "event_status": "past_scheduled_pending",
       "snapshot_event_status": "unknown",
       "review_status_before": "pending",
       "review_status_after": "pending",
       "verification_status": "not_verified",
-      "checked_at": "2026-10-29T15:16:30+08:00",
+      "checked_at": "2026-10-29T16:05:48+08:00",
       "prior_checked_at": null,
       "evidence_refs": [
-        "S06"
+        "S06",
+        "V05"
       ],
       "evidence_observation_history": [
         {
@@ -3144,6 +3246,14 @@
           "evidence_result": "self_identified_organizer_and_media_support_past_dates",
           "strict_authority_result": "incomplete",
           "conclusion": "署名云南泰达的搜狐号正文自称主办方并给出9月24日至26日，安顺市广播电视台转载贵州日报赛后报道也对应同一展期；搜狐账号主体未独立认证，严格权威身份核验仍待补。"
+        },
+        {
+          "id": "V05",
+          "round_id": "round_5",
+          "checked_at": "2026-10-29T16:05:48+08:00",
+          "evidence_result": "guiyang_release_original_wechat_article_supports_past_schedule",
+          "strict_authority_result": "date_supported_for_exclusion",
+          "conclusion": "从署名贵阳发布的新浪发布页点击实际原文链接，在浏览器直接读到贵阳发布公众号标题、2026年9月18日17:07发布时间及首段：2026贵阳国际咖啡博览会9月24日至26日在贵阳国际会议展览中心举办。贵阳发布的机构身份另有平台资料指向贵阳市委宣传部，属于政务发布渠道；原云南泰达搜狐账号主体未独立认证的限制仍保留，不借此补做该账号认证。政府发布原文替代其作为展期依据；没有把贵阳日报记者帖冒充政府公告，也不单凭展前稿证明实际完成。"
         }
       ],
       "sources": [
@@ -3162,15 +3272,48 @@
           "access_status": "body_read",
           "supports": "2026-09-29报道回顾9月24日至26日已举办展会",
           "checked_at": "2026-10-29T15:16:30+08:00"
+        },
+        {
+          "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzMxNjIzNQ%3D%3D&chksm=8ab754967574ff0e2a25560b6a51e90c5bdcb38f4e923ee405b8de57e42946bce8454275bd6e&idx=1&mid=2654296759&scene=0&sn=aff74cf9050471afd4519300c713752a&xtrack=1",
+          "source_type": "government_publication_account_primary_article",
+          "issuer": "贵阳发布公众号",
+          "published_at": "2026-09-18T17:07:00+08:00",
+          "access_status": "primary_title_publisher_and_date_paragraph_visually_read_browser_screenshot",
+          "supports": "2026贵阳国际咖啡博览会、贵阳国际会议展览中心、9月24日至26日；已读原文，非仅镜像。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://finance.sina.com.cn/wm/2026-09-18/doc-inisfyfa8386885.shtml",
+          "source_type": "government_publication_account_republication_with_original_link",
+          "issuer": "贵阳发布；新浪发布页",
+          "access_status": "body_read_original_article_link_followed",
+          "supports": "同署名、同标题、同发布时间与展期；此页的贵阳发布链接39直接指向已读公众号原文。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://finance.sina.cn/2024-09-23/detail-incqcimu6946310.d.html?wm=3049_0015",
+          "source_type": "publisher_identity_platform_profile_in_search_result",
+          "issuer": "新浪平台资料：贵阳发布 / 贵阳市委宣传部",
+          "access_status": "search_result_profile_text_read_open_failed",
+          "supports": "仅辅助机构身份：平台资料明确贵阳发布对应贵阳市委宣传部；该旧文不作为2026展期证据。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
+        },
+        {
+          "url": "https://weibo.com/2/detail/5347064837835292",
+          "source_type": "newspaper_official_account_original_report",
+          "issuer": "贵阳日报官方微博",
+          "access_status": "primary_media_body_visually_read_browser_screenshot",
+          "supports": "记者报道9月24日启幕、展期至9月26日；作为赛后/展中辅助报道，不当作政府账号或主办方。",
+          "checked_at": "2026-10-29T16:05:48+08:00"
         }
       ],
-      "evidence_result": "self_identified_organizer_and_media_support_past_dates",
-      "strict_authority_result": "incomplete",
-      "conclusion": "署名云南泰达的搜狐号正文自称主办方并给出9月24日至26日，安顺市广播电视台转载贵州日报赛后报道也对应同一展期；搜狐账号主体未独立认证，严格权威身份核验仍待补。",
+      "evidence_result": "guiyang_release_original_wechat_article_supports_past_schedule",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "从署名贵阳发布的新浪发布页点击实际原文链接，在浏览器直接读到贵阳发布公众号标题、2026年9月18日17:07发布时间及首段：2026贵阳国际咖啡博览会9月24日至26日在贵阳国际会议展览中心举办。贵阳发布的机构身份另有平台资料指向贵阳市委宣传部，属于政务发布渠道；原云南泰达搜狐账号主体未独立认证的限制仍保留，不借此补做该账号认证。政府发布原文替代其作为展期依据；没有把贵阳日报记者帖冒充政府公告，也不单凭展前稿证明实际完成。",
       "latest_primary_bucket": "past_expired",
       "is_future_candidate_after_fix": false,
       "future_exclusion_reasons": [],
-      "next_action": "retain pending; complete primary source/body and identity check before any release"
+      "next_action": "retain pending; human sign-off still required"
     }
   ]
 }
