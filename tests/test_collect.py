@@ -31,12 +31,12 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(result["date_precision"], "tbd")
 
     def test_rss_parser_keeps_source_and_link(self):
-        xml = b"""<?xml version="1.0"?><rss version="2.0"><channel>
+        xml = """<?xml version="1.0"?><rss version="2.0"><channel>
         <item><title>2026杭州马拉松11月1日举行</title>
         <link>https://news.google.com/rss/articles/example</link>
         <description>赛事公告</description><pubDate>Wed, 28 Oct 2026 02:00:00 GMT</pubDate>
         <source url="https://example.gov.cn">官方新闻</source></item>
-        </channel></rss>"""
+        </channel></rss>""".encode("utf-8")
         rows = parse_feed(xml)
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["publisher"], "官方新闻")
