@@ -24,6 +24,7 @@ MANUAL = ROOT / "docs/manual-verification-2026-10-29.md"
 SUPPLEMENTS = (
     ROOT / "docs/evidence-supplement-2026-10-29.json",
     ROOT / "docs/evidence-round3-2026-10-29.json",
+    ROOT / "docs/evidence-round4-2026-10-29.json",
 )
 SUPPORTED_DATE_RESULTS = {"date_supported_primary_body", "date_supported_day_precision"}
 SELECTION = ROOT / "tests/fixtures/manual-audit-2026-10-29.json"
@@ -71,6 +72,10 @@ def build_worksheet():
     payload = json.loads(original_bytes)
     selection = json.loads(SELECTION.read_text(encoding="utf-8"))
     rounds = [json.loads(path.read_text(encoding="utf-8")) for path in SUPPLEMENTS]
+    corrections = {
+        correction["url"]: dict(correction, checked_at=evidence_round["checked_at"])
+        for evidence_round in rounds for correction in evidence_round.get("source_corrections", [])
+    }
     prior = read_manual_report()
     reviewed = build_report(payload, date.fromisoformat(selection["today"]))
     raw_by_id = {event["event_id"]: event for event in payload["data"]}
@@ -99,9 +104,17 @@ def build_worksheet():
         additional = supplements.get(event_id)
         if original["review_status"] != "pending" or audited["review_status"] != "pending":
             raise ValueError("this fixed worksheet is not authorized to alter review status")
-        sources = list(old.get("sources", []))
+        sources = [dict(source) for source in old.get("sources", [])]
         history = observations.get(event_id, [])
-        sources.extend(source for observation in history for source in observation["sources"])
+        sources.extend(dict(source) for observation in history for source in observation["sources"])
+        for source in sources:
+            correction = corrections.get(source["url"])
+            if correction:
+                source["original_source_type"] = source["source_type"]
+                source["source_type"] = correction["source_type"]
+                source["issuer"] = correction["issuer"]
+                source["authority_claim_withdrawn"] = True
+                source["source_correction"] = correction
         rows.append({
             "event_id": event_id,
             "sample_group": old.get("sample_group", "expanded_4"),
@@ -139,6 +152,16 @@ def build_worksheet():
     future_rows = [row for row in rows if row["is_future_candidate_after_fix"]]
     supported_ids = [row["event_id"] for row in future_rows if row["strict_authority_result"] in SUPPORTED_DATE_RESULTS]
     body_ids = [row["event_id"] for row in future_rows if row["strict_authority_result"] == "date_supported_primary_body"]
+    by_id = {row["event_id"]: row for row in rows}
+    original_future = [row for row in rows if row["sample_group"] == "original_future_33"]
+    original_supported = [row["event_id"] for row in original_future if row["is_future_candidate_after_fix"] and row["event_id"] in supported_ids]
+    original_excluded = [row["event_id"] for row in original_future if not row["is_future_candidate_after_fix"] and row["event_id"] in selection["excluded_future_ids"]]
+    boundary_mismatches = [event_id for event_id, bucket in selection["boundary_expected_buckets"].items() if by_id[event_id]["latest_primary_bucket"] != bucket]
+    expected_future_ids = set(selection["expected_future_ids"] + selection["additional_supported_future_ids"])
+    actual_future_ids = {row["event_id"] for row in reviewed["records"] if row["primary_bucket"] == "future_dated_event"}
+    evidence_gaps = rounds[-1].get("explicit_evidence_gaps", [])
+    if any(gap["event_id"] not in by_id for gap in evidence_gaps):
+        raise ValueError("evidence gap must reference an exact worksheet record")
     return {
         "status": "NOT_VERIFIED",
         "release_result": "FAIL",
@@ -146,6 +169,24 @@ def build_worksheet():
         "audit_date": selection["today"],
         "supplement_checked_at": rounds[-1]["checked_at"],
         "evidence_round_files": [str(path.relative_to(ROOT)).replace("\\", "/") for path in SUPPLEMENTS],
+        "source_corrections": list(corrections.values()),
+        "explicit_evidence_gaps": evidence_gaps,
+        "release_gates": {
+            "original_33_date_supported_or_excluded": {
+                "result": "PASS" if len(original_supported) + len(original_excluded) == 33 else "FAIL",
+                "date_supported_count": len(original_supported), "explicitly_excluded_count": len(original_excluded),
+                "excluded_event_ids": original_excluded,
+            },
+            "boundary_12_classification": {"result": "FAIL" if boundary_mismatches else "PASS", "mismatch_event_ids": boundary_mismatches},
+            "known_serious_error_regressions": {
+                "result": "PASS" if actual_future_ids == expected_future_ids and not boundary_mismatches else "FAIL",
+                "unexpected_future_event_ids": sorted(actual_future_ids - expected_future_ids),
+                "missing_expected_future_event_ids": sorted(expected_future_ids - actual_future_ids),
+                "scope": "Known fixed-snapshot errors and exact candidate set only; not proof that all factual fields are error-free.",
+            },
+            "complete_authority_evidence": {"result": "FAIL" if evidence_gaps else "REQUIRES_FINAL_MANUAL_REVIEW", "explicit_gap_event_ids": [gap["event_id"] for gap in evidence_gaps], "scope": "Known gaps in 49 records; inherited evidence is not claimed re-opened."},
+            "no_automatic_verified": {"result": "PASS" if all(row["review_status_after"] == "pending" and row["verification_status"] == "not_verified" for row in rows) else "FAIL"},
+        },
         "snapshot_sha256": hashlib.sha256(original_bytes).hexdigest(),
         "sample_count": len(rows),
         "sample_counts": {"original_future": 33, "stratified_boundary": 12, "expanded": 4},
@@ -180,7 +221,8 @@ def markdown_worksheet(worksheet):
         "原 33 条未来候选 + 12 条分层边界 + 4 条扩展记录。每条完整的来源 URL、来源类型、访问状态、",
         "核验时间、举办日期、活动状态和结论见同名 JSON 的 `records`。本表不写回生产快照。", "",
         f"累计补充了 {worksheet['supplemented_record_count']} 条记录的证据观察；其余沿用原报告并保留原核验时间。", "",
-        f"当前20条未来候选中，{worksheet['future_date_evidence_coverage']['supported_count']}条有本轮日级日期支持，其中{worksheet['future_date_evidence_coverage']['official_body_supported_count']}条为官方正文；其余仍有原始正文缺口。日期支持不等于已核验状态。", "",
+        f"当前{worksheet['future_candidate_count']}条未来候选中，{worksheet['future_date_evidence_coverage']['supported_count']}条有累计日级日期支持，其中{worksheet['future_date_evidence_coverage']['official_body_supported_count']}条为官方正文；尚缺日期依据{worksheet['future_date_evidence_coverage']['incomplete_count']}条。日期支持不等于已核验状态。", "",
+        "来源身份更正与明确证据缺口见同名 JSON 的 source_corrections 和 explicit_evidence_gaps；初始E18普通账号的官方身份判断已撤回。", "",
         "| event_id | 城市 / 精确名称 | 人工日期证据 | 规则分类 | 核验状态 | 证据 | checked_at |", "|---|---|---|---|---|---|---|",
     ]
     for row in worksheet["records"]:
