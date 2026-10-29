@@ -1,14 +1,155 @@
 {
   "api_version": "v1",
-  "last_run_at": null,
-  "last_run_local": null,
-  "status": "not_run",
+  "last_run_at": "2026-10-29T03:08:28Z",
+  "last_run_local": "2026-10-29 11:08:28 +08:00",
+  "status": "healthy",
   "source_system": "Google News RSS",
   "city_count": 28,
-  "successful_feeds": 0,
+  "successful_feeds": 28,
   "failed_feeds": 0,
-  "rss_items_seen": 0,
-  "candidate_count": 0,
-  "feed_results": [],
-  "note": "尚未运行首次采集。"
+  "rss_items_seen": 506,
+  "candidate_count": 380,
+  "feed_results": [
+    {
+      "city_name": "成都市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "南京市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "重庆市",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "杭州市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "武汉市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "西安市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "深圳市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "南昌市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "广州市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "长沙市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "贵阳市",
+      "status": "ok",
+      "items": 17
+    },
+    {
+      "city_name": "沈阳市",
+      "status": "ok",
+      "items": 12
+    },
+    {
+      "city_name": "洛阳市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "珠海市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "昆明市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "郑州市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "南宁市",
+      "status": "ok",
+      "items": 15
+    },
+    {
+      "city_name": "徐州市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "合肥市",
+      "status": "ok",
+      "items": 11
+    },
+    {
+      "city_name": "苏州市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "福州市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "德阳市",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "遂宁市",
+      "status": "ok",
+      "items": 13
+    },
+    {
+      "city_name": "济南市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "厦门市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "金华市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "天津市",
+      "status": "ok",
+      "items": 20
+    },
+    {
+      "city_name": "兰州市",
+      "status": "ok",
+      "items": 20
+    }
+  ],
+  "note": "如果 status=failed，上一份事件快照会保留，不会用空数据覆盖。"
 }
