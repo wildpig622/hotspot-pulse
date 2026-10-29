@@ -21,7 +21,11 @@ from scripts.audit_snapshot import build_report, validate_report_paths
 
 SNAPSHOT = ROOT / "site/api/v1/hotspots.json"
 MANUAL = ROOT / "docs/manual-verification-2026-10-29.md"
-SUPPLEMENT = ROOT / "docs/evidence-supplement-2026-10-29.json"
+SUPPLEMENTS = (
+    ROOT / "docs/evidence-supplement-2026-10-29.json",
+    ROOT / "docs/evidence-round3-2026-10-29.json",
+)
+SUPPORTED_DATE_RESULTS = {"date_supported_primary_body", "date_supported_day_precision"}
 SELECTION = ROOT / "tests/fixtures/manual-audit-2026-10-29.json"
 JSON_OUTPUT = ROOT / "docs/verification-worksheet-2026-10-29.json"
 MD_OUTPUT = ROOT / "docs/verification-worksheet-2026-10-29.md"
@@ -38,7 +42,7 @@ def read_manual_report():
         if re.fullmatch(r"E\d{2}", cells[0]):
             catalogue[cells[0]] = [
                 {"url": url, "source_type": cells[2], "supports": cells[3],
-                 "access_status": "inherited_from_prior_report_not_reopened_in_round_2"}
+                 "access_status": "inherited_from_initial_report", "checked_at": checked_at}
                 for url in re.findall(r"<([^>]+)>", cells[1])
             ]
         for index in (1, 2):
@@ -66,7 +70,7 @@ def build_worksheet():
     original_bytes = SNAPSHOT.read_bytes()
     payload = json.loads(original_bytes)
     selection = json.loads(SELECTION.read_text(encoding="utf-8"))
-    supplement = json.loads(SUPPLEMENT.read_text(encoding="utf-8"))
+    rounds = [json.loads(path.read_text(encoding="utf-8")) for path in SUPPLEMENTS]
     prior = read_manual_report()
     reviewed = build_report(payload, date.fromisoformat(selection["today"]))
     raw_by_id = {event["event_id"]: event for event in payload["data"]}
@@ -75,12 +79,18 @@ def build_worksheet():
     selected_ids = list(prior) + expanded_ids
     if len(selected_ids) != 49 or len(set(selected_ids)) != 49:
         raise ValueError("worksheet must contain 49 distinct IDs")
-    supplements = {}
-    for group in supplement["groups"]:
-        for event_id in group["event_ids"]:
-            if event_id not in selected_ids or event_id in supplements:
-                raise ValueError(f"invalid or duplicated supplement ID: {event_id}")
-            supplements[event_id] = group
+    supplements, observations = {}, {}
+    for number, evidence_round in enumerate(rounds, start=2):
+        seen = set()
+        for group in evidence_round["groups"]:
+            observed = dict(group, checked_at=evidence_round["checked_at"], round_id=f"round_{number}")
+            observed["sources"] = [dict(source, checked_at=evidence_round["checked_at"]) for source in group["sources"]]
+            for event_id in group["event_ids"]:
+                if event_id not in selected_ids or event_id in seen:
+                    raise ValueError(f"invalid or duplicated supplement ID in a round: {event_id}")
+                seen.add(event_id)
+                supplements[event_id] = observed
+                observations.setdefault(event_id, []).append(observed)
 
     rows = []
     for event_id in selected_ids:
@@ -90,8 +100,8 @@ def build_worksheet():
         if original["review_status"] != "pending" or audited["review_status"] != "pending":
             raise ValueError("this fixed worksheet is not authorized to alter review status")
         sources = list(old.get("sources", []))
-        if additional:
-            sources.extend(additional["sources"])
+        history = observations.get(event_id, [])
+        sources.extend(source for observation in history for source in observation["sources"])
         rows.append({
             "event_id": event_id,
             "sample_group": old.get("sample_group", "expanded_4"),
@@ -108,32 +118,48 @@ def build_worksheet():
             "review_status_before": "pending",
             "review_status_after": "pending",
             "verification_status": "not_verified",
-            "checked_at": supplement["checked_at"] if additional else old["checked_at"],
+            "checked_at": additional["checked_at"] if additional else old["checked_at"],
             "prior_checked_at": old.get("checked_at"),
-            "evidence_refs": old.get("evidence_refs", []) + ([additional["id"]] if additional else []),
+            "evidence_refs": old.get("evidence_refs", []) + [observation["id"] for observation in history],
+            "evidence_observation_history": [
+                {key: observation[key] for key in ("id", "round_id", "checked_at", "evidence_result", "strict_authority_result", "conclusion")}
+                for observation in history
+            ],
             "sources": sources,
             "evidence_result": additional["evidence_result"] if additional else old["evidence_result"],
-            "strict_authority_result": additional["strict_authority_result"] if additional else "not_reassessed_in_round_2",
+            "strict_authority_result": additional["strict_authority_result"] if additional else "not_reassessed_after_initial_report",
             "conclusion": additional["conclusion"] if additional else old["conclusion"],
             "latest_primary_bucket": audited["primary_bucket"],
             "is_future_candidate_after_fix": audited["primary_bucket"] == "future_dated_event",
             "future_exclusion_reasons": audited["future_exclusion_reasons"],
-            "next_action": "retain pending; complete primary source/body and identity check before any release",
+            "next_action": "retain pending; human sign-off still required" if additional and additional["strict_authority_result"] in SUPPORTED_DATE_RESULTS else "retain pending; complete primary source/body and identity check before any release",
         })
     if SNAPSHOT.read_bytes() != original_bytes:
         raise RuntimeError("input snapshot changed while building the worksheet")
+    future_rows = [row for row in rows if row["is_future_candidate_after_fix"]]
+    supported_ids = [row["event_id"] for row in future_rows if row["strict_authority_result"] in SUPPORTED_DATE_RESULTS]
+    body_ids = [row["event_id"] for row in future_rows if row["strict_authority_result"] == "date_supported_primary_body"]
     return {
         "status": "NOT_VERIFIED",
         "release_result": "FAIL",
         "baseline_commit": selection["baseline_commit"],
         "audit_date": selection["today"],
-        "supplement_checked_at": supplement["checked_at"],
+        "supplement_checked_at": rounds[-1]["checked_at"],
+        "evidence_round_files": [str(path.relative_to(ROOT)).replace("\\", "/") for path in SUPPLEMENTS],
         "snapshot_sha256": hashlib.sha256(original_bytes).hexdigest(),
         "sample_count": len(rows),
         "sample_counts": {"original_future": 33, "stratified_boundary": 12, "expanded": 4},
         "supplemented_record_count": len(supplements),
         "manual_verified_count": 0,
         "future_candidate_count": sum(row["is_future_candidate_after_fix"] for row in rows),
+        "future_date_evidence_coverage": {
+            "supported_count": len(supported_ids),
+            "official_body_supported_count": len(body_ids),
+            "association_day_only_count": len(supported_ids) - len(body_ids),
+            "incomplete_count": len(future_rows) - len(supported_ids),
+            "supported_event_ids": supported_ids,
+            "incomplete_event_ids": [row["event_id"] for row in future_rows if row["event_id"] not in supported_ids],
+        },
         "production_snapshot_written": False,
         "live_collection_run": False,
         "limitations": [
@@ -141,7 +167,7 @@ def build_worksheet():
             "Search-index text, authenticated mirrors and inaccessible primary pages are distinguished per source.",
             "No matching search result is not evidence of cancellation or non-existence.",
             "Scheduled dates in past government announcements do not alone prove actual completion.",
-            "All 49 remain not_verified; candidate review_status stays pending.",
+            "Date-supported is not a verified review status. All 49 remain not_verified/pending.",
         ],
         "records": rows,
     }
@@ -153,7 +179,8 @@ def markdown_worksheet(worksheet):
         "整体放行：**FAIL**。全部记录保持 `pending`；没有生成任何 `verified` 记录。", "",
         "原 33 条未来候选 + 12 条分层边界 + 4 条扩展记录。每条完整的来源 URL、来源类型、访问状态、",
         "核验时间、举办日期、活动状态和结论见同名 JSON 的 `records`。本表不写回生产快照。", "",
-        f"本轮补充了 {worksheet['supplemented_record_count']} 条记录的证据观察；其余沿用原报告并保留原核验时间。", "",
+        f"累计补充了 {worksheet['supplemented_record_count']} 条记录的证据观察；其余沿用原报告并保留原核验时间。", "",
+        f"当前20条未来候选中，{worksheet['future_date_evidence_coverage']['supported_count']}条有本轮日级日期支持，其中{worksheet['future_date_evidence_coverage']['official_body_supported_count']}条为官方正文；其余仍有原始正文缺口。日期支持不等于已核验状态。", "",
         "| event_id | 城市 / 精确名称 | 人工日期证据 | 规则分类 | 核验状态 | 证据 | checked_at |", "|---|---|---|---|---|---|---|",
     ]
     for row in worksheet["records"]:
@@ -161,7 +188,7 @@ def markdown_worksheet(worksheet):
         manual_date = str(row["manual_event_date"] or "尚未确认").replace("|", "\\|")
         lines.append(f"| `{row['event_id']}` | {row['city_name']} / {title} | {manual_date} | {row['latest_primary_bucket']} | not_verified / pending | {'/'.join(row['evidence_refs'])} | {row['checked_at']} |")
     lines.extend(["", "## 重放", "", "```text", "python scripts/build_verification_worksheet.py", "```", "",
-                  "输入是原始快照、原人工报告、固定样本清单和证据补查 JSON；无网络调用，审计输出禁止写入 `site/`。", ""])
+                  "输入是原始快照、原人工报告、固定样本清单和各轮证据补查 JSON；保留历轮证据状态，不覆写旧观察；无网络调用，审计输出禁止写入 `site/`。", ""])
     return "\n".join(lines)
 
 

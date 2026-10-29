@@ -66,6 +66,8 @@ https://wildpig622.github.io/hotspot-pulse/api/v1/
 
 输出为 `docs/verification-worksheet-2026-10-29.json` 和 `.md`。该工作表明确标为 `NOT_VERIFIED`，不会自动更改任何候选的人工核验状态。
 
+第三轮的20条未来候选日期覆盖见 `docs/evidence-round3-2026-10-29.md`。工作表保留各轮证据观察历史；`future_date_evidence_coverage` 单独统计官方日期依据覆盖，不代表记录已被升级为 `verified`。
+
 ## 数据质量与后续扩展
 
 第一阶段验证自动发现、去重、来源追溯和每日发布。下一阶段应增加可合法访问的官方活动日历/RSS/票务公告来源，并建立人工核验入口。只有经权威来源核验的事件，才应被看板作为已确认热点使用。
