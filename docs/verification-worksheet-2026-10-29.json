@@ -1,0 +1,2186 @@
+{
+  "status": "NOT_VERIFIED",
+  "release_result": "FAIL",
+  "baseline_commit": "75e83e9978786bf0eb0401def17b3c42d096c96d",
+  "audit_date": "2026-10-29",
+  "supplement_checked_at": "2026-10-29T15:16:30+08:00",
+  "snapshot_sha256": "4eadbecae911cbf64ff0754c7d7be778e368d4932c95917c9da695262468c010",
+  "sample_count": 49,
+  "sample_counts": {
+    "original_future": 33,
+    "stratified_boundary": 12,
+    "expanded": 4
+  },
+  "supplemented_record_count": 11,
+  "manual_verified_count": 0,
+  "future_candidate_count": 20,
+  "production_snapshot_written": false,
+  "live_collection_run": false,
+  "limitations": [
+    "Prior source evidence is inherited, not represented as independently re-opened.",
+    "Search-index text, authenticated mirrors and inaccessible primary pages are distinguished per source.",
+    "No matching search result is not evidence of cancellation or non-existence.",
+    "Scheduled dates in past government announcements do not alone prove actual completion.",
+    "All 49 remain not_verified; candidate review_status stays pending."
+  ],
+  "records": [
+    {
+      "event_id": "evt_75164357227c",
+      "sample_group": "original_future_33",
+      "city_name": "武汉市",
+      "event_name": "2026武汉国际车展10月30日启幕，2200万元消费券同步发放- 湖北日报新闻客户端",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LbTRDUVpEY0lrWWJWVk15Y0hZempoZmVyY24wcGRWUmFNekplVWVqanRGaW55cC1YSmNrYjZLLTZPRlNnNm56RTV5UnZpb193cE1LNlRVOWk?oc=5"
+      ],
+      "legacy_start_at": "2026-10-30",
+      "rule_start_at": "2026-10-30",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-10-30—11-03；日期得到政府公告支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E01"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wuhan.gov.cn/sy/whyw/202610/t20261029_2869842.shtml",
+          "source_type": "武汉市政府门户",
+          "supports": "2026 武汉国际车展 10 月 30 日至 11 月 3 日，武汉国际博览中心。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-10-30—11-03；日期得到政府公告支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_3b05c8d23d3b",
+      "sample_group": "original_future_33",
+      "city_name": "南昌市",
+      "event_name": "2026南昌航空产业博览会10月31日启幕 低空经济领域多款装备将亮相",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1XTkRqQW1yVS1xcDczVE1TNHp2RXFzcExmT2xNN0VlbjNwT2V3U1pCXzdhSy1YSDhST19WVHVwYnpBOW1GNndsUHln?oc=5"
+      ],
+      "legacy_start_at": "2026-10-31",
+      "rule_start_at": "2026-10-31",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-10-31—11-04；日期得到主办方支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E02"
+      ],
+      "sources": [
+        {
+          "url": "https://ncaie.com.cn/news/143.html",
+          "source_type": "南昌航空产业博览会官方主办方",
+          "supports": "2026 南昌航空产业博览会 10 月 31 日至 11 月 4 日，南昌绿地国际博览中心。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://ncaie.com.cn/news/124.html",
+          "source_type": "南昌航空产业博览会官方主办方",
+          "supports": "2026 南昌航空产业博览会 10 月 31 日至 11 月 4 日，南昌绿地国际博览中心。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-10-31—11-04；日期得到主办方支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_3be0559d6385",
+      "sample_group": "original_future_33",
+      "city_name": "南昌市",
+      "event_name": "2026南昌航空产业博览会10月31日开幕 设置十大展区",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1XM3U2Z0ZlYjBkS3NFQjlLNklMclJ4WDZQX0dTalJ5MmRhZWNnLS1EN0lmREU1N0VPekFfckdQaXNaUDdxR0s3RVVn?oc=5"
+      ],
+      "legacy_start_at": "2026-10-31",
+      "rule_start_at": "2026-10-31",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-10-31—11-04；日期得到主办方支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E02"
+      ],
+      "sources": [
+        {
+          "url": "https://ncaie.com.cn/news/143.html",
+          "source_type": "南昌航空产业博览会官方主办方",
+          "supports": "2026 南昌航空产业博览会 10 月 31 日至 11 月 4 日，南昌绿地国际博览中心。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://ncaie.com.cn/news/124.html",
+          "source_type": "南昌航空产业博览会官方主办方",
+          "supports": "2026 南昌航空产业博览会 10 月 31 日至 11 月 4 日，南昌绿地国际博览中心。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-10-31—11-04；日期得到主办方支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_6614d69412a6",
+      "sample_group": "original_future_33",
+      "city_name": "杭州市",
+      "event_name": "11月1日7时，2026杭州马拉松鸣枪开跑",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE14VW55aWRmMC1rd21aenpzNm9tODdleHBtUkJ0R2YzenNQZVNQNW1aRFExYWdRcFVONWczWXBUUnBLeXluaWpSd29fckx3aXYtZ0FXR21jYk4tUW5nVll0QjhEYl9yc3RLRUJQVk9R?oc=5"
+      ],
+      "legacy_start_at": "2026-11-01",
+      "rule_start_at": "2026-11-01",
+      "rule_end_at": null,
+      "rule_event_date_role": "ambiguous",
+      "manual_event_date": "2026-11-01 07:00；日期得到杭州交警公告支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E03"
+      ],
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5359286369651890",
+          "source_type": "杭州交警认证政务账号",
+          "supports": "杭州市政府批准，2026 杭州马拉松 11 月 1 日举行，起跑约 7:00。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-01 07:00；日期得到杭州交警公告支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_5f79d978ec7c",
+      "sample_group": "original_future_33",
+      "city_name": "杭州市",
+      "event_name": "2026杭州马拉松11月1日开跑",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOFhrWXhiVXBxeTdYSWNjZDlKNnYyZHVjTzFVMkl1dDl2RjZ5QURZaHJkb3VWb3FyMFFqUzFQRXdVTEdOS2g0d29QWF82Z09FNGs4LTlMQ2tHejNFYXlqM3BSX05IUk14Z2FQdHpFNXB2dmY0My1LdmVzTUhTSXJoQUVDdXQ5X25kTXVCNVhUSWotQXkyZmRKTWFTQUhuNG9Md3EzOEJORldwdGtDbUNSZXpSLUJvWTZQeUdzOWhveVY5ZEEyLTFtdDMzTHJYdnlxUVJrYTAyVzduM1ZGMFdVcklrc3BpX2xyTEtR?oc=5"
+      ],
+      "legacy_start_at": "2026-11-01",
+      "rule_start_at": "2026-11-01",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-01；日期得到杭州交警公告支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E03"
+      ],
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5359286369651890",
+          "source_type": "杭州交警认证政务账号",
+          "supports": "杭州市政府批准，2026 杭州马拉松 11 月 1 日举行，起跑约 7:00。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-01；日期得到杭州交警公告支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_8da43a5d108c",
+      "sample_group": "original_future_33",
+      "city_name": "杭州市",
+      "event_name": "2026杭州马拉松11月1日开跑 全新路线、完赛奖牌公布",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiT0FVX3lxTE84czRyQUFHMzI0UmhoZ1pxSUh1OUFHU1hCb1VaTU54dnRjQ1Z0QVNCRldObHVZNkktaThTcGpDTkpxVEN4TlM3eEYtSldsdnc?oc=5"
+      ],
+      "legacy_start_at": "2026-11-01",
+      "rule_start_at": "2026-11-01",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-01；日期得到杭州交警公告支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E03"
+      ],
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5359286369651890",
+          "source_type": "杭州交警认证政务账号",
+          "supports": "杭州市政府批准，2026 杭州马拉松 11 月 1 日举行，起跑约 7:00。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-01；日期得到杭州交警公告支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_4310a7ec1019",
+      "sample_group": "original_future_33",
+      "city_name": "杭州市",
+      "event_name": "【#公交信息#】#杭州# 2026吉利汽车·杭州马拉松主题巴士已上线[哇]2026年11月1日，久违的杭州马拉松将再次拉开帷幕。值得一提的是由于西兴大桥重建影响，今年的“杭马”路线首次改经老彭埠大桥（钱江二桥），比赛当日杭州地铁1/2/3/4/5/10号线各站首班发车时间将",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE01VndpMHgzdzBWb09RLU5FVmJlYkhZcjU0VEJ2NXBOMWhFeWhxdkZwQ2FrR3Z5M0lBRnZFa3VDYkJqR2hwV2hzNUU1UVlKTVJWX2RaM1FuN1RBUkdwRG9NakxTYw?oc=5"
+      ],
+      "legacy_start_at": "2026-11-01",
+      "rule_start_at": "2026-11-01",
+      "rule_end_at": null,
+      "rule_event_date_role": "ambiguous",
+      "manual_event_date": "2026-11-01；公交信息与杭州交警公告相互支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E03"
+      ],
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5359286369651890",
+          "source_type": "杭州交警认证政务账号",
+          "supports": "杭州市政府批准，2026 杭州马拉松 11 月 1 日举行，起跑约 7:00。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-01；公交信息与杭州交警公告相互支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_cfd1dabb5e54",
+      "sample_group": "original_future_33",
+      "city_name": "昆明市",
+      "event_name": "2026昆明国际车展将于11月5日至9日在滇池国际会展中心举办",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBNdk9LV3p1Y0ttdl8zUm1nSFB4WTdkb1J6S2x2SUVjNGpxMEwtRWxZaTJSWXdRN2x5bm9HUXRELWdvZ256Mm14WmU4SWo?oc=5",
+        "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1zRUNkaFZpYl96QjB0MXlCdjRSMTRNTC1sUWNYeUhTdHJhaWZBYlhpcFVvSzlXMUtnQ0xDU1FMek5pejVCNnhPVFo1R3M3Z0lsWTJRVkZVd2NWeDNrOGpyLXlKQV9uUQ?oc=5"
+      ],
+      "legacy_start_at": "2026-11-05",
+      "rule_start_at": "2026-11-05",
+      "rule_end_at": "2026-11-09",
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-05—11-09；日期得到展会官方页支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E04"
+      ],
+      "sources": [
+        {
+          "url": "https://km.szautoshow.com/mobile/exhibition.aspx",
+          "source_type": "昆明国际车展主办/展会官方页",
+          "supports": "2026 昆明国际车展 11 月 5 日至 9 日，滇池国际会展中心。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-05—11-09；日期得到展会官方页支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_cbf419541499",
+      "sample_group": "original_future_33",
+      "city_name": "金华市",
+      "event_name": "2026金华·金漪湖半程马拉松将于11月8日开赛_地方聚焦",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85Mmhjem9pZEV4dFRLQkdTSDlhUkJGOWlrSmZweWJEbkpWOUMwRk5SSUlHMU5fUER2ektVLVdGOEZkdlAtNGJqcTFmd1Flemo4SFNuN2FkMms2QQ?oc=5"
+      ],
+      "legacy_start_at": "2026-11-08",
+      "rule_start_at": "2026-11-08",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-08 08:00；日期得到官方赛事页支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E05"
+      ],
+      "sources": [
+        {
+          "url": "https://jdim.org/sb/articleview.jsf?article=767995095&code=762292341",
+          "source_type": "金华金漪湖半程马拉松官方赛事页",
+          "supports": "2026 年 11 月 8 日 8:00 开赛。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-08 08:00；日期得到官方赛事页支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_a3fea5891c78",
+      "sample_group": "original_future_33",
+      "city_name": "苏州市",
+      "event_name": "2026郑州国际车展11月12日开幕 江南甜心苏州小汤圆亮相",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTE5idUh6NUt2R2tmYmYxcmhtR1JZUkdNaVNKQklvSXhGLUNqd3JSbGZwUFg3UldMMFVGU1pkYjQ0NVFlSWFkU0ZRZjROLUV4YmNCcjdYZFh6RXRtOUgtR19Uai1Edmd0TGNUZXA5N0dFTTdsZFU?oc=5"
+      ],
+      "legacy_start_at": "2026-11-12",
+      "rule_start_at": "2026-11-12",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-12—11-16，但官方身份是郑州；记录城市苏州不匹配",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E06"
+      ],
+      "sources": [
+        {
+          "url": "https://www.zhengzhou.gov.cn/news1/10310944.jhtml",
+          "source_type": "郑州市政府门户",
+          "supports": "2026 郑州国际车展 11 月 12 日至 16 日；活动身份为郑州，不是苏州。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "identity_mismatch",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-12—11-16，但官方身份是郑州；记录城市苏州不匹配",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [
+        "event_city_conflict"
+      ],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_204d62998417",
+      "sample_group": "original_future_33",
+      "city_name": "郑州市",
+      "event_name": "2026郑州国际车展11月12日开幕 江南甜心苏州小汤圆亮相",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTE5idUh6NUt2R2tmYmYxcmhtR1JZUkdNaVNKQklvSXhGLUNqd3JSbGZwUFg3UldMMFVGU1pkYjQ0NVFlSWFkU0ZRZjROLUV4YmNCcjdYZFh6RXRtOUgtR19Uai1Edmd0TGNUZXA5N0dFTTdsZFU?oc=5"
+      ],
+      "legacy_start_at": "2026-11-12",
+      "rule_start_at": "2026-11-12",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-12—11-16；日期得到郑州市政府支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E06"
+      ],
+      "sources": [
+        {
+          "url": "https://www.zhengzhou.gov.cn/news1/10310944.jhtml",
+          "source_type": "郑州市政府门户",
+          "supports": "2026 郑州国际车展 11 月 12 日至 16 日；活动身份为郑州，不是苏州。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-12—11-16；日期得到郑州市政府支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_3d9ba51c1b02",
+      "sample_group": "original_future_33",
+      "city_name": "南昌市",
+      "event_name": "2026南昌马拉松11月15日正式开跑 报名人数创历史新高",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAtTk1ULWNxYnA0TGZEQl9hM201a0s1OThhRmlvSUlDcjNVdnZNQVc5SVRQU1ZLTmJfWTlTaDRlS2ZBT05SaHdKZmd3?oc=5"
+      ],
+      "legacy_start_at": "2026-11-15",
+      "rule_start_at": "2026-11-15",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-15; 07:30 is supported by secondary reporting only in this round",
+      "event_status": "future_scheduled_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E07",
+        "S01"
+      ],
+      "sources": [
+        {
+          "url": "https://nc.jxnews.com.cn/system/2026/09/16/031247388.shtml",
+          "source_type": "南昌新闻中心/赛事主办信息",
+          "supports": "2026 南昌马拉松 11 月 15 日 7:30，江西省体育局和南昌市政府主办。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://m.weibo.cn/2/detail/5359300760835055",
+          "source_type": "government_account_index",
+          "issuer": "南昌发布（索引显示）",
+          "access_status": "search_index_text_only_primary_open_failed",
+          "supports": "南昌、2026南昌马拉松、11月15日"
+        },
+        {
+          "url": "https://www.nanchangmarathon.cn/",
+          "source_type": "official_race_site",
+          "issuer": "南昌马拉松",
+          "access_status": "primary_open_failed",
+          "supports": "本轮未能读取正文，不能作为本轮日期证据"
+        },
+        {
+          "url": "https://news.cjn.cn/zjzycsqpd/nc_20025/202608/t5327434.htm",
+          "source_type": "media_republication",
+          "issuer": "长江网，原来源南昌日报社",
+          "access_status": "search_index_text",
+          "supports": "11月15日为比赛日，8月8日为预报名节点"
+        }
+      ],
+      "evidence_result": "government_account_index_supports_date_primary_body_unavailable",
+      "strict_authority_result": "incomplete",
+      "conclusion": "南昌发布索引显示南昌马拉松为2026-11-15；原政府账号正文和赛事官网均未能直接读取。媒体报道的07:30暂不升级为本轮权威正文确认。",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_92e97e99aec8",
+      "sample_group": "original_future_33",
+      "city_name": "南昌市",
+      "event_name": "2026南昌马拉松赛定档11月15日开跑，已有13.5万人报名参赛",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84cV93LWpKdlEwa2tEamo4UXhMamtPRnp4RGVycHcyOTlITk1aMHl6TG14cmZLb2lBOURDOUhGdFB2RnRkS2Z5MEJuUFotSjJEanZqRm1nZVc2NUU0eFdHSg?oc=5"
+      ],
+      "legacy_start_at": "2026-11-15",
+      "rule_start_at": "2026-11-15",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-15; 07:30 is supported by secondary reporting only in this round",
+      "event_status": "future_scheduled_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E07",
+        "S01"
+      ],
+      "sources": [
+        {
+          "url": "https://nc.jxnews.com.cn/system/2026/09/16/031247388.shtml",
+          "source_type": "南昌新闻中心/赛事主办信息",
+          "supports": "2026 南昌马拉松 11 月 15 日 7:30，江西省体育局和南昌市政府主办。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://m.weibo.cn/2/detail/5359300760835055",
+          "source_type": "government_account_index",
+          "issuer": "南昌发布（索引显示）",
+          "access_status": "search_index_text_only_primary_open_failed",
+          "supports": "南昌、2026南昌马拉松、11月15日"
+        },
+        {
+          "url": "https://www.nanchangmarathon.cn/",
+          "source_type": "official_race_site",
+          "issuer": "南昌马拉松",
+          "access_status": "primary_open_failed",
+          "supports": "本轮未能读取正文，不能作为本轮日期证据"
+        },
+        {
+          "url": "https://news.cjn.cn/zjzycsqpd/nc_20025/202608/t5327434.htm",
+          "source_type": "media_republication",
+          "issuer": "长江网，原来源南昌日报社",
+          "access_status": "search_index_text",
+          "supports": "11月15日为比赛日，8月8日为预报名节点"
+        }
+      ],
+      "evidence_result": "government_account_index_supports_date_primary_body_unavailable",
+      "strict_authority_result": "incomplete",
+      "conclusion": "南昌发布索引显示南昌马拉松为2026-11-15；原政府账号正文和赛事官网均未能直接读取。媒体报道的07:30暂不升级为本轮权威正文确认。",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_1bcb5302ec11",
+      "sample_group": "original_future_33",
+      "city_name": "南昌市",
+      "event_name": "完赛奖牌、参赛服亮相！2026南昌马拉松11月15日开跑",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wT3Z2WXU1Q2lmdDlQNzBuZTAyMDIzUGRVdnZyT3gzVlZCMnRBMWo2aDdoV0ZMeDRJYlFKVGRKeWNsV2ZFY1NIZmxweHZDUTNNdVliZVhZOHUtNW4wdlp1UQ?oc=5"
+      ],
+      "legacy_start_at": "2026-11-15",
+      "rule_start_at": "2026-11-15",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-15; 07:30 is supported by secondary reporting only in this round",
+      "event_status": "future_scheduled_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E07",
+        "S01"
+      ],
+      "sources": [
+        {
+          "url": "https://nc.jxnews.com.cn/system/2026/09/16/031247388.shtml",
+          "source_type": "南昌新闻中心/赛事主办信息",
+          "supports": "2026 南昌马拉松 11 月 15 日 7:30，江西省体育局和南昌市政府主办。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://m.weibo.cn/2/detail/5359300760835055",
+          "source_type": "government_account_index",
+          "issuer": "南昌发布（索引显示）",
+          "access_status": "search_index_text_only_primary_open_failed",
+          "supports": "南昌、2026南昌马拉松、11月15日"
+        },
+        {
+          "url": "https://www.nanchangmarathon.cn/",
+          "source_type": "official_race_site",
+          "issuer": "南昌马拉松",
+          "access_status": "primary_open_failed",
+          "supports": "本轮未能读取正文，不能作为本轮日期证据"
+        },
+        {
+          "url": "https://news.cjn.cn/zjzycsqpd/nc_20025/202608/t5327434.htm",
+          "source_type": "media_republication",
+          "issuer": "长江网，原来源南昌日报社",
+          "access_status": "search_index_text",
+          "supports": "11月15日为比赛日，8月8日为预报名节点"
+        }
+      ],
+      "evidence_result": "government_account_index_supports_date_primary_body_unavailable",
+      "strict_authority_result": "incomplete",
+      "conclusion": "南昌发布索引显示南昌马拉松为2026-11-15；原政府账号正文和赛事官网均未能直接读取。媒体报道的07:30暂不升级为本轮权威正文确认。",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_d0d48c4aa6c3",
+      "sample_group": "original_future_33",
+      "city_name": "长沙市",
+      "event_name": "192052人报名创历史新高！2026长沙马拉松11月15日开跑",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1abHhKOGNYX3dZOEl0MjRoUExTWWNOVFFTSEt1U0Q0Rm41MWd0cjhsc2ZZQXU4ZzQ2Y3U0ZFI5dzlyZTRKVXBXVllyZFBuenNyVVd1cUhrNW1GeFNENmM3ZzJn?oc=5"
+      ],
+      "legacy_start_at": "2026-11-15",
+      "rule_start_at": "2026-11-15",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-15 07:00；日期得到官方赛事站支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E08"
+      ],
+      "sources": [
+        {
+          "url": "https://www.marathonchangsha.com/Detail/411",
+          "source_type": "长沙马拉松官方赛事站",
+          "supports": "2026 长沙马拉松 11 月 15 日 7:00。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-15 07:00；日期得到官方赛事站支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_dcb3d2d46412",
+      "sample_group": "original_future_33",
+      "city_name": "长沙市",
+      "event_name": "定档11月15日！2026长沙马拉松报名破19万人创历史新高",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5RV3JxRlpKWWZSLXpJRmpJUldSS2l0dlZOdXg1aHlRd3hHN2dEeHVBa1NHa2p3Um84dWFuNmZoYm5fOS1UVUNGeS0xTEk?oc=5"
+      ],
+      "legacy_start_at": "2026-11-15",
+      "rule_start_at": "2026-11-15",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-15 07:00；日期得到官方赛事站支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E08"
+      ],
+      "sources": [
+        {
+          "url": "https://www.marathonchangsha.com/Detail/411",
+          "source_type": "长沙马拉松官方赛事站",
+          "supports": "2026 长沙马拉松 11 月 15 日 7:00。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-15 07:00；日期得到官方赛事站支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_3ffac103faf3",
+      "sample_group": "original_future_33",
+      "city_name": "长沙市",
+      "event_name": "总报名人数达192052人，2026长沙马拉松11月15日开跑",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IUTlxcTYwTnp3dW1QSHlVNmlGZEFfYmZUUEhBbHd1aWhRMGs0ZG0wRlpESnFudXlmOTZFMnkzTHlPNXhGOUtUeTBuTU5ZSkVXb3c?oc=5"
+      ],
+      "legacy_start_at": "2026-11-15",
+      "rule_start_at": "2026-11-15",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-15 07:00；日期得到官方赛事站支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E08"
+      ],
+      "sources": [
+        {
+          "url": "https://www.marathonchangsha.com/Detail/411",
+          "source_type": "长沙马拉松官方赛事站",
+          "supports": "2026 长沙马拉松 11 月 15 日 7:00。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-15 07:00；日期得到官方赛事站支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_d52b5f413583",
+      "sample_group": "original_future_33",
+      "city_name": "长沙市",
+      "event_name": "从“养小”到“养老”：2026长沙银发产业博览会11月20日启幕_热点",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5NZ0hBa3lvUWFlTmNHU21uTmktU0o4aVRfSWFjYkxtbmg1V2pnWHlhOVl4NjhIMk9TSWdNRktrajZwN0JGdEtMYXNqOWdLeFZxWVA5X1NPazFwZUZLZHJQMHpaSlRvaHht?oc=5"
+      ],
+      "legacy_start_at": "2026-11-20",
+      "rule_start_at": "2026-11-20",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-11-20—22；日期得到湖南省政府公告支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E09"
+      ],
+      "sources": [
+        {
+          "url": "https://hunan.gov.cn/hnszf/hnyw/szdt/202610/t20261028_34089462.html",
+          "source_type": "湖南省政府门户",
+          "supports": "2026 长沙银发产业博览会 11 月 20 日至 22 日。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-11-20—22；日期得到湖南省政府公告支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_6c148ae9cbc6",
+      "sample_group": "original_future_33",
+      "city_name": "南宁市",
+      "event_name": "2026南宁马拉松报名开启！将于12月20日鸣枪起跑",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1zOGdBMnUzVjVzQmVRX2NxZXBDODd3bDZ0VFQ5azRNS0NMMXU5WUNzdUVtYXZnYl9SOWhvbjd2R0NUNnI3blk4Y1FjbFc?oc=5"
+      ],
+      "legacy_start_at": "2026-12-20",
+      "rule_start_at": "2026-12-20",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-12-20; registration date is separate, including 2026-10-20 in the additional candidate",
+      "event_status": "future_scheduled_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E10",
+        "S07"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wanda.cn/2026/2026_1016/48499.html",
+          "source_type": "万达体育/赛事运营方公告",
+          "supports": "2026 南宁马拉松 12 月 20 日；运营方公告同时区分报名节点与比赛日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://www.wanda.cn/2026/2026_1016/48499.html",
+          "source_type": "official_event_operator",
+          "issuer": "万达体育",
+          "access_status": "primary_reopen_failed_prior_evidence_only",
+          "supports": "原报告E10的12月20日比赛日，本轮未重读正文"
+        },
+        {
+          "url": "https://www.gxnews.com.cn/staticpages/20260802/newgx6a6f23c0-21976749.shtml",
+          "source_type": "media_republication_of_race_account",
+          "issuer": "广西新闻网，原报告标注转载南宁马拉松官方微信",
+          "access_status": "not_reopened_in_this_round",
+          "supports": "原报告E19，报名节点与比赛日分离"
+        }
+      ],
+      "evidence_result": "prior_evidence_retained_primary_reopen_failed",
+      "strict_authority_result": "incomplete",
+      "conclusion": "沿用原报告E10/E19南宁赛事日期资料；本轮重开万达运营方公告失败，未形成新的官方正文核验。报名通知记录仍为报名分类，不因共享比赛日期而进入未来视图。",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_a444c0520dce",
+      "sample_group": "original_future_33",
+      "city_name": "广州市",
+      "event_name": "2026黄埔马拉松将于12月27日在广州举行",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8wTjYwWGJsN2otSmxYNWgzNTA5Z2hZRzltVnJvQ2hvZDFxbEJ2YkR2amd2TE9CanpWWUJxQWduQnliN0s2MG5FR19rMVFmdkNXNlQyM3dWbVlqLVBZTENEcDQweEpjYXp5?oc=5"
+      ],
+      "legacy_start_at": "2026-12-27",
+      "rule_start_at": "2026-12-27",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-12-27；日期得到黄埔区政府公告支持",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E11"
+      ],
+      "sources": [
+        {
+          "url": "https://www.hp.gov.cn/xwzx/zwyw/content/post_11042181.html",
+          "source_type": "广州市黄埔区政府",
+          "supports": "2026 黄埔马拉松 12 月 27 日在广州举行。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_supported",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-12-27；日期得到黄埔区政府公告支持",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_21064dd8a66c",
+      "sample_group": "original_future_33",
+      "city_name": "成都市",
+      "event_name": "#其它# 刘宇成都演唱会正在审批中，或定档2027年1月1日-2日凤凰山体育公园",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XWGRNVk93MjFIZFhHM2dMT0NHcXNEQzJSSWd4TFJoZlFfYWZRbkNORk54MjZ5d3oyX3VqazN6NVlVbm1pMDdxUlZ4SjhOR1J6RUNwei1fSVFDdEJVaGwzNVZZdnRsR1k?oc=5"
+      ],
+      "legacy_start_at": "2027-01-01",
+      "rule_start_at": "2027-01-01",
+      "rule_end_at": "2027-01-02",
+      "rule_event_date_role": "event",
+      "manual_event_date": null,
+      "event_status": "unconfirmed_conditional_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E12",
+        "S03"
+      ],
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5344861110669441",
+          "source_type": "刘宇工作室认证账号",
+          "supports": "可见官方安排不能证明成都 2027 年 1 月 1—2 日；候选原文仍是“审批中/或定档”。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "no_matching_authoritative_confirmation_found",
+      "strict_authority_result": "incomplete",
+      "conclusion": "未找到刘宇成都2027-01-01至02日的匹配主办方、场馆或主管部门确认。搜索无结果不能证明活动取消或不存在；继续排除未来视图并保持pending。",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [
+        "conditional_event"
+      ],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_5ed7a3f7e80b",
+      "sample_group": "original_future_33",
+      "city_name": "沈阳市",
+      "event_name": "2026沈阳马拉松以2.2万人的参赛规模创历史新高",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9jV2FfYjd1RkZVVHJDQmJqNkx6UUdXVktPRGNUbUpEdzBMM3ltVUdzRmN1MWh5SnpHQjdNRXRFaU41WXBHWHZZZF9naFVHMmhqY3p2SkNiN255S1V4MkE2R0U5azF0c3pH?oc=5"
+      ],
+      "legacy_start_at": "2027-02-02",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-09-06；`2.2万` 被误解析为日期，已结束",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E13"
+      ],
+      "sources": [
+        {
+          "url": "https://www.symarathon.com/",
+          "source_type": "沈阳马拉松官方赛事站",
+          "supports": "2026 沈阳马拉松为 9 月 6 日，已早于核验时间结束。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-09-06；`2.2万` 被误解析为日期，已结束",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_7f2d19a3cfcd",
+      "sample_group": "original_future_33",
+      "city_name": "郑州市",
+      "event_name": "2026郑州马拉松落幕 2.5万名跑者畅跑“天地之中”",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9XVUxfVFZwVDJsbEt4c0xRTVdDRERHcENzcjBuMER1MGxRVW9MMllxNnRDdjNYR25KT1JmeFZwRkJiVWRsSEcyQXlIakpoQ2dDOHhyVlJZelktTU5SQjFmNXVWekhrME10?oc=5"
+      ],
+      "legacy_start_at": "2027-02-05",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-10-18；`2.5万` 被误解析为日期，已结束",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E14"
+      ],
+      "sources": [
+        {
+          "url": "https://zzga.zhengzhou.gov.cn/jwzx/10303020.jhtml",
+          "source_type": "郑州公安/政府信息",
+          "supports": "2026 郑州马拉松 10 月 18 日举行，约 2.5 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-10-18；`2.5万` 被误解析为日期，已结束",
+      "latest_primary_bucket": "past_expired",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_18791852e997",
+      "sample_group": "original_future_33",
+      "city_name": "郑州市",
+      "event_name": "2026郑州马拉松鸣枪开赛 2.5万名选手参赛",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03Tlg3QkRCb2FiUEx4akJHMmlqODJ2aHUtMVhlZVd2dUFkSkpwUGtEanFlTDlUTHd3aFYzZGg5bVRZbWg3RGhYUkxZMld6elAzQlE?oc=5"
+      ],
+      "legacy_start_at": "2027-02-05",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-10-18；`2.5万` 被误解析为日期，已结束",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E14"
+      ],
+      "sources": [
+        {
+          "url": "https://zzga.zhengzhou.gov.cn/jwzx/10303020.jhtml",
+          "source_type": "郑州公安/政府信息",
+          "supports": "2026 郑州马拉松 10 月 18 日举行，约 2.5 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-10-18；`2.5万` 被误解析为日期，已结束",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_9e0e0a6d2bfd",
+      "sample_group": "original_future_33",
+      "city_name": "成都市",
+      "event_name": "2026成都马拉松开跑 3.5万名跑者用脚步丈量蓉城",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB5WGpPZEUzQVlqcGFvTE9XSWt2Wk5BOEZCR1lEbHQyTjc2MVNXem1uU3ZOUDJPWjdNU1dQVVVBSE43QkprZDB6NWhlYVE1QQ?oc=5"
+      ],
+      "legacy_start_at": "2027-03-05",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-10-25；`3.5万` 被误解析为日期，已结束",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E15"
+      ],
+      "sources": [
+        {
+          "url": "https://chengdumarathon.cn/column/articleDetail/95?column_id=66&lang=cn",
+          "source_type": "成都马拉松官方规程页",
+          "supports": "2026 成都马拉松为 10 月 25 日，规模 3.5 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-10-25；`3.5万` 被误解析为日期，已结束",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_7c6b2e43c359",
+      "sample_group": "original_future_33",
+      "city_name": "成都市",
+      "event_name": "2026成都马拉松开跑 3.5万跑者用脚步丈量蓉城",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9IRXZ5T0E2QjkwY3paU2gtX200cDRNb3JmMFN6bXpGSktBMmQwQ3dOb2ZlVWJQeDYyS3IwYjlVc3pSZThwRlpFZ0pDSXpwaEN1Y2Roc195ZUs0V3RJVl9yb1BCOA?oc=5"
+      ],
+      "legacy_start_at": "2027-03-05",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-10-25；`3.5万` 被误解析为日期，已结束",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E15"
+      ],
+      "sources": [
+        {
+          "url": "https://chengdumarathon.cn/column/articleDetail/95?column_id=66&lang=cn",
+          "source_type": "成都马拉松官方规程页",
+          "supports": "2026 成都马拉松为 10 月 25 日，规模 3.5 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-10-25；`3.5万` 被误解析为日期，已结束",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_815557cbb864",
+      "sample_group": "original_future_33",
+      "city_name": "成都市",
+      "event_name": "3.5万人蓉城竞跑，2026年成都马拉松举行",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9vNzVEVHFwODllbTk2bGwtMUl5dlUzdlR4amQwTWRHclRCamdJMUREc1NCbk1XVXMzQThoVnE4VjR1d050QjZmenV2T1lCVWxPSFZqdDFLenFMak5YOF82bHFIdw?oc=5"
+      ],
+      "legacy_start_at": "2027-03-05",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-10-25；`3.5万` 被误解析为日期，已结束",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E15"
+      ],
+      "sources": [
+        {
+          "url": "https://chengdumarathon.cn/column/articleDetail/95?column_id=66&lang=cn",
+          "source_type": "成都马拉松官方规程页",
+          "supports": "2026 成都马拉松为 10 月 25 日，规模 3.5 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-10-25；`3.5万` 被误解析为日期，已结束",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_05f5019ebcbd",
+      "sample_group": "original_future_33",
+      "city_name": "成都市",
+      "event_name": "“巴适得很！”2026成都马拉松昨鸣枪开跑 3.5万名跑者用脚步丈量十年成马",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BX1RHaDlNTlVzZk5IS2RBSTFNTlFCbDRaamRtdmlZY1haWVN0R1JuMjEya1g0YXV6N3JKSjJMOWh2QkdhZnpTc1VMTllMLVZPSkE?oc=5"
+      ],
+      "legacy_start_at": "2027-03-05",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-10-25；“昨鸣枪开跑”也表明是历史报道",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E15"
+      ],
+      "sources": [
+        {
+          "url": "https://chengdumarathon.cn/column/articleDetail/95?column_id=66&lang=cn",
+          "source_type": "成都马拉松官方规程页",
+          "supports": "2026 成都马拉松为 10 月 25 日，规模 3.5 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-10-25；“昨鸣枪开跑”也表明是历史报道",
+      "latest_primary_bucket": "past_expired",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_556a9203ea87",
+      "sample_group": "original_future_33",
+      "city_name": "长沙市",
+      "event_name": "19.2万人角逐3.5万名额 2026长沙马拉松11月开跑",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wRkl3TjRjbl9WakFBRzl5NzB4OE1KMGI1Y1FyRHdTWXlmZE5neU9lVDIwQmJReU1tYy0xZXJGZ3dlN2xGTC04QnRmUmlja0c2UnlSZFk3YWpmQWFzQWNBcGpJT0dfb20z?oc=5"
+      ],
+      "legacy_start_at": "2027-03-05",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "reference_period",
+      "manual_event_date": "实际举办日为 2026-11-15；`3.5万` 被误解析为日期",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E08"
+      ],
+      "sources": [
+        {
+          "url": "https://www.marathonchangsha.com/Detail/411",
+          "source_type": "长沙马拉松官方赛事站",
+          "supports": "2026 长沙马拉松 11 月 15 日 7:00。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_wrong_date",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际举办日为 2026-11-15；`3.5万` 被误解析为日期",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_d0785cb71e17",
+      "sample_group": "original_future_33",
+      "city_name": "西安市",
+      "event_name": "2026西安马拉松燃动全城 3.6万名跑者共赴金秋之约",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVRVpLdjhlbjFEekUzUG13Vjlvc3dtSjlOVUg2REpXa3BfRWRtTmlSbnFvSkFDakFoZHJuRkdnR3JzYWJTSkstZjRaMGFMNk9ZZlVKSlZVQnNKMkU3clNj?oc=5"
+      ],
+      "legacy_start_at": "2027-03-06",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-10-18；`3.6万` 被误解析为日期，已结束",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E16",
+        "E25"
+      ],
+      "sources": [
+        {
+          "url": "https://xatyj.xa.gov.cn/xwzx/tzgg/2084571318943485954.html",
+          "source_type": "西安市体育局",
+          "supports": "2026 西安马拉松 10 月 18 日举行。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://qjxq.xa.gov.cn/xwzx/xwdt/2115015022137151490.html",
+          "source_type": "西安市区县政府/赛后信息",
+          "supports": "西安马拉松 10 月 18 日已结束，约 3.6 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-10-18；`3.6万` 被误解析为日期，已结束",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_e28f38e55bf9",
+      "sample_group": "original_future_33",
+      "city_name": "西安市",
+      "event_name": "3.6万名跑者逐梦西安马拉松赛",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xM2hMc0ZhYVVhZ19wWVBwVXZVNjB6Mk02eHBoWnRMWWFrQzZLZmw1N0xRalZWTFJZLWNkRnZtOGVaSEp2elZlY2xfajlSbkdjMlVvQTFncGVjRUZwNUdsd0pjLTdZdGF4LWhB?oc=5"
+      ],
+      "legacy_start_at": "2027-03-06",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "实际为 2026-10-18；`3.6万` 被误解析为日期，已结束",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E16",
+        "E25"
+      ],
+      "sources": [
+        {
+          "url": "https://xatyj.xa.gov.cn/xwzx/tzgg/2084571318943485954.html",
+          "source_type": "西安市体育局",
+          "supports": "2026 西安马拉松 10 月 18 日举行。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://qjxq.xa.gov.cn/xwzx/xwdt/2115015022137151490.html",
+          "source_type": "西安市区县政府/赛后信息",
+          "supports": "西安马拉松 10 月 18 日已结束，约 3.6 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际为 2026-10-18；`3.6万` 被误解析为日期，已结束",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_b28af2f94dde",
+      "sample_group": "original_future_33",
+      "city_name": "徐州市",
+      "event_name": "12345热线收到4.8万件演唱会诉求，媒体：公共资源不是饭圈“战场”",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tQjRhcFlfdV9LYjFqREs0ZnpsNHpJbktuMUFDLWc5U29tenZwV1lIamt1TmlyVnR0b0pxNkJ1cXNRUzJSR2RmSUp4ZTNFVnM5WUFxN2NtcGk2a19RZXVPWUlIc2JfcERDdzItZzdwQWtockt4?oc=5"
+      ],
+      "legacy_start_at": "2027-04-08",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "对应演出为 2026-08-25、26、28、29；`4.8万` 是热线件数，不是日期",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E17",
+        "E26"
+      ],
+      "sources": [
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_33850638",
+          "source_type": "徐州警方政务信息转载",
+          "supports": "徐州 TOP 登陆少年演出为 8 月 25、26、28、29 日。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_33996441",
+          "source_type": "徐州 12345 政务信息转载",
+          "supports": "4.8 万是热线诉求数量，不是日期；对应演出为 8 月四场。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "对应演出为 2026-08-25、26、28、29；`4.8万` 是热线件数，不是日期",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [
+        "city_not_confirmed"
+      ],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_260252919845",
+      "sample_group": "original_future_33",
+      "city_name": "徐州市",
+      "event_name": "男团演唱会，粉丝狂打4.8万通12345举报施压，平台回应",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RNkJzR3p5TDRubDNuRHROa2hGLW56ZGZZakJoaXJsQ2pNNEM0dlNlV0lPbmRYbGo4RklFWkQ4TU1TUi00X3JQUFdMZjd0ZWs0SVIwUnpfVldqZVVXNHRySko3VFh4SnBQZmc?oc=5"
+      ],
+      "legacy_start_at": "2027-04-08",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "对应演出为 2026-08-25、26、28、29；`4.8万` 是热线件数，不是日期",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E17",
+        "E26"
+      ],
+      "sources": [
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_33850638",
+          "source_type": "徐州警方政务信息转载",
+          "supports": "徐州 TOP 登陆少年演出为 8 月 25、26、28、29 日。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_33996441",
+          "source_type": "徐州 12345 政务信息转载",
+          "supports": "4.8 万是热线诉求数量，不是日期；对应演出为 8 月四场。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_contradicted_historical",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "对应演出为 2026-08-25、26、28、29；`4.8万` 是热线件数，不是日期",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [
+        "city_not_confirmed"
+      ],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_298f298695e9",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "西安市",
+      "event_name": "#其它# 2026西安马拉松参赛跑者通过钟楼盘道。 在奔跑中感受世界人文之都的魅力#2026西安马拉松",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMia0FVX3lxTFBSVkJ5cWhqeXdrbE9mMXRLV2ZpMC1XT0liT3BzQlkxcjRqT0RSSFNDWEZGZ3N5cVNGNVJsblFDYzctUGNxY1lwMm1aN3V4ZXhVWUNBUUxPUW1PS0ZjbmFMcUFJT05uUGE5N0RR?oc=5"
+      ],
+      "legacy_start_at": null,
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "原文没有举办日期；官方资料表明相关赛事是 2026-10-18，已结束，但本条不自动补日期",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E16",
+        "E25"
+      ],
+      "sources": [
+        {
+          "url": "https://xatyj.xa.gov.cn/xwzx/tzgg/2084571318943485954.html",
+          "source_type": "西安市体育局",
+          "supports": "2026 西安马拉松 10 月 18 日举行。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://qjxq.xa.gov.cn/xwzx/xwdt/2115015022137151490.html",
+          "source_type": "西安市区县政府/赛后信息",
+          "supports": "西安马拉松 10 月 18 日已结束，约 3.6 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "date_review_correctly_held",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "原文没有举办日期；官方资料表明相关赛事是 2026-10-18，已结束，但本条不自动补日期",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_203cc4315104",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "南京市",
+      "event_name": "#博君一肖[超话]# 终于 盼到了 20261023 肖战［出口·我们］巡回演唱会南京站",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB6R2pMVTgzSF9xUzdLMVM5NWcxaHk2UlZOeC1BMlNEcE5oTmtCLUl6N3JDT3dCdmJBT0lkem00MG1xSkh2OE5EZXJyZGl2eGJQZUpac1BjRmFqdkd5TUl3R29PUQ?oc=5"
+      ],
+      "legacy_start_at": null,
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "官方/艺人侧资料支持南京站 10-23（另有 10-25 场次）；原记录保持复核，不自动解析",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E18"
+      ],
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5353878510899783",
+          "source_type": "肖战演唱会官方/艺人侧账号",
+          "supports": "南京站售票节点为 10 月 15 日 10:05，演出日期为 10 月 23、25 日；售票日期不能替代举办日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "compact_date_held_for_review",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "官方/艺人侧资料支持南京站 10-23（另有 10-25 场次）；原记录保持复核，不自动解析",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_5f7457414239",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "珠海市",
+      "event_name": "10月珠海见！ReWork湾区国际AI办公应用及办公空间展览会，解锁AI办公产业新图景！",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1XSWpmTmNDVVJ5X0xWNVJtMUh0bnBDV1kyQ1oxU1o0UWJmRlE5VENYa3hvMnpRbDFmQ0pFTnFFbkxyMFAzYXBRZEswamhwajdCN3MwZlJVbXJzWDkyZVE?oc=5"
+      ],
+      "legacy_start_at": "2026-10-01",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "reference_period",
+      "manual_event_date": "实际展期 2026-10-15—17，且已结束；月份范围不能作为单日未来活动",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E23"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rtmworld.cn/news/exhibition/view_id/6167",
+          "source_type": "ReWork 展会主办方/展会媒体",
+          "supports": "珠海展会实际为 10 月 15—17 日，原记录“10 月珠海见”是月份范围，且已结束。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://www.rtmworld.cn/news/exhibition/view_id/6198",
+          "source_type": "ReWork 展会主办方/展会媒体",
+          "supports": "珠海展会实际为 10 月 15—17 日，原记录“10 月珠海见”是月份范围，且已结束。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "range_not_single_event_date",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "实际展期 2026-10-15—17，且已结束；月份范围不能作为单日未来活动",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_3644cdd4c268",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "南京市",
+      "event_name": "#华晨宇[超话]# 💕 爱有多深刻 @华晨宇yu #2026华晨宇火星演唱会# hcy [261024南京] http://t.cn/A6eADqus ​",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9YY0NMQUVvVW14R21rUDh6RTJmRXdfTnowdVNnM1dta2ZRWmV6YkktbVFTQlBmLUZqT3J1UktFQUs3eHE1QXNvTEM3QUROeEVYbXpCYXdMU1NoS3pVWVhpNVhyUQ?oc=5"
+      ],
+      "legacy_start_at": null,
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "2026-10-24; separate performances also on 2026-10-25",
+      "event_status": "past_scheduled_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E24",
+        "S02"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sina.cn/news/detail/5336165348805843.html",
+          "source_type": "火星演唱会官方账号的媒体镜像/辅助来源",
+          "supports": "社交内容中的 `261024` 可能指 2026-10-24，但当前证据不足以完成身份与完整日期的权威映射，保持复核。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://www.sina.cn/news/detail/5353666943123948.html",
+          "source_type": "authenticated_official_account_mirror",
+          "issuer": "华晨宇工作室；页面显示官方微博认证",
+          "access_status": "mirror_body_read",
+          "supports": "2026华晨宇火星演唱会南京站10月24日、25日场，预售日期为10月13日"
+        },
+        {
+          "url": "https://weibo.com/2/detail/5353666943123948",
+          "source_type": "artist_official_account",
+          "issuer": "华晨宇工作室",
+          "access_status": "primary_open_failed",
+          "supports": "原帖尚未直接读取"
+        },
+        {
+          "url": "https://js.cri.cn/20261026/bfea6b68-f86e-7118-5c32-9649b6dc5853.html",
+          "source_type": "media_report",
+          "issuer": "国际在线",
+          "access_status": "search_index_text",
+          "supports": "10月24日至25日南京汤山音乐谷演出报道"
+        }
+      ],
+      "evidence_result": "authenticated_studio_mirror_supports_date_primary_unavailable",
+      "strict_authority_result": "incomplete",
+      "conclusion": "新浪镜像正文显示发布者为华晨宇工作室及其官方微博认证，并列出2026年南京站10月24日、25日场；可增强261024的日期映射。原微博正文不可访问，严格的原始正文核验仍未完成。",
+      "latest_primary_bucket": "event_date_review",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_b178c8b5c408",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "南京市",
+      "event_name": "肖战出道十周年南京演唱会想看人数突破200万 10月15日10:05正式开售 100%公开售票 这次“出口·我们”见！",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BN18xMWg5TnpMcHMtNF9KdjRDYkhwZWxlRDJfNUpHeGptNGdPWU10SXo3OVVNU0o0VXhsYkJaUGtESlJPdDVNT2pZbEE2M1NFRHRtdkxZdy1McXMtbDJxbHAtZzhzRUFyRXJnWTV5SGtDLUgy?oc=5"
+      ],
+      "legacy_start_at": "2026-10-01",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "ticket_sale",
+      "manual_event_date": "售票 10-15 10:05；举办日期 10-23、25；正确归入开票通知，不能以售票日作为举办日",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E18"
+      ],
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5353878510899783",
+          "source_type": "肖战演唱会官方/艺人侧账号",
+          "supports": "南京站售票节点为 10 月 15 日 10:05，演出日期为 10 月 23、25 日；售票日期不能替代举办日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "ticketing_notice_correct",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "售票 10-15 10:05；举办日期 10-23、25；正确归入开票通知，不能以售票日作为举办日",
+      "latest_primary_bucket": "ticketing_registration",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_c582cfbe9c6b",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "南宁市",
+      "event_name": "2026南宁马拉松明日开始报名！报名方式、日程表速收藏",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBmMlFieFZSd205cTZfaEYwUDhKX0Uzbng0cTBTUURrZDhBYWV6aHJPMEFMRkY5OXVhSlhka1FQbWMtMWMxQUZ0V1lPdVY?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3TTFPSnN2NzM2OEUyOHVKVmdET3cxZHV0ek4zMVdnY01lMlBrb3pHUDRTMmN3SnV1dzZkUFdfbU4zRk5rWnl6Sjl6T21TVDNKNi1aWVdB?oc=5"
+      ],
+      "legacy_start_at": null,
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "2026-12-20; registration date is separate, including 2026-10-20 in the additional candidate",
+      "event_status": "future_scheduled_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E19",
+        "S07"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gxnews.com.cn/staticpages/20260802/newgx6a6f23c0-21976749.shtml",
+          "source_type": "广西新闻网转载南宁马拉松官方微信",
+          "supports": "区分报名节点与 12 月 20 日 7:30 比赛日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://www.wanda.cn/2026/2026_1016/48499.html",
+          "source_type": "official_event_operator",
+          "issuer": "万达体育",
+          "access_status": "primary_reopen_failed_prior_evidence_only",
+          "supports": "原报告E10的12月20日比赛日，本轮未重读正文"
+        },
+        {
+          "url": "https://www.gxnews.com.cn/staticpages/20260802/newgx6a6f23c0-21976749.shtml",
+          "source_type": "media_republication_of_race_account",
+          "issuer": "广西新闻网，原报告标注转载南宁马拉松官方微信",
+          "access_status": "not_reopened_in_this_round",
+          "supports": "原报告E19，报名节点与比赛日分离"
+        }
+      ],
+      "evidence_result": "prior_evidence_retained_primary_reopen_failed",
+      "strict_authority_result": "incomplete",
+      "conclusion": "沿用原报告E10/E19南宁赛事日期资料；本轮重开万达运营方公告失败，未形成新的官方正文核验。报名通知记录仍为报名分类，不因共享比赛日期而进入未来视图。",
+      "latest_primary_bucket": "ticketing_registration",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_339b4ee162ac",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "南昌市",
+      "event_name": "2026年南昌10月演出排期安排来了",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4yVmEyTmhhaWkwZDhXa3VsOWdhdzNfbGk2WDRsdFZsWUhHRHlXVDBxQ1hRUHNJQzZTc0d3dXZBVmtUWnlvR2ItbHBSQXE?oc=5"
+      ],
+      "legacy_start_at": "2026-10-01",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "reference_period",
+      "manual_event_date": "仅是 10 月排期清单，不对应一个活动身份或单日举办日期",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E20"
+      ],
+      "sources": [
+        {
+          "url": "https://i.ifeng.com/c/8wu0o2SgHkL",
+          "source_type": "聚合/排期页，非权威单场来源",
+          "supports": "仅列南昌 10 月或国庆演出清单，不能证明一个单独活动日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://feng.ifeng.com/c/8wnNDlCO9Ud",
+          "source_type": "聚合/排期页，非权威单场来源",
+          "supports": "仅列南昌 10 月或国庆演出清单，不能证明一个单独活动日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "schedule_roundup_correct",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "仅是 10 月排期清单，不对应一个活动身份或单日举办日期",
+      "latest_primary_bucket": "schedule_roundup",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_77c03fd30d3e",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "南昌市",
+      "event_name": "2026南昌国庆演出排期安排来了！",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9GX2hkRWlGMEJkVWFEQTgzR2VYVUhaTXNpTjdlMGtjNXRYdy1wOXk5RWY5TlA1SGNKN0tnZG9oTHprSE5ObHVNWkdSNlY4S2ExcE90Y0xB?oc=5"
+      ],
+      "legacy_start_at": null,
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "仅是国庆期间多场活动的汇总，不应进入单场未来视图",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E20"
+      ],
+      "sources": [
+        {
+          "url": "https://i.ifeng.com/c/8wu0o2SgHkL",
+          "source_type": "聚合/排期页，非权威单场来源",
+          "supports": "仅列南昌 10 月或国庆演出清单，不能证明一个单独活动日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://feng.ifeng.com/c/8wnNDlCO9Ud",
+          "source_type": "聚合/排期页，非权威单场来源",
+          "supports": "仅列南昌 10 月或国庆演出清单，不能证明一个单独活动日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "schedule_roundup_correct",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "仅是国庆期间多场活动的汇总，不应进入单场未来视图",
+      "latest_primary_bucket": "schedule_roundup",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_61b0ee16b856",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "南京市",
+      "event_name": "靠谱高效！2026南京10-12月演唱会、话剧、音乐剧等演出靠谱购票指南",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5jZ0hoUXAtVUdLSGxGeFZJTWVib3BYVUVzXy1xV2wyVjl6dFpTcUctaHRMUDFOME9OU1RJY1p0eG5qUTE0c29WRzJ3aFZtaEU?oc=5"
+      ],
+      "legacy_start_at": "2026-12-01",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "reference_period",
+      "manual_event_date": "购票攻略，覆盖 10—12 月，不是单个活动举办日期",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E21"
+      ],
+      "sources": [
+        {
+          "url": "https://post.smzdm.com/zz/p/a82p57p7/",
+          "source_type": "购票指南/聚合内容，非权威单场来源",
+          "supports": "南京 10—12 月演出购票指南，属于参考范围。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "guide_correct",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "购票攻略，覆盖 10—12 月，不是单个活动举办日期",
+      "latest_primary_bucket": "guides_other",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_5a8603876112",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "南宁市",
+      "event_name": "2026南宁下半年演出购票攻略：演唱会、脱口秀、舞剧一站式指南",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9pd2p2Vmt5RExUWGk4TFFPQUtkX001VHZVcFBlcUZ6NW5BdVd4cUFXN05pLVVYcmVGM0x5SjVFVXJHMU1xYnZBTjRKMTVFc3c?oc=5"
+      ],
+      "legacy_start_at": null,
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "unknown",
+      "manual_event_date": "一站式攻略，未提供可独立核验的单场活动身份/举办日",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E22"
+      ],
+      "sources": [
+        {
+          "url": "https://hainan.ifeng.com/c/8wfugIizdYz",
+          "source_type": "演出攻略/聚合内容，非权威单场来源",
+          "supports": "南宁下半年演出攻略，未给出一个可核验的单场活动身份与举办日期。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "guide_correct",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "一站式攻略，未提供可独立核验的单场活动身份/举办日",
+      "latest_primary_bucket": "guides_other",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_dc1c06214c53",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "西安市",
+      "event_name": "#媒体原创 10月18日 陕西西安。2026西安马拉松赛 男子组冠军诞生！陕西选手武明瑶以2小时10分16秒夺冠#2026西安马拉松赛",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMia0FVX3lxTE41R2gyTHF3ZXZZa1A1d0dtTzVnSXVrejNUVW9ocEd6Q29LV3FiODFBblZLaWdGQS1yX0s4QTRZMmJLbjlBRVJTSVhKRWlBWVJ1Nzl3bmNlQmJIWmVlRzlVcEFWYVZrVTBBUlJR?oc=5"
+      ],
+      "legacy_start_at": "2026-10-01",
+      "rule_start_at": "2026-10-18",
+      "rule_end_at": null,
+      "rule_event_date_role": "ambiguous",
+      "manual_event_date": "2026-10-18 赛事报道，已结束，不进入未来视图",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E16",
+        "E25"
+      ],
+      "sources": [
+        {
+          "url": "https://xatyj.xa.gov.cn/xwzx/tzgg/2084571318943485954.html",
+          "source_type": "西安市体育局",
+          "supports": "2026 西安马拉松 10 月 18 日举行。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://qjxq.xa.gov.cn/xwzx/xwdt/2115015022137151490.html",
+          "source_type": "西安市区县政府/赛后信息",
+          "supports": "西安马拉松 10 月 18 日已结束，约 3.6 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "historical_report_correct",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-10-18 赛事报道，已结束，不进入未来视图",
+      "latest_primary_bucket": "past_expired",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_d494c40ed023",
+      "sample_group": "stratified_boundary_12",
+      "city_name": "西安市",
+      "event_name": "10月18日上午7时30分2026西安马拉松赛 在永宁门鸣枪开跑。#2026西安马拉松",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxPOF8tMnY2RUhHSkNXOUZlWElwbFNHbEw1bkJnN3FBYU12cXBGRHZLazlVTWMwTUM0M2RmUkhxbEVsS0pkc210TVVXTndUTFMxeWE5X0FhMW9XamJ6X2pvUVlyVFV0cWhBWUNxcWdEYXpKNVJxNmFmOU42MENSa3hXUTlFWl9sbDNMeHlmZw?oc=5"
+      ],
+      "legacy_start_at": "2026-10-01",
+      "rule_start_at": "2026-10-18",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-10-18 07:30，已明确开跑，不进入未来视图",
+      "event_status": "unknown_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T14:52:42+08:00",
+      "prior_checked_at": "2026-10-29T14:52:42+08:00",
+      "evidence_refs": [
+        "E16",
+        "E25"
+      ],
+      "sources": [
+        {
+          "url": "https://xatyj.xa.gov.cn/xwzx/tzgg/2084571318943485954.html",
+          "source_type": "西安市体育局",
+          "supports": "2026 西安马拉松 10 月 18 日举行。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        },
+        {
+          "url": "https://qjxq.xa.gov.cn/xwzx/xwdt/2115015022137151490.html",
+          "source_type": "西安市区县政府/赛后信息",
+          "supports": "西安马拉松 10 月 18 日已结束，约 3.6 万人。",
+          "access_status": "inherited_from_prior_report_not_reopened_in_round_2"
+        }
+      ],
+      "evidence_result": "historical_event_correct",
+      "strict_authority_result": "not_reassessed_in_round_2",
+      "conclusion": "2026-10-18 07:30，已明确开跑，不进入未来视图",
+      "latest_primary_bucket": "past_expired",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_bd8e6c831c64",
+      "sample_group": "expanded_4",
+      "city_name": "南宁市",
+      "event_name": "最新消息：2026南宁马拉松将于10月20日10：00开启报名，比赛时间为12月20日",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRekluRi1wLXA2SWp6cktFeUdrTHpMdi1rXzFkYWNPaHJ2U3ZHY1pNYWE2VVBydy1wczR1TU5OVEM0d2RMYmJhNU0wOXluLXBQNHB3R1d3?oc=5"
+      ],
+      "legacy_start_at": "2026-12-20",
+      "rule_start_at": "2026-12-20",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-12-20; registration date is separate, including 2026-10-20 in the additional candidate",
+      "event_status": "future_scheduled_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": null,
+      "evidence_refs": [
+        "S07"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wanda.cn/2026/2026_1016/48499.html",
+          "source_type": "official_event_operator",
+          "issuer": "万达体育",
+          "access_status": "primary_reopen_failed_prior_evidence_only",
+          "supports": "原报告E10的12月20日比赛日，本轮未重读正文"
+        },
+        {
+          "url": "https://www.gxnews.com.cn/staticpages/20260802/newgx6a6f23c0-21976749.shtml",
+          "source_type": "media_republication_of_race_account",
+          "issuer": "广西新闻网，原报告标注转载南宁马拉松官方微信",
+          "access_status": "not_reopened_in_this_round",
+          "supports": "原报告E19，报名节点与比赛日分离"
+        }
+      ],
+      "evidence_result": "prior_evidence_retained_primary_reopen_failed",
+      "strict_authority_result": "incomplete",
+      "conclusion": "沿用原报告E10/E19南宁赛事日期资料；本轮重开万达运营方公告失败，未形成新的官方正文核验。报名通知记录仍为报名分类，不因共享比赛日期而进入未来视图。",
+      "latest_primary_bucket": "future_dated_event",
+      "is_future_candidate_after_fix": true,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_bf7cd401e149",
+      "sample_group": "expanded_4",
+      "city_name": "遂宁市",
+      "event_name": "拼手速！孙楠遂宁演唱会9月16日11点咪咕音乐开抢",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBQLXpubmwxN0ZLZFhkRy0wcm9LbUJ6V3Q1X204S3d4UXZmRE9ibkdocFM5QmFpZjlNTG9CMnF0a2d3Q2t6ZXhyc3pNZw?oc=5"
+      ],
+      "legacy_start_at": "2027-09-16",
+      "rule_start_at": null,
+      "rule_end_at": null,
+      "rule_event_date_role": "ticket_sale",
+      "manual_event_date": "2026-10-24 19:30; ticket presale 2026-09-16 11:00",
+      "event_status": "past_reported_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": null,
+      "evidence_refs": [
+        "S05"
+      ],
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5344168849445632",
+          "source_type": "event_partner_account_index",
+          "issuer": "咪咕国风（索引显示）",
+          "access_status": "search_index_text_only_primary_open_failed",
+          "supports": "2026-10-24 19:30，遂宁市体育中心体育场"
+        },
+        {
+          "url": "https://cbgc.scol.com.cn/news/8086731",
+          "source_type": "media_report",
+          "issuer": "川观新闻",
+          "access_status": "search_index_text",
+          "supports": "2026-10-24晚遂宁演唱会已上演的报道"
+        },
+        {
+          "url": "https://yule.360.com/detail/5208394",
+          "source_type": "media_republication",
+          "issuer": "源点新闻转载",
+          "access_status": "search_index_text",
+          "supports": "2026-09-16 11:00开售、2026-10-24开唱，两个日期角色不同"
+        }
+      ],
+      "evidence_result": "operator_index_and_media_support_past_event",
+      "strict_authority_result": "incomplete",
+      "conclusion": "协办方咪咕国风索引及演出当晚媒体报道对应遂宁孙楠演唱会2026-10-24；原发现标题9月16日11点为开抢节点。协办方原帖未读取，不将其标为已核验。",
+      "latest_primary_bucket": "ticketing_registration",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_c9b487791db8",
+      "sample_group": "expanded_4",
+      "city_name": "沈阳市",
+      "event_name": "展会赋能产业深耕文旅融合2026沈阳—韩国投资贸易博览会精彩纷呈9月23日",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CZTZYOXRtMXB4Ti0wUjJZSmRteDBQRDM5endWRlFyUTNzRnJKaG01SC1vX0g5Z3h2Vm1KU1dVSEI5dW12ZHZuWHA5c1hRZ2tRdk1VQTJ3?oc=5"
+      ],
+      "legacy_start_at": "2027-09-23",
+      "rule_start_at": "2026-09-23",
+      "rule_end_at": null,
+      "rule_event_date_role": "ambiguous",
+      "manual_event_date": "2026-09-20 to 2026-09-25 overall programme; 2026-09-23 afternoon for the named expo activity",
+      "event_status": "past_scheduled_period_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": null,
+      "evidence_refs": [
+        "S04"
+      ],
+      "sources": [
+        {
+          "url": "https://www.ln.gov.cn/web/spzb/2026nxwfbh/2026090413401329466/index.shtml",
+          "source_type": "government_primary_transcript",
+          "issuer": "辽宁省政府新闻办；省商务厅、沈阳市商务局",
+          "access_status": "primary_body_read",
+          "supports": "2026-09-04发布会，实录中2026沈阳—韩国投资贸易博览会9月20日至25日及9月23日下午安排"
+        },
+        {
+          "url": "https://www.ln.gov.cn/web/ywdt/zymtkln/2026092308181161939/index.shtml",
+          "source_type": "government_republication_of_media",
+          "issuer": "辽宁省政府门户，原来源中国新闻网",
+          "access_status": "search_index_text",
+          "supports": "9月20日已举行的配套交流活动；不替代整个展会的完成证明"
+        }
+      ],
+      "evidence_result": "government_primary_body_supports_past_schedule",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "辽宁省政府新闻发布会文字实录明确该活动为2026年9月，博览会总体活动期为9月20日至25日，并提到9月23日下午的博览会活动。足以否定旧记录2027-09-23；发布会是预告，不单凭它断言实际举办完成。",
+      "latest_primary_bucket": "past_expired",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    },
+    {
+      "event_id": "evt_5c82713cc03a",
+      "sample_group": "expanded_4",
+      "city_name": "贵阳市",
+      "event_name": "国际大“咖”云集！2026贵阳国际咖啡博览会9月24日启幕",
+      "discovery_source_urls": [
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1UcmVSNGdqMjFmYjFVVHAyVGdCVWtyOEdTZGc3LUs5cjVGeWY2TlFWTl9DT25QaFZvZ0U3WnBjWjl5TmR5Yy1pZ0xyOEM?oc=5"
+      ],
+      "legacy_start_at": "2027-09-24",
+      "rule_start_at": "2026-09-24",
+      "rule_end_at": null,
+      "rule_event_date_role": "event",
+      "manual_event_date": "2026-09-24 to 2026-09-26",
+      "event_status": "past_reported_pending",
+      "snapshot_event_status": "unknown",
+      "review_status_before": "pending",
+      "review_status_after": "pending",
+      "verification_status": "not_verified",
+      "checked_at": "2026-10-29T15:16:30+08:00",
+      "prior_checked_at": null,
+      "evidence_refs": [
+        "S06"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sohu.com/a/1040936890_122675399",
+          "source_type": "self_identified_organizer_account",
+          "issuer": "云南泰达；正文称云南泰达会展策划有限公司主办",
+          "access_status": "body_read_issuer_not_independently_authenticated",
+          "supports": "2026-09-24至26日，贵阳国际会议展览中心"
+        },
+        {
+          "url": "https://www.gzastv.cn/ac/b/content_201036.shtml",
+          "source_type": "official_media_republication",
+          "issuer": "安顺市广播电视台，原来源贵州日报",
+          "access_status": "body_read",
+          "supports": "2026-09-29报道回顾9月24日至26日已举办展会"
+        }
+      ],
+      "evidence_result": "self_identified_organizer_and_media_support_past_dates",
+      "strict_authority_result": "incomplete",
+      "conclusion": "署名云南泰达的搜狐号正文自称主办方并给出9月24日至26日，安顺市广播电视台转载贵州日报赛后报道也对应同一展期；搜狐账号主体未独立认证，严格权威身份核验仍待补。",
+      "latest_primary_bucket": "past_expired",
+      "is_future_candidate_after_fix": false,
+      "future_exclusion_reasons": [],
+      "next_action": "retain pending; complete primary source/body and identity check before any release"
+    }
+  ]
+}

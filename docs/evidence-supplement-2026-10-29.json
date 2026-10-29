@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-10-29T15:16:30+08:00",
+  "baseline_commit": "75e83e9978786bf0eb0401def17b3c42d096c96d",
+  "rules_review_base_commit": "373588f",
+  "review_status_policy": "All source snapshot records remain pending. Evidence outcomes are report-only; no record is promoted to verified.",
+  "groups": [
+    {
+      "id": "S01",
+      "event_ids": ["evt_3d9ba51c1b02", "evt_92e97e99aec8", "evt_1bcb5302ec11"],
+      "manual_event_date": "2026-11-15; 07:30 is supported by secondary reporting only in this round",
+      "event_status": "future_scheduled_pending",
+      "evidence_result": "government_account_index_supports_date_primary_body_unavailable",
+      "strict_authority_result": "incomplete",
+      "conclusion": "南昌发布索引显示南昌马拉松为2026-11-15；原政府账号正文和赛事官网均未能直接读取。媒体报道的07:30暂不升级为本轮权威正文确认。",
+      "sources": [
+        {"url": "https://m.weibo.cn/2/detail/5359300760835055", "source_type": "government_account_index", "issuer": "南昌发布（索引显示）", "access_status": "search_index_text_only_primary_open_failed", "supports": "南昌、2026南昌马拉松、11月15日"},
+        {"url": "https://www.nanchangmarathon.cn/", "source_type": "official_race_site", "issuer": "南昌马拉松", "access_status": "primary_open_failed", "supports": "本轮未能读取正文，不能作为本轮日期证据"},
+        {"url": "https://news.cjn.cn/zjzycsqpd/nc_20025/202608/t5327434.htm", "source_type": "media_republication", "issuer": "长江网，原来源南昌日报社", "access_status": "search_index_text", "supports": "11月15日为比赛日，8月8日为预报名节点"}
+      ]
+    },
+    {
+      "id": "S02",
+      "event_ids": ["evt_3644cdd4c268"],
+      "manual_event_date": "2026-10-24; separate performances also on 2026-10-25",
+      "event_status": "past_scheduled_pending",
+      "evidence_result": "authenticated_studio_mirror_supports_date_primary_unavailable",
+      "strict_authority_result": "incomplete",
+      "conclusion": "新浪镜像正文显示发布者为华晨宇工作室及其官方微博认证，并列出2026年南京站10月24日、25日场；可增强261024的日期映射。原微博正文不可访问，严格的原始正文核验仍未完成。",
+      "sources": [
+        {"url": "https://www.sina.cn/news/detail/5353666943123948.html", "source_type": "authenticated_official_account_mirror", "issuer": "华晨宇工作室；页面显示官方微博认证", "access_status": "mirror_body_read", "supports": "2026华晨宇火星演唱会南京站10月24日、25日场，预售日期为10月13日"},
+        {"url": "https://weibo.com/2/detail/5353666943123948", "source_type": "artist_official_account", "issuer": "华晨宇工作室", "access_status": "primary_open_failed", "supports": "原帖尚未直接读取"},
+        {"url": "https://js.cri.cn/20261026/bfea6b68-f86e-7118-5c32-9649b6dc5853.html", "source_type": "media_report", "issuer": "国际在线", "access_status": "search_index_text", "supports": "10月24日至25日南京汤山音乐谷演出报道"}
+      ]
+    },
+    {
+      "id": "S03",
+      "event_ids": ["evt_21064dd8a66c"],
+      "manual_event_date": null,
+      "event_status": "unconfirmed_conditional_pending",
+      "evidence_result": "no_matching_authoritative_confirmation_found",
+      "strict_authority_result": "incomplete",
+      "conclusion": "未找到刘宇成都2027-01-01至02日的匹配主办方、场馆或主管部门确认。搜索无结果不能证明活动取消或不存在；继续排除未来视图并保持pending。",
+      "search_queries": ["刘宇 2027 1月1日 成都 演唱会 审批 官方", "\"刘宇\" \"2027年1月1日\" 成都 演唱会", "\"刘宇\" \"成都\" \"2027\" 凤凰山 体育公园"],
+      "sources": []
+    },
+    {
+      "id": "S04",
+      "event_ids": ["evt_c9b487791db8"],
+      "manual_event_date": "2026-09-20 to 2026-09-25 overall programme; 2026-09-23 afternoon for the named expo activity",
+      "event_status": "past_scheduled_period_pending",
+      "evidence_result": "government_primary_body_supports_past_schedule",
+      "strict_authority_result": "date_supported_for_exclusion",
+      "conclusion": "辽宁省政府新闻发布会文字实录明确该活动为2026年9月，博览会总体活动期为9月20日至25日，并提到9月23日下午的博览会活动。足以否定旧记录2027-09-23；发布会是预告，不单凭它断言实际举办完成。",
+      "sources": [
+        {"url": "https://www.ln.gov.cn/web/spzb/2026nxwfbh/2026090413401329466/index.shtml", "source_type": "government_primary_transcript", "issuer": "辽宁省政府新闻办；省商务厅、沈阳市商务局", "access_status": "primary_body_read", "supports": "2026-09-04发布会，实录中2026沈阳—韩国投资贸易博览会9月20日至25日及9月23日下午安排"},
+        {"url": "https://www.ln.gov.cn/web/ywdt/zymtkln/2026092308181161939/index.shtml", "source_type": "government_republication_of_media", "issuer": "辽宁省政府门户，原来源中国新闻网", "access_status": "search_index_text", "supports": "9月20日已举行的配套交流活动；不替代整个展会的完成证明"}
+      ]
+    },
+    {
+      "id": "S05",
+      "event_ids": ["evt_bf7cd401e149"],
+      "manual_event_date": "2026-10-24 19:30; ticket presale 2026-09-16 11:00",
+      "event_status": "past_reported_pending",
+      "evidence_result": "operator_index_and_media_support_past_event",
+      "strict_authority_result": "incomplete",
+      "conclusion": "协办方咪咕国风索引及演出当晚媒体报道对应遂宁孙楠演唱会2026-10-24；原发现标题9月16日11点为开抢节点。协办方原帖未读取，不将其标为已核验。",
+      "sources": [
+        {"url": "https://weibo.com/2/detail/5344168849445632", "source_type": "event_partner_account_index", "issuer": "咪咕国风（索引显示）", "access_status": "search_index_text_only_primary_open_failed", "supports": "2026-10-24 19:30，遂宁市体育中心体育场"},
+        {"url": "https://cbgc.scol.com.cn/news/8086731", "source_type": "media_report", "issuer": "川观新闻", "access_status": "search_index_text", "supports": "2026-10-24晚遂宁演唱会已上演的报道"},
+        {"url": "https://yule.360.com/detail/5208394", "source_type": "media_republication", "issuer": "源点新闻转载", "access_status": "search_index_text", "supports": "2026-09-16 11:00开售、2026-10-24开唱，两个日期角色不同"}
+      ]
+    },
+    {
+      "id": "S06",
+      "event_ids": ["evt_5c82713cc03a"],
+      "manual_event_date": "2026-09-24 to 2026-09-26",
+      "event_status": "past_reported_pending",
+      "evidence_result": "self_identified_organizer_and_media_support_past_dates",
+      "strict_authority_result": "incomplete",
+      "conclusion": "署名云南泰达的搜狐号正文自称主办方并给出9月24日至26日，安顺市广播电视台转载贵州日报赛后报道也对应同一展期；搜狐账号主体未独立认证，严格权威身份核验仍待补。",
+      "sources": [
+        {"url": "https://www.sohu.com/a/1040936890_122675399", "source_type": "self_identified_organizer_account", "issuer": "云南泰达；正文称云南泰达会展策划有限公司主办", "access_status": "body_read_issuer_not_independently_authenticated", "supports": "2026-09-24至26日，贵阳国际会议展览中心"},
+        {"url": "https://www.gzastv.cn/ac/b/content_201036.shtml", "source_type": "official_media_republication", "issuer": "安顺市广播电视台，原来源贵州日报", "access_status": "body_read", "supports": "2026-09-29报道回顾9月24日至26日已举办展会"}
+      ]
+    },
+    {
+      "id": "S07",
+      "event_ids": ["evt_bd8e6c831c64", "evt_6c148ae9cbc6", "evt_c582cfbe9c6b"],
+      "manual_event_date": "2026-12-20; registration date is separate, including 2026-10-20 in the additional candidate",
+      "event_status": "future_scheduled_pending",
+      "evidence_result": "prior_evidence_retained_primary_reopen_failed",
+      "strict_authority_result": "incomplete",
+      "conclusion": "沿用原报告E10/E19南宁赛事日期资料；本轮重开万达运营方公告失败，未形成新的官方正文核验。报名通知记录仍为报名分类，不因共享比赛日期而进入未来视图。",
+      "sources": [
+        {"url": "https://www.wanda.cn/2026/2026_1016/48499.html", "source_type": "official_event_operator", "issuer": "万达体育", "access_status": "primary_reopen_failed_prior_evidence_only", "supports": "原报告E10的12月20日比赛日，本轮未重读正文"},
+        {"url": "https://www.gxnews.com.cn/staticpages/20260802/newgx6a6f23c0-21976749.shtml", "source_type": "media_republication_of_race_account", "issuer": "广西新闻网，原报告标注转载南宁马拉松官方微信", "access_status": "not_reopened_in_this_round", "supports": "原报告E19，报名节点与比赛日分离"}
+      ]
+    }
+  ]
+}

@@ -217,9 +217,8 @@ def _date_from_parts(year: int | None, month: int, day: int, today: date) -> tup
         # A recent past date is likely a report of a real event in the current year.
         if (today - candidate).days <= MAX_PAST_DAYS:
             return candidate, "inferred_year"
-        next_year = date(today.year + 1, month, day)
-        if month < today.month and 0 <= (next_year - today).days <= MAX_FUTURE_DAYS:
-            return next_year, "inferred_year"
+        # An old month/day does not prove next year's edition of an event.
+        # Cross-year ranges infer their end year explicitly in the range parser.
         return None, "unknown"
     return candidate, "inferred_year"
 
@@ -246,7 +245,23 @@ def _date_role(text: str, start: int, end: int) -> str:
     right = end + boundary.start() if boundary else len(text)
     clause = text[left:right]
     local_start, local_end = start - left, end - left
+    label = re.search(
+        r"(报名时间|报名日期|报名截止|开票时间|售票时间|预售时间|比赛时间|比赛日期|演出时间|举办时间|活动时间)[：:为是\s]*$",
+        clause[:local_start],
+    )
+    if label:
+        if label[1].startswith("报名"):
+            return "registration"
+        if label[1].startswith(("开票", "售票", "预售")):
+            return "ticket_sale"
+        return "event"
     following = clause[local_end:local_end + 24]
+    next_label_or_date = re.search(
+        r"报名时间|报名日期|开票时间|售票时间|预售时间|比赛时间|比赛日期|演出时间|举办时间|活动时间|(?:20\d{2}年)?\d{1,2}月\d{1,2}日|20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}",
+        following,
+    )
+    if next_label_or_date:
+        following = following[:next_label_or_date.start()]
     following_actions = []
     for terms, role in ((EVENT_DATE_CUES, "event"), (TICKETING_TERMS, "ticket_sale"), (REGISTRATION_TERMS, "registration")):
         for term in terms:

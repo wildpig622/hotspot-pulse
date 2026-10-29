@@ -60,6 +60,12 @@ https://wildpig622.github.io/hotspot-pulse/api/v1/
 
 2026-10-29 修复复查见 `docs/manual-audit-followup-2026-10-29.md`。当前为离线验证阶段，尚未达到合并、部署、启用定时采集或经营看板接入的放行门槛。
 
+第二轮证据补查和边界复核见 `docs/evidence-round2-2026-10-29.md`。重建包含来源访问状态和待核验结论的 49 条工作表：
+
+    python scripts/build_verification_worksheet.py
+
+输出为 `docs/verification-worksheet-2026-10-29.json` 和 `.md`。该工作表明确标为 `NOT_VERIFIED`，不会自动更改任何候选的人工核验状态。
+
 ## 数据质量与后续扩展
 
 第一阶段验证自动发现、去重、来源追溯和每日发布。下一阶段应增加可合法访问的官方活动日历/RSS/票务公告来源，并建立人工核验入口。只有经权威来源核验的事件，才应被看板作为已确认热点使用。

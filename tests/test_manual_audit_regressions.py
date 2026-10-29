@@ -85,6 +85,21 @@ class ManualAuditRegressions(unittest.TestCase):
         self.assertEqual(parsed["start_at"], "2026-12-20")
         self.assertEqual(parsed["event_date_role"], "event")
 
+    def test_date_labels_do_not_borrow_roles_from_the_next_date_without_punctuation(self):
+        for separator in (" ", "，", "；", ""):
+            with self.subTest(separator=separator):
+                title = "南昌马拉松报名时间2026年10月20日" + separator + "比赛时间2026年12月20日举行"
+                parsed = extract_event_date(title, today=self.today)
+                self.assertEqual(parsed["registration_at"], "2026-10-20")
+                self.assertEqual(parsed["start_at"], "2026-12-20")
+
+    def test_old_month_day_does_not_invent_next_years_event(self):
+        for title in ("2026贵阳国际咖啡博览会1月8日启幕", "2026成都演唱会3月5日举行", "成都演唱会3月5日举行"):
+            with self.subTest(title=title):
+                parsed = extract_event_date(title, today=self.today)
+                self.assertIsNone(parsed["start_at"])
+        self.assertEqual(extract_event_date("成都演唱会将于2027年3月5日举行", today=self.today)["start_at"], "2027-03-05")
+
     def test_legacy_rollover_records_are_recomputed_as_current_year_past_dates(self):
         for event_id in self.cases["legacy_rollover_ids"]:
             with self.subTest(event_id=event_id):
