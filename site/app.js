@@ -151,7 +151,7 @@
     var events = getFilteredEvents();
     $("resultCount").textContent = events.length + " 条";
     if (!events.length) {
-      $("eventsList").innerHTML = '<div class="empty-state">当前筛选没有候选事件。若首次采集尚未运行，请到 GitHub Actions 手动触发 Daily hotspot collection。</div>';
+      $("eventsList").innerHTML = '<div class="empty-state">当前视图没有符合条件的内容。可切换开票/报名、排期汇总或全部内容查看相关线索。</div>';
       return;
     }
     $("eventsList").innerHTML = events.map(function (event) {
@@ -163,7 +163,7 @@
       var sourcePublish = event.sources && event.sources[0] ? event.sources[0].source_published_at : null;
       var confidence = event.event_date_role === "ticket_sale" ? "开票日期，不是举办日期" : event.event_date_role === "registration" ? "报名日期，不是举办日期" : event.event_date_role === "ambiguous" ? "日期语义待核实" : event.date_confidence === "explicit_year" ? "标题/摘要含年份" : event.date_confidence === "inferred_year" ? "年份推断，需核验" : "未提取到举办日期";
       return '<article class="event-card"><div class="event-main">' +
-        '<div class="event-title-row"><span class="event-title">' + escapeHtml(text(event.event_name, "未命名事件")) + '</span>' + review +
+        '<div class="event-title-row"><span class="event-title">' + escapeHtml(text(event.event_name, "未命名事件")) + '</span>' + review + kindBadge +
         '<span class="badge badge-neutral">' + escapeHtml(TYPE_LABELS[event.event_type] || "其他") + '</span></div>' +
         '<div class="event-meta"><span>城市：' + escapeHtml(text(event.city_name)) + '</span><span>活动日期：' + escapeHtml(eventDateLabel(event)) + '</span><span>' + escapeHtml(confidence) + '</span></div>' +
         '<div class="event-description">来源：' + escapeHtml(text(event.sources && event.sources[0] && event.sources[0].publisher, "未知发布方")) +
