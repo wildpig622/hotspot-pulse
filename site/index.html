@@ -20,8 +20,8 @@
     </section>
     <section class="notice"><strong>数据边界</strong><span>自动发现不等于官方核验。候选事件默认待核验，不能直接当作确定热点或定价依据；采集失败时保留上一份快照。</span></section>
     <section class="metrics" aria-label="数据概览">
-      <article class="metric-card"><span>候选事件</span><strong id="metricTotal">—</strong><small>去重后的候选条目</small></article>
-      <article class="metric-card"><span>未来活动候选</span><strong id="metricDated">—</strong><small>有具体举办日期，仍待核验</small></article>
+      <article class="metric-card"><span>候选线索</span><strong id="metricTotal">—</strong><small>同一活动可能对应多篇报道</small></article>
+      <article class="metric-card"><span>未来活动线索</span><strong id="metricDated">—</strong><small>线索条数不等于活动场次，仍待核验</small></article>
       <article class="metric-card"><span>来源记录</span><strong id="metricSources">—</strong><small>按来源 URL 去重</small></article>
       <article class="metric-card"><span>采集城市</span><strong id="metricCities">—</strong><small>可在配置中调整</small></article>
     </section>
@@ -39,7 +39,7 @@
       </div>
       <div id="feedError" class="feed-error" hidden></div>
       <div id="eventsList" class="events-list"><div class="empty-state">正在读取 JSON 数据…</div></div>
-      <div class="panel-footer"><span id="sourceInfo">数据源：Google News RSS 搜索结果</span><a href="./api/v1/hotspots.json" target="_blank" rel="noopener">打开 JSON API ↗</a><a href="./api/v1/health.json" target="_blank" rel="noopener">采集状态 ↗</a></div>
+      <div class="panel-footer"><span id="sourceInfo">数据源：Google News RSS 搜索结果</span><span>刷新仅重读已有快照，不启动采集</span><a href="./api/v1/hotspots.json" target="_blank" rel="noopener">打开 JSON API ↗</a><a href="./api/v1/health.json" target="_blank" rel="noopener">采集状态 ↗</a></div>
     </section>
     <section class="panel api-panel">
       <div><h2>供收益看板调用</h2><p>当前采用公开静态 JSON，稳定后可由看板 fetch 后按城市、入住日期与核验状态过滤。</p></div>

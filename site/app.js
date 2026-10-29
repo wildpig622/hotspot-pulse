@@ -37,8 +37,8 @@
     if (/排期|排期表|节目单|时间表|日程安排|演出安排|展会安排|演出汇总|演出合集|演出一览|演出清单|月度演出|本月演出|活动日历|活动汇总|展会日历/.test(title)) return "schedule_roundup";
     if (CONDITIONAL_EVENT.test(title)) return "uncertain";
     if (/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间/.test(title) && /演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "event_announcement";
-    if (/报名启动|报名开启|报名时间|报名截止|报名通道|开放报名|开始报名|报名即将开始|报名啦/.test(title)) return "registration_notice";
-    if (/开票|开售|售票|预售|抢票|门票|票价|发售/.test(title) && !/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间/.test(title)) return "ticketing_notice";
+    if (/报名启动|报名开启|报名时间|报名截止|报名通道|开放报名|开始报名|报名即将开始|报名啦|开启报名/.test(title)) return "registration_notice";
+    if (/开票|开售|售票|预售|抢票|门票|票价|发售|开抢/.test(title) && !/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|比赛时间/.test(title)) return "ticketing_notice";
     if (/演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "uncertain";
     return "other";
   }
@@ -66,6 +66,42 @@
     if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
     try { return new Date(value + "T00:00:00Z").toISOString().slice(0, 10) === value; }
     catch (e) { return false; }
+  }
+  function legacyDateView(event, today) {
+    // Project only reproducible title dates for old, unreviewed records. Never
+    // mutate the loaded snapshot or replace a semantic/human-reviewed date.
+    if (event.review_status === "verified" || event.event_date_role) return event;
+    var title = String(event.event_name || "");
+    var kind = contentKind(event);
+    if (kind !== "event_announcement" && kind !== "uncertain") return event;
+    if (CONDITIONAL_EVENT.test(title)) return event;
+    var dayString = function (year, month, day) {
+      return String(year).padStart(4, "0") + "-" + String(month).padStart(2, "0") + "-" + String(day).padStart(2, "0");
+    };
+    var ranges = Array.from(title.matchAll(/(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日\s*(?:至|到|—|－|-|~|～)\s*(?:(20\d{2})年)?(?:(\d{1,2})月)?(\d{1,2})日/g));
+    if (ranges.length === 1 && event.date_precision === "day" && validCalendarDate(event.start_at)) {
+      var range = ranges[0];
+      var year = Number(range[1] || event.start_at.slice(0, 4));
+      var start = dayString(year, Number(range[2]), Number(range[3]));
+      var endMonth = Number(range[5] || range[2]);
+      var endYear = Number(range[4] || year + (endMonth < Number(range[2]) ? 1 : 0));
+      var end = dayString(endYear, endMonth, Number(range[6]));
+      if (start === event.start_at && validCalendarDate(end) && end >= start && !event.end_at) {
+        return Object.assign({}, event, {end_at: end});
+      }
+    }
+    if (event.date_precision === "month" && ranges.length === 0) {
+      var days = Array.from(title.matchAll(/(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日/g));
+      if (days.length === 1 && /举行|举办|开幕|开赛|开演|开跑|启幕/.test(title) && !/开票|开售|售票|预售|报名/.test(title)) {
+        var day = days[0];
+        var value = dayString(Number(day[1] || today.slice(0, 4)), Number(day[2]), Number(day[3]));
+        var age = (new Date(today + "T00:00:00Z") - new Date(value + "T00:00:00Z")) / 86400000;
+        if (validCalendarDate(value) && event.start_at && value.slice(0, 7) === event.start_at.slice(0, 7) && (day[1] || age <= 60)) {
+          return Object.assign({}, event, {start_at: value, end_at: null, date_precision: "day", date_confidence: day[1] ? "explicit_year" : "inferred_year"});
+        }
+      }
+    }
+    return event;
   }
   function futureExclusion(event) {
     var title = String(event.event_name || "");
@@ -251,7 +287,7 @@
     Promise.allSettled([fetchJson(API_URL), fetchJson(HEALTH_URL), fetchJson(CITIES_URL)]).then(function (results) {
       if (results[0].status === "fulfilled") {
         state.meta = results[0].value.meta || {};
-        state.events = Array.isArray(results[0].value.data) ? results[0].value.data : [];
+        state.events = Array.isArray(results[0].value.data) ? results[0].value.data.map(function (event) { return legacyDateView(event, beijingToday()); }) : [];
       } else {
         $("feedError").hidden = false;
         $("feedError").textContent = "事件 JSON 读取失败：" + results[0].reason.message + "。请检查 Pages 是否已启用，以及 API 文件是否发布。";

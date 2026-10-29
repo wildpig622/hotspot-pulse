@@ -7,7 +7,7 @@ const vm = require("node:vm");
 
 const root = path.join(__dirname, "..");
 const script = fs.readFileSync(path.join(root, "site/app.js"), "utf8");
-const snapshot = JSON.parse(fs.readFileSync(path.join(root, "site/api/v1/hotspots.json"), "utf8"));
+const snapshot = JSON.parse(fs.readFileSync(path.join(root, "tests/fixtures/hotspots-2026-10-29.json"), "utf8"));
 const cities = JSON.parse(fs.readFileSync(path.join(root, "config/cities.json"), "utf8"));
 const cases = JSON.parse(fs.readFileSync(path.join(__dirname, "fixtures/manual-audit-2026-10-29.json"), "utf8"));
 const byId = Object.fromEntries(snapshot.data.map(row => [row.event_id, row]));
@@ -105,5 +105,47 @@ test("invalid calendar dates and reversed ranges stay available for review witho
     nodes.contentFilter.listeners.input();
     assert.equal(nodes.resultCount.textContent, "1 条");
     assert.match(nodes.eventsList.innerHTML, /日期区间无效，需复核/);
+  }
+});
+
+test("a multi-day legacy exhibition remains discoverable on its middle and last days", async () => {
+  const original = JSON.stringify(byId.evt_cfd1dabb5e54);
+  const nodes = await loadPage([byId.evt_cfd1dabb5e54]);
+  assert.match(nodes.eventsList.innerHTML, /2026-11-05 至 2026-11-09/);
+  for (const day of ["2026-11-08", "2026-11-09", "2026-11-10"]) {
+    nodes.dateFrom.value = nodes.dateTo.value = day;
+    nodes.dateFrom.listeners.input();
+    assert.equal(nodes.resultCount.textContent, day === "2026-11-10" ? "0 条" : "1 条", day);
+  }
+  assert.equal(JSON.stringify(byId.evt_cfd1dabb5e54), original, "source record is untouched");
+});
+
+test("an explicit past day hidden by a legacy whole-month value belongs in the past view", async () => {
+  const nodes = await loadPage([byId.evt_d494c40ed023]);
+  nodes.contentFilter.value = "past";
+  nodes.contentFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent, "1 条");
+  assert.match(nodes.eventsList.innerHTML, /2026-10-18/);
+  assert.doesNotMatch(nodes.eventsList.innerHTML, /2026-10-01 至 2026-10-31/);
+});
+
+test("all twelve boundary samples are accessible in their intended content views", async () => {
+  const views = {event_date_review:"undated", ticketing_registration:"ticketing", schedule_roundup:"schedule", guides_other:"guide", past_expired:"past"};
+  for (const [id, bucket] of Object.entries(cases.boundary_expected_buckets)) {
+    const nodes = await loadPage([byId[id]]);
+    nodes.contentFilter.value = views[bucket];
+    nodes.contentFilter.listeners.input();
+    assert.equal(nodes.resultCount.textContent, "1 条", id + " in " + views[bucket]);
+  }
+});
+
+test("legacy title projection cannot overwrite human or semantic dates or invent a year", async () => {
+  for (const protectedDate of [{review_status:"verified"}, {event_date_role:"event"}]) {
+    const nodes = await loadPage([{...byId.evt_cfd1dabb5e54, ...protectedDate}]);
+    assert.doesNotMatch(nodes.eventsList.innerHTML, /2026-11-05 至 2026-11-09/);
+  }
+  for (const title of ["杭州展会11月10日至8日举行", "杭州展会11月31日至12月2日举行", "杭州展会3月5日举行"]) {
+    const nodes = await loadPage([{event_name:title, city_name:"杭州市", city_slug:"hangzhou", review_status:"pending", start_at:"2026-03-01", end_at:"2026-03-31", date_precision:"month"}]);
+    assert.equal(nodes.resultCount.textContent, "0 条", title);
   }
 });

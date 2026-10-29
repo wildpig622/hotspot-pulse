@@ -141,9 +141,9 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(candidate["content_kind"], "registration_notice")
 
 
-    def test_current_public_snapshot_can_be_reclassified_without_losing_records(self):
+    def test_archived_public_snapshot_can_be_reclassified_without_losing_records(self):
         repo_root = Path(__file__).resolve().parents[1]
-        snapshot_path = repo_root / "site" / "api" / "v1" / "hotspots.json"
+        snapshot_path = repo_root / "tests/fixtures/hotspots-2026-10-29.json"
         import json
         payload = json.loads(snapshot_path.read_text(encoding="utf-8"))
         events = payload["data"]

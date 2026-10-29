@@ -1,0 +1,908 @@
+{
+  "status": "PASS_FOR_DOCUMENTED_BROWSER_CASES",
+  "base_commit": "7307102976b374fd8521f6b2e2f905628ee60023",
+  "checked_at": "2026-10-29T09:27:39.390Z",
+  "local_only": true,
+  "browser": "ChatGPT in-app Chromium browser",
+  "checks": [
+    {
+      "case": "default_future_view",
+      "expected_count": 20,
+      "actual_count": 20,
+      "result": "PASS",
+      "selected_controls": []
+    },
+    {
+      "case": "hangzhou_city_filter",
+      "expected_count": 4,
+      "actual_count": 4,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": ""
+        },
+        {
+          "id": "cityFilter",
+          "value": "杭州市"
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "exhibition_type_filter",
+      "expected_count": 6,
+      "actual_count": 6,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": ""
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": "exhibition"
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "content_all",
+      "expected_count": 457,
+      "actual_count": 457,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": ""
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "all"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "verified_empty",
+      "expected_count": 0,
+      "actual_count": 0,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": ""
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "all"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": "verified"
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "nanning_search",
+      "expected_count": 2,
+      "actual_count": 2,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "南宁"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "date_range_nov15",
+      "expected_count": 6,
+      "actual_count": 6,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": ""
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": "2026-11-15"
+        },
+        {
+          "id": "dateTo",
+          "value": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "case": "after_fix_default",
+      "expected_count": 20,
+      "actual_count": 20,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": ""
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_kunming_range_nov8",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "昆明"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": "2026-11-08"
+        },
+        {
+          "id": "dateTo",
+          "value": "2026-11-08"
+        }
+      ]
+    },
+    {
+      "case": "after_fix_past_boundary_xian",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "10月18日上午7时30分2026西安马拉松赛"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "past"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_refresh",
+      "expected_count": 20,
+      "actual_count": 20,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": ""
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_proof_view",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "昆明"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": "2026-11-08"
+        },
+        {
+          "id": "dateTo",
+          "value": "2026-11-08"
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_298f298695e9",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "#其它# 2026西安马拉松参赛跑者通过钟楼盘道。 在奔跑中感受世界人文之都的魅力#2026西安马拉松"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "undated"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_203cc4315104",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "#博君一肖[超话]# 终于 盼到了 20261023 肖战［出口·我们］巡回演唱会南京站"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "undated"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_5f7457414239",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "10月珠海见！ReWork湾区国际AI办公应用及办公空间展览会，解锁AI办公产业新图景！"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "undated"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_3644cdd4c268",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "#华晨宇[超话]# 💕 爱有多深刻 @华晨宇yu #2026华晨宇火星演唱会# hcy [261024南京] http://t.cn/A6eADqus ​"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "undated"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_b178c8b5c408",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "肖战出道十周年南京演唱会想看人数突破200万 10月15日10:05正式开售 100%公开售票 这次“出口·我们”见！"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "ticketing"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_c582cfbe9c6b",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "2026南宁马拉松明日开始报名！报名方式、日程表速收藏"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "ticketing"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_339b4ee162ac",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "2026年南昌10月演出排期安排来了"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "schedule"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_77c03fd30d3e",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "2026南昌国庆演出排期安排来了！"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "schedule"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_61b0ee16b856",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "靠谱高效！2026南京10-12月演唱会、话剧、音乐剧等演出靠谱购票指南"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "guide"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_5a8603876112",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "2026南宁下半年演出购票攻略：演唱会、脱口秀、舞剧一站式指南"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "guide"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_dc1c06214c53",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "#媒体原创 10月18日 陕西西安。2026西安马拉松赛 男子组冠军诞生！陕西选手武明瑶以2小时10分16秒夺冠#2026西安马拉松赛"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "past"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_boundary_evt_d494c40ed023",
+      "expected_count": 1,
+      "actual_count": 1,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": "10月18日上午7时30分2026西安马拉松赛 在永宁门鸣枪开跑。#2026西安马拉松"
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "past"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "case": "after_fix_clear_restores_default",
+      "expected_count": 20,
+      "actual_count": 20,
+      "result": "PASS",
+      "selected_controls": [
+        {
+          "id": "searchInput",
+          "value": ""
+        },
+        {
+          "id": "cityFilter",
+          "value": ""
+        },
+        {
+          "id": "contentFilter",
+          "value": "future"
+        },
+        {
+          "id": "typeFilter",
+          "value": ""
+        },
+        {
+          "id": "reviewFilter",
+          "value": ""
+        },
+        {
+          "id": "dateFrom",
+          "value": ""
+        },
+        {
+          "id": "dateTo",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "exact_future_candidate_set": "PASS_20_IDS",
+  "boundary_cases_passed": 12,
+  "before_fix_defects": {
+    "kunming_range_nov8": {
+      "actual_count": 0,
+      "expected_count": 1
+    },
+    "past_boundary_xian": {
+      "actual_count": 0,
+      "expected_count": 1
+    }
+  },
+  "screenshot": "images/browser-kunming-2026-10-29.jpg",
+  "source_sha256": {
+    "site/app.js": "e58ed289cc986ffe69ca4339c133bcbb4fba2ba8d51e4e46ff6dc9c134c768ed",
+    "site/index.html": "0a4b9f4647640b747fc5bf4d269ece68d11fd5b5d028df291ffe61eb7742dbcc"
+  },
+  "snapshot_sha256": "4eadbecae911cbf64ff0754c7d7be778e368d4932c95917c9da695262468c010",
+  "console_errors_observed": [],
+  "live_collection_run": false,
+  "production_snapshot_written": false,
+  "manual_verified_count": 0,
+  "limitations": [
+    "Only the current desktop viewport was checked; mobile breakpoints were not tested.",
+    "Legacy JSON may still have category/date details that differ from a full backend reclassification; no global parity claim is made.",
+    "Source articles were not reopened by browser UI acceptance; their original evidence timestamps remain.",
+    "Activity grouping is a report-only proposal, not a production deduplication or sign-off."
+  ]
+}

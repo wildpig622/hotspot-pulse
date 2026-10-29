@@ -8,7 +8,7 @@ from scripts.audit_snapshot import build_report, edge_case_results, load_snapsho
 class SnapshotAuditTests(unittest.TestCase):
     def setUp(self):
         self.repo_root = Path(__file__).resolve().parents[1]
-        self.payload = load_snapshot(self.repo_root / "site" / "api" / "v1" / "hotspots.json")
+        self.payload = load_snapshot(self.repo_root / "tests/fixtures/hotspots-2026-10-29.json")
         self.report = build_report(self.payload, date(2026, 10, 29))
 
     def test_audit_buckets_cover_all_legacy_records(self):

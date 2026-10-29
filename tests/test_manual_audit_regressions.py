@@ -18,7 +18,7 @@ class ManualAuditRegressions(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.payload = json.loads((ROOT / "site/api/v1/hotspots.json").read_text(encoding="utf-8"))
+        cls.payload = json.loads((ROOT / "tests/fixtures/hotspots-2026-10-29.json").read_text(encoding="utf-8"))
         cls.cases = json.loads((ROOT / "tests/fixtures/manual-audit-2026-10-29.json").read_text(encoding="utf-8"))
         cls.raw = {row["event_id"]: row for row in cls.payload["data"]}
         cls.report = build_report(cls.payload, cls.today)

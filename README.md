@@ -73,7 +73,17 @@ https://wildpig622.github.io/hotspot-pulse/api/v1/
 
 输出为 `docs/verification-worksheet-2026-10-29.json` 和 `.md`。该工作表明确标为 `NOT_VERIFIED`，不会自动更改任何候选的人工核验状态。
 
+固定审计和回归测试使用 `tests/fixtures/hotspots-2026-10-29.json`，它逐字节归档当时457条快照，并校验原SHA-256；后续生产更新不会替换历史审计样本。上面的通用离线审计命令默认仍读取当前 `site/` 快照，需要重放原基线时可指定 `--snapshot tests/fixtures/hotspots-2026-10-29.json`。
+
 第三轮的20条未来候选日期覆盖见 `docs/evidence-round3-2026-10-29.md`。工作表保留各轮证据观察历史；`future_date_evidence_coverage` 单独统计官方日期依据覆盖，不代表记录已被升级为 `verified`。
+
+真实浏览器验收见 `docs/browser-acceptance-2026-10-29.md`。旧快照中的可重现标题日期仅在页面读取时保守补充；不会改写JSON或人工已核验字段。页面刷新只读取已有快照，不启动采集。
+
+首批人工签核清单见 `docs/pilot-review-2026-10-29.md` 和同名JSON：20条候选报道按提案整理为11组待签核活动，不把报道条数当作独立活动数，也不合并生产记录。重建空白签核模板：
+
+    python scripts/build_pilot_review.py
+
+人工签核副本应另存，保留审核人、确认日期、来源状态复查时间和结论；不要用重新生成覆盖已填写的副本。
 
 ## 数据质量与后续扩展
 

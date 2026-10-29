@@ -19,7 +19,8 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from scripts.audit_snapshot import build_report, validate_report_paths
 
-SNAPSHOT = ROOT / "site/api/v1/hotspots.json"
+SNAPSHOT = ROOT / "tests/fixtures/hotspots-2026-10-29.json"
+BASELINE_SHA256 = "4eadbecae911cbf64ff0754c7d7be778e368d4932c95917c9da695262468c010"
 MANUAL = ROOT / "docs/manual-verification-2026-10-29.md"
 SUPPLEMENTS = (
     ROOT / "docs/evidence-supplement-2026-10-29.json",
@@ -72,6 +73,8 @@ def read_manual_report():
 
 def build_worksheet():
     original_bytes = SNAPSHOT.read_bytes()
+    if hashlib.sha256(original_bytes).hexdigest() != BASELINE_SHA256:
+        raise ValueError("the archived audit baseline must retain its original bytes")
     payload = json.loads(original_bytes)
     selection = json.loads(SELECTION.read_text(encoding="utf-8"))
     rounds = [json.loads(path.read_text(encoding="utf-8")) for path in SUPPLEMENTS]
