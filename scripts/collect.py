@@ -594,7 +594,22 @@ def build_candidate(city: dict[str, Any], item: dict[str, Any], observed_at: str
         "venue_name": None, "venue_location": None,
         "start_at": date_info["start_at"], "end_at": date_info["end_at"],
         "date_precision": date_info["date_precision"], "date_confidence": date_info["date_confidence"],
-        "event_date_role": date_info["event_date_role"],def merge_candidate(existing: dict[str, Any] | None, candidate: dict[str, Any]) -> dict[str, Any]:
+        "event_date_role": date_info["event_date_role"],
+        "ticket_sale_at": date_info.get("ticket_sale_at"),
+        "ticket_sale_date_confidence": date_info.get("ticket_sale_date_confidence", "unknown"),
+        "registration_at": date_info.get("registration_at"),
+        "registration_date_confidence": date_info.get("registration_date_confidence", "unknown"),
+        "reference_period_start": date_info.get("reference_period_start"),
+        "reference_period_end": date_info.get("reference_period_end"),
+        "event_status": "unknown", "review_status": "pending", "estimated_attendees": None,
+        "first_seen_at": observed_at, "last_seen_at": observed_at, "knowable_at": knowable_at,
+        "source_count": 1, "sources": [source],
+        "discovery_query": city["aliases"][0] + " + public event keywords",
+        "candidate_note": note_by_kind.get(content_kind, "自动发现候选；未完成人工核验，不作为正式经营结论。"),
+    }
+
+
+def merge_candidate(existing: dict[str, Any] | None, candidate: dict[str, Any]) -> dict[str, Any]:
     if existing is None:
         return candidate
     merged = dict(existing)
