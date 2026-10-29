@@ -6,6 +6,7 @@
   var TYPE_LABELS = { concert: "演出 / 演唱会", exhibition: "展会", sports: "赛事", festival: "节庆", holiday: "假期", other: "其他" };
   var CONTENT_LABELS = { event_announcement: "活动公告", uncertain: "活动线索待核实", ticketing_notice: "开票 / 售票信息", registration_notice: "报名信息", schedule_roundup: "排期汇总", guide: "攻略 / 购票资讯", past_report: "历史报道", other: "其他资讯" };
   var NON_EVENT_KINDS = { guide: true, schedule_roundup: true, ticketing_notice: true, registration_notice: true, other: true };
+  var CONDITIONAL_EVENT = /审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望/;
   var state = { events: [], meta: {}, health: {}, cities: [] };
   var $ = function (id) { return document.getElementById(id); };
 
@@ -28,14 +29,16 @@
     return '<a href="' + escapeHtml(href) + '" target="_blank" rel="noopener">查看来源 ↗</a>';
   }
   function contentKind(event) {
-    if (event.content_kind) return event.content_kind;
     var title = String(event.event_name || "");
+    // Recheck strong exclusions when reading the unchanged legacy snapshot.
+    if (/冠军诞生|夺冠|圆满落幕|圆满结束|成功举办|顺利举行|现场回顾|精彩回顾|赛后|完美收官|圆满收官|已结束|落幕|比赛结束|赛事回顾|演出回顾|昨(?:日|天|晚)?[^，。！？；]{0,8}(?:开跑|开赛|举行|举办|开演)/.test(title)) return "past_report";
+    if (event.content_kind) return event.content_kind;
     if (/有哪些|有什么|攻略|指南|购票平台|票务平台|怎么买票|怎么买|如何|怎么预约|靠谱|推荐|观演攻略|出行攻略|门票价格|购票教程|抢票技巧/.test(title)) return "guide";
     if (/排期|排期表|节目单|时间表|日程安排|演出安排|展会安排|演出汇总|演出合集|演出一览|演出清单|月度演出|本月演出|活动日历|活动汇总|展会日历/.test(title)) return "schedule_roundup";
-    if (/冠军诞生|夺冠|圆满落幕|圆满结束|成功举办|顺利举行|现场回顾|精彩回顾|赛后|完美收官|圆满收官|已结束|落幕了|比赛结束|赛事回顾|演出回顾/.test(title)) return "past_report";
+    if (CONDITIONAL_EVENT.test(title)) return "uncertain";
+    if (/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间/.test(title) && /演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "event_announcement";
     if (/报名启动|报名开启|报名时间|报名截止|报名通道|开放报名|开始报名|报名即将开始|报名啦/.test(title)) return "registration_notice";
     if (/开票|开售|售票|预售|抢票|门票|票价|发售/.test(title) && !/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间/.test(title)) return "ticketing_notice";
-    if (/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间/.test(title) && /演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "event_announcement";
     if (/演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "uncertain";
     return "other";
   }
@@ -54,13 +57,49 @@
   function isUpcomingDatedEvent(event, today) {
     var kind = contentKind(event);
     if (kind !== "event_announcement" && kind !== "uncertain") return false;
+    if (futureExclusion(event)) return false;
     if (!event.start_at || event.date_precision === "month" || event.date_precision === "month_range") return false;
     if (event.event_date_role === "ticket_sale" || event.event_date_role === "registration" || event.event_date_role === "reference_period") return false;
     return (event.end_at || event.start_at) >= today;
   }
+  function futureExclusion(event) {
+    var title = String(event.event_name || "");
+    if (CONDITIONAL_EVENT.test(title) || event.event_confirmation === "unconfirmed") return "举办安排尚未确认";
+    if (event.city_match === "event_city_conflict") return "举办城市与记录城市不符";
+    if (!state.cities.length && event.city_slug) return "举办城市暂时无法核对";
+    var firstEvent = /演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.exec(title);
+    if (firstEvent) {
+      var prefix = title.slice(Math.max(0, firstEvent.index - 18), firstEvent.index);
+      var host = null;
+      var hostEnd = -1;
+      state.cities.forEach(function (city) {
+        (city.aliases || [String(city.city_name || "").replace(/市$/, "")]).forEach(function (alias) {
+          if (!alias) return;
+          var index = prefix.lastIndexOf(alias);
+          if (index >= 0 && index + alias.length > hostEnd && !/[，。！？；,;:：]/.test(prefix.slice(index + alias.length))) {
+            host = city; hostEnd = index + alias.length;
+          }
+        });
+      });
+      if (host && host.city_name !== event.city_name) return "举办城市与记录城市不符";
+    }
+    if (event.city_match === "query_only") return "举办城市待核实";
+    if (!event.event_date_role && event.start_at && event.date_confidence === "inferred_year" && event.start_at.slice(0, 4) > beijingToday().slice(0, 4)) return "旧记录推断到下一年，需复核年份";
+    if (event.start_at && !event.event_date_role) {
+      var quantities = /(\d{1,2})[/.](\d{1,2})(?![\d./])\s*(?:万|亿|千|百|人|名|件|通|元|%|％|小时|公里)/g;
+      var quantity;
+      while ((quantity = quantities.exec(title))) {
+        var monthDay = String(Number(quantity[1])).padStart(2, "0") + "-" + String(Number(quantity[2])).padStart(2, "0");
+        if (event.start_at.slice(5) === monthDay) return "数量不能作为举办日期";
+      }
+    }
+    return "";
+  }
   function eventDateLabel(event) {
     var kind = contentKind(event);
     var extras = [];
+    var exclusion = futureExclusion(event);
+    if (exclusion) return "活动日期待核实 · " + exclusion;
     if (event.ticket_sale_at) extras.push("开票/售票：" + event.ticket_sale_at + "（不是举办日期）");
     if (event.registration_at) extras.push("报名日期：" + event.registration_at + "（不是举办日期）");
     if (event.reference_period_start) {
@@ -158,7 +197,7 @@
       var review = event.review_status === "verified" ? '<span class="badge badge-verified">已核验</span>' : '<span class="badge badge-pending">待核验</span>';
       var kind = contentKind(event);
       var kindBadge = '<span class="badge badge-neutral">' + escapeHtml(CONTENT_LABELS[kind] || "其他资讯") + '</span>';
-      var cityMatch = event.city_match === "text_confirmed" ? '<span class="badge badge-neutral">正文出现城市名</span>' : '<span class="badge badge-neutral">按城市检索命中</span>';
+      var cityMatch = event.city_match === "event_city_conflict" ? '<span class="badge badge-pending">举办城市不符，需复核</span>' : event.city_match === "text_confirmed" ? '<span class="badge badge-neutral">正文出现城市名</span>' : '<span class="badge badge-neutral">按城市检索命中</span>';
       var sourceCount = (event.sources || []).length;
       var sourcePublish = event.sources && event.sources[0] ? event.sources[0].source_published_at : null;
       var confidence = event.event_date_role === "ticket_sale" ? "开票日期，不是举办日期" : event.event_date_role === "registration" ? "报名日期，不是举办日期" : event.event_date_role === "ambiguous" ? "日期语义待核实" : event.date_confidence === "explicit_year" ? "标题/摘要含年份" : event.date_confidence === "inferred_year" ? "年份推断，需核验" : "未提取到举办日期";

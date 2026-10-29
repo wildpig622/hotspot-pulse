@@ -24,12 +24,13 @@ from scripts.collect import (  # noqa: E402
     classify_content,
     enrich_existing_event,
     extract_event_date,
+    future_exclusion_reasons,
     is_upcoming_event,
 )
 
 SNAPSHOT = ROOT / "site" / "api" / "v1" / "hotspots.json"
-DEFAULT_JSON = ROOT / "docs" / "audit-2026-10-29.json"
-DEFAULT_MARKDOWN = ROOT / "docs" / "audit-2026-10-29.md"
+DEFAULT_JSON = ROOT / "docs" / "audit-2026-10-29-followup.json"
+DEFAULT_MARKDOWN = ROOT / "docs" / "audit-2026-10-29-followup.md"
 EVENT_KINDS = {"event_announcement", "uncertain"}
 NON_EVENT_KINDS = {"ticketing_notice", "registration_notice", "schedule_roundup", "guide", "other"}
 
@@ -48,6 +49,15 @@ def load_snapshot(path: Path) -> dict[str, Any]:
     if not isinstance(payload, dict) or not isinstance(payload.get("data"), list):
         raise ValueError(f"snapshot must contain a data list: {path}")
     return payload
+
+
+def validate_report_paths(snapshot: Path, *outputs: Path) -> None:
+    resolved = [path.resolve() for path in outputs]
+    if len(set(resolved)) != len(resolved):
+        raise ValueError("report output paths must be distinct")
+    for path in resolved:
+        if path == snapshot.resolve() or path.is_relative_to((ROOT / "site").resolve()):
+            raise ValueError("offline audit outputs must not overwrite a snapshot or site file")
 
 
 def date_value(event: dict[str, Any], field: str) -> date | None:
@@ -95,6 +105,7 @@ def date_review_reasons(event: dict[str, Any], today: date) -> list[str]:
     if kind not in EVENT_KINDS or is_expired(event, today):
         return []
     reasons: list[str] = []
+    reasons.extend(future_exclusion_reasons(event))
     if not event.get("start_at"):
         reasons.append("missing_event_date")
     if event.get("date_precision") in {"month", "month_range"}:
@@ -127,6 +138,10 @@ def concise_event(event: dict[str, Any], old: dict[str, Any] | None = None) -> d
         "date_precision": event.get("date_precision"),
         "date_confidence": event.get("date_confidence"),
         "event_date_role": event.get("event_date_role"),
+        "city_match": event.get("city_match"),
+        "event_confirmation": event.get("event_confirmation"),
+        "future_exclusion_reasons": future_exclusion_reasons(event),
+        "date_review_reasons": event.get("date_review_reasons", []),
         "ticket_sale_at": event.get("ticket_sale_at"),
         "registration_at": event.get("registration_at"),
         "reference_period_start": event.get("reference_period_start"),
@@ -190,6 +205,9 @@ def edge_case_results(today: date) -> list[dict[str, Any]]:
             "杭州马拉松报名启动，报名截止11月5日",
             "",
         ),
+        ("participant quantity is not a date", "2026成都马拉松开跑 3.5万名跑者用脚步丈量蓉城", ""),
+        ("hotline quantity is not a date", "12345热线收到4.8万件演唱会诉求", ""),
+        ("valid dotted event date", "深圳展会定于11.08开幕", ""),
     ]
     results: list[dict[str, Any]] = []
     for name, title, description in cases:
@@ -328,6 +346,7 @@ def build_report(payload: dict[str, Any], today: date) -> dict[str, Any]:
         },
         "representative_examples": examples,
         "date_parsing_edge_cases": edge_case_results(today),
+        "records": [concise_event(event, old_by_id[event["event_id"]]) for event in enriched_events],
     }
 
 
@@ -410,6 +429,10 @@ def markdown_report(report: dict[str, Any]) -> str:
             f"{case.get('event_date_role') or '—'} | {case.get('date_precision') or '—'} | "
             f"{case.get('ticket_sale_at') or '—'} | {case.get('registration_at') or '—'} |"
         )
+    lines.extend(["", "## Complete future candidate IDs", ""])
+    for event in report["records"]:
+        if event["primary_bucket"] == "future_dated_event":
+            lines.append(f"- `{event['event_id']}` — {event['city_name']} — {event['event_name']} — `{event['start_at']}`")
     lines.extend(
         [
             "",
@@ -424,6 +447,7 @@ def markdown_report(report: dict[str, Any]) -> str:
 
 def main() -> int:
     args = parse_args()
+    validate_report_paths(args.snapshot, args.json_output, args.markdown_output)
     today = date.fromisoformat(args.today)
     payload = load_snapshot(args.snapshot)
     report = build_report(payload, today)

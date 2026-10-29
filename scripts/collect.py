@@ -14,6 +14,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
@@ -39,10 +40,10 @@ SCHEDULE_ROUNDUP_TERMS = (
     "展会安排", "演出汇总", "演出合集", "演出一览", "演出清单",
     "月度演出", "本月演出", "活动日历", "活动汇总", "展会日历"
 )
-TICKETING_TERMS = ("开票", "开售", "售票", "预售", "抢票", "门票", "票价", "发售")
+TICKETING_TERMS = ("开票", "开售", "售票", "预售", "抢票", "门票", "票价", "发售", "开抢")
 REGISTRATION_TERMS = (
     "报名启动", "报名开启", "报名时间", "报名截止", "报名通道",
-    "开放报名", "开始报名", "报名即将开始", "报名啦"
+    "开放报名", "开始报名", "报名即将开始", "报名啦", "开启报名"
 )
 EVENT_DATE_CUES = (
     "将于", "定于", "定档", "举行", "举办", "开幕", "开赛", "开演",
@@ -52,8 +53,12 @@ EVENT_DATE_CUES = (
 PAST_REPORT_TERMS = (
     "冠军诞生", "夺冠", "圆满落幕", "圆满结束", "成功举办", "顺利举行",
     "现场回顾", "精彩回顾", "赛后", "完美收官", "圆满收官", "已结束",
-    "落幕了", "比赛结束", "赛事回顾", "演出回顾"
+    "落幕", "比赛结束", "赛事回顾", "演出回顾"
 )
+CONDITIONAL_EVENT_PATTERN = re.compile(
+    r"审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望"
+)
+QUANTITY_SUFFIX = r"\s*(?:万|亿|千|百|人|名|件|通|元|%|％|小时|公里|万人|万名)"
 NON_EVENT_CONTENT_KINDS = {"guide", "schedule_roundup", "ticketing_notice", "registration_notice"}
 
 USER_AGENT = "HotspotPulse/0.1 (+https://github.com/wildpig622/hotspot-pulse)"
@@ -125,8 +130,12 @@ def classify_content(title: str, description: str = "") -> str:
         return "guide"
     if any(term in title_value for term in SCHEDULE_ROUNDUP_TERMS):
         return "schedule_roundup"
-    if any(term in title_value for term in PAST_REPORT_TERMS):
+    if any(term in title_value for term in PAST_REPORT_TERMS) or re.search(
+        r"昨(?:日|天|晚)?[^，。！？；]{0,8}(?:开跑|开赛|举行|举办|开演)", title_value
+    ):
         return "past_report"
+    if CONDITIONAL_EVENT_PATTERN.search(combined):
+        return "uncertain"
 
     has_event_keyword = any(term in combined for term in KEYWORDS)
     has_event_date_cue = any(term in combined for term in EVENT_DATE_CUES)
@@ -152,6 +161,49 @@ def classify_content(title: str, description: str = "") -> str:
 def event_identity(city_slug: str, event_name: str) -> str:
     """Stable identity independent of a possibly misread date."""
     return (city_slug or "") + "|" + normalize_title(event_name or "")
+
+
+@lru_cache(maxsize=1)
+def configured_cities() -> list[dict[str, Any]]:
+    return json.loads(CITIES_FILE.read_text(encoding="utf-8"))
+
+
+def assess_event_city(city: dict[str, Any], title: str, description: str = "") -> str:
+    """Prefer the city next to the first event name over incidental city mentions."""
+    event_match = re.search("|".join(map(re.escape, KEYWORDS)), title)
+    hosts: list[tuple[int, str]] = []
+    if event_match:
+        prefix = title[max(0, event_match.start() - 18):event_match.start()]
+        for configured in configured_cities():
+            for alias in configured["aliases"]:
+                for match in re.finditer(re.escape(alias), prefix):
+                    if not re.search(r"[，。！？；,;:：]", prefix[match.end():]):
+                        hosts.append((match.end(), configured["city_slug"]))
+    if hosts and max(hosts)[1] != city.get("city_slug"):
+        return "event_city_conflict"
+    aliases = city.get("aliases") or [str(city.get("city_name", "")).removesuffix("市")]
+    return "text_confirmed" if any(alias and alias in title + " " + description for alias in aliases) else "query_only"
+
+
+def future_exclusion_reasons(event: dict[str, Any]) -> list[str]:
+    title = event.get("event_name") or ""
+    reasons = []
+    if CONDITIONAL_EVENT_PATTERN.search(title) or event.get("event_confirmation") == "unconfirmed":
+        reasons.append("conditional_event")
+    city_match = event.get("city_match")
+    if event.get("city_slug"):
+        city_match = assess_event_city(event, title)
+    if city_match == "event_city_conflict":
+        reasons.append("event_city_conflict")
+    elif city_match == "query_only":
+        reasons.append("city_not_confirmed")
+    # Protect readers of the unchanged legacy snapshot as well as newly parsed data.
+    if event.get("start_at") and not event.get("event_date_role"):
+        for match in re.finditer(r"(?<![\d./])(\d{1,2})[/.](\d{1,2})(?![\d./])" + QUANTITY_SUFFIX, title):
+            if event["start_at"][5:] == f"{int(match[1]):02d}-{int(match[2]):02d}":
+                reasons.append("numeric_quantity_date")
+                break
+    return reasons
 
 
 def _date_from_parts(year: int | None, month: int, day: int, today: date) -> tuple[date | None, str]:
@@ -186,6 +238,24 @@ def _nearest_term_distance(text: str, start: int, end: int, terms: tuple[str, ..
 
 
 def _date_role(text: str, start: int, end: int) -> str:
+    # Actions in another clause must not lend their role to this date. In
+    # "将于10月20日10:00开启报名，比赛时间为12月20日", the action
+    # following the first date is registration, despite the preceding 将于.
+    left = max([match.end() for match in re.finditer(r"[，。！？；,;]", text[:start])] or [0])
+    boundary = re.search(r"[，。！？；,;]", text[end:])
+    right = end + boundary.start() if boundary else len(text)
+    clause = text[left:right]
+    local_start, local_end = start - left, end - left
+    following = clause[local_end:local_end + 24]
+    following_actions = []
+    for terms, role in ((EVENT_DATE_CUES, "event"), (TICKETING_TERMS, "ticket_sale"), (REGISTRATION_TERMS, "registration")):
+        for term in terms:
+            index = following.find(term)
+            if index >= 0:
+                following_actions.append((index, role))
+    if following_actions:
+        return min(following_actions)[1]
+    text, start, end = clause, local_start, local_end
     event_distance = _nearest_term_distance(text, start, end, EVENT_DATE_CUES)
     sale_distance = _nearest_term_distance(text, start, end, TICKETING_TERMS)
     registration_distance = _nearest_term_distance(text, start, end, REGISTRATION_TERMS)
@@ -272,11 +342,13 @@ def _collect_day_candidates(text: str, today: date) -> tuple[list[dict[str, Any]
     patterns = [
         re.compile(r"(?<!\d)(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?!\d)"),
         re.compile(r"(?<!\d)(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日"),
-        re.compile(r"(?<!\d)(\d{1,2})[/.](\d{1,2})(?!\d)"),
+        re.compile(r"(?<![\d./])(\d{1,2})[/.](\d{1,2})(?![\d./])"),
     ]
     for pattern_index, pattern in enumerate(patterns):
         for match in pattern.finditer(text):
             if any(not (match.end() <= left or match.start() >= right) for left, right in occupied):
+                continue
+            if pattern_index == 2 and re.match(QUANTITY_SUFFIX, text[match.end():]):
                 continue
             if pattern_index == 0:
                 year, month, day = int(match.group(1)), int(match.group(2)), int(match.group(3))
@@ -450,17 +522,24 @@ def extract_event_date(title: str, description: str = "", today: date | None = N
 
 def is_upcoming_event(event: dict[str, Any], today: date) -> bool:
     """Return True only for a dated, future/ongoing single-event candidate."""
-    kind = event.get("content_kind") or classify_content(event.get("event_name", ""))
+    if future_exclusion_reasons(event):
+        return False
+    title_kind = classify_content(event.get("event_name", ""))
+    if title_kind == "past_report":
+        return False
+    kind = event.get("content_kind") or title_kind
     if kind not in {"event_announcement", "uncertain"}:
         return False
     start_value = event.get("start_at")
     if not start_value or event.get("date_precision") in {"month", "month_range"}:
         return False
+    if not event.get("event_date_role") and event.get("date_confidence") == "inferred_year" and start_value[:4] > str(today.year):
+        return False
     if event.get("event_date_role") in {"ticket_sale", "registration", "reference_period"}:
         return False
     try:
         end_value = date.fromisoformat(event.get("end_at") or start_value)
-    except ValueError:
+    except (TypeError, ValueError):
         return False
     return end_value >= today
 
@@ -473,6 +552,9 @@ def enrich_existing_event(event: dict[str, Any], today: date) -> dict[str, Any]:
     kind = classify_content(title)
     parsed = extract_event_date(title, "", today)
     event["content_kind"] = kind
+    if event.get("city_slug"):
+        event["city_match"] = assess_event_city(event, title)
+    event["event_confirmation"] = "unconfirmed" if CONDITIONAL_EVENT_PATTERN.search(title) or event.get("event_confirmation") == "unconfirmed" else "unknown"
 
     if kind in NON_EVENT_CONTENT_KINDS and parsed.get("event_date_role") != "event":
         event["start_at"] = None
@@ -490,11 +572,13 @@ def enrich_existing_event(event: dict[str, Any], today: date) -> dict[str, Any]:
         event["date_confidence"] = parsed.get("date_confidence", "unknown")
         event["event_date_role"] = parsed.get("event_date_role", "unknown")
     else:
-        event.setdefault("event_date_role", "ambiguous" if event.get("start_at") else "unknown")
+        # A legacy date that cannot be reproduced from the title is untrusted.
+        # This clears stale dates after a numeric-quantity false match is fixed.
+        for field in ("start_at", "end_at", "date_precision", "date_confidence", "event_date_role"):
+            event[field] = parsed[field]
 
     for field in ("ticket_sale_at", "registration_at", "reference_period_start", "reference_period_end"):
-        if parsed.get(field):
-            event[field] = parsed[field]
+        event[field] = parsed.get(field)
     return event
 
 
@@ -565,8 +649,7 @@ def build_candidate(city: dict[str, Any], item: dict[str, Any], observed_at: str
     event_name = re.sub(r"\s*[-–—|｜]\s*[^-–—|｜]{2,36}$", "", title).strip() or title
     identity = event_identity(city["city_slug"], event_name)
     event_id = "evt_" + hashlib.sha256(identity.encode("utf-8")).hexdigest()[:12]
-    text_for_city = title + " " + description
-    city_match = "text_confirmed" if any(alias and alias in text_for_city for alias in city.get("aliases", [])) else "query_only"
+    city_match = assess_event_city(city, title, description)
     published_at = item.get("published_at")
     knowable_at = max(value for value in (observed_at, published_at) if value) if published_at else observed_at
     source = {
@@ -591,6 +674,7 @@ def build_candidate(city: dict[str, Any], item: dict[str, Any], observed_at: str
         "event_type": classify_event(title + " " + description),
         "content_kind": content_kind,
         "city_name": city["city_name"], "city_slug": city["city_slug"], "city_match": city_match,
+        "event_confirmation": "unconfirmed" if CONDITIONAL_EVENT_PATTERN.search(title + " " + description) else "unknown",
         "venue_name": None, "venue_location": None,
         "start_at": date_info["start_at"], "end_at": date_info["end_at"],
         "date_precision": date_info["date_precision"], "date_confidence": date_info["date_confidence"],
@@ -629,27 +713,21 @@ def merge_candidate(existing: dict[str, Any] | None, candidate: dict[str, Any]) 
     merged["source_count"] = len(merged["sources"])
     merged["review_status"] = existing.get("review_status", "pending")
     merged["event_status"] = existing.get("event_status", "unknown")
-    merged["content_kind"] = candidate.get("content_kind") or existing.get("content_kind") or "uncertain"
-    merged["event_type"] = candidate.get("event_type") or existing.get("event_type") or "other"
-    merged["city_match"] = candidate.get("city_match") or existing.get("city_match") or "query_only"
-
-    if candidate.get("start_at") and candidate.get("event_date_role") in {"event", "ambiguous"}:
-        if candidate.get("date_confidence") == "explicit_year" or not merged.get("start_at") or merged.get("event_date_role") != "event":
-            for field in ("start_at", "end_at", "date_precision", "date_confidence", "event_date_role"):
+    if merged["review_status"] != "verified":
+        for field in ("content_kind", "event_type", "city_match", "event_confirmation"):
+            if field in candidate:
+                merged[field] = candidate[field]
+        if existing.get("event_confirmation") == "unconfirmed":
+            merged["event_confirmation"] = "unconfirmed"
+        # A complete parser result replaces even an obsolete non-empty date.
+        # Merely discovering another source must not overwrite human-reviewed fields.
+        if "event_date_role" in candidate:
+            for field in (
+                "start_at", "end_at", "date_precision", "date_confidence", "event_date_role",
+                "ticket_sale_at", "ticket_sale_date_confidence", "registration_at",
+                "registration_date_confidence", "reference_period_start", "reference_period_end",
+            ):
                 merged[field] = candidate.get(field)
-    elif (
-        candidate.get("event_date_role") in {"ticket_sale", "registration", "reference_period"}
-        or (candidate.get("content_kind") in NON_EVENT_CONTENT_KINDS and not candidate.get("start_at"))
-    ):
-        merged["start_at"] = None
-        merged["end_at"] = None
-        merged["date_precision"] = candidate.get("date_precision", "tbd")
-        merged["date_confidence"] = candidate.get("date_confidence", "unknown")
-        merged["event_date_role"] = candidate.get("event_date_role", "unknown")
-
-    for field in ("ticket_sale_at", "registration_at", "reference_period_start", "reference_period_end"):
-        if candidate.get(field):
-            merged[field] = candidate[field]
     first_seen = existing.get("first_seen_at") or candidate.get("first_seen_at")
     merged["first_seen_at"] = first_seen
     published = [s.get("source_published_at") for s in merged["sources"] if s.get("source_published_at")]

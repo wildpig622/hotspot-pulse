@@ -22,19 +22,19 @@ class SnapshotAuditTests(unittest.TestCase):
     def test_audit_keeps_all_records_pending_and_does_not_promote(self):
         self.assertEqual(self.report["review_status_counts"], {"pending": 457})
         self.assertEqual(self.report["raw_snapshot"]["legacy_content_kind_missing"], 457)
-        self.assertEqual(self.report["legacy_comparison"]["legacy_dated_records_cleared"], 13)
+        self.assertEqual(self.report["legacy_comparison"]["legacy_dated_records_cleared"], 26)
 
     def test_audit_counts_match_current_filter_and_review_flags(self):
         counts = self.report["primary_disposition_counts"]
-        self.assertEqual(counts["future_dated_event_candidates"], 33)
-        self.assertEqual(counts["event_candidates_with_dates_needing_review"], 344)
-        self.assertEqual(counts["ticketing_or_registration_notices"], 19)
+        self.assertEqual(counts["future_dated_event_candidates"], 20)
+        self.assertEqual(counts["event_candidates_with_dates_needing_review"], 351)
+        self.assertEqual(counts["ticketing_or_registration_notices"], 22)
         self.assertEqual(counts["schedule_roundups"], 11)
         self.assertEqual(counts["guides_or_other_information"], 17)
-        self.assertEqual(counts["past_reports_or_expired_events"], 33)
-        self.assertEqual(self.report["date_review"]["event_candidates_with_any_review_flag"], 376)
-        self.assertEqual(self.report["date_review"]["future_candidates_with_review_flags"], 32)
-        self.assertEqual(self.report["date_review"]["future_candidates_without_review_flags"], 1)
+        self.assertEqual(counts["past_reports_or_expired_events"], 36)
+        self.assertEqual(self.report["date_review"]["event_candidates_with_any_review_flag"], 371)
+        self.assertEqual(self.report["date_review"]["future_candidates_with_review_flags"], 20)
+        self.assertEqual(self.report["date_review"]["future_candidates_without_review_flags"], 0)
 
     def test_edge_case_audit_includes_compact_date_as_review_lead(self):
         cases = {case["case"]: case for case in edge_case_results(date(2026, 10, 29))}

@@ -9,6 +9,8 @@
 - 活动举办日期与开票/售票、报名日期分字段记录；文章提及的月份或月份范围不写入 start_at/end_at，避免被误读为单场举办日期。
 - 内容性质单独分类：event_announcement、uncertain、ticketing_notice、registration_notice、schedule_roundup、guide、past_report。攻略、排期汇总、开票/报名资讯不会被默认展示为未来活动。
 - 未标年份的日期会标记 inferred_year，必须人工核对；日期语义不明确时标记 ambiguous，不自动核验。
+- 人数、金额、热线件数等数量不作为日期；旧记录无法重现的日期会清空并保留复核。
+- 活动名称附近的举办城市优先于嘉宾、商品等附带城市名；城市冲突、仅检索命中及“审批中/或定档”等未确认安排不进入未来视图。
 - 同一候选的多来源会合并；来源链接、发布/发现时间与最近出现时间会保留。
 - GitHub Actions 每天北京时间 06:15 运行；采集成功后提交 JSON 快照，GitHub Pages 工作流负责发布。
 - 不使用内部 PMS、经营数据或私人凭据。公开仓库中的数据与 API 均可被互联网访问。
@@ -45,6 +47,18 @@ https://wildpig622.github.io/hotspot-pulse/api/v1/
     python scripts/collect.py
 
 真实采集需要访问 Google News RSS。若所有 RSS 源都失败，程序会保留上一份事件快照、更新 health.json 并以失败退出；不会用空列表覆盖历史数据。
+
+仅重跑离线审计（不联网、不修改 `site/` 快照）：
+
+    python scripts/audit_snapshot.py --today 2026-10-29
+
+报告输出到 `docs/audit-2026-10-29-followup.json` 和 `.md`，原审计文件保留。JSON 中的 `records` 提供全部记录的分类、日期、排除原因与现有核验状态。程序拒绝把审计输出写到输入快照或 `site/`。
+
+验证网页筛选器（需要 Node.js 20+）：
+
+    node --test tests/test_site.js
+
+2026-10-29 修复复查见 `docs/manual-audit-followup-2026-10-29.md`。当前为离线验证阶段，尚未达到合并、部署、启用定时采集或经营看板接入的放行门槛。
 
 ## 数据质量与后续扩展
 
