@@ -13,7 +13,7 @@
 - 活动名称附近的举办城市优先于嘉宾、商品等附带城市名；城市冲突、仅检索命中及“审批中/或定档”等未确认安排不进入未来视图。
 - 同一候选的多来源会合并；来源链接、发布/发现时间与最近出现时间会保留。
 - 新发现记录保留 `discovery_summary` 及其 `discovery_summary_source_url`，供下次重放日期、内容分类和城市判断；摘要仍是未核验的发现线索。
-- GitHub Actions 每天北京时间 06:15 运行；采集成功后提交 JSON 快照，GitHub Pages 工作流负责发布。
+- 本分支提案将采集与 Pages 部署隔离为两次独立手动操作，移除 main 推送和每日计划的自动执行入口；正式放行前保持草稿，不运行生产任务。提案未合并时，main 上的旧工作流定义不受影响。
 - 不使用内部 PMS、经营数据或私人凭据。公开仓库中的数据与 API 均可被互联网访问。
 
 ## API
@@ -28,12 +28,16 @@ https://wildpig622.github.io/hotspot-pulse/api/v1/
 
 这是静态 JSON API，不提供服务器端查询参数。消费者下载 hotspots.json 后按 city_name、event_type、start_at、review_status 与 content_kind 本地过滤。未来活动应只消费有具体举办日期、尚未结束且内容性质为 event_announcement/uncertain 的记录。看板接入时应默认只消费人工核验后的事件；当前采集器不会自动产生 verified 记录。
 
-## 首次启用
+## 正式放行后的手动执行
 
-1. 在仓库 Settings → Pages → Build and deployment 中选择 GitHub Actions。
-2. 打开 Actions，确认 Daily hotspot collection 与 Deploy static site 工作流可运行。
-3. 手动运行 Daily hotspot collection 完成首轮采集；后续每天北京时间 06:15 自动运行。
-4. 等待 Deploy static site 成功后，检查上面的 Pages 地址与 API 地址。
+以下只适用于取得正式放行和实际执行授权之后；当前不要运行。
+
+1. 审阅并获准合并本分支后，确认 main 上已经采用手动隔离定义，并记录要执行的 main 完整 40 位提交号。工作流不会替你启用 Pages。
+2. 若获准采集，在 Actions 中选择 `Collect hotspot candidates (manual)`，分支选 main，填写该完整提交号和确认词 `COLLECT_PENDING_ONLY`。预检通过后才采集并提交 pending 快照。
+3. 采集后的数据提交要单独检查并记录新提交号；采集不会自动触发部署，不保证其机器人提交会触发新的验证运行。需要时单独手动运行只读验证。
+4. 只有另行获准发布后，才在 `Deploy static site (manual)` 中选择 main，填写要发布的完整提交号和 `DEPLOY_REVIEWED_SITE`。日期证据和核验状态仍须人工签核。
+
+确认词和提交检查用于防止误操作，不代表已经获得发布许可，也不替代 GitHub 环境的独立审批配置。完整触发矩阵、测试范围及限制见 `docs/execution-isolation-2026-10-29.md`。
 
 ## 本地运行
 
@@ -61,7 +65,7 @@ https://wildpig622.github.io/hotspot-pulse/api/v1/
 
 2026-10-29 修复复查见 `docs/manual-audit-followup-2026-10-29.md`。当前为离线验证阶段，尚未达到合并、部署、启用定时采集或经营看板接入的放行门槛。
 
-本轮完整代码复查与上线前待办见 `docs/code-review-2026-10-29.md`。该报告区分样本处置验收、事实核验和实际发布许可；合并到 `main` 会触发采集与部署，不应把合并当作仅保存代码。
+前轮完整代码复查见 `docs/code-review-2026-10-29.md`，其中记录的是当时 main 的自动触发边界。本轮隔离提案见 `docs/execution-isolation-2026-10-29.md`；提案未合并前，main 的旧触发定义仍未改变。
 
 第二轮证据补查和边界复核见 `docs/evidence-round2-2026-10-29.md`。重建包含来源访问状态和待核验结论的 49 条工作表：
 
