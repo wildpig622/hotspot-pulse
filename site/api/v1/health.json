@@ -1,14 +1,14 @@
 {
   "api_version": "v1",
-  "last_run_at": "2026-10-29T03:08:28Z",
-  "last_run_local": "2026-10-29 11:08:28 +08:00",
+  "last_run_at": "2026-10-29T03:08:58Z",
+  "last_run_local": "2026-10-29 11:08:58 +08:00",
   "status": "healthy",
   "source_system": "Google News RSS",
   "city_count": 28,
   "successful_feeds": 28,
   "failed_feeds": 0,
-  "rss_items_seen": 506,
-  "candidate_count": 380,
+  "rss_items_seen": 519,
+  "candidate_count": 457,
   "feed_results": [
     {
       "city_name": "成都市",
@@ -18,12 +18,12 @@
     {
       "city_name": "南京市",
       "status": "ok",
-      "items": 20
+      "items": 19
     },
     {
       "city_name": "重庆市",
       "status": "ok",
-      "items": 9
+      "items": 20
     },
     {
       "city_name": "杭州市",
@@ -63,12 +63,12 @@
     {
       "city_name": "贵阳市",
       "status": "ok",
-      "items": 17
+      "items": 10
     },
     {
       "city_name": "沈阳市",
       "status": "ok",
-      "items": 12
+      "items": 20
     },
     {
       "city_name": "洛阳市",
@@ -93,17 +93,17 @@
     {
       "city_name": "南宁市",
       "status": "ok",
-      "items": 15
+      "items": 20
     },
     {
       "city_name": "徐州市",
       "status": "ok",
-      "items": 20
+      "items": 8
     },
     {
       "city_name": "合肥市",
       "status": "ok",
-      "items": 11
+      "items": 20
     },
     {
       "city_name": "苏州市",
