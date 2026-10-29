@@ -1,0 +1,14 @@
+{
+  "api_version": "v1",
+  "last_run_at": null,
+  "last_run_local": null,
+  "status": "not_run",
+  "source_system": "Google News RSS",
+  "city_count": 28,
+  "successful_feeds": 0,
+  "failed_feeds": 0,
+  "rss_items_seen": 0,
+  "candidate_count": 0,
+  "feed_results": [],
+  "note": "尚未运行首次采集。"
+}

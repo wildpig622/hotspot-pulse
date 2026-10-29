@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="面向酒店收益经营的公开热点事件自动发现服务">
+  <title>Hotspot Pulse · 热点事件雷达</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">H</div>
+    <div class="brand-copy"><strong>Hotspot Pulse</strong><span>公开活动事件雷达 · 酒店收益经营数据源</span></div>
+    <div class="top-actions"><span id="updatedAt" class="updated">正在读取数据…</span><button id="refreshBtn" class="button button-primary" type="button">刷新数据</button></div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div><p class="eyebrow">PUBLIC EVENT DISCOVERY</p><h1>让城市热点有据可查</h1><p class="hero-copy">每日发现赛事、展会、演出与节庆候选，保留来源和时间线，供经营看板进一步核验。</p></div>
+      <div class="hero-state"><span id="healthDot" class="status-dot status-muted"></span><div><strong id="healthLabel">等待首次采集</strong><span id="healthDetail">尚无采集状态</span></div></div>
+    </section>
+    <section class="notice"><strong>数据边界</strong><span>自动发现不等于官方核验。候选事件默认待核验，不能直接当作确定热点或定价依据；采集失败时保留上一份快照。</span></section>
+    <section class="metrics" aria-label="数据概览">
+      <article class="metric-card"><span>候选事件</span><strong id="metricTotal">—</strong><small>去重后的候选条目</small></article>
+      <article class="metric-card"><span>含日期候选</span><strong id="metricDated">—</strong><small>日期仍需核对来源</small></article>
+      <article class="metric-card"><span>来源记录</span><strong id="metricSources">—</strong><small>按来源 URL 去重</small></article>
+      <article class="metric-card"><span>采集城市</span><strong id="metricCities">—</strong><small>可在配置中调整</small></article>
+    </section>
+    <section class="panel">
+      <div class="panel-heading"><div><h2>候选事件</h2><p>按活动日期筛选；点击来源可回到原始新闻结果。</p></div><span id="resultCount" class="result-count">0 条</span></div>
+      <div class="filters">
+        <label class="search-field"><span>搜索</span><input id="searchInput" type="search" placeholder="活动名称、城市或来源"></label>
+        <label><span>城市</span><select id="cityFilter"><option value="">全部城市</option></select></label>
+        <label><span>类型</span><select id="typeFilter"><option value="">全部类型</option><option value="concert">演出/演唱会</option><option value="exhibition">展会</option><option value="sports">赛事</option><option value="festival">节庆</option><option value="other">其他</option></select></label>
+        <label><span>核验状态</span><select id="reviewFilter"><option value="">全部状态</option><option value="pending">待核验</option><option value="verified">已核验</option></select></label>
+        <label><span>开始日期</span><input id="dateFrom" type="date" aria-label="开始日期"></label>
+        <label><span>结束日期</span><input id="dateTo" type="date" aria-label="结束日期"></label>
+        <button id="clearBtn" class="button button-quiet" type="button">清空筛选</button>
+      </div>
+      <div id="feedError" class="feed-error" hidden></div>
+      <div id="eventsList" class="events-list"><div class="empty-state">正在读取 JSON 数据…</div></div>
+      <div class="panel-footer"><span id="sourceInfo">数据源：Google News RSS 搜索结果</span><a href="./api/v1/hotspots.json" target="_blank" rel="noopener">打开 JSON API ↗</a><a href="./api/v1/health.json" target="_blank" rel="noopener">采集状态 ↗</a></div>
+    </section>
+    <section class="panel api-panel">
+      <div><h2>供收益看板调用</h2><p>当前采用公开静态 JSON，稳定后可由看板 fetch 后按城市、入住日期与核验状态过滤。</p></div>
+      <div class="endpoint"><span>GET</span><code id="endpointUrl">/api/v1/hotspots.json</code><button id="copyEndpoint" class="button button-quiet" type="button">复制地址</button></div>
+      <p class="api-note">当前版本只负责发现候选，不自动写入现有 Supabase 热点库，也不自动将候选升级为已核验事件。</p>
+    </section>
+    <footer class="footer"><span>Hotspot Pulse · MVP 0.1</span><span>公开来源 · 可追溯 · 默认待核验</span></footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

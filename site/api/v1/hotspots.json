@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "schema_version": "1.0",
+    "generated_at": null,
+    "timezone": "Asia/Shanghai",
+    "collection_status": "not_run",
+    "source_system": "Google News RSS",
+    "candidate_count": 0,
+    "dated_candidate_count": 0,
+    "pending_count": 0,
+    "verified_count": 0,
+    "city_count": 28,
+    "successful_feeds": 0,
+    "failed_feeds": 0,
+    "rss_items_seen": 0,
+    "data_note": "等待首次采集。自动发现候选不代表官方核验；只有 review_status=verified 的事件可进入正式经营判断。"
+  },
+  "data": []
+}

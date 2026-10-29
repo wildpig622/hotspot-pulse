@@ -1,0 +1,33 @@
+{
+  "meta": {"api_version": "v1", "generated_at": null, "city_count": 28},
+  "data": [
+    {"city_name":"成都市","city_slug":"chengdu","candidate_count":0},
+    {"city_name":"南京市","city_slug":"nanjing","candidate_count":0},
+    {"city_name":"重庆市","city_slug":"chongqing","candidate_count":0},
+    {"city_name":"杭州市","city_slug":"hangzhou","candidate_count":0},
+    {"city_name":"武汉市","city_slug":"wuhan","candidate_count":0},
+    {"city_name":"西安市","city_slug":"xian","candidate_count":0},
+    {"city_name":"深圳市","city_slug":"shenzhen","candidate_count":0},
+    {"city_name":"南昌市","city_slug":"nanchang","candidate_count":0},
+    {"city_name":"广州市","city_slug":"guangzhou","candidate_count":0},
+    {"city_name":"长沙市","city_slug":"changsha","candidate_count":0},
+    {"city_name":"贵阳市","city_slug":"guiyang","candidate_count":0},
+    {"city_name":"沈阳市","city_slug":"shenyang","candidate_count":0},
+    {"city_name":"洛阳市","city_slug":"luoyang","candidate_count":0},
+    {"city_name":"珠海市","city_slug":"zhuhai","candidate_count":0},
+    {"city_name":"昆明市","city_slug":"kunming","candidate_count":0},
+    {"city_name":"郑州市","city_slug":"zhengzhou","candidate_count":0},
+    {"city_name":"南宁市","city_slug":"nanning","candidate_count":0},
+    {"city_name":"徐州市","city_slug":"xuzhou","candidate_count":0},
+    {"city_name":"合肥市","city_slug":"hefei","candidate_count":0},
+    {"city_name":"苏州市","city_slug":"suzhou","candidate_count":0},
+    {"city_name":"福州市","city_slug":"fuzhou","candidate_count":0},
+    {"city_name":"德阳市","city_slug":"deyang","candidate_count":0},
+    {"city_name":"遂宁市","city_slug":"suining","candidate_count":0},
+    {"city_name":"济南市","city_slug":"jinan","candidate_count":0},
+    {"city_name":"厦门市","city_slug":"xiamen","candidate_count":0},
+    {"city_name":"金华市","city_slug":"jinhua","candidate_count":0},
+    {"city_name":"天津市","city_slug":"tianjin","candidate_count":0},
+    {"city_name":"兰州市","city_slug":"lanzhou","candidate_count":0}
+  ]
+}
