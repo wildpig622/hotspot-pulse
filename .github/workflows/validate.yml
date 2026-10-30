@@ -1,0 +1,44 @@
+name: Validate hotspot pulse
+
+on:
+  push:
+    branches: ["fix/**", main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Rebuild unsigned pilot packet without changing production data
+        run: |
+          python scripts/build_pilot_review.py
+          git diff --exit-code -- docs/pilot-review-2026-10-29.json docs/pilot-review-2026-10-29.md
+      - name: Rebuild source evidence summary without approving records
+        run: |
+          python scripts/build_evidence_refresh.py
+          git diff --exit-code -- docs/activity-evidence-2026-10-30.json docs/activity-evidence-2026-10-30.md
+      - name: Compile collector
+        run: python -m py_compile scripts/collect.py scripts/check_manual_execution.py
+      - name: Validate public filters against manual audit cases
+        run: node --test tests/test_site.js tests/test_share_image.js
+      - name: Lint workflow definitions without executing them
+        run: |
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/actionlint.tar.gz" https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz
+          echo "8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8  $RUNNER_TEMP/actionlint.tar.gz" | sha256sum --check -
+          mkdir -p "$RUNNER_TEMP/actionlint"
+          tar -xzf "$RUNNER_TEMP/actionlint.tar.gz" -C "$RUNNER_TEMP/actionlint" actionlint
+          "$RUNNER_TEMP/actionlint/actionlint" -color .github/workflows/*.yml

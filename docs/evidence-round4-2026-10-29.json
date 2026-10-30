@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-10-29T15:48:16+08:00",
+  "round_id": "round_4",
+  "baseline_commit": "75e83e9978786bf0eb0401def17b3c42d096c96d",
+  "rules_review_base_commit": "89b7449",
+  "review_status_policy": "Report-only evidence observations. All 49 records remain not_verified/pending. No production writes, remote updates or automatic verified promotion.",
+  "source_corrections": [
+    {
+      "url": "https://weibo.com/2/detail/5353878510899783",
+      "source_type": "unaffiliated_social_account",
+      "issuer": "我是随乄心",
+      "access_status": "body_read_authority_claim_withdrawn",
+      "reason": "直接读取原微博后，发布者为普通账号，不是初始E18所称的官方/艺人侧账号。正文中引用大麦不使该账号成为官方来源。保留旧分类作为历史，并撤回其权威身份判断。"
+    }
+  ],
+  "groups": [
+    {
+      "id": "U01",
+      "event_ids": ["evt_6c148ae9cbc6", "evt_bd8e6c831c64", "evt_c582cfbe9c6b"],
+      "manual_event_date": "2026-12-20; 07:30 remains corroborated by the authenticated account mirror only",
+      "event_status": "future_scheduled_pending",
+      "evidence_result": "operator_primary_body_visually_read_supports_event_day",
+      "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "通过浏览器整页截图实际读到万达官网公告正文。页面标题、2026-10-16发布时间、万达集团页头及官方网站页尾可见；正文明确2026南宁马拉松、万达体育运营、10月20日开放报名、12月20日开跑。两条未来候选的日级举办日期缺口已补齐；第三条仍为报名通知。原文未给出07:30，不把镜像时间升级为本轮原文确认。",
+      "sources": [
+        {
+          "url": "https://www.wanda.cn/2026/2026_1016/48499.html",
+          "source_type": "official_event_operator",
+          "issuer": "万达集团官方网站 / 万达体育",
+          "published_at": "2026-10-16",
+          "title": "万达体育运营南宁马拉松定档12月20日开赛",
+          "access_status": "primary_body_visually_read_full_page_screenshot",
+          "read_method": "in_app_browser_full_page_screenshot; actual visible body, not search excerpt",
+          "supports": "2026南宁马拉松，南宁市，2026-12-20比赛；2026-10-20为报名节点。未支持具体发枪时刻。",
+          "access_notes": "网页文本读取及先前浏览器正文读取超时；本轮已加载的页面可正常截图，人工阅读截图得到正文。保留前轮失败观察。"
+        }
+      ]
+    },
+    {
+      "id": "U02",
+      "event_ids": ["evt_3644cdd4c268"],
+      "manual_event_date": "2026-10-24; the government index also lists 10-25 and separate November dates",
+      "event_status": "past_scheduled_pending",
+      "evidence_result": "government_index_supports_date_primary_blocked_by_certificate",
+      "strict_authority_result": "incomplete",
+      "conclusion": "找到江宁区政府交通管控通告，官方域名索引明确2026华晨宇演唱会10月24日至25日在汤山音乐谷举行。但两个网页工具打开超时，浏览器报证书机构无效；未绕过警告，不能把索引文字记为直接读到政府正文。261024仍需最终权威正文复核；不能将同一通告中的11月场次赋给本条10月社交内容。",
+      "sources": [
+        {
+          "url": "https://www.jiangning.gov.cn/jnqrmzf/202610/t20261016_6020135.html",
+          "source_type": "district_government_notice_index",
+          "issuer": "南京市江宁区人民政府",
+          "title": "关于对汤山音乐谷周边道路采取临时交通管控措施的通告",
+          "access_status": "search_index_read_web_timeout_browser_certificate_authority_invalid",
+          "supports": "索引列2026华晨宇演唱会10月24日至25日及11月若干场次，南京江宁汤山音乐谷；当前原始正文访问仍受阻。",
+          "access_notes": "浏览器net::ERR_CERT_AUTHORITY_INVALID。未忽略证书验证、未改用HTTP、未绕过警告。"
+        }
+      ]
+    },
+    {
+      "id": "U03",
+      "event_ids": ["evt_203cc4315104", "evt_b178c8b5c408"],
+      "manual_event_date": "2026-10-23 and 2026-10-25; initial presale 10-15 10:05 still lacks a directly read organizer/venue/government source",
+      "event_status": "past_scheduled_pending",
+      "evidence_result": "authorized_ticketing_primary_body_supports_event_dates_only",
+      "strict_authority_result": "corroboration_only",
+      "conclusion": "大麦APP原微博正文已直接读取，包含2026肖战巡演南京站、梦之蓝青奥体育公园体育馆、10月23日及25日，符合用户对授权票务佐证的名称/城市/日期要求。该帖是购票提醒，没有首轮10月15日10:05节点；按用户规则仅作票务佐证，不替代主办方/场馆/政府核验。原E18普通账号身份已撤回。紧凑日期记录保持日期复核，开售记录保持开票通知。",
+      "sources": [
+        {
+          "url": "https://weibo.com/2/detail/5353562416351919",
+          "source_type": "authorized_ticketing_official_account_primary_post",
+          "issuer": "大麦APP",
+          "access_status": "primary_body_read",
+          "supports": "2026肖战［出口·我们］巡回演唱会南京站、梦之蓝青奥体育公园体育馆、10月23日及25日；正文称大麦为官方独家售票渠道。仅作授权票务佐证。"
+        },
+        {
+          "url": "https://3g.sina.com.cn/news/detail/5353562416351919.html",
+          "source_type": "authorized_ticketing_account_authenticated_mirror",
+          "issuer": "大麦APP；页面显示大麦官方微博认证",
+          "access_status": "mirror_body_read",
+          "supports": "确认原帖发布者身份与2026-10-13发布时间；不冒充主办方原文。"
+        },
+        {
+          "url": "https://weibo.com/2/detail/5353878510899783",
+          "source_type": "unaffiliated_social_account",
+          "issuer": "我是随乄心",
+          "access_status": "body_read_authority_claim_withdrawn",
+          "supports": "只用于纠正旧E18来源身份；不作为权威核验依据。"
+        }
+      ]
+    }
+  ],
+  "explicit_evidence_gaps": [
+    {"event_id": "evt_3644cdd4c268", "scope": "original_boundary_12", "reason": "政府原文证书错误；官方工作室镜像与政府索引不能伪装成已直接读取的原始正文。"},
+    {"event_id": "evt_203cc4315104", "scope": "original_boundary_12", "reason": "已有合格授权票务佐证，尚缺主办/场馆/政府原文；旧E18官方身份撤回。"},
+    {"event_id": "evt_b178c8b5c408", "scope": "original_boundary_12", "reason": "同上；首轮10月15日10:05的准确售票时刻仍缺合格原文确认。"},
+    {"event_id": "evt_21064dd8a66c", "scope": "original_future_33_excluded", "reason": "条件性消息已明确排除且保持pending；无官方确认，不认定活动存在、取消或核验完成。"},
+    {"event_id": "evt_bf7cd401e149", "scope": "expanded_4", "reason": "遂宁孙楠演出协办方原帖未读取，沿用S05缺口；不影响已排除未来视图的处理。"},
+    {"event_id": "evt_5c82713cc03a", "scope": "expanded_4", "reason": "贵阳咖啡展主办方账号主体未独立认证，沿用S06缺口；不影响已排除未来视图的处理。"}
+  ]
+}

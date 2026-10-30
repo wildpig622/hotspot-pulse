@@ -1,0 +1,22 @@
+{
+  "quality_reviewed_at": "2026-10-29T16:22:56+08:00",
+  "rules_review_base_commit": "422bab9",
+  "branch": "fix/manual-audit-regressions",
+  "remote_pr": {
+    "url": "https://github.com/wildpig622/hotspot-pulse/pull/1",
+    "read_via": "connected GitHub plugin get_pr_info",
+    "state": "open", "draft": true, "merged": false,
+    "head_sha": "75e83e9978786bf0eb0401def17b3c42d096c96d", "base": "main",
+    "observation_scope": "Read during this acceptance review; local fixes have not been pushed."
+  },
+  "scope": "Original 33 future candidates plus 12 stratified boundary cases. Activity identity/city, calendar-day evidence, date roles, source attribution and safe disposition; no verification of every numerical/detail claim in article titles.",
+  "decision": "Candidate disposition acceptance and factual verification are separate. Liu Yu satisfies the explicit withheld/pending exception; unknown facts stay not_verified. Strict release remains FAIL and the old remote PR is not recommended for merge.",
+  "qualifications": [
+    "Date support is limited to the cited precision: Jinhua 08:00 and Nanning 07:30 are not promoted from auxiliary evidence to primary confirmation.",
+    "Non-event guide/roundup decisions only classify the source content, not every advertised event, price or ticket guarantee.",
+    "The Nanjing guide page exposes a title, author, metadata and platform AI summary; the AI summary is not treated as source facts or a full original article.",
+    "Race rules and advance announcements alone do not prove actual completion; separate after-event reports are identified where read.",
+    "Old source observations retain their original checked_at; quality_reviewed_at is the consolidated assessment time, not a claim that every source was reopened in this round.",
+    "Expanded four records are retained in the 49-row worksheet but do not silently replace any of the 45 required cases."
+  ]
+}

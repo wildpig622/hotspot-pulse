@@ -1,0 +1,113 @@
+{
+  "checked_at": "2026-10-29T15:29:47+08:00",
+  "round_id": "round_3",
+  "baseline_commit": "75e83e9978786bf0eb0401def17b3c42d096c96d",
+  "rules_review_base_commit": "236813c",
+  "review_status_policy": "Date evidence outcomes only. All candidates remain pending; no production writes or automatic verified promotion.",
+  "groups": [
+    {
+      "id": "T01", "event_ids": ["evt_75164357227c"],
+      "manual_event_date": "2026-10-30 to 2026-11-03", "event_status": "future_scheduled_pending",
+      "evidence_result": "organizer_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "承办执行单位官网正文直接给出2026武汉国际车展、武汉国际博览中心及10月30日至11月3日展期。替代此前无法直接读取的政府链接。",
+      "sources": [
+        {"url": "https://whsmzl.com/", "source_type": "official_event_organizer", "issuer": "武汉世贸展览服务有限公司，页面自述为承办执行单位", "access_status": "primary_body_read", "supports": "2026武汉国际车展、武汉国际博览中心、10月30日至11月3日"},
+        {"url": "https://www.hmf-china.com/Cn/Events/Information/?CID=16&EID=47", "source_type": "official_event_organizer", "issuer": "汉诺威米兰展览（上海）有限公司", "access_status": "body_read", "supports": "武汉国际汽车展览会项目身份；同轮索引日期与承办方一致"}
+      ]
+    },
+    {
+      "id": "T02", "event_ids": ["evt_3b05c8d23d3b", "evt_3be0559d6385"],
+      "manual_event_date": "2026-10-31 to 2026-11-04", "event_status": "future_scheduled_pending",
+      "evidence_result": "organizing_committee_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "航博会官网组委会署名观展指南的正文明确展期和南昌绿地国际博览中心；页尾列出主办方与承办方。",
+      "sources": [
+        {"url": "https://ncaie.com.cn/news/143.html", "source_type": "official_exhibition_committee", "issuer": "南昌航空产业博览会组委会", "access_status": "primary_body_read", "supports": "2026-10-31至11-04，南昌绿地国际博览中心"}
+      ]
+    },
+    {
+      "id": "T03", "event_ids": ["evt_6614d69412a6", "evt_5f79d978ec7c", "evt_8da43a5d108c", "evt_4310a7ec1019"],
+      "manual_event_date": "2026-11-01 07:00", "event_status": "future_scheduled_pending",
+      "evidence_result": "government_account_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "杭州发布的官方政务号正文给出2026杭州马拉松11月1日7时起跑。页面明确标注杭州市人民政府新闻办公室官方澎湃号，属于发布者自有账号正文。",
+      "sources": [
+        {"url": "https://m.thepaper.cn/newsDetail_forward_33434249", "source_type": "government_official_account_primary_post", "issuer": "杭州发布；页面标注杭州市人民政府新闻办公室官方澎湃号", "access_status": "primary_body_read", "supports": "2026杭州马拉松、11月1日07:00、黄龙体育中心"}
+      ]
+    },
+    {
+      "id": "T04", "event_ids": ["evt_cfd1dabb5e54"],
+      "manual_event_date": "2026-11-05 to 2026-11-09", "event_status": "future_scheduled_pending",
+      "evidence_result": "exhibition_official_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "联合车展官方展会概览直接列出2026届名称、昆明滇池国际会展中心、11月5日至9日及主承办单位。",
+      "sources": [
+        {"url": "https://km.szautoshow.com/mobile/exhibition.aspx", "source_type": "official_exhibition_site", "issuer": "昆明国际车展 / 联合车展", "access_status": "primary_body_read", "supports": "2026届昆明国际车展、2026/11/5至11/9、滇池国际会展中心"}
+      ]
+    },
+    {
+      "id": "T05", "event_ids": ["evt_cbf419541499"],
+      "manual_event_date": "2026-11-08; 08:00 remains supported by official-site index only", "event_status": "future_scheduled_pending",
+      "evidence_result": "association_calendar_supports_calendar_day_only", "strict_authority_result": "date_supported_day_precision",
+      "conclusion": "浙江省马拉松及路跑协会同域赛事日历正文列出2026金华金漪湖半程马拉松及2026-11-08。日历00:00是日期占位，不作为起跑时间；日历区县与赛事官网索引存在差异，不采信其区县。赛事官网浏览器报证书域名不匹配，未绕过。",
+      "sources": [
+        {"url": "https://m.zjim.org/race", "source_type": "association_race_calendar", "issuer": "浙江马拉松 / 浙江省马拉松及路跑协会同域站点", "access_status": "primary_calendar_body_read", "supports": "2026金华金漪湖半程马拉松，金华市，2026-11-08；只支持日级日期"},
+        {"url": "https://zjim.org/", "source_type": "association_official_site", "issuer": "浙江省马拉松及路跑协会", "access_status": "primary_body_read", "supports": "页面标明协会身份，并将2026金华金漪湖半程马拉松链接到jdim.org"},
+        {"url": "https://www.jdim.org/sb/articleview.jsf?article=764205374&code=762292341", "source_type": "official_race_site", "issuer": "金华金漪湖半程马拉松", "access_status": "browser_certificate_name_mismatch", "supports": "索引显示11月8日08:00；本轮未读取官网正文，不绕过证书警告"}
+      ]
+    },
+    {
+      "id": "T06", "event_ids": ["evt_204d62998417"],
+      "manual_event_date": "2026-11-12 to 2026-11-16", "event_status": "future_scheduled_pending",
+      "evidence_result": "government_portal_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "郑州市政府门户正文明确2026郑州国际车展11月12日至16日在郑州国际会展中心举办，匹配郑州市这一记录。苏州市重复记录仍因身份冲突排除。",
+      "sources": [
+        {"url": "https://www.zhengzhou.gov.cn/news1/10310944.jhtml", "source_type": "government_portal_republication", "issuer": "郑州市政府门户；来源郑州日报", "access_status": "government_portal_body_read", "supports": "2026郑州国际车展、郑州国际会展中心、11月12日至16日"}
+      ]
+    },
+    {
+      "id": "T07", "event_ids": ["evt_3d9ba51c1b02", "evt_92e97e99aec8", "evt_1bcb5302ec11"],
+      "manual_event_date": "2026-11-15 07:30", "event_status": "future_scheduled_pending",
+      "evidence_result": "government_account_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "南昌发布的政务号正文直接给出2026南昌马拉松11月15日07:30、八一广场及主办单位，补上前轮原微博和官网不可读的正文缺口。使用官方账号的另一发布渠道，不是媒体记者报道。",
+      "sources": [
+        {"url": "https://m.thepaper.cn/newsDetail_forward_34081339", "source_type": "government_official_account_primary_post", "issuer": "南昌发布，澎湃号政务", "access_status": "primary_body_read", "supports": "2026南昌马拉松，南昌八一广场，11月15日07:30"}
+      ]
+    },
+    {
+      "id": "T08", "event_ids": ["evt_d0d48c4aa6c3", "evt_dcb3d2d46412", "evt_3ffac103faf3"],
+      "manual_event_date": "2026-11-15 07:00", "event_status": "future_scheduled_pending",
+      "evidence_result": "official_race_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "长沙马拉松官网2026赛事新闻正文区分192052报名人数与11月15日7时起跑日期，支持三条同赛事候选。",
+      "sources": [
+        {"url": "https://www.marathonchangsha.com/Detail/411", "source_type": "official_race_site", "issuer": "长沙马拉松", "access_status": "primary_body_read", "supports": "2026长沙马拉松，11月15日07:00，长沙湘江中路起点"}
+      ]
+    },
+    {
+      "id": "T09", "event_ids": ["evt_d52b5f413583"],
+      "manual_event_date": "2026-11-20 to 2026-11-22", "event_status": "future_scheduled_pending",
+      "evidence_result": "government_portal_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "湖南省政府门户完整正文给出长沙银博会展期及红星国际会展中心，页尾披露主承办方。",
+      "sources": [
+        {"url": "https://hunan.gov.cn/hnszf/hnyw/szdt/202610/t20261028_34089462.html", "source_type": "government_portal_republication", "issuer": "湖南省政府门户；来源湖南日报", "access_status": "government_portal_body_read", "supports": "2026长沙银发产业博览会，11月20日至22日，长沙红星国际会展中心"}
+      ]
+    },
+    {
+      "id": "T10", "event_ids": ["evt_6c148ae9cbc6", "evt_bd8e6c831c64", "evt_c582cfbe9c6b"],
+      "manual_event_date": "2026-12-20 07:30 is supported by official-account mirror; primary-body gap remains", "event_status": "future_scheduled_pending",
+      "evidence_result": "official_account_mirror_supports_date_primary_unavailable", "strict_authority_result": "incomplete",
+      "conclusion": "读取到南宁文旅官方认证账号的新浪镜像及公开报名规程转载，均支持12月20日；万达原公告仍不可读，浏览器尝试超时。保留严格原始正文缺口；报名通知不因共享举办日而改变分类。",
+      "sources": [
+        {"url": "https://www.sina.cn/news/detail/5327534213305550.html", "source_type": "government_account_authenticated_mirror", "issuer": "南宁文旅；页面标明南宁市文化广电和旅游局官方微博认证", "access_status": "mirror_body_read", "supports": "2026南宁马拉松，南宁，12月20日07:30；8月报名延期不等于赛事延期"},
+        {"url": "https://www.ing-sports.com/event/event_view/5.html", "source_type": "registration_rules_republication", "issuer": "跑IN中国 / 杭州盈动体育文化有限公司，非主办方", "access_status": "body_read", "supports": "明确的南宁赛事名和举办日；页头报名日期与内文不一致，仅作日期佐证"},
+        {"url": "https://www.wanda.cn/2026/2026_1016/48499.html", "source_type": "official_event_operator", "issuer": "万达体育", "access_status": "web_open_failed_browser_timeout", "supports": "索引支持12月20日；本轮原正文未直接读取"}
+      ]
+    },
+    {
+      "id": "T11", "event_ids": ["evt_a444c0520dce"],
+      "manual_event_date": "2026-12-27", "event_status": "future_scheduled_pending",
+      "evidence_result": "district_government_body_supports_date", "strict_authority_result": "date_supported_primary_body",
+      "conclusion": "黄埔区政府门户正文给出2026黄埔马拉松12月27日在广州市黄埔区起跑，报名日期另行公布。",
+      "sources": [
+        {"url": "https://www.hp.gov.cn/xwzx/zwyw/content/post_11042181.html", "source_type": "district_government_portal", "issuer": "广州市黄埔区政府门户；来源广州黄埔统战", "access_status": "government_portal_body_read", "supports": "2026黄埔马拉松，广州市黄埔区，12月27日"}
+      ]
+    }
+  ]
+}

@@ -1,21 +1,56 @@
-name: Deploy static site
+name: Deploy static site (manual)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+    inputs:
+      expected_sha:
+        description: "Reviewed main commit (full 40-character SHA)"
+        required: true
+        type: string
+      confirmation:
+        description: "Type DEPLOY_REVIEWED_SITE to request a production Pages deployment"
+        required: true
+        type: string
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
+  check-request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout requested workflow revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate manual deployment request
+        env:
+          REQUESTED_SHA: ${{ inputs.expected_sha }}
+          REQUEST_CONFIRMATION: ${{ inputs.confirmation }}
+        run: python scripts/check_manual_execution.py deploy
+
   deploy:
+    needs: check-request
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      github.ref == 'refs/heads/main' &&
+      inputs.expected_sha == github.sha &&
+      inputs.confirmation == 'DEPLOY_REVIEWED_SITE'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: https://wildpig622.github.io/hotspot-pulse/
@@ -23,11 +58,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3

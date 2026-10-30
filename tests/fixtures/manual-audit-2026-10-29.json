@@ -1,0 +1,46 @@
+{
+  "baseline_commit": "75e83e9978786bf0eb0401def17b3c42d096c96d",
+  "today": "2026-10-29",
+  "manual_report": "docs/manual-verification-2026-10-29.md",
+  "additional_supported_future_ids": ["evt_bd8e6c831c64"],
+  "legacy_rollover_ids": ["evt_bf7cd401e149", "evt_c9b487791db8", "evt_5c82713cc03a"],
+  "expected_future_ids": [
+    "evt_75164357227c", "evt_3b05c8d23d3b", "evt_3be0559d6385",
+    "evt_6614d69412a6", "evt_5f79d978ec7c", "evt_8da43a5d108c",
+    "evt_4310a7ec1019", "evt_cfd1dabb5e54", "evt_cbf419541499",
+    "evt_204d62998417", "evt_3d9ba51c1b02", "evt_92e97e99aec8",
+    "evt_1bcb5302ec11", "evt_d0d48c4aa6c3", "evt_dcb3d2d46412",
+    "evt_3ffac103faf3", "evt_d52b5f413583", "evt_6c148ae9cbc6",
+    "evt_a444c0520dce"
+  ],
+  "excluded_future_ids": {
+    "evt_a3fea5891c78": "event_city_conflict",
+    "evt_21064dd8a66c": "conditional_event",
+    "evt_5ed7a3f7e80b": "numeric_quantity_date",
+    "evt_7f2d19a3cfcd": "numeric_quantity_date",
+    "evt_18791852e997": "numeric_quantity_date",
+    "evt_9e0e0a6d2bfd": "numeric_quantity_date",
+    "evt_7c6b2e43c359": "numeric_quantity_date",
+    "evt_815557cbb864": "numeric_quantity_date",
+    "evt_05f5019ebcbd": "numeric_quantity_date",
+    "evt_556a9203ea87": "numeric_quantity_date",
+    "evt_d0785cb71e17": "numeric_quantity_date",
+    "evt_e28f38e55bf9": "numeric_quantity_date",
+    "evt_b28af2f94dde": "numeric_quantity_date",
+    "evt_260252919845": "numeric_quantity_date"
+  },
+  "boundary_expected_buckets": {
+    "evt_298f298695e9": "event_date_review",
+    "evt_203cc4315104": "event_date_review",
+    "evt_5f7457414239": "event_date_review",
+    "evt_3644cdd4c268": "event_date_review",
+    "evt_b178c8b5c408": "ticketing_registration",
+    "evt_c582cfbe9c6b": "ticketing_registration",
+    "evt_339b4ee162ac": "schedule_roundup",
+    "evt_77c03fd30d3e": "schedule_roundup",
+    "evt_61b0ee16b856": "guides_other",
+    "evt_5a8603876112": "guides_other",
+    "evt_dc1c06214c53": "past_expired",
+    "evt_d494c40ed023": "past_expired"
+  }
+}

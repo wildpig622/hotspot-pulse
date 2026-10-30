@@ -11,7 +11,7 @@
   <header class="topbar">
     <div class="brand-mark">H</div>
     <div class="brand-copy"><strong>Hotspot Pulse</strong><span>公开活动事件雷达 · 酒店收益经营数据源</span></div>
-    <div class="top-actions"><span id="updatedAt" class="updated">正在读取数据…</span><button id="refreshBtn" class="button button-primary" type="button">刷新数据</button></div>
+    <div class="top-actions"><span id="updatedAt" class="updated">正在读取数据…</span><button id="exportPngBtn" class="button button-quiet" type="button" disabled>导出 PNG</button><button id="refreshBtn" class="button button-primary" type="button">刷新数据</button></div>
   </header>
   <main class="container">
     <section class="hero">
@@ -20,16 +20,17 @@
     </section>
     <section class="notice"><strong>数据边界</strong><span>自动发现不等于官方核验。候选事件默认待核验，不能直接当作确定热点或定价依据；采集失败时保留上一份快照。</span></section>
     <section class="metrics" aria-label="数据概览">
-      <article class="metric-card"><span>候选事件</span><strong id="metricTotal">—</strong><small>去重后的候选条目</small></article>
-      <article class="metric-card"><span>含日期候选</span><strong id="metricDated">—</strong><small>日期仍需核对来源</small></article>
+      <article class="metric-card"><span>候选线索</span><strong id="metricTotal">—</strong><small>同一活动可能对应多篇报道</small></article>
+      <article class="metric-card"><span>未来活动线索</span><strong id="metricDated">—</strong><small>线索条数不等于活动场次，仍待核验</small></article>
       <article class="metric-card"><span>来源记录</span><strong id="metricSources">—</strong><small>按来源 URL 去重</small></article>
       <article class="metric-card"><span>采集城市</span><strong id="metricCities">—</strong><small>可在配置中调整</small></article>
     </section>
     <section class="panel">
-      <div class="panel-heading"><div><h2>候选事件</h2><p>按活动日期筛选；点击来源可回到原始新闻结果。</p></div><span id="resultCount" class="result-count">0 条</span></div>
+      <div class="panel-heading"><div><h2>事件与相关资讯</h2><p>默认仅展示未来/进行中且有具体举办日期的活动候选；开票、排期和攻略分开查看。</p></div><span id="resultCount" class="result-count">0 条</span></div>
       <div class="filters">
         <label class="search-field"><span>搜索</span><input id="searchInput" type="search" placeholder="活动名称、城市或来源"></label>
         <label><span>城市</span><select id="cityFilter"><option value="">全部城市</option></select></label>
+        <label><span>内容性质</span><select id="contentFilter"><option value="future" selected>未来活动（有具体日期）</option><option value="undated">活动候选（日期待核实）</option><option value="ticketing">开票 / 报名信息</option><option value="schedule">排期汇总</option><option value="guide">攻略 / 资讯</option><option value="past">已结束 / 历史报道</option><option value="all">全部内容</option></select></label>
         <label><span>类型</span><select id="typeFilter"><option value="">全部类型</option><option value="concert">演出/演唱会</option><option value="exhibition">展会</option><option value="sports">赛事</option><option value="festival">节庆</option><option value="other">其他</option></select></label>
         <label><span>核验状态</span><select id="reviewFilter"><option value="">全部状态</option><option value="pending">待核验</option><option value="verified">已核验</option></select></label>
         <label><span>开始日期</span><input id="dateFrom" type="date" aria-label="开始日期"></label>
@@ -38,15 +39,23 @@
       </div>
       <div id="feedError" class="feed-error" hidden></div>
       <div id="eventsList" class="events-list"><div class="empty-state">正在读取 JSON 数据…</div></div>
-      <div class="panel-footer"><span id="sourceInfo">数据源：Google News RSS 搜索结果</span><a href="./api/v1/hotspots.json" target="_blank" rel="noopener">打开 JSON API ↗</a><a href="./api/v1/health.json" target="_blank" rel="noopener">采集状态 ↗</a></div>
+      <div class="panel-footer"><span id="sourceInfo">数据源：Google News RSS 搜索结果</span><span>刷新仅重读已有快照，不启动采集</span><a href="./api/v1/hotspots.json" target="_blank" rel="noopener">打开 JSON API ↗</a><a href="./api/v1/health.json" target="_blank" rel="noopener">采集状态 ↗</a></div>
     </section>
     <section class="panel api-panel">
       <div><h2>供收益看板调用</h2><p>当前采用公开静态 JSON，稳定后可由看板 fetch 后按城市、入住日期与核验状态过滤。</p></div>
       <div class="endpoint"><span>GET</span><code id="endpointUrl">/api/v1/hotspots.json</code><button id="copyEndpoint" class="button button-quiet" type="button">复制地址</button></div>
-      <p class="api-note">当前版本只负责发现候选，不自动写入现有 Supabase 热点库，也不自动将候选升级为已核验事件。</p>
+      <p class="api-note">当前版本只负责发现候选。活动日期、开票/报名日期和文章提及月份分开记录；资讯与排期不作为单场活动。数据不会自动写入现有 Supabase 热点库，也不会自动将候选升级为已核验事件。</p>
     </section>
     <footer class="footer"><span>Hotspot Pulse · MVP 0.1</span><span>公开来源 · 可追溯 · 默认待核验</span></footer>
   </main>
+  <dialog id="shareDialog" class="share-dialog" aria-labelledby="shareTitle">
+    <div class="share-heading"><div><h2 id="shareTitle">分享当前筛选</h2><p>图片包含筛选条件、数据时间与来源，可保存后发送给同事。</p></div><button id="closeShareBtn" class="button button-quiet" type="button" aria-label="关闭图片预览">关闭</button></div>
+    <div class="share-toolbar"><button id="sharePrevBtn" class="button button-quiet" type="button">上一张</button><span id="sharePageLabel">正在生成…</span><button id="shareNextBtn" class="button button-quiet" type="button">下一张</button><button id="downloadPngBtn" class="button button-accent" type="button" disabled>保存 PNG</button><button id="copyPngBtn" class="button button-quiet" type="button" hidden disabled>复制图片</button></div>
+    <p id="shareStatus" class="share-status" role="status" aria-live="polite">长列表会自动分张，当前筛选内容不会被截断。</p>
+    <div class="share-preview"><img id="sharePreview" alt="当前筛选活动的分享图片"></div>
+  </dialog>
+  <p id="exportMessage" class="export-message" role="status" aria-live="polite" hidden></p>
+  <script src="./share-image.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+{
+  "status": "PROPOSED_REPORT_ONLY_GROUPING_NOT_VERIFIED",
+  "groups": [
+    {"group_id":"review_wuhan_auto_2026","city_name":"武汉市","proposed_name":"2026武汉国际汽车展览会","event_ids":["evt_75164357227c"]},
+    {"group_id":"review_nanchang_aviation_2026","city_name":"南昌市","proposed_name":"2026南昌航空产业博览会","event_ids":["evt_3b05c8d23d3b","evt_3be0559d6385"]},
+    {"group_id":"review_hangzhou_marathon_2026","city_name":"杭州市","proposed_name":"2026杭州马拉松","event_ids":["evt_6614d69412a6","evt_5f79d978ec7c","evt_8da43a5d108c","evt_4310a7ec1019"]},
+    {"group_id":"review_kunming_auto_2026","city_name":"昆明市","proposed_name":"2026昆明国际汽车博览会","event_ids":["evt_cfd1dabb5e54"]},
+    {"group_id":"review_jinhua_half_marathon_2026","city_name":"金华市","proposed_name":"2026金华·金漪湖半程马拉松","event_ids":["evt_cbf419541499"]},
+    {"group_id":"review_zhengzhou_auto_2026","city_name":"郑州市","proposed_name":"2026郑州国际汽车展览会","event_ids":["evt_204d62998417"]},
+    {"group_id":"review_nanchang_marathon_2026","city_name":"南昌市","proposed_name":"2026南昌马拉松","event_ids":["evt_3d9ba51c1b02","evt_92e97e99aec8","evt_1bcb5302ec11"]},
+    {"group_id":"review_changsha_marathon_2026","city_name":"长沙市","proposed_name":"2026长沙马拉松","event_ids":["evt_d0d48c4aa6c3","evt_dcb3d2d46412","evt_3ffac103faf3"]},
+    {"group_id":"review_changsha_silver_expo_2026","city_name":"长沙市","proposed_name":"2026长沙银发产业博览会","event_ids":["evt_d52b5f413583"]},
+    {"group_id":"review_nanning_marathon_2026","city_name":"南宁市","proposed_name":"2026南宁马拉松","event_ids":["evt_6c148ae9cbc6","evt_bd8e6c831c64"]},
+    {"group_id":"review_guangzhou_huangpu_marathon_2026","city_name":"广州市","proposed_name":"2026黄埔马拉松","event_ids":["evt_a444c0520dce"]}
+  ]
+}
