@@ -35,7 +35,7 @@ https://wildpig622.github.io/hotspot-pulse/api/v1/
 1. 审阅并获准合并本分支后，确认 main 上已经采用手动隔离定义，并记录要执行的 main 完整 40 位提交号。工作流不会替你启用 Pages。
 2. 若获准采集，在 Actions 中选择 `Collect hotspot candidates (manual)`，分支选 main，填写该完整提交号和确认词 `COLLECT_PENDING_ONLY`。预检通过后才采集并提交 pending 快照。
 3. 采集后的数据提交要单独检查并记录新提交号；采集不会自动触发部署，不保证其机器人提交会触发新的验证运行。需要时单独手动运行只读验证。
-4. 只有另行获准发布后，才在 `Deploy static site (manual)` 中选择 main，填写要发布的完整提交号和 `DEPLOY_REVIEWED_SITE`。日期证据和核验状态仍须人工签核。
+4. 只有另行获准发布后，才在 `Deploy static site (manual)` 中选择 main，填写要发布的完整提交号和 `DEPLOY_REVIEWED_SITE`。日期证据和核验状态须有明确审核记录，不要求用户逐条签字；采集器仍不得自动升级 verified。
 
 确认词和提交检查用于防止误操作，不代表已经获得发布许可，也不替代 GitHub 环境的独立审批配置。完整触发矩阵、测试范围及限制见 `docs/execution-isolation-2026-10-29.md`。
 
@@ -79,7 +79,13 @@ https://wildpig622.github.io/hotspot-pulse/api/v1/
 
 真实浏览器验收见 `docs/browser-acceptance-2026-10-29.md`。旧快照中的可重现标题日期仅在页面读取时保守补充；不会改写JSON或人工已核验字段。页面刷新只读取已有快照，不启动采集。
 
-首批人工签核清单见 `docs/pilot-review-2026-10-29.md` 和同名JSON：20条候选报道按提案整理为11组待签核活动，不把报道条数当作独立活动数，也不合并生产记录。重建空白签核模板：
+2026-10-30首批活动证据汇总见 [活动证据汇总](docs/activity-evidence-2026-10-30.md) 和同名JSON：11组、20条候选全部检查，10组、18条有本轮重新读取的权威日期依据；南宁2条本轮读取失败，仅保留原正文依据和原核验时间。保留原45条处置PASS及严格事实完备FAIL，不把用户签字作为新增门槛。所有记录仍pending / not_verified，生产数据未改。
+
+重建本轮证据汇总（离线、只生成报告）：
+
+    python scripts/build_evidence_refresh.py
+
+2026-10-29的 `docs/pilot-review-2026-10-29.md` 和同名JSON保留为历史可选审核模板：20条候选报道按提案整理为11组，不把报道条数当作独立活动数，也不合并生产记录。模板中签核栏留空不代表用户必须逐条确认。重建历史空白模板：
 
     python scripts/build_pilot_review.py
 
