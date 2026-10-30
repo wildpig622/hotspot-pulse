@@ -1,59 +1,59 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-10-29T03:08:58Z",
+    "generated_at": "2026-10-30T01:55:55Z",
     "city_count": 28
   },
   "data": [
     {
       "city_name": "成都市",
       "city_slug": "chengdu",
-      "candidate_count": 19
+      "candidate_count": 23
     },
     {
       "city_name": "南京市",
       "city_slug": "nanjing",
-      "candidate_count": 26
+      "candidate_count": 29
     },
     {
       "city_name": "重庆市",
       "city_slug": "chongqing",
-      "candidate_count": 14
+      "candidate_count": 15
     },
     {
       "city_name": "杭州市",
       "city_slug": "hangzhou",
-      "candidate_count": 18
+      "candidate_count": 27
     },
     {
       "city_name": "武汉市",
       "city_slug": "wuhan",
-      "candidate_count": 18
+      "candidate_count": 26
     },
     {
       "city_name": "西安市",
       "city_slug": "xian",
-      "candidate_count": 26
+      "candidate_count": 29
     },
     {
       "city_name": "深圳市",
       "city_slug": "shenzhen",
-      "candidate_count": 26
+      "candidate_count": 29
     },
     {
       "city_name": "南昌市",
       "city_slug": "nanchang",
-      "candidate_count": 21
+      "candidate_count": 23
     },
     {
       "city_name": "广州市",
       "city_slug": "guangzhou",
-      "candidate_count": 15
+      "candidate_count": 20
     },
     {
       "city_name": "长沙市",
       "city_slug": "changsha",
-      "candidate_count": 15
+      "candidate_count": 16
     },
     {
       "city_name": "贵阳市",
@@ -68,7 +68,7 @@
     {
       "city_name": "洛阳市",
       "city_slug": "luoyang",
-      "candidate_count": 10
+      "candidate_count": 11
     },
     {
       "city_name": "珠海市",
@@ -78,22 +78,22 @@
     {
       "city_name": "昆明市",
       "city_slug": "kunming",
-      "candidate_count": 9
+      "candidate_count": 11
     },
     {
       "city_name": "郑州市",
       "city_slug": "zhengzhou",
-      "candidate_count": 25
+      "candidate_count": 28
     },
     {
       "city_name": "南宁市",
       "city_slug": "nanning",
-      "candidate_count": 21
+      "candidate_count": 23
     },
     {
       "city_name": "徐州市",
       "city_slug": "xuzhou",
-      "candidate_count": 9
+      "candidate_count": 11
     },
     {
       "city_name": "合肥市",
@@ -103,12 +103,12 @@
     {
       "city_name": "苏州市",
       "city_slug": "suzhou",
-      "candidate_count": 18
+      "candidate_count": 20
     },
     {
       "city_name": "福州市",
       "city_slug": "fuzhou",
-      "candidate_count": 15
+      "candidate_count": 18
     },
     {
       "city_name": "德阳市",
@@ -118,32 +118,32 @@
     {
       "city_name": "遂宁市",
       "city_slug": "suining",
-      "candidate_count": 12
+      "candidate_count": 14
     },
     {
       "city_name": "济南市",
       "city_slug": "jinan",
-      "candidate_count": 18
+      "candidate_count": 22
     },
     {
       "city_name": "厦门市",
       "city_slug": "xiamen",
-      "candidate_count": 14
+      "candidate_count": 18
     },
     {
       "city_name": "金华市",
       "city_slug": "jinhua",
-      "candidate_count": 15
+      "candidate_count": 18
     },
     {
       "city_name": "天津市",
       "city_slug": "tianjin",
-      "candidate_count": 22
+      "candidate_count": 24
     },
     {
       "city_name": "兰州市",
       "city_slug": "lanzhou",
-      "candidate_count": 13
+      "candidate_count": 16
     }
   ]
 }

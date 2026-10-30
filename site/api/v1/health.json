@@ -1,14 +1,14 @@
 {
   "api_version": "v1",
-  "last_run_at": "2026-10-29T03:08:58Z",
-  "last_run_local": "2026-10-29 11:08:58 +08:00",
+  "last_run_at": "2026-10-30T01:55:55Z",
+  "last_run_local": "2026-10-30 09:55:55 +08:00",
   "status": "healthy",
   "source_system": "Google News RSS",
   "city_count": 28,
   "successful_feeds": 28,
   "failed_feeds": 0,
-  "rss_items_seen": 519,
-  "candidate_count": 457,
+  "rss_items_seen": 492,
+  "candidate_count": 529,
   "feed_results": [
     {
       "city_name": "成都市",
@@ -18,12 +18,12 @@
     {
       "city_name": "南京市",
       "status": "ok",
-      "items": 19
+      "items": 20
     },
     {
       "city_name": "重庆市",
       "status": "ok",
-      "items": 20
+      "items": 10
     },
     {
       "city_name": "杭州市",
@@ -48,7 +48,7 @@
     {
       "city_name": "南昌市",
       "status": "ok",
-      "items": 20
+      "items": 19
     },
     {
       "city_name": "广州市",
@@ -68,12 +68,12 @@
     {
       "city_name": "沈阳市",
       "status": "ok",
-      "items": 20
+      "items": 11
     },
     {
       "city_name": "洛阳市",
       "status": "ok",
-      "items": 20
+      "items": 9
     },
     {
       "city_name": "珠海市",
@@ -93,12 +93,12 @@
     {
       "city_name": "南宁市",
       "status": "ok",
-      "items": 20
+      "items": 16
     },
     {
       "city_name": "徐州市",
       "status": "ok",
-      "items": 8
+      "items": 20
     },
     {
       "city_name": "合肥市",
@@ -108,7 +108,7 @@
     {
       "city_name": "苏州市",
       "status": "ok",
-      "items": 20
+      "items": 14
     },
     {
       "city_name": "福州市",
@@ -118,12 +118,12 @@
     {
       "city_name": "德阳市",
       "status": "ok",
-      "items": 9
+      "items": 8
     },
     {
       "city_name": "遂宁市",
       "status": "ok",
-      "items": 13
+      "items": 15
     },
     {
       "city_name": "济南市",
