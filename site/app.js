@@ -8,6 +8,8 @@
   var NON_EVENT_KINDS = { guide: true, schedule_roundup: true, ticketing_notice: true, registration_notice: true, other: true };
   var CONDITIONAL_EVENT = /审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望/;
   var state = { events: [], meta: {}, health: {}, cities: [] };
+  var shareSession = null;
+  var shareRevision = 0;
   var $ = function (id) { return document.getElementById(id); };
 
   function text(value, fallback) { return value === null || value === undefined || value === "" ? (fallback || "待核实") : String(value); }
@@ -232,6 +234,7 @@
   function renderEvents() {
     var events = getFilteredEvents();
     $("resultCount").textContent = events.length + " 条";
+    $("exportPngBtn").disabled = !events.length;
     if (!events.length) {
       $("eventsList").innerHTML = '<div class="empty-state">当前视图没有符合条件的内容。可切换开票/报名、排期汇总或全部内容查看相关线索。</div>';
       return;
@@ -254,6 +257,101 @@
         '<div class="event-sources">' + sourceLabel(event) + '<span>最近发现：' + escapeHtml(formatTime(event.last_seen_at)) + '</span></div></article>';
     }).join("");
   }
+  function selectedLabel(id, fallback) {
+    var node = $(id);
+    return node.selectedOptions && node.selectedOptions.length ? node.selectedOptions[0].textContent : (node.value || fallback);
+  }
+  function buildShareModel() {
+    var filters = [selectedLabel("cityFilter", "全部城市"), selectedLabel("contentFilter", "未来活动"),
+      selectedLabel("typeFilter", "全部类型"), selectedLabel("reviewFilter", "全部状态")];
+    if ($("searchInput").value.trim()) filters.push("搜索：" + $("searchInput").value.trim());
+    if ($("dateFrom").value || $("dateTo").value) filters.push("筛选日期：" + ($("dateFrom").value || "不限") + " 至 " + ($("dateTo").value || "不限"));
+    var location = new URL(window.location.href);
+    return {
+      title: ($("cityFilter").value || "全国城市") + "热点线索",
+      filters: filters.join("  /  "),
+      updatedAt: formatTime(state.meta.generated_at || state.health.last_run_at),
+      exportedAt: formatTime(new Date().toISOString()),
+      preview: location.hostname !== "wildpig622.github.io" || location.pathname.indexOf("/hotspot-pulse/") !== 0,
+      publicUrl: "https://wildpig622.github.io/hotspot-pulse/",
+      filename: "hotspot-pulse-" + beijingToday() + "-" + ($("cityFilter").value || "all"),
+      dataWarning: !$("feedError").hidden ? "最近刷新失败，图片沿用页面已有快照。" :
+        state.health.status === "failed" ? "最近采集失败，图片使用保留快照。" : "",
+      rows: getFilteredEvents().map(function (event) {
+        var source = event.sources && event.sources[0] || {};
+        var host = "";
+        try { if (/^https?:\/\//i.test(source.source_url || "")) host = new URL(source.source_url).hostname; } catch (e) {}
+        return {
+          id: text(event.event_id, "未提供"), title: text(event.event_name, "未命名事件"), city: text(event.city_name),
+          type: TYPE_LABELS[event.event_type] || "其他", content: CONTENT_LABELS[contentKind(event)] || "其他资讯",
+          date: eventDateLabel(event), review: event.review_status === "verified" ? "已核验" : "待核验",
+          source: text(source.publisher, "未知发布方") + (host ? " · " + host : ""), publishedAt: formatTime(source.source_published_at)
+        };
+      })
+    };
+  }
+  function exportMessage(message) {
+    $("exportMessage").textContent = message;
+    $("exportMessage").hidden = !message;
+  }
+  function closeShare() {
+    shareRevision += 1;
+    if (shareSession && shareSession.url) URL.revokeObjectURL(shareSession.url);
+    shareSession = null;
+    $("sharePreview").removeAttribute("src");
+    $("exportPngBtn").focus();
+  }
+  async function showSharePage(index) {
+    var session = shareSession;
+    if (!session || index < 0 || index >= session.layout.pages.length) return;
+    var revision = ++shareRevision;
+    session.index = index;
+    $("downloadPngBtn").disabled = $("copyPngBtn").disabled = true;
+    $("sharePrevBtn").disabled = $("shareNextBtn").disabled = true;
+    $("sharePageLabel").textContent = "正在生成图片…";
+    try {
+      var canvas = document.createElement("canvas");
+      window.HotspotShareImage.render(canvas, session.model, session.layout, index);
+      var blob = await window.HotspotShareImage.toBlob(canvas);
+      if (shareSession !== session || revision !== shareRevision) return;
+      var url = URL.createObjectURL(blob);
+      if (session.url) URL.revokeObjectURL(session.url);
+      session.blob = blob; session.url = url;
+      $("sharePreview").src = url;
+      $("sharePreview").alt = session.model.title + "，第" + (index + 1) + "张，共" + session.layout.pages.length + "张";
+      $("sharePageLabel").textContent = (index + 1) + " / " + session.layout.pages.length + " 张";
+      $("downloadPngBtn").disabled = $("copyPngBtn").disabled = false;
+      $("sharePrevBtn").disabled = index === 0;
+      $("shareNextBtn").disabled = index === session.layout.pages.length - 1;
+      $("shareStatus").textContent = session.layout.pages.length > 1
+        ? "共 " + session.model.rows.length + " 条，已完整分成 " + session.layout.pages.length + " 张；可逐张保存，当前筛选没有遗漏。"
+        : "共 " + session.model.rows.length + " 条，已完整放入这张图片。可保存 PNG，或复制图片后粘贴到聊天。";
+    } catch (error) {
+      if (shareSession === session && revision === shareRevision) {
+        $("sharePageLabel").textContent = "生成失败";
+        $("shareStatus").textContent = error.message || "图片生成失败，请重试。";
+      }
+    }
+  }
+  async function openShare() {
+    exportMessage("");
+    if (!getFilteredEvents().length) { exportMessage("当前没有可导出的内容，请调整筛选。"); return; }
+    try {
+      if (!window.HotspotShareImage) throw new Error("图片导出暂不可用，请刷新页面后重试。");
+      if (typeof $("shareDialog").showModal !== "function") throw new Error("浏览器暂不支持图片预览，请更新浏览器或使用页面截图。");
+      var model = buildShareModel();
+      var canvas = document.createElement("canvas");
+      var context = canvas.getContext("2d");
+      if (!context) throw new Error("浏览器无法生成图片，请使用页面截图。");
+      var layout = window.HotspotShareImage.plan(context, model);
+      shareSession = { model: model, layout: layout, index: 0, blob: null, url: null };
+      $("copyPngBtn").hidden = !(navigator.clipboard && navigator.clipboard.write && window.ClipboardItem);
+      $("shareDialog").showModal();
+      await showSharePage(0);
+    } catch (error) {
+      exportMessage(error.message || "图片生成失败，请重试。");
+    }
+  }
   function applyFilters() { renderEvents(); }
   function bindEvents() {
     ["searchInput", "cityFilter", "typeFilter", "reviewFilter", "contentFilter", "dateFrom", "dateTo"].forEach(function (id) {
@@ -266,6 +364,27 @@
       renderEvents();
     });
     $("refreshBtn").addEventListener("click", loadData);
+    $("exportPngBtn").addEventListener("click", openShare);
+    $("closeShareBtn").addEventListener("click", function () { $("shareDialog").close(); });
+    $("shareDialog").addEventListener("close", closeShare);
+    $("sharePrevBtn").addEventListener("click", function () { return showSharePage(shareSession.index - 1); });
+    $("shareNextBtn").addEventListener("click", function () { return showSharePage(shareSession.index + 1); });
+    $("downloadPngBtn").addEventListener("click", function () {
+      if (!shareSession || !shareSession.url || $("downloadPngBtn").disabled) return;
+      var link = document.createElement("a");
+      link.href = shareSession.url;
+      link.download = shareSession.model.filename + "-" + String(shareSession.index + 1).padStart(2, "0") + ".png";
+      document.body.appendChild(link); link.click(); link.remove();
+      $("shareStatus").textContent = "已开始保存 PNG。保存后可直接作为图片发送给同事。";
+    });
+    $("copyPngBtn").addEventListener("click", function () {
+      if (!shareSession || !shareSession.blob || $("copyPngBtn").disabled) return;
+      return navigator.clipboard.write([new window.ClipboardItem({ "image/png": shareSession.blob })]).then(function () {
+        $("shareStatus").textContent = "图片已复制，可直接粘贴到聊天中。";
+      }).catch(function () {
+        $("shareStatus").textContent = "浏览器未允许复制图片，请使用保存 PNG 后发送。";
+      });
+    });
     $("copyEndpoint").addEventListener("click", function () {
       var url = new URL(API_URL, window.location.href).href;
       if (navigator.clipboard && navigator.clipboard.writeText) {

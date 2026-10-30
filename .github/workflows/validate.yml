@@ -34,7 +34,7 @@ jobs:
       - name: Compile collector
         run: python -m py_compile scripts/collect.py scripts/check_manual_execution.py
       - name: Validate public filters against manual audit cases
-        run: node --test tests/test_site.js
+        run: node --test tests/test_site.js tests/test_share_image.js
       - name: Lint workflow definitions without executing them
         run: |
           curl --fail --location --retry 3 --output "$RUNNER_TEMP/actionlint.tar.gz" https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz

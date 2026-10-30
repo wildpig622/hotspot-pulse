@@ -19,7 +19,10 @@ async function loadPage(events, options = {}) {
   const nodes = {};
   function element() {
     return {value: "", textContent: "", innerHTML: "", listeners: {},
-      appendChild() {}, addEventListener(name, callback) { this.listeners[name] = callback; }};
+      appendChild() {}, addEventListener(name, callback) { this.listeners[name] = callback; },
+      getContext() { return {}; }, showModal() { this.open = true; },
+      close() { this.open = false; if (this.listeners.close) this.listeners.close(); },
+      removeAttribute(name) { delete this[name]; }, focus() {}};
   }
   const document = {
     getElementById(id) { return nodes[id] || (nodes[id] = element()); },
@@ -36,8 +39,12 @@ async function loadPage(events, options = {}) {
       : url.includes("cities.json") ? {data: cities} : {};
     return {ok: true, json: async () => payload};
   };
-  vm.runInNewContext(script, {document, fetch, Intl, Date: FixedDate, URL,
-    window: {location: {href: "https://example.com/"}}, navigator: {}});
+  class TestURL extends URL {
+    static createObjectURL() { return "blob:test-image"; }
+    static revokeObjectURL() {}
+  }
+  vm.runInNewContext(script, {document, fetch, Intl, Date: FixedDate, URL: TestURL,
+    window: {location: {href: "https://example.com/"}, HotspotShareImage: options.shareApi, ClipboardItem: options.ClipboardItem}, navigator: options.navigator || {}});
   await new Promise(resolve => setImmediate(resolve));
   return nodes;
 }
@@ -148,4 +155,54 @@ test("legacy title projection cannot overwrite human or semantic dates or invent
     const nodes = await loadPage([{event_name:title, city_name:"杭州市", city_slug:"hangzhou", review_status:"pending", start_at:"2026-03-01", end_at:"2026-03-31", date_precision:"month"}]);
     assert.equal(nodes.resultCount.textContent, "0 条", title);
   }
+});
+
+test("PNG export uses the exact current filtered set and freezes labels without promoting records", async () => {
+  let exported;
+  const original = JSON.stringify(snapshot.data);
+  const nodes = await loadPage(snapshot.data, {shareApi: {
+    plan(ctx, model) { exported = model; return {pages: [{cards: model.rows}]}; },
+    render() {}, toBlob: async () => ({type: "image/png"}),
+  }});
+  nodes.cityFilter.value = "杭州市";
+  nodes.typeFilter.value = "sports";
+  nodes.dateFrom.value = nodes.dateTo.value = "2026-11-01";
+  nodes.searchInput.value = "马拉松";
+  nodes.searchInput.listeners.input();
+  assert.equal(nodes.resultCount.textContent, "4 条");
+  await nodes.exportPngBtn.listeners.click();
+  assert.equal(exported.rows.length, 4);
+  assert.ok(exported.rows.every(row => row.city === "杭州市" && row.review === "待核验" && row.date.includes("2026-11-01")));
+  assert.match(exported.filters, /杭州市/);
+  assert.match(exported.filters, /2026-11-01/);
+  assert.equal(exported.preview, true);
+  assert.equal(exported.publicUrl, "https://wildpig622.github.io/hotspot-pulse/");
+  assert.equal(nodes.sharePreview.src, "blob:test-image");
+  nodes.searchInput.value = "no matching event";
+  nodes.searchInput.listeners.input();
+  assert.equal(exported.rows.length, 4, "an open image remains a snapshot of the exported selection");
+  assert.equal(JSON.stringify(snapshot.data), original);
+});
+
+test("an empty selection disables PNG export and does not produce a misleading blank calendar", async () => {
+  const nodes = await loadPage([]);
+  assert.equal(nodes.exportPngBtn.disabled, true);
+  await nodes.exportPngBtn.listeners.click();
+  assert.match(nodes.exportMessage.textContent, /没有可导出/);
+});
+
+test("denied clipboard access gives a save-PNG fallback without losing the generated image", async () => {
+  let attemptedType;
+  const nodes = await loadPage([byId.evt_cfd1dabb5e54], {
+    shareApi: {plan(ctx, model) {return {pages: [{cards:model.rows}]};}, render() {}, toBlob: async () => ({type:"image/png"})},
+    ClipboardItem: class { constructor(values) {attemptedType = Object.keys(values)[0];} },
+    navigator: {clipboard: {write: async () => {throw new Error("permission denied");}}},
+  });
+  await nodes.exportPngBtn.listeners.click();
+  assert.equal(nodes.copyPngBtn.hidden, false);
+  await nodes.copyPngBtn.listeners.click();
+  assert.equal(attemptedType, "image/png");
+  assert.match(nodes.shareStatus.textContent, /保存 PNG/);
+  assert.equal(nodes.downloadPngBtn.disabled, false);
+  assert.equal(nodes.sharePreview.src, "blob:test-image");
 });

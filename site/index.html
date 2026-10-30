@@ -11,7 +11,7 @@
   <header class="topbar">
     <div class="brand-mark">H</div>
     <div class="brand-copy"><strong>Hotspot Pulse</strong><span>公开活动事件雷达 · 酒店收益经营数据源</span></div>
-    <div class="top-actions"><span id="updatedAt" class="updated">正在读取数据…</span><button id="refreshBtn" class="button button-primary" type="button">刷新数据</button></div>
+    <div class="top-actions"><span id="updatedAt" class="updated">正在读取数据…</span><button id="exportPngBtn" class="button button-quiet" type="button" disabled>导出 PNG</button><button id="refreshBtn" class="button button-primary" type="button">刷新数据</button></div>
   </header>
   <main class="container">
     <section class="hero">
@@ -48,6 +48,14 @@
     </section>
     <footer class="footer"><span>Hotspot Pulse · MVP 0.1</span><span>公开来源 · 可追溯 · 默认待核验</span></footer>
   </main>
+  <dialog id="shareDialog" class="share-dialog" aria-labelledby="shareTitle">
+    <div class="share-heading"><div><h2 id="shareTitle">分享当前筛选</h2><p>图片包含筛选条件、数据时间与来源，可保存后发送给同事。</p></div><button id="closeShareBtn" class="button button-quiet" type="button" aria-label="关闭图片预览">关闭</button></div>
+    <div class="share-toolbar"><button id="sharePrevBtn" class="button button-quiet" type="button">上一张</button><span id="sharePageLabel">正在生成…</span><button id="shareNextBtn" class="button button-quiet" type="button">下一张</button><button id="downloadPngBtn" class="button button-accent" type="button" disabled>保存 PNG</button><button id="copyPngBtn" class="button button-quiet" type="button" hidden disabled>复制图片</button></div>
+    <p id="shareStatus" class="share-status" role="status" aria-live="polite">长列表会自动分张，当前筛选内容不会被截断。</p>
+    <div class="share-preview"><img id="sharePreview" alt="当前筛选活动的分享图片"></div>
+  </dialog>
+  <p id="exportMessage" class="export-message" role="status" aria-live="polite" hidden></p>
+  <script src="./share-image.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>
