@@ -88,10 +88,16 @@ class CollectionPipelineTests(unittest.TestCase):
         (self.api / "hotspots.json").write_bytes(original)
         original_cities = b'{"data":[],"meta":{"retained":true}}\n'
         (self.api / "cities.json").write_bytes(original_cities)
+        retained_calendar = b'{"data":[],"meta":{"retained_calendar":true}}\n'
+        retained_coverage = b'{"data":[],"meta":{"retained_coverage":true}}\n'
+        (self.api / "activities.json").write_bytes(retained_calendar)
+        (self.api / "coverage.json").write_bytes(retained_coverage)
         self.fetch.side_effect = OSError("offline source failure")
         self.assertEqual(self.run_offline(), 1)
         self.assertEqual((self.api / "hotspots.json").read_bytes(), original)
         self.assertEqual((self.api / "cities.json").read_bytes(), original_cities)
+        self.assertEqual((self.api / "activities.json").read_bytes(), retained_calendar)
+        self.assertEqual((self.api / "coverage.json").read_bytes(), retained_coverage)
         health = json.loads((self.api / "health.json").read_text(encoding="utf-8"))
         self.assertEqual(health["status"], "failed")
         self.assertEqual(health["candidate_count"], 1)

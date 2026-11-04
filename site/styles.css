@@ -30,6 +30,13 @@ h1 { margin: 0; font-size: clamp(24px, 3vw, 34px); letter-spacing: -.8px; }
 .panel-heading { display: flex; justify-content: space-between; align-items: center; padding: 20px 22px; border-bottom: 1px solid var(--line); }
 h2 { margin: 0; font-size: 17px; } .panel-heading p, .api-panel p { margin: 6px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .result-count { padding: 6px 10px; border-radius: 99px; background: var(--blue-soft); color: var(--blue); font-size: 12px; white-space: nowrap; }
+.coverage-summary { margin: 0; padding: 13px 22px; border-bottom: 1px solid var(--line); color: #79531a; background: #fffaf0; font-size: 12px; line-height: 1.75; }
+.coverage-details { padding: 12px 22px; font-size: 12px; color: var(--muted); border-bottom: 1px solid var(--line); }
+.coverage-details summary { cursor: pointer; color: var(--blue); }
+.coverage-details p { line-height: 1.8; }
+.coverage-table { overflow: auto; max-height: 280px; }
+.coverage-table table { width: 100%; border-collapse: collapse; text-align: left; white-space: nowrap; }
+.coverage-table th, .coverage-table td { padding: 10px; border-bottom: 1px solid var(--line); }
 .filters { padding: 16px 20px; display: flex; flex-wrap: wrap; align-items: end; gap: 12px; background: #fcfdff; border-bottom: 1px solid var(--line); }
 .filters label { display: flex; flex-direction: column; gap: 6px; min-width: 120px; color: var(--muted); font-size: 11px; } .filters .search-field { flex: 1 1 220px; }
 input, select { min-height: 38px; border: 1px solid #dbe3ef; border-radius: 8px; background: white; color: var(--ink); padding: 8px 10px; outline: none; }
