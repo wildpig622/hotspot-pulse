@@ -1,0 +1,209 @@
+{
+  "as_of": "2026-11-04",
+  "baseline_commit": "87f50db4dbacd7e1a7cb15920222fe00ac004519",
+  "offline_news_preserved": 4497,
+  "automatic_verified_promotions": 0,
+  "source_cities_checked": 28,
+  "listing_pages_checked": 56,
+  "source_candidates": 467,
+  "registered_activities": 47,
+  "cities": [
+    {
+      "city": "成都市",
+      "news": 213,
+      "future_registered": 11,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "南京市",
+      "news": 192,
+      "future_registered": 3,
+      "future_news_candidates": 3,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "重庆市",
+      "news": 203,
+      "future_registered": 4,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "杭州市",
+      "news": 236,
+      "future_registered": 1,
+      "future_news_candidates": 0,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "武汉市",
+      "news": 231,
+      "future_registered": 1,
+      "future_news_candidates": 5,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "西安市",
+      "news": 212,
+      "future_registered": 2,
+      "future_news_candidates": 0,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "深圳市",
+      "news": 152,
+      "future_registered": 2,
+      "future_news_candidates": 0,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "南昌市",
+      "news": 139,
+      "future_registered": 2,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "广州市",
+      "news": 202,
+      "future_registered": 1,
+      "future_news_candidates": 6,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "长沙市",
+      "news": 164,
+      "future_registered": 3,
+      "future_news_candidates": 5,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "贵阳市",
+      "news": 186,
+      "future_registered": 0,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "沈阳市",
+      "news": 129,
+      "future_registered": 0,
+      "future_news_candidates": 0,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "洛阳市",
+      "news": 78,
+      "future_registered": 0,
+      "future_news_candidates": 0,
+      "future_source_candidates": 1
+    },
+    {
+      "city": "珠海市",
+      "news": 155,
+      "future_registered": 0,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "昆明市",
+      "news": 154,
+      "future_registered": 1,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "郑州市",
+      "news": 198,
+      "future_registered": 1,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "南宁市",
+      "news": 113,
+      "future_registered": 1,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "徐州市",
+      "news": 111,
+      "future_registered": 1,
+      "future_news_candidates": 0,
+      "future_source_candidates": 7
+    },
+    {
+      "city": "合肥市",
+      "news": 162,
+      "future_registered": 2,
+      "future_news_candidates": 0,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "苏州市",
+      "news": 209,
+      "future_registered": 1,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "福州市",
+      "news": 162,
+      "future_registered": 1,
+      "future_news_candidates": 0,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "德阳市",
+      "news": 40,
+      "future_registered": 2,
+      "future_news_candidates": 0,
+      "future_source_candidates": 0
+    },
+    {
+      "city": "遂宁市",
+      "news": 32,
+      "future_registered": 1,
+      "future_news_candidates": 0,
+      "future_source_candidates": 0
+    },
+    {
+      "city": "济南市",
+      "news": 185,
+      "future_registered": 2,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "厦门市",
+      "news": 211,
+      "future_registered": 0,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "金华市",
+      "news": 79,
+      "future_registered": 1,
+      "future_news_candidates": 0,
+      "future_source_candidates": 1
+    },
+    {
+      "city": "天津市",
+      "news": 211,
+      "future_registered": 0,
+      "future_news_candidates": 1,
+      "future_source_candidates": 20
+    },
+    {
+      "city": "兰州市",
+      "news": 138,
+      "future_registered": 1,
+      "future_news_candidates": 0,
+      "future_source_candidates": 18
+    }
+  ],
+  "scope": "28 configured cities x 6 topics; future 90 days; exhaustive facts not claimed"
+}

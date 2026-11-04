@@ -554,7 +554,7 @@ def extract_event_date(title: str, description: str = "", today: date | None = N
 
 def is_upcoming_event(event: dict[str, Any], today: date) -> bool:
     """Return True only for a dated, future/ongoing single-event candidate."""
-    if event.get('event_status') in {'cancelled', 'postponed'}:
+    if event.get('review_status') == 'rejected' or event.get('event_status') in {'cancelled', 'postponed'}:
         return False
     if future_exclusion_reasons(event):
         return False
@@ -650,7 +650,7 @@ def source_type_for(publisher: str, publisher_url: str) -> str:
     return "other"
 
 
-def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | None = None) -> str:
+def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | None = None, upcoming: bool = False) -> str:
     after = (today - timedelta(days=SCOPE["discovery_lookback_days"])).isoformat()
     terms = topic["terms"] if topic else KEYWORDS
     last_year = (today + timedelta(days=SCOPE["monitoring_horizon_days"])).year
@@ -660,6 +660,13 @@ def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | No
         + "(" + " OR ".join(terms) + ") "
         + "(" + years + ") after:" + after
     )
+    if upcoming:
+        # A second route catches announcements whose headline omits the year.
+        # Month terms refer to the actual 90-day horizon, including January.
+        months = sorted({(today + timedelta(days=n)).month for n in range(SCOPE['monitoring_horizon_days'] + 1)})
+        query = ('"' + city['aliases'][0] + '" (' + ' OR '.join(terms) + ') ('
+                 + ' OR '.join(str(month) + '月' for month in months) + ') after:'
+                 + (today - timedelta(days=30)).isoformat())
     params = urllib.parse.urlencode({"q": query, "hl": "zh-CN", "gl": "CN", "ceid": "CN:zh-Hans"})
     return "https://news.google.com/rss/search?" + params
 
@@ -791,7 +798,7 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def run_collection() -> int:
+def run_collection(include_sources: bool = False) -> int:
     now = now_utc()
     observed_at = iso_utc(now)
     today = now.astimezone(BEIJING).date()
@@ -817,12 +824,21 @@ def run_collection() -> int:
 
     requests = [(city, topic) for city in cities for topic in FEED_TOPICS]
 
+    query_checks = {}
     def request_topic(pair: tuple[dict[str, Any], dict[str, Any]]) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]], str | None]:
         city, topic = pair
-        try:
-            return city, topic, parse_feed(fetch_feed(build_feed_url(city, today, topic))), None
-        except Exception as exc:
-            return city, topic, [], type(exc).__name__
+        found, checks = {}, []
+        for upcoming in (False, True):
+            url = build_feed_url(city, today, topic, upcoming)
+            try:
+                items = parse_feed(fetch_feed(url))
+                for item in items:
+                    found[(item['title'], item['url'])] = dict(item, discovery_query=url)
+                checks.append({'route': 'upcoming_months' if upcoming else 'year_lookback', 'url': url, 'status': 'ok', 'items': len(items)})
+            except Exception as exc:
+                checks.append({'route': 'upcoming_months' if upcoming else 'year_lookback', 'url': url, 'status': 'failed', 'error_type': type(exc).__name__})
+        query_checks[(city['city_name'], topic['key'])] = checks
+        return city, topic, list(found.values()), None if any(row['status'] == 'ok' for row in checks) else 'AllQueryRoutesFailed'
 
     # Independent topic quotas prevent a burst of race reports from exhausting
     # the concert/holiday slots. Process results in fixed order for reproducibility.
@@ -831,13 +847,13 @@ def run_collection() -> int:
             if error is None:
                 successful_feeds += 1
                 total_items += len(items)
-                feed_results.append({"city_name": city["city_name"], "topic": topic["key"], "status": "ok", "items": len(items)})
+                feed_results.append({"city_name": city["city_name"], "topic": topic["key"], "status": "ok", "items": len(items), 'query_results': query_checks[(city['city_name'], topic['key'])]})
                 for item in items:
                     combined = item["title"] + " " + item.get("description", "")
                     if not any(keyword in combined for keyword in KEYWORDS):
                         continue
                     candidate = build_candidate(city, item, observed_at, today)
-                    candidate["discovery_query"] = build_feed_url(city, today, topic)
+                    candidate["discovery_query"] = item.get('discovery_query') or build_feed_url(city, today, topic)
                     key = event_identity(candidate.get("city_slug", ""), candidate.get("event_name", ""))
                     existing = by_identity.get(key)
                     merged = merge_candidate(existing, candidate)
@@ -845,7 +861,7 @@ def run_collection() -> int:
                         merged["event_id"] = existing.get("event_id") or candidate["event_id"]
                     by_identity[key] = merged
             else:
-                feed_results.append({"city_name": city["city_name"], "topic": topic["key"], "status": "failed", "error_type": error})
+                feed_results.append({"city_name": city["city_name"], "topic": topic["key"], "status": "failed", "error_type": error, 'query_results': query_checks[(city['city_name'], topic['key'])]})
 
     all_failed = successful_feeds == 0
     if all_failed:
@@ -952,7 +968,15 @@ def run_collection() -> int:
             from activity_registry import build_registry_payload, build_coverage
         previous_activities = load_json(SITE_API / "activities.json", {}).get("data", [])
         activities = build_registry_payload(ROOT, kept, cities, observed_at, today, previous_activities)
-        coverage = build_coverage(cities, list(FEED_TOPICS), kept, activities["data"], feed_results, observed_at, activities['discovery_candidates'])
+        if include_sources:
+            try:
+                from .source_calendar import collect_source_calendar
+            except ImportError:
+                from source_calendar import collect_source_calendar
+            source_rows, source_checks = collect_source_calendar(ROOT, cities, iso_utc(now_utc()), today, load_json(SITE_API / 'activities.json', {}))
+            activities.update(source_candidates=source_rows, source_checks=source_checks)
+            activities['meta'].update(schema_version='1.4', source_candidate_count=len(source_rows))
+        coverage = build_coverage(cities, list(FEED_TOPICS), kept, activities["data"], feed_results, observed_at, activities['discovery_candidates'], activities.get('source_candidates', []))
         payload["meta"]["structured_activity_count"] = len(activities["data"])
         for city_row in city_payload["data"]:
             city_row["activity_count"] = sum(row["city_slug"] == city_row["city_slug"] for row in activities["data"])
@@ -975,4 +999,4 @@ def run_collection() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(run_collection())
+    sys.exit(run_collection(include_sources=True))

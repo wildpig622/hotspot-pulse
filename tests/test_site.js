@@ -60,6 +60,32 @@ function calendarRow(extra = {}) {
     sessions:[{start_at:"2026-11-11",end_at:"2026-11-13"}], scope_note:"部分学校，高三除外", sources:[], ...extra};
 }
 
+test("dated ticketing listings fill a previously empty city and keep their evidence label in PNG", async () => {
+  const listing=calendarRow({event_id:'src_ly',record_kind:'source_candidate',evidence_level:'ticketing_listing',date_confidence:'source_listing',event_name:'洛阳话剧',city_name:'洛阳市',city_slug:'luoyang',scope_note:'仅列此场开始日，详情尚未读取'});
+  let exported;
+  const nodes=await loadPage([],{activities:{data:[],source_candidates:[listing],source_checks:[{city_name:'洛阳市',status:'ok'}]},shareApi:{plan(ctx,model){exported=model;return {pages:[{}]};},render(){},toBlob:async()=>({type:'image/png'})}});
+  nodes.cityFilter.value='洛阳市';nodes.cityFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'1 条');
+  assert.match(nodes.citySummary.textContent,/票务日期候选 1 条/);
+  assert.match(nodes.eventsList.innerHTML,/票务日期候选 · 待核验/);
+  assert.match(nodes.eventsList.innerHTML,/票务卡片列明举办城市/);
+  assert.doesNotMatch(nodes.eventsList.innerHTML,/未提取到举办日期|标题\/摘要出现城市名/);
+  await nodes.exportPngBtn.listeners.click();
+  assert.match(exported.rows[0].content,/详情与主办方待补查/);
+  assert.equal(exported.rows[0].review,'待核验');
+  nodes.reviewFilter.value='verified';nodes.reviewFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'0 条');
+});
+
+test("rejected source listings stay outside the future view and failed refresh is visible", async () => {
+  const row=calendarRow({event_id:'src_rejected',record_kind:'source_candidate',review_status:'rejected'});
+  const nodes=await loadPage([],{activities:{data:[],source_candidates:[row],source_checks:[{city_name:'杭州市',status:'failed'}]}});
+  assert.equal(nodes.resultCount.textContent,'0 条');
+  assert.match(nodes.coverageBacklog.textContent,/读取失败，历史候选已保留/);
+  nodes.contentFilter.value='all';nodes.contentFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'1 条');
+});
+
 test("Chongqing news candidates enter the default calendar with distinct evidence labels and PNG provenance", async () => {
   const raw = calendarRow({event_id:'evt_cq',record_kind:undefined,city_name:'重庆市',city_slug:'chongqing',event_name:'重庆音乐会',date_confidence:'explicit_year',sessions:undefined});
   const candidate = {...raw,record_kind:'discovery_candidate',evidence_level:'title_or_rss_summary'};
