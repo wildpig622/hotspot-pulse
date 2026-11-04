@@ -21,7 +21,7 @@
     <section class="notice"><strong>数据边界</strong><span>自动发现不等于官方核验。候选事件默认待核验，不能直接当作确定热点或定价依据；采集失败时保留上一份快照。</span></section>
     <section class="metrics" aria-label="数据概览">
       <article class="metric-card"><span>新闻线索总数</span><strong id="metricTotal">—</strong><small>原始报道保留，供追溯与补充</small></article>
-      <article class="metric-card"><span>当前层级未来记录</span><strong id="metricDated">—</strong><small>日历按活动整理；新闻仍可能重复</small></article>
+      <article class="metric-card"><span>当前层级未来记录</span><strong id="metricDated">—</strong><small>含待核对新闻，可能与活动重复</small></article>
       <article class="metric-card"><span>来源记录</span><strong id="metricSources">—</strong><small>按来源 URL 去重</small></article>
       <article class="metric-card"><span>采集城市</span><strong id="metricCities">—</strong><small>可在配置中调整</small></article>
     </section>
@@ -30,7 +30,8 @@
       <p id="coverageSummary" class="coverage-summary">正在读取覆盖范围…</p>
       <details class="coverage-details"><summary>查看城市、类别覆盖与待补事项</summary><p id="coverageBacklog"></p><div id="coverageTable" class="coverage-table"></div></details>
       <details id="sourceMarketDetails" class="coverage-details" hidden><summary>客源地假期信号（单独观察）</summary><div id="sourceMarketSignals"></div></details>
-      <p class="calendar-discovery"><button id="showLeadCandidatesBtn" class="button button-quiet" type="button">查看带日期的新闻候选</button><span>新闻候选可能重复，日历仅收录已整理的活动身份。</span></p>
+      <p id="citySummary" class="coverage-summary" role="status" aria-live="polite"></p>
+      <p class="calendar-discovery"><button id="showCityLeadsBtn" class="button button-quiet" type="button">查看当前城市全部线索</button><button id="showLeadCandidatesBtn" class="button button-quiet" type="button">查看带日期的新闻候选</button><span>日历同时展示已整理活动与带日期新闻候选，按标签区分；候选可能重复。</span></p>
       <div class="filters">
         <label><span>查看</span><select id="recordFilter"><option value="activities" selected>活动日历</option><option value="leads">新闻线索</option></select></label>
         <label class="search-field"><span>搜索</span><input id="searchInput" type="search" placeholder="活动名称、城市或来源"></label>
@@ -62,6 +63,6 @@
   </dialog>
   <p id="exportMessage" class="export-message" role="status" aria-live="polite" hidden></p>
   <script src="./share-image.js?v=f915f6d26191"></script>
-  <script src="./app.js?v=f9e27bf7ff93"></script>
+  <script src="./app.js?v=41d9500cf8f3"></script>
 </body>
 </html>

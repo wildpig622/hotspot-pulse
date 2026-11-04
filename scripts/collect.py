@@ -952,7 +952,7 @@ def run_collection() -> int:
             from activity_registry import build_registry_payload, build_coverage
         previous_activities = load_json(SITE_API / "activities.json", {}).get("data", [])
         activities = build_registry_payload(ROOT, kept, cities, observed_at, today, previous_activities)
-        coverage = build_coverage(cities, list(FEED_TOPICS), kept, activities["data"], feed_results, observed_at)
+        coverage = build_coverage(cities, list(FEED_TOPICS), kept, activities["data"], feed_results, observed_at, activities['discovery_candidates'])
         payload["meta"]["structured_activity_count"] = len(activities["data"])
         for city_row in city_payload["data"]:
             city_row["activity_count"] = sum(row["city_slug"] == city_row["city_slug"] for row in activities["data"])

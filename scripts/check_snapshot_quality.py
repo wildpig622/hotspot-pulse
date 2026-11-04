@@ -13,7 +13,8 @@ except ImportError:
     import collect
 
 
-def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: float | None = None) -> dict:
+def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: float | None = None,
+                   require_discovery_calendar: bool = False) -> dict:
     payloads = {name: json.loads((api / (name + '.json')).read_text(encoding='utf-8'))
                 for name in ('hotspots', 'activities', 'coverage', 'cities', 'health')}
     leads = payloads['hotspots']['data']
@@ -29,6 +30,19 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
     def require(condition, message):
         if not condition:
             errors.append(message)
+
+    candidates = calendar.get('discovery_candidates', [])
+    if require_discovery_calendar or 'discovery_candidates' in calendar:
+        try:
+            from .activity_registry import build_discovery_candidates
+        except ImportError:
+            from activity_registry import build_discovery_candidates
+        expected_candidates = build_discovery_candidates(leads, activities)
+        # Compare every projected field as well as identity: discovery must not
+        # invent body checks, change review status, or drop a whole city's leads.
+        require('discovery_candidates' in calendar, 'dated news handoff has not been built')
+        require(candidates == expected_candidates, 'dated news handoff is missing, duplicated, or modified')
+        require(calendar['meta'].get('discovery_candidate_count') == len(candidates), 'dated news total mismatch')
 
     for kind, rows in (('news', leads), ('activity', activities), ('source_market', signals)):
         ids = [row.get('event_id') for row in rows]
@@ -79,6 +93,10 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
     require({row['city_name'] for row in payloads['cities']['data']} == city_names, 'city catalogue mismatch')
     cells = payloads['coverage']['data']
     require(len(cells) == len(expected) and {(row['city_name'], row['topic']) for row in cells} == expected, 'coverage matrix is incomplete or duplicated')
+    if 'discovery_candidates' in calendar:
+        for cell in cells:
+            count = sum(row['city_name'] == cell['city_name'] and row['event_type'] == cell['topic'] for row in candidates)
+            require(cell.get('dated_news_candidate_count') == count, 'city/topic dated-news coverage mismatch: ' + cell['city_name'] + '/' + cell['topic'])
     feeds = payloads['health'].get('feed_results', [])
     if require_full_scope:
         require(len(feeds) == len(expected) and {(row['city_name'], row.get('topic')) for row in feeds} == expected, 'full city/topic collection was not executed')
@@ -94,6 +112,7 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
     require(payloads['coverage']['meta'].get('coverage_status') == 'partial', 'must not claim exhaustive web coverage')
     return {'status': 'FAIL' if errors else 'PASS', 'errors': errors, 'news_count': len(leads),
             'activity_count': len(activities), 'source_market_signal_count': len(signals),
+            'discovery_candidate_count': len(candidates),
             'coverage_cells': len(cells), 'full_scope_required': require_full_scope,
             'collection_at': payloads['hotspots']['meta'].get('last_collection_at'),
             'verified_news': sum(row.get('review_status') == 'verified' for row in leads),
@@ -106,9 +125,10 @@ def main() -> int:
     parser.add_argument('--snapshot-dir', type=Path, default=collect.SITE_API)
     parser.add_argument('--require-full-scope', action='store_true')
     parser.add_argument('--max-age-hours', type=float)
+    parser.add_argument('--require-discovery-calendar', action='store_true')
     parser.add_argument('--report', type=Path)
     args = parser.parse_args()
-    result = check_snapshot(args.snapshot_dir, args.require_full_scope, args.max_age_hours)
+    result = check_snapshot(args.snapshot_dir, args.require_full_scope, args.max_age_hours, args.require_discovery_calendar)
     if args.report:
         collect.write_json(args.report, result)
     print(json.dumps(result, ensure_ascii=False))

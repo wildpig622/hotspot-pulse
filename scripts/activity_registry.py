@@ -4,6 +4,7 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -151,6 +152,34 @@ def activity_is_future(activity: dict[str, Any], today: date, horizon: int = 90)
     return any(row['end_at'] >= today.isoformat() and row['start_at'] <= upper for row in sessions)
 
 
+INTERNAL_MEETING = re.compile(r'股东大会|董事会会议|业绩说明会|职工代表大会|军训动员|迎新大会')
+
+
+def build_discovery_candidates(leads: list[dict[str, Any]], activities: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Project dated news into the calendar without asserting event identity or body evidence.
+
+    Keep dates outside today's window too: the client applies its current date.
+    Only explicit links remove a lead; similar titles never silently merge it.
+    """
+    try:
+        from . import collect
+    except ImportError:
+        import collect
+    linked = {key for row in activities for key in row.get('related_lead_ids', [])}
+    result = []
+    for lead in leads:
+        if (lead.get('event_id') in linked or lead.get('review_status') != 'pending'
+                or lead.get('city_match') != 'text_confirmed' or lead.get('event_date_role') != 'event'
+                or lead.get('date_precision') != 'day' or INTERNAL_MEETING.search(lead.get('event_name', ''))
+                or not collect.is_upcoming_event(lead, date.min)):
+            continue
+        row = copy.deepcopy(lead)
+        row.update(record_kind='discovery_candidate', evidence_level='title_or_rss_summary',
+                   candidate_note='新闻候选：日期来自标题或摘要，尚未核对正文，可能与其他记录重复。')
+        result.append(row)
+    return sorted(result, key=lambda row: (row['start_at'], row['city_name'], row['event_id']))
+
+
 def build_registry_payload(root: Path, leads: list[dict[str, Any]], cities: list[dict[str, Any]],
                            generated_at: str, today: date, previous: list[dict[str, Any]] | None = None) -> dict[str, Any]:
     registry = json.loads((root / 'config/activity-registry.json').read_text(encoding='utf-8'))
@@ -162,6 +191,7 @@ def build_registry_payload(root: Path, leads: list[dict[str, Any]], cities: list
     configured_names = {city['city_name'] for city in cities}
     entries = [row for row in entries if row['city_name'] in configured_names]
     rows = build_activities(entries, cities, leads, previous)
+    candidates = build_discovery_candidates(leads, rows)
     signals = []
     for signal in registry.get('source_market_signals', []):
         if not any(name in configured_names for name in signal['impact_destination_cities']):
@@ -172,18 +202,21 @@ def build_registry_payload(root: Path, leads: list[dict[str, Any]], cities: list
                      impact_destination_cities=signal['impact_destination_cities'])
         signals.append(built)
     return {'meta': {
-        'api_version': 'v1', 'schema_version': '1.2', 'generated_at': generated_at,
+        'api_version': 'v1', 'schema_version': '1.3', 'generated_at': generated_at,
+        'discovery_candidate_count': len(candidates),
+        'future_discovery_candidate_count': sum(activity_is_future(row, today) for row in candidates),
         'coverage_status': 'partial', 'activity_count': len(rows), 'source_market_signal_count': len(signals),
         'future_activity_count': sum(activity_is_future(row, today) for row in rows),
         'pending_count': sum(row['review_status'] == 'pending' for row in rows),
         'verified_count': sum(row['review_status'] == 'verified' for row in rows),
         'data_note': '按明确活动身份登记，新闻在hotspots.json保留；来源检查时间逐条保留，未自动核验。',
-    }, 'data': rows, 'backlog': registry.get('backlog', []),
+    }, 'data': rows, 'discovery_candidates': candidates, 'backlog': registry.get('backlog', []),
         'backlog_resolutions': registry.get('backlog_resolutions', []), 'source_market_signals': signals}
 
 
 def build_coverage(cities: list[dict[str, Any]], topics: list[dict[str, Any]], leads: list[dict[str, Any]],
-                   activities: list[dict[str, Any]], feed_results: list[dict[str, Any]], generated_at: str) -> dict[str, Any]:
+                   activities: list[dict[str, Any]], feed_results: list[dict[str, Any]], generated_at: str,
+                   candidates: list[dict[str, Any]] | None = None) -> dict[str, Any]:
     status = {(row['city_name'], row.get('topic')): row['status'] for row in feed_results}
     cells = []
     for city in cities:
@@ -192,6 +225,7 @@ def build_coverage(cities: list[dict[str, Any]], topics: list[dict[str, Any]], l
             cells.append({'city_name': city['city_name'], 'topic': topic['key'], 'label': topic['label'],
                           'news_count': sum(row.get('city_name') == city['city_name'] and row.get('event_type') == topic['key'] for row in leads),
                           'activity_count': len(selected),
+                          'dated_news_candidate_count': sum(row['city_name'] == city['city_name'] and row['event_type'] == topic['key'] for row in candidates or []),
                           'last_evidence_check_at': max((row['last_evidence_check_at'] for row in selected), default=None),
                           'discovery_status': status.get((city['city_name'], topic['key']), 'not_run'),
                           'coverage_status': 'partial' if selected else 'not_assessed'})
