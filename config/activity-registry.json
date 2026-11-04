@@ -164,6 +164,86 @@
       "access_status": "body_read",
       "authority_note": "电视媒体账号正文支持11月28—29日举办；11月3日为开票时间。主办方原帖尚未直接读到，仍待补查。",
       "published_display": "11-2 22:40（页面未显示年份）"
+    },
+    "hangzhou_cultural_expo_2026": {
+      "url": "https://eng.hangzhou.gov.cn/col/col811217/art/2026/art_b700bc1629844c6eab435e2f25e0d78d.html",
+      "publisher": "杭州市人民政府英文门户",
+      "source_type": "government_portal",
+      "published_at": null,
+      "published_date": "2026-10-27",
+      "checked_at": "2026-11-04T07:33:18Z",
+      "access_status": "body_read",
+      "authority_note": "政府正文明确2026年11月5—9日及白马湖主会场，筹备会议10月20日不作为举办日。"
+    },
+    "xian_silk_arts_2026": {
+      "url": "https://wlj.xa.gov.cn/wlxw/wlzx/2109818340980613121.html",
+      "publisher": "西安市文化和旅游局",
+      "source_type": "government_portal",
+      "published_at": null,
+      "published_date": "2026-10-13",
+      "checked_at": "2026-11-04T07:33:18Z",
+      "access_status": "body_read",
+      "authority_note": "政府转载中国文化报正文；分别登记西安音乐厅闭幕音乐会与西安两馆美术展，不把全省六市艺术节整体算作西安每日活动。"
+    },
+    "lanzhou_jingmeng_2026": {
+      "url": "https://www.gswbj.gov.cn/a/2026/10/22/29903.html",
+      "publisher": "丝绸之路（敦煌）国际文化博览会官网，来源甘肃省文旅厅",
+      "source_type": "government_portal",
+      "published_at": null,
+      "published_date": "2026-10-22",
+      "checked_at": "2026-11-04T07:33:18Z",
+      "access_status": "body_read",
+      "authority_note": "正文明确11月6—8日19:30甘肃大剧院演出；票根优惠适用期不作为演出期间。"
+    },
+    "xuzhou_xinyunsheng_2026": {
+      "url": "https://www.sina.cn/news/detail/5357484061230871.html",
+      "publisher": "千百度品牌官方微博（活动总冠名）",
+      "source_type": "official_event_sponsor",
+      "published_at": null,
+      "published_date": "2026-10-24",
+      "checked_at": "2026-11-04T07:33:18Z",
+      "access_status": "body_read",
+      "authority_note": "冠名品牌官方正文支持徐州、11月28日及淮海国际博览中心E3馆；10月27日是开票时间。"
+    },
+    "hefei_metrology_2026": {
+      "url": "https://cmtn.org.cn/ArticleView.aspx?NewsId=1724",
+      "publisher": "计量培训在线服务平台转载中国计量协会通知",
+      "source_type": "association_notice_relay",
+      "published_at": null,
+      "published_date": "2026-09-30",
+      "checked_at": "2026-11-04T07:33:18Z",
+      "access_status": "body_read",
+      "authority_note": "已读通知转载正文；展览11月18—19日，11月16—17日为布展期；协会原站正文尚未直接读取。"
+    },
+    "hefei_acaic_2026": {
+      "url": "https://fxxh.cis.org.cn/news/6826.html",
+      "publisher": "中国仪器仪表学会分析仪器分会",
+      "source_type": "official_association",
+      "published_at": null,
+      "published_date": "2026-09-07",
+      "checked_at": "2026-11-04T07:33:18Z",
+      "access_status": "body_read",
+      "authority_note": "协会三轮通知明确合肥、11月27—29日和合肥皇冠假日酒店；27日含报到、参观和座谈，主会场28—29日。预计规模为公告计划，不等于实际入住人数。"
+    },
+    "jiangsu_nov_sports_2026": {
+      "url": "https://jsstyj.jiangsu.gov.cn/art/2026/10/29/art_79626_11851804.html",
+      "publisher": "江苏省体育局",
+      "source_type": "government_department",
+      "published_at": null,
+      "published_date": "2026-10-29",
+      "checked_at": "2026-11-04T07:33:18Z",
+      "access_status": "body_read",
+      "authority_note": "从省体育局11月赛事清单逐行读取赛事名称、城市场地和举办日；未把整张排期表当作一场活动。"
+    },
+    "nanjing_wimc_2026": {
+      "url": "https://www.wimc.org.cn/",
+      "publisher": "世界智能制造大会官网",
+      "source_type": "official_event_organizer",
+      "published_at": null,
+      "published_date": "2026-10-27",
+      "checked_at": "2026-11-04T07:33:18Z",
+      "access_status": "body_read",
+      "authority_note": "官网当届2026年新闻与日程支持11月19—21日及南京国际博览会议中心；2025、2024往届内容未混入当届日期。"
     }
   },
   "data": [
@@ -644,6 +724,150 @@
         "evt_534b3a76bfa1"
       ],
       "scope_note": "电视媒体账号正文支持11月28—29日举办；11月3日为开票时间。主办方原帖尚未直接读到，仍待补查。"
+    },
+    {
+      "registry_id": "hangzhou_cultural_expo_2026",
+      "event_name": "2026杭州文化创意产业博览会",
+      "city_name": "杭州市",
+      "event_type": "exhibition",
+      "venue_name": "白马湖国际会展中心",
+      "sessions": [
+        {
+          "start_at": "2026-11-05",
+          "end_at": "2026-11-09"
+        }
+      ],
+      "source_key": "hangzhou_cultural_expo_2026",
+      "related_lead_ids": [],
+      "scope_note": "政府正文明确2026年11月5—9日及白马湖主会场，筹备会议10月20日不作为举办日。"
+    },
+    {
+      "registry_id": "xian_domingo_2026",
+      "event_name": "歌剧之王——普拉西多·多明戈2026西安音乐会",
+      "city_name": "西安市",
+      "event_type": "concert",
+      "venue_name": "西安音乐厅",
+      "sessions": [
+        {
+          "start_at": "2026-11-10",
+          "end_at": "2026-11-10"
+        }
+      ],
+      "source_key": "xian_silk_arts_2026",
+      "related_lead_ids": [],
+      "scope_note": "政府转载中国文化报正文；分别登记西安音乐厅闭幕音乐会与西安两馆美术展，不把全省六市艺术节整体算作西安每日活动。"
+    },
+    {
+      "registry_id": "xian_silk_art_exhibition_2026",
+      "event_name": "今日丝绸之路国际艺术邀请展",
+      "city_name": "西安市",
+      "event_type": "exhibition",
+      "venue_name": "陕西省美术博物馆、陕西省文化馆曲江馆区",
+      "sessions": [
+        {
+          "start_at": "2026-10-16",
+          "end_at": "2026-11-08"
+        }
+      ],
+      "source_key": "xian_silk_arts_2026",
+      "related_lead_ids": [],
+      "scope_note": "政府转载中国文化报正文；分别登记西安音乐厅闭幕音乐会与西安两馆美术展，不把全省六市艺术节整体算作西安每日活动。"
+    },
+    {
+      "registry_id": "lanzhou_jingmeng_2026",
+      "event_name": "陈佩斯主演话剧《惊梦》兰州站",
+      "city_name": "兰州市",
+      "event_type": "concert",
+      "venue_name": "甘肃大剧院",
+      "sessions": [
+        {
+          "start_at": "2026-11-06",
+          "end_at": "2026-11-08"
+        }
+      ],
+      "source_key": "lanzhou_jingmeng_2026",
+      "related_lead_ids": [],
+      "scope_note": "正文明确11月6—8日19:30甘肃大剧院演出；票根优惠适用期不作为演出期间。"
+    },
+    {
+      "registry_id": "xuzhou_xinyunsheng_2026",
+      "event_name": "2026新云笙·汉国风音乐盛典",
+      "city_name": "徐州市",
+      "event_type": "concert",
+      "venue_name": "淮海国际博览中心E3馆",
+      "sessions": [
+        {
+          "start_at": "2026-11-28",
+          "end_at": "2026-11-28"
+        }
+      ],
+      "source_key": "xuzhou_xinyunsheng_2026",
+      "related_lead_ids": [],
+      "scope_note": "冠名品牌官方正文支持徐州、11月28日及淮海国际博览中心E3馆；10月27日是开票时间。"
+    },
+    {
+      "registry_id": "hefei_metrology_2026",
+      "event_name": "第三届计量仪器装备展（2026）",
+      "city_name": "合肥市",
+      "event_type": "exhibition",
+      "venue_name": "合肥滨湖国际会展中心（综合馆）",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-19"
+        }
+      ],
+      "source_key": "hefei_metrology_2026",
+      "related_lead_ids": [],
+      "scope_note": "已读通知转载正文；展览11月18—19日，11月16—17日为布展期；协会原站正文尚未直接读取。"
+    },
+    {
+      "registry_id": "hefei_acaic_2026",
+      "event_name": "第十一届中国分析仪器学术大会（ACAIC 2026）",
+      "city_name": "合肥市",
+      "event_type": "conference",
+      "venue_name": "合肥皇冠假日酒店",
+      "sessions": [
+        {
+          "start_at": "2026-11-27",
+          "end_at": "2026-11-29"
+        }
+      ],
+      "source_key": "hefei_acaic_2026",
+      "related_lead_ids": [],
+      "scope_note": "协会三轮通知明确合肥、11月27—29日和合肥皇冠假日酒店；27日含报到、参观和座谈，主会场28—29日。预计规模为公告计划，不等于实际入住人数。"
+    },
+    {
+      "registry_id": "suzhou100_2026",
+      "event_name": "2026苏州100城市越野赛",
+      "city_name": "苏州市",
+      "event_type": "sports",
+      "venue_name": "苏州市孙武文化园",
+      "sessions": [
+        {
+          "start_at": "2026-11-21",
+          "end_at": "2026-11-22"
+        }
+      ],
+      "source_key": "jiangsu_nov_sports_2026",
+      "related_lead_ids": [],
+      "scope_note": "从省体育局11月赛事清单逐行读取赛事名称、城市场地和举办日；未把整张排期表当作一场活动。"
+    },
+    {
+      "registry_id": "nanjing_wimc_2026",
+      "event_name": "2026世界智能制造大会",
+      "city_name": "南京市",
+      "event_type": "conference",
+      "venue_name": "南京国际博览会议中心",
+      "sessions": [
+        {
+          "start_at": "2026-11-19",
+          "end_at": "2026-11-21"
+        }
+      ],
+      "source_key": "nanjing_wimc_2026",
+      "related_lead_ids": [],
+      "scope_note": "官网当届2026年新闻与日程支持11月19—21日及南京国际博览会议中心；2025、2024往届内容未混入当届日期。"
     }
   ],
   "backlog": [],

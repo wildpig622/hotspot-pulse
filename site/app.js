@@ -9,7 +9,7 @@
   var CONTENT_LABELS = { event_announcement: "活动公告", uncertain: "活动线索待核实", ticketing_notice: "开票 / 售票信息", registration_notice: "报名信息", schedule_roundup: "排期汇总", guide: "攻略 / 购票资讯", past_report: "历史报道", other: "其他资讯" };
   var NON_EVENT_KINDS = { guide: true, schedule_roundup: true, ticketing_notice: true, registration_notice: true, other: true };
   var CONDITIONAL_EVENT = /审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望|辟谣|不属实|不实消息|尚未确定|未确定|相关部门回应|官方回应/;
-  var state = { events: [], leads: [], activities: [], discoveryCandidates: [], backlog: [], sourceMarketSignals: [], visibleLimit: 100, calendarAvailable: false, calendarMeta: {}, coverage: {}, meta: {}, health: {}, cities: [] };
+  var state = { events: [], leads: [], activities: [], discoveryCandidates: [], sourceCandidates: [], sourceChecks: [], backlog: [], sourceMarketSignals: [], visibleLimit: 100, calendarAvailable: false, calendarMeta: {}, coverage: {}, meta: {}, health: {}, cities: [] };
   var shareSession = null;
   var shareRevision = 0;
   var $ = function (id) { return document.getElementById(id); };
@@ -72,6 +72,7 @@
     return eventRanges(event).some(function (range) { return range.end >= today && range.start <= monitoringEnd(today); });
   }
   function isUpcomingDatedEvent(event, today) {
+    if (event.review_status === "rejected") return false;
     var kind = contentKind(event);
     if (kind !== "event_announcement" && kind !== "uncertain") return false;
     if (futureExclusion(event)) return false;
@@ -191,7 +192,7 @@
     $("metricCities").textContent = String(state.cities.length || state.meta.city_count || 0);
     var collectedAt = state.meta.last_collection_at || state.health.last_run_at || state.meta.generated_at;
     $("updatedAt").textContent = "自动采集截至 " + formatTime(collectedAt);
-    $("sourceInfo").textContent = "数据源：" + ($("recordFilter").value === "activities" ? "正文日期登记 + 带日期的新闻候选" : text(state.meta.source_system, "Google News RSS")) + " · 覆盖待补齐";
+    $("sourceInfo").textContent = "数据源：" + ($("recordFilter").value === "activities" ? "公告正文 + 票务日期候选 + 新闻候选" : text(state.meta.source_system, "Google News RSS")) + " · 覆盖待补齐";
     var status = state.health.status || state.meta.collection_status || "not_run";
     var stale = collectedAt && beijingToday() > beijingDay(collectedAt);
     var labels = { healthy: stale ? "快照待更新" : "上次采集成功", degraded: "上次采集部分失败", failed: "最近采集失败", not_run: "等待首次采集" };
@@ -205,7 +206,7 @@
     $("healthLabel").textContent = labels[status] || "状态未知";
     $("healthDetail").textContent = details;
     $("healthDot").className = "status-dot " + (status === "healthy" && !stale ? "status-healthy" : status === "degraded" ? "status-degraded" : status === "failed" ? "status-failed" : "status-muted");
-    $("coverageSummary").textContent = "新闻线索 " + state.leads.length + " 条 · 已整理活动 " + state.activities.length + " 项 · 带日期新闻候选 " + state.discoveryCandidates.length + " 条（可能重复，正文待核对） · 假期 " + state.activities.filter(function (event) { return event.event_type === "holiday"; }).length + " 项。" +
+    $("coverageSummary").textContent = "新闻线索 " + state.leads.length + " 条 · 已整理活动 " + state.activities.length + " 项 · 票务日期候选 " + state.sourceCandidates.length + " 条 · 带日期新闻候选 " + state.discoveryCandidates.length + " 条。候选可能重复，仍待核验。假期 " + state.activities.filter(function (event) { return event.event_type === "holiday"; }).length + " 项。" +
       (state.calendarAvailable ? "活动来源与日期仍待核验，28城×6类内容持续补齐。" : "活动日历暂不可用，当前显示新闻线索。") +
       (state.sourceMarketSignals.length ? " 另有 " + state.sourceMarketSignals.length + " 项客源地假期信号，单独观察。" : "") +
       " 采集采用手动执行，网页刷新不会补采；日历整理于 " + formatTime(state.calendarMeta.generated_at) + "。";
@@ -213,18 +214,20 @@
   function selectRecordLayer() {
     if (!state.calendarAvailable) $("recordFilter").value = "leads";
     else if (!$("recordFilter").value) $("recordFilter").value = "activities";
-    state.events = $("recordFilter").value === "activities" && state.calendarAvailable ? state.activities.concat(state.discoveryCandidates) : state.leads;
+    state.events = $("recordFilter").value === "activities" && state.calendarAvailable ? state.activities.concat(state.discoveryCandidates, state.sourceCandidates) : state.leads;
   }
   function renderCoverage() {
     var city = $("cityFilter").value;
     var type = $("typeFilter").value;
     var rows = (state.coverage.data || []).filter(function (row) { return (!city || row.city_name === city) && (!type || row.topic === type); });
     var statuses = { ok: "检索成功，内容仍需核对", failed: "检索失败，保留历史", not_run: "尚未按此类别检索" };
-    $("coverageTable").innerHTML = rows.length ? '<table><thead><tr><th>城市</th><th>类别</th><th>新闻线索</th><th>已整理活动</th><th>带日期新闻候选</th><th>检索状态</th></tr></thead><tbody>' + rows.map(function (row) {
-      return '<tr><td>' + escapeHtml(row.city_name) + '</td><td>' + escapeHtml(row.label) + '</td><td>' + Number(row.news_count || 0) + '</td><td>' + Number(row.activity_count || 0) + '（覆盖待补）</td><td>' + Number(row.dated_news_candidate_count || 0) + '</td><td>' + escapeHtml(statuses[row.discovery_status] || "状态待核对") + '</td></tr>';
+    $("coverageTable").innerHTML = rows.length ? '<table><thead><tr><th>城市</th><th>类别</th><th>新闻线索</th><th>已整理活动</th><th>票务日期候选</th><th>带日期新闻候选</th><th>检索状态</th></tr></thead><tbody>' + rows.map(function (row) {
+      return '<tr><td>' + escapeHtml(row.city_name) + '</td><td>' + escapeHtml(row.label) + '</td><td>' + Number(row.news_count || 0) + '</td><td>' + Number(row.activity_count || 0) + '（覆盖待补）</td><td>' + Number(row.source_candidate_count || 0) + '</td><td>' + Number(row.dated_news_candidate_count || 0) + '</td><td>' + escapeHtml(statuses[row.discovery_status] || "状态待核对") + '</td></tr>';
     }).join("") + '</tbody></table>' : '覆盖台账暂不可用，零条不代表该城市没有活动。';
     var gaps = state.backlog.filter(function (row) { return (!city || row.city_name === city || row.impact_destination_city === city) && (!type || row.topic === type); });
     $("coverageBacklog").textContent = gaps.length ? "历史清单待补：" + gaps.map(function (row) { return (row.city_name || "") + " · " + (row.event_name || TYPE_LABELS[row.topic] || "活动来源"); }).join("；") + "。来源和适用范围仍需补查。" : "该筛选暂无单列待补项；覆盖仍需继续核对。";
+    var checks = state.sourceChecks.filter(function (row) { return !city || row.city_name === city; });
+    if (checks.length) $("coverageBacklog").textContent += " 票务列表读取 " + checks.filter(function (row) { return row.status === "ok"; }).length + "/" + checks.length + " 城成功；只覆盖该平台所列内容。" + (checks.some(function (row) { return row.status !== "ok"; }) ? " 存在读取失败，历史候选已保留，请检查来源时间。" : "");
     var signals = state.sourceMarketSignals.filter(function (row) { return (!city || row.city_name === city || (row.impact_destination_cities || []).indexOf(city) >= 0) && (!type || row.event_type === type); });
     $("sourceMarketDetails").hidden = !signals.length;
     $("sourceMarketSignals").innerHTML = signals.map(function (row) {
@@ -294,7 +297,7 @@
     var inScope = function (row) { return (!selectedCity || row.city_name === selectedCity) && (!selectedType || row.event_type === selectedType); };
     var scopedLeads = state.leads.filter(inScope);
     var future = function (row) { return isUpcomingDatedEvent(row, beijingToday()) && inMonitoringWindow(row, beijingToday()); };
-    $("citySummary").textContent = (selectedCity || "全部城市") + (selectedType ? " · " + TYPE_LABELS[selectedType] : "") + "：已采 " + scopedLeads.length + " 条新闻线索；未来窗口内已整理活动 " + state.activities.filter(inScope).filter(future).length + " 项，带日期新闻候选 " + state.discoveryCandidates.filter(inScope).filter(future).length + " 条。新闻数量不等于独立活动数量；其余线索可继续查看。";
+    $("citySummary").textContent = (selectedCity || "全部城市") + (selectedType ? " · " + TYPE_LABELS[selectedType] : "") + "：已采 " + scopedLeads.length + " 条新闻线索；未来窗口内已整理活动 " + state.activities.filter(inScope).filter(future).length + " 项，票务日期候选 " + state.sourceCandidates.filter(inScope).filter(future).length + " 条，带日期新闻候选 " + state.discoveryCandidates.filter(inScope).filter(future).length + " 条。候选可能重复；规模及住宿影响仍需判断。";
     $("exportPngBtn").disabled = !events.length;
     renderCoverage();
     if (!events.length) {
@@ -302,14 +305,14 @@
       return;
     }
     $("eventsList").innerHTML = events.slice(0, visibleCount).map(function (event) {
-      var review = event.review_status === "verified" ? '<span class="badge badge-verified">已核验</span>' : '<span class="badge badge-pending">待核验</span>';
+      var review = event.review_status === "verified" ? '<span class="badge badge-verified">已核验</span>' : event.review_status === "rejected" ? '<span class="badge badge-neutral">已排除</span>' : '<span class="badge badge-pending">待核验</span>';
       var kind = contentKind(event);
       var kindBadge = '<span class="badge badge-neutral">' + escapeHtml(CONTENT_LABELS[kind] || "其他资讯") + '</span>';
-      var evidenceBadge = event.record_kind === "discovery_candidate" ? '<span class="badge badge-pending">新闻候选 · 正文待核对</span>' : event.record_kind === "activity" ? '<span class="badge badge-neutral">来源日期已整理</span>' : '';
-      var cityMatch = event.city_match === "event_city_conflict" ? '<span class="badge badge-pending">举办城市不符，需复核</span>' : event.city_match === "text_confirmed" ? '<span class="badge badge-neutral">' + (event.record_kind === "activity" ? '来源正文出现城市名' : '标题/摘要出现城市名') + '</span>' : '<span class="badge badge-neutral">按城市检索命中</span>';
+      var evidenceBadge = event.record_kind === "source_candidate" ? '<span class="badge badge-pending">票务日期候选 · 待核验</span>' : event.record_kind === "discovery_candidate" ? '<span class="badge badge-pending">新闻候选 · 正文待核对</span>' : event.record_kind === "activity" ? '<span class="badge badge-neutral">来源日期已整理</span>' : '';
+      var cityMatch = event.city_match === "event_city_conflict" ? '<span class="badge badge-pending">举办城市不符，需复核</span>' : event.city_match === "text_confirmed" ? '<span class="badge badge-neutral">' + (event.record_kind === "source_candidate" ? '票务卡片列明举办城市' : event.record_kind === "activity" ? '来源正文出现城市名' : '标题/摘要出现城市名') + '</span>' : '<span class="badge badge-neutral">按城市检索命中</span>';
       var sourceCount = (event.sources || []).length;
       var sourcePublish = publicationLabel(event.sources && event.sources[0]);
-      var confidence = event.date_confidence === "source_body" ? "来源正文日期，仍待核验" : event.event_date_role === "ticket_sale" ? "开票日期，不是举办日期" : event.event_date_role === "registration" ? "报名日期，不是举办日期" : event.event_date_role === "ambiguous" ? "日期语义待核实" : event.date_confidence === "explicit_year" ? "标题/摘要含年份" : event.date_confidence === "inferred_year" ? "年份推断，需核验" : "未提取到举办日期";
+      var confidence = event.date_confidence === "source_listing" ? "票务列表举办日期，详情与主办方公告待补查" : event.date_confidence === "source_body" ? "来源正文日期，仍待核验" : event.event_date_role === "ticket_sale" ? "开票日期，不是举办日期" : event.event_date_role === "registration" ? "报名日期，不是举办日期" : event.event_date_role === "ambiguous" ? "日期语义待核实" : event.date_confidence === "explicit_year" ? "标题/摘要含年份" : event.date_confidence === "inferred_year" ? "年份推断，需核验" : "未提取到举办日期";
       return '<article class="event-card"><div class="event-main">' +
         '<div class="event-title-row"><span class="event-title">' + escapeHtml(text(event.event_name, "未命名事件")) + '</span>' + review + evidenceBadge + kindBadge +
         '<span class="badge badge-neutral">' + escapeHtml(TYPE_LABELS[event.event_type] || "其他") + '</span></div>' +
@@ -354,8 +357,8 @@
         try { if (/^https?:\/\//i.test(source.source_url || "")) host = new URL(source.source_url).hostname; } catch (e) {}
         return {
           id: text(event.event_id, "未提供"), title: text(event.event_name, "未命名事件"), city: text(event.city_name),
-          type: TYPE_LABELS[event.event_type] || "其他", content: (event.record_kind === "discovery_candidate" ? "新闻候选 · 正文待核对，可能重复 · " : event.record_kind === "activity" ? "来源日期已整理 · " : "") + (CONTENT_LABELS[contentKind(event)] || "其他资讯") + (event.scope_note ? " · " + event.scope_note : "") + (source.authority_note ? " · 证据说明：" + source.authority_note : ""),
-          date: eventDateLabel(event), review: event.review_status === "verified" ? "已核验" : "待核验",
+          type: TYPE_LABELS[event.event_type] || "其他", content: (event.record_kind === "source_candidate" ? "票务日期候选 · 详情与主办方待补查，可能重复 · " : event.record_kind === "discovery_candidate" ? "新闻候选 · 正文待核对，可能重复 · " : event.record_kind === "activity" ? "来源日期已整理 · " : "") + (CONTENT_LABELS[contentKind(event)] || "其他资讯") + (event.scope_note ? " · " + event.scope_note : "") + (source.authority_note ? " · 证据说明：" + source.authority_note : ""),
+          date: eventDateLabel(event), review: event.review_status === "verified" ? "已核验" : event.review_status === "rejected" ? "已排除" : "待核验",
           source: text(source.publisher, "未知发布方") + (host ? " · " + host : ""), publishedAt: publicationLabel(source) + (event.last_evidence_check_at ? "；来源检查 " + formatTime(event.last_evidence_check_at) : "")
         };
       })
@@ -500,6 +503,8 @@
       state.calendarAvailable = results[3].status === "fulfilled" && Array.isArray(results[3].value.data);
       state.activities = state.calendarAvailable ? results[3].value.data : [];
       state.discoveryCandidates = state.calendarAvailable ? (results[3].value.discovery_candidates || []) : [];
+      state.sourceCandidates = state.calendarAvailable ? (results[3].value.source_candidates || []) : [];
+      state.sourceChecks = state.calendarAvailable ? (results[3].value.source_checks || []) : [];
       state.calendarMeta = state.calendarAvailable ? results[3].value.meta || {} : {};
       state.backlog = state.calendarAvailable ? results[3].value.backlog || [] : [];
       state.sourceMarketSignals = state.calendarAvailable ? results[3].value.source_market_signals || [] : [];

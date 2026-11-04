@@ -131,7 +131,7 @@ def build_activities(entries: list[dict[str, Any]], cities: list[dict[str, Any]]
             activity['first_seen_at'] = prior.get('first_seen_at') or activity['first_seen_at']
             activity['event_status'] = prior.get('event_status', 'unknown')
             activity['event_confirmation'] = prior.get('event_confirmation', 'unknown')
-        if prior and prior.get('review_status') == 'verified':
+        if prior and prior.get('review_status') in {'verified', 'rejected'}:
             activity = copy.deepcopy(prior)
         result.append(activity)
     present = {row['event_id'] for row in result}
@@ -145,7 +145,7 @@ def build_activities(entries: list[dict[str, Any]], cities: list[dict[str, Any]]
 
 
 def activity_is_future(activity: dict[str, Any], today: date, horizon: int = 90) -> bool:
-    if activity.get('event_status') in {'cancelled', 'postponed'}:
+    if activity.get('review_status') == 'rejected' or activity.get('event_status') in {'cancelled', 'postponed'}:
         return False
     upper = (today + timedelta(days=horizon)).isoformat()
     sessions = activity.get('sessions') or [{'start_at': activity['start_at'], 'end_at': activity.get('end_at') or activity['start_at']}]
@@ -216,7 +216,7 @@ def build_registry_payload(root: Path, leads: list[dict[str, Any]], cities: list
 
 def build_coverage(cities: list[dict[str, Any]], topics: list[dict[str, Any]], leads: list[dict[str, Any]],
                    activities: list[dict[str, Any]], feed_results: list[dict[str, Any]], generated_at: str,
-                   candidates: list[dict[str, Any]] | None = None) -> dict[str, Any]:
+                   candidates: list[dict[str, Any]] | None = None, source_candidates: list[dict[str, Any]] | None = None) -> dict[str, Any]:
     status = {(row['city_name'], row.get('topic')): row['status'] for row in feed_results}
     cells = []
     for city in cities:
@@ -226,6 +226,7 @@ def build_coverage(cities: list[dict[str, Any]], topics: list[dict[str, Any]], l
                           'news_count': sum(row.get('city_name') == city['city_name'] and row.get('event_type') == topic['key'] for row in leads),
                           'activity_count': len(selected),
                           'dated_news_candidate_count': sum(row['city_name'] == city['city_name'] and row['event_type'] == topic['key'] for row in candidates or []),
+                          'source_candidate_count': sum(row['city_name'] == city['city_name'] and row['event_type'] == topic['key'] for row in source_candidates or []),
                           'last_evidence_check_at': max((row['last_evidence_check_at'] for row in selected), default=None),
                           'discovery_status': status.get((city['city_name'], topic['key']), 'not_run'),
                           'coverage_status': 'partial' if selected else 'not_assessed'})

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "source": "https://www.showstart.com/event/list",
+  "source_type": "authorized_ticketing",
+  "max_records_per_city": 20,
+  "review_status": "pending",
+  "data": [
+    {"city_name":"成都市","city_code":28}, {"city_name":"南京市","city_code":25},
+    {"city_name":"重庆市","city_code":23}, {"city_name":"杭州市","city_code":571},
+    {"city_name":"武汉市","city_code":27}, {"city_name":"西安市","city_code":29},
+    {"city_name":"深圳市","city_code":755}, {"city_name":"南昌市","city_code":791},
+    {"city_name":"广州市","city_code":20}, {"city_name":"长沙市","city_code":731},
+    {"city_name":"贵阳市","city_code":851}, {"city_name":"沈阳市","city_code":24},
+    {"city_name":"洛阳市","city_code":379}, {"city_name":"珠海市","city_code":756},
+    {"city_name":"昆明市","city_code":871}, {"city_name":"郑州市","city_code":371},
+    {"city_name":"南宁市","city_code":771}, {"city_name":"徐州市","city_code":516},
+    {"city_name":"合肥市","city_code":551}, {"city_name":"苏州市","city_code":512},
+    {"city_name":"福州市","city_code":591}, {"city_name":"德阳市","city_code":838},
+    {"city_name":"遂宁市","city_code":825}, {"city_name":"济南市","city_code":531},
+    {"city_name":"厦门市","city_code":592}, {"city_name":"金华市","city_code":579},
+    {"city_name":"天津市","city_code":22}, {"city_name":"兰州市","city_code":931}
+  ]
+}

@@ -6,6 +6,7 @@ import json
 from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlparse
+from urllib.parse import parse_qs
 
 try:
     from . import collect
@@ -14,13 +15,15 @@ except ImportError:
 
 
 def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: float | None = None,
-                   require_discovery_calendar: bool = False) -> dict:
+                   require_discovery_calendar: bool = False, require_source_calendars: bool = False,
+                   require_city_calendar: bool = False, require_expanded_queries: bool = False) -> dict:
     payloads = {name: json.loads((api / (name + '.json')).read_text(encoding='utf-8'))
                 for name in ('hotspots', 'activities', 'coverage', 'cities', 'health')}
     leads = payloads['hotspots']['data']
     calendar = payloads['activities']
     activities = calendar['data']
     signals = calendar.get('source_market_signals', [])
+    source_candidates = calendar.get('source_candidates', [])
     cities = collect.configured_cities()
     city_names = {city['city_name'] for city in cities}
     topic_names = {topic['key'] for topic in collect.FEED_TOPICS}
@@ -44,7 +47,7 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
         require(candidates == expected_candidates, 'dated news handoff is missing, duplicated, or modified')
         require(calendar['meta'].get('discovery_candidate_count') == len(candidates), 'dated news total mismatch')
 
-    for kind, rows in (('news', leads), ('activity', activities), ('source_market', signals)):
+    for kind, rows in (('news', leads), ('activity', activities), ('source_market', signals), ('source_candidate', source_candidates)):
         ids = [row.get('event_id') for row in rows]
         require(all(ids) and len(ids) == len(set(ids)), kind + ': missing or duplicate IDs')
         for row in rows:
@@ -56,6 +59,12 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
                 require(row.get('record_kind') == 'source_market_signal', key + ': origin signal mislabeled')
                 require(row.get('city_name') not in city_names, key + ': origin signal duplicates an operating city')
                 require(bool(set(row.get('impact_destination_cities', [])) & city_names), key + ': no known observation destination')
+            if kind == 'source_candidate':
+                require(row.get('record_kind') == 'source_candidate' and row.get('evidence_level') == 'ticketing_listing', key + ': listing evidence mislabeled')
+                require(row.get('date_confidence') == 'source_listing' and row.get('event_date_role') == 'event', key + ': invalid listing date role')
+                context = row.get('source_context', {})
+                require(context.get('title') == row.get('event_name') and context.get('start_at') == row.get('start_at') and context.get('venue_name') == row.get('venue_name'), key + ': listing context mismatch')
+                require(context.get('city_label') in {row.get('city_name'), str(row.get('city_name')).removesuffix('市')}, key + ': listing city context mismatch')
             start = row.get('start_at')
             end = row.get('end_at') or start
             if start:
@@ -97,11 +106,42 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
         for cell in cells:
             count = sum(row['city_name'] == cell['city_name'] and row['event_type'] == cell['topic'] for row in candidates)
             require(cell.get('dated_news_candidate_count') == count, 'city/topic dated-news coverage mismatch: ' + cell['city_name'] + '/' + cell['topic'])
+            if 'source_candidates' in calendar:
+                count = sum(row['city_name'] == cell['city_name'] and row['event_type'] == cell['topic'] for row in source_candidates)
+                require(cell.get('source_candidate_count') == count, 'city/topic listing coverage mismatch: ' + cell['city_name'] + '/' + cell['topic'])
+    source_checks = calendar.get('source_checks', [])
+    if 'source_candidates' in calendar or require_source_calendars:
+        require(calendar['meta'].get('source_candidate_count') == len(source_candidates), 'source listing total mismatch')
+    if require_source_calendars:
+        routes = json.loads((collect.ROOT / 'config/source-calendars.json').read_text(encoding='utf8'))['data']
+        codes = {row['city_name']: str(row['city_code']) for row in routes}
+        require(set(codes) == city_names and len(routes) == len(city_names), 'source calendar route catalogue mismatch')
+        require(len(source_checks) == len(city_names) and {r['city_name'] for r in source_checks} == city_names, 'source calendar cities missing or duplicated')
+        for check in source_checks:
+            pages = check.get('pages', [])
+            require(check.get('status') == 'ok' and len(pages) == 2 and all(p.get('status') == 'ok' for p in pages), 'source calendar read failed: ' + check['city_name'])
+            urls = [urlparse(p.get('url', '')) for p in pages]
+            require(all(p.scheme == 'https' and p.hostname == 'www.showstart.com' and p.path == '/event/list' and parse_qs(p.query).get('cityCode') == [codes.get(check['city_name'])] for p in urls), 'source calendar route mismatch')
+            require({parse_qs(p.query).get('pageNo', [''])[0] for p in urls} == {'1', '2'}, 'source calendar page duplicated or missing')
+    if require_city_calendar:
+        try:
+            from .activity_registry import activity_is_future
+        except ImportError:
+            from activity_registry import activity_is_future
+        today = collect.now_utc().astimezone(collect.BEIJING).date()
+        for name in city_names:
+            require(any(row.get('city_name') == name and row.get('review_status') != 'rejected' and activity_is_future(row, today) for row in activities + candidates + source_candidates), 'no dated future calendar record: ' + name)
     feeds = payloads['health'].get('feed_results', [])
     if require_full_scope:
         require(len(feeds) == len(expected) and {(row['city_name'], row.get('topic')) for row in feeds} == expected, 'full city/topic collection was not executed')
         require(all(row.get('status') == 'ok' for row in feeds), 'some city/topic collection requests failed')
         require(payloads['health'].get('successful_feeds') == len(expected), 'full-scope success count mismatch')
+    if require_expanded_queries:
+        for feed in feeds:
+            queries = feed.get('query_results', [])
+            require(len(queries) == 2 and {q.get('route') for q in queries} == {'year_lookback', 'upcoming_months'}, 'expanded query routes missing or duplicated')
+            require(all(q.get('status') == 'ok' for q in queries), 'expanded query route failed')
+        require(len(feeds) == len(expected), 'expanded query city/topic cells missing')
     if max_age_hours is not None:
         try:
             collected = datetime.fromisoformat(payloads['hotspots']['meta']['last_collection_at'].replace('Z', '+00:00'))
@@ -113,6 +153,7 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
     return {'status': 'FAIL' if errors else 'PASS', 'errors': errors, 'news_count': len(leads),
             'activity_count': len(activities), 'source_market_signal_count': len(signals),
             'discovery_candidate_count': len(candidates),
+            'source_candidate_count': len(source_candidates), 'source_calendar_city_count': len(source_checks),
             'coverage_cells': len(cells), 'full_scope_required': require_full_scope,
             'collection_at': payloads['hotspots']['meta'].get('last_collection_at'),
             'verified_news': sum(row.get('review_status') == 'verified' for row in leads),
@@ -126,9 +167,13 @@ def main() -> int:
     parser.add_argument('--require-full-scope', action='store_true')
     parser.add_argument('--max-age-hours', type=float)
     parser.add_argument('--require-discovery-calendar', action='store_true')
+    parser.add_argument('--require-source-calendars', action='store_true')
+    parser.add_argument('--require-city-calendar', action='store_true')
+    parser.add_argument('--require-expanded-queries', action='store_true')
     parser.add_argument('--report', type=Path)
     args = parser.parse_args()
-    result = check_snapshot(args.snapshot_dir, args.require_full_scope, args.max_age_hours, args.require_discovery_calendar)
+    result = check_snapshot(args.snapshot_dir, args.require_full_scope, args.max_age_hours, args.require_discovery_calendar,
+                            args.require_source_calendars, args.require_city_calendar, args.require_expanded_queries)
     if args.report:
         collect.write_json(args.report, result)
     print(json.dumps(result, ensure_ascii=False))
