@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "operating_cities_file": "config/cities.json",
+  "monitoring_horizon_days": 90,
+  "discovery_lookback_days": 180,
+  "max_items_per_city_topic": 50,
+  "max_parallel_requests": 4,
+  "topics": [
+    {"key":"concert","label":"演唱会与演出","terms":["演唱会","音乐节","巡演","音乐会","话剧","歌剧","演出"]},
+    {"key":"exhibition","label":"会展","terms":["展会","博览会","车展","展览","漫展","高交会","茶博会"]},
+    {"key":"sports","label":"体育赛事","terms":["马拉松","体育赛事","路跑","运动会","网球赛","足球赛","篮球赛"]},
+    {"key":"festival","label":"节庆","terms":["节庆","灯会","庙会","嘉年华","文化节","美食节","烟花秀"]},
+    {"key":"holiday","label":"学生假期与放假调整","terms":["秋假","春假","寒假","暑假","学生假期","放假安排","放假调整","调休安排"]},
+    {"key":"conference","label":"大型会议与峰会","terms":["APEC","峰会","大会","国际会议","行业会议","论坛"]}
+  ],
+  "source_policy": "RSS is discovery only. Read government, education, organizer and venue bodies for structured records. Unavailable source bodies remain explicit coverage gaps.",
+  "automatic_review_status": "pending",
+  "coverage_status": "partial",
+  "collection_mode": "manual",
+  "history_references": [
+    "chatgpt-conversation://6adb1ce2-60b4-83ec-a1af-b01cd8621e85",
+    "chatgpt-conversation://6ae14447-4a64-83ec-9ea9-932492257a99"
+  ]
+}

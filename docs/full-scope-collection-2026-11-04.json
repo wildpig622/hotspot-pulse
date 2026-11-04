@@ -1,0 +1,63 @@
+{
+  "stage": "REVIEWED_RELEASE_CANDIDATE",
+  "checked_scope": "28 cities x 6 topics",
+  "raw_rss_items": 4608,
+  "successful_feeds": 168,
+  "failed_feeds": 0,
+  "collection_at": "2026-11-04T02:26:30Z",
+  "news_count": 3575,
+  "original_529_retained": true,
+  "new_leads": 3046,
+  "event_type_counts": {
+    "concert": 711,
+    "exhibition": 552,
+    "conference": 523,
+    "holiday": 666,
+    "festival": 392,
+    "sports": 731
+  },
+  "snapshot_quality": {
+    "status": "PASS",
+    "errors": [],
+    "news_count": 3575,
+    "activity_count": 34,
+    "source_market_signal_count": 1,
+    "coverage_cells": 168,
+    "full_scope_required": true,
+    "collection_at": "2026-11-04T02:26:30Z",
+    "verified_news": 0,
+    "verified_activities": 0,
+    "fact_completeness": "NOT_CLAIMED",
+    "automatic_verified_promotions": 0
+  },
+  "cached_reprocessing": true,
+  "reprocessing_note": "Uses the 168 actually retrieved RSS feeds; collection time remains unchanged. The production workflow will fetch again before publication.",
+  "artifacts": [
+    {
+      "file": "activities.json",
+      "bytes": 93337,
+      "sha256": "0e2b5b969c893b1e1081b16af1c472b1c37cf160d48aa12f6a3ba39a0b1597e8"
+    },
+    {
+      "file": "cities.json",
+      "bytes": 5304,
+      "sha256": "efb09fee52aa153aaa44a516c9113607623af694aa1292d92e6eef0291e4ce9a"
+    },
+    {
+      "file": "coverage.json",
+      "bytes": 47127,
+      "sha256": "4ea8fc4c50c1aaf26cbb78ab74228876b444c7ba5d7b863645f675877b06acf9"
+    },
+    {
+      "file": "health.json",
+      "bytes": 20249,
+      "sha256": "4c0293f9af28132046b6faaede6659207740a4caec6e360499f9127c091c09a1"
+    },
+    {
+      "file": "hotspots.json",
+      "bytes": 8921536,
+      "sha256": "c9e3c7edc7eff1182aba79add62b39656c1ee47e2ff780c611a09da5447f1eac"
+    }
+  ],
+  "release_authorization": "User requested full repair followed by deployment; no schedule enablement requested."
+}

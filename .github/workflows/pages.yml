@@ -62,6 +62,14 @@ jobs:
           ref: ${{ github.sha }}
           persist-credentials: false
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate full-scope collection and snapshot freshness
+        run: python scripts/check_snapshot_quality.py --require-full-scope --max-age-hours 24
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

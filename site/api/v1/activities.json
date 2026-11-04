@@ -1,0 +1,2218 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "schema_version": "1.2",
+    "generated_at": "2026-11-04T02:42:25Z",
+    "coverage_status": "partial",
+    "activity_count": 34,
+    "source_market_signal_count": 1,
+    "future_activity_count": 32,
+    "pending_count": 34,
+    "verified_count": 0,
+    "data_note": "按明确活动身份登记，新闻在hotspots.json保留；来源检查时间逐条保留，未自动核验。"
+  },
+  "data": [
+    {
+      "event_id": "act_0928b5207433",
+      "registry_id": "review_wuhan_auto_2026",
+      "record_kind": "activity",
+      "event_name": "2026武汉国际汽车展览会",
+      "event_type": "exhibition",
+      "city_name": "武汉市",
+      "city_slug": "wuhan",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-10-30",
+      "end_at": "2026-11-03",
+      "sessions": [
+        {
+          "start_at": "2026-10-30",
+          "end_at": "2026-11-03"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_75164357227c"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 2,
+      "sources": [
+        {
+          "source_url": "https://whsmzl.com/",
+          "publisher": "武汉世贸展览服务有限公司",
+          "source_type": "official_event_organizer",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LbTRDUVpEY0lrWWJWVk15Y0hZempoZmVyY24wcGRWUmFNekplVWVqanRGaW55cC1YSmNrYjZLLTZPRlNnNm56RTV5UnZpb193cE1LNlRVOWk?oc=5",
+          "publisher": "湖北日报传媒集团",
+          "publisher_url": "https://news.hubeidaily.net",
+          "source_type": "media",
+          "source_published_at": "2026-10-26T06:52:45Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_6aa605d312de",
+      "registry_id": "review_nanchang_aviation_2026",
+      "record_kind": "activity",
+      "event_name": "2026南昌航空产业博览会",
+      "event_type": "exhibition",
+      "city_name": "南昌市",
+      "city_slug": "nanchang",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-10-31",
+      "end_at": "2026-11-04",
+      "sessions": [
+        {
+          "start_at": "2026-10-31",
+          "end_at": "2026-11-04"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_3b05c8d23d3b",
+        "evt_3be0559d6385"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 3,
+      "sources": [
+        {
+          "source_url": "https://ncaie.com.cn/news/143.html",
+          "publisher": "南昌航空产业博览会组委会",
+          "source_type": "official_exhibition_committee",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1XTkRqQW1yVS1xcDczVE1TNHp2RXFzcExmT2xNN0VlbjNwT2V3U1pCXzdhSy1YSDhST19WVHVwYnpBOW1GNndsUHln?oc=5",
+          "publisher": "凤凰网",
+          "publisher_url": "https://jx.ifeng.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-19T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1XM3U2Z0ZlYjBkS3NFQjlLNklMclJ4WDZQX0dTalJ5MmRhZWNnLS1EN0lmREU1N0VPekFfckdQaXNaUDdxR0s3RVVn?oc=5",
+          "publisher": "凤凰网",
+          "publisher_url": "https://jx.ifeng.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-12T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-29T03:08:58Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_f5393078ae92",
+      "registry_id": "review_hangzhou_marathon_2026",
+      "record_kind": "activity",
+      "event_name": "2026杭州马拉松",
+      "event_type": "sports",
+      "city_name": "杭州市",
+      "city_slug": "hangzhou",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-01",
+      "end_at": "2026-11-01",
+      "sessions": [
+        {
+          "start_at": "2026-11-01",
+          "end_at": "2026-11-01"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_6614d69412a6",
+        "evt_5f79d978ec7c",
+        "evt_8da43a5d108c",
+        "evt_4310a7ec1019"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 5,
+      "sources": [
+        {
+          "source_url": "https://m.thepaper.cn/newsDetail_forward_33434249",
+          "publisher": "杭州发布／杭州市人民政府新闻办公室官方澎湃号",
+          "source_type": "government_official_account_primary_post",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE14VW55aWRmMC1rd21aenpzNm9tODdleHBtUkJ0R2YzenNQZVNQNW1aRFExYWdRcFVONWczWXBUUnBLeXluaWpSd29fckx3aXYtZ0FXR21jYk4tUW5nVll0QjhEYl9yc3RLRUJQVk9R?oc=5",
+          "publisher": "杭州网",
+          "publisher_url": "https://pic.hangzhou.com.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-28T01:02:21Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOFhrWXhiVXBxeTdYSWNjZDlKNnYyZHVjTzFVMkl1dDl2RjZ5QURZaHJkb3VWb3FyMFFqUzFQRXdVTEdOS2g0d29QWF82Z09FNGs4LTlMQ2tHejNFYXlqM3BSX05IUk14Z2FQdHpFNXB2dmY0My1LdmVzTUhTSXJoQUVDdXQ5X25kTXVCNVhUSWotQXkyZmRKTWFTQUhuNG9Md3EzOEJORldwdGtDbUNSZXpSLUJvWTZQeUdzOWhveVY5ZEEyLTFtdDMzTHJYdnlxUVJrYTAyVzduM1ZGMFdVcklrc3BpX2xyTEtR?oc=5",
+          "publisher": "手机新浪网",
+          "publisher_url": "http://k.sina.com.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-28T06:48:49Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE84czRyQUFHMzI0UmhoZ1pxSUh1OUFHU1hCb1VaTU54dnRjQ1Z0QVNCRldObHVZNkktaThTcGpDTkpxVEN4TlM3eEYtSldsdnc?oc=5",
+          "publisher": "新蓝网",
+          "publisher_url": "https://www.cztv.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-27T12:01:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE01VndpMHgzdzBWb09RLU5FVmJlYkhZcjU0VEJ2NXBOMWhFeWhxdkZwQ2FrR3Z5M0lBRnZFa3VDYkJqR2hwV2hzNUU1UVlKTVJWX2RaM1FuN1RBUkdwRG9NakxTYw?oc=5",
+          "publisher": "手机新浪网",
+          "publisher_url": "https://www.sina.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-28T14:39:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-29T03:08:58Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_811df9f745a2",
+      "registry_id": "jinan_gaoxin_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026济南高新区秋假",
+      "event_type": "holiday",
+      "city_name": "济南市",
+      "city_slug": "jinan",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-04",
+      "end_at": "2026-11-06",
+      "sessions": [
+        {
+          "start_at": "2026-11-04",
+          "end_at": "2026-11-06"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "济南高新区安排；不外推到全市或其他区县，具体学校与学段以通知为准。地方媒体转述，原始通知仍待核对。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-04",
+          "end_at": "2026-11-08",
+          "basis": "与周末衔接的观察窗口"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.jinantimes.com.cn/news-39-5329372.html",
+          "publisher": "新黄河／济南时报",
+          "source_type": "institutional_media",
+          "source_published_at": null,
+          "source_published_date": "2026-10-09",
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "地方主流媒体明确转述区县通知；本轮未直接读取区教育局原始通知，仍待核验。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_2b4d0dbba8f0",
+      "registry_id": "review_kunming_auto_2026",
+      "record_kind": "activity",
+      "event_name": "2026昆明国际汽车博览会",
+      "event_type": "exhibition",
+      "city_name": "昆明市",
+      "city_slug": "kunming",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-05",
+      "end_at": "2026-11-09",
+      "sessions": [
+        {
+          "start_at": "2026-11-05",
+          "end_at": "2026-11-09"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_cfd1dabb5e54"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 3,
+      "sources": [
+        {
+          "source_url": "https://km.szautoshow.com/mobile/exhibition.aspx",
+          "publisher": "昆明国际车展／联合车展",
+          "source_type": "official_exhibition_site",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBNdk9LV3p1Y0ttdl8zUm1nSFB4WTdkb1J6S2x2SUVjNGpxMEwtRWxZaTJSWXdRN2x5bm9HUXRELWdvZ256Mm14WmU4SWo?oc=5",
+          "publisher": "凤凰网",
+          "publisher_url": "https://feng.ifeng.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-18T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1zRUNkaFZpYl96QjB0MXlCdjRSMTRNTC1sUWNYeUhTdHJhaWZBYlhpcFVvSzlXMUtnQ0xDU1FMek5pejVCNnhPVFo1R3M3Z0lsWTJRVkZVd2NWeDNrOGpyLXlKQV9uUQ?oc=5",
+          "publisher": "昆明信息港",
+          "publisher_url": "https://www.kunming.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-18T02:53:45Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-29T03:08:58Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_9dfa0fe52279",
+      "registry_id": "sandy_lam_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026林忆莲《回响》巡回演唱会成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "成都东安湖体育公园主体育场",
+      "start_at": "2026-11-06",
+      "end_at": "2026-11-07",
+      "sessions": [
+        {
+          "start_at": "2026-11-06",
+          "end_at": "2026-11-06"
+        },
+        {
+          "start_at": "2026-11-07",
+          "end_at": "2026-11-07"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "正文列出两晚演出；场次及日期仍待核验。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+          "publisher": "澎湃号·政务（发布账号身份待复核）",
+          "source_type": "government_channel_post",
+          "source_published_at": "2026-11-01T09:54:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_a93a8b6dbe12",
+      "registry_id": "jinan_lixia_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026济南历下区秋假",
+      "event_type": "holiday",
+      "city_name": "济南市",
+      "city_slug": "jinan",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-06",
+      "end_at": "2026-11-10",
+      "sessions": [
+        {
+          "start_at": "2026-11-06",
+          "end_at": "2026-11-06"
+        },
+        {
+          "start_at": "2026-11-09",
+          "end_at": "2026-11-10"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "历下区义务教育阶段1—8年级；学校可根据教学进度调整，最终以学校通知为准。地方媒体转述区县通知，原始通知仍待核对。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-06",
+          "end_at": "2026-11-10",
+          "basis": "11月7日、8日为周末，不写成连续5天学校秋假"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.jinantimes.com.cn/news-39-5329372.html",
+          "publisher": "新黄河／济南时报",
+          "source_type": "institutional_media",
+          "source_published_at": null,
+          "source_published_date": "2026-10-09",
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "地方主流媒体明确转述区县通知；本轮未直接读取区教育局原始通知，仍待核验。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_72117bb75c13",
+      "registry_id": "jackson_wang_nanjing_2026",
+      "record_kind": "activity",
+      "event_name": "2026王嘉尔MAGICMAN 2世界巡演南京站",
+      "event_type": "concert",
+      "city_name": "南京市",
+      "city_slug": "nanjing",
+      "city_match": "text_confirmed",
+      "venue_name": "梦之蓝青奥体育公园体育馆",
+      "start_at": "2026-11-07",
+      "end_at": "2026-11-08",
+      "sessions": [
+        {
+          "start_at": "2026-11-07",
+          "end_at": "2026-11-07"
+        },
+        {
+          "start_at": "2026-11-08",
+          "end_at": "2026-11-08"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "11月7日由场馆公告支持，11月8日由大麦南京加场公告支持；开票日另行记录，不替代演出日期。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 2,
+      "sources": [
+        {
+          "source_url": "https://weibo.com/2/detail/5344432016326875",
+          "publisher": "梦之蓝青奥体育公园官方微博",
+          "source_type": "official_venue",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": "9-18 09:35（年份未显示）",
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "场馆正文支持11月7日；9月18日09:35发布，正文未显示年份，保留日期精度限制。",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://weibo.com/2/detail/5345925620568458",
+          "publisher": "大麦南京官方微博",
+          "source_type": "authorized_ticketing",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": "9-22 12:30（年份未显示）",
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "加场正文明确活动名称、南京场馆和2026年11月8日；预售9月24日不作为举办日期。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_d5feb3f35a89",
+      "registry_id": "review_jinhua_half_marathon_2026",
+      "record_kind": "activity",
+      "event_name": "2026金华·金漪湖半程马拉松",
+      "event_type": "sports",
+      "city_name": "金华市",
+      "city_slug": "jinhua",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-08",
+      "end_at": "2026-11-08",
+      "sessions": [
+        {
+          "start_at": "2026-11-08",
+          "end_at": "2026-11-08"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_cbf419541499"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 2,
+      "sources": [
+        {
+          "source_url": "https://m.zjim.org/race",
+          "publisher": "浙江省马拉松及路跑协会",
+          "source_type": "association_race_calendar",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85Mmhjem9pZEV4dFRLQkdTSDlhUkJGOWlrSmZweWJEbkpWOUMwRk5SSUlHMU5fUER2ektVLVdGOEZkdlAtNGJqcTFmd1Flemo4SFNuN2FkMms2QQ?oc=5",
+          "publisher": "人民论坛网",
+          "publisher_url": "https://www.rmlt.com.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-19T02:08:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_9b351dccb4d5",
+      "registry_id": "chengdu_autumn_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026成都部分学校秋假",
+      "event_type": "holiday",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-11",
+      "end_at": "2026-11-13",
+      "sessions": [
+        {
+          "start_at": "2026-11-11",
+          "end_at": "2026-11-13"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "多数学校的安排；并非全市统一，各区县和学校可调整。具体学段与学校通知为准。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-11",
+          "end_at": "2026-11-15",
+          "basis": "来源说明的周末连休窗口；不代表全市所有学校统一放假"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://finance.sina.cn/2026-09-13/detail-inirscye4665703.d.html?wm=3049_0015",
+          "publisher": "四川发布（四川省人民政府新闻办公室）",
+          "source_type": "government_official_account",
+          "source_published_at": "2026-09-13T13:53:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_f85c1800be5c",
+      "registry_id": "review_zhengzhou_auto_2026",
+      "record_kind": "activity",
+      "event_name": "2026郑州国际汽车展览会",
+      "event_type": "exhibition",
+      "city_name": "郑州市",
+      "city_slug": "zhengzhou",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-12",
+      "end_at": "2026-11-16",
+      "sessions": [
+        {
+          "start_at": "2026-11-12",
+          "end_at": "2026-11-16"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_204d62998417"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 2,
+      "sources": [
+        {
+          "source_url": "https://www.zhengzhou.gov.cn/news1/10310944.jhtml",
+          "publisher": "郑州市人民政府门户（转载郑州日报）",
+          "source_type": "government_portal_republication",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5idUh6NUt2R2tmYmYxcmhtR1JZUkdNaVNKQklvSXhGLUNqd3JSbGZwUFg3UldMMFVGU1pkYjQ0NVFlSWFkU0ZRZjROLUV4YmNCcjdYZFh6RXRtOUgtR19Uai1Edmd0TGNUZXA5N0dFTTdsZFU?oc=5",
+          "publisher": "手机新浪网",
+          "publisher_url": "https://k.sina.com.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-27T04:04:54Z",
+          "observed_at": "2026-10-29T03:08:58Z",
+          "last_observed_at": "2026-10-29T03:08:58Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_e6d5bbf93816",
+      "registry_id": "changsha_autumn_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026长沙义务教育阶段秋假",
+      "event_type": "holiday",
+      "city_name": "长沙市",
+      "city_slug": "changsha",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-12",
+      "end_at": "2026-11-16",
+      "sessions": [
+        {
+          "start_at": "2026-11-12",
+          "end_at": "2026-11-13"
+        },
+        {
+          "start_at": "2026-11-16",
+          "end_at": "2026-11-16"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "义务教育阶段；其他学段及学校安排单独核对。11月14日、15日属于周末。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-12",
+          "end_at": "2026-11-16",
+          "basis": "学校3天秋假与周末衔接"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://hn.rednet.cn/content/646054/57/16364310.html",
+          "publisher": "红网（转载湖南省人民政府网）",
+          "source_type": "government_relay",
+          "source_published_at": "2026-10-13T15:03:18+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "政府来源转载正文；11月12日、13日、16日为学校假期，14日、15日是周末。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_a0525a5b8812",
+      "registry_id": "zhang_jie_nanjing_2026",
+      "record_kind": "activity",
+      "event_name": "2026张杰1982开往未LIVE巡回演唱会南京站",
+      "event_type": "concert",
+      "city_name": "南京市",
+      "city_slug": "nanjing",
+      "city_match": "text_confirmed",
+      "venue_name": "南京奥体中心体育场",
+      "start_at": "2026-11-13",
+      "end_at": "2026-11-15",
+      "sessions": [
+        {
+          "start_at": "2026-11-13",
+          "end_at": "2026-11-13"
+        },
+        {
+          "start_at": "2026-11-14",
+          "end_at": "2026-11-14"
+        },
+        {
+          "start_at": "2026-11-15",
+          "end_at": "2026-11-15"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://3g.sina.com.cn/news/detail/5356069746381190.html",
+          "publisher": "张杰1982开往未LIVE巡回演唱会认证微博",
+          "source_type": "official_organizer",
+          "source_published_at": "2026-10-20T12:20:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_823ef4e08649",
+      "registry_id": "zhou_chuanxiong_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026周传雄念念不忘再遇见plus成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "成都东安湖体育公园主体育场",
+      "start_at": "2026-11-14",
+      "end_at": "2026-11-15",
+      "sessions": [
+        {
+          "start_at": "2026-11-14",
+          "end_at": "2026-11-14"
+        },
+        {
+          "start_at": "2026-11-15",
+          "end_at": "2026-11-15"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+          "publisher": "澎湃号·政务（发布账号身份待复核）",
+          "source_type": "government_channel_post",
+          "source_published_at": "2026-11-01T09:54:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_70a1e4489c04",
+      "registry_id": "dazhangwei_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026大张伟只为爱与自由Rock Show成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "东区超现场",
+      "start_at": "2026-11-14",
+      "end_at": "2026-11-14",
+      "sessions": [
+        {
+          "start_at": "2026-11-14",
+          "end_at": "2026-11-14"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34342271",
+          "publisher": "成都发布（澎湃号·政务）",
+          "source_type": "government_official_account",
+          "source_published_at": "2026-10-27T14:53:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_12fa58bf9c98",
+      "registry_id": "gem_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026宝石Gem原石季节巡回演唱会成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "成都露天音乐公园",
+      "start_at": "2026-11-14",
+      "end_at": "2026-11-14",
+      "sessions": [
+        {
+          "start_at": "2026-11-14",
+          "end_at": "2026-11-14"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+          "publisher": "澎湃号·政务（发布账号身份待复核）",
+          "source_type": "government_channel_post",
+          "source_published_at": "2026-11-01T09:54:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_6e3336e5c7ce",
+      "registry_id": "xujiaqi_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026许佳琪续假期巡演成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "CH8绿树演艺中心",
+      "start_at": "2026-11-14",
+      "end_at": "2026-11-14",
+      "sessions": [
+        {
+          "start_at": "2026-11-14",
+          "end_at": "2026-11-14"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34342271",
+          "publisher": "成都发布（澎湃号·政务）",
+          "source_type": "government_official_account",
+          "source_published_at": "2026-10-27T14:53:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_bd66abd114bb",
+      "registry_id": "weibird_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026韦礼安HI WE1韦您好巡回演唱会成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "成都金融城演艺中心",
+      "start_at": "2026-11-14",
+      "end_at": "2026-11-14",
+      "sessions": [
+        {
+          "start_at": "2026-11-14",
+          "end_at": "2026-11-14"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+          "publisher": "澎湃号·政务（发布账号身份待复核）",
+          "source_type": "government_channel_post",
+          "source_published_at": "2026-11-01T09:54:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_04aa1c0a9577",
+      "registry_id": "review_nanchang_marathon_2026",
+      "record_kind": "activity",
+      "event_name": "2026南昌马拉松",
+      "event_type": "sports",
+      "city_name": "南昌市",
+      "city_slug": "nanchang",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-15",
+      "end_at": "2026-11-15",
+      "sessions": [
+        {
+          "start_at": "2026-11-15",
+          "end_at": "2026-11-15"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_3d9ba51c1b02",
+        "evt_92e97e99aec8",
+        "evt_1bcb5302ec11"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 4,
+      "sources": [
+        {
+          "source_url": "https://m.thepaper.cn/newsDetail_forward_34081339",
+          "publisher": "南昌发布官方澎湃号",
+          "source_type": "government_official_account_primary_post",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAtTk1ULWNxYnA0TGZEQl9hM201a0s1OThhRmlvSUlDcjNVdnZNQVc5SVRQU1ZLTmJfWTlTaDRlS2ZBT05SaHdKZmd3?oc=5",
+          "publisher": "凤凰网",
+          "publisher_url": "https://jx.ifeng.com",
+          "source_type": "other",
+          "source_published_at": "2026-09-17T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-29T03:08:58Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84cV93LWpKdlEwa2tEamo4UXhMamtPRnp4RGVycHcyOTlITk1aMHl6TG14cmZLb2lBOURDOUhGdFB2RnRkS2Z5MEJuUFotSjJEanZqRm1nZVc2NUU0eFdHSg?oc=5",
+          "publisher": "ThePaper.cn",
+          "publisher_url": "https://www.thepaper.cn",
+          "source_type": "other",
+          "source_published_at": "2026-09-17T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:58Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wT3Z2WXU1Q2lmdDlQNzBuZTAyMDIzUGRVdnZyT3gzVlZCMnRBMWo2aDdoV0ZMeDRJYlFKVGRKeWNsV2ZFY1NIZmxweHZDUTNNdVliZVhZOHUtNW4wdlp1UQ?oc=5",
+          "publisher": "ThePaper.cn",
+          "publisher_url": "https://www.thepaper.cn",
+          "source_type": "other",
+          "source_published_at": "2026-09-16T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-29T03:08:28Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_48f3c9e0a4fb",
+      "registry_id": "review_changsha_marathon_2026",
+      "record_kind": "activity",
+      "event_name": "2026长沙马拉松",
+      "event_type": "sports",
+      "city_name": "长沙市",
+      "city_slug": "changsha",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-15",
+      "end_at": "2026-11-15",
+      "sessions": [
+        {
+          "start_at": "2026-11-15",
+          "end_at": "2026-11-15"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_d0d48c4aa6c3",
+        "evt_dcb3d2d46412",
+        "evt_3ffac103faf3"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 6,
+      "sources": [
+        {
+          "source_url": "https://www.marathonchangsha.com/Detail/411",
+          "publisher": "长沙马拉松官网",
+          "source_type": "official_race_site",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1abHhKOGNYX3dZOEl0MjRoUExTWWNOVFFTSEt1U0Q0Rm41MWd0cjhsc2ZZQXU4ZzQ2Y3U0ZFI5dzlyZTRKVXBXVllyZFBuenNyVVd1cUhrNW1GeFNENmM3ZzJn?oc=5",
+          "publisher": "湖南红网",
+          "publisher_url": "https://hn.rednet.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-16T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5RV3JxRlpKWWZSLXpJRmpJUldSS2l0dlZOdXg1aHlRd3hHN2dEeHVBa1NHa2p3Um84dWFuNmZoYm5fOS1UVUNGeS0xTEk?oc=5",
+          "publisher": "凤凰网",
+          "publisher_url": "https://feng.ifeng.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-16T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-29T03:08:58Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBROXBaTkpEcldWWXo0QXFRU1VjMHJaT29RemxTSzBhbmQ5cmExaUJyQzdiYTRpYVZOWEQ1aWk4cFJLUmNYRlB6ZQ?oc=5",
+          "publisher": "凤凰网",
+          "publisher_url": "https://i.ifeng.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-16T07:00:00Z",
+          "observed_at": "2026-10-30T01:55:55Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IUTlxcTYwTnp3dW1QSHlVNmlGZEFfYmZUUEhBbHd1aWhRMGs0ZG0wRlpESnFudXlmOTZFMnkzTHlPNXhGOUtUeTBuTU5ZSkVXb3c?oc=5",
+          "publisher": "Sohu",
+          "publisher_url": "https://www.sohu.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-16T12:36:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-29T03:08:58Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBzQUlxcG1uQThBVk51cHBZSHdDbGRld0UyQUZ6OFdOYjQ0WnE1eUktbWhnNDMxcFpReUFrd2FfSVJ1cEVsR29Ka0tNbGw?oc=5",
+          "publisher": "凤凰网",
+          "publisher_url": "https://feng.ifeng.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-16T07:00:00Z",
+          "observed_at": "2026-10-30T01:55:55Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_e154b4ef9da5",
+      "registry_id": "deyang_autumn_school_break_batch1_2026",
+      "record_kind": "activity",
+      "event_name": "2026德阳秋假第一批（罗江、什邡、绵竹）",
+      "event_type": "holiday",
+      "city_name": "德阳市",
+      "city_slug": "deyang",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-18",
+      "end_at": "2026-11-20",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-20"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "罗江区、什邡市、绵竹市；高三除外，具体适用学段见公告。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-22",
+          "basis": "来源说明的周末连休窗口"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://finance.sina.cn/2026-09-13/detail-inirscye4665703.d.html?wm=3049_0015",
+          "publisher": "四川发布（四川省人民政府新闻办公室）",
+          "source_type": "government_official_account",
+          "source_published_at": "2026-09-13T13:53:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_774c55953fc6",
+      "registry_id": "shenzhen_apec_leaders_2026",
+      "record_kind": "activity",
+      "event_name": "2026APEC第三十三次领导人非正式会议（深圳）",
+      "event_type": "conference",
+      "city_name": "深圳市",
+      "city_slug": "shenzhen",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-18",
+      "end_at": "2026-11-19",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-19"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "仅领导人会议日期；配套活动、场馆和住宿影响另行核对。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12548571.html",
+          "publisher": "深圳市人民政府门户网站",
+          "source_type": "government_portal",
+          "source_published_at": "2025-12-15T12:08:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_d5acf1f0a154",
+      "registry_id": "fuzhou_named_district_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026福州部分区县秋假（鼓楼、台江等）",
+      "event_type": "holiday",
+      "city_name": "福州市",
+      "city_slug": "fuzhou",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-18",
+      "end_at": "2026-11-20",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-20"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "正文点名鼓楼、台江、仓山、晋安、连江等区县的幼儿园、小学、初中；市属学校按所在区县安排，不是全市统一假期。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://my-h5news.app.xinhuanet.com/chaobian-difanglink/fj.news.cn/20260722/5e4bf51c592e4f51b1f0372c2c4a1f18/c.html",
+          "publisher": "新华网（转载福州晚报）",
+          "source_type": "institutional_media",
+          "source_published_at": "2026-07-22T10:45:22+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "仅登记正文点名的鼓楼、台江、仓山、晋安、连江等区县，不外推到全市统一日期。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_e199c3608529",
+      "registry_id": "suining_autumn_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026遂宁秋假",
+      "event_type": "holiday",
+      "city_name": "遂宁市",
+      "city_slug": "suining",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-18",
+      "end_at": "2026-11-20",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-20"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "幼儿园、中小学、普通高中、中职学校，高三除外。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-22",
+          "basis": "来源说明的周末连休窗口"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://finance.sina.cn/2026-09-13/detail-inirscye4665703.d.html?wm=3049_0015",
+          "publisher": "四川发布（四川省人民政府新闻办公室）",
+          "source_type": "government_official_account",
+          "source_published_at": "2026-09-13T13:53:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_d0c7961bc566",
+      "registry_id": "review_changsha_silver_expo_2026",
+      "record_kind": "activity",
+      "event_name": "2026长沙银发产业博览会",
+      "event_type": "exhibition",
+      "city_name": "长沙市",
+      "city_slug": "changsha",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-20",
+      "end_at": "2026-11-22",
+      "sessions": [
+        {
+          "start_at": "2026-11-20",
+          "end_at": "2026-11-22"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_d52b5f413583"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 2,
+      "sources": [
+        {
+          "source_url": "https://hunan.gov.cn/hnszf/hnyw/szdt/202610/t20261028_34089462.html",
+          "publisher": "湖南省人民政府门户（转载湖南日报）",
+          "source_type": "government_portal_republication",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5NZ0hBa3lvUWFlTmNHU21uTmktU0o4aVRfSWFjYkxtbmg1V2pnWHlhOVl4NjhIMk9TSWdNRktrajZwN0JGdEtMYXNqOWdLeFZxWVA5X1NPazFwZUZLZHJQMHpaSlRvaHht?oc=5",
+          "publisher": "湖南红网",
+          "publisher_url": "https://economy.rednet.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-27T07:00:57Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_aac97e89d2cc",
+      "registry_id": "ye_shirong_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026叶世荣你中有我巡回演唱会成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "凤凰山体育公园综合体育馆",
+      "start_at": "2026-11-21",
+      "end_at": "2026-11-21",
+      "sessions": [
+        {
+          "start_at": "2026-11-21",
+          "end_at": "2026-11-21"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+          "publisher": "澎湃号·政务（发布账号身份待复核）",
+          "source_type": "government_channel_post",
+          "source_published_at": "2026-11-01T09:54:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_9429304365ca",
+      "registry_id": "jiang_dunhao_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026蒋敦豪你来啦全国巡回演唱会成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "成都金融城演艺中心",
+      "start_at": "2026-11-21",
+      "end_at": "2026-11-21",
+      "sessions": [
+        {
+          "start_at": "2026-11-21",
+          "end_at": "2026-11-21"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+          "publisher": "澎湃号·政务（发布账号身份待复核）",
+          "source_type": "government_channel_post",
+          "source_published_at": "2026-11-01T09:54:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_2881c67482df",
+      "registry_id": "masiwei_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026马思唯乐透人生巡回演唱会成都特别场",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "成都东安湖体育公园主体育场",
+      "start_at": "2026-11-21",
+      "end_at": "2026-11-21",
+      "sessions": [
+        {
+          "start_at": "2026-11-21",
+          "end_at": "2026-11-21"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+          "publisher": "澎湃号·政务（发布账号身份待复核）",
+          "source_type": "government_channel_post",
+          "source_published_at": "2026-11-01T09:54:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_96c80c8265a8",
+      "registry_id": "deyang_autumn_school_break_batch2_2026",
+      "record_kind": "activity",
+      "event_name": "2026德阳秋假第二批（市直属、旌阳等）",
+      "event_type": "holiday",
+      "city_name": "德阳市",
+      "city_slug": "deyang",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-25",
+      "end_at": "2026-11-27",
+      "sessions": [
+        {
+          "start_at": "2026-11-25",
+          "end_at": "2026-11-27"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "市直属、旌阳区、经开区、广汉市、中江县；高三除外，具体学段见公告。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-25",
+          "end_at": "2026-11-29",
+          "basis": "来源说明的周末连休窗口"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://finance.sina.cn/2026-09-13/detail-inirscye4665703.d.html?wm=3049_0015",
+          "publisher": "四川发布（四川省人民政府新闻办公室）",
+          "source_type": "government_official_account",
+          "source_published_at": "2026-09-13T13:53:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_11e4ba813cb7",
+      "registry_id": "shenzhen_chtf_2026",
+      "record_kind": "activity",
+      "event_name": "2026第二十八届中国国际高新技术成果交易会（深圳）",
+      "event_type": "exhibition",
+      "city_name": "深圳市",
+      "city_slug": "shenzhen",
+      "city_match": "text_confirmed",
+      "venue_name": "深圳国际会展中心（宝安）",
+      "start_at": "2026-11-26",
+      "end_at": "2026-11-28",
+      "sessions": [
+        {
+          "start_at": "2026-11-26",
+          "end_at": "2026-11-28"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "官网公告列表直接列出展期；详情跳转微信未能打开，保留此访问限制。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://chtf.com/meitizhiyin/zuixingonggao/",
+          "publisher": "高交会官方网站最新公告",
+          "source_type": "official_event_organizer",
+          "source_published_at": null,
+          "source_published_date": "2026-08-18",
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "official_listing_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_c452b0ca6eb9",
+      "registry_id": "zhang_jie_wuhan_2026",
+      "record_kind": "activity",
+      "event_name": "2026张杰1982开往未LIVE巡回演唱会武汉站",
+      "event_type": "concert",
+      "city_name": "武汉市",
+      "city_slug": "wuhan",
+      "city_match": "text_confirmed",
+      "venue_name": "武汉体育中心体育场",
+      "start_at": "2026-11-27",
+      "end_at": "2026-11-29",
+      "sessions": [
+        {
+          "start_at": "2026-11-27",
+          "end_at": "2026-11-27"
+        },
+        {
+          "start_at": "2026-11-28",
+          "end_at": "2026-11-28"
+        },
+        {
+          "start_at": "2026-11-29",
+          "end_at": "2026-11-29"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://weibo.com/2/detail/5346690267876720",
+          "publisher": "武汉市文化和旅游局官方微博",
+          "source_type": "government_official_account",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": "9-24 15:09（年份未显示）",
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "正文明确2026年11月27日至29日；标题审批通过并不等于活动已实际举办。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_96e313556287",
+      "registry_id": "zhou_huajian_chengdu_2026",
+      "record_kind": "activity",
+      "event_name": "2026周华健少年的奇幻之旅3.0成都站",
+      "event_type": "concert",
+      "city_name": "成都市",
+      "city_slug": "chengdu",
+      "city_match": "text_confirmed",
+      "venue_name": "凤凰山体育公园综合体育馆",
+      "start_at": "2026-11-28",
+      "end_at": "2026-11-28",
+      "sessions": [
+        {
+          "start_at": "2026-11-28",
+          "end_at": "2026-11-28"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T01:40:15Z",
+      "last_seen_at": "2026-11-04T01:40:15Z",
+      "knowable_at": "2026-11-04T01:40:15Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+          "publisher": "澎湃号·政务（发布账号身份待复核）",
+          "source_type": "government_channel_post",
+          "source_published_at": "2026-11-01T09:54:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T01:40:15Z",
+          "last_observed_at": "2026-11-04T01:40:15Z",
+          "checked_at": "2026-11-04T01:40:15Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_eb09d40b8df0",
+      "registry_id": "review_nanning_marathon_2026",
+      "record_kind": "activity",
+      "event_name": "2026南宁马拉松",
+      "event_type": "sports",
+      "city_name": "南宁市",
+      "city_slug": "nanning",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-12-20",
+      "end_at": "2026-12-20",
+      "sessions": [
+        {
+          "start_at": "2026-12-20",
+          "end_at": "2026-12-20"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_6c148ae9cbc6",
+        "evt_bd8e6c831c64"
+      ],
+      "first_seen_at": "2026-10-29T15:29:47+08:00",
+      "last_seen_at": "2026-10-29T15:29:47+08:00",
+      "knowable_at": "2026-10-29T15:29:47+08:00",
+      "source_count": 3,
+      "sources": [
+        {
+          "source_url": "https://www.sina.cn/news/detail/5327534213305550.html",
+          "publisher": "南宁文旅；页面标明南宁市文化广电和旅游局官方微博认证",
+          "source_type": "government_account_authenticated_mirror",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-29T15:29:47+08:00",
+          "last_observed_at": "2026-10-29T15:29:47+08:00",
+          "checked_at": "2026-10-29T15:29:47+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1zOGdBMnUzVjVzQmVRX2NxZXBDODd3bDZ0VFQ5azRNS0NMMXU5WUNzdUVtYXZnYl9SOWhvbjd2R0NUNnI3blk4Y1FjbFc?oc=5",
+          "publisher": "凤凰网",
+          "publisher_url": "https://feng.ifeng.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-21T04:00:00Z",
+          "observed_at": "2026-10-29T03:08:58Z",
+          "last_observed_at": "2026-10-29T03:08:58Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRekluRi1wLXA2SWp6cktFeUdrTHpMdi1rXzFkYWNPaHJ2U3ZHY1pNYWE2VVBydy1wczR1TU5OVEM0d2RMYmJhNU0wOXluLXBQNHB3R1d3?oc=5",
+          "publisher": "QQ News",
+          "publisher_url": "https://news.qq.com",
+          "source_type": "media",
+          "source_published_at": "2026-10-14T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-29T15:29:47+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_412857d09fb2",
+      "registry_id": "review_guangzhou_huangpu_marathon_2026",
+      "record_kind": "activity",
+      "event_name": "2026黄埔马拉松",
+      "event_type": "sports",
+      "city_name": "广州市",
+      "city_slug": "guangzhou",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-12-27",
+      "end_at": "2026-12-27",
+      "sessions": [
+        {
+          "start_at": "2026-12-27",
+          "end_at": "2026-12-27"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "公告日期；不代表已实际举办或所有报道细节均已核验。",
+      "travel_windows": [],
+      "related_lead_ids": [
+        "evt_a444c0520dce"
+      ],
+      "first_seen_at": "2026-10-30T09:47:49+08:00",
+      "last_seen_at": "2026-10-30T09:47:49+08:00",
+      "knowable_at": "2026-10-30T09:47:49+08:00",
+      "source_count": 2,
+      "sources": [
+        {
+          "source_url": "https://www.hp.gov.cn/xwzx/zwyw/content/post_11042181.html",
+          "publisher": "广州市黄埔区人民政府门户／广州黄埔统战",
+          "source_type": "district_government_portal",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-10-30T09:47:49+08:00",
+          "last_observed_at": "2026-10-30T09:47:49+08:00",
+          "checked_at": "2026-10-30T09:47:49+08:00",
+          "access_status": "historical_body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8wTjYwWGJsN2otSmxYNWgzNTA5Z2hZRzltVnJvQ2hvZDFxbEJ2YkR2amd2TE9CanpWWUJxQWduQnliN0s2MG5FR19rMVFmdkNXNlQyM3dWbVlqLVBZTENEcDQweEpjYXp5?oc=5",
+          "publisher": "中国新闻网",
+          "publisher_url": "https://www.chinanews.com.cn",
+          "source_type": "media",
+          "source_published_at": "2026-10-12T07:00:00Z",
+          "observed_at": "2026-10-29T03:08:28Z",
+          "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    }
+  ],
+  "backlog": [],
+  "backlog_resolutions": [
+    {
+      "key": "jinan_school_break_2026",
+      "event_name": "济南分区秋假",
+      "city_name": "济南市",
+      "topic": "holiday",
+      "status": "source_body_reopened_pending",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "source_url": "https://www.jinantimes.com.cn/news-39-5329372.html",
+      "note": "历史列出分区错峰；需核对教育部门或明确官方账号，不能合成一个全市日期。",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    },
+    {
+      "key": "jackson_wang_nanjing_2026",
+      "event_name": "王嘉尔南京演出",
+      "city_name": "南京市",
+      "topic": "concert",
+      "status": "source_body_reopened_pending",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    },
+    {
+      "key": "zhang_jie_nanjing_2026",
+      "event_name": "张杰南京演出",
+      "city_name": "南京市",
+      "topic": "concert",
+      "status": "source_body_reopened_pending",
+      "source_url": "https://3g.sina.com.cn/news/detail/5356069746381190.html",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    },
+    {
+      "key": "zhang_jie_wuhan_2026",
+      "event_name": "张杰武汉演出",
+      "city_name": "武汉市",
+      "topic": "concert",
+      "status": "source_body_reopened_pending",
+      "source_url": "https://weibo.com/2/detail/5346690267876720",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    },
+    {
+      "key": "hanzhong_source_market_break_2026",
+      "event_name": "汉中客源地秋假（西安影响待评估）",
+      "city_name": "汉中市",
+      "impact_destination_city": "西安市",
+      "topic": "holiday",
+      "status": "source_body_reopened_pending",
+      "source_url": "https://cj.sina.com.cn/articles/view/1915671961/722ed59901901nmyq",
+      "note": "客源地汉中，不应冒充西安本地活动；客源流向及住宿增量未知。",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    }
+  ],
+  "source_market_signals": [
+    {
+      "event_id": "sig_a9e9cdf57024",
+      "registry_id": "hanzhong_source_market_break_2026",
+      "record_kind": "source_market_signal",
+      "event_name": "2026汉中幼儿园及义务教育阶段秋假",
+      "event_type": "holiday",
+      "city_name": "汉中市",
+      "city_slug": "hanzhong",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-16",
+      "end_at": "2026-11-18",
+      "sessions": [
+        {
+          "start_at": "2026-11-16",
+          "end_at": "2026-11-18"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "客源地汉中的学校假期，仅供西安经营观察；没有证据证明客流流向西安或带来住宿增量，不能当作西安本地活动。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://cj.sina.com.cn/articles/view/1915671961/722ed59901901nmyq",
+          "publisher": "陕西都市快报官方账号（转引汉中市教育局）",
+          "source_type": "institutional_media",
+          "source_published_at": "2026-11-02T13:30:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "正文明确引用汉中市教育局11月2日通知；南郑政府门户也列出该通知，但微信原文未能打开。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。",
+      "impact_destination_cities": [
+        "西安市"
+      ]
+    }
+  ]
+}

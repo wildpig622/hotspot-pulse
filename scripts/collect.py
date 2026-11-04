@@ -12,6 +12,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from functools import lru_cache
@@ -22,13 +23,18 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 SITE_API = ROOT / "site" / "api" / "v1"
 CITIES_FILE = ROOT / "config" / "cities.json"
+SCOPE = json.loads((ROOT / "config" / "monitoring-scope.json").read_text(encoding="utf-8"))
+FEED_TOPICS = tuple(SCOPE["topics"])
+HOLIDAY_TERMS = ("秋假", "春假", "寒假", "暑假", "学生假期", "放假安排", "放假调整", "调休安排")
 UTC = timezone.utc
 BEIJING = timezone(timedelta(hours=8))
 KEYWORDS = (
     "演唱会", "音乐节", "展会", "博览会", "马拉松", "体育赛事",
     "赛事", "演出", "漫展", "节庆", "车展", "展览", "巡演",
-    "音乐会", "嘉年华", "文化节", "美食节", "灯会", "庙会"
-)
+    "音乐会", "话剧", "歌剧", "嘉年华", "文化节", "美食节", "灯会", "庙会",
+    "APEC", "峰会", "大会", "国际会议", "行业会议", "论坛"
+) + HOLIDAY_TERMS
+KEYWORDS = tuple(dict.fromkeys(KEYWORDS + tuple(term for topic in FEED_TOPICS for term in topic['terms'])))
 
 GUIDE_TERMS = (
     "有哪些", "有什么", "攻略", "指南", "购票平台", "票务平台", "怎么买票",
@@ -48,7 +54,8 @@ REGISTRATION_TERMS = (
 EVENT_DATE_CUES = (
     "将于", "定于", "定档", "举行", "举办", "开幕", "开赛", "开演",
     "开跑", "启幕", "上演", "开展", "举办时间", "活动时间", "赛事时间",
-    "演出时间", "比赛时间", "展出时间", "正式举行", "将举行", "将举办"
+    "演出时间", "比赛时间", "展出时间", "正式举行", "将举行", "将举办",
+    "放假时间", "秋假时间", "春假时间", "寒假时间", "暑假时间", "放假", "会议时间"
 )
 PAST_REPORT_TERMS = (
     "冠军诞生", "夺冠", "圆满落幕", "圆满结束", "成功举办", "顺利举行",
@@ -56,13 +63,13 @@ PAST_REPORT_TERMS = (
     "落幕", "比赛结束", "赛事回顾", "演出回顾"
 )
 CONDITIONAL_EVENT_PATTERN = re.compile(
-    r"审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望"
+    r"审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望|辟谣|不属实|不实消息|尚未确定|未确定|相关部门回应|官方回应"
 )
 QUANTITY_SUFFIX = r"\s*(?:万|亿|千|百|人|名|件|通|元|%|％|小时|公里|万人|万名)"
 NON_EVENT_CONTENT_KINDS = {"guide", "schedule_roundup", "ticketing_notice", "registration_notice"}
 
 USER_AGENT = "HotspotPulse/0.1 (+https://github.com/wildpig622/hotspot-pulse)"
-MAX_FEED_ITEMS = 20
+MAX_FEED_ITEMS = SCOPE["max_items_per_city_topic"]
 KEEP_UNSEEN_DAYS = 90
 MAX_FUTURE_DAYS = 365
 MAX_PAST_DAYS = 60
@@ -109,7 +116,9 @@ def normalize_title(value: str) -> str:
 
 def classify_event(text: str) -> str:
     value = text or ""
-    if any(word in value for word in ("展会", "博览会", "展览", "茶博会", "车展", "漫展", "动漫展", "进博会")):
+    if any(word in value for word in ("秋假", "春假", "寒假", "暑假", "学生假期")):
+        return "holiday"
+    if any(word in value for word in ("展会", "博览会", "展览", "茶博会", "车展", "漫展", "动漫展", "进博会", "高交会")):
         return "exhibition"
     if any(word in value for word in ("马拉松", "体育赛事", "赛事", "足球", "篮球", "网球", "运动会", "路跑", "比赛")):
         return "sports"
@@ -117,6 +126,10 @@ def classify_event(text: str) -> str:
         return "concert"
     if any(word in value for word in ("节庆", "灯会", "庙会", "烟花", "嘉年华", "文化节", "美食节")):
         return "festival"
+    if any(word in value for word in ("APEC", "峰会", "大会", "国际会议", "行业会议", "论坛")):
+        return "conference"
+    if any(word in value for word in HOLIDAY_TERMS):
+        return "holiday"
     return "other"
 
 
@@ -124,6 +137,9 @@ def classify_content(title: str, description: str = "") -> str:
     """Classify the information type separately from the event category."""
     title_value = clean_html(title)
     combined = (title_value + " " + clean_html(description)).strip()
+
+    if any(term in title_value for term in HOLIDAY_TERMS) and re.search(r"各地|多地|全省|汇总|一览|分批|批次|错峰", title_value):
+        return "schedule_roundup"
 
     # Strong title signals take priority: a guide or roundup is not one event.
     if any(term in title_value for term in GUIDE_TERMS):
@@ -538,6 +554,8 @@ def extract_event_date(title: str, description: str = "", today: date | None = N
 
 def is_upcoming_event(event: dict[str, Any], today: date) -> bool:
     """Return True only for a dated, future/ongoing single-event candidate."""
+    if event.get('event_status') in {'cancelled', 'postponed'}:
+        return False
     if future_exclusion_reasons(event):
         return False
     title_kind = classify_content(event.get("event_name", ""))
@@ -632,12 +650,15 @@ def source_type_for(publisher: str, publisher_url: str) -> str:
     return "other"
 
 
-def build_feed_url(city: dict[str, Any], today: date) -> str:
-    after = (today - timedelta(days=60)).isoformat()
+def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | None = None) -> str:
+    after = (today - timedelta(days=SCOPE["discovery_lookback_days"])).isoformat()
+    terms = topic["terms"] if topic else KEYWORDS
+    last_year = (today + timedelta(days=SCOPE["monitoring_horizon_days"])).year
+    years = " OR ".join(str(year) for year in range(today.year, last_year + 1))
     query = (
         '"' + city["aliases"][0] + '" '
-        + "(演唱会 OR 音乐节 OR 展会 OR 博览会 OR 马拉松 OR 体育赛事 OR 演出 OR 漫展 OR 节庆 OR 车展) "
-        + "(2026 OR 2027) after:" + after
+        + "(" + " OR ".join(terms) + ") "
+        + "(" + years + ") after:" + after
     )
     params = urllib.parse.urlencode({"q": query, "hl": "zh-CN", "gl": "CN", "ceid": "CN:zh-Hans"})
     return "https://news.google.com/rss/search?" + params
@@ -648,7 +669,7 @@ def fetch_feed(url: str) -> bytes:
     last_error: Exception | None = None
     for attempt in range(2):
         try:
-            with urllib.request.urlopen(request, timeout=12) as response:
+            with urllib.request.urlopen(request, timeout=8) as response:
                 if response.status != 200:
                     raise RuntimeError("HTTP " + str(response.status))
                 return response.read()
@@ -794,27 +815,37 @@ def run_collection() -> int:
     successful_feeds = 0
     total_items = 0
 
-    for index, city in enumerate(cities):
+    requests = [(city, topic) for city in cities for topic in FEED_TOPICS]
+
+    def request_topic(pair: tuple[dict[str, Any], dict[str, Any]]) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]], str | None]:
+        city, topic = pair
         try:
-            items = parse_feed(fetch_feed(build_feed_url(city, today)))
-            successful_feeds += 1
-            total_items += len(items)
-            feed_results.append({"city_name": city["city_name"], "status": "ok", "items": len(items)})
-            for item in items:
-                combined = item["title"] + " " + item.get("description", "")
-                if not any(keyword in combined for keyword in KEYWORDS):
-                    continue
-                candidate = build_candidate(city, item, observed_at, today)
-                key = event_identity(candidate.get("city_slug", ""), candidate.get("event_name", ""))
-                existing = by_identity.get(key)
-                merged = merge_candidate(existing, candidate)
-                if existing:
-                    merged["event_id"] = existing.get("event_id") or candidate["event_id"]
-                by_identity[key] = merged
+            return city, topic, parse_feed(fetch_feed(build_feed_url(city, today, topic))), None
         except Exception as exc:
-            feed_results.append({"city_name": city["city_name"], "status": "failed", "error_type": type(exc).__name__})
-        if index < len(cities) - 1:
-            time.sleep(0.35)
+            return city, topic, [], type(exc).__name__
+
+    # Independent topic quotas prevent a burst of race reports from exhausting
+    # the concert/holiday slots. Process results in fixed order for reproducibility.
+    with ThreadPoolExecutor(max_workers=SCOPE["max_parallel_requests"]) as pool:
+        for city, topic, items, error in pool.map(request_topic, requests):
+            if error is None:
+                successful_feeds += 1
+                total_items += len(items)
+                feed_results.append({"city_name": city["city_name"], "topic": topic["key"], "status": "ok", "items": len(items)})
+                for item in items:
+                    combined = item["title"] + " " + item.get("description", "")
+                    if not any(keyword in combined for keyword in KEYWORDS):
+                        continue
+                    candidate = build_candidate(city, item, observed_at, today)
+                    candidate["discovery_query"] = build_feed_url(city, today, topic)
+                    key = event_identity(candidate.get("city_slug", ""), candidate.get("event_name", ""))
+                    existing = by_identity.get(key)
+                    merged = merge_candidate(existing, candidate)
+                    if existing:
+                        merged["event_id"] = existing.get("event_id") or candidate["event_id"]
+                    by_identity[key] = merged
+            else:
+                feed_results.append({"city_name": city["city_name"], "topic": topic["key"], "status": "failed", "error_type": error})
 
     all_failed = successful_feeds == 0
     if all_failed:
@@ -852,7 +883,7 @@ def run_collection() -> int:
 
     if not all_failed:
         kept.sort(key=lambda e: (e.get("start_at") or "9999-12-31", e.get("city_name") or "", e.get("event_name") or ""))
-    overall_status = "failed" if all_failed else ("degraded" if successful_feeds < len(cities) else "healthy")
+    overall_status = "failed" if all_failed else ("degraded" if successful_feeds < len(requests) else "healthy")
     dated_count = sum(
         1 for event in kept
         if event.get("start_at")
@@ -860,16 +891,19 @@ def run_collection() -> int:
         and event.get("event_date_role") in {"event", "ambiguous"}
         and (event.get("content_kind") or classify_content(event.get("event_name", ""))) in {"event_announcement", "uncertain"}
     )
-    future_count = sum(1 for event in kept if is_upcoming_event(event, today))
+    horizon_end = (today + timedelta(days=SCOPE['monitoring_horizon_days'])).isoformat()
+    future_count = sum(1 for event in kept if is_upcoming_event(event, today) and event['start_at'] <= horizon_end)
     content_counts = {
         kind: sum(1 for event in kept if (event.get("content_kind") or classify_content(event.get("event_name", ""))) == kind)
         for kind in ("event_announcement", "uncertain", "ticketing_notice", "registration_notice", "schedule_roundup", "guide", "past_report", "other")
     }
     payload = {
         "meta": {
-            "api_version": "v1", "schema_version": "1.1", "generated_at": observed_at,
+            "api_version": "v1", "schema_version": "1.2", "generated_at": observed_at,
             "timezone": "Asia/Shanghai", "collection_status": overall_status,
             "source_system": "Google News RSS", "candidate_count": len(kept),
+            "last_collection_at": observed_at, "coverage_status": "partial",
+            "monitoring_horizon_days": SCOPE["monitoring_horizon_days"],
             "dated_candidate_count": dated_count, "future_event_candidate_count": future_count,
             "ticketing_signal_count": content_counts["ticketing_notice"],
             "registration_signal_count": content_counts["registration_notice"],
@@ -879,7 +913,7 @@ def run_collection() -> int:
             "pending_count": sum(1 for e in kept if e.get("review_status") == "pending"),
             "verified_count": sum(1 for e in kept if e.get("review_status") == "verified"),
             "city_count": len(cities), "successful_feeds": successful_feeds,
-            "failed_feeds": len(cities) - successful_feeds, "rss_items_seen": total_items,
+            "feed_count": len(requests), "failed_feeds": len(requests) - successful_feeds, "rss_items_seen": total_items,
             "data_note": "自动发现候选不代表官方核验；content_kind 区分活动、开票/报名、排期与攻略；只有 review_status=verified 的事件可进入正式经营判断。"
         },
         "data": kept,
@@ -888,7 +922,7 @@ def run_collection() -> int:
         "api_version": "v1", "last_run_at": observed_at,
         "last_run_local": now.astimezone(BEIJING).strftime("%Y-%m-%d %H:%M:%S +08:00"),
         "status": overall_status, "source_system": "Google News RSS", "city_count": len(cities),
-        "successful_feeds": successful_feeds, "failed_feeds": len(cities) - successful_feeds,
+        "feed_count": len(requests), "successful_feeds": successful_feeds, "failed_feeds": len(requests) - successful_feeds,
         "rss_items_seen": total_items, "candidate_count": len(kept), "feed_results": feed_results,
         "note": "如果 status=failed，上一份事件快照会保留，不会用空数据覆盖。"
     }
@@ -898,7 +932,7 @@ def run_collection() -> int:
         slug = event.get("city_slug")
         if slug in city_counts:
             city_counts[slug] += 1
-            if is_upcoming_event(event, today):
+            if is_upcoming_event(event, today) and event['start_at'] <= horizon_end:
                 city_future_counts[slug] += 1
     city_payload = {
         "meta": {"api_version": "v1", "generated_at": observed_at, "city_count": len(cities)},
@@ -912,12 +946,28 @@ def run_collection() -> int:
         ]
     }
     if not all_failed:
+        try:
+            from .activity_registry import build_registry_payload, build_coverage
+        except ImportError:
+            from activity_registry import build_registry_payload, build_coverage
+        previous_activities = load_json(SITE_API / "activities.json", {}).get("data", [])
+        activities = build_registry_payload(ROOT, kept, cities, observed_at, today, previous_activities)
+        coverage = build_coverage(cities, list(FEED_TOPICS), kept, activities["data"], feed_results, observed_at)
+        payload["meta"]["structured_activity_count"] = len(activities["data"])
+        for city_row in city_payload["data"]:
+            city_row["activity_count"] = sum(row["city_slug"] == city_row["city_slug"] for row in activities["data"])
+        linked = {lead_id: activity["event_id"] for activity in activities["data"] for lead_id in activity["related_lead_ids"]}
+        for event in kept:
+            if event["event_id"] in linked:
+                event["activity_id"] = linked[event["event_id"]]
         write_json(SITE_API / "hotspots.json", payload)
         write_json(SITE_API / "cities.json", city_payload)
+        write_json(SITE_API / "activities.json", activities)
+        write_json(SITE_API / "coverage.json", coverage)
     write_json(SITE_API / "health.json", health)
     print(json.dumps({
         "status": overall_status, "cities": len(cities), "successful_feeds": successful_feeds,
-        "failed_feeds": len(cities) - successful_feeds, "rss_items_seen": total_items,
+        "failed_feeds": len(requests) - successful_feeds, "rss_items_seen": total_items,
         "candidate_count": len(kept), "future_event_candidate_count": future_count,
         "dated_candidate_count": dated_count,
     }, ensure_ascii=False))

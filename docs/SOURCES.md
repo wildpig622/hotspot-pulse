@@ -1,19 +1,26 @@
 # Source policy and limitations
 
-## Current source
+## Discovery and calendar evidence
 
-The first MVP queries Google News RSS for 28 configured Chinese operating cities and public-event keywords. RSS items provide a title, article link, publisher label, publisher URL when supplied, and publication time. The collector does not bypass logins, CAPTCHAs, paywalls, or access controls.
+采集范围见 [monitoring-scope.md](monitoring-scope.md) 和 `config/monitoring-scope.json`：28个经营城市、未来90天、演出/会展/赛事/节庆/学生假期与放假调整/大型会议六类。
 
-## Interpretation rules
+自动发现使用 Google News RSS。一城一类独立检索、各最多50条、查询回溯180天，4个并行请求；不保证所有相关新闻或活动都能命中。RSS标题和摘要只供发现与保守分类，不能充当主办方正文核验。年份根据运行日与90天窗口生成。超时与分类查询失败逐项记录；所有请求失败时保留原快照。
 
-- Search results are discovery leads, not authoritative event confirmation.
-- Every discovered event remains pending and unknown until a human or a later approved verification process confirms it.
-- Event dates are extracted only from the headline or snippet. Missing dates remain tbd; a year inferred from a month/day is explicitly marked.
-- City attribution is marked text_confirmed only when the city alias appears in the title/snippet. Otherwise it is query_only and should be reviewed.
-- The source URL, publisher, publication time, first-seen time, and last-seen time are retained.
-- Failed feeds are reported. The collector does not clear the snapshot when every feed fails.
-- A result count of zero is not proof that a city has no events; it may reflect search coverage or source availability.
+活动日历使用 `config/activity-registry.json` 的显式来源登记，以及 `docs/activity-evidence-2026-10-30.json` 中曾读取的正文证据。来源优先主办方、场馆、政府、协会及明确官方账号。授权票务须含名称、城市和举办日期；聚合搜索结果不单独给活动日期。当前手工登记并非自动遍历所有官网的采集器。
 
-## Next source adapters
+## Evidence limits
 
-Add official municipal event calendars, exhibition-center calendars, official marathon/race calendars, venue schedules, and authorized ticketing feeds as separate adapters. Each adapter must document terms, access method, update cadence, and field mapping before it is enabled.
+- 来源 URL、发布方、类型、访问状态、发布时间、检查时间与适用范围逐项保留。未重读的历史来源保留旧检查时间。
+- 四川发布的秋假信息是省政府新闻办官方账号的公开转载，按具体城市、批次、学段登记；成都并非全市统一日期。
+- 成都11月演出汇总可读正文的政务频道账号身份仍待复核，明确标记，全部 pending；不能宣称已取得每场主办方的最新确认。
+- 高交会官网公告列表可读展期，详情跳转微信未能读取；保留 `official_listing_read`，不伪称详情正文可用。
+- 历史5项已补读：南京王嘉尔使用场馆11月7日公告和大麦11月8日加场公告，南京张杰使用巡演认证账号，武汉张杰使用市文旅局账号。济南秋假、汉中秋假采用明确转述教育部门通知的主流媒体正文，标明尚未直接读取原始教育通知，仍待核验；汉中单列客源地信号。补读处置不等于权威事实完备。
+- 新增长沙秋假采用红网转载省政府来源；福州采用新华网转载福州晚报，限正文点名区县。非连续学校放假日和周末窗口分开，其他区县不外推。
+- 自动生成的记录仍 pending / unknown，保留已有人工核验记录，不自动升级 verified。
+- 活动取消、延期或日期调整需要新来源证据；现有来源没有更新不代表状态未变化。已明确 cancelled/postponed 的记录不进入未来视图。
+
+## Access and coverage
+
+不绕过登录、验证码、付费墙或访问限制。不使用私人经营数据或内部凭据。零条、检索成功、较多新闻都不能证明完整覆盖；公开缺口见 `coverage.json`。2026-11-04已实际运行28城×6类168条线路，168条均成功；重新处理缓存用于检验规则，不刷新原采集时间。发布前通过独立手动流程生成正式快照。
+
+将来新增自动官网适配器时，应先记录访问方式、规则、字段映射与失败处理，再独立验证和启用。当前采集和部署均为手动操作；网页刷新不启动采集。

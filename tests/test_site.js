@@ -29,14 +29,18 @@ async function loadPage(events, options = {}) {
     createElement: element,
   };
   document.getElementById("contentFilter").value = "future";
+  if (options.recordLayer) document.getElementById("recordFilter").value = options.recordLayer;
+  const clockAt = options.clockAt || "2026-10-29T08:00:00Z";
   class FixedDate extends Date {
-    constructor(...args) { super(...(args.length ? args : ["2026-10-29T08:00:00Z"])); }
-    static now() { return new Date("2026-10-29T08:00:00Z").getTime(); }
+    constructor(...args) { super(...(args.length ? args : [clockAt])); }
+    static now() { return new Date(clockAt).getTime(); }
   }
   const fetch = async url => {
     if (url.includes("cities.json") && options.failCities) throw new Error("cities unavailable");
-    const payload = url.includes("hotspots.json") ? {meta: snapshot.meta, data: events}
-      : url.includes("cities.json") ? {data: cities} : {};
+    const payload = url.includes("hotspots.json") ? {meta: options.meta || snapshot.meta, data: events}
+      : url.includes("cities.json") ? {data: cities}
+      : url.includes("activities.json") ? options.activities || {}
+      : url.includes("health.json") ? options.health || {} : {};
     return {ok: true, json: async () => payload};
   };
   class TestURL extends URL {
@@ -48,6 +52,98 @@ async function loadPage(events, options = {}) {
   await new Promise(resolve => setImmediate(resolve));
   return nodes;
 }
+
+function calendarRow(extra = {}) {
+  return {event_id:"act_school", record_kind:"activity", event_name:"杭州部分学校秋假", city_name:"杭州市", city_slug:"hangzhou",
+    city_match:"text_confirmed", event_type:"holiday", content_kind:"event_announcement", event_date_role:"event",
+    date_precision:"day", date_confidence:"source_body", start_at:"2026-11-11", end_at:"2026-11-13", review_status:"pending",
+    sessions:[{start_at:"2026-11-11",end_at:"2026-11-13"}], scope_note:"部分学校，高三除外", sources:[], ...extra};
+}
+
+test("activity calendar and news leads remain distinct, with clear totals and scoped holiday dates", async () => {
+  const row = calendarRow({travel_windows:[{start_at:"2026-11-11",end_at:"2026-11-15"}]});
+  const nodes = await loadPage(snapshot.data, {activities:{meta:{generated_at:"2026-11-04T01:00:00Z"},data:[row]},recordLayer:"activities"});
+  assert.equal(nodes.metricTotal.textContent, "457");
+  assert.equal(nodes.resultCount.textContent, "1 条");
+  assert.match(nodes.viewExplanation.textContent, /活动日历/);
+  assert.match(nodes.eventsList.innerHTML, /部分学校，高三除外/);
+  assert.match(nodes.eventsList.innerHTML, /连休观察窗口：2026-11-11 至 2026-11-15/);
+  nodes.recordFilter.value = "leads"; nodes.recordFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent, "20 条");
+  assert.match(nodes.viewExplanation.textContent, /新闻线索总计 457 条/);
+});
+
+test("a disputed holiday report cannot enter the future view, and origin signals stay outside local activities", async () => {
+  const disputed = calendarRow({event_id:'rumour',event_name:'杭州秋假11月11日—13日定了？相关部门回应'});
+  const signal = calendarRow({event_id:'sig_origin',record_kind:'source_market_signal',city_name:'汉中市',city_slug:'hanzhong',event_name:'汉中秋假',impact_destination_cities:['西安市'],scope_note:'客源地，不代表西安本地活动或住宿增量'});
+  const nodes = await loadPage([disputed], {activities:{data:[],source_market_signals:[signal]},recordLayer:'leads'});
+  assert.equal(nodes.resultCount.textContent, '0 条');
+  assert.equal(nodes.sourceMarketDetails.hidden, false);
+  assert.match(nodes.sourceMarketSignals.innerHTML, /客源地：汉中市/);
+  nodes.cityFilter.value='西安市'; nodes.cityFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent, '0 条');
+  assert.equal(nodes.sourceMarketDetails.hidden, false);
+  nodes.cityFilter.value='成都市'; nodes.cityFilter.listeners.input();
+  assert.equal(nodes.sourceMarketDetails.hidden, true);
+});
+
+test("the news-candidate shortcut changes the data layer without losing the selected city", async () => {
+  const lead=calendarRow({event_id:'news_date'});
+  const nodes=await loadPage([lead], {activities:{data:[]},recordLayer:'activities'});
+  nodes.cityFilter.value='杭州市'; nodes.cityFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'0 条');
+  nodes.showLeadCandidatesBtn.listeners.click();
+  assert.equal(nodes.recordFilter.value,'leads');
+  assert.equal(nodes.cityFilter.value,'杭州市');
+  assert.equal(nodes.resultCount.textContent,'1 条');
+});
+
+test("large lists render in batches while PNG export keeps every filtered row", async () => {
+  const rows=Array.from({length:350},(_,i)=>calendarRow({event_id:'batch_'+i,event_name:'杭州音乐会'+i}));
+  let exported;
+  const nodes=await loadPage(rows,{recordLayer:'leads',shareApi:{plan(ctx,model){exported=model;return {pages:[{cards:model.rows}]};},render(){},toBlob:async()=>({type:'image/png'})}});
+  assert.equal(nodes.resultCount.textContent,'350 条');
+  assert.equal((nodes.eventsList.innerHTML.match(/<article /g)||[]).length,100);
+  assert.match(nodes.listProgress.textContent,/350 条，已展示 100 条/);
+  nodes.showMoreBtn.listeners.click();
+  assert.equal((nodes.eventsList.innerHTML.match(/<article /g)||[]).length,200);
+  await nodes.exportPngBtn.listeners.click();
+  assert.equal(exported.rows.length,350);
+  nodes.cityFilter.value='杭州市';nodes.cityFilter.listeners.input();
+  assert.equal((nodes.eventsList.innerHTML.match(/<article /g)||[]).length,100);
+});
+
+test("disjoint performance sessions do not match gap days or render a continuous interval", async () => {
+  const row = calendarRow({event_type:"concert",event_name:"杭州演唱会",start_at:"2026-11-06",end_at:"2026-11-08",
+    sessions:[{start_at:"2026-11-06",end_at:"2026-11-06"},{start_at:"2026-11-08",end_at:"2026-11-08"}]});
+  const nodes = await loadPage([], {activities:{data:[row]}});
+  assert.match(nodes.eventsList.innerHTML, /2026-11-06、2026-11-08/);
+  assert.doesNotMatch(nodes.eventsList.innerHTML, /2026-11-06 至 2026-11-08/);
+  nodes.dateFrom.value = nodes.dateTo.value = "2026-11-07"; nodes.dateFrom.listeners.input();
+  assert.equal(nodes.resultCount.textContent, "0 条");
+  nodes.dateFrom.value = nodes.dateTo.value = "2026-11-08"; nodes.dateFrom.listeners.input();
+  assert.equal(nodes.resultCount.textContent, "1 条");
+});
+
+test("a fresh rebuild cannot disguise stale collection, and the 90-day window retains later records in all content", async () => {
+  const row = calendarRow({start_at:"2027-05-14",end_at:"2027-05-14",sessions:[{start_at:"2027-05-14",end_at:"2027-05-14"}]});
+  const nodes = await loadPage([], {clockAt:"2026-11-04T01:00:00Z", meta:{generated_at:"2026-11-04T01:00:00Z",last_collection_at:"2026-10-30T01:55:55Z",monitoring_horizon_days:90},
+    health:{status:"healthy",successful_feeds:28,city_count:28},activities:{meta:{generated_at:"2026-11-04T01:00:00Z"},data:[row]}});
+  assert.match(nodes.updatedAt.textContent, /2026\/10\/30/);
+  assert.equal(nodes.healthLabel.textContent, "快照待更新");
+  assert.equal(nodes.resultCount.textContent, "0 条");
+  nodes.contentFilter.value = "all"; nodes.contentFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent, "1 条");
+  assert.match(nodes.coverageSummary.textContent, /覆盖|补齐/);
+});
+
+test("missing calendar data falls back explicitly to leads, without claiming a city has no events", async () => {
+  const nodes = await loadPage(snapshot.data, {recordLayer:"activities"});
+  assert.equal(nodes.recordFilter.value, "leads");
+  assert.equal(nodes.resultCount.textContent, "20 条");
+  assert.match(nodes.coverageSummary.textContent, /活动日历暂不可用/);
+  assert.match(nodes.coverageTable.innerHTML, /零条不代表该城市没有活动/);
+});
 
 test("unchanged legacy snapshot exposes exactly the same 20 future candidates as the collector", async () => {
   const nodes = await loadPage(snapshot.data);

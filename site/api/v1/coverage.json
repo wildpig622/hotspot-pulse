@@ -1,0 +1,1693 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-11-04T02:42:25Z",
+    "coverage_status": "partial",
+    "city_count": 28,
+    "topic_count": 6,
+    "expected_cells": 168,
+    "note": "零条或检索成功均不代表该城市没有活动。"
+  },
+  "data": [
+    {
+      "city_name": "成都市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 5,
+      "activity_count": 10,
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "成都市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 2,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "成都市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 16,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "成都市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "成都市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "成都市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南京市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 21,
+      "activity_count": 2,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "南京市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 5,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南京市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 3,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南京市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南京市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南京市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 7,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 7,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 1,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 8,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 2,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 17,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 1,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 25,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "西安市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 2,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "西安市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "西安市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 27,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "西安市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "西安市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "西安市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 5,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 21,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 3,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 5,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 7,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 11,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "广州市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 9,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "广州市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 5,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "广州市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 2,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "广州市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "广州市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "广州市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 5,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 4,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 7,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 6,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 3,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 6,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 1,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "沈阳市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 6,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "沈阳市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 6,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "沈阳市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 7,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "沈阳市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "沈阳市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "沈阳市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "洛阳市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "洛阳市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 6,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "洛阳市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "洛阳市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 1,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "洛阳市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "洛阳市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 2,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 3,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 6,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 4,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 1,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 3,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 5,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 20,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 6,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 9,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 8,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-29T15:29:47+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 10,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 1,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 8,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 9,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 11,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "福州市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "福州市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 7,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "福州市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 7,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "福州市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "福州市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "福州市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 2,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 2,
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 2,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 12,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "济南市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "济南市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 1,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "济南市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 21,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "济南市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "济南市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 2,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "济南市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 5,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 9,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "金华市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 3,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "金华市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 7,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "金华市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 7,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "discovery_status": "not_run",
+      "coverage_status": "partial"
+    },
+    {
+      "city_name": "金华市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 1,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "金华市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "金华市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "天津市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "天津市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "天津市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 20,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "天津市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "天津市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "天津市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "concert",
+      "label": "演唱会与演出",
+      "news_count": 7,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "exhibition",
+      "label": "会展",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "sports",
+      "label": "体育赛事",
+      "news_count": 4,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "festival",
+      "label": "节庆",
+      "news_count": 1,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "holiday",
+      "label": "学生假期与放假调整",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "conference",
+      "label": "大型会议与峰会",
+      "news_count": 0,
+      "activity_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    }
+  ]
+}
