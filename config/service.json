@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "timezone": "Asia/Shanghai",
+  "local_times": ["08:00", "16:00"],
+  "cron_utc": "0 0,8 * * *",
+  "freshness_hours": 18,
+  "automatic_review_status": "pending",
+  "failure_policy": "retain_last_good_snapshot_and_publish_failure_health",
+  "authorization": "User confirmed twice-daily 08:00 and 16:00 Beijing collection and automatic publication after quality checks on 2026-11-04."
+}

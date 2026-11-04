@@ -1,0 +1,110 @@
+name: Refresh and publish event data service
+
+on:
+  schedule:
+    - cron: '0 0,8 * * *'
+  workflow_dispatch:
+    inputs:
+      expected_sha:
+        description: Reviewed full main SHA
+        required: true
+        type: string
+      confirmation:
+        description: Type REFRESH_AND_PUBLISH_PENDING
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hotspot-service
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    concurrency:
+      group: hotspot-collection
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    outputs:
+      collection_ok: ${{ steps.refresh.outputs.collection_ok }}
+      data_sha: ${{ steps.commit.outputs.data_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate the authorized service request
+        env:
+          REQUESTED_SHA: ${{ inputs.expected_sha }}
+          REQUEST_CONFIRMATION: ${{ inputs.confirmation }}
+        run: python -m scripts.check_service_execution
+      - name: Run contract and regression tests
+        run: python -m unittest discover -s tests -q
+      - name: Collect into staging and retain last-good data on failure
+        id: refresh
+        run: |
+          python -m scripts.refresh_service --result "$RUNNER_TEMP/service-result.json"
+          python -c 'import json,os; r=json.load(open(os.environ["RUNNER_TEMP"]+"/service-result.json")); open(os.environ["GITHUB_OUTPUT"],"a").write("collection_ok="+str(r["collection_ok"]).lower()+"\n")'
+      - name: Check the complete published contract, including cached-data health
+        run: |
+          python scripts/check_snapshot_quality.py
+          python -m scripts.validate_event_feed
+      - name: Commit the exact validated snapshot
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/api
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): refresh validated event service snapshot"
+            git push origin HEAD:refs/heads/main
+          fi
+          echo "data_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Upload the exact checked site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Write service summary
+        if: always()
+        run: |
+          if test -f "$RUNNER_TEMP/service-result.json"; then
+            cat "$RUNNER_TEMP/service-result.json" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  publish:
+    needs: collect
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://wildpig622.github.io/hotspot-pulse/
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy the already validated artifact
+        uses: actions/deploy-pages@v4
+
+  report-failure:
+    needs: [collect, publish]
+    if: always() && (needs.collect.result != 'success' || needs.publish.result != 'success' || needs.collect.outputs.collection_ok != 'true')
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - run: |
+          echo 'The refresh did not complete successfully. Inspect the run summary and public health; retained data is not a successful fresh collection.'
+          exit 1

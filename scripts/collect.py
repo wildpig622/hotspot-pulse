@@ -798,7 +798,7 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def run_collection(include_sources: bool = False) -> int:
+def run_collection(include_sources: bool = False, include_details: bool = False, include_official: bool = False) -> int:
     now = now_utc()
     observed_at = iso_utc(now)
     today = now.astimezone(BEIJING).date()
@@ -976,6 +976,20 @@ def run_collection(include_sources: bool = False) -> int:
             source_rows, source_checks = collect_source_calendar(ROOT, cities, iso_utc(now_utc()), today, load_json(SITE_API / 'activities.json', {}))
             activities.update(source_candidates=source_rows, source_checks=source_checks)
             activities['meta'].update(schema_version='1.4', source_candidate_count=len(source_rows))
+            if include_details:
+                try:
+                    from .source_calendar import refresh_details
+                except ImportError:
+                    from source_calendar import refresh_details
+                activities['detail_checks']=refresh_details(source_rows,iso_utc(now_utc()),today,limit=40)
+        if include_official:
+            try:
+                from .official_calendar import collect_official_calendar
+            except ImportError:
+                from official_calendar import collect_official_calendar
+            official_rows, official_checks=collect_official_calendar(ROOT,cities,iso_utc(now_utc()),today,load_json(SITE_API/'activities.json',{}))
+            activities.update(official_candidates=official_rows,official_source_checks=official_checks)
+            activities['meta'].update(schema_version='1.5',official_candidate_count=len(official_rows))
         coverage = build_coverage(cities, list(FEED_TOPICS), kept, activities["data"], feed_results, observed_at, activities['discovery_candidates'], activities.get('source_candidates', []))
         payload["meta"]["structured_activity_count"] = len(activities["data"])
         for city_row in city_payload["data"]:
@@ -999,4 +1013,8 @@ def run_collection(include_sources: bool = False) -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(run_collection(include_sources=True))
+    result=run_collection(include_sources=True,include_details=True,include_official=True)
+    if result==0:
+        from event_feed import build_files
+        build_files(SITE_API)
+    sys.exit(result)

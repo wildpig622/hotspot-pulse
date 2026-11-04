@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "note": "人工审查活动身份关联；不等于人工日期核验，不更改review_status。仅同城同日或相似标题不得关联。",
+  "groups": [
+    {
+      "member_ids": [
+        "act_0928b5207433",
+        "evt_86adf3d17d05"
+      ],
+      "identity_basis": "同城同届武汉国际车展；新闻开幕日包含在登记区间内",
+      "checked_at": "2026-11-04"
+    },
+    {
+      "member_ids": [
+        "act_f5393078ae92",
+        "evt_a87b274c1cc7"
+      ],
+      "identity_basis": "同城同届杭州马拉松、同一开赛日",
+      "checked_at": "2026-11-04"
+    },
+    {
+      "member_ids": [
+        "act_19098a84382a",
+        "evt_908c3663ba25"
+      ],
+      "identity_basis": "同城同届重庆小面文化节、同一开幕日",
+      "checked_at": "2026-11-04"
+    },
+    {
+      "member_ids": [
+        "act_04aa1c0a9577",
+        "evt_a758e86d390a"
+      ],
+      "identity_basis": "同城同年南昌马拉松、同一开赛日",
+      "checked_at": "2026-11-04"
+    },
+    {
+      "member_ids": [
+        "act_48f3c9e0a4fb",
+        "evt_506c97400568",
+        "evt_1643db85c4f4"
+      ],
+      "identity_basis": "同城同年长沙马拉松、同一开赛日",
+      "checked_at": "2026-11-04"
+    },
+    {
+      "member_ids": [
+        "act_fc692164b714",
+        "evt_a3e83c466f1f",
+        "evt_2732d318c6f9"
+      ],
+      "identity_basis": "同城同年世界智能制造大会；开幕日包含在登记区间内",
+      "checked_at": "2026-11-04"
+    },
+    {
+      "member_ids": [
+        "act_d0c7961bc566",
+        "evt_5da9ec31b1c6"
+      ],
+      "identity_basis": "同城同年长沙银发产业博览会；开幕日包含在登记区间内",
+      "checked_at": "2026-11-04"
+    }
+  ]
+}
