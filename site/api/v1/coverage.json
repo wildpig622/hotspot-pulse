@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-04T01:53:26Z",
+    "generated_at": "2026-11-04T02:42:25Z",
     "coverage_status": "partial",
     "city_count": 28,
     "topic_count": 6,
@@ -74,10 +74,10 @@
       "topic": "concert",
       "label": "演唱会与演出",
       "news_count": 21,
-      "activity_count": 0,
-      "last_evidence_check_at": null,
+      "activity_count": 2,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "discovery_status": "not_run",
-      "coverage_status": "not_assessed"
+      "coverage_status": "partial"
     },
     {
       "city_name": "南京市",
@@ -254,10 +254,10 @@
       "topic": "concert",
       "label": "演唱会与演出",
       "news_count": 1,
-      "activity_count": 0,
-      "last_evidence_check_at": null,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "discovery_status": "not_run",
-      "coverage_status": "not_assessed"
+      "coverage_status": "partial"
     },
     {
       "city_name": "武汉市",
@@ -594,10 +594,10 @@
       "topic": "holiday",
       "label": "学生假期与放假调整",
       "news_count": 0,
-      "activity_count": 0,
-      "last_evidence_check_at": null,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "discovery_status": "not_run",
-      "coverage_status": "not_assessed"
+      "coverage_status": "partial"
     },
     {
       "city_name": "长沙市",
@@ -1254,10 +1254,10 @@
       "topic": "holiday",
       "label": "学生假期与放假调整",
       "news_count": 0,
-      "activity_count": 0,
-      "last_evidence_check_at": null,
+      "activity_count": 1,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "discovery_status": "not_run",
-      "coverage_status": "not_assessed"
+      "coverage_status": "partial"
     },
     {
       "city_name": "福州市",
@@ -1434,10 +1434,10 @@
       "topic": "holiday",
       "label": "学生假期与放假调整",
       "news_count": 0,
-      "activity_count": 0,
-      "last_evidence_check_at": null,
+      "activity_count": 2,
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "discovery_status": "not_run",
-      "coverage_status": "not_assessed"
+      "coverage_status": "partial"
     },
     {
       "city_name": "济南市",

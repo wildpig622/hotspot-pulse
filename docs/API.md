@@ -20,6 +20,8 @@
 
 `meta.activity_count` 与 `meta.future_activity_count` 分别是整理总数和构建时未来90天内的数量，后者会随日期变化；客户端应使用当前北京时间重新计算。
 
+`source_market_signals` 单独存放经营城市以外的客源地假期，包含真实客源城市及观察目的地 `impact_destination_cities`。这些记录不进入本地活动数量，也不能证明住宿需求增量。`backlog_resolutions` 仅记录来源补查处置，不是事实核验通过或 verified 升级。官方账号、媒体转述等限制保存在来源 `authority_note`，有的来源只显示月日，使用 `source_published_display` 原样保留，不编造年份。
+
 ## coverage.json：覆盖缺口
 
 `data` 为28城×6类的168格，包含新闻数量、已整理活动数量、上次证据检查时间和检索状态。`not_run`、失败和成功必须区分。RSS检索成功、空结果或人工补录都不代表该格已完整覆盖；目前总体 `coverage_status=partial`。
@@ -33,3 +35,5 @@
 自动发现及登记输出均为 `review_status=pending`、`event_status=unknown`；没有自动升级 verified 的路径。已有人工 verified 记录会保留。当前没有核验写入界面，也不宣称未确认活动一定举办或带来住宿增量。
 
 没有定时采集，也不在推送代码后自动采集或部署。采集和部署是两条独立手动工作流，分别要求完整 main 提交号与确认词，执行需另行授权。网页刷新只读取已有 JSON。
+
+采集成功后、提交快照之前运行 `check_snapshot_quality.py --require-full-scope`，检查完整168条线路、全部新闻/活动/客源地记录、日期、身份、来源和计数。部署还要求 `--max-age-hours 24`，整理时间不能代替真实采集时间。该检查验证数据结构和已定义的排除规则，不宣称全网事实完备。

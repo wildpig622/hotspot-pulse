@@ -1,36 +1,605 @@
 {
-  "version": 1,
+  "version": 2,
   "review_status": "pending",
   "sources": {
-    "sichuan_school_calendar": {"url":"https://finance.sina.cn/2026-09-13/detail-inirscye4665703.d.html?wm=3049_0015","publisher":"四川发布（四川省人民政府新闻办公室）","source_type":"government_official_account","published_at":"2026-09-13T13:53:00+08:00","checked_at":"2026-11-04T01:40:15Z","access_status":"body_read"},
-    "chengdu_november_concerts": {"url":"https://www.thepaper.cn/newsDetail_forward_34380825","publisher":"澎湃号·政务（发布账号身份待复核）","source_type":"government_channel_post","published_at":"2026-11-01T09:54:00+08:00","checked_at":"2026-11-04T01:40:15Z","access_status":"body_read"},
-    "chengdu_two_shows": {"url":"https://www.thepaper.cn/newsDetail_forward_34342271","publisher":"成都发布（澎湃号·政务）","source_type":"government_official_account","published_at":"2026-10-27T14:53:00+08:00","checked_at":"2026-11-04T01:40:15Z","access_status":"body_read"},
-    "shenzhen_apec": {"url":"https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12548571.html","publisher":"深圳市人民政府门户网站","source_type":"government_portal","published_at":"2025-12-15T12:08:00+08:00","checked_at":"2026-11-04T01:40:15Z","access_status":"body_read"},
-    "shenzhen_chtf": {"url":"https://chtf.com/meitizhiyin/zuixingonggao/","publisher":"高交会官方网站最新公告","source_type":"official_event_organizer","published_at":null,"published_date":"2026-08-18","checked_at":"2026-11-04T01:40:15Z","access_status":"official_listing_read"}
+    "sichuan_school_calendar": {
+      "url": "https://finance.sina.cn/2026-09-13/detail-inirscye4665703.d.html?wm=3049_0015",
+      "publisher": "四川发布（四川省人民政府新闻办公室）",
+      "source_type": "government_official_account",
+      "published_at": "2026-09-13T13:53:00+08:00",
+      "checked_at": "2026-11-04T01:40:15Z",
+      "access_status": "body_read"
+    },
+    "chengdu_november_concerts": {
+      "url": "https://www.thepaper.cn/newsDetail_forward_34380825",
+      "publisher": "澎湃号·政务（发布账号身份待复核）",
+      "source_type": "government_channel_post",
+      "published_at": "2026-11-01T09:54:00+08:00",
+      "checked_at": "2026-11-04T01:40:15Z",
+      "access_status": "body_read"
+    },
+    "chengdu_two_shows": {
+      "url": "https://www.thepaper.cn/newsDetail_forward_34342271",
+      "publisher": "成都发布（澎湃号·政务）",
+      "source_type": "government_official_account",
+      "published_at": "2026-10-27T14:53:00+08:00",
+      "checked_at": "2026-11-04T01:40:15Z",
+      "access_status": "body_read"
+    },
+    "shenzhen_apec": {
+      "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12548571.html",
+      "publisher": "深圳市人民政府门户网站",
+      "source_type": "government_portal",
+      "published_at": "2025-12-15T12:08:00+08:00",
+      "checked_at": "2026-11-04T01:40:15Z",
+      "access_status": "body_read"
+    },
+    "shenzhen_chtf": {
+      "url": "https://chtf.com/meitizhiyin/zuixingonggao/",
+      "publisher": "高交会官方网站最新公告",
+      "source_type": "official_event_organizer",
+      "published_at": null,
+      "published_date": "2026-08-18",
+      "checked_at": "2026-11-04T01:40:15Z",
+      "access_status": "official_listing_read"
+    },
+    "jackson_nanjing_venue": {
+      "url": "https://weibo.com/2/detail/5344432016326875",
+      "publisher": "梦之蓝青奥体育公园官方微博",
+      "source_type": "official_venue",
+      "published_at": null,
+      "checked_at": "2026-11-04T02:32:25Z",
+      "access_status": "body_read",
+      "authority_note": "场馆正文支持11月7日；9月18日09:35发布，正文未显示年份，保留日期精度限制。",
+      "published_display": "9-18 09:35（年份未显示）"
+    },
+    "jackson_nanjing_extra": {
+      "url": "https://weibo.com/2/detail/5345925620568458",
+      "publisher": "大麦南京官方微博",
+      "source_type": "authorized_ticketing",
+      "published_at": null,
+      "checked_at": "2026-11-04T02:32:25Z",
+      "access_status": "body_read",
+      "authority_note": "加场正文明确活动名称、南京场馆和2026年11月8日；预售9月24日不作为举办日期。",
+      "published_display": "9-22 12:30（年份未显示）"
+    },
+    "zhangjie_nanjing": {
+      "url": "https://3g.sina.com.cn/news/detail/5356069746381190.html",
+      "publisher": "张杰1982开往未LIVE巡回演唱会认证微博",
+      "source_type": "official_organizer",
+      "published_at": "2026-10-20T12:20:00+08:00",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "access_status": "body_read",
+      "authority_note": ""
+    },
+    "zhangjie_wuhan": {
+      "url": "https://weibo.com/2/detail/5346690267876720",
+      "publisher": "武汉市文化和旅游局官方微博",
+      "source_type": "government_official_account",
+      "published_at": null,
+      "checked_at": "2026-11-04T02:32:25Z",
+      "access_status": "body_read",
+      "authority_note": "正文明确2026年11月27日至29日；标题审批通过并不等于活动已实际举办。",
+      "published_display": "9-24 15:09（年份未显示）"
+    },
+    "jinan_school_calendar": {
+      "url": "https://www.jinantimes.com.cn/news-39-5329372.html",
+      "publisher": "新黄河／济南时报",
+      "source_type": "institutional_media",
+      "published_at": null,
+      "checked_at": "2026-11-04T02:32:25Z",
+      "access_status": "body_read",
+      "authority_note": "地方主流媒体明确转述区县通知；本轮未直接读取区教育局原始通知，仍待核验。",
+      "published_date": "2026-10-09"
+    },
+    "hanzhong_school_calendar": {
+      "url": "https://cj.sina.com.cn/articles/view/1915671961/722ed59901901nmyq",
+      "publisher": "陕西都市快报官方账号（转引汉中市教育局）",
+      "source_type": "institutional_media",
+      "published_at": "2026-11-02T13:30:00+08:00",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "access_status": "body_read",
+      "authority_note": "正文明确引用汉中市教育局11月2日通知；南郑政府门户也列出该通知，但微信原文未能打开。"
+    },
+    "changsha_school_calendar": {
+      "url": "https://hn.rednet.cn/content/646054/57/16364310.html",
+      "publisher": "红网（转载湖南省人民政府网）",
+      "source_type": "government_relay",
+      "published_at": "2026-10-13T15:03:18+08:00",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "access_status": "body_read",
+      "authority_note": "政府来源转载正文；11月12日、13日、16日为学校假期，14日、15日是周末。"
+    },
+    "fuzhou_school_calendar": {
+      "url": "https://my-h5news.app.xinhuanet.com/chaobian-difanglink/fj.news.cn/20260722/5e4bf51c592e4f51b1f0372c2c4a1f18/c.html",
+      "publisher": "新华网（转载福州晚报）",
+      "source_type": "institutional_media",
+      "published_at": "2026-07-22T10:45:22+08:00",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "access_status": "body_read",
+      "authority_note": "仅登记正文点名的鼓楼、台江、仓山、晋安、连江等区县，不外推到全市统一日期。"
+    }
   },
   "data": [
-    {"registry_id":"chengdu_autumn_school_break_2026","event_name":"2026成都部分学校秋假","city_name":"成都市","event_type":"holiday","source_key":"sichuan_school_calendar","sessions":[{"start_at":"2026-11-11","end_at":"2026-11-13"}],"scope_note":"多数学校的安排；并非全市统一，各区县和学校可调整。具体学段与学校通知为准。","travel_windows":[{"start_at":"2026-11-11","end_at":"2026-11-15","basis":"来源说明的周末连休窗口；不代表全市所有学校统一放假"}]},
-    {"registry_id":"deyang_autumn_school_break_batch1_2026","event_name":"2026德阳秋假第一批（罗江、什邡、绵竹）","city_name":"德阳市","event_type":"holiday","source_key":"sichuan_school_calendar","sessions":[{"start_at":"2026-11-18","end_at":"2026-11-20"}],"scope_note":"罗江区、什邡市、绵竹市；高三除外，具体适用学段见公告。","travel_windows":[{"start_at":"2026-11-18","end_at":"2026-11-22","basis":"来源说明的周末连休窗口"}]},
-    {"registry_id":"deyang_autumn_school_break_batch2_2026","event_name":"2026德阳秋假第二批（市直属、旌阳等）","city_name":"德阳市","event_type":"holiday","source_key":"sichuan_school_calendar","sessions":[{"start_at":"2026-11-25","end_at":"2026-11-27"}],"scope_note":"市直属、旌阳区、经开区、广汉市、中江县；高三除外，具体学段见公告。","travel_windows":[{"start_at":"2026-11-25","end_at":"2026-11-29","basis":"来源说明的周末连休窗口"}]},
-    {"registry_id":"suining_autumn_school_break_2026","event_name":"2026遂宁秋假","city_name":"遂宁市","event_type":"holiday","source_key":"sichuan_school_calendar","sessions":[{"start_at":"2026-11-18","end_at":"2026-11-20"}],"scope_note":"幼儿园、中小学、普通高中、中职学校，高三除外。","travel_windows":[{"start_at":"2026-11-18","end_at":"2026-11-22","basis":"来源说明的周末连休窗口"}]},
-    {"registry_id":"sandy_lam_chengdu_2026","event_name":"2026林忆莲《回响》巡回演唱会成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_november_concerts","venue_name":"成都东安湖体育公园主体育场","sessions":[{"start_at":"2026-11-06"},{"start_at":"2026-11-07"}],"scope_note":"正文列出两晚演出；场次及日期仍待核验。"},
-    {"registry_id":"gem_chengdu_2026","event_name":"2026宝石Gem原石季节巡回演唱会成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_november_concerts","venue_name":"成都露天音乐公园","sessions":[{"start_at":"2026-11-14"}]},
-    {"registry_id":"weibird_chengdu_2026","event_name":"2026韦礼安HI WE1韦您好巡回演唱会成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_november_concerts","venue_name":"成都金融城演艺中心","sessions":[{"start_at":"2026-11-14"}]},
-    {"registry_id":"zhou_chuanxiong_chengdu_2026","event_name":"2026周传雄念念不忘再遇见plus成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_november_concerts","venue_name":"成都东安湖体育公园主体育场","sessions":[{"start_at":"2026-11-14"},{"start_at":"2026-11-15"}]},
-    {"registry_id":"ye_shirong_chengdu_2026","event_name":"2026叶世荣你中有我巡回演唱会成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_november_concerts","venue_name":"凤凰山体育公园综合体育馆","sessions":[{"start_at":"2026-11-21"}]},
-    {"registry_id":"masiwei_chengdu_2026","event_name":"2026马思唯乐透人生巡回演唱会成都特别场","city_name":"成都市","event_type":"concert","source_key":"chengdu_november_concerts","venue_name":"成都东安湖体育公园主体育场","sessions":[{"start_at":"2026-11-21"}]},
-    {"registry_id":"jiang_dunhao_chengdu_2026","event_name":"2026蒋敦豪你来啦全国巡回演唱会成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_november_concerts","venue_name":"成都金融城演艺中心","sessions":[{"start_at":"2026-11-21"}]},
-    {"registry_id":"zhou_huajian_chengdu_2026","event_name":"2026周华健少年的奇幻之旅3.0成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_november_concerts","venue_name":"凤凰山体育公园综合体育馆","sessions":[{"start_at":"2026-11-28"}]},
-    {"registry_id":"dazhangwei_chengdu_2026","event_name":"2026大张伟只为爱与自由Rock Show成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_two_shows","venue_name":"东区超现场","sessions":[{"start_at":"2026-11-14"}]},
-    {"registry_id":"xujiaqi_chengdu_2026","event_name":"2026许佳琪续假期巡演成都站","city_name":"成都市","event_type":"concert","source_key":"chengdu_two_shows","venue_name":"CH8绿树演艺中心","sessions":[{"start_at":"2026-11-14"}]},
-    {"registry_id":"shenzhen_apec_leaders_2026","event_name":"2026APEC第三十三次领导人非正式会议（深圳）","city_name":"深圳市","event_type":"conference","source_key":"shenzhen_apec","sessions":[{"start_at":"2026-11-18","end_at":"2026-11-19"}],"scope_note":"仅领导人会议日期；配套活动、场馆和住宿影响另行核对。"},
-    {"registry_id":"shenzhen_chtf_2026","event_name":"2026第二十八届中国国际高新技术成果交易会（深圳）","city_name":"深圳市","event_type":"exhibition","source_key":"shenzhen_chtf","venue_name":"深圳国际会展中心（宝安）","sessions":[{"start_at":"2026-11-26","end_at":"2026-11-28"}],"scope_note":"官网公告列表直接列出展期；详情跳转微信未能打开，保留此访问限制。"}
+    {
+      "registry_id": "chengdu_autumn_school_break_2026",
+      "event_name": "2026成都部分学校秋假",
+      "city_name": "成都市",
+      "event_type": "holiday",
+      "source_key": "sichuan_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-11",
+          "end_at": "2026-11-13"
+        }
+      ],
+      "scope_note": "多数学校的安排；并非全市统一，各区县和学校可调整。具体学段与学校通知为准。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-11",
+          "end_at": "2026-11-15",
+          "basis": "来源说明的周末连休窗口；不代表全市所有学校统一放假"
+        }
+      ]
+    },
+    {
+      "registry_id": "deyang_autumn_school_break_batch1_2026",
+      "event_name": "2026德阳秋假第一批（罗江、什邡、绵竹）",
+      "city_name": "德阳市",
+      "event_type": "holiday",
+      "source_key": "sichuan_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-20"
+        }
+      ],
+      "scope_note": "罗江区、什邡市、绵竹市；高三除外，具体适用学段见公告。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-22",
+          "basis": "来源说明的周末连休窗口"
+        }
+      ]
+    },
+    {
+      "registry_id": "deyang_autumn_school_break_batch2_2026",
+      "event_name": "2026德阳秋假第二批（市直属、旌阳等）",
+      "city_name": "德阳市",
+      "event_type": "holiday",
+      "source_key": "sichuan_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-25",
+          "end_at": "2026-11-27"
+        }
+      ],
+      "scope_note": "市直属、旌阳区、经开区、广汉市、中江县；高三除外，具体学段见公告。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-25",
+          "end_at": "2026-11-29",
+          "basis": "来源说明的周末连休窗口"
+        }
+      ]
+    },
+    {
+      "registry_id": "suining_autumn_school_break_2026",
+      "event_name": "2026遂宁秋假",
+      "city_name": "遂宁市",
+      "event_type": "holiday",
+      "source_key": "sichuan_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-20"
+        }
+      ],
+      "scope_note": "幼儿园、中小学、普通高中、中职学校，高三除外。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-22",
+          "basis": "来源说明的周末连休窗口"
+        }
+      ]
+    },
+    {
+      "registry_id": "sandy_lam_chengdu_2026",
+      "event_name": "2026林忆莲《回响》巡回演唱会成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_november_concerts",
+      "venue_name": "成都东安湖体育公园主体育场",
+      "sessions": [
+        {
+          "start_at": "2026-11-06"
+        },
+        {
+          "start_at": "2026-11-07"
+        }
+      ],
+      "scope_note": "正文列出两晚演出；场次及日期仍待核验。"
+    },
+    {
+      "registry_id": "gem_chengdu_2026",
+      "event_name": "2026宝石Gem原石季节巡回演唱会成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_november_concerts",
+      "venue_name": "成都露天音乐公园",
+      "sessions": [
+        {
+          "start_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "registry_id": "weibird_chengdu_2026",
+      "event_name": "2026韦礼安HI WE1韦您好巡回演唱会成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_november_concerts",
+      "venue_name": "成都金融城演艺中心",
+      "sessions": [
+        {
+          "start_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "registry_id": "zhou_chuanxiong_chengdu_2026",
+      "event_name": "2026周传雄念念不忘再遇见plus成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_november_concerts",
+      "venue_name": "成都东安湖体育公园主体育场",
+      "sessions": [
+        {
+          "start_at": "2026-11-14"
+        },
+        {
+          "start_at": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "registry_id": "ye_shirong_chengdu_2026",
+      "event_name": "2026叶世荣你中有我巡回演唱会成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_november_concerts",
+      "venue_name": "凤凰山体育公园综合体育馆",
+      "sessions": [
+        {
+          "start_at": "2026-11-21"
+        }
+      ]
+    },
+    {
+      "registry_id": "masiwei_chengdu_2026",
+      "event_name": "2026马思唯乐透人生巡回演唱会成都特别场",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_november_concerts",
+      "venue_name": "成都东安湖体育公园主体育场",
+      "sessions": [
+        {
+          "start_at": "2026-11-21"
+        }
+      ]
+    },
+    {
+      "registry_id": "jiang_dunhao_chengdu_2026",
+      "event_name": "2026蒋敦豪你来啦全国巡回演唱会成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_november_concerts",
+      "venue_name": "成都金融城演艺中心",
+      "sessions": [
+        {
+          "start_at": "2026-11-21"
+        }
+      ]
+    },
+    {
+      "registry_id": "zhou_huajian_chengdu_2026",
+      "event_name": "2026周华健少年的奇幻之旅3.0成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_november_concerts",
+      "venue_name": "凤凰山体育公园综合体育馆",
+      "sessions": [
+        {
+          "start_at": "2026-11-28"
+        }
+      ]
+    },
+    {
+      "registry_id": "dazhangwei_chengdu_2026",
+      "event_name": "2026大张伟只为爱与自由Rock Show成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_two_shows",
+      "venue_name": "东区超现场",
+      "sessions": [
+        {
+          "start_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "registry_id": "xujiaqi_chengdu_2026",
+      "event_name": "2026许佳琪续假期巡演成都站",
+      "city_name": "成都市",
+      "event_type": "concert",
+      "source_key": "chengdu_two_shows",
+      "venue_name": "CH8绿树演艺中心",
+      "sessions": [
+        {
+          "start_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "registry_id": "shenzhen_apec_leaders_2026",
+      "event_name": "2026APEC第三十三次领导人非正式会议（深圳）",
+      "city_name": "深圳市",
+      "event_type": "conference",
+      "source_key": "shenzhen_apec",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-19"
+        }
+      ],
+      "scope_note": "仅领导人会议日期；配套活动、场馆和住宿影响另行核对。"
+    },
+    {
+      "registry_id": "shenzhen_chtf_2026",
+      "event_name": "2026第二十八届中国国际高新技术成果交易会（深圳）",
+      "city_name": "深圳市",
+      "event_type": "exhibition",
+      "source_key": "shenzhen_chtf",
+      "venue_name": "深圳国际会展中心（宝安）",
+      "sessions": [
+        {
+          "start_at": "2026-11-26",
+          "end_at": "2026-11-28"
+        }
+      ],
+      "scope_note": "官网公告列表直接列出展期；详情跳转微信未能打开，保留此访问限制。"
+    },
+    {
+      "registry_id": "jackson_wang_nanjing_2026",
+      "event_name": "2026王嘉尔MAGICMAN 2世界巡演南京站",
+      "city_name": "南京市",
+      "event_type": "concert",
+      "source_key": "jackson_nanjing_venue",
+      "sessions": [
+        {
+          "start_at": "2026-11-07",
+          "end_at": "2026-11-07"
+        },
+        {
+          "start_at": "2026-11-08",
+          "end_at": "2026-11-08"
+        }
+      ],
+      "additional_source_keys": [
+        "jackson_nanjing_extra"
+      ],
+      "venue_name": "梦之蓝青奥体育公园体育馆",
+      "scope_note": "11月7日由场馆公告支持，11月8日由大麦南京加场公告支持；开票日另行记录，不替代演出日期。"
+    },
+    {
+      "registry_id": "zhang_jie_nanjing_2026",
+      "event_name": "2026张杰1982开往未LIVE巡回演唱会南京站",
+      "city_name": "南京市",
+      "event_type": "concert",
+      "source_key": "zhangjie_nanjing",
+      "sessions": [
+        {
+          "start_at": "2026-11-13",
+          "end_at": "2026-11-13"
+        },
+        {
+          "start_at": "2026-11-14",
+          "end_at": "2026-11-14"
+        },
+        {
+          "start_at": "2026-11-15",
+          "end_at": "2026-11-15"
+        }
+      ],
+      "venue_name": "南京奥体中心体育场"
+    },
+    {
+      "registry_id": "zhang_jie_wuhan_2026",
+      "event_name": "2026张杰1982开往未LIVE巡回演唱会武汉站",
+      "city_name": "武汉市",
+      "event_type": "concert",
+      "source_key": "zhangjie_wuhan",
+      "sessions": [
+        {
+          "start_at": "2026-11-27",
+          "end_at": "2026-11-27"
+        },
+        {
+          "start_at": "2026-11-28",
+          "end_at": "2026-11-28"
+        },
+        {
+          "start_at": "2026-11-29",
+          "end_at": "2026-11-29"
+        }
+      ],
+      "venue_name": "武汉体育中心体育场"
+    },
+    {
+      "registry_id": "jinan_lixia_school_break_2026",
+      "event_name": "2026济南历下区秋假",
+      "city_name": "济南市",
+      "event_type": "holiday",
+      "source_key": "jinan_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-06",
+          "end_at": "2026-11-06"
+        },
+        {
+          "start_at": "2026-11-09",
+          "end_at": "2026-11-10"
+        }
+      ],
+      "scope_note": "历下区义务教育阶段1—8年级；学校可根据教学进度调整，最终以学校通知为准。地方媒体转述区县通知，原始通知仍待核对。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-06",
+          "end_at": "2026-11-10",
+          "basis": "11月7日、8日为周末，不写成连续5天学校秋假"
+        }
+      ]
+    },
+    {
+      "registry_id": "jinan_gaoxin_school_break_2026",
+      "event_name": "2026济南高新区秋假",
+      "city_name": "济南市",
+      "event_type": "holiday",
+      "source_key": "jinan_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-04",
+          "end_at": "2026-11-06"
+        }
+      ],
+      "scope_note": "济南高新区安排；不外推到全市或其他区县，具体学校与学段以通知为准。地方媒体转述，原始通知仍待核对。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-04",
+          "end_at": "2026-11-08",
+          "basis": "与周末衔接的观察窗口"
+        }
+      ]
+    },
+    {
+      "registry_id": "changsha_autumn_school_break_2026",
+      "event_name": "2026长沙义务教育阶段秋假",
+      "city_name": "长沙市",
+      "event_type": "holiday",
+      "source_key": "changsha_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-12",
+          "end_at": "2026-11-13"
+        },
+        {
+          "start_at": "2026-11-16",
+          "end_at": "2026-11-16"
+        }
+      ],
+      "scope_note": "义务教育阶段；其他学段及学校安排单独核对。11月14日、15日属于周末。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-12",
+          "end_at": "2026-11-16",
+          "basis": "学校3天秋假与周末衔接"
+        }
+      ]
+    },
+    {
+      "registry_id": "fuzhou_named_district_school_break_2026",
+      "event_name": "2026福州部分区县秋假（鼓楼、台江等）",
+      "city_name": "福州市",
+      "event_type": "holiday",
+      "source_key": "fuzhou_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-20"
+        }
+      ],
+      "scope_note": "正文点名鼓楼、台江、仓山、晋安、连江等区县的幼儿园、小学、初中；市属学校按所在区县安排，不是全市统一假期。"
+    }
   ],
-  "backlog": [
-    {"key":"jinan_school_break_2026","event_name":"济南分区秋假","city_name":"济南市","topic":"holiday","status":"source_body_not_reopened","history_thread":"6ae14447-4a64-83ec-9ea9-932492257a99","source_url":"https://www.jinantimes.com.cn/news-39-5329372.html","note":"历史列出分区错峰；需核对教育部门或明确官方账号，不能合成一个全市日期。"},
-    {"key":"jackson_wang_nanjing_2026","event_name":"王嘉尔南京演出","city_name":"南京市","topic":"concert","status":"primary_source_needed","history_thread":"6ae14447-4a64-83ec-9ea9-932492257a99"},
-    {"key":"zhang_jie_nanjing_2026","event_name":"张杰南京演出","city_name":"南京市","topic":"concert","status":"source_body_not_reopened","source_url":"https://3g.sina.com.cn/news/detail/5356069746381190.html","history_thread":"6ae14447-4a64-83ec-9ea9-932492257a99"},
-    {"key":"zhang_jie_wuhan_2026","event_name":"张杰武汉演出","city_name":"武汉市","topic":"concert","status":"source_body_not_reopened","source_url":"https://weibo.com/2/detail/5346690267876720","history_thread":"6ae14447-4a64-83ec-9ea9-932492257a99"},
-    {"key":"hanzhong_source_market_break_2026","event_name":"汉中客源地秋假（西安影响待评估）","city_name":"汉中市","impact_destination_city":"西安市","topic":"holiday","status":"source_market_calendar_needed","source_url":"https://cj.sina.com.cn/articles/view/1915671961/722ed59901901nmyq","note":"客源地汉中，不应冒充西安本地活动；客源流向及住宿增量未知。"}
+  "backlog": [],
+  "source_market_signals": [
+    {
+      "registry_id": "hanzhong_source_market_break_2026",
+      "event_name": "2026汉中幼儿园及义务教育阶段秋假",
+      "city_name": "汉中市",
+      "event_type": "holiday",
+      "source_key": "hanzhong_school_calendar",
+      "sessions": [
+        {
+          "start_at": "2026-11-16",
+          "end_at": "2026-11-18"
+        }
+      ],
+      "source_city_slug": "hanzhong",
+      "impact_destination_cities": [
+        "西安市"
+      ],
+      "scope_note": "客源地汉中的学校假期，仅供西安经营观察；没有证据证明客流流向西安或带来住宿增量，不能当作西安本地活动。"
+    }
+  ],
+  "backlog_resolutions": [
+    {
+      "key": "jinan_school_break_2026",
+      "event_name": "济南分区秋假",
+      "city_name": "济南市",
+      "topic": "holiday",
+      "status": "source_body_reopened_pending",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "source_url": "https://www.jinantimes.com.cn/news-39-5329372.html",
+      "note": "历史列出分区错峰；需核对教育部门或明确官方账号，不能合成一个全市日期。",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    },
+    {
+      "key": "jackson_wang_nanjing_2026",
+      "event_name": "王嘉尔南京演出",
+      "city_name": "南京市",
+      "topic": "concert",
+      "status": "source_body_reopened_pending",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    },
+    {
+      "key": "zhang_jie_nanjing_2026",
+      "event_name": "张杰南京演出",
+      "city_name": "南京市",
+      "topic": "concert",
+      "status": "source_body_reopened_pending",
+      "source_url": "https://3g.sina.com.cn/news/detail/5356069746381190.html",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    },
+    {
+      "key": "zhang_jie_wuhan_2026",
+      "event_name": "张杰武汉演出",
+      "city_name": "武汉市",
+      "topic": "concert",
+      "status": "source_body_reopened_pending",
+      "source_url": "https://weibo.com/2/detail/5346690267876720",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    },
+    {
+      "key": "hanzhong_source_market_break_2026",
+      "event_name": "汉中客源地秋假（西安影响待评估）",
+      "city_name": "汉中市",
+      "impact_destination_city": "西安市",
+      "topic": "holiday",
+      "status": "source_body_reopened_pending",
+      "source_url": "https://cj.sina.com.cn/articles/view/1915671961/722ed59901901nmyq",
+      "note": "客源地汉中，不应冒充西安本地活动；客源流向及住宿增量未知。",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    }
   ]
 }

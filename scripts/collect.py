@@ -31,9 +31,10 @@ BEIJING = timezone(timedelta(hours=8))
 KEYWORDS = (
     "演唱会", "音乐节", "展会", "博览会", "马拉松", "体育赛事",
     "赛事", "演出", "漫展", "节庆", "车展", "展览", "巡演",
-    "音乐会", "嘉年华", "文化节", "美食节", "灯会", "庙会",
+    "音乐会", "话剧", "歌剧", "嘉年华", "文化节", "美食节", "灯会", "庙会",
     "APEC", "峰会", "大会", "国际会议", "行业会议", "论坛"
 ) + HOLIDAY_TERMS
+KEYWORDS = tuple(dict.fromkeys(KEYWORDS + tuple(term for topic in FEED_TOPICS for term in topic['terms'])))
 
 GUIDE_TERMS = (
     "有哪些", "有什么", "攻略", "指南", "购票平台", "票务平台", "怎么买票",
@@ -62,7 +63,7 @@ PAST_REPORT_TERMS = (
     "落幕", "比赛结束", "赛事回顾", "演出回顾"
 )
 CONDITIONAL_EVENT_PATTERN = re.compile(
-    r"审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望"
+    r"审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望|辟谣|不属实|不实消息|尚未确定|未确定|相关部门回应|官方回应"
 )
 QUANTITY_SUFFIX = r"\s*(?:万|亿|千|百|人|名|件|通|元|%|％|小时|公里|万人|万名)"
 NON_EVENT_CONTENT_KINDS = {"guide", "schedule_roundup", "ticketing_notice", "registration_notice"}
@@ -117,7 +118,7 @@ def classify_event(text: str) -> str:
     value = text or ""
     if any(word in value for word in ("秋假", "春假", "寒假", "暑假", "学生假期")):
         return "holiday"
-    if any(word in value for word in ("展会", "博览会", "展览", "茶博会", "车展", "漫展", "动漫展", "进博会")):
+    if any(word in value for word in ("展会", "博览会", "展览", "茶博会", "车展", "漫展", "动漫展", "进博会", "高交会")):
         return "exhibition"
     if any(word in value for word in ("马拉松", "体育赛事", "赛事", "足球", "篮球", "网球", "运动会", "路跑", "比赛")):
         return "sports"
@@ -553,6 +554,8 @@ def extract_event_date(title: str, description: str = "", today: date | None = N
 
 def is_upcoming_event(event: dict[str, Any], today: date) -> bool:
     """Return True only for a dated, future/ongoing single-event candidate."""
+    if event.get('event_status') in {'cancelled', 'postponed'}:
+        return False
     if future_exclusion_reasons(event):
         return False
     title_kind = classify_content(event.get("event_name", ""))
@@ -888,7 +891,8 @@ def run_collection() -> int:
         and event.get("event_date_role") in {"event", "ambiguous"}
         and (event.get("content_kind") or classify_content(event.get("event_name", ""))) in {"event_announcement", "uncertain"}
     )
-    future_count = sum(1 for event in kept if is_upcoming_event(event, today))
+    horizon_end = (today + timedelta(days=SCOPE['monitoring_horizon_days'])).isoformat()
+    future_count = sum(1 for event in kept if is_upcoming_event(event, today) and event['start_at'] <= horizon_end)
     content_counts = {
         kind: sum(1 for event in kept if (event.get("content_kind") or classify_content(event.get("event_name", ""))) == kind)
         for kind in ("event_announcement", "uncertain", "ticketing_notice", "registration_notice", "schedule_roundup", "guide", "past_report", "other")
@@ -928,7 +932,7 @@ def run_collection() -> int:
         slug = event.get("city_slug")
         if slug in city_counts:
             city_counts[slug] += 1
-            if is_upcoming_event(event, today):
+            if is_upcoming_event(event, today) and event['start_at'] <= horizon_end:
                 city_future_counts[slug] += 1
     city_payload = {
         "meta": {"api_version": "v1", "generated_at": observed_at, "city_count": len(cities)},

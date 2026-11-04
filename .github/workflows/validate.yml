@@ -32,7 +32,9 @@ jobs:
           python scripts/build_evidence_refresh.py
           git diff --exit-code -- docs/activity-evidence-2026-10-30.json docs/activity-evidence-2026-10-30.md
       - name: Compile collector
-        run: python -m py_compile scripts/collect.py scripts/check_manual_execution.py
+        run: python -m py_compile scripts/collect.py scripts/check_manual_execution.py scripts/activity_registry.py scripts/check_snapshot_quality.py
+      - name: Validate every public news and activity record
+        run: python scripts/check_snapshot_quality.py
       - name: Validate public filters against manual audit cases
         run: |
           node --test tests/test_site.js tests/test_share_image.js

@@ -2,7 +2,7 @@
   "meta": {
     "api_version": "v1",
     "schema_version": "1.2",
-    "generated_at": "2026-11-04T01:53:26Z",
+    "generated_at": "2026-11-04T02:42:25Z",
     "timezone": "Asia/Shanghai",
     "collection_status": "healthy",
     "source_system": "Google News RSS",
@@ -15,11 +15,11 @@
     "failed_feeds": 0,
     "rss_items_seen": 492,
     "data_note": "新闻线索与activities.json活动日历分开。旧数据仅规范化；源采集时间不变，未自动核验。",
-    "normalized_at": "2026-11-04T01:53:26Z",
+    "normalized_at": "2026-11-04T02:42:25Z",
     "last_collection_at": "2026-10-30T01:55:55Z",
     "coverage_status": "partial",
     "monitoring_horizon_days": 90,
-    "structured_activity_count": 27,
+    "structured_activity_count": 34,
     "future_event_candidate_count": 14
   },
   "data": [

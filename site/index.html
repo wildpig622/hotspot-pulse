@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="面向酒店收益经营的公开热点事件自动发现服务">
   <title>Hotspot Pulse · 热点事件雷达</title>
-  <link rel="stylesheet" href="./styles.css?v=59d6c2204cdb">
+  <link rel="stylesheet" href="./styles.css?v=a5fda3fa97da">
 </head>
 <body>
   <header class="topbar">
@@ -29,6 +29,8 @@
       <div class="panel-heading"><div><h2>活动日历与新闻线索</h2><p id="viewExplanation">默认查看未来90天活动日历；新闻线索可单独查看。</p></div><span id="resultCount" class="result-count">0 条</span></div>
       <p id="coverageSummary" class="coverage-summary">正在读取覆盖范围…</p>
       <details class="coverage-details"><summary>查看城市、类别覆盖与待补事项</summary><p id="coverageBacklog"></p><div id="coverageTable" class="coverage-table"></div></details>
+      <details id="sourceMarketDetails" class="coverage-details" hidden><summary>客源地假期信号（单独观察）</summary><div id="sourceMarketSignals"></div></details>
+      <p class="calendar-discovery"><button id="showLeadCandidatesBtn" class="button button-quiet" type="button">查看带日期的新闻候选</button><span>新闻候选可能重复，日历仅收录已整理的活动身份。</span></p>
       <div class="filters">
         <label><span>查看</span><select id="recordFilter"><option value="activities" selected>活动日历</option><option value="leads">新闻线索</option></select></label>
         <label class="search-field"><span>搜索</span><input id="searchInput" type="search" placeholder="活动名称、城市或来源"></label>
@@ -42,6 +44,7 @@
       </div>
       <div id="feedError" class="feed-error" hidden></div>
       <div id="eventsList" class="events-list"><div class="empty-state">正在读取 JSON 数据…</div></div>
+      <div class="list-pagination"><span id="listProgress"></span><button id="showMoreBtn" class="button button-quiet" type="button" hidden>再显示100条</button></div>
       <div class="panel-footer"><span id="sourceInfo">数据源：Google News RSS 搜索结果</span><span>刷新仅重读已有快照，不启动采集</span><a href="./api/v1/hotspots.json" target="_blank" rel="noopener">打开 JSON API ↗</a><a href="./api/v1/health.json" target="_blank" rel="noopener">采集状态 ↗</a></div>
     </section>
     <section class="panel api-panel">
@@ -59,6 +62,6 @@
   </dialog>
   <p id="exportMessage" class="export-message" role="status" aria-live="polite" hidden></p>
   <script src="./share-image.js?v=f915f6d26191"></script>
-  <script src="./app.js?v=4ea65238892c"></script>
+  <script src="./app.js?v=f9e27bf7ff93"></script>
 </body>
 </html>

@@ -73,6 +73,46 @@ test("activity calendar and news leads remain distinct, with clear totals and sc
   assert.match(nodes.viewExplanation.textContent, /新闻线索总计 457 条/);
 });
 
+test("a disputed holiday report cannot enter the future view, and origin signals stay outside local activities", async () => {
+  const disputed = calendarRow({event_id:'rumour',event_name:'杭州秋假11月11日—13日定了？相关部门回应'});
+  const signal = calendarRow({event_id:'sig_origin',record_kind:'source_market_signal',city_name:'汉中市',city_slug:'hanzhong',event_name:'汉中秋假',impact_destination_cities:['西安市'],scope_note:'客源地，不代表西安本地活动或住宿增量'});
+  const nodes = await loadPage([disputed], {activities:{data:[],source_market_signals:[signal]},recordLayer:'leads'});
+  assert.equal(nodes.resultCount.textContent, '0 条');
+  assert.equal(nodes.sourceMarketDetails.hidden, false);
+  assert.match(nodes.sourceMarketSignals.innerHTML, /客源地：汉中市/);
+  nodes.cityFilter.value='西安市'; nodes.cityFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent, '0 条');
+  assert.equal(nodes.sourceMarketDetails.hidden, false);
+  nodes.cityFilter.value='成都市'; nodes.cityFilter.listeners.input();
+  assert.equal(nodes.sourceMarketDetails.hidden, true);
+});
+
+test("the news-candidate shortcut changes the data layer without losing the selected city", async () => {
+  const lead=calendarRow({event_id:'news_date'});
+  const nodes=await loadPage([lead], {activities:{data:[]},recordLayer:'activities'});
+  nodes.cityFilter.value='杭州市'; nodes.cityFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'0 条');
+  nodes.showLeadCandidatesBtn.listeners.click();
+  assert.equal(nodes.recordFilter.value,'leads');
+  assert.equal(nodes.cityFilter.value,'杭州市');
+  assert.equal(nodes.resultCount.textContent,'1 条');
+});
+
+test("large lists render in batches while PNG export keeps every filtered row", async () => {
+  const rows=Array.from({length:350},(_,i)=>calendarRow({event_id:'batch_'+i,event_name:'杭州音乐会'+i}));
+  let exported;
+  const nodes=await loadPage(rows,{recordLayer:'leads',shareApi:{plan(ctx,model){exported=model;return {pages:[{cards:model.rows}]};},render(){},toBlob:async()=>({type:'image/png'})}});
+  assert.equal(nodes.resultCount.textContent,'350 条');
+  assert.equal((nodes.eventsList.innerHTML.match(/<article /g)||[]).length,100);
+  assert.match(nodes.listProgress.textContent,/350 条，已展示 100 条/);
+  nodes.showMoreBtn.listeners.click();
+  assert.equal((nodes.eventsList.innerHTML.match(/<article /g)||[]).length,200);
+  await nodes.exportPngBtn.listeners.click();
+  assert.equal(exported.rows.length,350);
+  nodes.cityFilter.value='杭州市';nodes.cityFilter.listeners.input();
+  assert.equal((nodes.eventsList.innerHTML.match(/<article /g)||[]).length,100);
+});
+
 test("disjoint performance sessions do not match gap days or render a continuous interval", async () => {
   const row = calendarRow({event_type:"concert",event_name:"杭州演唱会",start_at:"2026-11-06",end_at:"2026-11-08",
     sessions:[{start_at:"2026-11-06",end_at:"2026-11-06"},{start_at:"2026-11-08",end_at:"2026-11-08"}]});

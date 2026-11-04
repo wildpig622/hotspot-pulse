@@ -8,8 +8,8 @@
   var TYPE_LABELS = { concert: "演出 / 演唱会", exhibition: "展会", sports: "赛事", festival: "节庆", holiday: "学生假期 / 放假调整", conference: "会议 / 峰会", other: "其他" };
   var CONTENT_LABELS = { event_announcement: "活动公告", uncertain: "活动线索待核实", ticketing_notice: "开票 / 售票信息", registration_notice: "报名信息", schedule_roundup: "排期汇总", guide: "攻略 / 购票资讯", past_report: "历史报道", other: "其他资讯" };
   var NON_EVENT_KINDS = { guide: true, schedule_roundup: true, ticketing_notice: true, registration_notice: true, other: true };
-  var CONDITIONAL_EVENT = /审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望/;
-  var state = { events: [], leads: [], activities: [], backlog: [], calendarAvailable: false, calendarMeta: {}, coverage: {}, meta: {}, health: {}, cities: [] };
+  var CONDITIONAL_EVENT = /审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望|辟谣|不属实|不实消息|尚未确定|未确定|相关部门回应|官方回应/;
+  var state = { events: [], leads: [], activities: [], backlog: [], sourceMarketSignals: [], visibleLimit: 100, calendarAvailable: false, calendarMeta: {}, coverage: {}, meta: {}, health: {}, cities: [] };
   var shareSession = null;
   var shareRevision = 0;
   var $ = function (id) { return document.getElementById(id); };
@@ -204,9 +204,10 @@
           : "尚无采集状态";
     $("healthLabel").textContent = labels[status] || "状态未知";
     $("healthDetail").textContent = details;
-    $("healthDot").className = "status-dot " + (status === "healthy" ? "status-healthy" : status === "degraded" ? "status-degraded" : status === "failed" ? "status-failed" : "status-muted");
+    $("healthDot").className = "status-dot " + (status === "healthy" && !stale ? "status-healthy" : status === "degraded" ? "status-degraded" : status === "failed" ? "status-failed" : "status-muted");
     $("coverageSummary").textContent = "新闻线索 " + state.leads.length + " 条 · 已整理活动 " + state.activities.length + " 项 · 假期 " + state.activities.filter(function (event) { return event.event_type === "holiday"; }).length + " 项。" +
       (state.calendarAvailable ? "活动来源与日期仍待核验，28城×6类内容持续补齐。" : "活动日历暂不可用，当前显示新闻线索。") +
+      (state.sourceMarketSignals.length ? " 另有 " + state.sourceMarketSignals.length + " 项客源地假期信号，单独观察。" : "") +
       " 采集采用手动执行，网页刷新不会补采；日历整理于 " + formatTime(state.calendarMeta.generated_at) + "。";
   }
   function selectRecordLayer() {
@@ -224,6 +225,11 @@
     }).join("") + '</tbody></table>' : '覆盖台账暂不可用，零条不代表该城市没有活动。';
     var gaps = state.backlog.filter(function (row) { return (!city || row.city_name === city || row.impact_destination_city === city) && (!type || row.topic === type); });
     $("coverageBacklog").textContent = gaps.length ? "历史清单待补：" + gaps.map(function (row) { return (row.city_name || "") + " · " + (row.event_name || TYPE_LABELS[row.topic] || "活动来源"); }).join("；") + "。来源和适用范围仍需补查。" : "该筛选暂无单列待补项；覆盖仍需继续核对。";
+    var signals = state.sourceMarketSignals.filter(function (row) { return (!city || row.city_name === city || (row.impact_destination_cities || []).indexOf(city) >= 0) && (!type || row.event_type === type); });
+    $("sourceMarketDetails").hidden = !signals.length;
+    $("sourceMarketSignals").innerHTML = signals.map(function (row) {
+      return '<article class="source-market-signal"><strong>' + escapeHtml(row.event_name) + '</strong><p>客源地：' + escapeHtml(row.city_name) + ' · 观察目的地：' + escapeHtml((row.impact_destination_cities || []).join('、')) + ' · 待核验</p><p>学校假期：' + escapeHtml(eventDateLabel(row)) + '</p><p>' + escapeHtml(row.scope_note) + '</p><p>来源检查：' + escapeHtml(formatTime(row.last_evidence_check_at)) + ' · ' + sourceLabel(row) + '</p></article>';
+    }).join('');
   }
   function fillCities() {
     var select = $("cityFilter");
@@ -277,6 +283,9 @@
   }
   function renderEvents() {
     var events = getFilteredEvents();
+    var visibleCount = Math.min(events.length, state.visibleLimit);
+    $("listProgress").textContent = events.length > 100 ? "当前筛选共 " + events.length + " 条，已展示 " + visibleCount + " 条；PNG导出包含全部筛选结果。" : "";
+    $("showMoreBtn").hidden = visibleCount >= events.length;
     $("resultCount").textContent = events.length + " 条";
     $("viewExplanation").textContent = ($("recordFilter").value === "activities" ? "当前查看活动日历" : "当前查看新闻线索") + "，显示 " + events.length + " 条；新闻线索总计 " + state.leads.length + " 条。" +
       ($("contentFilter").value === "future" ? "当前窗口截至 " + monitoringEnd(beijingToday()) + "，零条不代表该城市没有活动。" : "");
@@ -286,7 +295,7 @@
       $("eventsList").innerHTML = '<div class="empty-state">当前视图没有符合条件的内容。可切换开票/报名、排期汇总或全部内容查看相关线索。</div>';
       return;
     }
-    $("eventsList").innerHTML = events.map(function (event) {
+    $("eventsList").innerHTML = events.slice(0, visibleCount).map(function (event) {
       var review = event.review_status === "verified" ? '<span class="badge badge-verified">已核验</span>' : '<span class="badge badge-pending">待核验</span>';
       var kind = contentKind(event);
       var kindBadge = '<span class="badge badge-neutral">' + escapeHtml(CONTENT_LABELS[kind] || "其他资讯") + '</span>';
@@ -303,13 +312,14 @@
         ' · 来源数：' + sourceCount + '<br>' + cityMatch +
         (event.venue_name ? '<br>场馆：' + escapeHtml(event.venue_name) : '') +
         (event.scope_note ? '<br>适用范围 / 说明：' + escapeHtml(event.scope_note) : '') +
+        (event.sources && event.sources[0] && event.sources[0].authority_note ? '<br>证据说明：' + escapeHtml(event.sources[0].authority_note) : '') +
         (event.last_evidence_check_at ? '<br>来源上次检查：' + escapeHtml(formatTime(event.last_evidence_check_at)) : '') + '</div></div>' +
         '<div class="event-sources">' + sourceLabel(event) + '<span>最近发现：' + escapeHtml(formatTime(event.last_seen_at)) + '</span></div></article>';
     }).join("");
   }
   function publicationLabel(source) {
     source = source || {};
-    return source.source_published_at ? formatTime(source.source_published_at) : source.source_published_date ? source.source_published_date + '（仅日期）' : '尚无记录';
+    return source.source_published_at ? formatTime(source.source_published_at) : source.source_published_date ? source.source_published_date + '（仅日期）' : source.source_published_display || '尚无记录';
   }
   function selectedLabel(id, fallback) {
     var node = $(id);
@@ -337,7 +347,7 @@
         try { if (/^https?:\/\//i.test(source.source_url || "")) host = new URL(source.source_url).hostname; } catch (e) {}
         return {
           id: text(event.event_id, "未提供"), title: text(event.event_name, "未命名事件"), city: text(event.city_name),
-          type: TYPE_LABELS[event.event_type] || "其他", content: (CONTENT_LABELS[contentKind(event)] || "其他资讯") + (event.scope_note ? " · " + event.scope_note : ""),
+          type: TYPE_LABELS[event.event_type] || "其他", content: (CONTENT_LABELS[contentKind(event)] || "其他资讯") + (event.scope_note ? " · " + event.scope_note : "") + (source.authority_note ? " · 证据说明：" + source.authority_note : ""),
           date: eventDateLabel(event), review: event.review_status === "verified" ? "已核验" : "待核验",
           source: text(source.publisher, "未知发布方") + (host ? " · " + host : ""), publishedAt: publicationLabel(source) + (event.last_evidence_check_at ? "；来源检查 " + formatTime(event.last_evidence_check_at) : "")
         };
@@ -406,13 +416,20 @@
       exportMessage(error.message || "图片生成失败，请重试。");
     }
   }
-  function applyFilters() { selectRecordLayer(); renderMetrics(); renderEvents(); }
+  function applyFilters() { state.visibleLimit = 100; selectRecordLayer(); renderMetrics(); renderEvents(); }
   function bindEvents() {
+    $("showMoreBtn").addEventListener("click", function () { state.visibleLimit += 100; renderEvents(); });
+    $("showLeadCandidatesBtn").addEventListener("click", function () {
+      $("recordFilter").value = "leads";
+      $("contentFilter").value = "future";
+      applyFilters();
+    });
     ["recordFilter", "searchInput", "cityFilter", "typeFilter", "reviewFilter", "contentFilter", "dateFrom", "dateTo"].forEach(function (id) {
       $(id).addEventListener("input", applyFilters);
       $(id).addEventListener("change", applyFilters);
     });
     $("clearBtn").addEventListener("click", function () {
+      state.visibleLimit = 100;
       ["searchInput", "cityFilter", "typeFilter", "reviewFilter", "dateFrom", "dateTo"].forEach(function (id) { $(id).value = ""; });
       $("contentFilter").value = "future";
       renderEvents();
@@ -471,6 +488,7 @@
       state.activities = state.calendarAvailable ? results[3].value.data : [];
       state.calendarMeta = state.calendarAvailable ? results[3].value.meta || {} : {};
       state.backlog = state.calendarAvailable ? results[3].value.backlog || [] : [];
+      state.sourceMarketSignals = state.calendarAvailable ? results[3].value.source_market_signals || [] : [];
       state.coverage = results[4].status === "fulfilled" ? results[4].value : {};
       selectRecordLayer();
       fillCities(); renderMetrics(); renderEvents();

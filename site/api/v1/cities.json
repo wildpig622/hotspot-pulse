@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-04T01:53:26Z",
+    "generated_at": "2026-11-04T02:42:25Z",
     "city_count": 28
   },
   "data": [
@@ -21,7 +21,7 @@
         "南京"
       ],
       "candidate_count": 29,
-      "activity_count": 0
+      "activity_count": 2
     },
     {
       "city_name": "重庆市",
@@ -48,7 +48,7 @@
         "武汉"
       ],
       "candidate_count": 26,
-      "activity_count": 1
+      "activity_count": 2
     },
     {
       "city_name": "西安市",
@@ -93,7 +93,7 @@
         "长沙"
       ],
       "candidate_count": 16,
-      "activity_count": 2
+      "activity_count": 3
     },
     {
       "city_name": "贵阳市",
@@ -192,7 +192,7 @@
         "福州"
       ],
       "candidate_count": 18,
-      "activity_count": 0
+      "activity_count": 1
     },
     {
       "city_name": "德阳市",
@@ -219,7 +219,7 @@
         "济南"
       ],
       "candidate_count": 22,
-      "activity_count": 0
+      "activity_count": 2
     },
     {
       "city_name": "厦门市",

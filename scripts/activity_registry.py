@@ -58,12 +58,16 @@ def build_activities(entries: list[dict[str, Any]], cities: list[dict[str, Any]]
         if entry.get('review_status', 'pending') != 'pending':
             raise ValueError('Registry cannot automatically verify records')
         source = entry['source']
-        parsed_url = urlparse(source['url'])
-        if parsed_url.scheme != 'https' or not parsed_url.hostname or parsed_url.username or parsed_url.password:
-            raise ValueError('Evidence must use a public HTTPS source URL')
-        if source.get('access_status') not in {'body_read', 'historical_body_read', 'official_listing_read'}:
-            raise ValueError('An unread source cannot supply a calendar date')
-        datetime.fromisoformat(source['checked_at'].replace('Z', '+00:00'))
+        evidence_sources = [source] + entry.get('additional_sources', [])
+        for evidence in evidence_sources:
+            parsed_url = urlparse(evidence['url'])
+            if parsed_url.scheme != 'https' or not parsed_url.hostname or parsed_url.username or parsed_url.password:
+                raise ValueError('Evidence must use a public HTTPS source URL')
+            if evidence.get('access_status') not in {'body_read', 'historical_body_read', 'official_listing_read'}:
+                raise ValueError('An unread source cannot supply a calendar date')
+            checked = datetime.fromisoformat(evidence['checked_at'].replace('Z', '+00:00'))
+            if checked.tzinfo is None:
+                raise ValueError('Evidence check time needs a timezone')
         sessions = []
         for supplied in entry['sessions']:
             start = _calendar_day(supplied['start_at'])
@@ -86,14 +90,16 @@ def build_activities(entries: list[dict[str, Any]], cities: list[dict[str, Any]]
                 raise ValueError('A lead cannot silently belong to two activity identities: ' + row['event_id'])
             linked_identities[row['event_id']] = key
         sources = [{
-            'source_url': source['url'], 'publisher': source['publisher'],
-            'source_type': source['source_type'], 'source_published_at': source.get('published_at'),
-            'source_published_date': source.get('published_date'),
-            'observed_at': source['checked_at'], 'last_observed_at': source['checked_at'],
-            'checked_at': source['checked_at'], 'access_status': source['access_status'],
+            'source_url': evidence['url'], 'publisher': evidence['publisher'],
+            'source_type': evidence['source_type'], 'source_published_at': evidence.get('published_at'),
+            'source_published_date': evidence.get('published_date'),
+            'source_published_display': evidence.get('published_display'),
+            'observed_at': evidence['checked_at'], 'last_observed_at': evidence['checked_at'],
+            'checked_at': evidence['checked_at'], 'access_status': evidence['access_status'],
+            'authority_note': evidence.get('authority_note', ''),
             'verification_status': 'unverified',
-        }]
-        urls = {source['url']}
+        } for evidence in evidence_sources]
+        urls = {evidence['url'] for evidence in evidence_sources}
         for row in linked:
             for evidence in row.get('sources', []):
                 if evidence.get('source_url') and evidence['source_url'] not in urls:
@@ -112,7 +118,7 @@ def build_activities(entries: list[dict[str, Any]], cities: list[dict[str, Any]]
             'first_seen_at': source['checked_at'], 'last_seen_at': source['checked_at'],
             'knowable_at': max([source['checked_at']] + ([source['published_at']] if source.get('published_at') else []), key=lambda value: datetime.fromisoformat(value.replace('Z', '+00:00'))),
             'source_count': len(sources), 'sources': sources,
-            'last_evidence_check_at': source['checked_at'],
+            'last_evidence_check_at': max((item['checked_at'] for item in evidence_sources), key=lambda value: datetime.fromisoformat(value.replace('Z', '+00:00'))),
             'candidate_note': '来源正文日期；仍待核验，不代表真实住宿需求增量。',
         }
         for window in activity['travel_windows']:
@@ -150,19 +156,30 @@ def build_registry_payload(root: Path, leads: list[dict[str, Any]], cities: list
     registry = json.loads((root / 'config/activity-registry.json').read_text(encoding='utf-8'))
     historical = json.loads((root / 'docs/activity-evidence-2026-10-30.json').read_text(encoding='utf-8'))
     entries = historical_entries(historical['groups'], leads) + [
-        dict(row, source=registry['sources'][row['source_key']]) for row in registry['data']
+        dict(row, source=registry['sources'][row['source_key']],
+             additional_sources=[registry['sources'][key] for key in row.get('additional_source_keys', [])]) for row in registry['data']
     ]
     configured_names = {city['city_name'] for city in cities}
     entries = [row for row in entries if row['city_name'] in configured_names]
     rows = build_activities(entries, cities, leads, previous)
+    signals = []
+    for signal in registry.get('source_market_signals', []):
+        if not any(name in configured_names for name in signal['impact_destination_cities']):
+            continue
+        signal_city = {'city_name': signal['city_name'], 'city_slug': signal['source_city_slug']}
+        built = build_activities([dict(signal, source=registry['sources'][signal['source_key']])], [signal_city], [])[0]
+        built.update(event_id='sig_' + built['event_id'][4:], record_kind='source_market_signal',
+                     impact_destination_cities=signal['impact_destination_cities'])
+        signals.append(built)
     return {'meta': {
         'api_version': 'v1', 'schema_version': '1.2', 'generated_at': generated_at,
-        'coverage_status': 'partial', 'activity_count': len(rows),
+        'coverage_status': 'partial', 'activity_count': len(rows), 'source_market_signal_count': len(signals),
         'future_activity_count': sum(activity_is_future(row, today) for row in rows),
         'pending_count': sum(row['review_status'] == 'pending' for row in rows),
         'verified_count': sum(row['review_status'] == 'verified' for row in rows),
         'data_note': '按明确活动身份登记，新闻在hotspots.json保留；来源检查时间逐条保留，未自动核验。',
-    }, 'data': rows, 'backlog': registry.get('backlog', [])}
+    }, 'data': rows, 'backlog': registry.get('backlog', []),
+        'backlog_resolutions': registry.get('backlog_resolutions', []), 'source_market_signals': signals}
 
 
 def build_coverage(cities: list[dict[str, Any]], topics: list[dict[str, Any]], leads: list[dict[str, Any]],

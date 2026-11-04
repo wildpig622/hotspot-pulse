@@ -2,11 +2,12 @@
   "meta": {
     "api_version": "v1",
     "schema_version": "1.2",
-    "generated_at": "2026-11-04T01:53:26Z",
+    "generated_at": "2026-11-04T02:42:25Z",
     "coverage_status": "partial",
-    "activity_count": 27,
-    "future_activity_count": 25,
-    "pending_count": 27,
+    "activity_count": 34,
+    "source_market_signal_count": 1,
+    "future_activity_count": 32,
+    "pending_count": 34,
     "verified_count": 0,
     "data_note": "按明确活动身份登记，新闻在hotspots.json保留；来源检查时间逐条保留，未自动核验。"
   },
@@ -52,10 +53,12 @@
           "source_type": "official_event_organizer",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -114,10 +117,12 @@
           "source_type": "official_exhibition_committee",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -188,10 +193,12 @@
           "source_type": "government_official_account_primary_post",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -239,6 +246,63 @@
       "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
     },
     {
+      "event_id": "act_811df9f745a2",
+      "registry_id": "jinan_gaoxin_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026济南高新区秋假",
+      "event_type": "holiday",
+      "city_name": "济南市",
+      "city_slug": "jinan",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-04",
+      "end_at": "2026-11-06",
+      "sessions": [
+        {
+          "start_at": "2026-11-04",
+          "end_at": "2026-11-06"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "济南高新区安排；不外推到全市或其他区县，具体学校与学段以通知为准。地方媒体转述，原始通知仍待核对。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-04",
+          "end_at": "2026-11-08",
+          "basis": "与周末衔接的观察窗口"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.jinantimes.com.cn/news-39-5329372.html",
+          "publisher": "新黄河／济南时报",
+          "source_type": "institutional_media",
+          "source_published_at": null,
+          "source_published_date": "2026-10-09",
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "地方主流媒体明确转述区县通知；本轮未直接读取区教育局原始通知，仍待核验。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
       "event_id": "act_2b4d0dbba8f0",
       "registry_id": "review_kunming_auto_2026",
       "record_kind": "activity",
@@ -279,10 +343,12 @@
           "source_type": "official_exhibition_site",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -352,14 +418,146 @@
           "source_type": "government_channel_post",
           "source_published_at": "2026-11-01T09:54:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
       "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_a93a8b6dbe12",
+      "registry_id": "jinan_lixia_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026济南历下区秋假",
+      "event_type": "holiday",
+      "city_name": "济南市",
+      "city_slug": "jinan",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-06",
+      "end_at": "2026-11-10",
+      "sessions": [
+        {
+          "start_at": "2026-11-06",
+          "end_at": "2026-11-06"
+        },
+        {
+          "start_at": "2026-11-09",
+          "end_at": "2026-11-10"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "历下区义务教育阶段1—8年级；学校可根据教学进度调整，最终以学校通知为准。地方媒体转述区县通知，原始通知仍待核对。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-06",
+          "end_at": "2026-11-10",
+          "basis": "11月7日、8日为周末，不写成连续5天学校秋假"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://www.jinantimes.com.cn/news-39-5329372.html",
+          "publisher": "新黄河／济南时报",
+          "source_type": "institutional_media",
+          "source_published_at": null,
+          "source_published_date": "2026-10-09",
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "地方主流媒体明确转述区县通知；本轮未直接读取区教育局原始通知，仍待核验。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_72117bb75c13",
+      "registry_id": "jackson_wang_nanjing_2026",
+      "record_kind": "activity",
+      "event_name": "2026王嘉尔MAGICMAN 2世界巡演南京站",
+      "event_type": "concert",
+      "city_name": "南京市",
+      "city_slug": "nanjing",
+      "city_match": "text_confirmed",
+      "venue_name": "梦之蓝青奥体育公园体育馆",
+      "start_at": "2026-11-07",
+      "end_at": "2026-11-08",
+      "sessions": [
+        {
+          "start_at": "2026-11-07",
+          "end_at": "2026-11-07"
+        },
+        {
+          "start_at": "2026-11-08",
+          "end_at": "2026-11-08"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "11月7日由场馆公告支持，11月8日由大麦南京加场公告支持；开票日另行记录，不替代演出日期。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 2,
+      "sources": [
+        {
+          "source_url": "https://weibo.com/2/detail/5344432016326875",
+          "publisher": "梦之蓝青奥体育公园官方微博",
+          "source_type": "official_venue",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": "9-18 09:35（年份未显示）",
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "场馆正文支持11月7日；9月18日09:35发布，正文未显示年份，保留日期精度限制。",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://weibo.com/2/detail/5345925620568458",
+          "publisher": "大麦南京官方微博",
+          "source_type": "authorized_ticketing",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": "9-22 12:30（年份未显示）",
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "加场正文明确活动名称、南京场馆和2026年11月8日；预售9月24日不作为举办日期。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
     },
     {
@@ -403,10 +601,12 @@
           "source_type": "association_race_calendar",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -468,10 +668,12 @@
           "source_type": "government_official_account",
           "source_published_at": "2026-09-13T13:53:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -519,10 +721,12 @@
           "source_type": "government_portal_republication",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -537,6 +741,126 @@
         }
       ],
       "last_evidence_check_at": "2026-10-30T09:47:49+08:00",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_e6d5bbf93816",
+      "registry_id": "changsha_autumn_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026长沙义务教育阶段秋假",
+      "event_type": "holiday",
+      "city_name": "长沙市",
+      "city_slug": "changsha",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-12",
+      "end_at": "2026-11-16",
+      "sessions": [
+        {
+          "start_at": "2026-11-12",
+          "end_at": "2026-11-13"
+        },
+        {
+          "start_at": "2026-11-16",
+          "end_at": "2026-11-16"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "义务教育阶段；其他学段及学校安排单独核对。11月14日、15日属于周末。",
+      "travel_windows": [
+        {
+          "start_at": "2026-11-12",
+          "end_at": "2026-11-16",
+          "basis": "学校3天秋假与周末衔接"
+        }
+      ],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://hn.rednet.cn/content/646054/57/16364310.html",
+          "publisher": "红网（转载湖南省人民政府网）",
+          "source_type": "government_relay",
+          "source_published_at": "2026-10-13T15:03:18+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "政府来源转载正文；11月12日、13日、16日为学校假期，14日、15日是周末。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_a0525a5b8812",
+      "registry_id": "zhang_jie_nanjing_2026",
+      "record_kind": "activity",
+      "event_name": "2026张杰1982开往未LIVE巡回演唱会南京站",
+      "event_type": "concert",
+      "city_name": "南京市",
+      "city_slug": "nanjing",
+      "city_match": "text_confirmed",
+      "venue_name": "南京奥体中心体育场",
+      "start_at": "2026-11-13",
+      "end_at": "2026-11-15",
+      "sessions": [
+        {
+          "start_at": "2026-11-13",
+          "end_at": "2026-11-13"
+        },
+        {
+          "start_at": "2026-11-14",
+          "end_at": "2026-11-14"
+        },
+        {
+          "start_at": "2026-11-15",
+          "end_at": "2026-11-15"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://3g.sina.com.cn/news/detail/5356069746381190.html",
+          "publisher": "张杰1982开往未LIVE巡回演唱会认证微博",
+          "source_type": "official_organizer",
+          "source_published_at": "2026-10-20T12:20:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
     },
     {
@@ -582,10 +906,12 @@
           "source_type": "government_channel_post",
           "source_published_at": "2026-11-01T09:54:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -631,10 +957,12 @@
           "source_type": "government_official_account",
           "source_published_at": "2026-10-27T14:53:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -680,10 +1008,12 @@
           "source_type": "government_channel_post",
           "source_published_at": "2026-11-01T09:54:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -729,10 +1059,12 @@
           "source_type": "government_official_account",
           "source_published_at": "2026-10-27T14:53:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -778,10 +1110,12 @@
           "source_type": "government_channel_post",
           "source_published_at": "2026-11-01T09:54:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -831,10 +1165,12 @@
           "source_type": "government_official_account_primary_post",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -914,10 +1250,12 @@
           "source_type": "official_race_site",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -1019,10 +1357,12 @@
           "source_type": "government_official_account",
           "source_published_at": "2026-09-13T13:53:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -1068,14 +1408,67 @@
           "source_type": "government_portal",
           "source_published_at": "2025-12-15T12:08:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
       "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_d5acf1f0a154",
+      "registry_id": "fuzhou_named_district_school_break_2026",
+      "record_kind": "activity",
+      "event_name": "2026福州部分区县秋假（鼓楼、台江等）",
+      "event_type": "holiday",
+      "city_name": "福州市",
+      "city_slug": "fuzhou",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-18",
+      "end_at": "2026-11-20",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-20"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "正文点名鼓楼、台江、仓山、晋安、连江等区县的幼儿园、小学、初中；市属学校按所在区县安排，不是全市统一假期。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://my-h5news.app.xinhuanet.com/chaobian-difanglink/fj.news.cn/20260722/5e4bf51c592e4f51b1f0372c2c4a1f18/c.html",
+          "publisher": "新华网（转载福州晚报）",
+          "source_type": "institutional_media",
+          "source_published_at": "2026-07-22T10:45:22+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "仅登记正文点名的鼓楼、台江、仓山、晋安、连江等区县，不外推到全市统一日期。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
     },
     {
@@ -1123,10 +1516,12 @@
           "source_type": "government_official_account",
           "source_published_at": "2026-09-13T13:53:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -1174,10 +1569,12 @@
           "source_type": "government_portal_republication",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -1233,10 +1630,12 @@
           "source_type": "government_channel_post",
           "source_published_at": "2026-11-01T09:54:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -1282,10 +1681,12 @@
           "source_type": "government_channel_post",
           "source_published_at": "2026-11-01T09:54:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -1331,10 +1732,12 @@
           "source_type": "government_channel_post",
           "source_published_at": "2026-11-01T09:54:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -1386,10 +1789,12 @@
           "source_type": "government_official_account",
           "source_published_at": "2026-09-13T13:53:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -1435,14 +1840,75 @@
           "source_type": "official_event_organizer",
           "source_published_at": null,
           "source_published_date": "2026-08-18",
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "official_listing_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
       "last_evidence_check_at": "2026-11-04T01:40:15Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
+    },
+    {
+      "event_id": "act_c452b0ca6eb9",
+      "registry_id": "zhang_jie_wuhan_2026",
+      "record_kind": "activity",
+      "event_name": "2026张杰1982开往未LIVE巡回演唱会武汉站",
+      "event_type": "concert",
+      "city_name": "武汉市",
+      "city_slug": "wuhan",
+      "city_match": "text_confirmed",
+      "venue_name": "武汉体育中心体育场",
+      "start_at": "2026-11-27",
+      "end_at": "2026-11-29",
+      "sessions": [
+        {
+          "start_at": "2026-11-27",
+          "end_at": "2026-11-27"
+        },
+        {
+          "start_at": "2026-11-28",
+          "end_at": "2026-11-28"
+        },
+        {
+          "start_at": "2026-11-29",
+          "end_at": "2026-11-29"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://weibo.com/2/detail/5346690267876720",
+          "publisher": "武汉市文化和旅游局官方微博",
+          "source_type": "government_official_account",
+          "source_published_at": null,
+          "source_published_date": null,
+          "source_published_display": "9-24 15:09（年份未显示）",
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "正文明确2026年11月27日至29日；标题审批通过并不等于活动已实际举办。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
       "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
     },
     {
@@ -1484,10 +1950,12 @@
           "source_type": "government_channel_post",
           "source_published_at": "2026-11-01T09:54:00+08:00",
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-11-04T01:40:15Z",
           "last_observed_at": "2026-11-04T01:40:15Z",
           "checked_at": "2026-11-04T01:40:15Z",
           "access_status": "body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         }
       ],
@@ -1536,10 +2004,12 @@
           "source_type": "government_account_authenticated_mirror",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-29T15:29:47+08:00",
           "last_observed_at": "2026-10-29T15:29:47+08:00",
           "checked_at": "2026-10-29T15:29:47+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -1607,10 +2077,12 @@
           "source_type": "district_government_portal",
           "source_published_at": null,
           "source_published_date": null,
+          "source_published_display": null,
           "observed_at": "2026-10-30T09:47:49+08:00",
           "last_observed_at": "2026-10-30T09:47:49+08:00",
           "checked_at": "2026-10-30T09:47:49+08:00",
           "access_status": "historical_body_read",
+          "authority_note": "",
           "verification_status": "unverified"
         },
         {
@@ -1628,42 +2100,51 @@
       "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。"
     }
   ],
-  "backlog": [
+  "backlog": [],
+  "backlog_resolutions": [
     {
       "key": "jinan_school_break_2026",
       "event_name": "济南分区秋假",
       "city_name": "济南市",
       "topic": "holiday",
-      "status": "source_body_not_reopened",
+      "status": "source_body_reopened_pending",
       "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
       "source_url": "https://www.jinantimes.com.cn/news-39-5329372.html",
-      "note": "历史列出分区错峰；需核对教育部门或明确官方账号，不能合成一个全市日期。"
+      "note": "历史列出分区错峰；需核对教育部门或明确官方账号，不能合成一个全市日期。",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
     },
     {
       "key": "jackson_wang_nanjing_2026",
       "event_name": "王嘉尔南京演出",
       "city_name": "南京市",
       "topic": "concert",
-      "status": "primary_source_needed",
-      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99"
+      "status": "source_body_reopened_pending",
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
     },
     {
       "key": "zhang_jie_nanjing_2026",
       "event_name": "张杰南京演出",
       "city_name": "南京市",
       "topic": "concert",
-      "status": "source_body_not_reopened",
+      "status": "source_body_reopened_pending",
       "source_url": "https://3g.sina.com.cn/news/detail/5356069746381190.html",
-      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99"
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
     },
     {
       "key": "zhang_jie_wuhan_2026",
       "event_name": "张杰武汉演出",
       "city_name": "武汉市",
       "topic": "concert",
-      "status": "source_body_not_reopened",
+      "status": "source_body_reopened_pending",
       "source_url": "https://weibo.com/2/detail/5346690267876720",
-      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99"
+      "history_thread": "6ae14447-4a64-83ec-9ea9-932492257a99",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
     },
     {
       "key": "hanzhong_source_market_break_2026",
@@ -1671,9 +2152,67 @@
       "city_name": "汉中市",
       "impact_destination_city": "西安市",
       "topic": "holiday",
-      "status": "source_market_calendar_needed",
+      "status": "source_body_reopened_pending",
       "source_url": "https://cj.sina.com.cn/articles/view/1915671961/722ed59901901nmyq",
-      "note": "客源地汉中，不应冒充西安本地活动；客源流向及住宿增量未知。"
+      "note": "客源地汉中，不应冒充西安本地活动；客源流向及住宿增量未知。",
+      "checked_at": "2026-11-04T02:32:25Z",
+      "conclusion": "已补读来源并登记日期或客源地信号；仍待核验，不代表权威证据全部完备。"
+    }
+  ],
+  "source_market_signals": [
+    {
+      "event_id": "sig_a9e9cdf57024",
+      "registry_id": "hanzhong_source_market_break_2026",
+      "record_kind": "source_market_signal",
+      "event_name": "2026汉中幼儿园及义务教育阶段秋假",
+      "event_type": "holiday",
+      "city_name": "汉中市",
+      "city_slug": "hanzhong",
+      "city_match": "text_confirmed",
+      "venue_name": null,
+      "start_at": "2026-11-16",
+      "end_at": "2026-11-18",
+      "sessions": [
+        {
+          "start_at": "2026-11-16",
+          "end_at": "2026-11-18"
+        }
+      ],
+      "date_precision": "day",
+      "date_confidence": "source_body",
+      "event_date_role": "event",
+      "content_kind": "event_announcement",
+      "event_status": "unknown",
+      "review_status": "pending",
+      "event_confirmation": "unknown",
+      "scope_note": "客源地汉中的学校假期，仅供西安经营观察；没有证据证明客流流向西安或带来住宿增量，不能当作西安本地活动。",
+      "travel_windows": [],
+      "related_lead_ids": [],
+      "first_seen_at": "2026-11-04T02:32:25Z",
+      "last_seen_at": "2026-11-04T02:32:25Z",
+      "knowable_at": "2026-11-04T02:32:25Z",
+      "source_count": 1,
+      "sources": [
+        {
+          "source_url": "https://cj.sina.com.cn/articles/view/1915671961/722ed59901901nmyq",
+          "publisher": "陕西都市快报官方账号（转引汉中市教育局）",
+          "source_type": "institutional_media",
+          "source_published_at": "2026-11-02T13:30:00+08:00",
+          "source_published_date": null,
+          "source_published_display": null,
+          "observed_at": "2026-11-04T02:32:25Z",
+          "last_observed_at": "2026-11-04T02:32:25Z",
+          "checked_at": "2026-11-04T02:32:25Z",
+          "access_status": "body_read",
+          "authority_note": "正文明确引用汉中市教育局11月2日通知；南郑政府门户也列出该通知，但微信原文未能打开。",
+          "verification_status": "unverified"
+        }
+      ],
+      "last_evidence_check_at": "2026-11-04T02:32:25Z",
+      "candidate_note": "来源正文日期；仍待核验，不代表真实住宿需求增量。",
+      "impact_destination_cities": [
+        "西安市"
+      ]
     }
   ]
 }

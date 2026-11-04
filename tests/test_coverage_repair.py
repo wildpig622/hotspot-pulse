@@ -29,6 +29,14 @@ class CoverageRepairTests(unittest.TestCase):
         self.assertEqual(collect.classify_event('成都中小学秋假放假时间公布'), 'holiday')
         self.assertEqual(collect.classify_event('深圳APEC领导人会议'), 'conference')
         self.assertEqual(collect.classify_event('许佳琪续假期巡回演唱会成都站'), 'concert')
+        self.assertEqual(collect.classify_event('杭州话剧'), 'concert')
+        self.assertTrue(all(term in collect.KEYWORDS for topic in collect.FEED_TOPICS for term in topic['terms']))
+        self.assertEqual(collect.classify_event('深圳高交会'), 'exhibition')
+        disputed = collect.build_candidate(self.city, {'title': '杭州秋假时间11月11日—13日定了？相关部门回应', 'url': 'https://news.example/response'}, '2026-11-04T01:00:00Z', self.now.date())
+        self.assertFalse(collect.is_upcoming_event(disputed, self.now.date()))
+        cancelled = collect.build_candidate(self.city, {'title': '杭州音乐会将于2026年11月11日举行', 'url': 'https://venue.example/show'}, '2026-11-04T01:00:00Z', self.now.date())
+        cancelled['event_status'] = 'cancelled'
+        self.assertFalse(collect.is_upcoming_event(cancelled, self.now.date()))
         self.assertEqual(collect.classify_content('德阳秋假分批错峰时间公布'), 'schedule_roundup')
         row = collect.build_candidate(self.city, {'title': '杭州中小学秋假放假时间：2026年11月11日至13日',
                                                 'url': 'https://education.example/calendar'}, '2026-11-04T01:00:00Z', self.now.date())
@@ -130,11 +138,19 @@ class CoverageRepairTests(unittest.TestCase):
         payload = build_registry_payload(collect.ROOT, [], cities, '2026-11-04T01:00:00Z', date(2026, 11, 4))
         activities = payload['data']
         holidays = [row for row in activities if row['event_type'] == 'holiday']
-        self.assertEqual(len(holidays), 4)
+        self.assertEqual(len([row for row in holidays if row['city_name'] in {'成都市', '德阳市', '遂宁市'}]), 4)
         deyang = [row for row in holidays if row['city_name'] == '德阳市']
         self.assertEqual({row['start_at'] for row in deyang}, {'2026-11-18', '2026-11-25'})
         self.assertTrue(any('林忆莲' in row['event_name'] for row in activities))
         self.assertTrue(any('APEC' in row['event_name'] for row in activities))
+        lixia = next(row for row in activities if row['registry_id'] == 'jinan_lixia_school_break_2026')
+        self.assertEqual([row['start_at'] for row in lixia['sessions']], ['2026-11-06', '2026-11-09'])
+        jackson = next(row for row in activities if row['registry_id'] == 'jackson_wang_nanjing_2026')
+        self.assertEqual(len(jackson['sources']), 2)
+        signal = payload['source_market_signals'][0]
+        self.assertEqual(signal['city_name'], '汉中市')
+        self.assertEqual(signal['impact_destination_cities'], ['西安市'])
+        self.assertFalse(any(row['city_name'] == '汉中市' for row in activities))
         coverage = build_coverage(cities, list(collect.FEED_TOPICS), [], activities, [], '2026-11-04T01:00:00Z')
         self.assertEqual(len(coverage['data']), 168)
         self.assertTrue(all(row['coverage_status'] != 'complete' for row in coverage['data']))
