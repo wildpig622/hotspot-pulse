@@ -72,7 +72,7 @@ jobs:
       - name: Validate complete refreshed snapshots before committing
         id: quality
         if: steps.collect.outcome == 'success'
-        run: python scripts/check_snapshot_quality.py --require-full-scope
+        run: python scripts/check_snapshot_quality.py --require-full-scope --require-discovery-calendar
 
       - name: Commit refreshed JSON snapshots
         if: ${{ !cancelled() && (steps.quality.outcome == 'success' || steps.collect.outcome == 'failure') }}

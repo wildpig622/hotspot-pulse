@@ -68,7 +68,7 @@ jobs:
           python-version: "3.12"
 
       - name: Validate full-scope collection and snapshot freshness
-        run: python scripts/check_snapshot_quality.py --require-full-scope --max-age-hours 24
+        run: python scripts/check_snapshot_quality.py --require-full-scope --max-age-hours 24 --require-discovery-calendar
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

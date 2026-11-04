@@ -52,7 +52,7 @@ def rebuild(snapshot: dict, cities: list[dict], health: dict, today: date, gener
         'data_note': '新闻线索与activities.json活动日历分开。旧数据仅规范化；源采集时间不变，未自动核验。',
     })
     # generated_at describes this file; last_collection_at remains the RSS time.
-    coverage = build_coverage(cities, list(collect.FEED_TOPICS), rows, activity_payload['data'], health.get('feed_results', []), generated_at)
+    coverage = build_coverage(cities, list(collect.FEED_TOPICS), rows, activity_payload['data'], health.get('feed_results', []), generated_at, activity_payload['discovery_candidates'])
     city_payload = {'meta': {'api_version': 'v1', 'generated_at': generated_at, 'city_count': len(cities)}, 'data': [
         dict(city, candidate_count=sum(row.get('city_slug') == city['city_slug'] for row in rows),
              activity_count=sum(row['city_slug'] == city['city_slug'] for row in activity_payload['data'])) for city in cities

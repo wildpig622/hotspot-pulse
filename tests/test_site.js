@@ -60,6 +60,35 @@ function calendarRow(extra = {}) {
     sessions:[{start_at:"2026-11-11",end_at:"2026-11-13"}], scope_note:"部分学校，高三除外", sources:[], ...extra};
 }
 
+test("Chongqing news candidates enter the default calendar with distinct evidence labels and PNG provenance", async () => {
+  const raw = calendarRow({event_id:'evt_cq',record_kind:undefined,city_name:'重庆市',city_slug:'chongqing',event_name:'重庆音乐会',date_confidence:'explicit_year',sessions:undefined});
+  const candidate = {...raw,record_kind:'discovery_candidate',evidence_level:'title_or_rss_summary'};
+  let exported;
+  const nodes = await loadPage([raw], {activities:{data:[],discovery_candidates:[candidate]},shareApi:{plan(ctx,model){exported=model;return {pages:[{}]};},render(){},toBlob:async()=>({type:'image/png'})}});
+  nodes.cityFilter.value='重庆市';nodes.cityFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'1 条');
+  assert.match(nodes.eventsList.innerHTML,/新闻候选 · 正文待核对/);
+  assert.doesNotMatch(nodes.eventsList.innerHTML,/来源日期已整理/);
+  assert.match(nodes.citySummary.textContent,/重庆市：已采 1 条新闻线索/);
+  await nodes.exportPngBtn.listeners.click();
+  assert.match(exported.rows[0].content,/正文待核对，可能重复/);
+  assert.equal(exported.rows[0].review,'待核验');
+});
+
+test("a city with no safe calendar dates exposes all its leads without retaining contradictory filters", async () => {
+  const raw=calendarRow({event_id:'evt_undated_cq',record_kind:undefined,city_name:'重庆市',city_slug:'chongqing',start_at:null,end_at:null,sessions:undefined,event_date_role:'unknown'});
+  const nodes=await loadPage([raw],{activities:{data:[],discovery_candidates:[]}});
+  nodes.cityFilter.value='重庆市';nodes.searchInput.value='not matching';nodes.dateFrom.value='2026-11-20';nodes.cityFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'0 条');
+  assert.match(nodes.eventsList.innerHTML,/已采 1 条新闻线索/);
+  nodes.showCityLeadsBtn.listeners.click();
+  assert.equal(nodes.cityFilter.value,'重庆市');
+  assert.equal(nodes.dateFrom.value,'');
+  assert.equal(nodes.searchInput.value,'');
+  assert.equal(nodes.recordFilter.value,'leads');
+  assert.equal(nodes.resultCount.textContent,'1 条');
+});
+
 test("activity calendar and news leads remain distinct, with clear totals and scoped holiday dates", async () => {
   const row = calendarRow({travel_windows:[{start_at:"2026-11-11",end_at:"2026-11-15"}]});
   const nodes = await loadPage(snapshot.data, {activities:{meta:{generated_at:"2026-11-04T01:00:00Z"},data:[row]},recordLayer:"activities"});

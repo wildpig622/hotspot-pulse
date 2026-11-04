@@ -118,6 +118,52 @@
       "checked_at": "2026-11-04T02:32:25Z",
       "access_status": "body_read",
       "authority_note": "仅登记正文点名的鼓楼、台江、仓山、晋安、连江等区县，不外推到全市统一日期。"
+    },
+    "jackson_chongqing_main": {
+      "url": "https://3g.sina.com.cn/news/detail/5353165665077872.html",
+      "publisher": "TEAMWANGrecords（队王音乐官方微博）",
+      "source_type": "official_artist_label",
+      "published_at": "2026-10-12T12:00:00+08:00",
+      "checked_at": "2026-11-04T03:29:00Z",
+      "access_status": "body_read",
+      "authority_note": "官方音乐厂牌原帖的新浪移动正文；明确写出演出日期、重庆站及场馆。"
+    },
+    "jackson_chongqing_extra": {
+      "url": "https://3g.sina.com.cn/news/detail/5354977572687811.html",
+      "publisher": "TEAMWANGrecords（队王音乐官方微博）",
+      "source_type": "official_artist_label",
+      "published_at": "2026-10-17T12:00:00+08:00",
+      "checked_at": "2026-11-04T03:29:00Z",
+      "access_status": "body_read",
+      "authority_note": "官方音乐厂牌加场公告正文；11月29日为演出日期，预售链接不作为举办日期。"
+    },
+    "cq_shipping_2026": {
+      "url": "https://www.cqnews.net/web/content_1564313235309588480.html",
+      "publisher": "第1眼TV·华龙网",
+      "source_type": "institutional_media",
+      "published_at": "2026-10-26T16:19:00+08:00",
+      "checked_at": "2026-11-04T03:34:45Z",
+      "access_status": "body_read",
+      "authority_note": "媒体正文支持开幕日期；主办方为陆海新通道运营有限公司，尚未直接读取主办方公告，不推定会议结束日。"
+    },
+    "cq_noodle_opening_2026": {
+      "url": "https://www.cqnews.net/web/content_1567179258062528512.html",
+      "publisher": "第1眼新闻·华龙网",
+      "source_type": "institutional_media",
+      "published_at": "2026-11-03T14:38:00+08:00",
+      "checked_at": "2026-11-04T03:34:45Z",
+      "access_status": "body_read",
+      "authority_note": "新闻发布会报道支持11月11日开幕；这里只登记开幕日，不推定整个消费季结束日，与9月云阳活动分别识别。"
+    },
+    "cq_strawberry_2026": {
+      "url": "https://m.weibo.cn/2/detail/5360937009157008",
+      "publisher": "CQTV渝乐派官方账号",
+      "source_type": "institutional_media",
+      "published_at": null,
+      "checked_at": "2026-11-04T03:34:45Z",
+      "access_status": "body_read",
+      "authority_note": "电视媒体账号正文支持11月28—29日举办；11月3日为开票时间。主办方原帖尚未直接读到，仍待补查。",
+      "published_display": "11-2 22:40（页面未显示年份）"
     }
   },
   "data": [
@@ -521,6 +567,83 @@
         }
       ],
       "scope_note": "正文点名鼓楼、台江、仓山、晋安、连江等区县的幼儿园、小学、初中；市属学校按所在区县安排，不是全市统一假期。"
+    },
+    {
+      "registry_id": "jackson_chongqing_2026",
+      "event_name": "王嘉尔 MAGICMAN 2 世界巡演重庆站",
+      "event_type": "concert",
+      "city_name": "重庆市",
+      "venue_name": "华熙生物·润百颜ECM中心",
+      "sessions": [
+        {
+          "start_at": "2026-11-28",
+          "end_at": "2026-11-28"
+        },
+        {
+          "start_at": "2026-11-29",
+          "end_at": "2026-11-29"
+        }
+      ],
+      "source_key": "jackson_chongqing_main",
+      "additional_source_keys": [
+        "jackson_chongqing_extra"
+      ],
+      "related_lead_ids": [],
+      "scope_note": "两份官方厂牌公告分别支持11月28日与29日；安排仍待临近举办复查。"
+    },
+    {
+      "registry_id": "cq_shipping_2026",
+      "event_name": "2026陆海新通道航商大会",
+      "event_type": "conference",
+      "city_name": "重庆市",
+      "venue_name": "重庆科学会堂",
+      "sessions": [
+        {
+          "start_at": "2026-11-18",
+          "end_at": "2026-11-18"
+        }
+      ],
+      "source_key": "cq_shipping_2026",
+      "related_lead_ids": [
+        "evt_52f9ab43175e"
+      ],
+      "scope_note": "媒体正文支持开幕日期；主办方为陆海新通道运营有限公司，尚未直接读取主办方公告，不推定会议结束日。"
+    },
+    {
+      "registry_id": "cq_noodle_opening_2026",
+      "event_name": "2026重庆小面推广消费季暨第六届重庆小面文化节开幕",
+      "event_type": "festival",
+      "city_name": "重庆市",
+      "venue_name": "重庆市大渡口区",
+      "sessions": [
+        {
+          "start_at": "2026-11-11",
+          "end_at": "2026-11-11"
+        }
+      ],
+      "source_key": "cq_noodle_opening_2026",
+      "related_lead_ids": [
+        "evt_244213c7db7a"
+      ],
+      "scope_note": "新闻发布会报道支持11月11日开幕；这里只登记开幕日，不推定整个消费季结束日，与9月云阳活动分别识别。"
+    },
+    {
+      "registry_id": "cq_strawberry_2026",
+      "event_name": "2026重庆草莓音乐节",
+      "event_type": "festival",
+      "city_name": "重庆市",
+      "venue_name": "重庆国际博览中心",
+      "sessions": [
+        {
+          "start_at": "2026-11-28",
+          "end_at": "2026-11-29"
+        }
+      ],
+      "source_key": "cq_strawberry_2026",
+      "related_lead_ids": [
+        "evt_534b3a76bfa1"
+      ],
+      "scope_note": "电视媒体账号正文支持11月28—29日举办；11月3日为开票时间。主办方原帖尚未直接读到，仍待补查。"
     }
   ],
   "backlog": [],

@@ -1,0 +1,178 @@
+{
+  "as_of": "2026-11-04",
+  "baseline_commit": "24fc34f50c3fb03b5679a0e8d1da947cce70a07d",
+  "news_preserved": 3905,
+  "automatic_verified_promotions": 0,
+  "future_curated": 36,
+  "future_news_candidates": 29,
+  "cities": [
+    {
+      "city": "成都市",
+      "news": 205,
+      "curated_future": 11,
+      "dated_news_future": 1
+    },
+    {
+      "city": "南京市",
+      "news": 170,
+      "curated_future": 2,
+      "dated_news_future": 3
+    },
+    {
+      "city": "重庆市",
+      "news": 198,
+      "curated_future": 4,
+      "dated_news_future": 1
+    },
+    {
+      "city": "杭州市",
+      "news": 167,
+      "curated_future": 0,
+      "dated_news_future": 0
+    },
+    {
+      "city": "武汉市",
+      "news": 225,
+      "curated_future": 1,
+      "dated_news_future": 4
+    },
+    {
+      "city": "西安市",
+      "news": 190,
+      "curated_future": 0,
+      "dated_news_future": 0
+    },
+    {
+      "city": "深圳市",
+      "news": 139,
+      "curated_future": 2,
+      "dated_news_future": 0
+    },
+    {
+      "city": "南昌市",
+      "news": 138,
+      "curated_future": 2,
+      "dated_news_future": 1
+    },
+    {
+      "city": "广州市",
+      "news": 196,
+      "curated_future": 1,
+      "dated_news_future": 6
+    },
+    {
+      "city": "长沙市",
+      "news": 145,
+      "curated_future": 3,
+      "dated_news_future": 4
+    },
+    {
+      "city": "贵阳市",
+      "news": 163,
+      "curated_future": 0,
+      "dated_news_future": 1
+    },
+    {
+      "city": "沈阳市",
+      "news": 125,
+      "curated_future": 0,
+      "dated_news_future": 0
+    },
+    {
+      "city": "洛阳市",
+      "news": 75,
+      "curated_future": 0,
+      "dated_news_future": 0
+    },
+    {
+      "city": "珠海市",
+      "news": 155,
+      "curated_future": 0,
+      "dated_news_future": 1
+    },
+    {
+      "city": "昆明市",
+      "news": 154,
+      "curated_future": 1,
+      "dated_news_future": 1
+    },
+    {
+      "city": "郑州市",
+      "news": 137,
+      "curated_future": 1,
+      "dated_news_future": 1
+    },
+    {
+      "city": "南宁市",
+      "news": 92,
+      "curated_future": 1,
+      "dated_news_future": 1
+    },
+    {
+      "city": "徐州市",
+      "news": 111,
+      "curated_future": 0,
+      "dated_news_future": 0
+    },
+    {
+      "city": "合肥市",
+      "news": 118,
+      "curated_future": 0,
+      "dated_news_future": 0
+    },
+    {
+      "city": "苏州市",
+      "news": 161,
+      "curated_future": 0,
+      "dated_news_future": 1
+    },
+    {
+      "city": "福州市",
+      "news": 117,
+      "curated_future": 1,
+      "dated_news_future": 0
+    },
+    {
+      "city": "德阳市",
+      "news": 27,
+      "curated_future": 2,
+      "dated_news_future": 0
+    },
+    {
+      "city": "遂宁市",
+      "news": 30,
+      "curated_future": 1,
+      "dated_news_future": 0
+    },
+    {
+      "city": "济南市",
+      "news": 122,
+      "curated_future": 2,
+      "dated_news_future": 1
+    },
+    {
+      "city": "厦门市",
+      "news": 179,
+      "curated_future": 0,
+      "dated_news_future": 1
+    },
+    {
+      "city": "金华市",
+      "news": 78,
+      "curated_future": 1,
+      "dated_news_future": 0
+    },
+    {
+      "city": "天津市",
+      "news": 180,
+      "curated_future": 0,
+      "dated_news_future": 1
+    },
+    {
+      "city": "兰州市",
+      "news": 108,
+      "curated_future": 0,
+      "dated_news_future": 0
+    }
+  ]
+}
