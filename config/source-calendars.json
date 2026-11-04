@@ -2,7 +2,10 @@
   "version": 1,
   "source": "https://www.showstart.com/event/list",
   "source_type": "authorized_ticketing",
-  "max_records_per_city": 20,
+  "max_records_per_city": 100,
+  "max_pages": 12,
+  "page_size": 20,
+  "detail_checks_per_run": 40,
   "review_status": "pending",
   "data": [
     {"city_name":"成都市","city_code":28}, {"city_name":"南京市","city_code":25},

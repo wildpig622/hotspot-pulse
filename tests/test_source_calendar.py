@@ -49,7 +49,7 @@ class SourceCalendarTests(unittest.TestCase):
             parse_listing('<style>.show-list{}</style><p>login</p>', self.city, self.url, self.stamp, self.day)
 
     def test_duplicate_pages_do_not_inflate_records_and_failure_preserves_real_check_time(self):
-        body = '<div class="show-list">' + self.card() + '</div>'
+        body = '<div class="show-list">' + self.card() * 20 + '</div>'
         rows, checks = collect_source_calendar(collect.ROOT, [self.city], self.stamp, self.day, transport=lambda url: body)
         self.assertEqual(len(rows), 1)
         self.assertEqual(len(checks[0]['pages']), 2)

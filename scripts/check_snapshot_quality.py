@@ -24,6 +24,7 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
     activities = calendar['data']
     signals = calendar.get('source_market_signals', [])
     source_candidates = calendar.get('source_candidates', [])
+    official_candidates = calendar.get('official_candidates', [])
     cities = collect.configured_cities()
     city_names = {city['city_name'] for city in cities}
     topic_names = {topic['key'] for topic in collect.FEED_TOPICS}
@@ -47,7 +48,7 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
         require(candidates == expected_candidates, 'dated news handoff is missing, duplicated, or modified')
         require(calendar['meta'].get('discovery_candidate_count') == len(candidates), 'dated news total mismatch')
 
-    for kind, rows in (('news', leads), ('activity', activities), ('source_market', signals), ('source_candidate', source_candidates)):
+    for kind, rows in (('news', leads), ('activity', activities), ('source_market', signals), ('source_candidate', source_candidates), ('official_candidate',official_candidates)):
         ids = [row.get('event_id') for row in rows]
         require(all(ids) and len(ids) == len(set(ids)), kind + ': missing or duplicate IDs')
         for row in rows:
@@ -119,10 +120,13 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
         require(len(source_checks) == len(city_names) and {r['city_name'] for r in source_checks} == city_names, 'source calendar cities missing or duplicated')
         for check in source_checks:
             pages = check.get('pages', [])
-            require(check.get('status') == 'ok' and len(pages) == 2 and all(p.get('status') == 'ok' for p in pages), 'source calendar read failed: ' + check['city_name'])
+            require(check.get('status') == 'ok' and bool(pages) and all(p.get('status') == 'ok' for p in pages), 'source calendar read failed: ' + check['city_name'])
             urls = [urlparse(p.get('url', '')) for p in pages]
             require(all(p.scheme == 'https' and p.hostname == 'www.showstart.com' and p.path == '/event/list' and parse_qs(p.query).get('cityCode') == [codes.get(check['city_name'])] for p in urls), 'source calendar route mismatch')
-            require({parse_qs(p.query).get('pageNo', [''])[0] for p in urls} == {'1', '2'}, 'source calendar page duplicated or missing')
+            numbers=[int(parse_qs(p.query).get('pageNo',['0'])[0]) for p in urls]
+            require(numbers == list(range(1,len(numbers)+1)), 'source calendar page duplicated or missing')
+            if check.get('pagination'):
+                require(check['pagination'].get('stop_reason') in {'exhausted','repeated_page','record_limit','page_limit'}, 'invalid pagination completion state')
     if require_city_calendar:
         try:
             from .activity_registry import activity_is_future

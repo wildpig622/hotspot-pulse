@@ -5,6 +5,7 @@
   var CITIES_URL = "./api/v1/cities.json";
   var ACTIVITIES_URL = "./api/v1/activities.json";
   var COVERAGE_URL = "./api/v1/coverage.json";
+  var EVENT_FEED_URL = "./api/v2/events.json";
   var TYPE_LABELS = { concert: "演出 / 演唱会", exhibition: "展会", sports: "赛事", festival: "节庆", holiday: "学生假期 / 放假调整", conference: "会议 / 峰会", other: "其他" };
   var CONTENT_LABELS = { event_announcement: "活动公告", uncertain: "活动线索待核实", ticketing_notice: "开票 / 售票信息", registration_notice: "报名信息", schedule_roundup: "排期汇总", guide: "攻略 / 购票资讯", past_report: "历史报道", other: "其他资讯" };
   var NON_EVENT_KINDS = { guide: true, schedule_roundup: true, ticketing_notice: true, registration_notice: true, other: true };
@@ -73,6 +74,7 @@
   }
   function isUpcomingDatedEvent(event, today) {
     if (event.review_status === "rejected") return false;
+    if (["needs_date_review", "not_recently_observed", "expired"].indexOf(event.availability) >= 0) return false;
     var kind = contentKind(event);
     if (kind !== "event_announcement" && kind !== "uncertain") return false;
     if (futureExclusion(event)) return false;
@@ -209,12 +211,12 @@
     $("coverageSummary").textContent = "新闻线索 " + state.leads.length + " 条 · 已整理活动 " + state.activities.length + " 项 · 票务日期候选 " + state.sourceCandidates.length + " 条 · 带日期新闻候选 " + state.discoveryCandidates.length + " 条。候选可能重复，仍待核验。假期 " + state.activities.filter(function (event) { return event.event_type === "holiday"; }).length + " 项。" +
       (state.calendarAvailable ? "活动来源与日期仍待核验，28城×6类内容持续补齐。" : "活动日历暂不可用，当前显示新闻线索。") +
       (state.sourceMarketSignals.length ? " 另有 " + state.sourceMarketSignals.length + " 项客源地假期信号，单独观察。" : "") +
-      " 采集采用手动执行，网页刷新不会补采；日历整理于 " + formatTime(state.calendarMeta.generated_at) + "。";
+      " 每天北京时间08:00、16:00自动更新，平台任务可能排队延迟；网页刷新读取已发布快照。日历整理于 " + formatTime(state.calendarMeta.generated_at) + "。" + (state.canonicalEvents ? " 统一活动记录 " + state.canonicalEvents.length + " 项；已明确关联的重复报道合并展示。" : "");
   }
   function selectRecordLayer() {
     if (!state.calendarAvailable) $("recordFilter").value = "leads";
     else if (!$("recordFilter").value) $("recordFilter").value = "activities";
-    state.events = $("recordFilter").value === "activities" && state.calendarAvailable ? state.activities.concat(state.discoveryCandidates, state.sourceCandidates) : state.leads;
+    state.events = $("recordFilter").value === "activities" && state.calendarAvailable ? (state.canonicalEvents || state.activities.concat(state.discoveryCandidates, state.sourceCandidates)) : state.leads;
   }
   function renderCoverage() {
     var city = $("cityFilter").value;
@@ -490,7 +492,7 @@
     $("refreshBtn").disabled = true;
     $("refreshBtn").textContent = "读取中…";
     $("feedError").hidden = true;
-    Promise.allSettled([fetchJson(API_URL), fetchJson(HEALTH_URL), fetchJson(CITIES_URL), fetchJson(ACTIVITIES_URL), fetchJson(COVERAGE_URL)]).then(function (results) {
+    Promise.allSettled([fetchJson(API_URL), fetchJson(HEALTH_URL), fetchJson(CITIES_URL), fetchJson(ACTIVITIES_URL), fetchJson(COVERAGE_URL), fetchJson(EVENT_FEED_URL)]).then(function (results) {
       if (results[0].status === "fulfilled") {
         state.meta = results[0].value.meta || {};
         state.leads = Array.isArray(results[0].value.data) ? results[0].value.data.map(function (event) { return legacyDateView(event, beijingToday()); }) : [];
@@ -509,6 +511,17 @@
       state.backlog = state.calendarAvailable ? results[3].value.backlog || [] : [];
       state.sourceMarketSignals = state.calendarAvailable ? results[3].value.source_market_signals || [] : [];
       state.coverage = results[4].status === "fulfilled" ? results[4].value : {};
+      state.canonicalEvents = null;
+      if (results[5].status === "fulfilled" && results[5].value.meta && results[5].value.meta.schema_version === "2.0" && Array.isArray(results[5].value.data)) {
+        state.canonicalEvents = results[5].value.data;
+        state.calendarAvailable = true;
+        var feedMeta = results[5].value.meta;
+        var stale = feedMeta.is_stale || Date.now() > Date.parse(feedMeta.expires_at);
+        if (stale || feedMeta.using_cached_data) {
+          $("feedError").hidden = false;
+          $("feedError").textContent = (stale ? "活动数据已过期。" : "本轮更新未通过，正在展示保留数据。") + "上次成功采集：" + formatTime(feedMeta.last_successful_collection_at) + "；每天北京时间08:00、16:00更新。";
+        }
+      }
       selectRecordLayer();
       fillCities(); renderMetrics(); renderEvents();
     }).catch(function (error) {

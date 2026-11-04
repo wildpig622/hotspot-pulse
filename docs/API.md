@@ -1,6 +1,6 @@
 # Static JSON API v1
 
-公开根地址：<https://wildpig622.github.io/hotspot-pulse/api/v1/>。本文描述本分支的 schema 1.2；部署之前，公开站点仍返回旧版本。所有筛选在客户端执行。
+公开根地址：<https://wildpig622.github.io/hotspot-pulse/api/v1/>。v1保持来源分层兼容，schema 1.5增加官方结构化候选与检查记录。新接入使用 [v2合同](API-v2.md)，避免直接将新闻当作活动。所有筛选在客户端执行。
 
 ## hotspots.json：新闻线索
 
@@ -32,8 +32,8 @@
 
 ## 核验与执行
 
-自动发现及登记输出均为 `review_status=pending`、`event_status=unknown`；没有自动升级 verified 的路径。已有人工 verified 记录会保留。当前没有核验写入界面，也不宣称未确认活动一定举办或带来住宿增量。
+自动发现及登记输出为 `review_status=pending`；明确取消/延期证据可更新 `event_status`；没有自动升级 verified 的路径。已有人工 verified 记录会保留。当前没有核验写入界面，也不宣称未确认活动一定举办或带来住宿增量。
 
-没有定时采集，也不在推送代码后自动采集或部署。采集和部署是两条独立手动工作流，分别要求完整 main 提交号与确认词，执行需另行授权。网页刷新只读取已有 JSON。
+按用户授权，每天北京时间08:00、16:00采集，通过质量检查后自动发布。普通代码推送不触发采集或发布；独立手动入口保留。网页刷新只读取已有JSON。
 
 采集成功后、提交快照之前运行 `check_snapshot_quality.py --require-full-scope`，检查完整168条线路、全部新闻/活动/客源地记录、日期、身份、来源和计数。部署还要求 `--max-age-hours 24`，整理时间不能代替真实采集时间。该检查验证数据结构和已定义的排除规则，不宣称全网事实完备。

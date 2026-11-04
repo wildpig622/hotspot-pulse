@@ -40,7 +40,8 @@ async function loadPage(events, options = {}) {
     const payload = url.includes("hotspots.json") ? {meta: options.meta || snapshot.meta, data: events}
       : url.includes("cities.json") ? {data: cities}
       : url.includes("activities.json") ? options.activities || {}
-      : url.includes("health.json") ? options.health || {} : {};
+      : url.includes("health.json") ? options.health || {}
+      : url.includes("/v2/events.json") ? options.eventFeed || {} : {};
     return {ok: true, json: async () => payload};
   };
   class TestURL extends URL {
@@ -59,6 +60,22 @@ function calendarRow(extra = {}) {
     date_precision:"day", date_confidence:"source_body", start_at:"2026-11-11", end_at:"2026-11-13", review_status:"pending",
     sessions:[{start_at:"2026-11-11",end_at:"2026-11-13"}], scope_note:"部分学校，高三除外", sources:[], ...extra};
 }
+
+test('v2 canonical records replace duplicate member rows and keep raw leads accessible',async()=>{
+  const event=calendarRow({event_id:'hp_1234567890abcdef',availability:'candidate'});
+  const nodes=await loadPage(snapshot.data,{recordLayer:'activities',activities:{data:[calendarRow(),calendarRow({event_id:'duplicate'})]},eventFeed:{meta:{schema_version:'2.0',expires_at:'2026-11-05T00:00:00Z'},data:[event]}});
+  assert.equal((nodes.eventsList.innerHTML.match(/杭州部分学校秋假/g)||[]).length,1);
+  nodes.recordFilter.value='leads';nodes.recordFilter.listeners.change();
+  nodes.contentFilter.value='all';nodes.contentFilter.listeners.change();
+  assert.ok(nodes.eventsList.innerHTML.includes(snapshot.data[0].event_name));
+});
+
+test('v2 stale or cached feed visibly reports its actual collection time',async()=>{
+  const nodes=await loadPage([],{recordLayer:'activities',eventFeed:{meta:{schema_version:'2.0',expires_at:'2026-10-28T00:00:00Z',last_successful_collection_at:'2026-10-27T00:00:00Z',using_cached_data:true},data:[calendarRow()]}});
+  assert.equal(nodes.feedError.hidden,false);
+  assert.ok(nodes.feedError.textContent.includes('已过期'));
+  assert.ok(nodes.feedError.textContent.includes('上次成功采集'));
+});
 
 test("dated ticketing listings fill a previously empty city and keep their evidence label in PNG", async () => {
   const listing=calendarRow({event_id:'src_ly',record_kind:'source_candidate',evidence_level:'ticketing_listing',date_confidence:'source_listing',event_name:'洛阳话剧',city_name:'洛阳市',city_slug:'luoyang',scope_note:'仅列此场开始日，详情尚未读取'});
