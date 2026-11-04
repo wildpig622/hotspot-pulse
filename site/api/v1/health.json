@@ -1,154 +1,1023 @@
 {
   "api_version": "v1",
-  "last_run_at": "2026-10-30T01:55:55Z",
-  "last_run_local": "2026-10-30 09:55:55 +08:00",
+  "last_run_at": "2026-11-04T02:58:30Z",
+  "last_run_local": "2026-11-04 10:58:30 +08:00",
   "status": "healthy",
   "source_system": "Google News RSS",
   "city_count": 28,
-  "successful_feeds": 28,
+  "feed_count": 168,
+  "successful_feeds": 168,
   "failed_feeds": 0,
-  "rss_items_seen": 492,
-  "candidate_count": 529,
+  "rss_items_seen": 5165,
+  "candidate_count": 3905,
   "feed_results": [
     {
       "city_name": "成都市",
+      "topic": "concert",
       "status": "ok",
-      "items": 20
+      "items": 25
+    },
+    {
+      "city_name": "成都市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "成都市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 31
+    },
+    {
+      "city_name": "成都市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "成都市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 26
+    },
+    {
+      "city_name": "成都市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 50
     },
     {
       "city_name": "南京市",
+      "topic": "concert",
       "status": "ok",
-      "items": 20
+      "items": 27
+    },
+    {
+      "city_name": "南京市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 44
+    },
+    {
+      "city_name": "南京市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 8
+    },
+    {
+      "city_name": "南京市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "南京市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "南京市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 50
     },
     {
       "city_name": "重庆市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 47
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 17
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 47
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "重庆市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 41
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 18
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 12
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 25
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 47
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 31
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 44
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 18
+    },
+    {
+      "city_name": "武汉市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "西安市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "西安市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "西安市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "西安市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 12
+    },
+    {
+      "city_name": "西安市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "西安市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 13
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 27
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 25
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 45
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 17
+    },
+    {
+      "city_name": "深圳市",
+      "topic": "holiday",
       "status": "ok",
       "items": 10
     },
     {
-      "city_name": "杭州市",
-      "status": "ok",
-      "items": 20
-    },
-    {
-      "city_name": "武汉市",
-      "status": "ok",
-      "items": 20
-    },
-    {
-      "city_name": "西安市",
-      "status": "ok",
-      "items": 20
-    },
-    {
       "city_name": "深圳市",
+      "topic": "conference",
       "status": "ok",
-      "items": 20
+      "items": 36
     },
     {
       "city_name": "南昌市",
+      "topic": "concert",
       "status": "ok",
-      "items": 19
+      "items": 12
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 42
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 45
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 43
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 47
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 32
     },
     {
       "city_name": "广州市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 23
+    },
+    {
+      "city_name": "广州市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 22
+    },
+    {
+      "city_name": "广州市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "广州市",
+      "topic": "festival",
       "status": "ok",
       "items": 20
+    },
+    {
+      "city_name": "广州市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "广州市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 50
     },
     {
       "city_name": "长沙市",
+      "topic": "concert",
       "status": "ok",
-      "items": 20
+      "items": 26
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 49
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 42
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 17
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 50
     },
     {
       "city_name": "贵阳市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 41
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 42
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 46
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 45
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 26
+    },
+    {
+      "city_name": "贵阳市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 49
+    },
+    {
+      "city_name": "沈阳市",
+      "topic": "concert",
       "status": "ok",
       "items": 10
     },
     {
       "city_name": "沈阳市",
-      "status": "ok",
-      "items": 11
-    },
-    {
-      "city_name": "洛阳市",
+      "topic": "exhibition",
       "status": "ok",
       "items": 9
     },
     {
-      "city_name": "珠海市",
+      "city_name": "沈阳市",
+      "topic": "sports",
       "status": "ok",
-      "items": 20
+      "items": 44
     },
     {
-      "city_name": "昆明市",
+      "city_name": "沈阳市",
+      "topic": "festival",
       "status": "ok",
-      "items": 20
+      "items": 33
     },
     {
-      "city_name": "郑州市",
+      "city_name": "沈阳市",
+      "topic": "holiday",
       "status": "ok",
-      "items": 20
+      "items": 44
     },
     {
-      "city_name": "南宁市",
+      "city_name": "沈阳市",
+      "topic": "conference",
       "status": "ok",
-      "items": 16
+      "items": 49
     },
     {
-      "city_name": "徐州市",
+      "city_name": "洛阳市",
+      "topic": "concert",
       "status": "ok",
-      "items": 20
+      "items": 45
     },
     {
-      "city_name": "合肥市",
+      "city_name": "洛阳市",
+      "topic": "exhibition",
       "status": "ok",
-      "items": 20
+      "items": 41
     },
     {
-      "city_name": "苏州市",
+      "city_name": "洛阳市",
+      "topic": "sports",
       "status": "ok",
-      "items": 14
+      "items": 26
     },
     {
-      "city_name": "福州市",
+      "city_name": "洛阳市",
+      "topic": "festival",
       "status": "ok",
-      "items": 20
+      "items": 9
     },
     {
-      "city_name": "德阳市",
+      "city_name": "洛阳市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 10
+    },
+    {
+      "city_name": "洛阳市",
+      "topic": "conference",
       "status": "ok",
       "items": 8
     },
     {
-      "city_name": "遂宁市",
+      "city_name": "珠海市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 49
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 42
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 46
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 36
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "珠海市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 16
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 46
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 41
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 43
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 43
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 47
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 31
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 10
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 11
+    },
+    {
+      "city_name": "郑州市",
+      "topic": "conference",
       "status": "ok",
       "items": 15
     },
     {
-      "city_name": "济南市",
+      "city_name": "南宁市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 11
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 8
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 41
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 10
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 8
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 47
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 40
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 21
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 26
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 24
+    },
+    {
+      "city_name": "徐州市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 49
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 10
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 40
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 44
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 48
+    },
+    {
+      "city_name": "合肥市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 19
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 49
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 40
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 7
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 46
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 44
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 24
+    },
+    {
+      "city_name": "福州市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 47
+    },
+    {
+      "city_name": "福州市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "福州市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 13
+    },
+    {
+      "city_name": "福州市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 41
+    },
+    {
+      "city_name": "福州市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "福州市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 12
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 10
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 6
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 11
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 4
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 3
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 4
+    },
+    {
+      "city_name": "遂宁市",
+      "topic": "conference",
       "status": "ok",
       "items": 20
+    },
+    {
+      "city_name": "济南市",
+      "topic": "concert",
+      "status": "ok",
+      "items": 49
+    },
+    {
+      "city_name": "济南市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 13
+    },
+    {
+      "city_name": "济南市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "济南市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 10
+    },
+    {
+      "city_name": "济南市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 9
+    },
+    {
+      "city_name": "济南市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 12
     },
     {
       "city_name": "厦门市",
+      "topic": "concert",
       "status": "ok",
-      "items": 20
+      "items": 44
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 43
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 47
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 13
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 31
+    },
+    {
+      "city_name": "厦门市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 50
     },
     {
       "city_name": "金华市",
+      "topic": "concert",
       "status": "ok",
-      "items": 20
+      "items": 10
+    },
+    {
+      "city_name": "金华市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 39
+    },
+    {
+      "city_name": "金华市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 12
+    },
+    {
+      "city_name": "金华市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 14
+    },
+    {
+      "city_name": "金华市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 21
+    },
+    {
+      "city_name": "金华市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 40
     },
     {
       "city_name": "天津市",
+      "topic": "concert",
       "status": "ok",
-      "items": 20
+      "items": 16
+    },
+    {
+      "city_name": "天津市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "天津市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "天津市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 35
+    },
+    {
+      "city_name": "天津市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 12
+    },
+    {
+      "city_name": "天津市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 50
     },
     {
       "city_name": "兰州市",
+      "topic": "concert",
       "status": "ok",
-      "items": 20
+      "items": 9
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "exhibition",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "sports",
+      "status": "ok",
+      "items": 18
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "festival",
+      "status": "ok",
+      "items": 10
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "holiday",
+      "status": "ok",
+      "items": 50
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "conference",
+      "status": "ok",
+      "items": 16
     }
   ],
   "note": "如果 status=failed，上一份事件快照会保留，不会用空数据覆盖。"

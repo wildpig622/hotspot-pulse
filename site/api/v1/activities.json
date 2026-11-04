@@ -2,7 +2,7 @@
   "meta": {
     "api_version": "v1",
     "schema_version": "1.2",
-    "generated_at": "2026-11-04T02:42:25Z",
+    "generated_at": "2026-11-04T02:58:30Z",
     "coverage_status": "partial",
     "activity_count": 34,
     "source_market_signal_count": 1,
@@ -68,7 +68,7 @@
           "source_type": "media",
           "source_published_at": "2026-10-26T06:52:45Z",
           "observed_at": "2026-10-29T03:08:28Z",
-          "last_observed_at": "2026-10-30T01:55:55Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
           "verification_status": "unverified"
         }
       ],
@@ -132,7 +132,7 @@
           "source_type": "other",
           "source_published_at": "2026-10-19T07:00:00Z",
           "observed_at": "2026-10-29T03:08:28Z",
-          "last_observed_at": "2026-10-30T01:55:55Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
           "verification_status": "unverified"
         },
         {
@@ -185,7 +185,7 @@
       "first_seen_at": "2026-10-30T09:47:49+08:00",
       "last_seen_at": "2026-10-30T09:47:49+08:00",
       "knowable_at": "2026-10-30T09:47:49+08:00",
-      "source_count": 5,
+      "source_count": 7,
       "sources": [
         {
           "source_url": "https://m.thepaper.cn/newsDetail_forward_33434249",
@@ -212,6 +212,16 @@
           "verification_status": "unverified"
         },
         {
+          "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTjMzSFl5aTNpVV9fT25TdWlJWDBWTEdIdWxXbE9SSUdCcWQ5TWZRWXp1MDM4RElWZ3dreFM1Z0Jac3hONDR1c05KY3Z1ckxzTVNyTHRlY2J1THZXSWF3T0JSWV9ZSWVlQlp5NnJxRDJEajJIenNWcDlSa0psS29VWm9KMEs?oc=5",
+          "publisher": "杭州网",
+          "publisher_url": "https://hznews.hangzhou.com.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-27T23:30:29Z",
+          "observed_at": "2026-11-04T02:58:30Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
+          "verification_status": "unverified"
+        },
+        {
           "source_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOFhrWXhiVXBxeTdYSWNjZDlKNnYyZHVjTzFVMkl1dDl2RjZ5QURZaHJkb3VWb3FyMFFqUzFQRXdVTEdOS2g0d29QWF82Z09FNGs4LTlMQ2tHejNFYXlqM3BSX05IUk14Z2FQdHpFNXB2dmY0My1LdmVzTUhTSXJoQUVDdXQ5X25kTXVCNVhUSWotQXkyZmRKTWFTQUhuNG9Md3EzOEJORldwdGtDbUNSZXpSLUJvWTZQeUdzOWhveVY5ZEEyLTFtdDMzTHJYdnlxUVJrYTAyVzduM1ZGMFdVcklrc3BpX2xyTEtR?oc=5",
           "publisher": "手机新浪网",
           "publisher_url": "http://k.sina.com.cn",
@@ -229,6 +239,16 @@
           "source_published_at": "2026-10-27T12:01:00Z",
           "observed_at": "2026-10-29T03:08:28Z",
           "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VcVpwODZaQW1sS3FpTjEyaWQ1dlcxdThKdFBsVXUxUW12dkpGNjhLSy1JMFI5TDc0ZVRVQ2ZrQ2U3eC03QjB4a0RTNTZLYU0?oc=5",
+          "publisher": "新蓝网",
+          "publisher_url": "https://www.cztv.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-27T12:01:00Z",
+          "observed_at": "2026-11-04T02:58:30Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
           "verification_status": "unverified"
         },
         {
@@ -1242,7 +1262,7 @@
       "first_seen_at": "2026-10-30T09:47:49+08:00",
       "last_seen_at": "2026-10-30T09:47:49+08:00",
       "knowable_at": "2026-10-30T09:47:49+08:00",
-      "source_count": 6,
+      "source_count": 8,
       "sources": [
         {
           "source_url": "https://www.marathonchangsha.com/Detail/411",
@@ -1269,6 +1289,16 @@
           "verification_status": "unverified"
         },
         {
+          "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5hMjZnRFRtcXlrZTUyUlFsN2lkdHQ4dFV2di1TTXV6QkpNcG9RQ002bkNCZXZnRERwSmRsbkVPLXpQMWprRHNEd01NTUZfaVdHM0JWQkVVaG1zSkJ5czQtcEVISEZFczg?oc=5",
+          "publisher": "湖南红网",
+          "publisher_url": "https://sports.rednet.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-16T07:00:00Z",
+          "observed_at": "2026-11-04T02:58:30Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
+          "verification_status": "unverified"
+        },
+        {
           "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5RV3JxRlpKWWZSLXpJRmpJUldSS2l0dlZOdXg1aHlRd3hHN2dEeHVBa1NHa2p3Um84dWFuNmZoYm5fOS1UVUNGeS0xTEk?oc=5",
           "publisher": "凤凰网",
           "publisher_url": "https://feng.ifeng.com",
@@ -1286,6 +1316,16 @@
           "source_published_at": "2026-10-16T07:00:00Z",
           "observed_at": "2026-10-30T01:55:55Z",
           "last_observed_at": "2026-10-30T01:55:55Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xVjVqQmdKd3hHX1BzVS1MSk1JV1NjTW1lUE01dXN6UUhTTU5iaVJOOW1oZ3dlMmtMa0k3S2t4bGczVlJmZUNTZm14MFZNejRiVjhMdXVB?oc=5",
+          "publisher": "搜狐网",
+          "publisher_url": "https://www.sohu.com",
+          "source_type": "other",
+          "source_published_at": "2026-10-16T07:00:00Z",
+          "observed_at": "2026-11-04T02:58:30Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
           "verification_status": "unverified"
         },
         {
@@ -1584,7 +1624,7 @@
           "source_type": "other",
           "source_published_at": "2026-10-27T07:00:57Z",
           "observed_at": "2026-10-29T03:08:28Z",
-          "last_observed_at": "2026-10-30T01:55:55Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
           "verification_status": "unverified"
         }
       ],
@@ -2029,7 +2069,7 @@
           "source_type": "media",
           "source_published_at": "2026-10-14T07:00:00Z",
           "observed_at": "2026-10-29T03:08:28Z",
-          "last_observed_at": "2026-10-30T01:55:55Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
           "verification_status": "unverified"
         }
       ],
@@ -2069,7 +2109,7 @@
       "first_seen_at": "2026-10-30T09:47:49+08:00",
       "last_seen_at": "2026-10-30T09:47:49+08:00",
       "knowable_at": "2026-10-30T09:47:49+08:00",
-      "source_count": 2,
+      "source_count": 3,
       "sources": [
         {
           "source_url": "https://www.hp.gov.cn/xwzx/zwyw/content/post_11042181.html",
@@ -2092,7 +2132,17 @@
           "source_type": "media",
           "source_published_at": "2026-10-12T07:00:00Z",
           "observed_at": "2026-10-29T03:08:28Z",
-          "last_observed_at": "2026-10-30T01:55:55Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
+          "verification_status": "unverified"
+        },
+        {
+          "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ZUDdfbXJRZXcxYlRDOVlpVGRLRmFfRUM4QUZOLWp0elBhRmpMaDNHS2ExRnJ3TzQyR3FkMG1wZXlqS0VaRDJTaGlMcEFpLW9Ibi1TSWJLdnZiUTg2ZHZHYXZMTDBjR2J6ZFM0S1A3Y05ZRWMtRjB1LQ?oc=5",
+          "publisher": "新浪财经",
+          "publisher_url": "https://finance.sina.com.cn",
+          "source_type": "other",
+          "source_published_at": "2026-10-12T07:00:00Z",
+          "observed_at": "2026-11-04T02:58:30Z",
+          "last_observed_at": "2026-11-04T02:58:30Z",
           "verification_status": "unverified"
         }
       ],
