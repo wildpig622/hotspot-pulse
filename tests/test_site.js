@@ -77,6 +77,17 @@ test('v2 stale or cached feed visibly reports its actual collection time',async(
   assert.ok(nodes.feedError.textContent.includes('上次成功采集'));
 });
 
+test('planning window includes all of February and exposes a missing-month notice',async()=>{
+  const event=calendarRow({event_id:'hp_february',event_name:'成都二月演出',city_name:'成都市',city_slug:'chengdu',event_type:'concert',start_at:'2027-02-28',end_at:'2027-02-28',sessions:[{start_at:'2027-02-28',end_at:'2027-02-28'}]});
+  const meta={schema_version:'2.0',monitoring_complete_months:3,expires_at:'2026-11-10T00:00:00Z',monthly_coverage:[{month:'2027-01',candidate_count:0},{month:'2027-02',candidate_count:1}]};
+  const nodes=await loadPage([],{clockAt:'2026-11-09T04:00:00Z',recordLayer:'activities',eventFeed:{meta,data:[event]}});
+  assert.equal(nodes.resultCount.textContent,'1 条');
+  assert.match(nodes.viewExplanation.textContent,/2027-02-28/);
+  assert.match(nodes.coverageSummary.textContent,/2027-01：尚无日期候选，需补查/);
+  nodes.dateFrom.value='2027-02-01';nodes.dateTo.value='2027-02-28';nodes.dateFrom.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'1 条');
+});
+
 test("dated ticketing listings fill a previously empty city and keep their evidence label in PNG", async () => {
   const listing=calendarRow({event_id:'src_ly',record_kind:'source_candidate',evidence_level:'ticketing_listing',date_confidence:'source_listing',event_name:'洛阳话剧',city_name:'洛阳市',city_slug:'luoyang',scope_note:'仅列此场开始日，详情尚未读取'});
   let exported;

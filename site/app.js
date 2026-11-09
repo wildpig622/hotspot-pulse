@@ -64,6 +64,11 @@
     return sessions.map(function (row) { return { start: row.start_at, end: row.end_at || row.start_at }; });
   }
   function monitoringEnd(today) {
+    var completeMonths = Number(state.meta.monitoring_complete_months);
+    if (Number.isInteger(completeMonths) && completeMonths >= 1 && completeMonths <= 12) {
+      var parts = today.split("-").map(Number);
+      return new Date(Date.UTC(parts[0], parts[1] + completeMonths, 0)).toISOString().slice(0, 10);
+    }
     var horizon = Number(state.meta.monitoring_horizon_days || 365);
     var end = new Date(today + "T00:00:00Z");
     end.setUTCDate(end.getUTCDate() + Math.max(1, Math.min(365, horizon)));
@@ -211,7 +216,8 @@
     $("coverageSummary").textContent = "新闻线索 " + state.leads.length + " 条 · 已整理活动 " + state.activities.length + " 项 · 票务日期候选 " + state.sourceCandidates.length + " 条 · 带日期新闻候选 " + state.discoveryCandidates.length + " 条。候选可能重复，仍待核验。假期 " + state.activities.filter(function (event) { return event.event_type === "holiday"; }).length + " 项。" +
       (state.calendarAvailable ? "活动来源与日期仍待核验，28城×6类内容持续补齐。" : "活动日历暂不可用，当前显示新闻线索。") +
       (state.sourceMarketSignals.length ? " 另有 " + state.sourceMarketSignals.length + " 项客源地假期信号，单独观察。" : "") +
-      " 每天北京时间08:00、16:00自动更新，平台任务可能排队延迟；网页刷新读取已发布快照。日历整理于 " + formatTime(state.calendarMeta.generated_at) + "。" + (state.canonicalEvents ? " 统一活动记录 " + state.canonicalEvents.length + " 项；已明确关联的重复报道合并展示。" : "");
+      " 每天北京时间08:00、16:00自动更新，平台任务可能排队延迟；网页刷新读取已发布快照。日历整理于 " + formatTime(state.calendarMeta.generated_at) + "。" + (state.canonicalEvents ? " 统一活动记录 " + state.canonicalEvents.length + " 项；已明确关联的重复报道合并展示。" : "") +
+      ((state.planningMonths || []).map(function (m) {return " " + m.month + "：" + (m.candidate_count ? m.candidate_count + "条日期候选" : "尚无日期候选，需补查") + "。";}).join(""));
   }
   function selectRecordLayer() {
     if (!state.calendarAvailable) $("recordFilter").value = "leads";
@@ -512,10 +518,13 @@
       state.sourceMarketSignals = state.calendarAvailable ? results[3].value.source_market_signals || [] : [];
       state.coverage = results[4].status === "fulfilled" ? results[4].value : {};
       state.canonicalEvents = null;
+      state.planningMonths = [];
       if (results[5].status === "fulfilled" && results[5].value.meta && results[5].value.meta.schema_version === "2.0" && Array.isArray(results[5].value.data)) {
         state.canonicalEvents = results[5].value.data;
         state.calendarAvailable = true;
         var feedMeta = results[5].value.meta;
+        state.planningMonths = feedMeta.monthly_coverage || [];
+        if (feedMeta.monitoring_complete_months) state.meta.monitoring_complete_months = feedMeta.monitoring_complete_months;
         var stale = feedMeta.is_stale || Date.now() > Date.parse(feedMeta.expires_at);
         if (stale || feedMeta.using_cached_data) {
           $("feedError").hidden = false;

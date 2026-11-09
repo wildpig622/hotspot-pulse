@@ -143,7 +143,14 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
     if require_expanded_queries:
         for feed in feeds:
             queries = feed.get('query_results', [])
-            require(len(queries) == 2 and {q.get('route') for q in queries} == {'year_lookback', 'upcoming_months'}, 'expanded query routes missing or duplicated')
+            ordinary=[q for q in queries if q.get('route')!='planning_month']
+            require(len(ordinary) == 2 and {q.get('route') for q in ordinary} == {'year_lookback', 'upcoming_months'}, 'expanded query routes missing or duplicated')
+            months=payloads['hotspots']['meta'].get('monitoring_complete_months')
+            if months:
+                start=date.fromisoformat(payloads['hotspots']['meta']['monitoring_window']['start_at'])
+                expected_months={d.strftime('%Y-%m') for d in collect.future_months(start,{'monitoring_complete_months':months})}
+                monthly=[q for q in queries if q.get('route')=='planning_month']
+                require(len(monthly)==months and {q.get('month') for q in monthly}==expected_months,'planning month queries missing or duplicated')
             require(all(q.get('status') == 'ok' for q in queries), 'expanded query route failed')
         require(len(feeds) == len(expected), 'expanded query city/topic cells missing')
     if max_age_hours is not None:

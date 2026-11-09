@@ -6,8 +6,10 @@ from datetime import date
 from html.parser import HTMLParser
 try:
     from .source_calendar import fetch_listing
+    from .monitoring_window import window_end
 except ImportError:
     from source_calendar import fetch_listing
+    from monitoring_window import window_end
 
 
 class StructuredParser(HTMLParser):
@@ -41,7 +43,7 @@ def parse_events(body, source, cities, checked_at, today):
         if not city:continue
         try:
             start=date.fromisoformat(str(obj.get('startDate',''))[:10]);end=date.fromisoformat(str(obj.get('endDate') or obj.get('startDate'))[:10])
-            if end<start or end<today or (start-today).days>90:continue
+            if end<start or end<today or start>window_end(today):continue
         except ValueError:continue
         name=obj.get('name');venue=location.get('name')
         if not isinstance(name,str) or not name or not isinstance(venue,str) or not venue:continue

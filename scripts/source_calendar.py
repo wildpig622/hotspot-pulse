@@ -16,6 +16,10 @@ from datetime import date, datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
+try:
+    from .monitoring_window import window_end
+except ImportError:
+    from monitoring_window import window_end
 
 
 class ListingParser(HTMLParser):
@@ -92,7 +96,7 @@ def parse_listing(body: str, city: dict, url: str, checked_at: str, today: date,
             day = date(int(stamp[1]), int(stamp[2]), int(stamp[3]))
         except ValueError:
             continue
-        if (day < today and not include_status_changes) or (day - today).days > 90:
+        if (day < today and not include_status_changes) or day > window_end(today):
             continue
         title = re.sub(r'\s+', ' ', card['title']).strip()
         status = 'cancelled' if re.search(r'活动(?:已)?取消|演出(?:已)?取消|取消演出',title) else 'postponed' if re.search(r'延期|推迟',title) else 'unknown'

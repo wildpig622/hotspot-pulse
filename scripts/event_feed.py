@@ -7,6 +7,10 @@ import re
 import unicodedata
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+try:
+    from .monitoring_window import window_metadata, future_months
+except ImportError:
+    from monitoring_window import window_metadata, future_months
 
 API_VERSION = 'v2'
 SCHEMA_VERSION = '2.0'
@@ -172,7 +176,15 @@ def build_feed(calendar, news_meta, health, now, previous=None, links=None):
           'last_collection_at':news_meta.get('last_collection_at'),'collection_status':health.get('status','unknown'),
           'using_cached_data':health.get('status') in {'failed','degraded'} and health.get('data_updated') is False,
           'event_count':len(events),'source_record_count':len(rows),'linked_record_reduction':len(rows)-len(groups),
-          'cursor':cursor,'coverage_status':'partial','schedule_local':['08:00','16:00'],'timezone':'Asia/Shanghai',**current}
+          'cursor':cursor,'coverage_status':'partial','schedule_local':['08:00','16:00'],'timezone':'Asia/Shanghai',
+          **window_metadata(date.fromisoformat(today)),**current}
+    monthly=[]
+    for month in future_months(date.fromisoformat(today)):
+        start=month.isoformat();end=(date(month.year+int(month.month==12),month.month%12+1,1)-timedelta(days=1)).isoformat()
+        matches=[r for r in events if r['availability']=='candidate' and any(s['start_at']<=end and (s.get('end_at') or s['start_at'])>=start for s in r['sessions'])]
+        monthly.append({'month':start[:7],'candidate_count':len(matches),'city_count':len({r['city_name'] for r in matches}),
+                        'coverage_status':'partial' if matches else 'no_dated_candidates'})
+    meta['monthly_coverage']=monthly
     return {'events':{'meta':meta,'data':events},
             'changes':{'meta':{'api_version':API_VERSION,'schema_version':SCHEMA_VERSION,'cursor':cursor,'cursor_floor':changes[0]['cursor']-1 if changes else cursor},'data':changes},
             'state':{'membership':membership,'aliases':aliases,'occurrence_sequences':sequences}}

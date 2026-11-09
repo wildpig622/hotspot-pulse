@@ -19,6 +19,10 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
+try:
+    from .monitoring_window import window_end, window_metadata, future_months
+except ImportError:
+    from monitoring_window import window_end, window_metadata, future_months
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_API = ROOT / "site" / "api" / "v1"
@@ -118,7 +122,7 @@ def classify_event(text: str) -> str:
     value = text or ""
     if any(word in value for word in ("秋假", "春假", "寒假", "暑假", "学生假期")):
         return "holiday"
-    if any(word in value for word in ("展会", "博览会", "展览", "茶博会", "车展", "漫展", "动漫展", "进博会", "高交会")):
+    if any(word in value for word in ("展会", "博览会", "展览", "茶博会", "车展", "漫展", "动漫展", "进博会", "高交会", "糖酒会", "春糖", "秋糖", "广交会")):
         return "exhibition"
     if any(word in value for word in ("马拉松", "体育赛事", "赛事", "足球", "篮球", "网球", "运动会", "路跑", "比赛")):
         return "sports"
@@ -650,10 +654,10 @@ def source_type_for(publisher: str, publisher_url: str) -> str:
     return "other"
 
 
-def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | None = None, upcoming: bool = False) -> str:
+def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | None = None, upcoming: bool = False, target_month: date | None = None) -> str:
     after = (today - timedelta(days=SCOPE["discovery_lookback_days"])).isoformat()
     terms = topic["terms"] if topic else KEYWORDS
-    last_year = (today + timedelta(days=SCOPE["monitoring_horizon_days"])).year
+    last_year = window_end(today, SCOPE).year
     years = " OR ".join(str(year) for year in range(today.year, last_year + 1))
     query = (
         '"' + city["aliases"][0] + '" '
@@ -662,11 +666,16 @@ def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | No
     )
     if upcoming:
         # A second route catches announcements whose headline omits the year.
-        # Month terms refer to the actual 90-day horizon, including January.
-        months = sorted({(today + timedelta(days=n)).month for n in range(SCOPE['monitoring_horizon_days'] + 1)})
+        # Search every month through the end of the third complete future month.
+        months = sorted({(today + timedelta(days=n)).month for n in range((window_end(today,SCOPE)-today).days + 1)})
         query = ('"' + city['aliases'][0] + '" (' + ' OR '.join(terms) + ') ('
                  + ' OR '.join(str(month) + '月' for month in months) + ') after:'
                  + (today - timedelta(days=30)).isoformat())
+    if target_month is not None:
+        # Each planning month has an independent RSS quota. Do not require a
+        # year in the headline; the date extractor still labels inferred years.
+        query=('"'+city['aliases'][0]+'" ('+' OR '.join(terms)+') '
+               +str(target_month.month)+'月 after:'+(today-timedelta(days=30)).isoformat())
     params = urllib.parse.urlencode({"q": query, "hl": "zh-CN", "gl": "CN", "ceid": "CN:zh-Hans"})
     return "https://news.google.com/rss/search?" + params
 
@@ -828,15 +837,18 @@ def run_collection(include_sources: bool = False, include_details: bool = False,
     def request_topic(pair: tuple[dict[str, Any], dict[str, Any]]) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]], str | None]:
         city, topic = pair
         found, checks = {}, []
-        for upcoming in (False, True):
-            url = build_feed_url(city, today, topic, upcoming)
+        routes=[('year_lookback',None),('upcoming_months',None)]+[('planning_month',month) for month in future_months(today,SCOPE)]
+        for route,month in routes:
+            url = build_feed_url(city, today, topic, route=='upcoming_months', month)
+            detail={'route':route,'url':url}
+            if month is not None:detail['month']=month.strftime('%Y-%m')
             try:
                 items = parse_feed(fetch_feed(url))
                 for item in items:
                     found[(item['title'], item['url'])] = dict(item, discovery_query=url)
-                checks.append({'route': 'upcoming_months' if upcoming else 'year_lookback', 'url': url, 'status': 'ok', 'items': len(items)})
+                checks.append(dict(detail,status='ok',items=len(items)))
             except Exception as exc:
-                checks.append({'route': 'upcoming_months' if upcoming else 'year_lookback', 'url': url, 'status': 'failed', 'error_type': type(exc).__name__})
+                checks.append(dict(detail,status='failed',error_type=type(exc).__name__))
         query_checks[(city['city_name'], topic['key'])] = checks
         return city, topic, list(found.values()), None if any(row['status'] == 'ok' for row in checks) else 'AllQueryRoutesFailed'
 
@@ -907,7 +919,7 @@ def run_collection(include_sources: bool = False, include_details: bool = False,
         and event.get("event_date_role") in {"event", "ambiguous"}
         and (event.get("content_kind") or classify_content(event.get("event_name", ""))) in {"event_announcement", "uncertain"}
     )
-    horizon_end = (today + timedelta(days=SCOPE['monitoring_horizon_days'])).isoformat()
+    horizon_end = window_end(today,SCOPE).isoformat()
     future_count = sum(1 for event in kept if is_upcoming_event(event, today) and event['start_at'] <= horizon_end)
     content_counts = {
         kind: sum(1 for event in kept if (event.get("content_kind") or classify_content(event.get("event_name", ""))) == kind)
@@ -919,7 +931,7 @@ def run_collection(include_sources: bool = False, include_details: bool = False,
             "timezone": "Asia/Shanghai", "collection_status": overall_status,
             "source_system": "Google News RSS", "candidate_count": len(kept),
             "last_collection_at": observed_at, "coverage_status": "partial",
-            "monitoring_horizon_days": SCOPE["monitoring_horizon_days"],
+            **window_metadata(today,SCOPE),
             "dated_candidate_count": dated_count, "future_event_candidate_count": future_count,
             "ticketing_signal_count": content_counts["ticketing_notice"],
             "registration_signal_count": content_counts["registration_notice"],
