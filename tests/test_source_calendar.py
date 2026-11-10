@@ -90,7 +90,7 @@ class SourceCalendarTests(unittest.TestCase):
                     contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(collect.run_collection(include_sources=True), 0)
             source.assert_called_once()
-            self.assertEqual(rss.call_count, 12)
+            self.assertEqual(rss.call_count, 30)
             calendar = json.loads((api/'activities.json').read_text(encoding='utf8'))
             self.assertEqual(calendar['source_candidates'], [row])
             coverage = json.loads((api/'coverage.json').read_text(encoding='utf8'))

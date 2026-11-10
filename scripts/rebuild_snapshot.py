@@ -46,7 +46,7 @@ def rebuild(snapshot: dict, cities: list[dict], health: dict, today: date, gener
         'api_version': 'v1', 'schema_version': '1.2', 'generated_at': generated_at,
         'normalized_at': generated_at,
         'last_collection_at': meta.get('last_collection_at') or meta.get('generated_at') or health.get('last_run_at'),
-        'coverage_status': 'partial', 'monitoring_horizon_days': collect.SCOPE['monitoring_horizon_days'],
+        'coverage_status': 'partial', **collect.window_metadata(today,collect.SCOPE),
         'candidate_count': len(rows), 'structured_activity_count': len(activity_payload['data']),
         'dated_candidate_count': sum(bool(row.get('start_at')) and row.get('date_precision') == 'day' for row in rows),
         'future_event_candidate_count': sum(collect.is_upcoming_event(row, today) for row in rows),

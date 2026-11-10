@@ -9,6 +9,10 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
+try:
+    from .monitoring_window import window_end, window_metadata
+except ImportError:
+    from monitoring_window import window_end, window_metadata
 
 
 def _calendar_day(value: str) -> str:
@@ -144,10 +148,10 @@ def build_activities(entries: list[dict[str, Any]], cities: list[dict[str, Any]]
     return sorted(result, key=lambda row: (row['start_at'], row['city_name'], row['event_name']))
 
 
-def activity_is_future(activity: dict[str, Any], today: date, horizon: int = 90) -> bool:
+def activity_is_future(activity: dict[str, Any], today: date, horizon: int | None = None) -> bool:
     if activity.get('review_status') == 'rejected' or activity.get('event_status') in {'cancelled', 'postponed'}:
         return False
-    upper = (today + timedelta(days=horizon)).isoformat()
+    upper = (today + timedelta(days=horizon) if horizon is not None else window_end(today)).isoformat()
     sessions = activity.get('sessions') or [{'start_at': activity['start_at'], 'end_at': activity.get('end_at') or activity['start_at']}]
     return any(row['end_at'] >= today.isoformat() and row['start_at'] <= upper for row in sessions)
 
@@ -203,6 +207,7 @@ def build_registry_payload(root: Path, leads: list[dict[str, Any]], cities: list
         signals.append(built)
     return {'meta': {
         'api_version': 'v1', 'schema_version': '1.3', 'generated_at': generated_at,
+        **window_metadata(today),
         'discovery_candidate_count': len(candidates),
         'future_discovery_candidate_count': sum(activity_is_future(row, today) for row in candidates),
         'coverage_status': 'partial', 'activity_count': len(rows), 'source_market_signal_count': len(signals),

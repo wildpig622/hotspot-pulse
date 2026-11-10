@@ -72,3 +72,18 @@ class SnapshotQualityTests(unittest.TestCase):
         calendar['source_checks']=[]
         collect.write_json(path, calendar)
         self.assertEqual(check_snapshot(self.api, require_source_calendars=True)['status'], 'FAIL')
+
+    def test_every_planning_month_route_must_complete(self):
+        from datetime import date
+        meta_path=self.api/'hotspots.json';news=json.loads(meta_path.read_text(encoding='utf8'))
+        news['meta'].update(collect.window_metadata(date(2026,11,9),collect.SCOPE));collect.write_json(meta_path,news)
+        path=self.api/'health.json';health=json.loads(path.read_text(encoding='utf8'))
+        for feed in health['feed_results']:
+            feed['query_results']=[{'route':'year_lookback','status':'ok'},{'route':'upcoming_months','status':'ok'}]+[
+                {'route':'planning_month','month':month,'status':'ok'} for month in ['2026-12','2027-01','2027-02']]
+        collect.write_json(path,health)
+        self.assertEqual(check_snapshot(self.api,require_expanded_queries=True)['status'],'PASS')
+        health['feed_results'][-1]['query_results'].pop()
+        collect.write_json(path,health)
+        result=check_snapshot(self.api,require_expanded_queries=True)
+        self.assertIn('planning month queries missing or duplicated',result['errors'])
