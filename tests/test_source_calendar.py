@@ -68,6 +68,28 @@ class SourceCalendarTests(unittest.TestCase):
         self.assertEqual(refreshed, rows)
         self.assertFalse(collect.is_upcoming_event(refreshed[0], self.day))
 
+    def test_harbin_and_shenyang_routes_keep_candidates_in_their_own_city(self):
+        cities = [next(c for c in collect.configured_cities() if c['city_slug'] == slug)
+                  for slug in ('harbin', 'shenyang')]
+        requested_codes = []
+
+        def listing(url):
+            from urllib.parse import urlparse, parse_qs
+            code = int(parse_qs(urlparse(url).query)['cityCode'][0])
+            requested_codes.append(code)
+            city, other = {451: ('哈尔滨', '沈阳'), 24: ('沈阳', '哈尔滨')}[code]
+            return '<div class="show-list">' + self.card(city=city, key=str(code)) + \
+                self.card(city=other, key=str(code) + '999') + '</div>'
+
+        rows, checks = collect_source_calendar(collect.ROOT, cities, self.stamp, self.day,
+                                               transport=listing)
+        self.assertCountEqual(requested_codes, [451, 24])
+        self.assertEqual({r['city_slug'] for r in rows}, {'harbin', 'shenyang'})
+        self.assertEqual(len(rows), 2)
+        self.assertTrue(all(r['review_status'] == 'pending' for r in rows))
+        self.assertTrue(all(r['evidence_level'] == 'ticketing_listing' for r in rows))
+        self.assertTrue(all(c['status'] == 'ok' for c in checks))
+
     def test_upcoming_queries_do_not_require_a_year_and_follow_cross_year_months(self):
         from urllib.parse import urlparse, parse_qs
         query = parse_qs(urlparse(collect.build_feed_url(self.city, date(2026, 11, 4), collect.FEED_TOPICS[0], True)).query)['q'][0]

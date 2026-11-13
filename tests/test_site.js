@@ -18,8 +18,8 @@ const supportedIds = cases.expected_future_ids.concat(cases.additional_supported
 async function loadPage(events, options = {}) {
   const nodes = {};
   function element() {
-    return {value: "", textContent: "", innerHTML: "", listeners: {},
-      appendChild() {}, addEventListener(name, callback) { this.listeners[name] = callback; },
+    return {value: "", textContent: "", innerHTML: "", listeners: {}, children: [],
+      appendChild(child) { this.children.push(child); }, addEventListener(name, callback) { this.listeners[name] = callback; },
       getContext() { return {}; }, showModal() { this.open = true; },
       close() { this.open = false; if (this.listeners.close) this.listeners.close(); },
       removeAttribute(name) { delete this[name]; }, focus() {}};
@@ -60,6 +60,17 @@ function calendarRow(extra = {}) {
     date_precision:"day", date_confidence:"source_body", start_at:"2026-11-11", end_at:"2026-11-13", review_status:"pending",
     sessions:[{start_at:"2026-11-11",end_at:"2026-11-13"}], scope_note:"部分学校，高三除外", sources:[], ...extra};
 }
+
+test('Harbin is selectable and its v2 candidates render without mixing Shenyang',async()=>{
+  const harbin=calendarRow({event_id:'hp_harbin_sample',event_name:'哈尔滨音乐会样本',city_name:'哈尔滨市',city_slug:'harbin',availability:'candidate',start_at:'2026-11-14',end_at:'2026-11-14',sessions:[{start_at:'2026-11-14',end_at:'2026-11-14'}]});
+  const shenyang={...harbin,event_id:'hp_shenyang_sample',event_name:'沈阳音乐会样本',city_name:'沈阳市',city_slug:'shenyang'};
+  const nodes=await loadPage([],{clockAt:'2026-11-13T03:00:00Z',recordLayer:'activities',eventFeed:{meta:{schema_version:'2.0',expires_at:'2026-11-14T03:00:00Z'},data:[harbin,shenyang]}});
+  assert.ok(nodes.cityFilter.children.some(option=>option.value==='哈尔滨市'));
+  nodes.cityFilter.value='哈尔滨市';nodes.cityFilter.listeners.input();
+  assert.equal(nodes.resultCount.textContent,'1 条');
+  assert.ok(nodes.eventsList.innerHTML.includes('哈尔滨音乐会样本'));
+  assert.ok(!nodes.eventsList.innerHTML.includes('沈阳音乐会样本'));
+});
 
 test('v2 canonical records replace duplicate member rows and keep raw leads accessible',async()=>{
   const event=calendarRow({event_id:'hp_1234567890abcdef',availability:'candidate'});
