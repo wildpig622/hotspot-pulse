@@ -11,6 +11,7 @@
   {"city_name":"长沙市","city_slug":"changsha","aliases":["长沙"]},
   {"city_name":"贵阳市","city_slug":"guiyang","aliases":["贵阳"]},
   {"city_name":"沈阳市","city_slug":"shenyang","aliases":["沈阳"]},
+  {"city_name":"哈尔滨市","city_slug":"harbin","aliases":["哈尔滨"]},
   {"city_name":"洛阳市","city_slug":"luoyang","aliases":["洛阳"]},
   {"city_name":"珠海市","city_slug":"zhuhai","aliases":["珠海"]},
   {"city_name":"昆明市","city_slug":"kunming","aliases":["昆明"]},

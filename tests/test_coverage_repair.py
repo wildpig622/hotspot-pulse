@@ -152,6 +152,6 @@ class CoverageRepairTests(unittest.TestCase):
         self.assertEqual(signal['impact_destination_cities'], ['西安市'])
         self.assertFalse(any(row['city_name'] == '汉中市' for row in activities))
         coverage = build_coverage(cities, list(collect.FEED_TOPICS), [], activities, [], '2026-11-04T01:00:00Z')
-        self.assertEqual(len(coverage['data']), 168)
+        self.assertEqual(len(coverage['data']), len(cities) * len(collect.FEED_TOPICS))
         self.assertTrue(all(row['coverage_status'] != 'complete' for row in coverage['data']))
         self.assertTrue(all(row['review_status'] == 'pending' for row in activities))
