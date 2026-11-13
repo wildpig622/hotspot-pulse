@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-13T02:59:44Z",
+    "generated_at": "2026-11-13T03:13:00Z",
     "city_count": 29
   },
   "data": [
@@ -22,7 +22,7 @@
     {
       "city_name": "重庆市",
       "city_slug": "chongqing",
-      "candidate_count": 459,
+      "candidate_count": 461,
       "future_event_candidate_count": 6,
       "activity_count": 4
     },
@@ -57,7 +57,7 @@
     {
       "city_name": "南昌市",
       "city_slug": "nanchang",
-      "candidate_count": 256,
+      "candidate_count": 257,
       "future_event_candidate_count": 8,
       "activity_count": 2
     },
@@ -92,7 +92,7 @@
     {
       "city_name": "哈尔滨市",
       "city_slug": "harbin",
-      "candidate_count": 72,
+      "candidate_count": 74,
       "future_event_candidate_count": 0,
       "activity_count": 0
     },
@@ -134,7 +134,7 @@
     {
       "city_name": "徐州市",
       "city_slug": "xuzhou",
-      "candidate_count": 171,
+      "candidate_count": 172,
       "future_event_candidate_count": 1,
       "activity_count": 1
     },
@@ -155,7 +155,7 @@
     {
       "city_name": "福州市",
       "city_slug": "fuzhou",
-      "candidate_count": 300,
+      "candidate_count": 301,
       "future_event_candidate_count": 2,
       "activity_count": 1
     },
@@ -183,7 +183,7 @@
     {
       "city_name": "厦门市",
       "city_slug": "xiamen",
-      "candidate_count": 394,
+      "candidate_count": 396,
       "future_event_candidate_count": 4,
       "activity_count": 0
     },
@@ -197,7 +197,7 @@
     {
       "city_name": "天津市",
       "city_slug": "tianjin",
-      "candidate_count": 449,
+      "candidate_count": 450,
       "future_event_candidate_count": 2,
       "activity_count": 0
     },
