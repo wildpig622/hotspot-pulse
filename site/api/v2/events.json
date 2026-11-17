@@ -2,10 +2,10 @@
   "meta": {
     "api_version": "v2",
     "schema_version": "2.0",
-    "generated_at": "2026-11-16T17:53:26Z",
+    "generated_at": "2026-11-17T06:24:13Z",
     "last_collection_at": "2026-11-16T17:53:26Z",
-    "collection_status": "healthy",
-    "using_cached_data": false,
+    "collection_status": "failed",
+    "using_cached_data": true,
     "event_count": 2646,
     "source_record_count": 2652,
     "linked_record_reduction": 10,
@@ -19,7 +19,7 @@
     "last_successful_collection_at": "2026-11-16T17:53:26Z",
     "expires_at": "2026-11-17T11:53:26Z",
     "is_stale": false,
-    "age_hours": 0
+    "age_hours": 12.51
   },
   "data": [
     {
