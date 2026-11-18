@@ -1,84 +1,84 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-17T17:21:28Z",
+    "generated_at": "2026-11-18T05:48:43Z",
     "city_count": 29
   },
   "data": [
     {
       "city_name": "成都市",
       "city_slug": "chengdu",
-      "candidate_count": 719,
+      "candidate_count": 724,
       "future_event_candidate_count": 10,
       "activity_count": 11
     },
     {
       "city_name": "南京市",
       "city_slug": "nanjing",
-      "candidate_count": 530,
+      "candidate_count": 538,
       "future_event_candidate_count": 7,
       "activity_count": 3
     },
     {
       "city_name": "重庆市",
       "city_slug": "chongqing",
-      "candidate_count": 514,
-      "future_event_candidate_count": 10,
+      "candidate_count": 518,
+      "future_event_candidate_count": 11,
       "activity_count": 4
     },
     {
       "city_name": "杭州市",
       "city_slug": "hangzhou",
-      "candidate_count": 592,
+      "candidate_count": 599,
       "future_event_candidate_count": 2,
       "activity_count": 2
     },
     {
       "city_name": "武汉市",
       "city_slug": "wuhan",
-      "candidate_count": 618,
+      "candidate_count": 621,
       "future_event_candidate_count": 11,
       "activity_count": 2
     },
     {
       "city_name": "西安市",
       "city_slug": "xian",
-      "candidate_count": 518,
+      "candidate_count": 520,
       "future_event_candidate_count": 0,
       "activity_count": 2
     },
     {
       "city_name": "深圳市",
       "city_slug": "shenzhen",
-      "candidate_count": 755,
+      "candidate_count": 792,
       "future_event_candidate_count": 15,
       "activity_count": 2
     },
     {
       "city_name": "南昌市",
       "city_slug": "nanchang",
-      "candidate_count": 308,
+      "candidate_count": 313,
       "future_event_candidate_count": 0,
       "activity_count": 2
     },
     {
       "city_name": "广州市",
       "city_slug": "guangzhou",
-      "candidate_count": 765,
-      "future_event_candidate_count": 63,
+      "candidate_count": 779,
+      "future_event_candidate_count": 66,
       "activity_count": 1
     },
     {
       "city_name": "长沙市",
       "city_slug": "changsha",
-      "candidate_count": 523,
+      "candidate_count": 525,
       "future_event_candidate_count": 16,
       "activity_count": 3
     },
     {
       "city_name": "贵阳市",
       "city_slug": "guiyang",
-      "candidate_count": 373,
+      "candidate_count": 378,
       "future_event_candidate_count": 0,
       "activity_count": 0
     },
@@ -92,49 +92,49 @@
     {
       "city_name": "哈尔滨市",
       "city_slug": "harbin",
-      "candidate_count": 113,
+      "candidate_count": 119,
       "future_event_candidate_count": 0,
       "activity_count": 0
     },
     {
       "city_name": "洛阳市",
       "city_slug": "luoyang",
-      "candidate_count": 298,
+      "candidate_count": 305,
       "future_event_candidate_count": 0,
       "activity_count": 0
     },
     {
       "city_name": "珠海市",
       "city_slug": "zhuhai",
-      "candidate_count": 354,
+      "candidate_count": 358,
       "future_event_candidate_count": 7,
       "activity_count": 0
     },
     {
       "city_name": "昆明市",
       "city_slug": "kunming",
-      "candidate_count": 407,
+      "candidate_count": 411,
       "future_event_candidate_count": 5,
       "activity_count": 1
     },
     {
       "city_name": "郑州市",
       "city_slug": "zhengzhou",
-      "candidate_count": 406,
-      "future_event_candidate_count": 7,
+      "candidate_count": 408,
+      "future_event_candidate_count": 8,
       "activity_count": 1
     },
     {
       "city_name": "南宁市",
       "city_slug": "nanning",
-      "candidate_count": 252,
+      "candidate_count": 254,
       "future_event_candidate_count": 4,
       "activity_count": 1
     },
     {
       "city_name": "徐州市",
       "city_slug": "xuzhou",
-      "candidate_count": 211,
+      "candidate_count": 214,
       "future_event_candidate_count": 1,
       "activity_count": 1
     },
@@ -148,63 +148,63 @@
     {
       "city_name": "苏州市",
       "city_slug": "suzhou",
-      "candidate_count": 402,
+      "candidate_count": 404,
       "future_event_candidate_count": 3,
       "activity_count": 1
     },
     {
       "city_name": "福州市",
       "city_slug": "fuzhou",
-      "candidate_count": 333,
+      "candidate_count": 335,
       "future_event_candidate_count": 2,
       "activity_count": 1
     },
     {
       "city_name": "德阳市",
       "city_slug": "deyang",
-      "candidate_count": 78,
+      "candidate_count": 79,
       "future_event_candidate_count": 0,
       "activity_count": 2
     },
     {
       "city_name": "遂宁市",
       "city_slug": "suining",
-      "candidate_count": 68,
+      "candidate_count": 71,
       "future_event_candidate_count": 0,
       "activity_count": 1
     },
     {
       "city_name": "济南市",
       "city_slug": "jinan",
-      "candidate_count": 460,
+      "candidate_count": 463,
       "future_event_candidate_count": 6,
       "activity_count": 2
     },
     {
       "city_name": "厦门市",
       "city_slug": "xiamen",
-      "candidate_count": 447,
+      "candidate_count": 450,
       "future_event_candidate_count": 4,
       "activity_count": 0
     },
     {
       "city_name": "金华市",
       "city_slug": "jinhua",
-      "candidate_count": 169,
+      "candidate_count": 171,
       "future_event_candidate_count": 0,
       "activity_count": 1
     },
     {
       "city_name": "天津市",
       "city_slug": "tianjin",
-      "candidate_count": 483,
+      "candidate_count": 487,
       "future_event_candidate_count": 3,
       "activity_count": 0
     },
     {
       "city_name": "兰州市",
       "city_slug": "lanzhou",
-      "candidate_count": 308,
+      "candidate_count": 309,
       "future_event_candidate_count": 0,
       "activity_count": 1
     }
