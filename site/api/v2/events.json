@@ -2,14 +2,14 @@
   "meta": {
     "api_version": "v2",
     "schema_version": "2.0",
-    "generated_at": "2026-11-19T05:48:23Z",
+    "generated_at": "2026-11-19T17:02:03Z",
     "last_collection_at": "2026-11-19T05:48:24Z",
-    "collection_status": "healthy",
-    "using_cached_data": false,
+    "collection_status": "failed",
+    "using_cached_data": true,
     "event_count": 2754,
     "source_record_count": 2760,
     "linked_record_reduction": 10,
-    "cursor": 6836,
+    "cursor": 6851,
     "coverage_status": "partial",
     "schedule_local": [
       "08:00",
@@ -19,7 +19,7 @@
     "last_successful_collection_at": "2026-11-19T05:48:24Z",
     "expires_at": "2026-11-19T23:48:24Z",
     "is_stale": false,
-    "age_hours": 0
+    "age_hours": 11.23
   },
   "data": [
     {
@@ -69073,8 +69073,8 @@
         "source_body"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_96fe3fad66ff3747",
@@ -70113,8 +70113,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_cf713e84deed957f",
@@ -70177,8 +70177,8 @@
         "source_body"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_57569937a5851ac3",
@@ -70895,8 +70895,8 @@
         "ticketing_listing"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_328ecb51304a504d",
@@ -70985,8 +70985,8 @@
         "ticketing_listing"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 3
+      "availability": "expired",
+      "revision": 4
     },
     {
       "event_id": "hp_64183dca7e779b19",
@@ -71052,8 +71052,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_a186745cc3b5e2dc",
@@ -71226,8 +71226,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_ce9c6897283e0462",
@@ -71305,8 +71305,8 @@
         "ticketing_listing"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 2
+      "availability": "expired",
+      "revision": 3
     },
     {
       "event_id": "hp_37a2152955f4e30f",
@@ -71384,8 +71384,8 @@
         "ticketing_listing"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 2
+      "availability": "expired",
+      "revision": 3
     },
     {
       "event_id": "hp_507e7c49c02ab97c",
@@ -71451,8 +71451,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_8d9b2a10bc892272",
@@ -71531,8 +71531,8 @@
         "ticketing_listing"
       ],
       "date_review_required": false,
-      "availability": "not_recently_observed",
-      "revision": 3
+      "availability": "expired",
+      "revision": 4
     },
     {
       "event_id": "hp_d64faa0f1f955e3c",
@@ -71598,8 +71598,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_5febeb7b77c9a508",
@@ -71699,8 +71699,8 @@
         "ticketing_listing"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 4
+      "availability": "expired",
+      "revision": 5
     },
     {
       "event_id": "hp_6bb43f9663021da1",
@@ -71789,8 +71789,8 @@
         "ticketing_listing"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 3
+      "availability": "expired",
+      "revision": 4
     },
     {
       "event_id": "hp_52a45b99ad759965",
@@ -72184,8 +72184,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 6
+      "availability": "expired",
+      "revision": 7
     },
     {
       "event_id": "hp_5dd5ff7ddc446a73",
