@@ -2,7 +2,7 @@
   "meta": {
     "api_version": "v2",
     "schema_version": "2.0",
-    "cursor": 8169,
+    "cursor": 8654,
     "cursor_floor": 0
   },
   "data": [
@@ -92978,6 +92978,4422 @@
       "changed_fields": [
         "event_name",
         "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8170,
+      "event_id": "hp_cad1d74258ef704f",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8171,
+      "event_id": "hp_cfa55e97be9ef06f",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8172,
+      "event_id": "hp_ffca28f3a6d757de",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8173,
+      "event_id": "hp_4c569c1a71e41669",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8174,
+      "event_id": "hp_9b0e82d218983b85",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8175,
+      "event_id": "hp_a5c9777cca9cfa08",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8176,
+      "event_id": "hp_b4c7e6a0cfa8b215",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8177,
+      "event_id": "hp_e86824770f2a35ab",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8178,
+      "event_id": "hp_25ccc5caad2766a7",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8179,
+      "event_id": "hp_506d8a2cc57f3a62",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8180,
+      "event_id": "hp_b193c0e28f7e57b2",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8181,
+      "event_id": "hp_cdb8c59c74fb59ec",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8182,
+      "event_id": "hp_f7d0fd5792ee340c",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8183,
+      "event_id": "hp_3dad123c281ebfb2",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8184,
+      "event_id": "hp_57180d7e1bd18de8",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8185,
+      "event_id": "hp_c58b2a572174f031",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8186,
+      "event_id": "hp_cb0ef9b791b32d6f",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8187,
+      "event_id": "hp_f090e99a5622eb7f",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8188,
+      "event_id": "hp_09fda97ea27b52d8",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8189,
+      "event_id": "hp_deadbd566a6baec6",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8190,
+      "event_id": "hp_0f96e202c4750296",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8191,
+      "event_id": "hp_2471658bcbbfe5ac",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8192,
+      "event_id": "hp_23bac7fe61400ef9",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8193,
+      "event_id": "hp_bb34708662a431a4",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8194,
+      "event_id": "hp_0e90ea24ea775256",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8195,
+      "event_id": "hp_122f083c8907f5c5",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8196,
+      "event_id": "hp_3e32d158dd7af193",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8197,
+      "event_id": "hp_5918a11c8d85f108",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8198,
+      "event_id": "hp_8614e74cbee6fea5",
+      "revision": 8,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8199,
+      "event_id": "hp_a250af612e297e9c",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8200,
+      "event_id": "hp_a62b613b11f9a116",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8201,
+      "event_id": "hp_a6713d8ac19cfb87",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8202,
+      "event_id": "hp_b3419b903378a30c",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8203,
+      "event_id": "hp_b3528a47f7f8648e",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8204,
+      "event_id": "hp_cb016d49d2a89f2a",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8205,
+      "event_id": "hp_d1d30b18effa291b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8206,
+      "event_id": "hp_dd797d8d9aa2bdcb",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8207,
+      "event_id": "hp_0b859e4200ad7d96",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8208,
+      "event_id": "hp_4a062794ad22e5e1",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8209,
+      "event_id": "hp_572bdd1063db1d6a",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8210,
+      "event_id": "hp_c161cd2eb19c238c",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8211,
+      "event_id": "hp_fa67ecc28d7e9d4f",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8212,
+      "event_id": "hp_6943644bec9695fe",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8213,
+      "event_id": "hp_1bcde86051ef41c6",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8214,
+      "event_id": "hp_43278ff72755b306",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8215,
+      "event_id": "hp_4444586b645b1df8",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8216,
+      "event_id": "hp_4b2238ca2bdb0eea",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8217,
+      "event_id": "hp_521e125fab3527f2",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8218,
+      "event_id": "hp_b3c9bad53d16e922",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8219,
+      "event_id": "hp_b3edbbb304c6210c",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8220,
+      "event_id": "hp_d8c140c242609c1a",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8221,
+      "event_id": "hp_f70c22b16af92452",
+      "revision": 8,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8222,
+      "event_id": "hp_f759a4363d8d4e28",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8223,
+      "event_id": "hp_2386ac04f0a2da64",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8224,
+      "event_id": "hp_66cb54471ea2ac01",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8225,
+      "event_id": "hp_c5f186c1ee40f040",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8226,
+      "event_id": "hp_a8b5fd7e5a582211",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8227,
+      "event_id": "hp_da5ec1dfbafd40d2",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8228,
+      "event_id": "hp_867bd5bc42b65037",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8229,
+      "event_id": "hp_be174f86792544d2",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8230,
+      "event_id": "hp_28c1d7838cb96c98",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8231,
+      "event_id": "hp_80debd9ac451837a",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8232,
+      "event_id": "hp_f6c5db5425c50dee",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8233,
+      "event_id": "hp_6b2b80f172759054",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8234,
+      "event_id": "hp_d3d9c95e5b5f87fe",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8235,
+      "event_id": "hp_5af9d69ad191e879",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8236,
+      "event_id": "hp_70a9fb23a8ccc435",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8237,
+      "event_id": "hp_da44ac22d4bbf8cc",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8238,
+      "event_id": "hp_0e0c7ad09734d42a",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8239,
+      "event_id": "hp_394fe87f2fd9b75f",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8240,
+      "event_id": "hp_ce140a89fa1ae19d",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8241,
+      "event_id": "hp_e26388e998415ae9",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8242,
+      "event_id": "hp_f2bf7a00e8e49a16",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8243,
+      "event_id": "hp_40b149b02b02c5bd",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8244,
+      "event_id": "hp_258c121d05984d14",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8245,
+      "event_id": "hp_b9e79b835db252e8",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8246,
+      "event_id": "hp_bb43dd71ca8e589a",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8247,
+      "event_id": "hp_e4acde9fdab18db8",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8248,
+      "event_id": "hp_37d2d85b5d52f7b9",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8249,
+      "event_id": "hp_7b5fefa5814e055b",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8250,
+      "event_id": "hp_8bb8a173d4d0d927",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8251,
+      "event_id": "hp_a1c01b4cee261598",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8252,
+      "event_id": "hp_d119cfd6fe010007",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8253,
+      "event_id": "hp_68413854404ed637",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8254,
+      "event_id": "hp_4475e81e4f0f80b8",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8255,
+      "event_id": "hp_43600c53f653deab",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8256,
+      "event_id": "hp_88d5c26d35710cfa",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8257,
+      "event_id": "hp_0508acd499d35557",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8258,
+      "event_id": "hp_1a2a347012b93b0a",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8259,
+      "event_id": "hp_66df9604ca00c075",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8260,
+      "event_id": "hp_8836551f18b38930",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8261,
+      "event_id": "hp_8f79410040fb160e",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8262,
+      "event_id": "hp_c81aaec2d3ac6371",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8263,
+      "event_id": "hp_cbd4e9514af7d425",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8264,
+      "event_id": "hp_f10f9c68fb82f548",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8265,
+      "event_id": "hp_fafbd27988137fb9",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8266,
+      "event_id": "hp_13fe75dfcb5bd0d2",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8267,
+      "event_id": "hp_1d987a05cbf72cb5",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8268,
+      "event_id": "hp_3662e04dc046cb77",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8269,
+      "event_id": "hp_aa0ebb0eeddfdc70",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8270,
+      "event_id": "hp_f774e5e4a895e2b3",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8271,
+      "event_id": "hp_fdb236f25f8f723d",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8272,
+      "event_id": "hp_466fafcfbd4649a4",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8273,
+      "event_id": "hp_8c59c8848a3b5f2f",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8274,
+      "event_id": "hp_13bd1e81e41d44a7",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8275,
+      "event_id": "hp_751d544bd44eedfc",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8276,
+      "event_id": "hp_5f740d7829f9c1d1",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8277,
+      "event_id": "hp_790842bf74747342",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8278,
+      "event_id": "hp_959fe63ac4555a74",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8279,
+      "event_id": "hp_b28132e2231c2e79",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8280,
+      "event_id": "hp_b419f54aa768e63a",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8281,
+      "event_id": "hp_15169e6fe64521bf",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8282,
+      "event_id": "hp_4903a6b2a27e5e94",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8283,
+      "event_id": "hp_9f66ee3b93ea8e78",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8284,
+      "event_id": "hp_30d9deffb0eba664",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8285,
+      "event_id": "hp_482c383af44c2c16",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8286,
+      "event_id": "hp_c5d7cf45ac4b1c36",
+      "revision": 8,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8287,
+      "event_id": "hp_4e3d258af487e061",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8288,
+      "event_id": "hp_02a86dde1b8d656d",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8289,
+      "event_id": "hp_2add92f02cdcae78",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8290,
+      "event_id": "hp_2cd7779ecef42153",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8291,
+      "event_id": "hp_01728581ef159461",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8292,
+      "event_id": "hp_45641b62c7fa617c",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8293,
+      "event_id": "hp_4bb69bbad5632296",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8294,
+      "event_id": "hp_4e32df58a811c756",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8295,
+      "event_id": "hp_6e45c721360c186c",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8296,
+      "event_id": "hp_7b17199ba5c2f852",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8297,
+      "event_id": "hp_7bc2db4c4e43530c",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8298,
+      "event_id": "hp_8c5c6f8e0519473c",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8299,
+      "event_id": "hp_a4d95f3f3d7f9b75",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8300,
+      "event_id": "hp_aae7919196b837d3",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8301,
+      "event_id": "hp_b5429e0ea38d0bb1",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8302,
+      "event_id": "hp_cda076329ab494c9",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8303,
+      "event_id": "hp_10548a08ed246ab4",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8304,
+      "event_id": "hp_163e9a42e68706cf",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8305,
+      "event_id": "hp_4618fbb7786f2189",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8306,
+      "event_id": "hp_789c4357908711c2",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8307,
+      "event_id": "hp_d5310b52ba3a1445",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8308,
+      "event_id": "hp_08acd57fe0229186",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8309,
+      "event_id": "hp_1e838a737b5086fd",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8310,
+      "event_id": "hp_39aef2861b26a4b2",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8311,
+      "event_id": "hp_69d0ac5914d2788d",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8312,
+      "event_id": "hp_9fc16907f385ecea",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8313,
+      "event_id": "hp_aa0d2fb55a9988fe",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8314,
+      "event_id": "hp_ac1ffadd5ad423a4",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8315,
+      "event_id": "hp_bf73ac3f65ab259d",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8316,
+      "event_id": "hp_e4186b5c78b363ee",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8317,
+      "event_id": "hp_e4ad54d6b4954f7d",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8318,
+      "event_id": "hp_e5a84dd66b58dbff",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8319,
+      "event_id": "hp_fead69f9d860e016",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8320,
+      "event_id": "hp_13ed173f3a13350f",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8321,
+      "event_id": "hp_15529a9cd56f38db",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8322,
+      "event_id": "hp_3995b52f7d2e7d02",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8323,
+      "event_id": "hp_584252a847822077",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8324,
+      "event_id": "hp_707ae74a3c476a7f",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8325,
+      "event_id": "hp_761d4aa774437dbc",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8326,
+      "event_id": "hp_a33999a781109bf6",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8327,
+      "event_id": "hp_b2271a904be6b3b0",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8328,
+      "event_id": "hp_b91346fc51053ecd",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8329,
+      "event_id": "hp_ba7d963949fc4b27",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8330,
+      "event_id": "hp_c84f1eca7ef82c61",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8331,
+      "event_id": "hp_052e01789deeff54",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8332,
+      "event_id": "hp_908d38261ea45f52",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8333,
+      "event_id": "hp_94a5f3afe3ca571a",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8334,
+      "event_id": "hp_a03fb1a8ee3d2bf7",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8335,
+      "event_id": "hp_f62814afbf0f2fa8",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8336,
+      "event_id": "hp_0bf7a2face627e3d",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8337,
+      "event_id": "hp_1d9c566c8726f0cf",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8338,
+      "event_id": "hp_6938f490177ed9f9",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8339,
+      "event_id": "hp_86388f0454e88b5a",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8340,
+      "event_id": "hp_4b1bdaf1264cc46e",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8341,
+      "event_id": "hp_23b473594443688c",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8342,
+      "event_id": "hp_c31833ac6b2926cc",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8343,
+      "event_id": "hp_6cb0f06e8df77a52",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8344,
+      "event_id": "hp_b3ccc860d9ead9fc",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8345,
+      "event_id": "hp_7dd2e23270b79c54",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8346,
+      "event_id": "hp_9684549fa11b1267",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8347,
+      "event_id": "hp_d9046d6404fa767e",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8348,
+      "event_id": "hp_2a8c495d38afb8bb",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8349,
+      "event_id": "hp_adb33cb5f32ef45d",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8350,
+      "event_id": "hp_88321c8c4344d6fb",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8351,
+      "event_id": "hp_76742bf78d4038b9",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8352,
+      "event_id": "hp_c5b222d429638414",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8353,
+      "event_id": "hp_3ff34d62ccf437e7",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8354,
+      "event_id": "hp_061a229c710413b1",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8355,
+      "event_id": "hp_ded647c12ef041f7",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8356,
+      "event_id": "hp_3f7d971ccebf99eb",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8357,
+      "event_id": "hp_55a1626010e95170",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8358,
+      "event_id": "hp_feb5c1d611c6fcf4",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8359,
+      "event_id": "hp_04d629e0ba927dcc",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8360,
+      "event_id": "hp_05eed97b6c18200a",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8361,
+      "event_id": "hp_46e6852fdb103067",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8362,
+      "event_id": "hp_4ff3e37b3dc1e6c9",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8363,
+      "event_id": "hp_62535ff83517e1a6",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8364,
+      "event_id": "hp_a853322673e2bb0a",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8365,
+      "event_id": "hp_ceb7fae5149f8c21",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8366,
+      "event_id": "hp_e05ecd3a6c760b6f",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8367,
+      "event_id": "hp_e61fadaa3b5896a5",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8368,
+      "event_id": "hp_2f46ee6b94314e32",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8369,
+      "event_id": "hp_ae32dad8a62340e8",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8370,
+      "event_id": "hp_cad85d4a6eabbb17",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8371,
+      "event_id": "hp_d86d4f39edd1b5ce",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8372,
+      "event_id": "hp_42fd334db5eb135c",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8373,
+      "event_id": "hp_58cf2682219d0465",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8374,
+      "event_id": "hp_876172aaf26d6ed5",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8375,
+      "event_id": "hp_916e0d02b1b6c52d",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8376,
+      "event_id": "hp_dcfe2268a588d4e9",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8377,
+      "event_id": "hp_0f55d220e6f1dd78",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8378,
+      "event_id": "hp_16a7d29eeec06853",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8379,
+      "event_id": "hp_524d8603a37b4996",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8380,
+      "event_id": "hp_71200e18786e2f22",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8381,
+      "event_id": "hp_79bd3d4aadec330a",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8382,
+      "event_id": "hp_ad868e7457e123cd",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8383,
+      "event_id": "hp_c23eaa81929ab5c4",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8384,
+      "event_id": "hp_464bbb0ab9538d92",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8385,
+      "event_id": "hp_69dcebd110de1c45",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8386,
+      "event_id": "hp_2c24ea57ed970b54",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8387,
+      "event_id": "hp_411c8bc744715751",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8388,
+      "event_id": "hp_99a9f825d63f7232",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8389,
+      "event_id": "hp_2b440abf09d4b320",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8390,
+      "event_id": "hp_3f9a1f4af61f99b4",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8391,
+      "event_id": "hp_5f82ce1c590da7ce",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8392,
+      "event_id": "hp_bdbd97683d18ff12",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8393,
+      "event_id": "hp_3ecfecd9b929c639",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8394,
+      "event_id": "hp_b91ca0889092e76d",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8395,
+      "event_id": "hp_7bed9f0a0ee0a638",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8396,
+      "event_id": "hp_02e965d6373da09b",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8397,
+      "event_id": "hp_2dd2d21f9d7fc24a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8398,
+      "event_id": "hp_9bda952e6fe295fd",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name"
+      ]
+    },
+    {
+      "cursor": 8399,
+      "event_id": "hp_f9051953954f9695",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8400,
+      "event_id": "hp_6aa354e7f6e635d1",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8401,
+      "event_id": "hp_01a0b968de2cc927",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8402,
+      "event_id": "hp_363ca100f7ab316f",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8403,
+      "event_id": "hp_45b746bd07ea5178",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8404,
+      "event_id": "hp_55a770a10bd13a15",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8405,
+      "event_id": "hp_57a462df41a227af",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8406,
+      "event_id": "hp_5e7842456f597d5f",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8407,
+      "event_id": "hp_7aa60481c92e0acb",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8408,
+      "event_id": "hp_837fe688402f329c",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8409,
+      "event_id": "hp_b6bc424e4aa39d4d",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8410,
+      "event_id": "hp_e07e87ff2fd49ebc",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8411,
+      "event_id": "hp_445aea6bb3183513",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8412,
+      "event_id": "hp_b5760704ca5ba5e4",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8413,
+      "event_id": "hp_e847ec616a1c3eaa",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8414,
+      "event_id": "hp_fe5025e513c6eeed",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8415,
+      "event_id": "hp_15706f977e57a8d2",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8416,
+      "event_id": "hp_887ecb4272f0fc61",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8417,
+      "event_id": "hp_a0878c6a5aa4a820",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8418,
+      "event_id": "hp_d54288e15f27a7ba",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8419,
+      "event_id": "hp_06011df7cbf7c719",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8420,
+      "event_id": "hp_1f7c09efd1808317",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8421,
+      "event_id": "hp_9a0edf70ca79769c",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8422,
+      "event_id": "hp_ec868a5d22301f74",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8423,
+      "event_id": "hp_9f9f7f6d51584b27",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8424,
+      "event_id": "hp_6ff8ec0436799898",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8425,
+      "event_id": "hp_f53039714b48b5da",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8426,
+      "event_id": "hp_28d95539d098e13b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8427,
+      "event_id": "hp_88ebbfaa062b3c70",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8428,
+      "event_id": "hp_a10dda19dc3349a7",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8429,
+      "event_id": "hp_b3262126a60374dd",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8430,
+      "event_id": "hp_a29a0abfcda4c656",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8431,
+      "event_id": "hp_0243b2292245a9c9",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8432,
+      "event_id": "hp_c0e0d1ae34f35915",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8433,
+      "event_id": "hp_77820cb0e69e7ed0",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8434,
+      "event_id": "hp_a3a58320580bd522",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8435,
+      "event_id": "hp_7adc83f34eb89cb6",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8436,
+      "event_id": "hp_c3df5e7a801d1c7b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8437,
+      "event_id": "hp_f9f83bc30d394c09",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8438,
+      "event_id": "hp_42988a1e441d3939",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8439,
+      "event_id": "hp_5bc11cdd0715f33e",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8440,
+      "event_id": "hp_1874af67e1234749",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8441,
+      "event_id": "hp_6f8e0aac90e00d0d",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8442,
+      "event_id": "hp_600ba14b29a26a23",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8443,
+      "event_id": "hp_233d86bfa3600974",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8444,
+      "event_id": "hp_38b61e9c32128ce9",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8445,
+      "event_id": "hp_4a9e046bad8cef40",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8446,
+      "event_id": "hp_925483422ebafd17",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8447,
+      "event_id": "hp_99093457bf0ca767",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8448,
+      "event_id": "hp_b1994cd0b91f6cd2",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8449,
+      "event_id": "hp_d0203595e8b78a3b",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8450,
+      "event_id": "hp_e878a0b2b88c6b4f",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8451,
+      "event_id": "hp_ef8f95eb2d0771aa",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8452,
+      "event_id": "hp_4892c5e783f63a24",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8453,
+      "event_id": "hp_6879a75f9e5b269b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8454,
+      "event_id": "hp_7c107a7d3001247e",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8455,
+      "event_id": "hp_0980a789d6f55bec",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8456,
+      "event_id": "hp_1e82e700212fbd09",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8457,
+      "event_id": "hp_2be526fd63bb7002",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8458,
+      "event_id": "hp_6825f65ded242d62",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8459,
+      "event_id": "hp_6cd478d50b7208d4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8460,
+      "event_id": "hp_af825e502bc30dca",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8461,
+      "event_id": "hp_b21ee0c33eff5670",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8462,
+      "event_id": "hp_d2d6a3c0e482c56a",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8463,
+      "event_id": "hp_da5ce7565cfe97f5",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8464,
+      "event_id": "hp_91fd5901ad920a6e",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8465,
+      "event_id": "hp_941c9ec60db29ec3",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8466,
+      "event_id": "hp_c8d9541d0fac2c1b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8467,
+      "event_id": "hp_d2fdb1b875b67cb9",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8468,
+      "event_id": "hp_69227c2203f20577",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8469,
+      "event_id": "hp_77b80aece95f210b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8470,
+      "event_id": "hp_ba51e55ed0b62fbe",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8471,
+      "event_id": "hp_beeddfa8eccc3bda",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8472,
+      "event_id": "hp_82d455ddb805d7eb",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8473,
+      "event_id": "hp_16f02a4b975b0808",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8474,
+      "event_id": "hp_2445dcb4415b4426",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8475,
+      "event_id": "hp_3927ee25e7542baf",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8476,
+      "event_id": "hp_3f9cf72608307227",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8477,
+      "event_id": "hp_4cc382d901ff8f62",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8478,
+      "event_id": "hp_5388022c3c54c80c",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8479,
+      "event_id": "hp_79c58f3207df2bcb",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8480,
+      "event_id": "hp_9ec7fb9378ed7a5b",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8481,
+      "event_id": "hp_a262c7b76e4f0ae3",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8482,
+      "event_id": "hp_b2aa17e4493f529f",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8483,
+      "event_id": "hp_cc4bb2a81722958f",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8484,
+      "event_id": "hp_212ca4625a90ad8a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8485,
+      "event_id": "hp_5d6eacff76c1ff95",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8486,
+      "event_id": "hp_616af2d451e3af78",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8487,
+      "event_id": "hp_6d629b31ac56aaa4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8488,
+      "event_id": "hp_c0af7da523d067c3",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8489,
+      "event_id": "hp_c20dd12922ea3c3d",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8490,
+      "event_id": "hp_c3b0736a17892c5c",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8491,
+      "event_id": "hp_e580663763b88c40",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8492,
+      "event_id": "hp_e66bfec06416bb85",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8493,
+      "event_id": "hp_398bab8f2ed25611",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8494,
+      "event_id": "hp_3e50cd17709f9874",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8495,
+      "event_id": "hp_50d7b5b12b63e03e",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8496,
+      "event_id": "hp_d55f08226eaddbc0",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8497,
+      "event_id": "hp_f39a595c8e0ca747",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8498,
+      "event_id": "hp_94adc00d1e0138da",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8499,
+      "event_id": "hp_a96b18c802086f9e",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8500,
+      "event_id": "hp_d57ae786bc0c4646",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8501,
+      "event_id": "hp_0e590c8a37caf8a7",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8502,
+      "event_id": "hp_8523c3da229e501d",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8503,
+      "event_id": "hp_ef23e9913ca1f84f",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8504,
+      "event_id": "hp_5eb1f26cfb75b9aa",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8505,
+      "event_id": "hp_d9f103c4a6d54ecd",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8506,
+      "event_id": "hp_5ba94e2dbbd4bf7f",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8507,
+      "event_id": "hp_aad7e4de9f352ab6",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8508,
+      "event_id": "hp_c0da0a0fe77ade28",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8509,
+      "event_id": "hp_cafc620a4a3d0c1a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8510,
+      "event_id": "hp_77c84d3a6165cf40",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8511,
+      "event_id": "hp_c51ce672320c957e",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8512,
+      "event_id": "hp_02dffeb24ab97a6b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8513,
+      "event_id": "hp_139fa8ff4956c2d4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8514,
+      "event_id": "hp_84d8df690be59f47",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8515,
+      "event_id": "hp_769b543276f8a85c",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8516,
+      "event_id": "hp_2efffe963a791c30",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8517,
+      "event_id": "hp_156ae6e52f366d16",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8518,
+      "event_id": "hp_a12ff1d1f924ceda",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8519,
+      "event_id": "hp_015a865d4a324e13",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8520,
+      "event_id": "hp_66f7e6817d528e93",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8521,
+      "event_id": "hp_77d1d2abd0d36fc4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8522,
+      "event_id": "hp_b31c22bb47bfc429",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8523,
+      "event_id": "hp_ce252613641a66fe",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8524,
+      "event_id": "hp_509b3058151cdc90",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8525,
+      "event_id": "hp_424b94444a735f1f",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8526,
+      "event_id": "hp_587af8b80e82a061",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8527,
+      "event_id": "hp_6d9b8587af8487bd",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8528,
+      "event_id": "hp_673ab07854c4461e",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8529,
+      "event_id": "hp_37b3076961e7a134",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8530,
+      "event_id": "hp_38d24ae1704d8f39",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8531,
+      "event_id": "hp_51ae1b12dab66ecc",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8532,
+      "event_id": "hp_b310630095b783cb",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8533,
+      "event_id": "hp_cd35b7fc4d4a043a",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8534,
+      "event_id": "hp_5ed4900b9e6348dc",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8535,
+      "event_id": "hp_cca468b9d87fc52f",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8536,
+      "event_id": "hp_f03b437ee09f244c",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8537,
+      "event_id": "hp_b85dc55aeb254344",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8538,
+      "event_id": "hp_677069d62d54a0fb",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8539,
+      "event_id": "hp_86f3e0e972aecaea",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8540,
+      "event_id": "hp_13102eaacf2f0955",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8541,
+      "event_id": "hp_3956bb03f357a317",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8542,
+      "event_id": "hp_4956788b80be1ed7",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8543,
+      "event_id": "hp_57021b83441bd501",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8544,
+      "event_id": "hp_c946da46ec782286",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8545,
+      "event_id": "hp_e80207883b19153a",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8546,
+      "event_id": "hp_44b2bc08eaf47e72",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8547,
+      "event_id": "hp_dcee2ffc1f0d89cc",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8548,
+      "event_id": "hp_16eea623398454b4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8549,
+      "event_id": "hp_24bcfa4ae3596ab6",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8550,
+      "event_id": "hp_5eb512b7529c9474",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8551,
+      "event_id": "hp_876f3bb0c8401cc8",
+      "revision": 9,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8552,
+      "event_id": "hp_9c4cf3767e3335e6",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8553,
+      "event_id": "hp_e29eaa92753b7a36",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8554,
+      "event_id": "hp_bb0b154d00f6a4ee",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8555,
+      "event_id": "hp_e928ebf5e391c080",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8556,
+      "event_id": "hp_28f3359f8c62f482",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8557,
+      "event_id": "hp_60bd86eeb8754950",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8558,
+      "event_id": "hp_72abc914699fa3ad",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8559,
+      "event_id": "hp_693eb13637680b37",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8560,
+      "event_id": "hp_6db80f12f9284a58",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8561,
+      "event_id": "hp_74c603095aa29244",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8562,
+      "event_id": "hp_9bb661cce059b0b8",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8563,
+      "event_id": "hp_c110bcd8b3cf42d7",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8564,
+      "event_id": "hp_208c240a7e24e04f",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8565,
+      "event_id": "hp_edd5d08945cf5ebc",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8566,
+      "event_id": "hp_1fa62d3ce45fceaf",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8567,
+      "event_id": "hp_02725a39e7355438",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8568,
+      "event_id": "hp_2b6abef53629a647",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8569,
+      "event_id": "hp_5c60b354636f4c04",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8570,
+      "event_id": "hp_cf90ab6f7027d5a0",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8571,
+      "event_id": "hp_0febcb152181f81b",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8572,
+      "event_id": "hp_f9f52227f4ba8c2d",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8573,
+      "event_id": "hp_4578262a77567c26",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8574,
+      "event_id": "hp_551a258f2ccc5bf4",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8575,
+      "event_id": "hp_86bb14be50b33ed0",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8576,
+      "event_id": "hp_4dd0f5b62ad0c51e",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8577,
+      "event_id": "hp_0983871b2620ed9e",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8578,
+      "event_id": "hp_8f2fb5b58536760a",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8579,
+      "event_id": "hp_4e8ce4ce8365b777",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8580,
+      "event_id": "hp_ab248da89db76701",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8581,
+      "event_id": "hp_b7135cbebcd434ae",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8582,
+      "event_id": "hp_0049703e87866887",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8583,
+      "event_id": "hp_c34609d6d8284bf0",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8584,
+      "event_id": "hp_6066b877ecea3442",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8585,
+      "event_id": "hp_6e7c2f92058c294b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8586,
+      "event_id": "hp_34cdeb3f13cabdef",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8587,
+      "event_id": "hp_f32088c859047c24",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8588,
+      "event_id": "hp_f986b61e5bfe0b2a",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8589,
+      "event_id": "hp_2eca0d41627b8400",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8590,
+      "event_id": "hp_36bf3930a417d056",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8591,
+      "event_id": "hp_786badab45134dd2",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8592,
+      "event_id": "hp_860393aa1a30ae3c",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8593,
+      "event_id": "hp_3e2b1fed570260e9",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8594,
+      "event_id": "hp_997f93f972d6bb39",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8595,
+      "event_id": "hp_f92fa5368f408df2",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8596,
+      "event_id": "hp_dcdb6d53afc6610b",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8597,
+      "event_id": "hp_ebd6cd00f98d6fa7",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8598,
+      "event_id": "hp_a616bd5b9e0e3140",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8599,
+      "event_id": "hp_bce6600b7fdd42a0",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8600,
+      "event_id": "hp_e56c33a37998971d",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8601,
+      "event_id": "hp_f8c5599c12e3f738",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8602,
+      "event_id": "hp_891af72b28ef31ef",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8603,
+      "event_id": "hp_1dad983930758f87",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8604,
+      "event_id": "hp_9c1024d49d5bd664",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8605,
+      "event_id": "hp_a6b0e1a753c70141",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8606,
+      "event_id": "hp_823819be7915bf88",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8607,
+      "event_id": "hp_d32635d71d4649e9",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8608,
+      "event_id": "hp_e26e73af1ead79df",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8609,
+      "event_id": "hp_af0835ce9eab030d",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8610,
+      "event_id": "hp_c0fd4982bffa90b4",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8611,
+      "event_id": "hp_186ad654fc4137b3",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8612,
+      "event_id": "hp_5fdeaf3142c73376",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8613,
+      "event_id": "hp_b63139de0571b33b",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8614,
+      "event_id": "hp_4431670888d67a85",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8615,
+      "event_id": "hp_6eff5a0cf92a4ee8",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8616,
+      "event_id": "hp_82b231c2fdf595f8",
+      "revision": 8,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8617,
+      "event_id": "hp_e4236686eb989ebd",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8618,
+      "event_id": "hp_33e180b76e199a7f",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8619,
+      "event_id": "hp_949889f0228004d3",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8620,
+      "event_id": "hp_4434c186bf017429",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8621,
+      "event_id": "hp_7270dfbac28de95f",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8622,
+      "event_id": "hp_fc2ab4844c37be73",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8623,
+      "event_id": "hp_9e8d5b19f2ac42a7",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8624,
+      "event_id": "hp_b0c2b0c45dc5c86f",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8625,
+      "event_id": "hp_bd0fa6508f6a42c8",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8626,
+      "event_id": "hp_f1e8011c25208086",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8627,
+      "event_id": "hp_c6146f685fc09fbb",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8628,
+      "event_id": "hp_944e533d8bb71fba",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8629,
+      "event_id": "hp_30b74108ef76ee7b",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8630,
+      "event_id": "hp_514aec330ecbd4de",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8631,
+      "event_id": "hp_4ed04c213f0d11ab",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8632,
+      "event_id": "hp_1243ad6df3127162",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8633,
+      "event_id": "hp_4ec6e6a2c627dd32",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8634,
+      "event_id": "hp_e83dca45cae5d4e0",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8635,
+      "event_id": "hp_a2543536d845d5d9",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8636,
+      "event_id": "hp_995e6285dd741eb7",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8637,
+      "event_id": "hp_c9cc85c3db0f771f",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8638,
+      "event_id": "hp_d7ff8a19cc768640",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8639,
+      "event_id": "hp_e92bf27b1320d1cc",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8640,
+      "event_id": "hp_bbd88f20472db1bd",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8641,
+      "event_id": "hp_99fb3e62cb5dc361",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8642,
+      "event_id": "hp_6162d664cb24c9e4",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8643,
+      "event_id": "hp_e7de934f34b554e6",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8644,
+      "event_id": "hp_48fc6dd45ecf37d3",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8645,
+      "event_id": "hp_0b7c22f92e3d8b2b",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8646,
+      "event_id": "hp_4fb623db87520c02",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8647,
+      "event_id": "hp_ac7df7d7c37a129c",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8648,
+      "event_id": "hp_aff6508dfbb3fdb1",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8649,
+      "event_id": "hp_89e48477b76e9049",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8650,
+      "event_id": "hp_c235807f5f29ffca",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8651,
+      "event_id": "hp_8d3f9d8506bcf20d",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8652,
+      "event_id": "hp_16fb45e2129f9197",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8653,
+      "event_id": "hp_e270a39d234bd4c6",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8654,
+      "event_id": "hp_e7898014d9e73e7b",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-22T15:54:04Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
         "sessions",
         "event_status",
         "availability",
