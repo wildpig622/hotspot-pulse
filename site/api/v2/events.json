@@ -2,14 +2,14 @@
   "meta": {
     "api_version": "v2",
     "schema_version": "2.0",
-    "generated_at": "2026-11-23T05:37:41Z",
+    "generated_at": "2026-11-23T19:47:42Z",
     "last_collection_at": "2026-11-23T05:37:41Z",
-    "collection_status": "healthy",
-    "using_cached_data": false,
+    "collection_status": "failed",
+    "using_cached_data": true,
     "event_count": 3012,
     "source_record_count": 3012,
     "linked_record_reduction": 10,
-    "cursor": 8805,
+    "cursor": 8816,
     "coverage_status": "partial",
     "schedule_local": [
       "08:00",
@@ -19,7 +19,7 @@
     "last_successful_collection_at": "2026-11-23T05:37:41Z",
     "expires_at": "2026-11-23T23:37:41Z",
     "is_stale": false,
-    "age_hours": 0
+    "age_hours": 14.17
   },
   "data": [
     {
@@ -78191,8 +78191,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_73536f22c4d974ca",
@@ -78651,8 +78651,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_fc1ea509a3c46795",
@@ -94894,8 +94894,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 4
+      "availability": "expired",
+      "revision": 5
     },
     {
       "event_id": "hp_343ff40720311705",
@@ -94961,8 +94961,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_48782264294bcce3",
@@ -95058,8 +95058,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 4
+      "availability": "expired",
+      "revision": 5
     },
     {
       "event_id": "hp_4e81dee72aa122bb",
@@ -95135,8 +95135,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 2
+      "availability": "expired",
+      "revision": 3
     },
     {
       "event_id": "hp_6fe43b9d281a3f5d",
@@ -95202,8 +95202,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 1
+      "availability": "expired",
+      "revision": 2
     },
     {
       "event_id": "hp_779923dd7a4516e3",
@@ -95413,8 +95413,8 @@
         }
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 2
+      "availability": "expired",
+      "revision": 3
     },
     {
       "event_id": "hp_c3486cceb962d53d",
@@ -106609,8 +106609,8 @@
       "evidence_levels": [
         "ticketing_listing"
       ],
-      "availability": "candidate",
-      "revision": 6
+      "availability": "expired",
+      "revision": 7
     },
     {
       "event_id": "hp_87641ab187a70037",
@@ -106721,8 +106721,8 @@
         "ticketing_listing"
       ],
       "date_review_required": false,
-      "availability": "candidate",
-      "revision": 5
+      "availability": "expired",
+      "revision": 6
     },
     {
       "event_id": "hp_4475e81e4f0f80b8",
@@ -106816,8 +106816,8 @@
       "evidence_levels": [
         "ticketing_listing"
       ],
-      "availability": "candidate",
-      "revision": 3
+      "availability": "expired",
+      "revision": 4
     },
     {
       "event_id": "hp_3432650de22de935",

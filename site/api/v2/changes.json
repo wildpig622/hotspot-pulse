@@ -2,7 +2,7 @@
   "meta": {
     "api_version": "v2",
     "schema_version": "2.0",
-    "cursor": 8805,
+    "cursor": 8816,
     "cursor_floor": 0
   },
   "data": [
@@ -98936,6 +98936,116 @@
         "event_status",
         "availability",
         "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8806,
+      "event_id": "hp_34555b8b0e04810d",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8807,
+      "event_id": "hp_f58f76d29252431a",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8808,
+      "event_id": "hp_3436e99c90e3e0b8",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8809,
+      "event_id": "hp_343ff40720311705",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8810,
+      "event_id": "hp_48782264294bcce3",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8811,
+      "event_id": "hp_4e81dee72aa122bb",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8812,
+      "event_id": "hp_6fe43b9d281a3f5d",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8813,
+      "event_id": "hp_b35d08d71a46540a",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8814,
+      "event_id": "hp_68413854404ed637",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8815,
+      "event_id": "hp_87641ab187a70037",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8816,
+      "event_id": "hp_4475e81e4f0f80b8",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-23T19:47:42Z",
+      "changed_fields": [
+        "availability"
       ]
     }
   ]
