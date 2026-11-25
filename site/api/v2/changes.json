@@ -2,7 +2,7 @@
   "meta": {
     "api_version": "v2",
     "schema_version": "2.0",
-    "cursor": 8924,
+    "cursor": 9090,
     "cursor_floor": 0
   },
   "data": [
@@ -100427,6 +100427,2122 @@
       "revision": 1,
       "change_type": "created",
       "observed_at": "2026-11-24T08:15:27Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8925,
+      "event_id": "hp_0763e714f3cc3d59",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8926,
+      "event_id": "hp_f1c336e2c29ac87b",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8927,
+      "event_id": "hp_2506aadcae7c5e2a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8928,
+      "event_id": "hp_6014c7d3c8ad453a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8929,
+      "event_id": "hp_0f8cee1a941d4871",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8930,
+      "event_id": "hp_1f7d9eae9d3e942d",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8931,
+      "event_id": "hp_0ef005c28eadc1ea",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name"
+      ]
+    },
+    {
+      "cursor": 8932,
+      "event_id": "hp_9d7c6ec1a5184770",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8933,
+      "event_id": "hp_ffca28f3a6d757de",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8934,
+      "event_id": "hp_3bc6cd07cbdf5c29",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8935,
+      "event_id": "hp_d04d7e1bdd260276",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8936,
+      "event_id": "hp_3436e99c90e3e0b8",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8937,
+      "event_id": "hp_48782264294bcce3",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8938,
+      "event_id": "hp_4c092c97f699daa1",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8939,
+      "event_id": "hp_aade3f8d742e8113",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8940,
+      "event_id": "hp_3432650de22de935",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8941,
+      "event_id": "hp_03b24fbefae80470",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8942,
+      "event_id": "hp_43600c53f653deab",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8943,
+      "event_id": "hp_88d5c26d35710cfa",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8944,
+      "event_id": "hp_0508acd499d35557",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8945,
+      "event_id": "hp_c482b3b32c3b6184",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8946,
+      "event_id": "hp_1a2a347012b93b0a",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8947,
+      "event_id": "hp_66df9604ca00c075",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8948,
+      "event_id": "hp_a41d74b52ab88590",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8949,
+      "event_id": "hp_8836551f18b38930",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8950,
+      "event_id": "hp_8f79410040fb160e",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8951,
+      "event_id": "hp_c81aaec2d3ac6371",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8952,
+      "event_id": "hp_379d1a26eab1c006",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8953,
+      "event_id": "hp_d0585f65151e698d",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8954,
+      "event_id": "hp_08a3bc38bd455c04",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8955,
+      "event_id": "hp_2c4a20816a3ed5b4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8956,
+      "event_id": "hp_3beb993da543bee9",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8957,
+      "event_id": "hp_92fbca53415a8654",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8958,
+      "event_id": "hp_8c686bcd7d042e8d",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8959,
+      "event_id": "hp_e6f7a598bb9297fa",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8960,
+      "event_id": "hp_13429f4b70f0dd06",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8961,
+      "event_id": "hp_b419f54aa768e63a",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8962,
+      "event_id": "hp_c9bbbde0fb1ee878",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8963,
+      "event_id": "hp_6fa4582602b3a8b3",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8964,
+      "event_id": "hp_07303d3dabf372b2",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8965,
+      "event_id": "hp_37cd2cf436e58248",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8966,
+      "event_id": "hp_3dda289250bd9ebd",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8967,
+      "event_id": "hp_6a7e48af800ef8a8",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8968,
+      "event_id": "hp_6a8ee7f87f1be2f6",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8969,
+      "event_id": "hp_6d4ccadb196b0cd6",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8970,
+      "event_id": "hp_8962c120aabac7d2",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8971,
+      "event_id": "hp_952a65c5665bfb15",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8972,
+      "event_id": "hp_fd293723eb18e7b7",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8973,
+      "event_id": "hp_526b183839cabc61",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8974,
+      "event_id": "hp_59261868f936e354",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8975,
+      "event_id": "hp_804113ba1e7c38d6",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8976,
+      "event_id": "hp_b677e52e75729630",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8977,
+      "event_id": "hp_523a40e230f8e033",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8978,
+      "event_id": "hp_f0d206eabe8caf85",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8979,
+      "event_id": "hp_0c2b2ce559d8b85a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8980,
+      "event_id": "hp_4299f91ec3ce46c1",
+      "revision": 5,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8981,
+      "event_id": "hp_88faa414015241fb",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8982,
+      "event_id": "hp_bcc214c61753b7d0",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name"
+      ]
+    },
+    {
+      "cursor": 8983,
+      "event_id": "hp_75306629bcd9c8b1",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 8984,
+      "event_id": "hp_2d38888b7aa47d16",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8985,
+      "event_id": "hp_423afd5eb7aec4eb",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8986,
+      "event_id": "hp_d20a5701677b9fed",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 8987,
+      "event_id": "hp_9248ecfafc690a44",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8988,
+      "event_id": "hp_7b93dafe4637fc0e",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8989,
+      "event_id": "hp_2cec35d0c0adb065",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8990,
+      "event_id": "hp_75a900366aa56e54",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8991,
+      "event_id": "hp_7cef39642bf19501",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8992,
+      "event_id": "hp_3a0903ccf4602c6d",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8993,
+      "event_id": "hp_7311f207e6bc874b",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8994,
+      "event_id": "hp_60b8519fcc472fb0",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8995,
+      "event_id": "hp_e50e7f99d9004150",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8996,
+      "event_id": "hp_253676898d86aac4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8997,
+      "event_id": "hp_219544eb219e6764",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8998,
+      "event_id": "hp_087ec2665f8e39c4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 8999,
+      "event_id": "hp_882942a48373851a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9000,
+      "event_id": "hp_8391187d70497b21",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9001,
+      "event_id": "hp_0941212933e2984a",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9002,
+      "event_id": "hp_9c2dfb5e78c47fa6",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9003,
+      "event_id": "hp_13bd55bbeb0f3c0f",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9004,
+      "event_id": "hp_2e2957360e2eedcc",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9005,
+      "event_id": "hp_92b580351c0a4ede",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "sessions"
+      ]
+    },
+    {
+      "cursor": 9006,
+      "event_id": "hp_d7174dad558b840e",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9007,
+      "event_id": "hp_0c6e2f12123ff29c",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9008,
+      "event_id": "hp_644d4898138d28df",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9009,
+      "event_id": "hp_351ab2ecb3fad41c",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9010,
+      "event_id": "hp_8844fe17ca5f2410",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9011,
+      "event_id": "hp_f69543eed406c7a2",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9012,
+      "event_id": "hp_160c6b45a5d61dbc",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9013,
+      "event_id": "hp_82f8fdda6595fe6f",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9014,
+      "event_id": "hp_a7837b7b11ef1bda",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9015,
+      "event_id": "hp_33be3df70788afe2",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9016,
+      "event_id": "hp_5eb1f26cfb75b9aa",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9017,
+      "event_id": "hp_73c84a7dec92092f",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9018,
+      "event_id": "hp_8c1fbcc257ca3f78",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9019,
+      "event_id": "hp_afa9e039bba1f0e0",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9020,
+      "event_id": "hp_592c99119beba391",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9021,
+      "event_id": "hp_dda098b06b677404",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9022,
+      "event_id": "hp_1b71838203d45817",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9023,
+      "event_id": "hp_ddfd10a346189355",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9024,
+      "event_id": "hp_70433e687e825753",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9025,
+      "event_id": "hp_c409346936b22548",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9026,
+      "event_id": "hp_015a865d4a324e13",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9027,
+      "event_id": "hp_66f7e6817d528e93",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9028,
+      "event_id": "hp_77d1d2abd0d36fc4",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9029,
+      "event_id": "hp_b31c22bb47bfc429",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9030,
+      "event_id": "hp_ce252613641a66fe",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9031,
+      "event_id": "hp_de82831dc6d836d7",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9032,
+      "event_id": "hp_332e2a59d3cb4b0d",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9033,
+      "event_id": "hp_b69fa453e60ac0bf",
+      "revision": 7,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9034,
+      "event_id": "hp_4f2e69f591020878",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9035,
+      "event_id": "hp_c2a80f8daee9cccc",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9036,
+      "event_id": "hp_084cd08d0ab544f4",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9037,
+      "event_id": "hp_d53be0621157dbae",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9038,
+      "event_id": "hp_038b6561a8a4ae23",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9039,
+      "event_id": "hp_8a69f687d0b65edc",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9040,
+      "event_id": "hp_c841bc3a608b7bcd",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9041,
+      "event_id": "hp_baf9d99de59edaa1",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9042,
+      "event_id": "hp_cebf6f6842158c35",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9043,
+      "event_id": "hp_d3613ed9edfd2799",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9044,
+      "event_id": "hp_1b2204d2d183cd04",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9045,
+      "event_id": "hp_ea5a2b5bbec5a8f9",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9046,
+      "event_id": "hp_0049703e87866887",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9047,
+      "event_id": "hp_1419e6d561f780a7",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9048,
+      "event_id": "hp_683a9ce6262e9f27",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9049,
+      "event_id": "hp_6d0ce6e66d05886a",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9050,
+      "event_id": "hp_c34609d6d8284bf0",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9051,
+      "event_id": "hp_84b1909ef1e31160",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9052,
+      "event_id": "hp_48ae09b43faf3e1a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9053,
+      "event_id": "hp_b5711a293c885c77",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9054,
+      "event_id": "hp_b65c7704cf3e4846",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9055,
+      "event_id": "hp_891af72b28ef31ef",
+      "revision": 3,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "venue_name"
+      ]
+    },
+    {
+      "cursor": 9056,
+      "event_id": "hp_6e2553c8c35e6ced",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9057,
+      "event_id": "hp_7617d4acf7359135",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9058,
+      "event_id": "hp_c10e190d871d2f6b",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9059,
+      "event_id": "hp_c54aaf2bc32c4f6d",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9060,
+      "event_id": "hp_35e87ddc5dea4a00",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "venue_name"
+      ]
+    },
+    {
+      "cursor": 9061,
+      "event_id": "hp_cc7c79a4d6125134",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9062,
+      "event_id": "hp_4431670888d67a85",
+      "revision": 6,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9063,
+      "event_id": "hp_d320afde75b1c3e1",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9064,
+      "event_id": "hp_d53a3d642b099b7f",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9065,
+      "event_id": "hp_e4236686eb989ebd",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9066,
+      "event_id": "hp_2b945fa645426d55",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9067,
+      "event_id": "hp_45c2e4a8a001e876",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9068,
+      "event_id": "hp_b9e688d08a6a89bc",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9069,
+      "event_id": "hp_f17f464a3dc6391b",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9070,
+      "event_id": "hp_9e8d5b19f2ac42a7",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9071,
+      "event_id": "hp_b0c2b0c45dc5c86f",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9072,
+      "event_id": "hp_ca117f06c4b85723",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9073,
+      "event_id": "hp_5f0ce4038bb74b6b",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9074,
+      "event_id": "hp_2ae2ba8d57307677",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9075,
+      "event_id": "hp_38ac9cd7024ce02a",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9076,
+      "event_id": "hp_4ec6e6a2c627dd32",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9077,
+      "event_id": "hp_6476784176792849",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9078,
+      "event_id": "hp_ae868344d9f75e22",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": []
+    },
+    {
+      "cursor": 9079,
+      "event_id": "hp_8fd3303d443687a3",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9080,
+      "event_id": "hp_92ebfbc58eab6bd9",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9081,
+      "event_id": "hp_5af65f7f591c0f32",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9082,
+      "event_id": "hp_426e6837f9ae0cfc",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9083,
+      "event_id": "hp_0b7c22f92e3d8b2b",
+      "revision": 4,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9084,
+      "event_id": "hp_4fb623db87520c02",
+      "revision": 2,
+      "change_type": "updated",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "availability"
+      ]
+    },
+    {
+      "cursor": 9085,
+      "event_id": "hp_1e967774243d672f",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9086,
+      "event_id": "hp_f08716374634a196",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9087,
+      "event_id": "hp_6005ad38a2e4c5a4",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9088,
+      "event_id": "hp_b060bea0b8a5505b",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9089,
+      "event_id": "hp_a539339ccd406283",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
+      "changed_fields": [
+        "event_name",
+        "city_name",
+        "venue_name",
+        "sessions",
+        "event_status",
+        "availability",
+        "member_record_ids"
+      ]
+    },
+    {
+      "cursor": 9090,
+      "event_id": "hp_cfec50ec2732fcfd",
+      "revision": 1,
+      "change_type": "created",
+      "observed_at": "2026-11-25T06:52:44Z",
       "changed_fields": [
         "event_name",
         "city_name",
