@@ -1,0 +1,9 @@
+{
+  "observation_cutoff": "2026-11-26T07:51:04Z",
+  "existing_source_record_ids_evaluated": 92,
+  "unexpected_canonical_id_changes": [],
+  "automatic_verified_promotions": [],
+  "consumer_api_version": "v2",
+  "not_written_to_site": true,
+  "note": "Full original calendar plus isolated candidates passed through existing build_feed in memory; this does not replace production."
+}

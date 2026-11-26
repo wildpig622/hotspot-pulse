@@ -1,0 +1,141 @@
+{
+  "tool_repo": "https://github.com/Jesseovo/last30days-skill-cn",
+  "commit": "f560345767af3ff89733d2c2b15714eac6a8f436",
+  "credentials_used": false,
+  "browser_used": false,
+  "runs": [
+    {
+      "args": [
+        "西安 演唱会 加场",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:46:48Z",
+      "exit_code": 0,
+      "elapsed_seconds": 9.781,
+      "stdout_file": "run-0.stdout.txt",
+      "stderr_file": "run-0.stderr.txt"
+    },
+    {
+      "args": [
+        "西安 漫展 应援",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:46:57Z",
+      "exit_code": 0,
+      "elapsed_seconds": 7.266,
+      "stdout_file": "run-1.stdout.txt",
+      "stderr_file": "run-1.stderr.txt"
+    },
+    {
+      "args": [
+        "济南 演唱会 加场",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:47:05Z",
+      "exit_code": 0,
+      "elapsed_seconds": 7.109,
+      "stdout_file": "run-2.stdout.txt",
+      "stderr_file": "run-2.stderr.txt"
+    },
+    {
+      "args": [
+        "济南 漫展 应援",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:47:12Z",
+      "exit_code": 0,
+      "elapsed_seconds": 7.25,
+      "stdout_file": "run-3.stdout.txt",
+      "stderr_file": "run-3.stderr.txt"
+    },
+    {
+      "args": [
+        "天津 演唱会 加场",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:47:19Z",
+      "exit_code": 0,
+      "elapsed_seconds": 9.532,
+      "stdout_file": "run-4.stdout.txt",
+      "stderr_file": "run-4.stderr.txt"
+    },
+    {
+      "args": [
+        "天津 漫展 应援",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:47:28Z",
+      "exit_code": 0,
+      "elapsed_seconds": 10.5,
+      "stdout_file": "run-5.stdout.txt",
+      "stderr_file": "run-5.stderr.txt"
+    }
+  ],
+  "captured_text_newlines": "LF normalized"
+}

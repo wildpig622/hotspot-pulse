@@ -1,0 +1,149 @@
+{
+  "baseline_commit": "c4c2c52",
+  "historical_rows": 17532,
+  "missing_start_at_rows": 16407,
+  "sample_size": 200,
+  "seed": 20261126,
+  "sample_strata": [
+    {
+      "city": "其他城市",
+      "topic": "concert",
+      "sample_count": 9
+    },
+    {
+      "city": "其他城市",
+      "topic": "conference",
+      "sample_count": 9
+    },
+    {
+      "city": "其他城市",
+      "topic": "exhibition",
+      "sample_count": 9
+    },
+    {
+      "city": "其他城市",
+      "topic": "festival",
+      "sample_count": 9
+    },
+    {
+      "city": "其他城市",
+      "topic": "holiday",
+      "sample_count": 9
+    },
+    {
+      "city": "其他城市",
+      "topic": "sports",
+      "sample_count": 9
+    },
+    {
+      "city": "天津市",
+      "topic": "concert",
+      "sample_count": 9
+    },
+    {
+      "city": "天津市",
+      "topic": "conference",
+      "sample_count": 9
+    },
+    {
+      "city": "天津市",
+      "topic": "exhibition",
+      "sample_count": 8
+    },
+    {
+      "city": "天津市",
+      "topic": "festival",
+      "sample_count": 8
+    },
+    {
+      "city": "天津市",
+      "topic": "holiday",
+      "sample_count": 8
+    },
+    {
+      "city": "天津市",
+      "topic": "sports",
+      "sample_count": 8
+    },
+    {
+      "city": "济南市",
+      "topic": "concert",
+      "sample_count": 8
+    },
+    {
+      "city": "济南市",
+      "topic": "conference",
+      "sample_count": 8
+    },
+    {
+      "city": "济南市",
+      "topic": "exhibition",
+      "sample_count": 8
+    },
+    {
+      "city": "济南市",
+      "topic": "festival",
+      "sample_count": 8
+    },
+    {
+      "city": "济南市",
+      "topic": "holiday",
+      "sample_count": 8
+    },
+    {
+      "city": "济南市",
+      "topic": "sports",
+      "sample_count": 8
+    },
+    {
+      "city": "西安市",
+      "topic": "concert",
+      "sample_count": 8
+    },
+    {
+      "city": "西安市",
+      "topic": "conference",
+      "sample_count": 8
+    },
+    {
+      "city": "西安市",
+      "topic": "exhibition",
+      "sample_count": 8
+    },
+    {
+      "city": "西安市",
+      "topic": "festival",
+      "sample_count": 8
+    },
+    {
+      "city": "西安市",
+      "topic": "holiday",
+      "sample_count": 8
+    },
+    {
+      "city": "西安市",
+      "topic": "sports",
+      "sample_count": 8
+    }
+  ],
+  "direct_original_bodies": 0,
+  "human_completed": 0,
+  "body_existence_unknown": 200,
+  "independent_followup_articles": 4,
+  "labels_required": [
+    "no_event_date_in_original",
+    "rss_missing_body_has_date",
+    "parser_rule_miss",
+    "non_event_date",
+    "historical_or_undetermined"
+  ],
+  "llm_body_increment": {
+    "cases": 4,
+    "literal_evidence_gate_passes": 3,
+    "numeric_date_proposals_not_parsed_by_rule": 1,
+    "additional_event_role_proposals": 2,
+    "date_accuracy": null,
+    "independent_human_labels": 0,
+    "note": "Three historical date proposals and one undetermined historical report. Not a representative accuracy estimate or new future events."
+  }
+}

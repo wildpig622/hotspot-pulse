@@ -1,0 +1,824 @@
+{
+  "topic": "济南 演唱会 加场",
+  "range": {
+    "from": "2026-10-27",
+    "to": "2026-11-26"
+  },
+  "generated_at": "2026-11-26T07:47:12.159761+00:00",
+  "mode": "all",
+  "weibo": [],
+  "xiaohongshu": [],
+  "bilibili": [
+    {
+      "id": "BL1",
+      "title": "【超级皇帝位】Ella陈嘉桦演唱会济南站全场 20261121 #131",
+      "url": "https://www.bilibili.com/video/BV1WNyZzcEDs",
+      "bvid": "BV1WNyZzcEDs",
+      "channel_name": "随机生成的剪刀手",
+      "author_mid": "21951669",
+      "date": "2026-11-24",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 8,
+        "likes": 28,
+        "views": 662,
+        "danmaku": 1,
+        "favorites": 36
+      },
+      "description": "自留存档，无商业用途\nElla陈嘉桦It&#x27;s Me艾拉主意巡回演唱会济南站全场 20261121\n录制设备：小米15Ultra（全程手持）+索尼d100录音笔",
+      "duration": 10197,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【超级皇帝位】Ella陈嘉桦演唱会济南站全场 20261121 #131",
+      "subs": {
+        "relevance": 64,
+        "recency": 93,
+        "engagement": 59
+      },
+      "score": 69
+    },
+    {
+      "id": "BL7",
+      "title": "温大愚听 单依纯《续写》(2025济南演唱会)",
+      "url": "https://www.bilibili.com/video/BV1hZ446aELY",
+      "bvid": "BV1hZ446aELY",
+      "channel_name": "-飞鸿-雪泥-",
+      "author_mid": "385635153",
+      "date": "2026-11-06",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 10,
+        "likes": 118,
+        "views": 3603,
+        "danmaku": 106,
+        "favorites": 11
+      },
+      "description": "",
+      "duration": 265,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：温大愚听 单依纯《续写》(2025济南演唱会)",
+      "subs": {
+        "relevance": 64,
+        "recency": 33,
+        "engagement": 100
+      },
+      "score": 67
+    },
+    {
+      "id": "BL3",
+      "title": "【Ella陈嘉桦】20261121 艾拉主意济南站演唱会全程（自留）",
+      "url": "https://www.bilibili.com/video/BV1t8yHzMEbN",
+      "bvid": "BV1t8yHzMEbN",
+      "channel_name": "Britney白昼出逃",
+      "author_mid": "324032618",
+      "date": "2026-11-23",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 8,
+        "views": 566,
+        "danmaku": 0,
+        "favorites": 10
+      },
+      "description": "2026.11.21 Ella陈嘉桦 艾拉主意济南演唱会\n980价位 vip1区14排 大疆pocket4pro手持拍摄",
+      "duration": 6815,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【Ella陈嘉桦】20261121 艾拉主意济南站演唱会全程（自留）",
+      "subs": {
+        "relevance": 64,
+        "recency": 90,
+        "engagement": 42
+      },
+      "score": 63
+    },
+    {
+      "id": "BL17",
+      "title": "【沿海小站】Ella 陈嘉桦 艾拉主意彩蛋歌曲合辑 20261121 济南 彩蛋歌曲 你不会",
+      "url": "https://www.bilibili.com/video/BV11ryvzTEC2",
+      "bvid": "BV11ryvzTEC2",
+      "channel_name": "沿海小站",
+      "author_mid": "125453976",
+      "date": "2026-11-22",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 10,
+        "views": 196,
+        "danmaku": 0,
+        "favorites": 6
+      },
+      "description": "",
+      "duration": 148,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【沿海小站】Ella 陈嘉桦 艾拉主意彩蛋歌曲合辑 20261121 济南 彩蛋歌曲 你不会",
+      "subs": {
+        "relevance": 64,
+        "recency": 86,
+        "engagement": 31
+      },
+      "score": 59
+    },
+    {
+      "id": "BL13",
+      "title": "Jolin蔡依林UglyBeauty演唱会华伦特别定制绝美“美人鱼🧜”版《LoveLoveLove 》原创上海X洛阳X衢州X济南X深圳X贵阳X合肥X杭州",
+      "url": "https://www.bilibili.com/video/BV1KWsq6UERr",
+      "bvid": "BV1KWsq6UERr",
+      "channel_name": "闫晨森",
+      "author_mid": "202678241",
+      "date": "2026-11-20",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 12,
+        "views": 397,
+        "danmaku": 0,
+        "favorites": 4
+      },
+      "description": "",
+      "duration": 105,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：Jolin蔡依林UglyBeauty演唱会华伦特别定制绝美“美人鱼🧜”版《LoveLoveLove ",
+      "subs": {
+        "relevance": 64,
+        "recency": 80,
+        "engagement": 36
+      },
+      "score": 59
+    },
+    {
+      "id": "BL4",
+      "title": "2026徐良演唱会丨11.27-12.06大连 济南站少量余票！！速来捡漏～包厢/看台/内场/前排",
+      "url": "https://www.bilibili.com/video/BV1vU1cztExN",
+      "bvid": "BV1vU1cztExN",
+      "channel_name": "非银吖",
+      "author_mid": "511932844",
+      "date": "2026-11-24",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 3,
+        "views": 194,
+        "danmaku": 0,
+        "favorites": 0
+      },
+      "description": "-",
+      "duration": 8,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：2026徐良演唱会丨11.27-12.06大连 济南站少量余票！！速来捡漏～包厢/看台/内场/前排",
+      "subs": {
+        "relevance": 64,
+        "recency": 93,
+        "engagement": 20
+      },
+      "score": 58
+    },
+    {
+      "id": "BL2",
+      "title": "【自存】周华健济南演唱会纯享版20261031",
+      "url": "https://www.bilibili.com/video/BV1M4xp65ERh",
+      "bvid": "BV1M4xp65ERh",
+      "channel_name": "耶依啊哈",
+      "author_mid": "207342468",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 12,
+        "likes": 39,
+        "views": 4923,
+        "danmaku": 0,
+        "favorites": 58
+      },
+      "description": "-",
+      "duration": 6800,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【自存】周华健济南演唱会纯享版20261031",
+      "subs": {
+        "relevance": 64,
+        "recency": 16,
+        "engagement": 74
+      },
+      "score": 55
+    },
+    {
+      "id": "BL6",
+      "title": "【周深】20260823 济南场DAY2 中场talk 4k大屏饭拍",
+      "url": "https://www.bilibili.com/video/BV13dy6zAESz",
+      "bvid": "BV13dy6zAESz",
+      "channel_name": "馒头少熬夜",
+      "author_mid": "1492465544",
+      "date": "2026-11-25",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 1,
+        "views": 13,
+        "danmaku": 0,
+        "favorites": 1
+      },
+      "description": "-",
+      "duration": 175,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【周深】20260823 济南场DAY2 中场talk 4k大屏饭拍",
+      "subs": {
+        "relevance": 64,
+        "recency": 96,
+        "engagement": 0
+      },
+      "score": 52
+    },
+    {
+      "id": "BL11",
+      "title": "【可爱女人+幸福】魔天伦606济南演唱会 依旧胃痛情歌",
+      "url": "https://www.bilibili.com/video/BV1Tg4E6YE7C",
+      "bvid": "BV1Tg4E6YE7C",
+      "channel_name": "游会园",
+      "author_mid": "3546935443064960",
+      "date": "2026-11-07",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 20,
+        "views": 481,
+        "danmaku": 0,
+        "favorites": 18
+      },
+      "description": "源文件\n2015.6.6",
+      "duration": 477,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【可爱女人+幸福】魔天伦606济南演唱会 依旧胃痛情歌",
+      "subs": {
+        "relevance": 64,
+        "recency": 36,
+        "engagement": 45
+      },
+      "score": 51
+    },
+    {
+      "id": "BL10",
+      "title": "当爷爷？辟谣了辟谣了！还没还没！ 《亲亲我的孙儿宝贝》周华健 2026.11.1济南",
+      "url": "https://www.bilibili.com/video/BV1wR4A67EPH",
+      "bvid": "BV1wR4A67EPH",
+      "channel_name": "Lesley_踏月",
+      "author_mid": "33508859",
+      "date": "2026-11-02",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 4,
+        "likes": 30,
+        "views": 654,
+        "danmaku": 1,
+        "favorites": 10
+      },
+      "description": "-",
+      "duration": 250,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：当爷爷？辟谣了辟谣了！还没还没！ 《亲亲我的孙儿宝贝》周华健 2026.11.1济南",
+      "subs": {
+        "relevance": 64,
+        "recency": 19,
+        "engagement": 54
+      },
+      "score": 49
+    },
+    {
+      "id": "BL15",
+      "title": "我今天的承诺 用这首歌来作证《你们》周华健2026.11.1济南",
+      "url": "https://www.bilibili.com/video/BV1oxWE66EKX",
+      "bvid": "BV1oxWE66EKX",
+      "channel_name": "Lesley_踏月",
+      "author_mid": "33508859",
+      "date": "2026-11-08",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 8,
+        "views": 242,
+        "danmaku": 0,
+        "favorites": 5
+      },
+      "description": "-",
+      "duration": 285,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：我今天的承诺 用这首歌来作证《你们》周华健2026.11.1济南",
+      "subs": {
+        "relevance": 64,
+        "recency": 40,
+        "engagement": 29
+      },
+      "score": 47
+    },
+    {
+      "id": "BL9",
+      "title": "朋哥在济南演唱会说，把这首歌送给依旧相信爱，等待爱，期待爱的朋友，再和《玫瑰急救箱》《我最大的奇迹》呼应起来，才看见这份一直都在的温柔，留给愿意相信的我们。",
+      "url": "https://www.bilibili.com/video/BV1zsxW6eEe3",
+      "bvid": "BV1zsxW6eEe3",
+      "channel_name": "Daisy_wonderland",
+      "author_mid": "340922127",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 4,
+        "likes": 20,
+        "views": 724,
+        "danmaku": 0,
+        "favorites": 10
+      },
+      "description": "-",
+      "duration": 49,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：朋哥在济南演唱会说，把这首歌送给依旧相信爱，等待爱，期待爱的朋友，再和《玫瑰急救箱》《我最大的奇迹》",
+      "subs": {
+        "relevance": 64,
+        "recency": 16,
+        "engagement": 49
+      },
+      "score": 47
+    },
+    {
+      "id": "BL14",
+      "title": "（发一点济南场的视频并假装自己去过武汉场）",
+      "url": "https://www.bilibili.com/video/BV158xJ6yEF1",
+      "bvid": "BV158xJ6yEF1",
+      "channel_name": "里阿尔托的河神",
+      "author_mid": "523545099",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 7,
+        "likes": 98,
+        "views": 296,
+        "danmaku": 0,
+        "favorites": 5
+      },
+      "description": "没钱去了 也没时间去了 明年见吧",
+      "duration": 254,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：（发一点济南场的视频并假装自己去过武汉场）",
+      "subs": {
+        "relevance": 64,
+        "recency": 16,
+        "engagement": 49
+      },
+      "score": 47
+    },
+    {
+      "id": "BL18",
+      "title": "于是 摆渡人的歌 遗忘在渡口的流转之间 2026.11.1济南",
+      "url": "https://www.bilibili.com/video/BV13oW76hEVd",
+      "bvid": "BV13oW76hEVd",
+      "channel_name": "Lesley_踏月",
+      "author_mid": "33508859",
+      "date": "2026-11-08",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 7,
+        "views": 190,
+        "danmaku": 0,
+        "favorites": 3
+      },
+      "description": "-",
+      "duration": 225,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：于是 摆渡人的歌 遗忘在渡口的流转之间 2026.11.1济南",
+      "subs": {
+        "relevance": 64,
+        "recency": 40,
+        "engagement": 25
+      },
+      "score": 46
+    },
+    {
+      "id": "BL8",
+      "title": "周华健济南演唱会直言有新目标了，官宣“我要当爷爷啦”，将歌改名为《亲亲我的孙儿宝贝》。",
+      "url": "https://www.bilibili.com/video/BV1W5xW63EzT",
+      "bvid": "BV1W5xW63EzT",
+      "channel_name": "新晚报",
+      "author_mid": "3744996729555004",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 13,
+        "views": 1905,
+        "danmaku": 0,
+        "favorites": 3
+      },
+      "description": "",
+      "duration": 15,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：周华健济南演唱会直言有新目标了，官宣“我要当爷爷啦”，将歌改名为《亲亲我的孙儿宝贝》。",
+      "subs": {
+        "relevance": 64,
+        "recency": 16,
+        "engagement": 44
+      },
+      "score": 46
+    },
+    {
+      "id": "BL16",
+      "title": "洛天依纯蓝幻乐济南场vlog＋演唱会后事",
+      "url": "https://www.bilibili.com/video/BV1oVx46BEdT",
+      "bvid": "BV1oVx46BEdT",
+      "channel_name": "烟花满穗wyh",
+      "author_mid": "3493086550296648",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 4,
+        "likes": 43,
+        "views": 204,
+        "danmaku": 0,
+        "favorites": 10
+      },
+      "description": "😭纯蓝幻乐😭你回来吧，我老哭，录播找不到，无料已经发完了，路上也没有穿痛衣的人，场馆周边见不到群友，床上的无料已经想不起来是谁塞的了，荧光棒为什么不亮，车站怎么也见不到背着小洛包的怪人，也没人跟我一块喊华风夏韵洛水天依，怎么大家都不叫我锦依卫😭",
+      "duration": 1126,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：洛天依纯蓝幻乐济南场vlog＋演唱会后事",
+      "subs": {
+        "relevance": 64,
+        "recency": 16,
+        "engagement": 42
+      },
+      "score": 45
+    },
+    {
+      "id": "BL12",
+      "title": "【4K】周杰伦2025嘉年华 济南 DAY1视频记录20250919大疆正面一层看台",
+      "url": "https://www.bilibili.com/video/BV1vA4w6AEDo",
+      "bvid": "BV1vA4w6AEDo",
+      "channel_name": "画画的懒汉",
+      "author_mid": "103326578",
+      "date": "2026-11-02",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 6,
+        "views": 478,
+        "danmaku": 0,
+        "favorites": 4
+      },
+      "description": "【4K】周杰伦2025嘉年华 济南 DAY1视频记录20250919大疆正面正面一层看台",
+      "duration": 9692,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【4K】周杰伦2025嘉年华 济南 DAY1视频记录20250919大疆正面一层看台",
+      "subs": {
+        "relevance": 64,
+        "recency": 19,
+        "engagement": 32
+      },
+      "score": 43
+    },
+    {
+      "id": "BL19",
+      "title": "周华健济南演唱会现场混剪",
+      "url": "https://www.bilibili.com/video/BV1TG4u6gEBr",
+      "bvid": "BV1TG4u6gEBr",
+      "channel_name": "午梦电台",
+      "author_mid": "3546943900879685",
+      "date": "2026-11-03",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 3,
+        "views": 186,
+        "danmaku": 0,
+        "favorites": 2
+      },
+      "description": "-",
+      "duration": 844,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：周华健济南演唱会现场混剪",
+      "subs": {
+        "relevance": 64,
+        "recency": 23,
+        "engagement": 27
+      },
+      "score": 42
+    },
+    {
+      "id": "BL5",
+      "title": "周深8月22日济南演唱会自存",
+      "url": "https://www.bilibili.com/video/BV1thxP6ZEJp",
+      "bvid": "BV1thxP6ZEJp",
+      "channel_name": "掉入米坑的啾星星",
+      "author_mid": "62658749",
+      "date": "2026-10-30",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 18,
+        "views": 126,
+        "danmaku": 0,
+        "favorites": 6
+      },
+      "description": "自存",
+      "duration": 8610,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：周深8月22日济南演唱会自存",
+      "subs": {
+        "relevance": 64,
+        "recency": 9,
+        "engagement": 27
+      },
+      "score": 39
+    }
+  ],
+  "zhihu": [],
+  "douyin": [],
+  "wechat": [],
+  "baidu": [
+    {
+      "id": "BD16",
+      "title": "徐良济南站应援妆看过来～室内一对一化妆～距离体育场超近～专业 - 抖音",
+      "snippet": "徐良济南站应援妆看过来～室内一对一化妆～距离体育场超近～专业化妆师～不是流水线哦#应援妆造编发 #演唱会应援妆 #徐良巡演 #徐良演唱会 #徐良济南 - 小美应援妆造社于20261125发布在抖音,已经收获了0个喜欢,来抖音,记录美好生活!",
+      "url": "https://www.douyin.com/note/7712067391836241321",
+      "source_domain": "抖音",
+      "date": "2026-11-25",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：徐良济南站应援妆看过来～室内一对一化妆～距离体育场超近～专业 - 抖音",
+      "subs": {
+        "relevance": 64,
+        "recency": 96,
+        "engagement": 0
+      },
+      "score": 68
+    },
+    {
+      "id": "BD15",
+      "title": "徐良演唱会志愿者济南站来喽。徐良演唱会济南站#徐良 #徐良演 - 抖音",
+      "snippet": "徐良演唱会志愿者济南站来喽。徐良演唱会济南站 #徐良 #徐良演唱会 #演唱会志愿者 #济南徐良",
+      "url": "https://www.douyin.com/note/7712120988762428834",
+      "source_domain": "抖音",
+      "date": "2026-11-25",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：徐良演唱会志愿者济南站来喽。徐良演唱会济南站#徐良 #徐良演 - 抖音",
+      "subs": {
+        "relevance": 64,
+        "recency": 96,
+        "engagement": 0
+      },
+      "score": 68
+    },
+    {
+      "id": "BD2",
+      "title": "天津演唱会,加场!|加场|天津市|最火|演唱会_手机网易网",
+      "snippet": "据大麦app、猫眼演出等平台消息 “叶世荣「你中有我」巡回演唱会|天津站 演出时间增加 2027年1月17日 加上此前公布的2027年1月16日 将在天津连唱2天视频来源:视频号天津广播 打开网易新闻 查看精彩图片 据此前消息天津市文化和旅游局发布beyond乐队叶世荣「你中有我」巡回演唱会·天津站 审批公示 beyond乐队叶世荣「你中有我」天津",
+      "url": "https://m.163.com/dy/article/LCHV3FL40545BQ6G.html",
+      "source_domain": "网易新闻",
+      "date": "2026-11-24",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：天津演唱会,加场!|加场|天津市|最火|演唱会_手机网易网",
+      "subs": {
+        "relevance": 64,
+        "recency": 93,
+        "engagement": 0
+      },
+      "score": 67
+    },
+    {
+      "id": "BD13",
+      "title": "赴良约，妆闪耀✨济南站应援妆就位。✅室内化妆场馆附近 ✅应援 - 抖音",
+      "snippet": "赴良约,妆闪耀✨济南站应援妆就位。✅室内化妆场馆附近 ✅应援妆全包含:底妆+睫毛+贴钻+定妆+修容+眉毛+应援色眼影+眼线+腮红+口红,闪片贴钻氛围感拉满✨ ✅专属编发:丝带+星星发夹,支持 带图定制/现场推荐/按三庭五眼专属设计 ✅专业保障:多场演唱会妆造经验,审美在线好沟通,上镜超出片 ...",
+      "url": "https://www.douyin.com/note/7711810705327045481",
+      "source_domain": "抖音",
+      "date": "2026-11-24",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：赴良约，妆闪耀✨济南站应援妆就位。✅室内化妆场馆附近 ✅应援 - 抖音",
+      "subs": {
+        "relevance": 64,
+        "recency": 93,
+        "engagement": 0
+      },
+      "score": 67
+    },
+    {
+      "id": "BD6",
+      "title": "苏州这场演唱会,官宣加场!_澎湃号·政务_澎湃新闻-The Paper",
+      "snippet": "纷纷在苏州举办演唱会 在即将到来的2027年 又有演唱会官宣加场苏州了 ∇ 11月19日 王嘉尔 MAGIC MAN 2 巡演苏州站 2027年1月9日场门票秒售罄 据@大麦APP 11月20日消息 演出在2027年1月9日的基础上 加场2027年1月10日 演出地点为苏州奥体中心体育馆 ...",
+      "url": "https://m.thepaper.cn/newsDetail_forward_34535616",
+      "source_domain": "澎湃新闻",
+      "date": "2026-11-22",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：苏州这场演唱会,官宣加场!_澎湃号·政务_澎湃新闻-The Paper",
+      "subs": {
+        "relevance": 64,
+        "recency": 86,
+        "engagement": 0
+      },
+      "score": 63
+    },
+    {
+      "id": "BD5",
+      "title": "成都演唱会审批加场,周传雄林忆莲等五场将开票",
+      "snippet": "加场场次将于10月20日15:00在纷玩岛、大麦开启优先购,10月21日15:00在纷玩岛、大麦、猫眼全面预售,购票入口还包括壹票达。 林忆莲加场,7号场次已售罄 林忆莲「回响:终章」成都演唱会同样安排加场,演出时间为2026年11月6日至7日19:00,其中11月6日为加场,地点仍在成都东安湖体育公园体育场,票价区间与...",
+      "url": "http://m.yjls8.com/zrqnews/1122/37416_article555.shtml",
+      "source_domain": "m.yjls8.com/zrqnews/1122/37416_art...",
+      "date": "2026-11-21",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：成都演唱会审批加场,周传雄林忆莲等五场将开票",
+      "subs": {
+        "relevance": 64,
+        "recency": 83,
+        "engagement": 0
+      },
+      "score": 62
+    },
+    {
+      "id": "BD14",
+      "title": "今晚19:00，ELLA陈嘉桦济南演唱会不见不散！",
+      "snippet": "青春赴约,金曲开唱✨ ELLA 陈嘉桦《It’s Me 艾拉主意》巡回演唱会济南站! 当熟悉的旋律响起,奔赴...",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTY4NTYyMA==&mid=2651053326&idx=2&sn=a39f5bb9947db07587b5aa097be622cb&chksm=bd51537f4a50631a7e6c71d2c0366220d0b41a53bace9a07a998664682988874ed117f3a6a9f&scene=27",
+      "source_domain": "济南音乐广播Music887",
+      "date": "2026-11-20",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：今晚19:00，ELLA陈嘉桦济南演唱会不见不散！",
+      "subs": {
+        "relevance": 64,
+        "recency": 80,
+        "engagement": 0
+      },
+      "score": 61
+    },
+    {
+      "id": "BD11",
+      "title": "本周演唱会，济南交通管制、地铁调整等最新消息！",
+      "snippet": "本周演唱会,济南交通管制、地铁调整等最新消息! 就在本周六晚 Ella陈嘉桦巡回演唱会济南站 将在济南奥林匹克体育中心体育馆唱响 演唱会当天场馆附近交通管制 检票时间、入场/散场指南 交通出行指引、地铁调整等安排 小编都给大家整理好啦 PART 01 Ella陈...",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAwNTk4NDU3Mw==&mid=2247679917&idx=1&sn=ba2a19a2abeccf20a98b283b0bc8d387&chksm=9a888e76b48207de6480c9a9d002f47fc3f7d9b74947181c2b973fa35d958405837b6f81a767&scene=27",
+      "source_domain": "济南本地宝",
+      "date": "2026-11-20",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：本周演唱会，济南交通管制、地铁调整等最新消息！",
+      "subs": {
+        "relevance": 64,
+        "recency": 80,
+        "engagement": 0
+      },
+      "score": 61
+    },
+    {
+      "id": "BD3",
+      "title": "济南演唱会2026时间表最新-济南近期演唱会一览表 - 找票网",
+      "snippet": "找票网为您整理了济南演唱会2026时间表,包括2026年济南演唱会排期,2026年济南演唱会具体的...",
+      "url": "https://www.sershow.com/concert/jinan/",
+      "source_domain": "www.sershow.com/concert/...",
+      "date": "2026-11-20",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：济南演唱会2026时间表最新-济南近期演唱会一览表 - 找票网",
+      "subs": {
+        "relevance": 64,
+        "recency": 80,
+        "engagement": 0
+      },
+      "score": 61
+    },
+    {
+      "id": "BD4",
+      "title": "Ella济南演唱会周末开唱，还有话剧、音乐剧等冬日好戏“热气腾腾”！",
+      "snippet": "Ella济南演唱会周末开唱,还有话剧、音乐剧等冬日好戏“热气腾腾”! 冷空气开始营业 但好戏永远热气腾腾 把初冬的晚风关在剧场门外 让灯光、故事和掌声替你暖手暖心 这波新鲜出炉的演出清单 就是为你定制的“精神暖炉” 挑个最对味...",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTk4NTU0MQ==&mid=2653042909&idx=1&sn=c7cc70be0beec049855530540e104892&chksm=bd90c106ea0a712ab2423e5f0c47cb82cc2e5acb520bac8628113a013b7d242268df467dc2ec&scene=27",
+      "source_domain": "济南市文化和旅游局",
+      "date": "2026-11-18",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：Ella济南演唱会周末开唱，还有话剧、音乐剧等冬日好戏“热气腾腾”！",
+      "subs": {
+        "relevance": 64,
+        "recency": 73,
+        "engagement": 0
+      },
+      "score": 58
+    },
+    {
+      "id": "BD10",
+      "title": "从青春记忆到万人合唱，ELLA济南站等你赴",
+      "snippet": "青春赴约,金曲开唱✨ ELLA 陈嘉桦《It’s Me 艾拉主意》巡回演唱会济南站! 当熟悉的旋律响起,奔赴一场与 Ella 的音乐约会,经典金曲 + 个人代表作轮番上演,共赴万人合唱的青春派对! 济南音乐广播Music887 ,赞2 📢演出信息 演出名称:ELLA 陈嘉桦《It...",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTY4NTYyMA==&mid=2651053181&idx=2&sn=a6c8365ec4a453b48cd17248edf2d608&chksm=bd296a92d3a5abc567f3a8a06e42816b33a5252a868399f5bee49b8e66695ca2158aa0430831&scene=27",
+      "source_domain": "济南音乐广播Music887",
+      "date": "2026-11-13",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：从青春记忆到万人合唱，ELLA济南站等你赴",
+      "subs": {
+        "relevance": 64,
+        "recency": 56,
+        "engagement": 0
+      },
+      "score": 50
+    },
+    {
+      "id": "BD8",
+      "title": "徐良胡彦斌演唱会即将开抢！初冬济南好戏连台等你来",
+      "snippet": "循着熟悉旋律赴一场时光之约 和徐良放声合唱重逢青春 📅日期:12月4日-12月6日📢11月16日15:00正式开票,敬请期待🚩演出地点:济南奥林匹克体育中心体育馆📱购票:大麦、猫眼等平台均可搜索购票 演唱会 Beyond乐队叶世荣2026「你中有我」巡回演...",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTk4NTU0MQ==&mid=2653041711&idx=1&sn=fb4a7ad8255382364cacfe5fe137d435&chksm=bdaf9e9705a5e97b23948447b218c9f0a77741390905d0aee887a8d6f5f31a4aceb2de3f038c&scene=27",
+      "source_domain": "济南市文化和旅游局",
+      "date": "2026-11-12",
+      "date_confidence": "med",
+      "relevance": 0.64,
+      "why_relevant": "百度：徐良胡彦斌演唱会即将开抢！初冬济南好戏连台等你来",
+      "subs": {
+        "relevance": 64,
+        "recency": 53,
+        "engagement": 0
+      },
+      "score": 49
+    }
+  ],
+  "toutiao": [
+    {
+      "id": "TT12",
+      "title": "内卷严重！鲁苏四城10‑11月演唱会大比拼",
+      "abstract": "十一黄金周叠加秋假，最近两个月山东、苏北演唱会扎堆开唱。济南、青岛、临沂、徐州四座城市火力全开，歌手阵容差异巨大，看完这份对比，想去看演唱会的朋友心里就有数了。青岛毫无疑问是顶流主场，场馆硬件在山东属于第一梯队。",
+      "url": "https://www.toutiao.com/group/7709838424898830882/",
+      "source_name": "往若风",
+      "date": "2026-11-19",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "reads": 37
+      },
+      "relevance": 0.64,
+      "why_relevant": "今日头条（往若风）：内卷严重！鲁苏四城10‑11月演唱会大比拼",
+      "subs": {
+        "relevance": 64,
+        "recency": 76,
+        "engagement": 50
+      },
+      "score": 62,
+      "original_url": "https://toutiao.com/group/7709838424898830882/"
+    }
+  ],
+  "best_practices": [],
+  "prompt_pack": [],
+  "context_snippet_md": "# 上下文: 济南 演唱会 加场（2026-10-27 ~ 2026-11-26）\n\n*生成时间: 2026-11-26 | 模式: all*\n\n## 主要来源\n\n- [B站] 【超级皇帝位】Ella陈嘉桦演唱会济南站全场 20261121 #131 — https://www.bilibili.com/video/BV1WNyZzcEDs\n- [百度] 徐良济南站应援妆看过来～室内一对一化妆～距离体育场超近～专业 - 抖音 — https://www.douyin.com/note/7712067391836241321\n- [百度] 徐良演唱会志愿者济南站来喽。徐良演唱会济南站#徐良 #徐良演 - 抖音 — https://www.douyin.com/note/7712120988762428834\n- [B站] 温大愚听 单依纯《续写》(2025济南演唱会) — https://www.bilibili.com/video/BV1hZ446aELY\n- [百度] 天津演唱会,加场!|加场|天津市|最火|演唱会_手机网易网 — https://m.163.com/dy/article/LCHV3FL40545BQ6G.html\n- [百度] 赴良约，妆闪耀✨济南站应援妆就位。✅室内化妆场馆附近 ✅应援 - 抖音 — https://www.douyin.com/note/7711810705327045481\n- [B站] 【Ella陈嘉桦】20261121 艾拉主意济南站演唱会全程（自留） — https://www.bilibili.com/video/BV1t8yHzMEbN\n- [百度] 苏州这场演唱会,官宣加场!_澎湃号·政务_澎湃新闻-The Paper — https://m.thepaper.cn/newsDetail_forward_34535616\n\n## 摘要\n\n*完整报告见 report.md / report.html。*\n",
+  "weibo_error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE",
+  "xiaohongshu_error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "douyin_error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "search_topic": "济南 演唱会 加场",
+  "query_type": "breaking_news",
+  "depth": "default",
+  "source_status": {
+    "weibo": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 6.4,
+      "via": {},
+      "error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE"
+    },
+    "xiaohongshu": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 1.4,
+      "via": {},
+      "error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "bilibili": {
+      "state": "ok",
+      "count": 19,
+      "raw_count": 20,
+      "elapsed": 0.9,
+      "via": {
+        "wbi-search": 20
+      }
+    },
+    "douyin": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 3.9,
+      "via": {},
+      "error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "baidu": {
+      "state": "ok",
+      "count": 12,
+      "raw_count": 19,
+      "elapsed": 1.1,
+      "via": {
+        "baidu-web": 19
+      }
+    },
+    "toutiao": {
+      "state": "ok",
+      "count": 1,
+      "raw_count": 14,
+      "elapsed": 2.2,
+      "via": {
+        "so.toutiao": 14
+      }
+    }
+  }
+}

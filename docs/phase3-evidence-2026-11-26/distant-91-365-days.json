@@ -1,0 +1,46 @@
+[
+  {
+    "event_id": "src_7e6a7d8a7689",
+    "source_record_id": "cosgo_bili_1008129",
+    "event_name": "济南·QV特摄同人only",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "city_match": "text_confirmed",
+    "start_at": "2027-02-27",
+    "end_at": "2027-02-27",
+    "sessions": [
+      {
+        "start_at": "2027-02-27",
+        "end_at": "2027-02-27"
+      }
+    ],
+    "event_type": "other",
+    "event_date_role": "event",
+    "date_precision": "day",
+    "date_confidence": "secondary_listing",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-26T07:38:10Z",
+    "last_seen_at": "2026-11-26T07:38:10Z",
+    "source_id": "cosgo-public-calendar",
+    "evidence_level": "secondary_listing",
+    "primary_body_read": false,
+    "event_detail_url": "https://mall.bilibili.com/neul-next/ticket-renovation/detail.html?id=1008129",
+    "source_url": "https://cosgo.cn/conventions/",
+    "date_evidence": [
+      {
+        "quote": "2027.02.27 10:00济南 · 禧尔·礼宴 · ¥6800-10800",
+        "date_text": "2027.02.27 10:00"
+      }
+    ],
+    "sources": [
+      {
+        "source_url": "https://cosgo.cn/conventions/",
+        "observed_at": "2026-11-26T07:38:10Z",
+        "checked_at": "2026-11-26T07:38:10Z",
+        "access_status": "secondary_listing_read",
+        "verification_status": "unverified"
+      }
+    ]
+  }
+]

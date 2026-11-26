@@ -67,7 +67,7 @@ class ListingParser(HTMLParser):
             self.card[self.field] += value
 
 
-def parse_listing(body: str, city: dict, url: str, checked_at: str, today: date, include_status_changes=False) -> list[dict]:
+def parse_listing(body: str, city: dict, url: str, checked_at: str, today: date, include_status_changes=False, horizon_days=90) -> list[dict]:
     try:
         from .collect import classify_event, assess_event_city, CONDITIONAL_EVENT_PATTERN
     except ImportError:
@@ -92,7 +92,7 @@ def parse_listing(body: str, city: dict, url: str, checked_at: str, today: date,
             day = date(int(stamp[1]), int(stamp[2]), int(stamp[3]))
         except ValueError:
             continue
-        if (day < today and not include_status_changes) or (day - today).days > 90:
+        if (day < today and not include_status_changes) or (day - today).days > horizon_days:
             continue
         title = re.sub(r'\s+', ' ', card['title']).strip()
         status = 'cancelled' if re.search(r'活动(?:已)?取消|演出(?:已)?取消|取消演出',title) else 'postponed' if re.search(r'延期|推迟',title) else 'unknown'
@@ -111,6 +111,7 @@ def parse_listing(body: str, city: dict, url: str, checked_at: str, today: date,
             'venue_name': location[2].strip(), 'start_at': day.isoformat(), 'end_at': day.isoformat(),
             'discovery_summary': city['city_name'] + ' ' + location[2].strip(),
             'source_context': {'city_label': location[1], 'title': title, 'start_at': day.isoformat(), 'venue_name': location[2].strip()},
+            'date_evidence': [{'quote': card['time'].strip(), 'city_quote': card['addr'].strip(), 'date_text': stamp[0].strip()}],
             'date_precision': 'day', 'date_confidence': 'source_listing', 'event_date_role': 'event',
             'sessions': [{'start_at': day.isoformat(), 'end_at': day.isoformat()}],
             'content_kind': 'event_announcement', 'review_status': 'pending', 'event_status': status,

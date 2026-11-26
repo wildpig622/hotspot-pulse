@@ -1,0 +1,103 @@
+{
+  "tool_repo": "https://github.com/Jesseovo/last30days-skill-cn",
+  "commit": "f560345767af3ff89733d2c2b15714eac6a8f436",
+  "credentials_used": false,
+  "browser_used": false,
+  "runs": [
+    {
+      "args": [
+        "--diagnose",
+        "--emit",
+        "json",
+        "--no-browser"
+      ],
+      "checked_at": "2026-11-26T07:26:27Z",
+      "exit_code": 0,
+      "elapsed_seconds": 2.891,
+      "stdout_file": "run-0.stdout.txt",
+      "stderr_file": "run-0.stderr.txt"
+    },
+    {
+      "args": [
+        "--hot",
+        "--emit",
+        "json",
+        "--no-browser",
+        "--timeout",
+        "60"
+      ],
+      "checked_at": "2026-11-26T07:26:30Z",
+      "exit_code": 0,
+      "elapsed_seconds": 0.906,
+      "stdout_file": "run-1.stdout.txt",
+      "stderr_file": "run-1.stderr.txt"
+    },
+    {
+      "args": [
+        "西安 演唱会 官宣 加场 应援 漫展 电竞 文旅",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:26:31Z",
+      "exit_code": 0,
+      "elapsed_seconds": 8.281,
+      "stdout_file": "run-2.stdout.txt",
+      "stderr_file": "run-2.stderr.txt"
+    },
+    {
+      "args": [
+        "济南 演唱会 官宣 加场 应援 漫展 电竞 文旅",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:26:39Z",
+      "exit_code": 0,
+      "elapsed_seconds": 7.047,
+      "stdout_file": "run-3.stdout.txt",
+      "stderr_file": "run-3.stderr.txt"
+    },
+    {
+      "args": [
+        "天津 演唱会 官宣 加场 应援 漫展 电竞 文旅",
+        "--search",
+        "weibo,bilibili,xiaohongshu,douyin,baidu,toutiao",
+        "--days",
+        "30",
+        "--as-of",
+        "2026-11-26",
+        "--no-cache",
+        "--no-browser",
+        "--timeout",
+        "70",
+        "--emit",
+        "json"
+      ],
+      "checked_at": "2026-11-26T07:26:46Z",
+      "exit_code": 0,
+      "elapsed_seconds": 7.281,
+      "stdout_file": "run-4.stdout.txt",
+      "stderr_file": "run-4.stderr.txt"
+    }
+  ],
+  "captured_text_newlines": "LF normalized"
+}

@@ -1,0 +1,126 @@
+{
+  "archived_discovery_and_ticket_checks": 242,
+  "archived_successes": 196,
+  "archived_failed_or_blocked": 46,
+  "archived_bytes": 8098852,
+  "summed_request_elapsed_seconds": 172.144,
+  "third_party_cli_elapsed_seconds": 77.844,
+  "third_party_query_runs": 9,
+  "paid_external_llm_calls": 0,
+  "paid_data_services": 0,
+  "currency_cost": null,
+  "cost_limitations": "Archived request timings exclude discarded crash attempts, web research, assistant tokens and benchmark validation. No exact total monetary-cost or production reliability claim.",
+  "public_repeats": [
+    {
+      "folder": "public",
+      "routes": [
+        {
+          "city": "西安市",
+          "page": 1,
+          "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+          "status": "ok",
+          "records": 17,
+          "new_records": 17
+        },
+        {
+          "city": "西安市",
+          "page": 2,
+          "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+          "status": "ok",
+          "records": 20,
+          "new_records": 20
+        },
+        {
+          "city": "西安市",
+          "page": 3,
+          "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+          "status": "ok",
+          "records": 20,
+          "new_records": 20
+        },
+        {
+          "city": "济南市",
+          "page": 1,
+          "url": "https://www.showstart.com/event/list?cityCode=531&pageNo=1",
+          "status": "failed",
+          "stop_reason": "access_failed"
+        },
+        {
+          "city": "天津市",
+          "page": 1,
+          "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=1",
+          "status": "ok",
+          "records": 0,
+          "new_records": 0
+        },
+        {
+          "city": "天津市",
+          "page": 2,
+          "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+          "status": "ok",
+          "records": 19,
+          "new_records": 19
+        },
+        {
+          "city": "天津市",
+          "page": 3,
+          "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=3",
+          "status": "failed",
+          "stop_reason": "access_failed"
+        }
+      ],
+      "elapsed_seconds": 53.781
+    },
+    {
+      "folder": "public-repeat",
+      "routes": [
+        {
+          "city": "西安市",
+          "page": 1,
+          "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+          "status": "ok",
+          "records": 17,
+          "new_records": 17
+        },
+        {
+          "city": "西安市",
+          "page": 2,
+          "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+          "status": "ok",
+          "records": 20,
+          "new_records": 20
+        },
+        {
+          "city": "西安市",
+          "page": 3,
+          "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+          "status": "failed",
+          "stop_reason": "access_failed"
+        },
+        {
+          "city": "济南市",
+          "page": 1,
+          "url": "https://www.showstart.com/event/list?cityCode=531&pageNo=1",
+          "status": "ok",
+          "records": 16,
+          "new_records": 16
+        },
+        {
+          "city": "济南市",
+          "page": 2,
+          "url": "https://www.showstart.com/event/list?cityCode=531&pageNo=2",
+          "status": "failed",
+          "stop_reason": "access_failed"
+        },
+        {
+          "city": "天津市",
+          "page": 1,
+          "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=1",
+          "status": "failed",
+          "stop_reason": "access_failed"
+        }
+      ],
+      "elapsed_seconds": 39.468
+    }
+  ]
+}

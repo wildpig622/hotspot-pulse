@@ -1,0 +1,18 @@
+{
+  "policy": "no_personal_contact_export",
+  "original_backup": "ignored local review/phase3-original-evidence",
+  "contact_redacted_response_checks": 115,
+  "contact_replacements": {
+    "email": 151,
+    "phone": 327
+  },
+  "original_response_hashes_retained": true,
+  "public_archive_contains_derivatives": true,
+  "event_identity_dates_cities_and_names_preserved": true,
+  "bundle": {
+    "successful_request_checks": 235,
+    "unique_response_objects": 230,
+    "bundle_bytes": 2349487
+  },
+  "review_note": "Public review copies only; original source bytes were retained locally and are not added to this PR change."
+}

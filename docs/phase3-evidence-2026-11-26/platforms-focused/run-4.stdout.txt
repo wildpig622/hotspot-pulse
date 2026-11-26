@@ -1,0 +1,665 @@
+{
+  "topic": "天津 演唱会 加场",
+  "range": {
+    "from": "2026-10-27",
+    "to": "2026-11-26"
+  },
+  "generated_at": "2026-11-26T07:47:28.948501+00:00",
+  "mode": "all",
+  "weibo": [],
+  "xiaohongshu": [],
+  "bilibili": [
+    {
+      "id": "BL15",
+      "title": "这次真的是神兵天“津”了～这个周六天津见啦～",
+      "url": "https://www.bilibili.com/video/BV1zwy6zuETo",
+      "bvid": "BV1zwy6zuETo",
+      "channel_name": "Lily陈洁丽",
+      "author_mid": "526871451",
+      "date": "2026-11-25",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 25,
+        "likes": 385,
+        "views": 3743,
+        "danmaku": 1,
+        "favorites": 24
+      },
+      "description": "这次真的是神兵天“津”了～这个周六见～11.28天津见～👉陈洁丽动漫OST演唱会～11.28天津｜12.05福州｜12.26南昌｜01.01苏州｜#陈洁丽动漫OST演唱会 #动漫OST女王 #神兵小将 #梦的光点 #翻唱",
+      "duration": 119,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：这次真的是神兵天“津”了～这个周六天津见啦～",
+      "subs": {
+        "relevance": 64,
+        "recency": 96,
+        "engagement": 72
+      },
+      "score": 74
+    },
+    {
+      "id": "BL2",
+      "title": "2026.11.21周华健天津演唱会",
+      "url": "https://www.bilibili.com/video/BV1UVyizLEvR",
+      "bvid": "BV1UVyizLEvR",
+      "channel_name": "卫小盒",
+      "author_mid": "4403516",
+      "date": "2026-11-22",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 28,
+        "views": 2278,
+        "danmaku": 6,
+        "favorites": 50
+      },
+      "description": "2026“少年的奇幻之旅3.0”巡回演唱会-天津站 Day3",
+      "duration": 9919,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：2026.11.21周华健天津演唱会",
+      "subs": {
+        "relevance": 64,
+        "recency": 86,
+        "engagement": 61
+      },
+      "score": 68
+    },
+    {
+      "id": "BL13",
+      "title": "周华健天津演唱会261114",
+      "url": "https://www.bilibili.com/video/BV1pgsV6gEay",
+      "bvid": "BV1pgsV6gEay",
+      "channel_name": "演出现场云盘",
+      "author_mid": "1854821249",
+      "date": "2026-11-14",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 26,
+        "likes": 68,
+        "views": 5236,
+        "danmaku": 10,
+        "favorites": 107
+      },
+      "description": "求赞求评论！我为身为天津健迷协会的一员而骄傲！#周华健天津演唱会 #周华健少年的奇幻之旅",
+      "duration": 9950,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：周华健天津演唱会261114",
+      "subs": {
+        "relevance": 64,
+        "recency": 60,
+        "engagement": 79
+      },
+      "score": 67
+    },
+    {
+      "id": "BL14",
+      "title": "「邓紫棋」 天津站day2  《I AM GLORIA》世界巡回演唱会 「新的心跳」 完整版4k高清直拍",
+      "url": "https://www.bilibili.com/video/BV1p5sS6VEpm",
+      "bvid": "BV1p5sS6VEpm",
+      "channel_name": "爱与诚0413",
+      "author_mid": "1418218104",
+      "date": "2026-11-18",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 4,
+        "likes": 150,
+        "views": 4009,
+        "danmaku": 0,
+        "favorites": 214
+      },
+      "description": "-",
+      "duration": 238,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：「邓紫棋」 天津站day2  《I AM GLORIA》世界巡回演唱会 「新的心跳」 完整版4k高清",
+      "subs": {
+        "relevance": 64,
+        "recency": 73,
+        "engagement": 64
+      },
+      "score": 66
+    },
+    {
+      "id": "BL6",
+      "title": "陈明【等你爱我】天津演唱会(4K60帧第1排)",
+      "url": "https://www.bilibili.com/video/BV1YEyYzLEoV",
+      "bvid": "BV1YEyYzLEoV",
+      "channel_name": "演出现场云盘",
+      "author_mid": "1854821249",
+      "date": "2026-11-21",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 9,
+        "views": 939,
+        "danmaku": 1,
+        "favorites": 18
+      },
+      "description": "-",
+      "duration": 8260,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：陈明【等你爱我】天津演唱会(4K60帧第1排)",
+      "subs": {
+        "relevance": 64,
+        "recency": 83,
+        "engagement": 45
+      },
+      "score": 63
+    },
+    {
+      "id": "BL8",
+      "title": "天津理工大断电，信号也没得，没事干的大伙聚集楼下开patty",
+      "url": "https://www.bilibili.com/video/BV1AQ4A6JEMJ",
+      "bvid": "BV1AQ4A6JEMJ",
+      "channel_name": "Imeath",
+      "author_mid": "500003798",
+      "date": "2026-11-02",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 120,
+        "likes": 406,
+        "views": 43246,
+        "danmaku": 6,
+        "favorites": 91
+      },
+      "description": "-",
+      "duration": 75,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：天津理工大断电，信号也没得，没事干的大伙聚集楼下开patty",
+      "subs": {
+        "relevance": 64,
+        "recency": 19,
+        "engagement": 100
+      },
+      "score": 63
+    },
+    {
+      "id": "BL4",
+      "title": "天津京剧演唱会",
+      "url": "https://www.bilibili.com/video/BV1qTykzCE5h",
+      "bvid": "BV1qTykzCE5h",
+      "channel_name": "七荤八素重生2026",
+      "author_mid": "3707041933690947",
+      "date": "2026-11-25",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 10,
+        "views": 198,
+        "danmaku": 0,
+        "favorites": 19
+      },
+      "description": "",
+      "duration": 9867,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：天津京剧演唱会",
+      "subs": {
+        "relevance": 64,
+        "recency": 96,
+        "engagement": 32
+      },
+      "score": 62
+    },
+    {
+      "id": "BL1",
+      "title": "2026周华健“少年的奇幻之旅3.0”巡回演唱会天津站全纪录（2026.11.22奥林匹克中心体育馆）",
+      "url": "https://www.bilibili.com/video/BV1X2yozVEnY",
+      "bvid": "BV1X2yozVEnY",
+      "channel_name": "单反小鱼",
+      "author_mid": "523311586",
+      "date": "2026-11-24",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 5,
+        "views": 188,
+        "danmaku": 0,
+        "favorites": 9
+      },
+      "description": "-",
+      "duration": 9379,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：2026周华健“少年的奇幻之旅3.0”巡回演唱会天津站全纪录（2026.11.22奥林匹克中心体育馆",
+      "subs": {
+        "relevance": 64,
+        "recency": 93,
+        "engagement": 29
+      },
+      "score": 60
+    },
+    {
+      "id": "BL20",
+      "title": "周华健天津演唱会第一场 精华部分 2026.11.14",
+      "url": "https://www.bilibili.com/video/BV1HxsJ6WEU7",
+      "bvid": "BV1HxsJ6WEU7",
+      "channel_name": "蒋琪77777",
+      "author_mid": "32049573",
+      "date": "2026-11-15",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 8,
+        "likes": 28,
+        "views": 1228,
+        "danmaku": 0,
+        "favorites": 32
+      },
+      "description": "周华健天津演唱会第一场 2026.11.14",
+      "duration": 5173,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：周华健天津演唱会第一场 精华部分 2026.11.14",
+      "subs": {
+        "relevance": 64,
+        "recency": 63,
+        "engagement": 51
+      },
+      "score": 59
+    },
+    {
+      "id": "BL16",
+      "title": "【寅子】准备杠姐演唱会了，郑州和天津两场，要合唱走歌人，不搞年会，聚个餐完了",
+      "url": "https://www.bilibili.com/video/BV1AZW36iE47",
+      "bvid": "BV1AZW36iE47",
+      "channel_name": "于冰岛某地方",
+      "author_mid": "7420008",
+      "date": "2026-11-10",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 5,
+        "likes": 28,
+        "views": 2324,
+        "danmaku": 0,
+        "favorites": 3
+      },
+      "description": "",
+      "duration": 296,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【寅子】准备杠姐演唱会了，郑州和天津两场，要合唱走歌人，不搞年会，聚个餐完了",
+      "subs": {
+        "relevance": 64,
+        "recency": 46,
+        "engagement": 49
+      },
+      "score": 55
+    },
+    {
+      "id": "BL9",
+      "title": "重庆｜珠海｜杭州｜长沙｜天津｜来了哦🥰",
+      "url": "https://www.bilibili.com/video/BV1PCxL6JENM",
+      "bvid": "BV1PCxL6JENM",
+      "channel_name": "Lily陈洁丽",
+      "author_mid": "526871451",
+      "date": "2026-10-28",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 46,
+        "likes": 1828,
+        "views": 8236,
+        "danmaku": 0,
+        "favorites": 66
+      },
+      "description": "陈洁丽动漫OST演唱会～10.31重庆｜11.14珠海｜11.21杭州｜11.22长沙｜11.28天津｜#陈洁丽动漫OST演唱会 #动漫OST女王 #童年动画主题曲 #陈洁丽 #快乐酷宝",
+      "duration": 16,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：重庆｜珠海｜杭州｜长沙｜天津｜来了哦🥰",
+      "subs": {
+        "relevance": 64,
+        "recency": 3,
+        "engagement": 81
+      },
+      "score": 53
+    },
+    {
+      "id": "BL3",
+      "title": "天津就在日落以后演唱会自存",
+      "url": "https://www.bilibili.com/video/BV1dbyrzzEDL",
+      "bvid": "BV1dbyrzzEDL",
+      "channel_name": "远远桑",
+      "author_mid": "12212102",
+      "date": "2026-11-25",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "views": 8,
+        "danmaku": 0,
+        "favorites": 0
+      },
+      "description": "大疆4p拍摄，980视角自存",
+      "duration": 9730,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：天津就在日落以后演唱会自存",
+      "subs": {
+        "relevance": 64,
+        "recency": 96,
+        "engagement": 0
+      },
+      "score": 52
+    },
+    {
+      "id": "BL18",
+      "title": "2026.10.31 苏见信「尽兴而活」巡回演唱会 天津站",
+      "url": "https://www.bilibili.com/video/BV1PpxD6DEDh",
+      "bvid": "BV1PpxD6DEDh",
+      "channel_name": "信Rock",
+      "author_mid": "676008838",
+      "date": "2026-11-04",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 5,
+        "likes": 74,
+        "views": 1455,
+        "danmaku": 1,
+        "favorites": 44
+      },
+      "description": "Part1\n1.大惊小怪\n2.态度\n3.海阔天空\n4.我对你的爱永垂不朽\n5.魂\n6.如果还有明天\n7.One Night In北京\n\nPart2\n8.远得要命的爱情\n9.假如\n10.暗藏后悔\n11.一了百了\n12.千年之恋\n13.挑衅\n\nPart3\n14.火烧的寂寞\n15.死了都要爱 (波西米亚狂想曲)\n16.离歌\n17.掌纹算命 (We Will Rock You)\n18.英国的夏天\n\nPart4\n19.天高地厚\n20.反正我信了\n21.我们风花雪月摇滚精神病院\n22.天才\n\nPart5\n23.告别的",
+      "duration": 8331,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：2026.10.31 苏见信「尽兴而活」巡回演唱会 天津站",
+      "subs": {
+        "relevance": 64,
+        "recency": 26,
+        "engagement": 57
+      },
+      "score": 52
+    },
+    {
+      "id": "BL12",
+      "title": "【谭咏麟全国巡演发布会】公布待官宣场次:广州/佛山/深圳/南宁/北京/天津/长沙/上海/杭州/苏州/郑州/南昌/无锡/宁波/贵阳/太原/西安/沈阳/青岛/重庆",
+      "url": "https://www.bilibili.com/video/BV1zExM6pEk7",
+      "bvid": "BV1zExM6pEk7",
+      "channel_name": "AyuTam",
+      "author_mid": "51466174",
+      "date": "2026-10-27",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 46,
+        "likes": 129,
+        "views": 5321,
+        "danmaku": 5,
+        "favorites": 86
+      },
+      "description": "●10月27日下午，CME live 華冠演藝、藝能製作與校長譚詠麟在北京舉行《譚詠麟與您Unforgettable「刻骨銘心」巡回演唱會—終極篇》全國巡演發佈會。\n\n香港站一連十場完滿成功，受到全球歌迷熱烈追捧\n2026年12月4、5日，校長將在成都開啓內地巡演之旅，令廣大歌迷期待的“雙主題、雙歌單”同樣將原汁原味登陸內地舞台。兩晚不同歌單，兩種主題情緒：或是「無言感激」的深情回望，或是「情不變」的熾熱陪伴。每一場都值得奔赴，每一晚都不可複製。\n\n除已官宣的成都、廈門、武漢、南京四站外，更多歌迷期待已久",
+      "duration": 2498,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：【谭咏麟全国巡演发布会】公布待官宣场次:广州/佛山/深圳/南宁/北京/天津/长沙/上海/杭州/苏州/",
+      "subs": {
+        "relevance": 64,
+        "recency": 0,
+        "engagement": 80
+      },
+      "score": 52
+    },
+    {
+      "id": "BL10",
+      "title": "峨眉峰还TM独照-天津站晚会现场。",
+      "url": "https://www.bilibili.com/video/BV1gJ4P6cE5P",
+      "bvid": "BV1gJ4P6cE5P",
+      "channel_name": "小师娘读书分享",
+      "author_mid": "1789091962",
+      "date": "2026-11-02",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 29,
+        "views": 6896,
+        "danmaku": 2,
+        "favorites": 14
+      },
+      "description": "",
+      "duration": 55,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：峨眉峰还TM独照-天津站晚会现场。",
+      "subs": {
+        "relevance": 64,
+        "recency": 19,
+        "engagement": 57
+      },
+      "score": 50
+    },
+    {
+      "id": "BL5",
+      "title": "2026.10.31苏见信天津演唱会",
+      "url": "https://www.bilibili.com/video/BV1uJxn63EHH",
+      "bvid": "BV1uJxn63EHH",
+      "channel_name": "卫小盒",
+      "author_mid": "4403516",
+      "date": "2026-10-31",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 10,
+        "likes": 61,
+        "views": 2810,
+        "danmaku": 0,
+        "favorites": 63
+      },
+      "description": "2026「尽兴而活」巡回演唱会-天津站",
+      "duration": 8493,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：2026.10.31苏见信天津演唱会",
+      "subs": {
+        "relevance": 64,
+        "recency": 13,
+        "engagement": 60
+      },
+      "score": 50
+    },
+    {
+      "id": "BL7",
+      "title": "2026苏见信【尽兴而活】巡回演唱会天津站 20261031",
+      "url": "https://www.bilibili.com/video/BV1MBxJ6uEaV",
+      "bvid": "BV1MBxJ6uEaV",
+      "channel_name": "天津live挖掘姬",
+      "author_mid": "689516605",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 9,
+        "likes": 21,
+        "views": 1005,
+        "danmaku": 1,
+        "favorites": 21
+      },
+      "description": "-",
+      "duration": 7371,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：2026苏见信【尽兴而活】巡回演唱会天津站 20261031",
+      "subs": {
+        "relevance": 64,
+        "recency": 16,
+        "engagement": 52
+      },
+      "score": 48
+    },
+    {
+      "id": "BL19",
+      "title": "每场演出都有好朋友来玩儿，感谢似矛哥来玩儿！11月3号 天津站11月4号 北京站11月9号 西安站11月10号 成都站  欢迎大家来玩！",
+      "url": "https://www.bilibili.com/video/BV1Rpxb6gE64",
+      "bvid": "BV1Rpxb6gE64",
+      "channel_name": "王宇Freedom",
+      "author_mid": "636637320",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 3,
+        "likes": 76,
+        "views": 1375,
+        "danmaku": 0,
+        "favorites": 2
+      },
+      "description": "-",
+      "duration": 23,
+      "relevance": 0.64,
+      "why_relevant": "B站视频：每场演出都有好朋友来玩儿，感谢似矛哥来玩儿！11月3号 天津站11月4号 北京站11月9号 西安站1",
+      "subs": {
+        "relevance": 64,
+        "recency": 16,
+        "engagement": 47
+      },
+      "score": 46
+    }
+  ],
+  "zhihu": [],
+  "douyin": [],
+  "wechat": [],
+  "baidu": [],
+  "toutiao": [
+    {
+      "id": "TT1",
+      "title": "天津演唱会，加场！",
+      "abstract": "【来源：天津交通广播】11月24日据大麦APP、猫眼演出等平台消息“叶世荣「你中有我」巡回演唱会｜天津站 ” 演出时间增加 2027年1月17日 加上此前公布的2027年1月16日 将在天津连唱2天 据此前消息天津市文化和旅游局发布Beyond乐队叶世荣「你中有我」巡回演唱会·天",
+      "url": "https://www.toutiao.com/group/7711654757869388297/",
+      "source_name": "九派观天下",
+      "date": "2026-11-24",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 3,
+        "reads": 1626
+      },
+      "relevance": 1.0,
+      "why_relevant": "今日头条（九派观天下）：天津演唱会，加场！",
+      "subs": {
+        "relevance": 100,
+        "recency": 93,
+        "engagement": 83
+      },
+      "score": 93,
+      "original_url": "http://feed.huiwen.co/rssv2/toutiaohao_article_ttguantianxia_89f4e9deba8f432f9e2714ed0cf695a0/item/IL1CTS0ZRVA2EMD.html"
+    },
+    {
+      "id": "TT7",
+      "title": "实力碾压流量！叶世荣天津演唱会紧急加场，连唱两天不负千万歌迷",
+      "abstract": "真正经典的摇滚情怀，从不会被时代淘汰，更不愁观众和票房。谁也没想到，老牌音乐人叶世荣的巡演热度，直接吊打一众流量歌手，凭借超高人气迎来官方紧急加场。行内有句话，观众的热情，就是演唱会最好的通行证。",
+      "url": "https://www.toutiao.com/group/7711913385704636938/",
+      "source_name": "好物分享",
+      "date": "2026-11-25",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 2,
+        "reads": 109
+      },
+      "relevance": 0.9,
+      "why_relevant": "今日头条（好物分享）：实力碾压流量！叶世荣天津演唱会紧急加场，连唱两天不负千万歌迷",
+      "subs": {
+        "relevance": 90,
+        "recency": 96,
+        "engagement": 20
+      },
+      "score": 70,
+      "original_url": "https://toutiao.com/group/7711913385704636938/"
+    },
+    {
+      "id": "TT2",
+      "title": "天津演唱会，加场！",
+      "abstract": "听说叶世荣要在天津加场了，这消息一出来，歌迷圈里立马炸开了锅。原本只定了2027年1月16日在天津奥林匹克体育中心体育馆唱一场，结果大麦和猫眼上一看，好家伙，1月17日又添了一场，直接变成连唱两天。俗话说得好，“好事成双”，这话搁在这儿再合适不过了。",
+      "url": "https://www.toutiao.com/group/7711976647779435043/",
+      "source_name": "山坳吟诗的雅客",
+      "date": "2026-11-25",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 1,
+        "reads": 43
+      },
+      "relevance": 1.0,
+      "why_relevant": "今日头条（山坳吟诗的雅客）：天津演唱会，加场！",
+      "subs": {
+        "relevance": 100,
+        "recency": 96,
+        "engagement": 0
+      },
+      "score": 69,
+      "original_url": "https://toutiao.com/group/7711976647779435043/"
+    },
+    {
+      "id": "TT15",
+      "title": "天津被明星“承包”！周华健四连唱，林志炫陪你跨年",
+      "abstract": "天津星光炸裂！周华健四连唱、信明天开嗓、跨年有林志炫……天津的秋冬，被全方位“卷”入了娱乐风暴中心！演唱会、综艺、电影嘉年华轮番上阵，明星浓度超标，活动密度拉满，这座城正用实力证明：什么叫“演艺带火文旅，烟火撬动经济”。",
+      "url": "https://www.toutiao.com/group/7702326745415893514/",
+      "source_name": "梯田之上悠闲地看稻浪",
+      "date": "2026-10-30",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 3,
+        "likes": 1,
+        "reads": 172
+      },
+      "relevance": 0.64,
+      "why_relevant": "今日头条（梯田之上悠闲地看稻浪）：天津被明星“承包”！周华健四连唱，林志炫陪你跨年",
+      "subs": {
+        "relevance": 64,
+        "recency": 9,
+        "engagement": 100
+      },
+      "score": 61,
+      "original_url": "https://toutiao.com/group/7702326745415893514/"
+    }
+  ],
+  "best_practices": [],
+  "prompt_pack": [],
+  "context_snippet_md": "# 上下文: 天津 演唱会 加场（2026-10-27 ~ 2026-11-26）\n\n*生成时间: 2026-11-26 | 模式: all*\n\n## 主要来源\n\n- [今日头条] 天津演唱会，加场！ — https://www.toutiao.com/group/7711654757869388297/\n- [B站] 这次真的是神兵天“津”了～这个周六天津见啦～ — https://www.bilibili.com/video/BV1zwy6zuETo\n- [今日头条] 实力碾压流量！叶世荣天津演唱会紧急加场，连唱两天不负千万歌迷 — https://www.toutiao.com/group/7711913385704636938/\n- [今日头条] 天津演唱会，加场！ — https://www.toutiao.com/group/7711976647779435043/\n- [B站] 2026.11.21周华健天津演唱会 — https://www.bilibili.com/video/BV1UVyizLEvR\n- [B站] 周华健天津演唱会261114 — https://www.bilibili.com/video/BV1pgsV6gEay\n- [B站] 「邓紫棋」 天津站day2  《I AM GLORIA》世界巡回演唱会 「新的心跳」 完整版4k高清... — https://www.bilibili.com/video/BV1p5sS6VEpm\n- [B站] 陈明【等你爱我】天津演唱会(4K60帧第1排) — https://www.bilibili.com/video/BV1YEyYzLEoV\n\n## 摘要\n\n*完整报告见 report.md / report.html。*\n",
+  "weibo_error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE",
+  "xiaohongshu_error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "douyin_error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "search_topic": "天津 演唱会 加场",
+  "query_type": "breaking_news",
+  "depth": "default",
+  "source_status": {
+    "weibo": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 9.1,
+      "via": {},
+      "error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE"
+    },
+    "xiaohongshu": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 1.5,
+      "via": {},
+      "error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "bilibili": {
+      "state": "ok",
+      "count": 18,
+      "raw_count": 20,
+      "elapsed": 1.0,
+      "via": {
+        "wbi-search": 20
+      }
+    },
+    "douyin": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 4.0,
+      "via": {},
+      "error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "baidu": {
+      "state": "empty",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 6.5,
+      "via": {}
+    },
+    "toutiao": {
+      "state": "ok",
+      "count": 4,
+      "raw_count": 18,
+      "elapsed": 2.2,
+      "via": {
+        "so.toutiao": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "topic": "济南 演唱会 官宣 加场 应援 漫展 电竞 文旅",
+  "range": {
+    "from": "2026-10-27",
+    "to": "2026-11-26"
+  },
+  "generated_at": "2026-11-26T07:26:46.392556+00:00",
+  "mode": "all",
+  "weibo": [],
+  "xiaohongshu": [],
+  "bilibili": [
+    {
+      "id": "BL1",
+      "title": "【自存】周华健济南演唱会纯享版20261031",
+      "url": "https://www.bilibili.com/video/BV1M4xp65ERh",
+      "bvid": "BV1M4xp65ERh",
+      "channel_name": "耶依啊哈",
+      "author_mid": "207342468",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 12,
+        "likes": 39,
+        "views": 4923,
+        "danmaku": 0,
+        "favorites": 58
+      },
+      "description": "-",
+      "duration": 6800,
+      "relevance": 0.26,
+      "why_relevant": "B站视频：【自存】周华健济南演唱会纯享版20261031",
+      "subs": {
+        "relevance": 26,
+        "recency": 16,
+        "engagement": 55
+      },
+      "score": 32
+    },
+    {
+      "id": "BL2",
+      "title": "【超级皇帝位】Ella陈嘉桦演唱会济南站全场 20261121 #131",
+      "url": "https://www.bilibili.com/video/BV1WNyZzcEDs",
+      "bvid": "BV1WNyZzcEDs",
+      "channel_name": "随机生成的剪刀手",
+      "author_mid": "21951669",
+      "date": "2026-11-24",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 8,
+        "likes": 28,
+        "views": 659,
+        "danmaku": 1,
+        "favorites": 36
+      },
+      "description": "自留存档，无商业用途\nElla陈嘉桦It&#x27;s Me艾拉主意巡回演唱会济南站全场 20261121\n录制设备：小米15Ultra（全程手持）+索尼d100录音笔",
+      "duration": 10197,
+      "relevance": 0.25,
+      "why_relevant": "B站视频：【超级皇帝位】Ella陈嘉桦演唱会济南站全场 20261121 #131",
+      "subs": {
+        "relevance": 25,
+        "recency": 93,
+        "engagement": 45
+      },
+      "score": 48
+    },
+    {
+      "id": "BL3",
+      "title": "当两个hanser粉丝在漫展签售相遇会发生什么？",
+      "url": "https://www.bilibili.com/video/BV1duxo6XE3D",
+      "bvid": "BV1duxo6XE3D",
+      "channel_name": "TKs小司",
+      "author_mid": "426413736",
+      "date": "2026-11-05",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 25,
+        "likes": 617,
+        "views": 8827,
+        "danmaku": 4,
+        "favorites": 198
+      },
+      "description": "希望下次憨色演唱会能见面呀！速速办下一场！",
+      "duration": 313,
+      "relevance": 0.25,
+      "why_relevant": "B站视频：当两个hanser粉丝在漫展签售相遇会发生什么？",
+      "subs": {
+        "relevance": 25,
+        "recency": 30,
+        "engagement": 76
+      },
+      "score": 41
+    }
+  ],
+  "zhihu": [],
+  "douyin": [],
+  "wechat": [],
+  "baidu": [
+    {
+      "id": "BD1",
+      "title": "Ella济南演唱会周末开唱，还有话剧、音乐剧等冬日好戏“热气腾腾”！",
+      "snippet": "Ella济南演唱会周末开唱,还有话剧、音乐剧等冬日好戏“热气腾腾”! 冷空气开始营业 但好戏永远热气腾腾 把初冬的晚风关在剧场门外 让灯光、故事和掌声替你暖手暖心 这波新鲜出炉的演出清单 就是为你定制的“精神暖炉” 挑个最对味...",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTk4NTU0MQ==&mid=2653042909&idx=1&sn=c7cc70be0beec049855530540e104892&chksm=bd90c106ea0a712ab2423e5f0c47cb82cc2e5acb520bac8628113a013b7d242268df467dc2ec&scene=27",
+      "source_domain": "济南市文化和旅游局",
+      "date": "2026-11-18",
+      "date_confidence": "med",
+      "relevance": 0.25,
+      "why_relevant": "百度：Ella济南演唱会周末开唱，还有话剧、音乐剧等冬日好戏“热气腾腾”！",
+      "subs": {
+        "relevance": 25,
+        "recency": 73,
+        "engagement": 0
+      },
+      "score": 36
+    },
+    {
+      "id": "BD2",
+      "title": "徐良胡彦斌演唱会即将开抢！初冬济南好戏连台等你来",
+      "snippet": "循着熟悉旋律赴一场时光之约 和徐良放声合唱重逢青春 📅日期:12月4日-12月6日📢11月16日15:00正式开票,敬请期待🚩演出地点:济南奥林匹克体育中心体育馆📱购票:大麦、猫眼等平台均可搜索购票 演唱会 Beyond乐队叶世荣2026「你中有我」巡回演...",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTk4NTU0MQ==&mid=2653041711&idx=1&sn=fb4a7ad8255382364cacfe5fe137d435&chksm=bdaf9e9705a5e97b23948447b218c9f0a77741390905d0aee887a8d6f5f31a4aceb2de3f038c&scene=27",
+      "source_domain": "济南市文化和旅游局",
+      "date": "2026-11-12",
+      "date_confidence": "med",
+      "relevance": 0.25,
+      "why_relevant": "百度：徐良胡彦斌演唱会即将开抢！初冬济南好戏连台等你来",
+      "subs": {
+        "relevance": 25,
+        "recency": 53,
+        "engagement": 0
+      },
+      "score": 27
+    }
+  ],
+  "toutiao": [
+    {
+      "id": "TT4",
+      "title": "官宣！济南演唱会又上新了",
+      "abstract": "济南的冬天，看来是要被歌声给焐热了。这才刚进十一月，泉城的老少爷们儿还没顾上裹紧棉袄呢，演唱会的消息就一个接一个地砸过来，砸得人心里痒痒的。",
+      "url": "https://www.toutiao.com/group/7706884902771245587/",
+      "source_name": "山坳吟诗的雅客",
+      "date": "2026-11-11",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 3,
+        "likes": 4,
+        "reads": 183
+      },
+      "relevance": 0.36,
+      "why_relevant": "今日头条（山坳吟诗的雅客）：官宣！济南演唱会又上新了",
+      "subs": {
+        "relevance": 36,
+        "recency": 50,
+        "engagement": 100
+      },
+      "score": 58,
+      "original_url": "https://toutiao.com/group/7706884902771245587/"
+    },
+    {
+      "id": "TT5",
+      "title": "官宣！济南演唱会又上新了",
+      "abstract": "【来源：爱济南新闻客户端】一济南又迎来一场演唱会。根据济南市文化和旅游局官方订阅号消息，徐良2026“时间折叠”巡回演唱会济南站正式官宣，将于12月4日、5日、6日在济南奥林匹克体育中心体育馆连演三场。",
+      "url": "https://www.toutiao.com/group/7706558377240904227/",
+      "source_name": "九派观天下",
+      "date": "2026-11-10",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 8,
+        "reads": 2686
+      },
+      "relevance": 0.36,
+      "why_relevant": "今日头条（九派观天下）：官宣！济南演唱会又上新了",
+      "subs": {
+        "relevance": 36,
+        "recency": 46,
+        "engagement": 99
+      },
+      "score": 57,
+      "original_url": "http://feed.huiwen.co/rssv2/toutiaohao_article_ttguantianxia_89f4e9deba8f432f9e2714ed0cf695a0/item/IL1D9KPE5MRZJQ6.html"
+    },
+    {
+      "id": "TT18",
+      "title": "徐良演唱会济南站官宣定档 12月4日至6日 连唱三场 门票售价380元起 11月16日开抢",
+      "abstract": "徐良“时间折叠”演唱会济南站官宣！12月4日至6日，济南奥体中心体育馆连唱三场。演唱会门票已上线，票价380元至1580元不等，超30.6万人标记想看；11月16日，三场分时段开票：15:00（4日场）、15:30（5日场）、16:00（6日场）。",
+      "url": "https://www.toutiao.com/group/7706160813249184319/",
+      "source_name": "生活帮",
+      "date": "2026-11-09",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 3,
+        "reads": 254
+      },
+      "relevance": 0.36,
+      "why_relevant": "今日头条（生活帮）：徐良演唱会济南站官宣定档 12月4日至6日 连唱三场 门票售价380元起 11月16日开抢",
+      "subs": {
+        "relevance": 36,
+        "recency": 43,
+        "engagement": 41
+      },
+      "score": 39,
+      "original_url": "https://sdxw.iqilu.com/w/article/YS0yMS0xNzQ4MjM2MQ.html"
+    },
+    {
+      "id": "TT7",
+      "title": "徐良济南演唱会官宣，12月4日、5日、6日在济南连开三场",
+      "abstract": "徐良济南演唱会官宣，12月4日、5日、6日在济南连开三场 【 齐鲁晚报·齐鲁壹点旗下短视频产品 】",
+      "url": "https://www.toutiao.com/group/7706411655537623592/",
+      "source_name": "齐鲁壹点",
+      "date": "2026-11-10",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 1,
+        "likes": 0,
+        "reads": 178
+      },
+      "relevance": 0.36,
+      "why_relevant": "今日头条（齐鲁壹点）：徐良济南演唱会官宣，12月4日、5日、6日在济南连开三场",
+      "subs": {
+        "relevance": 36,
+        "recency": 46,
+        "engagement": 32
+      },
+      "score": 37,
+      "original_url": "http://m.ql1d.com/new/videos/28306204"
+    },
+    {
+      "id": "TT14",
+      "title": "徐良演唱会济南站连开三天，谁的“青春DNA”动了！",
+      "abstract": "齐鲁网·闪电新闻11月11日讯 徐良“时间折叠”演唱会济南站官宣！12月4日至6日，济南奥体中心体育馆连唱三场，11月16日下午三点开启抢票。谁的“青春DNA”动了！",
+      "url": "https://www.toutiao.com/group/7707219939933684259/",
+      "source_name": "闪电新闻",
+      "date": "2026-11-12",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 1,
+        "reads": 28
+      },
+      "relevance": 0.36,
+      "why_relevant": "今日头条（闪电新闻）：徐良演唱会济南站连开三天，谁的“青春DNA”动了！",
+      "subs": {
+        "relevance": 36,
+        "recency": 53,
+        "engagement": 17
+      },
+      "score": 34,
+      "original_url": "https://sdxw.iqilu.com/w/article/YS0yMS0xNzQ4NzQzOA.html"
+    },
+    {
+      "id": "TT1",
+      "title": "连开三场！徐良演唱会官宣济南，青春回忆杀来了",
+      "abstract": "根据济南文旅官方消息，徐良2026“时间折叠”巡回演唱会济南站正式官宣，12月4、5、6日，将在济南奥林匹克体育中心体育馆连续上演三场演出。最近济南奥体体育馆演唱会排得满满当当。",
+      "url": "https://www.toutiao.com/group/7706752505308398141/",
+      "source_name": "真诚蛋糕dvq0GN",
+      "date": "2026-11-11",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "reads": 11
+      },
+      "relevance": 0.46,
+      "why_relevant": "今日头条（真诚蛋糕dvq0GN）：连开三场！徐良演唱会官宣济南，青春回忆杀来了",
+      "subs": {
+        "relevance": 46,
+        "recency": 50,
+        "engagement": 0
+      },
+      "score": 33,
+      "original_url": "https://toutiao.com/group/7706752505308398141/"
+    },
+    {
+      "id": "TT16",
+      "title": "徐良济南演唱会12月连唱三场，时间折叠舞台把青春唱回来",
+      "abstract": "徐良济南演唱会正式官宣，三场连开。想去的人，先把三件事弄明白，心里有底再决定哪一场。",
+      "url": "https://www.toutiao.com/group/7708596321048904242/",
+      "source_name": "江亿达的",
+      "date": "2026-11-16",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "reads": 19
+      },
+      "relevance": 0.36,
+      "why_relevant": "今日头条（江亿达的）：徐良济南演唱会12月连唱三场，时间折叠舞台把青春唱回来",
+      "subs": {
+        "relevance": 36,
+        "recency": 66,
+        "engagement": 0
+      },
+      "score": 32,
+      "original_url": "https://toutiao.com/group/7708596321048904242/"
+    },
+    {
+      "id": "TT9",
+      "title": "胡彦斌济南演唱会正式官宣！经典老歌全开麦，赴一场烟火之约",
+      "abstract": "2026年末巡演官宣不断，乐坛实力派接连解锁全新城市场次。近日，胡彦斌「是一场烟火·刹那」巡回演唱会济南站正式定档官宣，将于12月19日登陆济南奥体中心体育馆，用极具感染力的歌声，在大明湖畔唱响烟火与温柔，让无数歌迷满心期待。",
+      "url": "https://www.toutiao.com/group/7704547212151308841/",
+      "source_name": "心想事成王w",
+      "date": "2026-11-05",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 1,
+        "reads": 29
+      },
+      "relevance": 0.36,
+      "why_relevant": "今日头条（心想事成王w）：胡彦斌济南演唱会正式官宣！经典老歌全开麦，赴一场烟火之约",
+      "subs": {
+        "relevance": 36,
+        "recency": 30,
+        "engagement": 17
+      },
+      "score": 28,
+      "original_url": "https://toutiao.com/group/7704547212151308841/"
+    },
+    {
+      "id": "TT11",
+      "title": "胡彦斌济南演唱会正式官宣！落坐大明湖畔，赴一场烟火音乐之约",
+      "abstract": "2026年末乐坛巡演持续上新！近日，胡彦斌「是一场烟火·刹那」全国巡回演唱会济南站正式官宣定档，将于12月19日登陆济南奥体中心体育馆，把细腻国风与炸裂流行舞台带到泉城，为山东歌迷送上年末重磅音乐惊喜。作为华语乐坛公认的全能创作实力派，胡彦斌的巡演一直是口碑与质感双在线的存在。",
+      "url": "https://www.toutiao.com/group/7705013574673924650/",
+      "source_name": "心想事成王w",
+      "date": "2026-11-06",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "reads": 202
+      },
+      "relevance": 0.36,
+      "why_relevant": "今日头条（心想事成王w）：胡彦斌济南演唱会正式官宣！落坐大明湖畔，赴一场烟火音乐之约",
+      "subs": {
+        "relevance": 36,
+        "recency": 33,
+        "engagement": 5
+      },
+      "score": 25,
+      "original_url": "https://toutiao.com/group/7705013574673924650/"
+    }
+  ],
+  "best_practices": [],
+  "prompt_pack": [],
+  "context_snippet_md": "# 上下文: 济南 演唱会 官宣 加场 应援 漫展 电竞 文旅（2026-10-27 ~ 2026-11-26）\n\n*生成时间: 2026-11-26 | 模式: all*\n\n## 主要来源\n\n- [今日头条] 官宣！济南演唱会又上新了 — https://www.toutiao.com/group/7706884902771245587/\n- [今日头条] 官宣！济南演唱会又上新了 — https://www.toutiao.com/group/7706558377240904227/\n- [B站] 【超级皇帝位】Ella陈嘉桦演唱会济南站全场 20261121 #131 — https://www.bilibili.com/video/BV1WNyZzcEDs\n- [B站] 当两个hanser粉丝在漫展签售相遇会发生什么？ — https://www.bilibili.com/video/BV1duxo6XE3D\n- [今日头条] 徐良演唱会济南站官宣定档 12月4日至6日 连唱三场 门票售价380元起 11月16日开抢 — https://www.toutiao.com/group/7706160813249184319/\n- [今日头条] 徐良济南演唱会官宣，12月4日、5日、6日在济南连开三场 — https://www.toutiao.com/group/7706411655537623592/\n- [百度] Ella济南演唱会周末开唱，还有话剧、音乐剧等冬日好戏“热气腾腾”！ — https://mp.weixin.qq.com/s?__biz=MjM5OTk4NTU0MQ==&mid=2653042909&idx=1&sn=c7cc70be0beec049855530540e104892&chksm=bd90c106ea0a712ab2423e5f0c47cb82cc2e5acb520bac8628113a013b7d242268df467dc2ec&scene=27\n- [今日头条] 徐良演唱会济南站连开三天，谁的“青春DNA”动了！ — https://www.toutiao.com/group/7707219939933684259/\n\n## 摘要\n\n*完整报告见 report.md / report.html。*\n",
+  "weibo_error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE",
+  "xiaohongshu_error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "douyin_error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "search_topic": "济南 演唱会 官宣 加场 应援 漫展 电竞 文旅",
+  "query_type": "breaking_news",
+  "depth": "default",
+  "source_status": {
+    "weibo": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 6.5,
+      "via": {},
+      "error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE"
+    },
+    "xiaohongshu": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 1.5,
+      "via": {},
+      "error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "bilibili": {
+      "state": "ok",
+      "count": 3,
+      "raw_count": 20,
+      "elapsed": 1.0,
+      "via": {
+        "wbi-search": 20
+      }
+    },
+    "douyin": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 4.0,
+      "via": {},
+      "error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "baidu": {
+      "state": "ok",
+      "count": 2,
+      "raw_count": 2,
+      "elapsed": 0.9,
+      "via": {
+        "baidu-web": 2
+      }
+    },
+    "toutiao": {
+      "state": "ok",
+      "count": 9,
+      "raw_count": 20,
+      "elapsed": 2.5,
+      "via": {
+        "so.toutiao": 20
+      }
+    }
+  }
+}

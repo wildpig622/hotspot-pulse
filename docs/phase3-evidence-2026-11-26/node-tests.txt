@@ -1,0 +1,44 @@
+✔ client rejects stale, cached and incompatible contracts (1.9869ms)
+✔ client respects noncontinuous sessions and inactive status (0.3304ms)
+✔ client requires full reset for expired or future cursor (2.1503ms)
+✔ large exports paginate every selected record exactly once within safe canvas dimensions (89.9042ms)
+✔ long Chinese titles and emoji wrap without truncation and retain date and pending labels (1.0364ms)
+✔ empty results and an oversized individual record fail explicitly instead of exporting an incomplete image (12.3814ms)
+✔ PNG encoding requests image/png and reports a failed browser encoder (0.8058ms)
+✔ type filter follows the configured coverage topic catalog (41.0144ms)
+✔ Harbin is selectable and its v2 candidates render without mixing Shenyang (7.5717ms)
+✔ v2 canonical records replace duplicate member rows and keep raw leads accessible (259.2056ms)
+✔ v2 stale or cached feed visibly reports its actual collection time (4.2573ms)
+✔ dated ticketing listings fill a previously empty city and keep their evidence label in PNG (5.2192ms)
+✔ rejected source listings stay outside the future view and failed refresh is visible (3.8265ms)
+✔ Chongqing news candidates enter the default calendar with distinct evidence labels and PNG provenance (9.0392ms)
+✔ a city with no safe calendar dates exposes all its leads without retaining contradictory filters (6.1181ms)
+✔ activity calendar and news leads remain distinct, with clear totals and scoped holiday dates (143.5048ms)
+✔ a disputed holiday report cannot enter the future view, and origin signals stay outside local activities (8.3306ms)
+✔ the news-candidate shortcut changes the data layer without losing the selected city (3.9893ms)
+✔ large lists render in batches while PNG export keeps every filtered row (271.1338ms)
+✔ disjoint performance sessions do not match gap days or render a continuous interval (15.9111ms)
+✔ a fresh rebuild cannot disguise stale collection, and the 90-day window retains later records in all content (5.3928ms)
+✔ missing calendar data falls back explicitly to leads, without claiming a city has no events (159.2579ms)
+✔ unchanged legacy snapshot exposes exactly the same 20 future candidates as the collector (166.1943ms)
+✔ all fourteen false future candidates remain hidden individually (60.8122ms)
+✔ all twelve boundary records remain outside the future filter (30.667ms)
+✔ all twenty supported candidates remain visible individually (81.0557ms)
+✔ three stale dates inferred into next year are held for year review (14.4024ms)
+✔ failed city catalogue cannot silently admit an event-city mismatch (5.1928ms)
+✔ invalid calendar dates and reversed ranges stay available for review without entering the future view (12.3699ms)
+✔ a multi-day legacy exhibition remains discoverable on its middle and last days (12.449ms)
+✔ an explicit past day hidden by a legacy whole-month value belongs in the past view (6.129ms)
+✔ all twelve boundary samples are accessible in their intended content views (68.7147ms)
+✔ legacy title projection cannot overwrite human or semantic dates or invent a year (20.7112ms)
+✔ PNG export uses the exact current filtered set and freezes labels without promoting records (247.5535ms)
+✔ an empty selection disables PNG export and does not produce a misleading blank calendar (22.1912ms)
+✔ denied clipboard access gives a save-PNG fallback without losing the generated image (7.2392ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1956.2794

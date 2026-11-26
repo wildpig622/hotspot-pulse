@@ -1,0 +1,108 @@
+{
+  "as_of": "2026-11-26",
+  "business_acceptance": "NOT_PASSED",
+  "official_roots": 26,
+  "official_article_records": 102,
+  "official_dated_records": 3,
+  "official_held_for_review": 99,
+  "distinct_source_records": 207,
+  "dated_distinct_source_records": 108,
+  "local_primary_candidates": 94,
+  "local_secondary_leads": 13,
+  "national_or_unresolved_dated_candidates": 1,
+  "next90_primary_candidates": 94,
+  "next90_secondary_leads": 12,
+  "distant91_365": 1,
+  "unique_social_signals": 13,
+  "social_signal_observations": 15,
+  "potential_duplicate_groups": 1,
+  "benchmark": {
+    "method": "diagnostic_reference_comparison_not_independent_human_acceptance",
+    "references": 36,
+    "reference_families": 32,
+    "human_reviewed_references": 0,
+    "secondary_only_reference_count": 5,
+    "union_valid_reference_ids": [
+      "B02",
+      "B04",
+      "B06",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26",
+      "B27",
+      "B28",
+      "B29",
+      "B32",
+      "B33",
+      "B34",
+      "B36"
+    ],
+    "by_reference_basis": [
+      {
+        "basis": "frozen_ticket_card",
+        "references": 15,
+        "valid_discoveries": 15,
+        "rate": 1.0
+      },
+      {
+        "basis": "independent_government_permission",
+        "references": 2,
+        "valid_discoveries": 0,
+        "rate": 0.0
+      },
+      {
+        "basis": "independent_secondary_calendar",
+        "references": 5,
+        "valid_discoveries": 4,
+        "rate": 0.8
+      },
+      {
+        "basis": "phase2_official",
+        "references": 13,
+        "valid_discoveries": 3,
+        "rate": 0.2308
+      },
+      {
+        "basis": "phase2_official_holdout",
+        "references": 1,
+        "valid_discoveries": 0,
+        "rate": 0.0
+      }
+    ],
+    "union_recall": 0.6111,
+    "non_secondary_recall": 0.5806,
+    "date_accuracy_on_matched_dated_records": {
+      "correct": 23,
+      "evaluated": 23,
+      "rate": 1.0
+    },
+    "wrong_date_records": 0,
+    "wrong_city_records": 0,
+    "city_accuracy_on_url_matched_records": {
+      "correct": 21,
+      "evaluated": 21,
+      "rate": 1.0
+    },
+    "false_positive_rate": null,
+    "false_positive_note": "Incomplete reference set; unreferenced output has not been independently adjudicated."
+  },
+  "date_sample": {
+    "sample_size": 200,
+    "direct_original_bodies": 0,
+    "independently_rediscovered_articles": 4,
+    "human_completed": 0,
+    "assistant_evidence_gated_drafts": 3
+  },
+  "production_unchanged": true,
+  "production_identical_to_phase2_base": true,
+  "benchmark_sha256": "387cef599ebac3e14ea6c883d0f565303dc6d61a8f259c7b27317a8992eaaf75"
+}

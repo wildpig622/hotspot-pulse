@@ -1,0 +1,842 @@
+{
+  "topic": "西安 漫展 应援",
+  "range": {
+    "from": "2026-10-27",
+    "to": "2026-11-26"
+  },
+  "generated_at": "2026-11-26T07:47:05.053280+00:00",
+  "mode": "all",
+  "weibo": [],
+  "xiaohongshu": [],
+  "bilibili": [
+    {
+      "id": "BL10",
+      "title": "西安临空、杭州萧山、重庆悦来，三城三馆同时开票｜西安想去1.1万人，杭州1.2万人，重庆1.2万人｜梦乡动漫展 新春限定版 三城排期，早鸟票不多了，速度抢票",
+      "url": "https://www.bilibili.com/video/BV1yUyDzmEXg",
+      "bvid": "BV1yUyDzmEXg",
+      "channel_name": "哈基米潮玩",
+      "author_mid": "3546795548347020",
+      "date": "2026-11-23",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 75,
+        "views": 1661,
+        "danmaku": 2,
+        "favorites": 50
+      },
+      "description": "梦乡新春限定版三城开票。西安1月23日至25日，西安临空会展中心；杭州2月13日至14日，杭州国际博览中心1A-1D馆；重庆2月13日至14日，重庆国际博览中心S1-S3馆。每天9点到17点，早鸟69.9、预售79。早鸟停售杭州12月13日0点、西安12月23日0点、重庆12月31日23点59分。购票见评论区置顶。",
+      "duration": 76,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：西安临空、杭州萧山、重庆悦来，三城三馆同时开票｜西安想去1.1万人，杭州1.2万人，重庆1.2万人｜",
+      "subs": {
+        "relevance": 54,
+        "recency": 90,
+        "engagement": 92
+      },
+      "score": 74
+    },
+    {
+      "id": "BL3",
+      "title": "过年之前，想见的人先去见一面。西安·第二十八届梦乡动漫展-新春限定版1月23日至25日开场，卯辰、周凉西、柒麟70等十位嘉宾分三天到场，早鸟票69.9元。",
+      "url": "https://www.bilibili.com/video/BV11SsL6HEzE",
+      "bvid": "BV11SsL6HEzE",
+      "channel_name": "哈基米潮玩",
+      "author_mid": "3546795548347020",
+      "date": "2026-11-15",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 88,
+        "views": 2255,
+        "danmaku": 2,
+        "favorites": 67
+      },
+      "description": "2027年1月23-25日9:00-17:00，西安临空会展中心，ABC三馆全开。十位嘉宾分三天：23日卯辰、周凉西；24日柒麟70、襾襾yaya、睡觉不带眼罩、Hana_淮南、拾八；25日鬃毛、初壹、阿水y。早鸟票69.9元（12月23日停售），预售79元。实名一单一证扫码入场。购票方式：见评论区置顶。",
+      "duration": 93,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：过年之前，想见的人先去见一面。西安·第二十八届梦乡动漫展-新春限定版1月23日至25日开场，卯辰、周",
+      "subs": {
+        "relevance": 54,
+        "recency": 63,
+        "engagement": 100
+      },
+      "score": 70
+    },
+    {
+      "id": "BL7",
+      "title": "在西安二次元浓度最高的地方办兽聚！",
+      "url": "https://www.bilibili.com/video/BV1pQs16aEwP",
+      "bvid": "BV1pQs16aEwP",
+      "channel_name": "古都有兽",
+      "author_mid": "3546770529323559",
+      "date": "2026-11-18",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 10,
+        "likes": 194,
+        "views": 741,
+        "danmaku": 0,
+        "favorites": 43
+      },
+      "description": "秋风有信，相聚有时。古都有兽×IDS创世岛小寨店主题活动日圆满收官！感谢每一位到场的朋友与幕后伙伴，是你们的热情让这场相聚温暖而难忘。毛茸茸的快乐暂告一段落，但古都有兽的故事仍在继续。古都有兽期待下一站再见！近期还有古都有兽FurryClub快闪店二期即将开放、下周末iw无限世界漫展活动，冬聚定档2027年2月13日！不要忘记留意后续通知哦～",
+      "duration": 40,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：在西安二次元浓度最高的地方办兽聚！",
+      "subs": {
+        "relevance": 54,
+        "recency": 73,
+        "engagement": 90
+      },
+      "score": 69
+    },
+    {
+      "id": "BL6",
+      "title": "西安毛毛快闪人挤人！古都有兽3个新消息｜IW漫展摊位/快闪店/冬聚定档",
+      "url": "https://www.bilibili.com/video/BV1gRsH6GEgu",
+      "bvid": "BV1gRsH6GEgu",
+      "channel_name": "德蒙DeMonFox_Blur版",
+      "author_mid": "3546607758871067",
+      "date": "2026-11-15",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 8,
+        "likes": 103,
+        "views": 953,
+        "danmaku": 0,
+        "favorites": 25
+      },
+      "description": "这次古都有兽在西安IDS创世岛做快闪，现场人超多，毛毛多到快站不下。\n快速汇总3个官宣：\n①11月28-29日，古都有兽在IW漫展出摊位，有一场漫展兽聚，西安本地毛毛可以来玩；\n②去年FurryClub福瑞快闪店要重新开了，布置好我会去录探店；\n③明年冬聚目前定档2027年2月13日，刚好是春节假期最后一天，具体安排等官方后续公告。\n\n大合照忘了剪辑进去了，评论区置顶看吧",
+      "duration": 143,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：西安毛毛快闪人挤人！古都有兽3个新消息｜IW漫展摊位/快闪店/冬聚定档",
+      "subs": {
+        "relevance": 54,
+        "recency": 63,
+        "engagement": 85
+      },
+      "score": 65
+    },
+    {
+      "id": "BL1",
+      "title": "兔娘西安漫展为什么是签售票",
+      "url": "https://www.bilibili.com/video/BV1cCWY6xEmg",
+      "bvid": "BV1cCWY6xEmg",
+      "channel_name": "我想你了兔娘",
+      "author_mid": "1538099870",
+      "date": "2026-11-13",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 38,
+        "views": 2762,
+        "danmaku": 2,
+        "favorites": 10
+      },
+      "description": "-",
+      "duration": 100,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：兔娘西安漫展为什么是签售票",
+      "subs": {
+        "relevance": 54,
+        "recency": 56,
+        "engagement": 92
+      },
+      "score": 65
+    },
+    {
+      "id": "BL5",
+      "title": "2026.11.21 西安 星律次元☆宅舞大赛+清羽随宅8th 随缘记录",
+      "url": "https://www.bilibili.com/video/BV1mSynzvEwV",
+      "bvid": "BV1mSynzvEwV",
+      "channel_name": "展子里的幽灵怪蜀黍",
+      "author_mid": "52213806",
+      "date": "2026-11-23",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 3,
+        "likes": 12,
+        "views": 793,
+        "danmaku": 0,
+        "favorites": 9
+      },
+      "description": "仅闲着无聊录的 如有侵权请联系本人 秒删",
+      "duration": 18044,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：2026.11.21 西安 星律次元☆宅舞大赛+清羽随宅8th 随缘记录",
+      "subs": {
+        "relevance": 54,
+        "recency": 90,
+        "engagement": 54
+      },
+      "score": 63
+    },
+    {
+      "id": "BL9",
+      "title": "早鸟票69.9即将售罄！1.23-1.25 西安梦乡漫展今日开票！",
+      "url": "https://www.bilibili.com/video/BV1Q3sG6SEu1",
+      "bvid": "BV1Q3sG6SEu1",
+      "channel_name": "缇雅99",
+      "author_mid": "291408938",
+      "date": "2026-11-14",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 4,
+        "likes": 44,
+        "views": 1943,
+        "danmaku": 0,
+        "favorites": 7
+      },
+      "description": "",
+      "duration": 16,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：早鸟票69.9即将售罄！1.23-1.25 西安梦乡漫展今日开票！",
+      "subs": {
+        "relevance": 54,
+        "recency": 60,
+        "engagement": 77
+      },
+      "score": 62
+    },
+    {
+      "id": "BL13",
+      "title": "门票开抢【西安】·第28届梦乡动漫展-新春限定版！春节狂欢三天！「1.23-1.25 西安临空会展中心」",
+      "url": "https://www.bilibili.com/video/BV1poWC64E22",
+      "bvid": "BV1poWC64E22",
+      "channel_name": "常在湖边走",
+      "author_mid": "493383447",
+      "date": "2026-11-14",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 26,
+        "views": 634,
+        "danmaku": 2,
+        "favorites": 4
+      },
+      "description": "",
+      "duration": 34,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：门票开抢【西安】·第28届梦乡动漫展-新春限定版！春节狂欢三天！「1.23-1.25 西安临空会展中",
+      "subs": {
+        "relevance": 54,
+        "recency": 60,
+        "engagement": 64
+      },
+      "score": 58
+    },
+    {
+      "id": "BL2",
+      "title": "11.28—29，西安 IW 无限世界「头号玩家」集结",
+      "url": "https://www.bilibili.com/video/BV1MfyBzpEeu",
+      "bvid": "BV1MfyBzpEeu",
+      "channel_name": "会员购漫展情报站",
+      "author_mid": "3546775937878035",
+      "date": "2026-11-25",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 8,
+        "views": 109,
+        "danmaku": 0,
+        "favorites": 0
+      },
+      "description": "西安的次元门开了。 11 月 28—29 日，丝路国际文化艺术中心，IW 无限世界 SP01「头号玩家」。 8 位嘉宾空降，cos 大神、漫画主笔、《恶婴》主创同台。VIP 手环无限次出入、提前 30 分钟进场，还有专属手礼和通道。 普通票预售 65 元。购票链接放在评论区，这个周末带上同好来。",
+      "duration": 50,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：11.28—29，西安 IW 无限世界「头号玩家」集结",
+      "subs": {
+        "relevance": 54,
+        "recency": 96,
+        "engagement": 5
+      },
+      "score": 49
+    },
+    {
+      "id": "BL11",
+      "title": "20260815河野华 随手拍纪念【西安无限世界x次元之门动漫游戏博览会】",
+      "url": "https://www.bilibili.com/video/BV1HQxJ68Ehd",
+      "bvid": "BV1HQxJ68Ehd",
+      "channel_name": "AmberK猫猫",
+      "author_mid": "433432541",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 53,
+        "views": 1627,
+        "danmaku": 0,
+        "favorites": 47
+      },
+      "description": "-",
+      "duration": 50,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：20260815河野华 随手拍纪念【西安无限世界x次元之门动漫游戏博览会】",
+      "subs": {
+        "relevance": 54,
+        "recency": 16,
+        "engagement": 69
+      },
+      "score": 49
+    },
+    {
+      "id": "BL4",
+      "title": "兔娘要来西安·IW无限世界动漫游戏博览会啦！",
+      "url": "https://www.bilibili.com/video/BV1nZyDzrEfa",
+      "bvid": "BV1nZyDzrEfa",
+      "channel_name": "_漫展前线_",
+      "author_mid": "702410998",
+      "date": "2026-11-23",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 0,
+        "views": 181,
+        "danmaku": 0,
+        "favorites": 1
+      },
+      "description": "兔娘将于11月29日出席西安IW无限世界动漫游戏博览会，同时还有知名coser大旗、睡觉不带眼罩、药丸、瑾纪等也将出席此次活动！感兴趣的来看看吧！",
+      "duration": 12,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：兔娘要来西安·IW无限世界动漫游戏博览会啦！",
+      "subs": {
+        "relevance": 54,
+        "recency": 90,
+        "engagement": 0
+      },
+      "score": 46
+    },
+    {
+      "id": "BL15",
+      "title": "早鸟69.9元，西安梦乡动漫展新春限定版定档1月23-25日",
+      "url": "https://www.bilibili.com/video/BV1AoWC64ERT",
+      "bvid": "BV1AoWC64ERT",
+      "channel_name": "饭多多鸭",
+      "author_mid": "20369252",
+      "date": "2026-11-14",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 17,
+        "views": 244,
+        "danmaku": 0,
+        "favorites": 1
+      },
+      "description": "~",
+      "duration": 59,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：早鸟69.9元，西安梦乡动漫展新春限定版定档1月23-25日",
+      "subs": {
+        "relevance": 54,
+        "recency": 60,
+        "engagement": 25
+      },
+      "score": 46
+    },
+    {
+      "id": "BL12",
+      "title": "【HDR】一镜到底！2026年10月30日万圣节前夕西安德福巷cosplay大赏",
+      "url": "https://www.bilibili.com/video/BV1ygxy6eEws",
+      "bvid": "BV1ygxy6eEws",
+      "channel_name": "秋本明_Akimoto",
+      "author_mid": "52832615",
+      "date": "2026-10-31",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 12,
+        "views": 1203,
+        "danmaku": 1,
+        "favorites": 9
+      },
+      "description": "-",
+      "duration": 960,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：【HDR】一镜到底！2026年10月30日万圣节前夕西安德福巷cosplay大赏",
+      "subs": {
+        "relevance": 54,
+        "recency": 13,
+        "engagement": 62
+      },
+      "score": 46
+    },
+    {
+      "id": "BL17",
+      "title": "西安·第二十八届梦乡动漫展｜新春主题布景  1.23号  1.24号  1.25号",
+      "url": "https://www.bilibili.com/video/BV11Nsm6rEqR",
+      "bvid": "BV11Nsm6rEqR",
+      "channel_name": "果茶绿萝",
+      "author_mid": "23223726",
+      "date": "2026-11-18",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 5,
+        "views": 150,
+        "danmaku": 0,
+        "favorites": 1
+      },
+      "description": "",
+      "duration": 73,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：西安·第二十八届梦乡动漫展｜新春主题布景  1.23号  1.24号  1.25号",
+      "subs": {
+        "relevance": 54,
+        "recency": 73,
+        "engagement": 10
+      },
+      "score": 45
+    },
+    {
+      "id": "BL8",
+      "title": "西安梦乡漫展来啦！ 1.23–1.25 今日开票！西安梦乡漫展门票 购票",
+      "url": "https://www.bilibili.com/video/BV1VgsG6HELc",
+      "bvid": "BV1VgsG6HELc",
+      "channel_name": "刀客塔集合",
+      "author_mid": "3546720759712590",
+      "date": "2026-11-14",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 3,
+        "views": 157,
+        "danmaku": 0,
+        "favorites": 0
+      },
+      "description": "西安·第二十八届梦乡动漫展-新春限定版",
+      "duration": 17,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：西安梦乡漫展来啦！ 1.23–1.25 今日开票！西安梦乡漫展门票 购票",
+      "subs": {
+        "relevance": 54,
+        "recency": 60,
+        "engagement": 8
+      },
+      "score": 41
+    },
+    {
+      "id": "BL18",
+      "title": "寒假约定，西安梦乡！第二十八届梦乡动漫展新春限定版",
+      "url": "https://www.bilibili.com/video/BV1HpWR6JEMq",
+      "bvid": "BV1HpWR6JEMq",
+      "channel_name": "不Kuma",
+      "author_mid": "40419161",
+      "date": "2026-11-12",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 1,
+        "views": 141,
+        "danmaku": 0,
+        "favorites": 2
+      },
+      "description": "西安·第二十八届梦乡动漫展-新春限定版，2027年1月23日至25日相约西安临空会展中心\n活动区域包括A馆、B馆、C馆与喷泉草地广场，想了解票种和购票信息，点评论区链接",
+      "duration": 33,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：寒假约定，西安梦乡！第二十八届梦乡动漫展新春限定版",
+      "subs": {
+        "relevance": 54,
+        "recency": 53,
+        "engagement": 3
+      },
+      "score": 38
+    },
+    {
+      "id": "BL14",
+      "title": "【漫展纪实Vlog】西安第二十七届梦乡动漫展纪实（2026年10月2-4日） 西北漫展霸主？远征军完全体？哪里的漫展不在哪里办？",
+      "url": "https://www.bilibili.com/video/BV1JNx16oELX",
+      "bvid": "BV1JNx16oELX",
+      "channel_name": "JLRTV嘉陵铁视",
+      "author_mid": "329284556",
+      "date": "2026-11-01",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 21,
+        "views": 343,
+        "danmaku": 0,
+        "favorites": 3
+      },
+      "description": "拍摄日期（主体内容）：2026.10.2-4 视频信息截止日期：2026.10.31 最终定稿日期：2026.10.31\n2026年国庆假期，一次偶然的与父母见面的机会，使得UP主有幸从呼和浩特南下，前往十六朝古都——西安。作为西安乃至西北地区最具影响力的动漫展之一，西安梦乡动漫展至今已连续举办了27届；那么接下来，就让我们通过第一视角打探西安第二十七届梦乡动漫展，一起感受是六朝古都在金秋十月与二次元的相遇。梦乡在西安乃至西北地区的地位好比世界线在成都乃至西南地区的地位，虽然前者的名气和口碑不及后者，但前",
+      "duration": 2406,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：【漫展纪实Vlog】西安第二十七届梦乡动漫展纪实（2026年10月2-4日） 西北漫展霸主？远征军完",
+      "subs": {
+        "relevance": 54,
+        "recency": 16,
+        "engagement": 35
+      },
+      "score": 38
+    },
+    {
+      "id": "BL19",
+      "title": "【贰婶蔡翊昇】山海同游巡演西安站-应援咖",
+      "url": "https://www.bilibili.com/video/BV1C8446DEPR",
+      "bvid": "BV1C8446DEPR",
+      "channel_name": "贰洁2222",
+      "author_mid": "519704312",
+      "date": "2026-11-05",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 3,
+        "likes": 7,
+        "views": 140,
+        "danmaku": 0,
+        "favorites": 0
+      },
+      "description": "第一次搞线下应援咖活动，圆满结束啦！\n感谢支持小蔡@贰婶_蔡翊昇 \n感谢主办们，感谢所有参与的伙伴们！\n玩得很开心！特别美好的西安场！\n虽然有些不尽如人意的地方，有点小遗憾，就留给下次吧！\n永远期待下次见！！！\n此心不贰，此情唯一！！！",
+      "duration": 224,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：【贰婶蔡翊昇】山海同游巡演西安站-应援咖",
+      "subs": {
+        "relevance": 54,
+        "recency": 30,
+        "engagement": 14
+      },
+      "score": 36
+    },
+    {
+      "id": "BL16",
+      "title": "九胎宝妈小鸭的西安梦乡漫展vlog",
+      "url": "https://www.bilibili.com/video/BV1zZ4A65EFE",
+      "bvid": "BV1zZ4A65EFE",
+      "channel_name": "小鸭YAYA113",
+      "author_mid": "13937017",
+      "date": "2026-11-02",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 12,
+        "views": 193,
+        "danmaku": 1,
+        "favorites": 1
+      },
+      "description": "认识了很多新朋友，开心(^_^)/梦乡好玩爱玩下次还来！",
+      "duration": 445,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：九胎宝妈小鸭的西安梦乡漫展vlog",
+      "subs": {
+        "relevance": 54,
+        "recency": 19,
+        "engagement": 21
+      },
+      "score": 35
+    },
+    {
+      "id": "BL20",
+      "title": "旅行箱动漫社招新啦！！！我们在西安漫展等你",
+      "url": "https://www.bilibili.com/video/BV1qyxX6VEtX",
+      "bvid": "BV1qyxX6VEtX",
+      "channel_name": "这里是小楠笙",
+      "author_mid": "523892461",
+      "date": "2026-11-04",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 3,
+        "likes": 3,
+        "views": 138,
+        "danmaku": 0,
+        "favorites": 0
+      },
+      "description": "旅行箱动漫社招新！在西安梦乡没有休息的地方？没有好友一起约着玩？找不到同好？没有关系，来旅行箱动漫社，我们欢迎志同道合的朋友，只要你愿意，就可以加入！来和我们一起，为了最初的梦",
+      "duration": 12,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：旅行箱动漫社招新啦！！！我们在西安漫展等你",
+      "subs": {
+        "relevance": 54,
+        "recency": 26,
+        "engagement": 9
+      },
+      "score": 33
+    }
+  ],
+  "zhihu": [],
+  "douyin": [],
+  "wechat": [],
+  "baidu": [
+    {
+      "id": "BD1",
+      "title": "电鸽唯优指代不明,需确认语境,依赖具体定义,影响理解深度- 昆山德邦精工自动化科技有限公司",
+      "snippet": "网友劝西安阿达西涨价 人_禽―乱―交―视―频 饭店回应推出水蟑螂蛋挞 搡bbbb㐅㐅㐅搡bb 建成1500余年的嵩阳书院有“三多” 嗯~啊~黄🈵 游戏返回孩子充值 多退3万多妈妈不还 疯骚的岳㑄5 有人过着轻微幸福的生活吗 ipx321 余宇涵看朱志鑫的大屏应援 漫展大雷露乳 曝马筱梅老公与酷似大s美女聚餐 ...",
+      "url": "http://h5.fuzhou.debonpaint.com/odvnews/1125/52191_article737.htm",
+      "source_domain": "h5.fuzhou.debonpaint.com/odvnews/1...",
+      "date": "2026-11-24",
+      "date_confidence": "med",
+      "relevance": 0.89,
+      "why_relevant": "百度：电鸽唯优指代不明,需确认语境,依赖具体定义,影响理解深度- 昆山德邦精工自动化科技有限公司",
+      "subs": {
+        "relevance": 89,
+        "recency": 93,
+        "engagement": 0
+      },
+      "score": 80
+    },
+    {
+      "id": "BD4",
+      "title": "#西安梦乡动漫展[超话]# #西安梦乡动漫展# ... 来自西安梦乡动漫展官博 - 微博",
+      "snippet": "【精彩回顾+嘉宾情报+场地介绍的一宣】西安第二十八届梦乡动漫展——新春限定版! 车专本条微博,将在12月5日通过微博抽奖平台为6位宝宝呈上随机嘉宾亲签海报礼包一份(内含随机嘉宾亲签海报3张) 展会时间:2027年1月23日—1月25日 漫展地址:西安临空会展中心(A馆+B馆+C馆+喷泉草地广场) ...",
+      "url": "https://weibo.com/7854137966/RsqwXv8Wb",
+      "source_domain": "微博",
+      "date": "2026-11-21",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：#西安梦乡动漫展[超话]# #西安梦乡动漫展# ... 来自西安梦乡动漫展官博 - 微博",
+      "subs": {
+        "relevance": 54,
+        "recency": 83,
+        "engagement": 0
+      },
+      "score": 57
+    },
+    {
+      "id": "BD7",
+      "title": "羡无咎申请西安第二十八届梦乡动漫展自由行羡无咎申请西安第二 - 抖音",
+      "snippet": "羡无咎申请西安第二十八届梦乡动漫展自由行 羡无咎申请西安第二十八届梦乡动漫展COS自由行,无论身处哪个次元,梦乡永远都是你可以归来的家,寒假约定西安梦乡,我们不见不散! 漫展时间:2027年1月23日-25日 漫展地点:西安临空会展中心 2027年1月23日 刺客伍六七赤牙 2027年1月24日 王者荣耀 孙悟空大圣娶亲只为最初的梦,二次元! #西安梦乡漫展 #西...",
+      "url": "https://www.douyin.com/note/7710610994980708522",
+      "source_domain": "抖音",
+      "date": "2026-11-21",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：羡无咎申请西安第二十八届梦乡动漫展自由行羡无咎申请西安第二 - 抖音",
+      "subs": {
+        "relevance": 54,
+        "recency": 83,
+        "engagement": 0
+      },
+      "score": 57
+    },
+    {
+      "id": "BD6",
+      "title": "Kep1er同款怎么选?四类单品选购指南",
+      "snippet": "第一条轴是舞台演出与漫展应援。这条轴上，打歌服套装和百褶短裙是主力。套装适合需要完整造型的舞台、翻跳视频拍摄或漫展角色扮演，它的成套性就是效率。三款百褶短裙则适合已经有上衣搭配思路、只想用一条裙子点明风格的人。红黑格纹带挂饰款和侧绑带款更偏向甜辣平衡，黑色双皮带扣款则更冷感、更利落，适合走...",
+      "url": "http://baijiahao.baidu.com/s?id=1882193670052025013&wfr=spider&for=pc",
+      "source_domain": "兰亭阁",
+      "date": "2026-11-18",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：Kep1er同款怎么选?四类单品选购指南",
+      "subs": {
+        "relevance": 54,
+        "recency": 73,
+        "engagement": 0
+      },
+      "score": 52
+    },
+    {
+      "id": "BD5",
+      "title": "✨28厘米发光拍拍手——中二魂觉醒的声光仪式感神器!(๑•̀ㅂ•́)و✧_荧光棒_淘宝游戏网",
+      "snippet": "这就是命运的安排吗?6元就能拿下28厘米环保加厚发光拍拍手,声光同步+手掌包裹感满分,漫展应援、课间解压、舞台互动全适配!哼!才不是因为你需要气氛才买它呢～适合爱玩爱演爱发光的二次元少年少女,纯摆设或追求强续航的小伙伴请绕道哦(｡•́︿•̀｡) ...",
+      "url": "https://tvgame.taobao.com/topic/yingguangbang_4/db44c4b37b15048bf87486e5aa1170c6.html",
+      "source_domain": "tvgame.taobao.com/topic/yingguangb...",
+      "date": "2026-11-18",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：✨28厘米发光拍拍手——中二魂觉醒的声光仪式感神器!(๑•̀ㅂ•́)و✧_荧光棒_淘宝游戏网",
+      "subs": {
+        "relevance": 54,
+        "recency": 73,
+        "engagement": 0
+      },
+      "score": 52
+    },
+    {
+      "id": "BD9",
+      "title": "劣迹申请西安第二十八届梦乡动漫展自由行劣迹申请西安第二十八 - 抖音",
+      "snippet": "劣迹申请西安第二十八届梦乡动漫展自由行 劣迹申请西安第二十八届梦乡动漫展cos自由行,无论身处哪个次元,梦乡永远都是你可以归来的家,寒假约定西安梦乡,我们不见不散! 漫展时间:2027年1月23日-25日 漫展地点:西安临空会展中心 2027年1月23日 凹凸世界-卡米尔(战斗服) ...",
+      "url": "https://www.douyin.com/note/7708954040638384026",
+      "source_domain": "抖音",
+      "date": "2026-11-17",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：劣迹申请西安第二十八届梦乡动漫展自由行劣迹申请西安第二十八 - 抖音",
+      "subs": {
+        "relevance": 54,
+        "recency": 70,
+        "engagement": 0
+      },
+      "score": 51
+    },
+    {
+      "id": "BD11",
+      "title": "自由行互助互评，遗世 申请西安第二十八届梦乡动漫展自由行遗 - 抖音",
+      "snippet": "自由行互助互评,遗世 申请西安第二十八届梦乡动漫展自由行 遗世 申请西安第二十八届梦乡动漫展cos自由行,无论身处哪个次元,梦乡永远都是你可以归来的家,寒假约定西安梦乡,我们不见不散! 漫展时间:2027年1月23日-25日 漫展地点:西安临空会展中心 2027年1月23日 彻夜之歌 七草荠 ...",
+      "url": "https://www.douyin.com/note/7708794079575810984",
+      "source_domain": "抖音",
+      "date": "2026-11-16",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：自由行互助互评，遗世 申请西安第二十八届梦乡动漫展自由行遗 - 抖音",
+      "subs": {
+        "relevance": 54,
+        "recency": 66,
+        "engagement": 0
+      },
+      "score": 49
+    },
+    {
+      "id": "BD10",
+      "title": "台球明星海报素材-台球明星海报图片-台球明星海报设计模板-第9页-觅知网",
+      "snippet": "动漫二次元粉丝应援漫展巡展页 波谱风格漫画招聘女主播公司企业招聘海报主播招聘 红色商务风格签单喜报销售海...",
+      "url": "https://www.51miz.com/so-sucai/1253596/p_9/",
+      "source_domain": "觅知网",
+      "date": "2026-11-14",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：台球明星海报素材-台球明星海报图片-台球明星海报设计模板-第9页-觅知网",
+      "subs": {
+        "relevance": 54,
+        "recency": 60,
+        "engagement": 0
+      },
+      "score": 46
+    },
+    {
+      "id": "BD8",
+      "title": "创意动漫设计素材 - 创意动漫设计模版 - 觅知网",
+      "snippet": "彩色创意卡通动漫粉丝应援漫展游戏嘉年华宣传手机长图 土豆手绘卡通标题框 夏日旅行季卡通动漫创意简约宣传展...",
+      "url": "https://www.51miz.com/so-sheji/1583603.html",
+      "source_domain": "觅知网",
+      "date": "2026-11-13",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：创意动漫设计素材 - 创意动漫设计模版 - 觅知网",
+      "subs": {
+        "relevance": 54,
+        "recency": 56,
+        "engagement": 0
+      },
+      "score": 44
+    },
+    {
+      "id": "BD13",
+      "title": "好看动漫素材-好看动漫图片-好看动漫素材图片下载-第9页-觅知网",
+      "snippet": "手绘黄色秋天立秋麦田丰收原创插画视频背景 卡通动漫粉丝应援漫展二次元会展宣传手机长图 ...",
+      "url": "https://www.51miz.com/so-sucai/2720264/p_9/",
+      "source_domain": "觅知网",
+      "date": "2026-11-13",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：好看动漫素材-好看动漫图片-好看动漫素材图片下载-第9页-觅知网",
+      "subs": {
+        "relevance": 54,
+        "recency": 56,
+        "engagement": 0
+      },
+      "score": 44
+    }
+  ],
+  "toutiao": [
+    {
+      "id": "TT10",
+      "title": "陕西省最新漫展 11月漫展 ONLY",
+      "abstract": "【更新时间 2026年11月6日，因漫展信息具有时效性，请仔细查看更新时间，查找最新更新的漫展信息，避免消息；最近一年在陕西可热闹啦！",
+      "url": "https://www.toutiao.com/group/7704867755123835443/",
+      "source_name": "次元黄页",
+      "date": "2026-11-06",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "reads": 1
+      },
+      "relevance": 0.24,
+      "why_relevant": "今日头条（次元黄页）：陕西省最新漫展 11月漫展 ONLY",
+      "subs": {
+        "relevance": 24,
+        "recency": 33,
+        "engagement": 100
+      },
+      "score": 49,
+      "original_url": "https://toutiao.com/group/7704867755123835443/"
+    },
+    {
+      "id": "TT11",
+      "title": "陕西省11月漫展信息 圣诞元旦漫展",
+      "abstract": "【更新时间 2026年11月22日，因漫展信息具有时效性，请仔细查看更新时间，查找最新更新的漫展信息，避免消息；最近陕西的漫展可太热闹啦！",
+      "url": "https://www.toutiao.com/group/7711017420768444979/",
+      "source_name": "次元黄页",
+      "date": "2026-11-22",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "reads": 0
+      },
+      "relevance": 0.24,
+      "why_relevant": "今日头条（次元黄页）：陕西省11月漫展信息 圣诞元旦漫展",
+      "subs": {
+        "relevance": 24,
+        "recency": 86,
+        "engagement": 0
+      },
+      "score": 32,
+      "original_url": "https://toutiao.com/group/7711017420768444979/"
+    }
+  ],
+  "best_practices": [],
+  "prompt_pack": [],
+  "context_snippet_md": "# 上下文: 西安 漫展 应援（2026-10-27 ~ 2026-11-26）\n\n*生成时间: 2026-11-26 | 模式: all*\n\n## 主要来源\n\n- [百度] 电鸽唯优指代不明,需确认语境,依赖具体定义,影响理解深度- 昆山德邦精工自动化科技有限公司 — http://h5.fuzhou.debonpaint.com/odvnews/1125/52191_article737.htm\n- [B站] 西安临空、杭州萧山、重庆悦来，三城三馆同时开票｜西安想去1.1万人，杭州1.2万人，重庆1.2万人｜... — https://www.bilibili.com/video/BV1yUyDzmEXg\n- [B站] 过年之前，想见的人先去见一面。西安·第二十八届梦乡动漫展-新春限定版1月23日至25日开场，卯辰、周... — https://www.bilibili.com/video/BV11SsL6HEzE\n- [B站] 在西安二次元浓度最高的地方办兽聚！ — https://www.bilibili.com/video/BV1pQs16aEwP\n- [B站] 西安毛毛快闪人挤人！古都有兽3个新消息｜IW漫展摊位/快闪店/冬聚定档 — https://www.bilibili.com/video/BV1gRsH6GEgu\n- [B站] 兔娘西安漫展为什么是签售票 — https://www.bilibili.com/video/BV1cCWY6xEmg\n- [百度] #西安梦乡动漫展[超话]# #西安梦乡动漫展# ... 来自西安梦乡动漫展官博 - 微博 — https://weibo.com/7854137966/RsqwXv8Wb\n- [百度] 羡无咎申请西安第二十八届梦乡动漫展自由行羡无咎申请西安第二 - 抖音 — https://www.douyin.com/note/7710610994980708522\n\n## 摘要\n\n*完整报告见 report.md / report.html。*\n",
+  "weibo_error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE",
+  "xiaohongshu_error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "douyin_error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "search_topic": "西安 漫展 应援",
+  "query_type": "breaking_news",
+  "depth": "default",
+  "source_status": {
+    "weibo": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 6.5,
+      "via": {},
+      "error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE"
+    },
+    "xiaohongshu": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 1.6,
+      "via": {},
+      "error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "bilibili": {
+      "state": "ok",
+      "count": 20,
+      "raw_count": 20,
+      "elapsed": 0.9,
+      "via": {
+        "wbi-search": 20
+      }
+    },
+    "douyin": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 4.0,
+      "via": {},
+      "error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "baidu": {
+      "state": "ok",
+      "count": 10,
+      "raw_count": 17,
+      "elapsed": 1.0,
+      "via": {
+        "baidu-web": 17
+      }
+    },
+    "toutiao": {
+      "state": "ok",
+      "count": 2,
+      "raw_count": 16,
+      "elapsed": 2.0,
+      "via": {
+        "so.toutiao": 16
+      }
+    }
+  }
+}

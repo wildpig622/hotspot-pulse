@@ -1,0 +1,507 @@
+{
+  "topic": "天津 漫展 应援",
+  "range": {
+    "from": "2026-10-27",
+    "to": "2026-11-26"
+  },
+  "generated_at": "2026-11-26T07:47:39.441444+00:00",
+  "mode": "all",
+  "weibo": [],
+  "xiaohongshu": [],
+  "bilibili": [
+    {
+      "id": "BL1",
+      "title": "天津黑漫展捆绑销售vivo翻车，人民兔娘拒绝割韭菜，主办方为何又蠢又坏？",
+      "url": "https://www.bilibili.com/video/BV1SEWM6vEjR",
+      "bvid": "BV1SEWM6vEjR",
+      "channel_name": "风栖晚川灬",
+      "author_mid": "3546931504614334",
+      "date": "2026-11-10",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 17,
+        "likes": 148,
+        "views": 33066,
+        "danmaku": 119,
+        "favorites": 59
+      },
+      "description": "天津黑漫展捆绑销售vivo翻车，人民兔娘拒绝割韭菜，主办方为何又蠢又坏？",
+      "duration": 1831,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：天津黑漫展捆绑销售vivo翻车，人民兔娘拒绝割韭菜，主办方为何又蠢又坏？",
+      "subs": {
+        "relevance": 54,
+        "recency": 46,
+        "engagement": 92
+      },
+      "score": 63
+    },
+    {
+      "id": "BL2",
+      "title": "天津见面会的绕场视频来咯来咯～",
+      "url": "https://www.bilibili.com/video/BV1Y2xj6KEWm",
+      "bvid": "BV1Y2xj6KEWm",
+      "channel_name": "佳佳佳-zZ",
+      "author_mid": "18429568",
+      "date": "2026-10-28",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 365,
+        "likes": 1505,
+        "views": 11409,
+        "danmaku": 22,
+        "favorites": 451
+      },
+      "description": "笑鼠啦有一段我看到我很呆不知道在干嘛啊哈哈哈哈哈本来想截取删掉嘟哈哈哈哈哈想想算咯不要笑我！！！可恶嘿嘿嘿～宝宝们都超可爱呀～",
+      "duration": 539,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：天津见面会的绕场视频来咯来咯～",
+      "subs": {
+        "relevance": 54,
+        "recency": 3,
+        "engagement": 100
+      },
+      "score": 55
+    },
+    {
+      "id": "BL5",
+      "title": "11.7天津娃o kakumi泠 少女风情 自存",
+      "url": "https://www.bilibili.com/video/BV1eC4p6xEbh",
+      "bvid": "BV1eC4p6xEbh",
+      "channel_name": "宅阿萱grape",
+      "author_mid": "1494121270",
+      "date": "2026-11-08",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 3,
+        "likes": 89,
+        "views": 1180,
+        "danmaku": 0,
+        "favorites": 28
+      },
+      "description": "-",
+      "duration": 142,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：11.7天津娃o kakumi泠 少女风情 自存",
+      "subs": {
+        "relevance": 54,
+        "recency": 40,
+        "engagement": 41
+      },
+      "score": 46
+    },
+    {
+      "id": "BL6",
+      "title": "【天津红桥陆家嘴】B站宅舞城市计划-随机宅舞—无BDF",
+      "url": "https://www.bilibili.com/video/BV1tpW769Ew6",
+      "bvid": "BV1tpW769Ew6",
+      "channel_name": "桃之舟ぼくぃじあんg",
+      "author_mid": "3546651419478895",
+      "date": "2026-11-08",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 4,
+        "likes": 22,
+        "views": 927,
+        "danmaku": 1,
+        "favorites": 22
+      },
+      "description": "-",
+      "duration": 11489,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：【天津红桥陆家嘴】B站宅舞城市计划-随机宅舞—无BDF",
+      "subs": {
+        "relevance": 54,
+        "recency": 40,
+        "engagement": 40
+      },
+      "score": 46
+    },
+    {
+      "id": "BL13",
+      "title": "11月21日天津逛展！甜梦星球游戏动漫嘉年华5.0",
+      "url": "https://www.bilibili.com/video/BV1ctsY68ERv",
+      "bvid": "BV1ctsY68ERv",
+      "channel_name": "不Kuma",
+      "author_mid": "40419161",
+      "date": "2026-11-19",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 1,
+        "views": 45,
+        "danmaku": 0,
+        "favorites": 1
+      },
+      "description": "天津·甜梦星球游戏动漫嘉年华5.0将于11月21日在次元梦想空间（天津市南开区天佑城4楼）举办\n现场有多项动漫游戏互动、Coser出镜、自由行活动与实景影棚等看点\n活动与票务详情，点击评论区链接查看",
+      "duration": 50,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：11月21日天津逛展！甜梦星球游戏动漫嘉年华5.0",
+      "subs": {
+        "relevance": 54,
+        "recency": 76,
+        "engagement": 4
+      },
+      "score": 44
+    },
+    {
+      "id": "BL12",
+      "title": "【天津宅舞快闪】BDF组曲~同频Melody",
+      "url": "https://www.bilibili.com/video/BV1QdW668Evk",
+      "bvid": "BV1QdW668Evk",
+      "channel_name": "泽非路明",
+      "author_mid": "27399878",
+      "date": "2026-11-14",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 8,
+        "views": 173,
+        "danmaku": 0,
+        "favorites": 1
+      },
+      "description": "",
+      "duration": 191,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：【天津宅舞快闪】BDF组曲~同频Melody",
+      "subs": {
+        "relevance": 54,
+        "recency": 60,
+        "engagement": 14
+      },
+      "score": 43
+    },
+    {
+      "id": "BL7",
+      "title": "2026.11.8 宅舞城市快闪计划天津站 路演",
+      "url": "https://www.bilibili.com/video/BV1pRWE6QE6b",
+      "bvid": "BV1pRWE6QE6b",
+      "channel_name": "LittleR_R要大写E不发音",
+      "author_mid": "171236382",
+      "date": "2026-11-08",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 11,
+        "views": 726,
+        "danmaku": 0,
+        "favorites": 7
+      },
+      "description": "最后一舞",
+      "duration": 4227,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：2026.11.8 宅舞城市快闪计划天津站 路演",
+      "subs": {
+        "relevance": 54,
+        "recency": 40,
+        "engagement": 25
+      },
+      "score": 41
+    },
+    {
+      "id": "BL4",
+      "title": "长沙二次方漫展 22 位嘉宾闯六感",
+      "url": "https://www.bilibili.com/video/BV1NHxD6HEYZ",
+      "bvid": "BV1NHxD6HEYZ",
+      "channel_name": "会员购漫展情报站",
+      "author_mid": "3546775937878035",
+      "date": "2026-11-04",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 16,
+        "views": 1181,
+        "danmaku": 0,
+        "favorites": 8
+      },
+      "description": "第三届来了！22 位嘉宾分两天登场，现场领游戏卡闯六感，全封是理想结局、没封全也有奖。VIP不限次进出还送零食券。11 月 14-15 日湖南省展览馆，票在评论区！",
+      "duration": 58,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：长沙二次方漫展 22 位嘉宾闯六感",
+      "subs": {
+        "relevance": 54,
+        "recency": 26,
+        "engagement": 32
+      },
+      "score": 40
+    },
+    {
+      "id": "BL3",
+      "title": "天津阴阳师 only 抽卡强化御魂",
+      "url": "https://www.bilibili.com/video/BV1yJxD6QER3",
+      "bvid": "BV1yJxD6QER3",
+      "channel_name": "会员购漫展情报站",
+      "author_mid": "3546775937878035",
+      "date": "2026-11-04",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 13,
+        "views": 1313,
+        "danmaku": 0,
+        "favorites": 3
+      },
+      "description": "痒痒鼠集合！白藏主、玉藻前、神乐 coser 到场，抽卡对决、百鬼对弈、御魂强化全安排，还有社恐无料交换区随便拿。11 月 14 日格乐利雅艺术中心，票见评论区！",
+      "duration": 59,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：天津阴阳师 only 抽卡强化御魂",
+      "subs": {
+        "relevance": 54,
+        "recency": 26,
+        "engagement": 30
+      },
+      "score": 39
+    },
+    {
+      "id": "BL10",
+      "title": "天津ls三国同人only3.0铜雀清宴-11.1-全场活动切片",
+      "url": "https://www.bilibili.com/video/BV1YM4P6qEZn",
+      "bvid": "BV1YM4P6qEZn",
+      "channel_name": "天津Ls漫展官方号",
+      "author_mid": "3546645656505120",
+      "date": "2026-11-02",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 3,
+        "likes": 18,
+        "views": 236,
+        "danmaku": 1,
+        "favorites": 6
+      },
+      "description": "",
+      "duration": 23629,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：天津ls三国同人only3.0铜雀清宴-11.1-全场活动切片",
+      "subs": {
+        "relevance": 54,
+        "recency": 19,
+        "engagement": 28
+      },
+      "score": 37
+    },
+    {
+      "id": "BL11",
+      "title": "天津『v拟而来』彩虹社only舞台游戏",
+      "url": "https://www.bilibili.com/video/BV14rxQ64EPK",
+      "bvid": "BV14rxQ64EPK",
+      "channel_name": "哏都v拟而来彩虹社only",
+      "author_mid": "3546916967156042",
+      "date": "2026-11-04",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 13,
+        "views": 210,
+        "danmaku": 0,
+        "favorites": 5
+      },
+      "description": "天津『v拟而来』彩虹社only舞台游戏录像存档",
+      "duration": 3435,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：天津『v拟而来』彩虹社only舞台游戏",
+      "subs": {
+        "relevance": 54,
+        "recency": 26,
+        "engagement": 18
+      },
+      "score": 36
+    },
+    {
+      "id": "BL8",
+      "title": "今天晚上的#天津滨江道 都挤的走不动道了大家的#万圣节 装扮好赞！",
+      "url": "https://www.bilibili.com/video/BV1oxxy6WEJW",
+      "bvid": "BV1oxxy6WEJW",
+      "channel_name": "中年老登旅行记",
+      "author_mid": "430309445",
+      "date": "2026-10-31",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 3,
+        "views": 487,
+        "danmaku": 0,
+        "favorites": 4
+      },
+      "description": "-",
+      "duration": 42,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：今天晚上的#天津滨江道 都挤的走不动道了大家的#万圣节 装扮好赞！",
+      "subs": {
+        "relevance": 54,
+        "recency": 13,
+        "engagement": 23
+      },
+      "score": 34
+    }
+  ],
+  "zhihu": [],
+  "douyin": [],
+  "wechat": [],
+  "baidu": [
+    {
+      "id": "BD2",
+      "title": "天津市 - 维基百科，自由的百科全书",
+      "snippet": "2026年11月10日 · 天津市，简称 津，是 中华人民共和国 直辖市 、 国家中心城市 和中国北方最大 沿海开放城市。 天津位于 华北平原 …阅读更多",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E6%B4%A5%E5%B8%82",
+      "source_domain": "zh.wikipedia.org",
+      "date": "2026-11-10",
+      "date_confidence": "med",
+      "relevance": 0.24,
+      "why_relevant": "bing_cn兜底：天津市 - 维基百科，自由的百科全书",
+      "subs": {
+        "relevance": 24,
+        "recency": 46,
+        "engagement": 0
+      },
+      "score": 23
+    },
+    {
+      "id": "BD6",
+      "title": "2025天津旅游全攻略：全都是避坑大实话+超实用攻略！决定 ...",
+      "snippet": "2025天津旅游全攻略：全都是避坑大实话+超实用攻略！决定了春节就去天津了！8-10月暑假国庆去天津的存下吧",
+      "url": "https://zhuanlan.zhihu.com/p/1936546998896535162",
+      "source_domain": "zhuanlan.zhihu.com",
+      "date": null,
+      "date_confidence": "low",
+      "relevance": 0.24,
+      "why_relevant": "bing_cn兜底：2025天津旅游全攻略：全都是避坑大实话+超实用攻略！决定 ...",
+      "subs": {
+        "relevance": 24,
+        "recency": 0,
+        "engagement": 0
+      },
+      "score": 0
+    },
+    {
+      "id": "BD1",
+      "title": "天津市_百度百科",
+      "snippet": "天津市（Tianjin City），简称“津”，是中华人民共和国直辖市、国家中心城市、超大城市，地处中国北部，华北平原东北部，海河流域 …阅读更多",
+      "url": "https://baike.baidu.com/item/%e5%a4%a9%e6%b4%a5%e5%b8%82/213824",
+      "source_domain": "",
+      "date": null,
+      "date_confidence": "low",
+      "relevance": 0.24,
+      "why_relevant": "bing_cn兜底：天津市_百度百科",
+      "subs": {
+        "relevance": 24,
+        "recency": 0,
+        "engagement": 0
+      },
+      "score": 0
+    }
+  ],
+  "toutiao": [
+    {
+      "id": "TT5",
+      "title": "天津最新漫展时间表来了 2026最后一份！",
+      "abstract": "【更新时间 2026年11月23日，因漫展信息具有时效性，请仔细查看更新时间，查找最新更新的漫展信息，避免消息；嘿～天津的小伙伴们注意啦！",
+      "url": "https://www.toutiao.com/group/7711020130305606170/",
+      "source_name": "次元黄页",
+      "date": "2026-11-22",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "reads": 8
+      },
+      "relevance": 0.54,
+      "why_relevant": "今日头条（次元黄页）：天津最新漫展时间表来了 2026最后一份！",
+      "subs": {
+        "relevance": 54,
+        "recency": 86,
+        "engagement": 100
+      },
+      "score": 75,
+      "original_url": "https://toutiao.com/group/7711020130305606170/"
+    },
+    {
+      "id": "TT7",
+      "title": "天津11月漫展定档信息合集 ONLY展",
+      "abstract": "【更新时间 2026年11月6日，因漫展信息具有时效性，请仔细查看更新时间，查找最新更新的漫展信息，避免消息；哎呀，天津今年漫展可太热闹啦！从1月一直嗨到12月，整整12场活动排得满满当当～有超多主题任你挑：阴阳师、明日方舟、BanG Dream!",
+      "url": "https://www.toutiao.com/group/7704872673095991835/",
+      "source_name": "次元黄页",
+      "date": "2026-11-06",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "reads": 3
+      },
+      "relevance": 0.54,
+      "why_relevant": "今日头条（次元黄页）：天津11月漫展定档信息合集 ONLY展",
+      "subs": {
+        "relevance": 54,
+        "recency": 33,
+        "engagement": 0
+      },
+      "score": 32,
+      "original_url": "https://toutiao.com/group/7704872673095991835/"
+    }
+  ],
+  "best_practices": [],
+  "prompt_pack": [],
+  "context_snippet_md": "# 上下文: 天津 漫展 应援（2026-10-27 ~ 2026-11-26）\n\n*生成时间: 2026-11-26 | 模式: all*\n\n## 主要来源\n\n- [今日头条] 天津最新漫展时间表来了 2026最后一份！ — https://www.toutiao.com/group/7711020130305606170/\n- [B站] 天津黑漫展捆绑销售vivo翻车，人民兔娘拒绝割韭菜，主办方为何又蠢又坏？ — https://www.bilibili.com/video/BV1SEWM6vEjR\n- [B站] 天津见面会的绕场视频来咯来咯～ — https://www.bilibili.com/video/BV1Y2xj6KEWm\n- [B站] 11.7天津娃o kakumi泠 少女风情 自存 — https://www.bilibili.com/video/BV1eC4p6xEbh\n- [B站] 【天津红桥陆家嘴】B站宅舞城市计划-随机宅舞—无BDF — https://www.bilibili.com/video/BV1tpW769Ew6\n- [B站] 11月21日天津逛展！甜梦星球游戏动漫嘉年华5.0 — https://www.bilibili.com/video/BV1ctsY68ERv\n- [今日头条] 天津11月漫展定档信息合集 ONLY展 — https://www.toutiao.com/group/7704872673095991835/\n- [百度] 天津市 - 维基百科，自由的百科全书 — https://zh.wikipedia.org/wiki/%E5%A4%A9%E6%B4%A5%E5%B8%82\n\n## 摘要\n\n*完整报告见 report.md / report.html。*\n",
+  "weibo_error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE",
+  "xiaohongshu_error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "douyin_error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "search_topic": "天津 漫展 应援",
+  "query_type": "breaking_news",
+  "depth": "default",
+  "source_status": {
+    "weibo": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 10.1,
+      "via": {},
+      "error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE"
+    },
+    "xiaohongshu": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 1.4,
+      "via": {},
+      "error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "bilibili": {
+      "state": "ok",
+      "count": 12,
+      "raw_count": 20,
+      "elapsed": 0.9,
+      "via": {
+        "wbi-search": 20
+      }
+    },
+    "douyin": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 3.9,
+      "via": {},
+      "error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "baidu": {
+      "state": "ok",
+      "count": 3,
+      "raw_count": 8,
+      "elapsed": 8.6,
+      "via": {
+        "websearch:bing_cn": 8
+      }
+    },
+    "toutiao": {
+      "state": "ok",
+      "count": 2,
+      "raw_count": 15,
+      "elapsed": 2.5,
+      "via": {
+        "so.toutiao": 15
+      }
+    }
+  }
+}

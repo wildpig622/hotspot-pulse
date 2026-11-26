@@ -1,0 +1,110 @@
+{
+  "checks": [
+    {
+      "url": "https://epaper.tianjinwe.com/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:41:13Z",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 404: Not Found",
+      "http_status": 404,
+      "elapsed_seconds": 0.532
+    },
+    {
+      "url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/03/content_143098_3977805.htm",
+      "role": "independently_rediscovered_article",
+      "checked_at": "2026-11-26T07:41:14Z",
+      "http_status": 200,
+      "final_url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/03/content_143098_3977805.htm",
+      "status": "ok",
+      "sha256": "f3befd0385d49b990a0bef86b46849d3086f209f8def4ceb5709889f964c75fa",
+      "raw_file": "raw/f3befd0385d49b990a0bef86b46849d3086f209f8def4ceb5709889f964c75fa.gz",
+      "encoding": "utf8",
+      "bytes": 37140,
+      "elapsed_seconds": 0.532,
+      "original_response_sha256": "8b1fd0c3012ee952aa53153e571c0ccae0b131a1fb6a8d3461e689ee4912e8a0",
+      "original_response_encoding": "utf-8",
+      "archive_kind": "contact_redacted_derivative"
+    },
+    {
+      "url": "https://jnxxq.jinan.gov.cn/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:41:15Z",
+      "http_status": 200,
+      "final_url": "https://jnxxq.jinan.gov.cn/robots.txt",
+      "status": "ok",
+      "sha256": "35742d3161ef94f1768b23adff913e7c777273027cbd521ff1f7785603ceff88",
+      "raw_file": "raw/35742d3161ef94f1768b23adff913e7c777273027cbd521ff1f7785603ceff88.gz",
+      "encoding": "utf-8",
+      "bytes": 88523,
+      "elapsed_seconds": 0.516,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://jnxxq.jinan.gov.cn/col/col122860/art/2026/art_754579fba3924815a84452abce6a259a.html",
+      "role": "independently_rediscovered_article",
+      "checked_at": "2026-11-26T07:41:16Z",
+      "http_status": 200,
+      "final_url": "https://jnxxq.jinan.gov.cn/col/col122860/art/2026/art_754579fba3924815a84452abce6a259a.html",
+      "status": "ok",
+      "sha256": "9c9125420a169f54bd2594e52c18c7c66aebbe2cf611a38804139c7748a1ef28",
+      "raw_file": "raw/9c9125420a169f54bd2594e52c18c7c66aebbe2cf611a38804139c7748a1ef28.gz",
+      "encoding": "utf-8",
+      "bytes": 12447,
+      "elapsed_seconds": 0.375,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://finance.sina.cn/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:41:16Z",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 404: Not Found",
+      "http_status": 404,
+      "elapsed_seconds": 0.219
+    },
+    {
+      "url": "https://finance.sina.cn/2026-11-09/detail-iniycrzw6539502.d.html",
+      "role": "independently_rediscovered_article",
+      "checked_at": "2026-11-26T07:41:17Z",
+      "http_status": 200,
+      "final_url": "https://finance.sina.cn/2026-11-09/detail-iniycrzw6539502.d.html",
+      "status": "ok",
+      "sha256": "df774a95ff953a170c220dad73df2cb003a7a3efb949cd9b89644cce25802d99",
+      "raw_file": "raw/df774a95ff953a170c220dad73df2cb003a7a3efb949cd9b89644cce25802d99.gz",
+      "encoding": "utf-8",
+      "bytes": 32478,
+      "elapsed_seconds": 0.266,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://www.sdxc.gov.cn/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:41:17Z",
+      "http_status": 200,
+      "final_url": "https://www.sdxc.gov.cn/robots.txt",
+      "status": "ok",
+      "sha256": "016064bc183c179bdf180b1098e1ac3a02136c6c37fe9f973a9df5f925e7981e",
+      "raw_file": "raw/016064bc183c179bdf180b1098e1ac3a02136c6c37fe9f973a9df5f925e7981e.gz",
+      "encoding": "utf-8",
+      "bytes": 77,
+      "elapsed_seconds": 0.204,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://www.sdxc.gov.cn/waplm/wapxw/202608/t20260805_17994768.htm",
+      "role": "independently_rediscovered_article",
+      "checked_at": "2026-11-26T07:41:18Z",
+      "http_status": 200,
+      "final_url": "https://www.sdxc.gov.cn/waplm/wapxw/202608/t20260805_17994768.htm",
+      "status": "ok",
+      "sha256": "7e291892955ec5d68110f47b1e3c6fb3f996bef8c6519602c391260a5777edbb",
+      "raw_file": "raw/7e291892955ec5d68110f47b1e3c6fb3f996bef8c6519602c391260a5777edbb.gz",
+      "encoding": "utf-8",
+      "bytes": 8528,
+      "elapsed_seconds": 0.125,
+      "archive_kind": "original_response_no_contact_match"
+    }
+  ]
+}

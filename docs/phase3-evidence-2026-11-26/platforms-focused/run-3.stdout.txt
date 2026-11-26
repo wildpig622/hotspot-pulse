@@ -1,0 +1,388 @@
+{
+  "topic": "济南 漫展 应援",
+  "range": {
+    "from": "2026-10-27",
+    "to": "2026-11-26"
+  },
+  "generated_at": "2026-11-26T07:47:19.415328+00:00",
+  "mode": "all",
+  "weibo": [],
+  "xiaohongshu": [],
+  "bilibili": [
+    {
+      "id": "BL1",
+      "title": "📍元旦济南漫展攻略：幻樱漫展1月1日-2日，山东国际会展中心，嘉宾阵容公布，预售票72元起！ 济南·幻樱动漫游戏嘉年华-25",
+      "url": "https://www.bilibili.com/video/BV131W36yEwE",
+      "bvid": "BV131W36yEwE",
+      "channel_name": "刀客塔集合",
+      "author_mid": "3546720759712590",
+      "date": "2026-11-10",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 52,
+        "likes": 1495,
+        "views": 83065,
+        "danmaku": 1,
+        "favorites": 96
+      },
+      "description": "济南·幻樱动漫游戏嘉年华-25",
+      "duration": 72,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：📍元旦济南漫展攻略：幻樱漫展1月1日-2日，山东国际会展中心，嘉宾阵容公布，预售票72元起！ 济南·",
+      "subs": {
+        "relevance": 54,
+        "recency": 46,
+        "engagement": 88
+      },
+      "score": 62
+    },
+    {
+      "id": "BL2",
+      "title": "元旦去哪玩？济南幻樱动漫游戏嘉年华，两天嘉宾、自由舞台、周边集市全攻略",
+      "url": "https://www.bilibili.com/video/BV1grW367EZ8",
+      "bvid": "BV1grW367EZ8",
+      "channel_name": "缇雅99",
+      "author_mid": "291408938",
+      "date": "2026-11-10",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 4,
+        "likes": 170,
+        "views": 7421,
+        "danmaku": 0,
+        "favorites": 10
+      },
+      "description": "",
+      "duration": 72,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：元旦去哪玩？济南幻樱动漫游戏嘉年华，两天嘉宾、自由舞台、周边集市全攻略",
+      "subs": {
+        "relevance": 54,
+        "recency": 46,
+        "engagement": 58
+      },
+      "score": 53
+    },
+    {
+      "id": "BL3",
+      "title": "2027元旦去哪玩？济南幻樱动漫嘉年华25届来了，把场馆做成养成游戏，cos嘉宾女仆咖啡特摄全都有，预售票72元起",
+      "url": "https://www.bilibili.com/video/BV1kBWg68EuM",
+      "bvid": "BV1kBWg68EuM",
+      "channel_name": "哈基米潮玩",
+      "author_mid": "3546795548347020",
+      "date": "2026-11-10",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 60,
+        "views": 2594,
+        "danmaku": 2,
+        "favorites": 77
+      },
+      "description": "济南·幻樱动漫游戏嘉年华-25\n时间：2027年1月1日-1月2日 元旦假期\n地点：山东国际会展中心\n嘉宾：1.1 淮南&拾八 / 突突突突；1.2 猫又 / 秦观南 / 仲书悯\n玩法：女仆咖啡、抽象套圈、精神状态展览墙、随机尬舞、彩蛋娃娃机、模型专场、特摄专场、电竞对决、整活福利等\n票价：预售票72元 VIP预售票128元 售至12月31日23:59；现场票82元 VIP现场票138元 元旦当天开售\n入场：当日9:00取号 号源取完即止 单人单天单次入场\n购票方式：见评论区置顶",
+      "duration": 89,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：2027元旦去哪玩？济南幻樱动漫嘉年华25届来了，把场馆做成养成游戏，cos嘉宾女仆咖啡特摄全都有，",
+      "subs": {
+        "relevance": 54,
+        "recency": 46,
+        "engagement": 55
+      },
+      "score": 52
+    },
+    {
+      "id": "BL4",
+      "title": "【幻樱】第24届济南幻樱动漫游戏嘉年华 随机舞蹈",
+      "url": "https://www.bilibili.com/video/BV1WWsH6YEGW",
+      "bvid": "BV1WWsH6YEGW",
+      "channel_name": "幻樱娘想要小尾巴",
+      "author_mid": "3493280138398326",
+      "date": "2026-11-16",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 21,
+        "views": 718,
+        "danmaku": 0,
+        "favorites": 12
+      },
+      "description": "随舞活动由咕他喵快闪团支持。\n本次设备出现故障，第一天音频个别地方无法修复，第二天音频及画面全部无法修复，果咩纳塞ono\n\n一嘴咕他喵 @咕他喵快闪团",
+      "duration": 10384,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：【幻樱】第24届济南幻樱动漫游戏嘉年华 随机舞蹈",
+      "subs": {
+        "relevance": 54,
+        "recency": 66,
+        "engagement": 37
+      },
+      "score": 51
+    },
+    {
+      "id": "BL5",
+      "title": "济南幻樱漫展场照 绫波丽",
+      "url": "https://www.bilibili.com/video/BV1xKWE6sEZe",
+      "bvid": "BV1xKWE6sEZe",
+      "channel_name": "果了个冻冻冻",
+      "author_mid": "94260157",
+      "date": "2026-11-08",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 9,
+        "likes": 57,
+        "views": 174,
+        "danmaku": 0,
+        "favorites": 23
+      },
+      "description": "-",
+      "duration": 12,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：济南幻樱漫展场照 绫波丽",
+      "subs": {
+        "relevance": 54,
+        "recency": 40,
+        "engagement": 41
+      },
+      "score": 46
+    },
+    {
+      "id": "BL6",
+      "title": "济南·幻樱动漫游戏嘉年华-25  1.1号 1.2号",
+      "url": "https://www.bilibili.com/video/BV1ZPWg6XEBi",
+      "bvid": "BV1ZPWg6XEBi",
+      "channel_name": "果茶绿萝",
+      "author_mid": "23223726",
+      "date": "2026-11-10",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 1,
+        "likes": 6,
+        "views": 171,
+        "danmaku": 0,
+        "favorites": 1
+      },
+      "description": "",
+      "duration": 58,
+      "relevance": 0.54,
+      "why_relevant": "B站视频：济南·幻樱动漫游戏嘉年华-25  1.1号 1.2号",
+      "subs": {
+        "relevance": 54,
+        "recency": 46,
+        "engagement": 27
+      },
+      "score": 43
+    }
+  ],
+  "zhihu": [],
+  "douyin": [],
+  "wechat": [],
+  "baidu": [
+    {
+      "id": "BD3",
+      "title": "电鸽唯优指代不明,需确认语境,依赖具体定义,影响理解深度- 昆山德邦精工自动化科技有限公司",
+      "snippet": "余宇涵看朱志鑫的大屏应援 漫展大雷露乳 曝马筱梅老公与酷似大s美女聚餐 女下部㊙️高清 胡塞武装用了“蜂群”战术?大v解读 99视频69e精品视频2020 西班牙时隔16年再度晋级世界杯决赛 尤物视频官网 山东多港口实施禁限航 2930免费成人毛片❌ 张钧甯否认炒股4年赚上亿 葵つかさ 钟南山90岁的精气神从来不是靠...",
+      "url": "http://h5.fuzhou.debonpaint.com/odvnews/1125/52191_article737.htm",
+      "source_domain": "h5.fuzhou.debonpaint.com/odvnews/1...",
+      "date": "2026-11-24",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：电鸽唯优指代不明,需确认语境,依赖具体定义,影响理解深度- 昆山德邦精工自动化科技有限公司",
+      "subs": {
+        "relevance": 54,
+        "recency": 93,
+        "engagement": 0
+      },
+      "score": 61
+    },
+    {
+      "id": "BD1",
+      "title": "赴良约，妆闪耀✨济南站应援妆就位。✅室内化妆场馆附近 ✅应援 - 抖音",
+      "snippet": "赴良约,妆闪耀✨济南站应援妆就位。✅室内化妆场馆附近 ✅应援妆全包含:底妆+睫毛+贴钻+定妆+修容+眉毛+应援色眼影+眼线+腮红+口红,闪片贴钻氛围感拉满✨ ✅专属编发:丝带+星星发夹,支持 带图定制/现场推荐/按三庭五眼专属设计 ✅专业保障:多场演唱会妆造经验,审美在线好沟通,上镜超出片 #徐良 #徐良济南演唱会 #济南徐良演唱会 #...",
+      "url": "https://www.douyin.com/note/7711810705327045481",
+      "source_domain": "抖音",
+      "date": "2026-11-24",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：赴良约，妆闪耀✨济南站应援妆就位。✅室内化妆场馆附近 ✅应援 - 抖音",
+      "subs": {
+        "relevance": 54,
+        "recency": 93,
+        "engagement": 0
+      },
+      "score": 61
+    },
+    {
+      "id": "BD6",
+      "title": "奔赴徐良·济南站｜应援妆造接单一对一精致妆造｜可带图定制 - 抖音",
+      "snippet": "奔赴徐良·济南站|应援妆造接单 一对一精致妆造|可带图定制 场馆附近室内点位,出行方便 12.4–12.6在线等你✨ #徐良应援妆造 #济南站演唱会 #时间折叠巡回演唱会 #徐良巡演",
+      "url": "https://www.douyin.com/note/7711555092219222507",
+      "source_domain": "抖音",
+      "date": "2026-11-23",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：奔赴徐良·济南站｜应援妆造接单一对一精致妆造｜可带图定制 - 抖音",
+      "subs": {
+        "relevance": 54,
+        "recency": 90,
+        "engagement": 0
+      },
+      "score": 60
+    },
+    {
+      "id": "BD11",
+      "title": "接济南元旦幻樱1.1-1.2场照。两天还有几个位置，欢迎老师 - 抖音",
+      "snippet": "接济南元旦幻樱1.1-1.2场照。两天还有几个位置,欢迎老师来咨询 职业摄影,全程动作指导,已购入灯架证。 #济南漫展 #幻樱漫展 #cos #场照 #二次元",
+      "url": "https://www.douyin.com/note/7710447779529900136",
+      "source_domain": "抖音",
+      "date": "2026-11-21",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：接济南元旦幻樱1.1-1.2场照。两天还有几个位置，欢迎老师 - 抖音",
+      "subs": {
+        "relevance": 54,
+        "recency": 83,
+        "engagement": 0
+      },
+      "score": 57
+    },
+    {
+      "id": "BD4",
+      "title": "Kep1er同款怎么选?四类单品选购指南",
+      "snippet": "第一条轴是舞台演出与漫展应援。这条轴上，打歌服套装和百褶短裙是主力。套装适合需要完整造型的舞台、翻跳视频拍摄或漫展角色扮演，它的成套性就是效率。三款百褶短裙则适合已经有上衣搭配思路、只想用一条裙子点明风格的人。红黑格纹带挂饰款和侧绑带款更偏向甜辣平衡，黑色双皮带扣款则更冷感、更利落，适合走...",
+      "url": "http://baijiahao.baidu.com/s?id=1882193670052025013&wfr=spider&for=pc",
+      "source_domain": "兰亭阁",
+      "date": "2026-11-18",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：Kep1er同款怎么选?四类单品选购指南",
+      "subs": {
+        "relevance": 54,
+        "recency": 73,
+        "engagement": 0
+      },
+      "score": 52
+    },
+    {
+      "id": "BD5",
+      "title": "✨28厘米发光拍拍手——中二魂觉醒的声光仪式感神器!(๑•̀ㅂ•́)و✧_荧光棒_淘宝游戏网",
+      "snippet": "这就是命运的安排吗?6元就能拿下28厘米环保加厚发光拍拍手,声光同步+手掌包裹感满分,漫展应援、课间解压、舞台互动全适配!哼!才不是因为你需要气氛才买它呢～适合爱玩爱演爱发光的二次元少年少女,纯摆设或追求强续航的小伙伴请绕道哦(｡•́︿•̀｡) ...",
+      "url": "https://tvgame.taobao.com/topic/yingguangbang_4/db44c4b37b15048bf87486e5aa1170c6.html",
+      "source_domain": "tvgame.taobao.com/topic/yingguangb...",
+      "date": "2026-11-18",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：✨28厘米发光拍拍手——中二魂觉醒的声光仪式感神器!(๑•̀ㅂ•́)و✧_荧光棒_淘宝游戏网",
+      "subs": {
+        "relevance": 54,
+        "recency": 73,
+        "engagement": 0
+      },
+      "score": 52
+    },
+    {
+      "id": "BD2",
+      "title": "陈嘉桦济南站应援物料发放信息公布",
+      "snippet": "✅本次应援物料包含: ▫️应援纸袋 ▫️三叶草logo贴纸 ▫️济南纪念手幅 ▫️济南限定葱头Ella木浆棉洗碗布 ▫️济南限定夏雨荷Ella小贴纸 ▫️济南特产高粱饴 ▫️济南限定葱头Ella拨浪鼓,随机掉落 ▫️济南限定葱头Ella纹身贴,随机掉落(感谢多愛E點老师授权,提供图片素材用于物料制作) ...",
+      "url": "https://weibo.com/2/detail/5366589056094705",
+      "source_domain": "微博",
+      "date": "2026-11-18",
+      "date_confidence": "med",
+      "relevance": 0.54,
+      "why_relevant": "百度：陈嘉桦济南站应援物料发放信息公布",
+      "subs": {
+        "relevance": 54,
+        "recency": 73,
+        "engagement": 0
+      },
+      "score": 52
+    }
+  ],
+  "toutiao": [
+    {
+      "id": "TT7",
+      "title": "山东全省漫展一览表 11月山东漫展",
+      "abstract": "【更新时间 2026年11月3日，因漫展信息具有时效性，请仔细查看更新时间，查找最新更新的漫展信息，避免消息;",
+      "url": "https://www.toutiao.com/group/7703605633601389083/",
+      "source_name": "次元黄页",
+      "date": "2026-11-03",
+      "date_confidence": "high",
+      "is_hot": false,
+      "hot_value": null,
+      "engagement": {
+        "num_comments": 0,
+        "likes": 1,
+        "reads": 7
+      },
+      "relevance": 0.24,
+      "why_relevant": "今日头条（次元黄页）：山东全省漫展一览表 11月山东漫展",
+      "subs": {
+        "relevance": 24,
+        "recency": 23,
+        "engagement": 50
+      },
+      "score": 31,
+      "original_url": "https://toutiao.com/group/7703605633601389083/"
+    }
+  ],
+  "best_practices": [],
+  "prompt_pack": [],
+  "context_snippet_md": "# 上下文: 济南 漫展 应援（2026-10-27 ~ 2026-11-26）\n\n*生成时间: 2026-11-26 | 模式: all*\n\n## 主要来源\n\n- [B站] 📍元旦济南漫展攻略：幻樱漫展1月1日-2日，山东国际会展中心，嘉宾阵容公布，预售票72元起！ 济南·... — https://www.bilibili.com/video/BV131W36yEwE\n- [百度] 电鸽唯优指代不明,需确认语境,依赖具体定义,影响理解深度- 昆山德邦精工自动化科技有限公司 — http://h5.fuzhou.debonpaint.com/odvnews/1125/52191_article737.htm\n- [百度] 赴良约，妆闪耀✨济南站应援妆就位。✅室内化妆场馆附近 ✅应援 - 抖音 — https://www.douyin.com/note/7711810705327045481\n- [百度] 奔赴徐良·济南站｜应援妆造接单一对一精致妆造｜可带图定制 - 抖音 — https://www.douyin.com/note/7711555092219222507\n- [百度] 接济南元旦幻樱1.1-1.2场照。两天还有几个位置，欢迎老师 - 抖音 — https://www.douyin.com/note/7710447779529900136\n- [B站] 元旦去哪玩？济南幻樱动漫游戏嘉年华，两天嘉宾、自由舞台、周边集市全攻略 — https://www.bilibili.com/video/BV1grW367EZ8\n- [B站] 2027元旦去哪玩？济南幻樱动漫嘉年华25届来了，把场馆做成养成游戏，cos嘉宾女仆咖啡特摄全都有，... — https://www.bilibili.com/video/BV1kBWg68EuM\n- [百度] Kep1er同款怎么选?四类单品选购指南 — http://baijiahao.baidu.com/s?id=1882193670052025013&wfr=spider&for=pc\n\n## 摘要\n\n*完整报告见 report.md / report.html。*\n",
+  "weibo_error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE",
+  "xiaohongshu_error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "douyin_error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））",
+  "search_topic": "济南 漫展 应援",
+  "query_type": "breaking_news",
+  "depth": "default",
+  "source_status": {
+    "weibo": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 6.8,
+      "via": {},
+      "error": "微博搜索现需登录：运行 `python scripts/last30days.py login weibo`（需 Playwright）保存登录态，或在 ~/.config/last30days-cn/.env 配置 WEIBO_COOKIE"
+    },
+    "xiaohongshu": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 1.5,
+      "via": {},
+      "error": "已尝试：公开搜索。小红书搜索需要登录态：运行 `python scripts/last30days.py login xiaohongshu` 扫码登录一次（需 Playwright），或部署 xiaohongshu-mcp 并配置 XIAOHONGSHU_API_BASE。公开搜索兜底没有找到可验证的小红书链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "bilibili": {
+      "state": "ok",
+      "count": 6,
+      "raw_count": 20,
+      "elapsed": 0.8,
+      "via": {
+        "wbi-search": 20
+      }
+    },
+    "douyin": {
+      "state": "error",
+      "count": 0,
+      "raw_count": 0,
+      "elapsed": 3.9,
+      "via": {},
+      "error": "未获取到抖音结果；已尝试：热榜/公开搜索。抖音网页搜索需要签名或登录：配置 TIKHUB_API_KEY，或运行 `python scripts/last30days.py login douyin`（需 Playwright）保存登录态。公开搜索兜底没有找到可验证的抖音链接（cn.bing.com 重定向到首页（当前网络不返回结果）；DuckDuckGo 触发人机验证（请求过于频繁））"
+    },
+    "baidu": {
+      "state": "ok",
+      "count": 7,
+      "raw_count": 16,
+      "elapsed": 1.2,
+      "via": {
+        "baidu-web": 16
+      }
+    },
+    "toutiao": {
+      "state": "ok",
+      "count": 1,
+      "raw_count": 16,
+      "elapsed": 2.1,
+      "via": {
+        "so.toutiao": 16
+      }
+    }
+  }
+}
