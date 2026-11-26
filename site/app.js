@@ -258,11 +258,12 @@
     var configured = (state.coverage.meta && state.coverage.meta.topic_catalog) || [];
     if (!configured.length) configured = state.coverage.data || [];
     configured.forEach(function (row) {
-      if (!row.topic || seen[row.topic]) return;
-      seen[row.topic] = true;
-      var label = row.label || TYPE_LABELS[row.topic] || row.topic;
-      TYPE_LABELS[row.topic] = label;
-      catalog.push({ key: row.topic, label: label });
+      var key = row.key || row.topic;
+      if (!key || seen[key]) return;
+      seen[key] = true;
+      var label = row.label || TYPE_LABELS[key] || key;
+      TYPE_LABELS[key] = label;
+      catalog.push({ key: key, label: label });
     });
     if (!catalog.length) Object.keys(TYPE_LABELS).filter(function (key) { return key !== "other"; }).forEach(function (key) {
       catalog.push({ key: key, label: TYPE_LABELS[key] });

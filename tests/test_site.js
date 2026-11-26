@@ -66,8 +66,9 @@ test("type filter follows the configured coverage topic catalog", async()=>{
   const nodes=await loadPage([], {coverage:{meta:{city_count:29,topic_count:7,topic_catalog:[
     {key:"concert",label:"演唱会与演出"},{key:"exhibition",label:"会展"},{key:"sports",label:"体育赛事"},
     {key:"festival",label:"节庆"},{key:"holiday",label:"学生假期与放假调整"},{key:"conference",label:"学术与行业会议"},
-    {key:"exam",label:"考试与招录"}]},data:[]}});
+    {key:"exam",label:"考试与招录"},{key:"new_scope_test",label:"新增配置主题"}]},data:[]}});
   assert.ok(nodes.typeFilter.children.some(option=>option.value==="exam"));
+  assert.ok(nodes.typeFilter.children.some(option=>option.value==="new_scope_test" && option.textContent==="新增配置主题"));
   nodes.typeFilter.value="exam"; nodes.typeFilter.listeners.input();
   assert.equal(nodes.typeFilter.value,"exam");
 });

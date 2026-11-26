@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "sources": [
+    {"id":"xian-digital-conference","publisher":"西安交通大学外国语学院","level":"organizer","city":"西安市","topic":"conference","url":"https://sfs.xjtu.edu.cn/info/1243/9348.htm","rules":[{"name":"第四届数字赋能外语教师发展研讨会","pattern":"会议时间[：:]\\s*(2026年12月19日)","date_text_group":1}]},
+    {"id":"xian-control-conference","publisher":"长安大学机械学院（参与单位）","level":"organizer","city":"西安市","topic":"conference","url":"https://cmcs.chd.edu.cn/2026/1010/c8633a262954/page.htm","rules":[{"name":"第四届智能控制测量与信号系统国际会议FICMSS2027","pattern":"FICMSS 2027将于(2027年1月8日至10日)在西安举行","date_text_group":1}]},
+    {"id":"moe-graduate","publisher":"教育部","level":"national","topic":"exam","url":"https://www.moe.gov.cn/srcsite/A15/moe_778/s3261/202609/t20260923_1451734.html","rules":[{"name":"2027年全国硕士研究生招生考试初试","pattern":"初试时间为(2026年12月19日至20日)","date_text_group":1}]},
+    {"id":"national-civil","publisher":"北京市政府转载新华社","level":"national","topic":"exam","url":"https://www.beijing.gov.cn/cs/gncs/csbmts/202611/t20261116_4948266.html","rules":[{"name":"2027年度国考公共科目笔试","pattern":"公共科目笔试将于(11月29日)","year":2026,"date_text_group":1}]},
+    {"id":"neea-teacher","publisher":"教育部教育考试院","level":"national","topic":"exam","url":"https://ntce.neea.edu.cn/xhtml1/folder/1507/1076-1.htm"},
+    {"id":"cpta","publisher":"中国人事考试网","level":"national","topic":"exam","url":"https://www.cpta.com.cn/"},
+    {"id":"scs","publisher":"国家公务员局","level":"national","topic":"exam","url":"https://www.scs.gov.cn/"},
+    {"id":"sx-education","publisher":"陕西省教育考试院","level":"province","topic":"exam","url":"https://sneea.cn/info/1025/17807.htm"},
+    {"id":"sx-personnel","publisher":"陕西人事考试网","level":"province","topic":"exam","url":"https://www.sxrsks.cn/"},
+    {"id":"sd-education","publisher":"山东省教育招生考试院","level":"province","topic":"exam","url":"https://www.sdzk.cn/newsinfo.aspx?bcid=25&cid=1124&newsid=7370"},
+    {"id":"sd-personnel","publisher":"山东省人力资源和社会保障厅","level":"province","topic":"exam","url":"https://hrss.shandong.gov.cn/rsks/"},
+    {"id":"tj-education","publisher":"天津市教育招生考试院","level":"city","city":"天津市","topic":"exam","url":"https://www.zhaokao.net/"},
+    {"id":"tj-personnel","publisher":"天津市人事考试网","level":"city","city":"天津市","topic":"exam","url":"https://hrss.tj.gov.cn/jsdw/rsksw/"},
+    {"id":"xidian-location","publisher":"西安电子科技大学","level":"test_center","city":"西安市","topic":"exam","url":"https://gr.xidian.edu.cn/info/1074/20864.htm","location_pattern":"考场设在学校长安校区","national_event":"2027年全国硕士研究生招生考试初试"},
+    {"id":"tj-graduate-alternative","publisher":"天津市政府转载天津日报","level":"city","city":"天津市","topic":"exam","url":"https://www.tj.gov.cn/zmhd/hygqx/202610/t20261009_7390056.html","rules":[{"name":"2027年全国硕士研究生招生考试天津考区","pattern":"初试时间为今年(12月19日至20日)","year":2026,"date_text_group":1}],"location_pattern":"我市设置20个高校报考点"},
+    {"id":"tj-civil-alternative","publisher":"天津市公务员局/天津政务网","level":"city","city":"天津市","topic":"exam","url":"https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html","rules":[{"name":"天津市2027年度公务员公共科目笔试","pattern":"(12月6日)上午","year":2026,"date_text_group":1},{"name":"天津市2027年度公务员专业科目笔试","pattern":"(12月5日)下午","year":2026,"date_text_group":1}]},
+    {"id":"jinan-calendar","publisher":"济南市教育局/市政府","level":"city","city":"济南市","topic":"holiday","url":"https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html","rules":[{"name":"济南义务教育2027寒假","pattern":"义务教育阶段寒假开始时间为\\s*(2027年\\s*1\\s*月23\\s*日).*?寒假结束时间为\\s*(2\\s*月\\s*21\\s*日)","range_groups":[1,2],"year":2027},{"name":"济南高中2027寒假","pattern":"高中阶段学校寒假开始时间为\\s*(2027年\\s*1\\s*月\\s*30\\s*日).*?寒假结束时间为\\s*(2\\s*月21\\s*日)","range_groups":[1,2],"year":2027},{"name":"济南义务教育2027暑假","pattern":"义务教育阶段学校暑假开始时间为\\s*(2027\\s*年7\\s*月7\\s*日).*?暑假结束时间为\\s*(8\\s*月\\s*31\\s*日)","range_groups":[1,2],"year":2027},{"name":"济南高中2027暑假","pattern":"高中阶段学校暑假开始时间为\\s*(2027年7\\s*月\\s*14\\s*日).*?暑假结束时间为\\s*(8\\s*月31\\s*日)","range_groups":[1,2],"year":2027}]},
+    {"id":"jinan-spring-autumn","publisher":"济南市教育局/市政府","level":"city","city":"济南市","topic":"holiday","url":"https://www.jinan.gov.cn/col/col118356/art/2026/art_2dc6a37cdda34c28ad3a48ede3afc0f8.html"},
+    {"id":"xian-education","publisher":"西安市教育局","level":"city","city":"西安市","topic":"holiday","url":"https://edu.xa.gov.cn/"},
+    {"id":"tianjin-calendar","publisher":"天津市教育委员会","level":"city","city":"天津市","topic":"holiday","url":"https://jy.tj.gov.cn/"},
+    {"id":"xian-academic","publisher":"西安交通大学国家天元数学西北中心","level":"organizer","city":"西安市","topic":"conference","url":"https://xiammt.xjtu.edu.cn/"},
+    {"id":"jinan-academic","publisher":"山东大学","level":"organizer","city":"济南市","topic":"conference","url":"https://sklcm.sdu.edu.cn/"},
+    {"id":"tianjin-academic","publisher":"天津大学","level":"organizer","city":"天津市","topic":"conference","url":"https://news.tju.edu.cn/xw/xysx/hd.htm"},
+    {"id":"xian-convention","publisher":"西安国际会展中心","level":"organizer","city":"西安市","topic":"conference","url":"https://www.xaicec.com/"},
+    {"id":"jinan-language-conference","publisher":"山东大学外国语学院","level":"organizer","city":"济南市","topic":"conference","url":"https://www.flc.sdu.edu.cn/info/1150/23835.htm","rules":[{"name":"区域国别研究与国家语言能力建设学术研讨会","pattern":"会议时间[：:]\\s*(2026年12月11日至13日)","date_text_group":1}]},
+    {"id":"tianjin-regional-conference","publisher":"天津科技大学外国语学院","level":"organizer","city":"天津市","topic":"conference","url":"https://wgy.tust.edu.cn/xwdt/tzgg/cea333cbcc3749e8ade6c12f79da5ee6.htm","rules":[{"name":"文明互鉴与区域合作国际学术研讨会","pattern":"会议时间[：:]\\s*(2026年11月27日-29日)","date_text_group":1}]}
+  ]
+}

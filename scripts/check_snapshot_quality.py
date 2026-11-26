@@ -103,13 +103,16 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
     require(calendar['meta']['verified_count'] == sum(row.get('review_status') == 'verified' for row in activities), 'verified total mismatch')
     require({row['city_name'] for row in payloads['cities']['data']} == city_names, 'city catalogue mismatch')
     cells = payloads['coverage']['data']
-    require(len(cells) == len(expected) and {(row['city_name'], row['topic']) for row in cells} == expected, 'coverage matrix is incomplete or duplicated')
+    recorded_topics = {row.get('topic') for row in payloads['health'].get('feed_results', [])}
+    require(recorded_topics <= topic_names and {row['topic'] for row in cells} <= topic_names, 'snapshot contains unknown topics')
+    snapshot_expected = expected if require_full_scope else {(city, topic) for city in city_names for topic in (recorded_topics | {row['topic'] for row in cells})}
+    require(bool(snapshot_expected) and len(cells) == len(snapshot_expected) and {(row['city_name'], row['topic']) for row in cells} == snapshot_expected, 'coverage matrix is incomplete or duplicated')
     coverage_meta = payloads['coverage'].get('meta', {})
     if coverage_meta.get('topic_catalog') is not None:
         require(coverage_meta.get('topic_count') == len(topic_names), 'coverage topic count does not match configured scope')
         require({row.get('key') for row in coverage_meta.get('topic_catalog', [])} == topic_names, 'coverage topic catalog does not match configured scope')
     if coverage_meta.get('expected_cells') is not None:
-        require(coverage_meta.get('expected_cells') == len(expected), 'coverage expected cell count mismatch')
+        require(coverage_meta.get('expected_cells') == len(snapshot_expected), 'coverage expected cell count mismatch')
     if 'discovery_candidates' in calendar:
         for cell in cells:
             count = sum(row['city_name'] == cell['city_name'] and row['event_type'] == cell['topic'] for row in candidates)
@@ -167,6 +170,7 @@ def check_snapshot(api: Path, require_full_scope: bool = False, max_age_hours: f
             'source_candidate_count': len(source_candidates), 'source_calendar_city_count': len(source_checks),
             'coverage_cells': len(cells), 'city_count': len(city_names), 'topic_count': len(topic_names),
             'query_route_count': len(expected_routes), 'expected_query_count': len(expected) * len(expected_routes),
+            'uncollected_configured_topics': sorted(topic_names - {row['topic'] for row in cells}),
             'full_scope_required': require_full_scope,
             'collection_at': payloads['hotspots']['meta'].get('last_collection_at'),
             'verified_news': sum(row.get('review_status') == 'verified' for row in leads),

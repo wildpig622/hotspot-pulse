@@ -1,0 +1,19 @@
+{
+ "method":"Manually read official publications discovered with independent web search before collector execution. Dates and scope are hand transcribed; parser output never defines expected values.",
+ "data":[
+  {"source_id":"holdout-iccll","source_url":"https://www.iccll.org/","city_name":"西安市","start_at":"2027-05-21","end_at":"2027-05-23","terms":["ICCLL"],"scope":"organizer_holdout_not_seeded"},
+  {"source_id":"xian-digital-conference","city_name":"西安市","start_at":"2026-12-19","end_at":"2026-12-19","terms":["数字赋能","研讨会"],"scope":"organizer_announcement"},
+  {"source_id":"xian-control-conference","city_name":"西安市","start_at":"2027-01-08","end_at":"2027-01-10","terms":["FICMSS"],"scope":"participating_university_notice"},
+  {"source_id":"jinan-language-conference","city_name":"济南市","start_at":"2026-12-11","end_at":"2026-12-13","terms":["区域国别","学术研讨会"],"scope":"organizer_announcement"},
+  {"source_id":"tianjin-regional-conference","city_name":"天津市","start_at":"2026-11-27","end_at":"2026-11-29","terms":["文明互鉴","学术研讨会"],"scope":"organizer_announcement"},
+  {"source_id":"moe-graduate","city_name":null,"start_at":"2026-12-19","end_at":"2026-12-20","terms":["研究生"],"scope":"national"},
+  {"source_id":"national-civil","city_name":null,"start_at":"2026-11-29","end_at":"2026-11-29","terms":["公务员"],"scope":"national"},
+  {"source_id":"tj-graduate-alternative","city_name":"天津市","start_at":"2026-12-19","end_at":"2026-12-20","terms":["研究生"],"scope":"local_exam_area"},
+  {"source_id":"tj-civil-alternative","city_name":"天津市","start_at":"2026-12-06","end_at":"2026-12-06","terms":["公务员"],"scope":"public_subject"},
+  {"source_id":"tj-civil-alternative","city_name":"天津市","start_at":"2026-12-05","end_at":"2026-12-05","terms":["公务员"],"scope":"professional_subject"},
+  {"source_id":"jinan-calendar","city_name":"济南市","start_at":"2027-01-23","end_at":"2027-02-21","terms":["寒假"],"scope":"compulsory_school"},
+  {"source_id":"jinan-calendar","city_name":"济南市","start_at":"2027-01-30","end_at":"2027-02-21","terms":["寒假"],"scope":"high_school"},
+  {"source_id":"jinan-calendar","city_name":"济南市","start_at":"2027-07-07","end_at":"2027-08-31","terms":["暑假"],"scope":"compulsory_school"},
+  {"source_id":"jinan-calendar","city_name":"济南市","start_at":"2027-07-14","end_at":"2027-08-31","terms":["暑假"],"scope":"high_school"}
+ ]
+}

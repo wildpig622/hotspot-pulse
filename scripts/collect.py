@@ -61,7 +61,8 @@ TICKETING_TERMS = ("开票", "开售", "售票", "预售", "抢票", "门票", "
 REGISTRATION_TERMS = (
     "报名启动", "报名开启", "报名时间", "报名截止", "报名通道",
     "开放报名", "开始报名", "报名即将开始", "报名啦", "开启报名",
-    "网上确认", "缴费时间", "资格审查", "资格审核", "准考证打印", "打印准考证"
+    "网上确认", "缴费时间", "资格审查", "资格审核", "准考证打印", "打印准考证",
+    "成绩查询", "查询成绩", "成绩公布", "录取结果", "领取证书", "证书领取"
 )
 EVENT_DATE_CUES = (
     "将于", "定于", "定档", "举行", "举办", "开幕", "开赛", "开演",
@@ -134,7 +135,10 @@ def classify_event(text: str) -> str:
     for index, topic in enumerate(FEED_TOPICS):
         for term in topic.get("terms", ()):
             if term and term in value:
-                matches.append((int(topic.get("priority", 0)), len(term), -index, topic["key"]))
+                # Generic school/exam words are useful for discovery but must
+                # not override an explicitly named conference or performance.
+                priority = 10 if term in {"学期", "中小学", "义务教育", "开学", "返校", "考试", "笔试", "面试", "招录"} else int(topic.get("priority", 0))
+                matches.append((priority, len(term), -index, topic["key"]))
     return max(matches)[-1] if matches else "other"
 
 
