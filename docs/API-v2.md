@@ -10,7 +10,11 @@
 
 `review_status` 仍为pending/verified/rejected。机器发现、分组合并、重新读取来源都不产生人工verified。原始来源、检查时间、来源类型和证据说明在 `sources`；票务列表、新闻摘要与正文证据必须区分。明确取消/延期进入 `event_status`；未读取到、下架或网络失败不等于取消。
 
-`availability` 为candidate/cancelled/postponed/needs_date_review/expired/not_recently_observed/rejected。默认未来视图排除后六类；保留记录供消费端追溯、修订及撤下旧展示。日期冲突不静默选择某一来源。
+`availability` 为candidate/cancelled/postponed/needs_date_review/expired/not_recently_observed/rejected。默认未来视图只展示仍可作为候选的记录；其他状态保留供消费端追溯、修订及撤下旧展示。日期冲突不静默选择某一来源。
+
+## 范围元数据与兼容性
+
+`events.meta.topic_catalog`、`topic_count`、`topic_keys` 和 `query_route_keys` 描述当前配置范围；`configured_feed_count` / `configured_query_count` 是按城市、主题和查询路由动态派生的规模，不应在消费者中复制。新增主题只增加目录和事件类型，不改变既有 `event_id`、`canonical_id`、`member_record_ids` 或场次身份；消费者应按目录渲染筛选器，并对未知类型保留可见性。
 
 ## 更新、失败和增量
 

@@ -231,5 +231,8 @@ def build_coverage(cities: list[dict[str, Any]], topics: list[dict[str, Any]], l
                           'discovery_status': status.get((city['city_name'], topic['key']), 'not_run'),
                           'coverage_status': 'partial' if selected else 'not_assessed'})
     return {'meta': {'api_version': 'v1', 'generated_at': generated_at, 'coverage_status': 'partial',
-                     'city_count': len(cities), 'topic_count': len(topics), 'expected_cells': len(cells),
+                     'city_count': len(cities), 'topic_count': len(topics),
+                     'topic_keys': [topic['key'] for topic in topics],
+                     'topic_catalog': [{'key': topic['key'], 'label': topic['label']} for topic in topics],
+                     'expected_cells': len(cells),
                      'note': '零条或检索成功均不代表该城市没有活动。'}, 'data': cells}

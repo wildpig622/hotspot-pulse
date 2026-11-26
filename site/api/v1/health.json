@@ -3495,5 +3495,30 @@
   "note": "如果 status=failed，上一份事件快照会保留，不会用空数据覆盖。",
   "data_updated": true,
   "last_successful_collection_at": "2026-11-25T18:24:33Z",
-  "source_warning_count": 38
+  "source_warning_count": 38,
+  "topic_count": 7,
+  "topic_keys": [
+    "concert",
+    "exhibition",
+    "sports",
+    "festival",
+    "holiday",
+    "conference",
+    "exam"
+  ],
+  "query_route_count": 2,
+  "query_route_keys": [
+    "year_lookback",
+    "upcoming_months"
+  ],
+  "configured_feed_count": 203,
+  "configured_query_count": 406,
+  "last_collection_topic_keys": [
+    "concert",
+    "exhibition",
+    "sports",
+    "festival",
+    "holiday",
+    "conference"
+  ]
 }

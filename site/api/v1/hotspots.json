@@ -26,7 +26,32 @@
     "failed_feeds": 0,
     "rss_items_seen": 7766,
     "data_note": "自动发现候选不代表官方核验；content_kind 区分活动、开票/报名、排期与攻略；只有 review_status=verified 的事件可进入正式经营判断。",
-    "structured_activity_count": 47
+    "structured_activity_count": 47,
+    "topic_count": 7,
+    "topic_keys": [
+      "concert",
+      "exhibition",
+      "sports",
+      "festival",
+      "holiday",
+      "conference",
+      "exam"
+    ],
+    "query_route_count": 2,
+    "query_route_keys": [
+      "year_lookback",
+      "upcoming_months"
+    ],
+    "configured_feed_count": 203,
+    "configured_query_count": 406,
+    "last_collection_topic_keys": [
+      "concert",
+      "exhibition",
+      "sports",
+      "festival",
+      "holiday",
+      "conference"
+    ]
   },
   "data": [
     {

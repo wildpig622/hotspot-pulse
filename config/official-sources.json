@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "purpose": "Phase 1 read-only source design for exam/recruitment, education breaks and academic/industry conferences. This catalogue is not a live collection result.",
+  "verification_policy": {
+    "verified_read_only": "The public page was opened and the relevant publisher or event context was read on verified_on.",
+    "official_reference_only": "An authoritative page or official directory points to the source, but the target body was not directly read in this pass.",
+    "direct_read_blocked": "The official host was identified, but access was blocked or timed out; do not create a dated activity from it.",
+    "proposed_not_verified": "A useful official entry point for the future adapter; it was not validated in this pass."
+  },
+  "field_contract": {
+    "required_for_candidate": ["event_name", "city_name", "event_type", "source_url", "source_published_at", "event_date_role"],
+    "exam_date_roles": ["exam", "registration", "written_test", "interview", "score_release", "certificate"],
+    "holiday_date_roles": ["school_break", "term_start", "makeup_school_day", "regional_break"],
+    "conference_date_roles": ["conference", "registration", "call_for_papers"]
+  },
+  "national_sources": [
+    {
+      "source_id": "graduate-admissions-national",
+      "topic": "exam",
+      "publisher": "中国研究生招生信息网",
+      "source_url": "https://yz.chsi.com.cn/yzwb/",
+      "source_type": "official_exam_portal",
+      "verification_status": "verified_read_only",
+      "verified_on": "2026-11-26",
+      "authority_note": "国家研究生招生报名与省级报考点入口；地区筛选应继续落到省级考试院或报考点公告。"
+    },
+    {
+      "source_id": "teacher-qualification-national",
+      "topic": "exam",
+      "publisher": "教育部教育考试院",
+      "source_url": "https://ntce.neea.edu.cn/xhtml1/folder/1507/1076-1.htm",
+      "source_type": "official_exam_schedule",
+      "verification_status": "verified_read_only",
+      "verified_on": "2026-11-26",
+      "authority_note": "教师资格考试报名与考试日程；报名、笔试、面试必须分开建模。"
+    },
+    {
+      "source_id": "civil-service-national",
+      "topic": "exam",
+      "publisher": "国家公务员局",
+      "source_url": "https://www.scs.gov.cn/",
+      "source_type": "official_recruitment_portal",
+      "verification_status": "proposed_not_verified",
+      "verified_on": null,
+      "authority_note": "保留为国考主源设计位；本轮以官方引用的公告页面完成只读佐证，尚未直接读取该主域。"
+    },
+    {
+      "source_id": "professional-qualification-national",
+      "topic": "exam",
+      "publisher": "中国人事考试网",
+      "source_url": "https://www.cpta.com.cn/",
+      "source_type": "professional_qualification_portal",
+      "verification_status": "proposed_not_verified",
+      "verified_on": null,
+      "authority_note": "职业资格与专业技术人员资格考试主入口；需要后续按年度考试计划读取。"
+    }
+  ],
+  "city_sources": {
+    "西安市": [
+      {
+        "source_id": "xian-shaanxi-exam-institute",
+        "topic": "exam",
+        "publisher": "陕西省教育考试院",
+        "source_url": "https://www.sneea.cn/zc/yjsks.htm",
+        "source_type": "provincial_exam_authority",
+        "verification_status": "verified_read_only",
+        "verified_on": "2026-11-26",
+        "authority_note": "陕西省教育考试院研究生考试栏目，适合作为西安考研公告的省级权威入口。"
+      },
+      {
+        "source_id": "xian-education-bureau",
+        "topic": "holiday",
+        "publisher": "西安市教育局",
+        "source_url": "https://edu.xa.gov.cn/",
+        "source_type": "municipal_education_authority",
+        "verification_status": "official_reference_only",
+        "verified_on": "2026-11-26",
+        "authority_note": "本轮读取到教育局秋季学期相关公开信息，但未将其转成西安市统一假期日期；校历仍需按区县/学段核对。"
+      },
+      {
+        "source_id": "xian-academic-calendar-example",
+        "topic": "conference",
+        "publisher": "西安交通大学国家天元数学西北中心",
+        "source_url": "https://xiammt.xjtu.edu.cn/info/1052/4097.htm",
+        "source_type": "university_academic_organizer",
+        "verification_status": "verified_read_only",
+        "verified_on": "2026-11-26",
+        "authority_note": "学术活动公告例；正式适配应继续确认会议举办地与日期字段。"
+      }
+    ],
+    "济南市": [
+      {
+        "source_id": "jinan-shandong-exam-institute",
+        "topic": "exam",
+        "publisher": "山东省教育招生考试院",
+        "source_url": "https://www.sdzk.cn/",
+        "source_type": "provincial_exam_authority",
+        "verification_status": "verified_read_only",
+        "verified_on": "2026-11-26",
+        "authority_note": "页面列出夏季/春季高考、成人高考、研究生、自考、学业水平和教师资格等栏目；城市级结果需再读济南考区公告。"
+      },
+      {
+        "source_id": "jinan-education-breaks",
+        "topic": "holiday",
+        "publisher": "济南市教育局/济南市人民政府",
+        "source_url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2dc6a37cdda34c28ad3a48ede3afc0f8.html",
+        "source_type": "municipal_education_authority",
+        "verification_status": "verified_read_only",
+        "verified_on": "2026-11-26",
+        "authority_note": "官方答复说明春假、秋假安排及区县统筹边界；不能把区县安排外推为全市统一日期。"
+      },
+      {
+        "source_id": "jinan-academic-conference-example",
+        "topic": "conference",
+        "publisher": "山东大学晶体材料国家重点实验室",
+        "source_url": "https://sklcm.sdu.edu.cn/info/1123/2406.htm",
+        "source_type": "university_academic_organizer",
+        "verification_status": "verified_read_only",
+        "verified_on": "2026-11-26",
+        "authority_note": "济南学术会议公告例，适合作为会议名称、会期、主办方和地点字段映射样本。"
+      }
+    ],
+    "天津市": [
+      {
+        "source_id": "tianjin-admissions-reference",
+        "topic": "exam",
+        "publisher": "天津市教育招生考试院（官方引用）",
+        "source_url": "https://www.zhaokao.net/",
+        "source_type": "municipal_exam_authority",
+        "verification_status": "official_reference_only",
+        "verified_on": "2026-11-26",
+        "authority_note": "教育部公开页面列出该站为天津市教育招生考试院相关网址；本轮目标站直读超时，未据此生成天津考试事件。"
+      },
+      {
+        "source_id": "tianjin-education-breaks",
+        "topic": "holiday",
+        "publisher": "天津市教育委员会",
+        "source_url": "https://jy.tj.gov.cn/",
+        "source_type": "municipal_education_authority",
+        "verification_status": "direct_read_blocked",
+        "verified_on": "2026-11-26",
+        "authority_note": "官方入口已识别但本轮直读受限；不得把搜索摘要或旧校历当作当前假期日期。"
+      },
+      {
+        "source_id": "tianjin-academic-conference-example",
+        "topic": "conference",
+        "publisher": "天津大学",
+        "source_url": "https://news.tju.edu.cn/xw/xysx/hd/295.htm",
+        "source_type": "university_academic_organizer",
+        "verification_status": "verified_read_only",
+        "verified_on": "2026-11-26",
+        "authority_note": "天津大学官方活动页面提供学术会议日期与地点语境；正式采集仍需结构化字段和去重策略。"
+      }
+    ]
+  }
+}

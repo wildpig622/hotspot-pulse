@@ -1,22 +1,28 @@
 {
-  "version": 1,
+  "version": 2,
   "operating_cities_file": "config/cities.json",
   "monitoring_horizon_days": 90,
   "discovery_lookback_days": 180,
   "max_items_per_city_topic": 50,
   "max_parallel_requests": 4,
+  "query_routes": [
+    {"key":"year_lookback","mode":"years","lookback_days":180},
+    {"key":"upcoming_months","mode":"months","lookback_days":30}
+  ],
   "topics": [
-    {"key":"concert","label":"演唱会与演出","terms":["演唱会","音乐节","巡演","音乐会","话剧","歌剧","演出"]},
-    {"key":"exhibition","label":"会展","terms":["展会","博览会","车展","展览","漫展","高交会","茶博会"]},
-    {"key":"sports","label":"体育赛事","terms":["马拉松","体育赛事","路跑","运动会","网球赛","足球赛","篮球赛"]},
-    {"key":"festival","label":"节庆","terms":["节庆","灯会","庙会","嘉年华","文化节","美食节","烟花秀"]},
-    {"key":"holiday","label":"学生假期与放假调整","terms":["秋假","春假","寒假","暑假","学生假期","放假安排","放假调整","调休安排"]},
-    {"key":"conference","label":"大型会议与峰会","terms":["APEC","峰会","大会","国际会议","行业会议","论坛"]}
+    {"key":"concert","label":"演唱会与演出","priority":40,"terms":["演唱会","音乐节","巡演","音乐会","话剧","歌剧","演出"]},
+    {"key":"exhibition","label":"会展","priority":40,"terms":["展会","博览会","车展","展览","漫展","动漫展","进博会","高交会","茶博会"]},
+    {"key":"sports","label":"体育赛事","priority":40,"terms":["马拉松","体育赛事","赛事","路跑","运动会","网球赛","足球赛","篮球赛","网球","足球","篮球","比赛"]},
+    {"key":"festival","label":"节庆","priority":40,"terms":["节庆","灯会","庙会","嘉年华","文化节","美食节","烟花秀"]},
+    {"key":"holiday","label":"学生假期与放假调整","priority":80,"terms":["秋假","春假","寒假","暑假","寒暑假","学生假期","放假安排","放假调整","调休安排","校历","周历","开学","返校","学期","中小学","义务教育"]},
+    {"key":"conference","label":"学术与行业会议","priority":35,"terms":["APEC","峰会","大会","国际会议","国际论坛","行业会议","行业大会","行业年会","学术会议","学术年会","学术研讨会","学术论坛","研讨会","专业会议","专业论坛","科技大会","论坛","年会"]},
+    {"key":"exam","label":"考试与招录","priority":100,"terms":["研究生招生考试","全国硕士研究生招生考试","考研","国考","国家公务员","公务员考试","公务员招录","省考","公务员录用","事业单位公开招聘","事业单位考试","事业编","公开招聘考试","教师资格考试","教资","高考","普通高校招生","普通高等学校招生考试","中考","初中学业水平考试","职业资格考试","专业技术人员职业资格","执业资格考试","自学考试","成人高考","学业水平考试","考试安排","招聘公告","招录","考试","笔试","面试"]}
   ],
   "source_policy": "RSS is discovery only. Read government, education, organizer and venue bodies for structured records. Unavailable source bodies remain explicit coverage gaps.",
+  "official_source_catalog": "config/official-sources.json",
   "automatic_review_status": "pending",
   "coverage_status": "partial",
-  "collection_mode": "manual",
+  "collection_mode": "scheduled_service",
   "history_references": [
     "chatgpt-conversation://6adb1ce2-60b4-83ec-a1af-b01cd8621e85",
     "chatgpt-conversation://6ae14447-4a64-83ec-9ea9-932492257a99"

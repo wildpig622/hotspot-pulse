@@ -19,7 +19,55 @@
     "last_successful_collection_at": "2026-11-25T18:24:33Z",
     "expires_at": "2026-11-26T12:24:33Z",
     "is_stale": false,
-    "age_hours": 0
+    "age_hours": 0,
+    "city_count": 29,
+    "topic_count": 7,
+    "topic_keys": [
+      "concert",
+      "exhibition",
+      "sports",
+      "festival",
+      "holiday",
+      "conference",
+      "exam"
+    ],
+    "topic_catalog": [
+      {
+        "key": "concert",
+        "label": "演唱会与演出"
+      },
+      {
+        "key": "exhibition",
+        "label": "会展"
+      },
+      {
+        "key": "sports",
+        "label": "体育赛事"
+      },
+      {
+        "key": "festival",
+        "label": "节庆"
+      },
+      {
+        "key": "holiday",
+        "label": "学生假期与放假调整"
+      },
+      {
+        "key": "conference",
+        "label": "学术与行业会议"
+      },
+      {
+        "key": "exam",
+        "label": "考试与招录"
+      }
+    ],
+    "query_route_count": 2,
+    "query_route_keys": [
+      "year_lookback",
+      "upcoming_months"
+    ],
+    "configured_feed_count": 203,
+    "configured_query_count": 406
   },
   "data": [
     {

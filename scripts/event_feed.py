@@ -11,6 +11,27 @@ from pathlib import Path
 API_VERSION = 'v2'
 SCHEMA_VERSION = '2.0'
 BASE_URL = 'https://wildpig622.github.io/hotspot-pulse/api/v2/'
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def _scope_metadata():
+    try:
+        scope = json.loads((ROOT / 'config' / 'monitoring-scope.json').read_text(encoding='utf8'))
+        cities = json.loads((ROOT / 'config' / 'cities.json').read_text(encoding='utf8'))
+    except (OSError, json.JSONDecodeError):
+        return {'city_count': None, 'topic_count': None, 'topic_catalog': [], 'query_route_count': None}
+    topics = scope.get('topics', [])
+    routes = scope.get('query_routes', [])
+    return {
+        'city_count': len(cities),
+        'topic_count': len(topics),
+        'topic_keys': [topic.get('key') for topic in topics if topic.get('key')],
+        'topic_catalog': [{'key': topic.get('key'), 'label': topic.get('label')} for topic in topics if topic.get('key')],
+        'query_route_count': len(routes),
+        'query_route_keys': [route.get('key') for route in routes if route.get('key')],
+        'configured_feed_count': len(cities) * len(topics),
+        'configured_query_count': len(cities) * len(topics) * len(routes),
+    }
 
 
 def normalized(value):
@@ -168,11 +189,13 @@ def build_feed(calendar, news_meta, health, now, previous=None, links=None):
     changes=changes[-10000:]
     last_success=health.get('last_successful_collection_at') or news_meta.get('last_collection_at')
     current=freshness(last_success,now)
+    scope_meta = _scope_metadata()
     meta={'api_version':API_VERSION,'schema_version':SCHEMA_VERSION,'generated_at':now.isoformat().replace('+00:00','Z'),
           'last_collection_at':news_meta.get('last_collection_at'),'collection_status':health.get('status','unknown'),
           'using_cached_data':health.get('status') in {'failed','degraded'} and health.get('data_updated') is False,
           'event_count':len(events),'source_record_count':len(rows),'linked_record_reduction':len(rows)-len(groups),
-          'cursor':cursor,'coverage_status':'partial','schedule_local':['08:00','16:00'],'timezone':'Asia/Shanghai',**current}
+          'cursor':cursor,'coverage_status':'partial','schedule_local':['08:00','16:00'],'timezone':'Asia/Shanghai',
+          **scope_meta,**current}
     return {'events':{'meta':meta,'data':events},
             'changes':{'meta':{'api_version':API_VERSION,'schema_version':SCHEMA_VERSION,'cursor':cursor,'cursor_floor':changes[0]['cursor']-1 if changes else cursor},'data':changes},
             'state':{'membership':membership,'aliases':aliases,'occurrence_sequences':sequences}}

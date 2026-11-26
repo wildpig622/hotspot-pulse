@@ -45,10 +45,11 @@ class CoverageRepairTests(unittest.TestCase):
 
     def test_search_topics_have_separate_quotas_and_years_follow_the_actual_window(self):
         urls = {topic['key']: collect.build_feed_url(self.city, date(2028, 12, 15), topic) for topic in collect.FEED_TOPICS}
-        self.assertEqual(set(urls), {'concert', 'exhibition', 'sports', 'festival', 'holiday', 'conference'})
+        self.assertEqual(set(urls), {topic['key'] for topic in collect.FEED_TOPICS})
         queries = {key: parse_qs(urlparse(url).query)['q'][0] for key, url in urls.items()}
         self.assertIn('秋假', queries['holiday'])
         self.assertNotIn('马拉松', queries['holiday'])
+        self.assertIn('考研', queries['exam'])
         self.assertIn('(2028 OR 2029)', queries['concert'])
         self.assertNotIn('2026 OR 2027', queries['concert'])
 
@@ -75,7 +76,7 @@ class CoverageRepairTests(unittest.TestCase):
         rows = files['hotspots.json']['data']
         self.assertEqual(sum(row['event_type'] == 'concert' for row in rows), 31)
         self.assertEqual(sum(row['event_type'] == 'sports' for row in rows), 20)
-        self.assertEqual(files['health.json']['successful_feeds'], 6)
+        self.assertEqual(files['health.json']['successful_feeds'], len(collect.FEED_TOPICS))
         self.assertTrue(all(row['review_status'] == 'pending' for row in rows))
 
     def test_a_holiday_source_failure_is_visible_even_if_other_topics_succeed(self):

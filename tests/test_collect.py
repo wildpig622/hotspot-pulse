@@ -13,6 +13,19 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(classify_event("西安国际茶博会"), "exhibition")
         self.assertEqual(classify_event("某某巡回演唱会西安站"), "concert")
         self.assertEqual(classify_event("城市灯会活动"), "festival")
+        self.assertEqual(classify_event("2027年全国硕士研究生招生考试初试时间公布"), "exam")
+        self.assertEqual(classify_event("天津市事业单位公开招聘公告"), "exam")
+        self.assertEqual(classify_event("西安学术年会举办时间公布"), "conference")
+
+    def test_exam_date_roles_keep_registration_and_exam_dates_separate(self):
+        exam = extract_event_date("2027年考研初试时间：2026年12月19日至20日", today=date(2026, 11, 26))
+        self.assertEqual((exam["start_at"], exam["end_at"], exam["event_date_role"]), ("2026-12-19", "2026-12-20", "event"))
+        self.assertEqual(classify_content("2027年考研初试时间：2026年12月19日至20日"), "event_announcement")
+        registration = extract_event_date("2027年考研报名时间：2026年10月16日至27日", today=date(2026, 11, 26))
+        self.assertEqual(registration["start_at"], None)
+        self.assertEqual(registration["registration_at"], "2026-10-16")
+        self.assertEqual(registration["event_date_role"], "registration")
+        self.assertEqual(classify_content("2027年考研报名时间：2026年10月16日至27日"), "registration_notice")
 
     def test_extracts_explicit_chinese_date(self):
         result = extract_event_date("杭州马拉松将于2026年11月1日举行", today=date(2026, 10, 29))

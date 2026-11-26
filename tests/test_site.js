@@ -41,6 +41,7 @@ async function loadPage(events, options = {}) {
       : url.includes("cities.json") ? {data: cities}
       : url.includes("activities.json") ? options.activities || {}
       : url.includes("health.json") ? options.health || {}
+      : url.includes("coverage.json") ? options.coverage || {}
       : url.includes("/v2/events.json") ? options.eventFeed || {} : {};
     return {ok: true, json: async () => payload};
   };
@@ -60,6 +61,16 @@ function calendarRow(extra = {}) {
     date_precision:"day", date_confidence:"source_body", start_at:"2026-11-11", end_at:"2026-11-13", review_status:"pending",
     sessions:[{start_at:"2026-11-11",end_at:"2026-11-13"}], scope_note:"部分学校，高三除外", sources:[], ...extra};
 }
+
+test("type filter follows the configured coverage topic catalog", async()=>{
+  const nodes=await loadPage([], {coverage:{meta:{city_count:29,topic_count:7,topic_catalog:[
+    {key:"concert",label:"演唱会与演出"},{key:"exhibition",label:"会展"},{key:"sports",label:"体育赛事"},
+    {key:"festival",label:"节庆"},{key:"holiday",label:"学生假期与放假调整"},{key:"conference",label:"学术与行业会议"},
+    {key:"exam",label:"考试与招录"}]},data:[]}});
+  assert.ok(nodes.typeFilter.children.some(option=>option.value==="exam"));
+  nodes.typeFilter.value="exam"; nodes.typeFilter.listeners.input();
+  assert.equal(nodes.typeFilter.value,"exam");
+});
 
 test('Harbin is selectable and its v2 candidates render without mixing Shenyang',async()=>{
   const harbin=calendarRow({event_id:'hp_harbin_sample',event_name:'哈尔滨音乐会样本',city_name:'哈尔滨市',city_slug:'harbin',availability:'candidate',start_at:'2026-11-14',end_at:'2026-11-14',sessions:[{start_at:'2026-11-14',end_at:'2026-11-14'}]});
@@ -211,7 +222,7 @@ test("disjoint performance sessions do not match gap days or render a continuous
 test("a fresh rebuild cannot disguise stale collection, and the 90-day window retains later records in all content", async () => {
   const row = calendarRow({start_at:"2027-05-14",end_at:"2027-05-14",sessions:[{start_at:"2027-05-14",end_at:"2027-05-14"}]});
   const nodes = await loadPage([], {clockAt:"2026-11-04T01:00:00Z", meta:{generated_at:"2026-11-04T01:00:00Z",last_collection_at:"2026-10-30T01:55:55Z",monitoring_horizon_days:90},
-    health:{status:"healthy",successful_feeds:28,city_count:28},activities:{meta:{generated_at:"2026-11-04T01:00:00Z"},data:[row]}});
+    health:{status:"healthy",successful_feeds:0,city_count:cities.length},activities:{meta:{generated_at:"2026-11-04T01:00:00Z"},data:[row]}});
   assert.match(nodes.updatedAt.textContent, /2026\/10\/30/);
   assert.equal(nodes.healthLabel.textContent, "快照待更新");
   assert.equal(nodes.resultCount.textContent, "0 条");

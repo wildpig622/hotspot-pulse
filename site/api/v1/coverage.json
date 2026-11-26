@@ -4,9 +4,58 @@
     "generated_at": "2026-11-25T18:24:33Z",
     "coverage_status": "partial",
     "city_count": 29,
-    "topic_count": 6,
-    "expected_cells": 174,
-    "note": "零条或检索成功均不代表该城市没有活动。"
+    "topic_count": 7,
+    "expected_cells": 203,
+    "note": "覆盖矩阵按当前配置生成；新增主题在真实采集前保持 not_run，不把历史快照冒充为已采集。",
+    "topic_keys": [
+      "concert",
+      "exhibition",
+      "sports",
+      "festival",
+      "holiday",
+      "conference",
+      "exam"
+    ],
+    "topic_catalog": [
+      {
+        "key": "concert",
+        "label": "演唱会与演出"
+      },
+      {
+        "key": "exhibition",
+        "label": "会展"
+      },
+      {
+        "key": "sports",
+        "label": "体育赛事"
+      },
+      {
+        "key": "festival",
+        "label": "节庆"
+      },
+      {
+        "key": "holiday",
+        "label": "学生假期与放假调整"
+      },
+      {
+        "key": "conference",
+        "label": "学术与行业会议"
+      },
+      {
+        "key": "exam",
+        "label": "考试与招录"
+      }
+    ],
+    "query_route_count": 2,
+    "query_route_keys": [
+      "year_lookback",
+      "upcoming_months"
+    ],
+    "configured_feed_count": 203,
+    "configured_query_count": 406,
+    "last_collection_feed_count": 174,
+    "last_collection_successful_feeds": 174,
+    "last_collection_query_count": 348
   },
   "data": [
     {
@@ -82,6 +131,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "成都市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "南京市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -152,6 +213,18 @@
       "last_evidence_check_at": "2026-11-04T07:33:18Z",
       "discovery_status": "ok",
       "coverage_status": "partial"
+    },
+    {
+      "city_name": "南京市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
     },
     {
       "city_name": "重庆市",
@@ -226,6 +299,18 @@
       "coverage_status": "partial"
     },
     {
+      "city_name": "重庆市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "杭州市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -295,6 +380,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "杭州市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -370,6 +467,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "武汉市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "西安市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -439,6 +548,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "西安市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -514,6 +635,18 @@
       "coverage_status": "partial"
     },
     {
+      "city_name": "深圳市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "南昌市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -583,6 +716,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南昌市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -658,6 +803,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "广州市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "长沙市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -727,6 +884,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "长沙市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -802,6 +971,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "贵阳市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "沈阳市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -871,6 +1052,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "沈阳市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -946,6 +1139,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "哈尔滨市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "洛阳市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -1015,6 +1220,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "洛阳市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -1090,6 +1307,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "珠海市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "昆明市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -1159,6 +1388,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "昆明市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -1234,6 +1475,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "郑州市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "南宁市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -1303,6 +1556,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "南宁市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -1378,6 +1643,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "徐州市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "合肥市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -1450,6 +1727,18 @@
       "coverage_status": "partial"
     },
     {
+      "city_name": "合肥市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "苏州市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -1519,6 +1808,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "苏州市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -1594,6 +1895,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "福州市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "德阳市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -1663,6 +1976,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "德阳市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -1738,6 +2063,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "遂宁市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "济南市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -1807,6 +2144,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "济南市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -1882,6 +2231,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "厦门市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "金华市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -1951,6 +2312,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "金华市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     },
     {
@@ -2026,6 +2399,18 @@
       "coverage_status": "not_assessed"
     },
     {
+      "city_name": "天津市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
+      "coverage_status": "not_assessed"
+    },
+    {
       "city_name": "兰州市",
       "topic": "concert",
       "label": "演唱会与演出",
@@ -2095,6 +2480,18 @@
       "source_candidate_count": 0,
       "last_evidence_check_at": null,
       "discovery_status": "ok",
+      "coverage_status": "not_assessed"
+    },
+    {
+      "city_name": "兰州市",
+      "topic": "exam",
+      "label": "考试与招录",
+      "news_count": 0,
+      "activity_count": 0,
+      "dated_news_candidate_count": 0,
+      "source_candidate_count": 0,
+      "last_evidence_check_at": null,
+      "discovery_status": "not_run",
       "coverage_status": "not_assessed"
     }
   ]
