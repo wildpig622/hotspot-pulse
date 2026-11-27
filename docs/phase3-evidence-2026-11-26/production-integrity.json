@@ -1,0 +1,38 @@
+{
+  "before": {
+    "site/app.js": "471d4a427a519e9812e9db34ae937a3692ab83df7cc90d6ee62e31925cd7d9da",
+    "site/hotspot-client.mjs": "49410402bf2fb26f4ad055a3b79372f2f37205bc20efd8ae69560f4ab06df401",
+    "site/index.html": "0b248308b3af04873c183b8a514455b2b7e4fe3080f7d461e9b923a1c692c22a",
+    "site/share-image.js": "962c1a6d8460c53598427e9f4e3599b1b95d937ae2b11523312c678a8dc43f21",
+    "site/styles.css": "74418d7d02dde3d598cea277a4fb6d178ad2830c44a17524ca7c510b05ceed3a",
+    "site/api/v1/activities.json": "ea4907248e4c19627151fb52b2c47ffcf9e3dd89a3e3858f2a3ce72ef2c812fe",
+    "site/api/v1/cities.json": "5394711abb653a006d97ee6f2f54fd1b809270d8219af461a7bfafda20f23ebd",
+    "site/api/v1/coverage.json": "1706d36a2b7d469664139fb42f2bc33b84e18fc40532cf0d1df21b15573bee6b",
+    "site/api/v1/health.json": "28f5b07fc52b907d77a1142239ce5af7312a084d81b73ce056e414717ee0e187",
+    "site/api/v1/hotspots.json": "f70b142a3069146d9902e7ff7ff8b5cd9bfc7b365383617b29e7cfed077b5722",
+    "site/api/v2/changes.json": "24dc8d0411f8cf1e0a526733d68491e6d4ec95d099a3cebc1876dfa3dbdd61ce",
+    "site/api/v2/events.json": "38eb3ba98f96014775c846e0427044f309d5e15eed5ca11a11049accd418c291",
+    "site/api/v2/state.json": "f9812670d50ba2fd30339472266c2dee37243a572042039a6f9eda3017b52156"
+  },
+  "after": {
+    "site/app.js": "471d4a427a519e9812e9db34ae937a3692ab83df7cc90d6ee62e31925cd7d9da",
+    "site/hotspot-client.mjs": "49410402bf2fb26f4ad055a3b79372f2f37205bc20efd8ae69560f4ab06df401",
+    "site/index.html": "0b248308b3af04873c183b8a514455b2b7e4fe3080f7d461e9b923a1c692c22a",
+    "site/share-image.js": "962c1a6d8460c53598427e9f4e3599b1b95d937ae2b11523312c678a8dc43f21",
+    "site/styles.css": "74418d7d02dde3d598cea277a4fb6d178ad2830c44a17524ca7c510b05ceed3a",
+    "site/api/v1/activities.json": "ea4907248e4c19627151fb52b2c47ffcf9e3dd89a3e3858f2a3ce72ef2c812fe",
+    "site/api/v1/cities.json": "5394711abb653a006d97ee6f2f54fd1b809270d8219af461a7bfafda20f23ebd",
+    "site/api/v1/coverage.json": "1706d36a2b7d469664139fb42f2bc33b84e18fc40532cf0d1df21b15573bee6b",
+    "site/api/v1/health.json": "28f5b07fc52b907d77a1142239ce5af7312a084d81b73ce056e414717ee0e187",
+    "site/api/v1/hotspots.json": "f70b142a3069146d9902e7ff7ff8b5cd9bfc7b365383617b29e7cfed077b5722",
+    "site/api/v2/changes.json": "24dc8d0411f8cf1e0a526733d68491e6d4ec95d099a3cebc1876dfa3dbdd61ce",
+    "site/api/v2/events.json": "38eb3ba98f96014775c846e0427044f309d5e15eed5ca11a11049accd418c291",
+    "site/api/v2/state.json": "f9812670d50ba2fd30339472266c2dee37243a572042039a6f9eda3017b52156"
+  },
+  "unchanged": true,
+  "comparison_base": "c4c2c52",
+  "line_endings_normalized_for_git_reference": true,
+  "changed_site_paths_since_phase2": [],
+  "identical_to_phase2_base": true,
+  "main_comparison_note": "PR already contains Phase1 changes to public API/site relative to main. Phase3 does not regenerate or modify those snapshots."
+}

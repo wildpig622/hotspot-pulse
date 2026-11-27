@@ -1,0 +1,22 @@
+{
+  "exercise": "Isolated invocation of the formal refresh wrapper with an injected unavailable collector; no full production network run or workflow dispatch.",
+  "result": {
+    "collection_ok": false,
+    "data_updated": false,
+    "errors": [
+      "collection_failed"
+    ],
+    "last_successful_collection_at": "2026-11-26T18:06:18Z"
+  },
+  "v1_data_bytes_unchanged": true,
+  "business_state_unchanged": true,
+  "v2_event_ids_unchanged": true,
+  "v2_using_cached_data": true,
+  "business_reports_failure": true,
+  "v2_validation": {
+    "status": "PASS",
+    "errors": [],
+    "event_count": 3257,
+    "source_record_count": 3267
+  }
+}

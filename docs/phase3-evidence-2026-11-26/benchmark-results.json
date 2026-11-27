@@ -1,0 +1,1204 @@
+{
+  "method": "diagnostic_reference_comparison_not_independent_human_acceptance",
+  "references": 36,
+  "reference_families": 32,
+  "human_reviewed_references": 0,
+  "secondary_only_reference_count": 5,
+  "union_valid_reference_ids": [
+    "B02",
+    "B04",
+    "B06",
+    "B15",
+    "B16",
+    "B17",
+    "B18",
+    "B19",
+    "B20",
+    "B21",
+    "B22",
+    "B23",
+    "B24",
+    "B25",
+    "B26",
+    "B27",
+    "B28",
+    "B29",
+    "B32",
+    "B33",
+    "B34",
+    "B36"
+  ],
+  "by_reference_basis": [
+    {
+      "basis": "frozen_ticket_card",
+      "references": 15,
+      "valid_discoveries": 15,
+      "rate": 1.0
+    },
+    {
+      "basis": "independent_government_permission",
+      "references": 2,
+      "valid_discoveries": 0,
+      "rate": 0.0
+    },
+    {
+      "basis": "independent_secondary_calendar",
+      "references": 5,
+      "valid_discoveries": 4,
+      "rate": 0.8
+    },
+    {
+      "basis": "phase2_official",
+      "references": 13,
+      "valid_discoveries": 3,
+      "rate": 0.2308
+    },
+    {
+      "basis": "phase2_official_holdout",
+      "references": 1,
+      "valid_discoveries": 0,
+      "rate": 0.0
+    }
+  ],
+  "union_recall": 0.6111,
+  "non_secondary_recall": 0.5806,
+  "date_accuracy_on_matched_dated_records": {
+    "correct": 23,
+    "evaluated": 23,
+    "rate": 1.0
+  },
+  "wrong_date_records": 0,
+  "wrong_city_records": 0,
+  "city_accuracy_on_url_matched_records": {
+    "correct": 21,
+    "evaluated": 21,
+    "rate": 1.0
+  },
+  "false_positive_rate": null,
+  "false_positive_note": "Incomplete reference set; unreferenced output has not been independently adjudicated.",
+  "sources": [
+    {
+      "source_id": "baidu-web",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "bilibili-search",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "bilibili-ticket-index",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "cosgo-public-calendar",
+      "valid_reference_ids": [
+        "B20",
+        "B32",
+        "B33",
+        "B34",
+        "B36"
+      ],
+      "independent_discoveries": 5,
+      "reference_recall": 0.1389,
+      "unique_contribution": 4,
+      "incremental_in_alphabetic_source_order": 5
+    },
+    {
+      "source_id": "damai-index",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "douyin",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "jinan-association",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "jinan-education",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "jinan-government-education-qa",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "jinan-performances",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "national-cpta",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "national-neea",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "national-ntce",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "national-scs",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "national-yz",
+      "valid_reference_ids": [
+        "B06"
+      ],
+      "independent_discoveries": 1,
+      "reference_recall": 0.0278,
+      "unique_contribution": 1,
+      "incremental_in_alphabetic_source_order": 1
+    },
+    {
+      "source_id": "origin-hanzhong",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "sdu-conference",
+      "valid_reference_ids": [
+        "B04"
+      ],
+      "independent_discoveries": 1,
+      "reference_recall": 0.0278,
+      "unique_contribution": 1,
+      "incremental_in_alphabetic_source_order": 1
+    },
+    {
+      "source_id": "shaanxi-exam",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "shaanxi-personnel",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "shandong-exam",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "shandong-personnel",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "showstart",
+      "valid_reference_ids": [
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B19",
+        "B20",
+        "B21",
+        "B22",
+        "B23",
+        "B24",
+        "B25",
+        "B26",
+        "B27",
+        "B28",
+        "B29"
+      ],
+      "independent_discoveries": 15,
+      "reference_recall": 0.4167,
+      "unique_contribution": 14,
+      "incremental_in_alphabetic_source_order": 14
+    },
+    {
+      "source_id": "tianjin-convention",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "tianjin-education",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "tianjin-exam",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "tianjin-local-acg",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "tianjin-personnel",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "tju-conference",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "toutiao-search",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "tust-conference",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "weibo",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "xian-association",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "xian-convention",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "xian-education",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "xiaohongshu",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "xidian-graduate",
+      "valid_reference_ids": [],
+      "independent_discoveries": 0,
+      "reference_recall": 0.0,
+      "unique_contribution": 0,
+      "incremental_in_alphabetic_source_order": 0
+    },
+    {
+      "source_id": "xjtu-conference",
+      "valid_reference_ids": [
+        "B02"
+      ],
+      "independent_discoveries": 1,
+      "reference_recall": 0.0278,
+      "unique_contribution": 1,
+      "incremental_in_alphabetic_source_order": 1
+    }
+  ],
+  "data": [
+    {
+      "benchmark_id": "B01",
+      "reference_name": "ICCLL 2027",
+      "category": "conference",
+      "basis": "phase2_official_holdout",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B02",
+      "reference_name": "数字赋能高校外语教师发展研讨会",
+      "category": "conference",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "off_1cf212722b4c"
+      ],
+      "sources": [
+        "xjtu-conference"
+      ],
+      "correct_record_ids": [
+        "off_1cf212722b4c"
+      ]
+    },
+    {
+      "benchmark_id": "B03",
+      "reference_name": "FICMSS 2027",
+      "category": "conference",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B04",
+      "reference_name": "区域国别研究与国家语言能力建设学术研讨会",
+      "category": "conference",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "off_230eef02680c"
+      ],
+      "sources": [
+        "sdu-conference"
+      ],
+      "correct_record_ids": [
+        "off_230eef02680c"
+      ]
+    },
+    {
+      "benchmark_id": "B05",
+      "reference_name": "文明互鉴与区域国别学术研讨会",
+      "category": "conference",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B06",
+      "reference_name": "2027全国硕士研究生招生考试初试",
+      "category": "exam",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [
+        "off_08737feb483f",
+        "off_0f962003b651",
+        "off_4adac0390c88",
+        "off_5620a9e11827",
+        "off_5ba7f5277668",
+        "off_9285d9fff015",
+        "off_a2ec5ac4ed25",
+        "off_d9398c53933e",
+        "off_e5741433da95"
+      ],
+      "sources": [
+        "national-yz"
+      ],
+      "correct_record_ids": [
+        "off_5ba7f5277668"
+      ]
+    },
+    {
+      "benchmark_id": "B07",
+      "reference_name": "2027国考公共科目笔试",
+      "category": "exam",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B08",
+      "reference_name": "天津考区研究生初试",
+      "category": "exam",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B09",
+      "reference_name": "天津公务员公共科目笔试",
+      "category": "exam",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [
+        "off_26d6f7a6b0a7",
+        "off_bffde6911842"
+      ],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B10",
+      "reference_name": "天津公务员专业科目笔试",
+      "category": "exam",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [
+        "off_26d6f7a6b0a7",
+        "off_bffde6911842"
+      ],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B11",
+      "reference_name": "济南义务教育寒假",
+      "category": "calendar",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B12",
+      "reference_name": "济南高中寒假",
+      "category": "calendar",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B13",
+      "reference_name": "济南义务教育暑假",
+      "category": "calendar",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B14",
+      "reference_name": "济南高中暑假",
+      "category": "calendar",
+      "basis": "phase2_official",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B15",
+      "reference_name": "苏堤春晓",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_25d8ee2aba96"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_25d8ee2aba96"
+      ]
+    },
+    {
+      "benchmark_id": "B16",
+      "reference_name": "L2L说唱派对巡演西安站",
+      "category": "niche",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_7299dcefee33"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_7299dcefee33"
+      ]
+    },
+    {
+      "benchmark_id": "B17",
+      "reference_name": "杭盖乐队2026巡演西安站",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_9b872ef73e89"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_9b872ef73e89"
+      ]
+    },
+    {
+      "benchmark_id": "B18",
+      "reference_name": "Mars Soil土壤",
+      "category": "niche",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_bc37cacf0821"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_bc37cacf0821"
+      ]
+    },
+    {
+      "benchmark_id": "B19",
+      "reference_name": "琴韵交响古典华章",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_d9377818a555"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_d9377818a555"
+      ]
+    },
+    {
+      "benchmark_id": "B20",
+      "reference_name": "李滇滇冬季巡演济南",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 2,
+      "valid_discovery": true,
+      "correct_date_records": 2,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_28ce37563001",
+        "src_a64ed3280a27"
+      ],
+      "sources": [
+        "cosgo-public-calendar",
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_28ce37563001",
+        "src_a64ed3280a27"
+      ]
+    },
+    {
+      "benchmark_id": "B21",
+      "reference_name": "郁乐队惊恐症济南",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_f68294d38fd7"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_f68294d38fd7"
+      ]
+    },
+    {
+      "benchmark_id": "B22",
+      "reference_name": "吕思清德奥之声济南",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_70102be2b621"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_70102be2b621"
+      ]
+    },
+    {
+      "benchmark_id": "B23",
+      "reference_name": "東聲再起vol3",
+      "category": "niche",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_7088c8934100"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_7088c8934100"
+      ]
+    },
+    {
+      "benchmark_id": "B24",
+      "reference_name": "婿事待发济南",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_7c7e77d1baa9"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_7c7e77d1baa9"
+      ]
+    },
+    {
+      "benchmark_id": "B25",
+      "reference_name": "危房改造香火天津",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_1b527762874f"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_1b527762874f"
+      ]
+    },
+    {
+      "benchmark_id": "B26",
+      "reference_name": "卡农爱乐之城天津",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_36a3c9fe77a4"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_36a3c9fe77a4"
+      ]
+    },
+    {
+      "benchmark_id": "B27",
+      "reference_name": "罪有应得天津",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_7341849e1988"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_7341849e1988"
+      ]
+    },
+    {
+      "benchmark_id": "B28",
+      "reference_name": "新世纪singing天津UDG",
+      "category": "niche",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_785ad49ce05b"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_785ad49ce05b"
+      ]
+    },
+    {
+      "benchmark_id": "B29",
+      "reference_name": "魔法的世界天津",
+      "category": "performance",
+      "basis": "frozen_ticket_card",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_8357a9f38f03"
+      ],
+      "sources": [
+        "showstart"
+      ],
+      "correct_record_ids": [
+        "src_8357a9f38f03"
+      ]
+    },
+    {
+      "benchmark_id": "B30",
+      "reference_name": "我们的歌2027跨年演唱会",
+      "category": "performance",
+      "basis": "independent_government_permission",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B31",
+      "reference_name": "理查德克莱德曼爱永恒济南",
+      "category": "performance",
+      "basis": "independent_government_permission",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B32",
+      "reference_name": "天津盗墓笔记张起灵生日会",
+      "category": "niche",
+      "basis": "independent_secondary_calendar",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_f4d9add3fc72"
+      ],
+      "sources": [
+        "cosgo-public-calendar"
+      ],
+      "correct_record_ids": [
+        "src_f4d9add3fc72"
+      ]
+    },
+    {
+      "benchmark_id": "B33",
+      "reference_name": "天津次元Word动漫展x忆梦",
+      "category": "exhibition",
+      "basis": "independent_secondary_calendar",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_dcdf8729f27c"
+      ],
+      "sources": [
+        "cosgo-public-calendar"
+      ],
+      "correct_record_ids": [
+        "src_dcdf8729f27c"
+      ]
+    },
+    {
+      "benchmark_id": "B34",
+      "reference_name": "天津津门学园Fes同人only",
+      "category": "niche",
+      "basis": "independent_secondary_calendar",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_2f92797b18c4"
+      ],
+      "sources": [
+        "cosgo-public-calendar"
+      ],
+      "correct_record_ids": [
+        "src_2f92797b18c4"
+      ]
+    },
+    {
+      "benchmark_id": "B35",
+      "reference_name": "西安IW无限世界SP01头号玩家",
+      "category": "exhibition",
+      "basis": "independent_secondary_calendar",
+      "human_reviewed": false,
+      "candidate_discovered": false,
+      "dated_outputs": 0,
+      "valid_discovery": false,
+      "correct_date_records": 0,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 0,
+      "matching_record_ids": [],
+      "sources": [],
+      "correct_record_ids": []
+    },
+    {
+      "benchmark_id": "B36",
+      "reference_name": "济南幻樱动漫游戏嘉年华25",
+      "category": "exhibition",
+      "basis": "independent_secondary_calendar",
+      "human_reviewed": false,
+      "candidate_discovered": true,
+      "dated_outputs": 1,
+      "valid_discovery": true,
+      "correct_date_records": 1,
+      "wrong_date_records": 0,
+      "wrong_city_records": 0,
+      "city_unresolved_records": 0,
+      "url_city_evaluated": 1,
+      "matching_record_ids": [
+        "src_888c5fc3b12f"
+      ],
+      "sources": [
+        "cosgo-public-calendar"
+      ],
+      "correct_record_ids": [
+        "src_888c5fc3b12f"
+      ]
+    }
+  ]
+}

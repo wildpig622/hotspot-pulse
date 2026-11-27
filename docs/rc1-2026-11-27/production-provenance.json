@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-11-27T03:11:42.214725+00:00",
+  "production_data_commit": "20911332dc7881cde49e25a07e264617367256dd",
+  "production_workflow_code_commit": "2f74df4bddf1b57336e63c63487ad7d2d54d805b",
+  "latest_successful_service_run": 45873151261,
+  "production_collect_job": 140093425755,
+  "production_publish_job": 140095065474,
+  "evidence": "Existing successful collect log records creation/push of 2091133 before uploading site; existing publish job succeeded. This is read-only historical inspection, not a new dispatch.",
+  "online_reads": [
+    {
+      "path": "index.html",
+      "checked_at": "2026-11-27T03:11:40.235327+00:00",
+      "http_status": 200,
+      "sha256": "2b275542e1bb64ca621aa7482b0fbb96070e2e7495001c6c326ba2b01c44a3a8",
+      "matches_main_bytes": true,
+      "bytes": 8251
+    },
+    {
+      "path": "app.js",
+      "checked_at": "2026-11-27T03:11:40.859264+00:00",
+      "http_status": 200,
+      "sha256": "9f970e5bfce8be2d19038dc288913793bb7f4a0adc32fcffbdfc35eba309e7e7",
+      "matches_main_bytes": true,
+      "bytes": 42799
+    },
+    {
+      "path": "api/v1/health.json",
+      "checked_at": "2026-11-27T03:11:41.464180+00:00",
+      "http_status": 200,
+      "sha256": "6c304235f89110830008d6d24e2104921e6df63e0994470929e5d521c46ff20e",
+      "matches_main_bytes": true,
+      "bytes": 192218,
+      "last_run_at": "2026-11-26T18:06:18Z",
+      "health_status": "healthy"
+    }
+  ],
+  "triggered_production_jobs": 0
+}

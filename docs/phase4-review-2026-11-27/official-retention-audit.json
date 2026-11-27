@@ -1,0 +1,36 @@
+{
+  "phase2_official": 12,
+  "phase3_missing_record_ids": [
+    "off_95ad746a19c1",
+    "off_4e9ff1b2d939",
+    "off_4e8264020730",
+    "off_c920f35ea2ff",
+    "off_04f5d5bcf753",
+    "off_7a191ac7f8bf",
+    "off_29537fcfce98",
+    "off_43270b95cd9c",
+    "off_fc5e0551c22b",
+    "off_daef9e3fbe9f"
+  ],
+  "root_cause": "phase3_report builds all_rows from current discovery and public listings only; previous official rows were used solely to preserve matching IDs, never unioned into the calendar.",
+  "additional_causes": [
+    "national source TLS/connection failures",
+    "dynamic calendar columns return no article links",
+    "calendar multi-window rows deliberately held by parser"
+  ],
+  "fixed_in": "Phase4 fused review layer; still-valid records retained without changing IDs, review status or original evidence timestamps.",
+  "retained_ids": [
+    "off_1cf212722b4c",
+    "off_95ad746a19c1",
+    "off_4e9ff1b2d939",
+    "off_4e8264020730",
+    "off_29537fcfce98",
+    "off_43270b95cd9c",
+    "off_fc5e0551c22b",
+    "off_daef9e3fbe9f",
+    "off_230eef02680c",
+    "off_c920f35ea2ff",
+    "off_04f5d5bcf753",
+    "off_7a191ac7f8bf"
+  ]
+}

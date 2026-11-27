@@ -1,0 +1,15 @@
+{
+ "method":"Evaluation-only holdouts from independent official performance permissions already read in Phase3. Names/URLs absent from initial search inputs and agent decisions. Not an independent human blind adjudication; acceptance metrics remain null.",
+ "human_review_status":"pending",
+ "positives":[
+  {"id":"H01","city_name":"济南市","event_name":"我们的歌2027跨年演唱会","start_at":"2026-12-31","source_url":"https://zwfw.jinan.gov.cn/col/col58015/art/2026/art_850f05c74ea54b709e439d08aa26c9d9.html"},
+  {"id":"H02","city_name":"济南市","event_name":"理查德克莱德曼爱永恒音乐会","start_at":"2026-12-26","source_url":"https://mct.gov.cn/zwfw/wycx/qgswyyxychd/qgswyyxychdjg/xq/?id=781b85005e3a4eb3ef0f51fff0209d41"}
+ ],
+ "negative_controls":[
+  {"id":"N01","case":"周华健天津11月14至22日","reason":"2026-11-27观察时点已结束，不进入未来需求清单","source_url":"https://news.enorth.com.cn/system/2026/09/07/059736705.shtml"},
+  {"id":"N02","case":"济南济微学校秋假11月4至6日","reason":"过去且仅指定学段，不能当未来全市假期","source_url":"https://k.sina.com.cn/article_5328858693_13d9fee4502002ihak.html"},
+  {"id":"N03","case":"开票或发帖11月24日","reason":"不是演出日，也不是售罄证据","source_url":"https://sina.cn/news/detail/5367995331510509.html"},
+  {"id":"N04","case":"全国研究生统一日期","reason":"没有地方考区证据不能直接推定三城需求","source_url":"https://yz.chsi.com.cn/yzwb/"},
+  {"id":"N05","case":"旧济南校历2026寒暑假","reason":"不能冒充2027学年，也不能用学校假期推定酒店需求必增","source_url":"https://jnedu.jinan.gov.cn/cms_files/complat3/57/attach/20257/439a30e279814e84823fecf45e801beb.pdf"}
+ ]
+}

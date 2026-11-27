@@ -1,0 +1,561 @@
+[
+  {
+    "url": "https://sina.cn/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:23Z",
+    "http_status": 200,
+    "sha256": "aaff720e3d66244c0e66f69c2df72fcc4d34e1f2071f2fe59713056f526d9bfd",
+    "bytes": 341,
+    "elapsed_seconds": 0.203
+  },
+  {
+    "url": "https://www.sina.cn/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:23Z",
+    "http_status": 200,
+    "sha256": "77206b3c0e43813b5a062cf9acd69898663a794082239fd61579280c921ac10a",
+    "bytes": 345,
+    "elapsed_seconds": 0.219
+  },
+  {
+    "url": "https://www.thepaper.cn/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:23Z",
+    "http_status": 200,
+    "sha256": "a6b7b7f73db876183f9fa9d7bc0d02c06a9ccfa972bedc1163586a2bd76394cf",
+    "bytes": 56865,
+    "elapsed_seconds": 0.516
+  },
+  {
+    "url": "https://www.sina.cn/news/detail/5368035080146914.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:24Z",
+    "http_status": 200,
+    "sha256": "7c8796f8de5abfa12f02270f505ad398830c57a718ed9181e68c04bed41cb8ea",
+    "bytes": 47029,
+    "elapsed_seconds": 0.234
+  },
+  {
+    "url": "https://www.thepaper.cn/newsDetail_forward_34452838",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:24Z",
+    "http_status": 200,
+    "sha256": "25ba39ab5a1cc8b2aed3aa115dbb14d7d080914316de2f7b933ce4f6669eed30",
+    "bytes": 45279,
+    "elapsed_seconds": 0.359
+  },
+  {
+    "url": "https://feng.ifeng.com/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:25Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.235,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://sina.cn/news/detail/5367995331510509.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:24Z",
+    "http_status": 200,
+    "sha256": "a53523a644d6b92c9112d44f5ebc8236dd91c573ac6da3356872b51614cd93f8",
+    "bytes": 44956,
+    "elapsed_seconds": 0.984
+  },
+  {
+    "url": "https://www.61893.com/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:25Z",
+    "http_status": 200,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "elapsed_seconds": 0.844
+  },
+  {
+    "url": "https://feng.ifeng.com/c/8xxZfca1753",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:26Z",
+    "http_status": 200,
+    "sha256": "7df992115bfe071c15ab084ea7c81c7afb849656224ab4813c95d184849b52a3",
+    "bytes": 50307,
+    "elapsed_seconds": 0.438
+  },
+  {
+    "url": "https://www.61893.com/s-2-3fda7cb04e8cb700/",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:26Z",
+    "http_status": 200,
+    "sha256": "f7d20e6b28073e0b2ac0063b39987cd96f6b128a474df4c76c492348715433d3",
+    "bytes": 22300,
+    "elapsed_seconds": 0.594
+  },
+  {
+    "url": "https://news.enorth.com.cn/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:26Z",
+    "http_status": 200,
+    "sha256": "2c0f76ae2d26f13dbdfc883e6814ac8b7d67f808fd3ab15f182b33327f72427f",
+    "bytes": 24,
+    "elapsed_seconds": 0.313
+  },
+  {
+    "url": "https://www.thepaper.cn/newsDetail_forward_34402452",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:26Z",
+    "http_status": 200,
+    "sha256": "290d8f15b3824fb299b40d41f96343cd15047aee325404c9a18ec488bf0b95cb",
+    "bytes": 28497,
+    "elapsed_seconds": 0.75
+  },
+  {
+    "url": "https://tj.bendibao.com/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:27Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.234,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://www.have-tickets.com/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:25Z",
+    "http_status": 200,
+    "sha256": "e571a62b0dde943f4fa6880b0e29d4a0408009602c850b516433c701701e2d86",
+    "bytes": 401,
+    "elapsed_seconds": 2.204
+  },
+  {
+    "url": "https://news.enorth.com.cn/system/2026/09/03/059725246.shtml",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:27Z",
+    "http_status": 200,
+    "sha256": "8953d1ab7aff7f3fef71aa99450706e236153d822993e99cd6f80b7bc736d874",
+    "bytes": 45168,
+    "elapsed_seconds": 0.391
+  },
+  {
+    "url": "https://tj.bendibao.com/xiuxian/202691/173704.shtm",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:28Z",
+    "http_status": 200,
+    "sha256": "fc02e62ff4a1230285f2e0322772c6685d176493f1f6f763d3bad7572625ed24",
+    "bytes": 56628,
+    "elapsed_seconds": 0.359
+  },
+  {
+    "url": "https://www.ncectj.com/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:28Z",
+    "http_status": 200,
+    "sha256": "adbd2ec356965f7e93329fdef92be705849451fbde82a7707c425ee8c336938d",
+    "bytes": 61888,
+    "elapsed_seconds": 0.859
+  },
+  {
+    "url": "https://www.cmeshow.cn/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:28Z",
+    "http_status": null,
+    "elapsed_seconds": 0.188,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>",
+    "error_type": "URLError"
+  },
+  {
+    "url": "https://www.cmeshow.cn/",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "blocked",
+    "checked_at": "2026-11-27T02:04:29Z",
+    "error": "robots_or_host_denial"
+  },
+  {
+    "url": "https://www.chenghuaex.com/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:29Z",
+    "http_status": 200,
+    "sha256": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+    "bytes": 24,
+    "elapsed_seconds": 0.89
+  },
+  {
+    "url": "https://www.ncectj.com/",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:29Z",
+    "http_status": 200,
+    "sha256": "adbd2ec356965f7e93329fdef92be705849451fbde82a7707c425ee8c336938d",
+    "bytes": 61888,
+    "elapsed_seconds": 0.812
+  },
+  {
+    "url": "https://jnhrss.jinan.gov.cn/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:29Z",
+    "http_status": 200,
+    "sha256": "a78c670fd6660413bfc4b336812ce78225c7eebb27d6eeb39175181c2c70eb94",
+    "bytes": 76755,
+    "elapsed_seconds": 0.485
+  },
+  {
+    "url": "https://www.chenghuaex.com/index.php",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:30Z",
+    "http_status": 200,
+    "sha256": "9588fb0e326ab7e4fdb0eff1e32699193b779f889f1be88bd11ba7c9860c8db3",
+    "bytes": 39673,
+    "elapsed_seconds": 0.515
+  },
+  {
+    "url": "https://gr.xidian.edu.cn/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:30Z",
+    "http_status": null,
+    "elapsed_seconds": 0.11,
+    "error": "Remote end closed connection without response",
+    "error_type": "RemoteDisconnected"
+  },
+  {
+    "url": "https://gr.xidian.edu.cn/info/1074/20864.htm",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "blocked",
+    "checked_at": "2026-11-27T02:04:30Z",
+    "error": "robots_or_host_denial"
+  },
+  {
+    "url": "https://yz.chsi.com.cn/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:30Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.172,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://www.have-tickets.com/web/detail/bXkxeTAvRnQ4RkRZYnRkY0tuRXo5Zz09.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:28Z",
+    "http_status": 200,
+    "sha256": "ccd95fdf002b1498d3bba16923fc7c0a445a1f788405f6828a8d05f0339683f3",
+    "bytes": 116291,
+    "elapsed_seconds": 2.937
+  },
+  {
+    "url": "https://jnhrss.jinan.gov.cn/col/col18309/art/2026/art_c9023da22f034149aa512e23fd1fc7ec.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:30Z",
+    "http_status": 200,
+    "sha256": "c00b5ca76d3c6590c4e341d21be5799041b1d23e7be04311e09406477cbd8bda",
+    "bytes": 29603,
+    "elapsed_seconds": 0.344
+  },
+  {
+    "url": "https://sfs.xjtu.edu.cn/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:31Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.078,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://www.sina.cn/media/5109202031",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:31Z",
+    "http_status": 200,
+    "sha256": "d1514071a1bbbbbeb805a2559854912ce4743279716cb151669d838dcc221a68",
+    "bytes": 290851,
+    "elapsed_seconds": 0.406
+  },
+  {
+    "url": "https://cmcs.chd.edu.cn/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:31Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.11,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://yz.chsi.com.cn/yzwb/",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:31Z",
+    "http_status": 200,
+    "sha256": "99644587d587329e3bfa124d7bd5d3deec497a711a09d174231f544c4647b8aa",
+    "bytes": 65458,
+    "elapsed_seconds": 0.297
+  },
+  {
+    "url": "https://www.moe.gov.cn/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:31Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.328,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://sfs.xjtu.edu.cn/info/1243/9348.htm",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:32Z",
+    "http_status": 200,
+    "sha256": "a418c6c08cb9c101ebd024f603c0e22e51e4ad63d94c23e1ce883015ee4ce5f0",
+    "bytes": 49066,
+    "elapsed_seconds": 0.078
+  },
+  {
+    "url": "https://www.beijing.gov.cn/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:32Z",
+    "http_status": 200,
+    "sha256": "3303c722517919618c28ae5acaddb7876fc7916467f21bb2f9ab684f9a35a0fb",
+    "bytes": 592,
+    "elapsed_seconds": 0.156
+  },
+  {
+    "url": "https://cmcs.chd.edu.cn/2026/1010/c8633a262954/page.htm",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:32Z",
+    "http_status": 200,
+    "sha256": "6bbeccff4614a794ce39e70bc809be827deb9e4b86978687bd016304ac318588",
+    "bytes": 50977,
+    "elapsed_seconds": 0.094
+  },
+  {
+    "url": "https://www.moe.gov.cn/srcsite/A15/moe_778/s3261/202609/t20260923_1451734.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:32Z",
+    "http_status": 200,
+    "sha256": "33a54508d6f870ec8445a2c5ba66511f9c461f0b795dec29dfa85a8e6cfffc2d",
+    "bytes": 77955,
+    "elapsed_seconds": 0.375
+  },
+  {
+    "url": "https://www.beijing.gov.cn/cs/gncs/csbmts/202611/t20261116_4948266.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:33Z",
+    "http_status": 200,
+    "sha256": "4f938425e86c051ad882bd854b9dd0790d1e975c4721a36b1b5d75648f9c8b48",
+    "bytes": 32272,
+    "elapsed_seconds": 0.172
+  },
+  {
+    "url": "https://www.jinan.gov.cn/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:33Z",
+    "http_status": 200,
+    "sha256": "f8e8d72533be4a4d63d618fe84a9b6b37258a4c00dd3248268da2fdfe671f3de",
+    "bytes": 226685,
+    "elapsed_seconds": 0.734
+  },
+  {
+    "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:34Z",
+    "http_status": 200,
+    "sha256": "aa4a3b6112a06e848dd406e3e83ced32ddb5116cf9a3539b1509a3680ba7f0a1",
+    "bytes": 9723,
+    "elapsed_seconds": 0.344
+  },
+  {
+    "url": "https://www.flc.sdu.edu.cn/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:34Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.312,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://www.flc.sdu.edu.cn/info/1150/23835.htm",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:35Z",
+    "http_status": 200,
+    "sha256": "22e7b0e6af88cb7ba66259ddb8dc633d8d2c89d7f14ee0321ab68b2623ca972c",
+    "bytes": 17891,
+    "elapsed_seconds": 0.219
+  },
+  {
+    "url": "https://www.tj.gov.cn/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:32Z",
+    "http_status": null,
+    "elapsed_seconds": 10.031,
+    "error": "<urlopen error _ssl.c:993: The handshake operation timed out>",
+    "error_type": "URLError"
+  },
+  {
+    "url": "https://www.tj.gov.cn/zmhd/hygqx/202610/t20261009_7390056.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "blocked",
+    "checked_at": "2026-11-27T02:04:42Z",
+    "error": "robots_or_host_denial"
+  },
+  {
+    "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "blocked",
+    "checked_at": "2026-11-27T02:04:42Z",
+    "error": "robots_or_host_denial"
+  },
+  {
+    "url": "https://www.showstart.com/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:04:42Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.203,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+    "role": "traditional_listing",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:43Z",
+    "http_status": 200,
+    "sha256": "014c8281e799208d54c5a4c1256dbb12b466dcddfc51056a92634841e96ce692",
+    "bytes": 100037,
+    "elapsed_seconds": 1.062
+  },
+  {
+    "url": "https://www.showstart.com/event/list?cityCode=531&pageNo=1",
+    "role": "traditional_listing",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:44Z",
+    "http_status": 200,
+    "sha256": "181f9b9ec5c2c107bd2692d50d68cdd19e074c61185ec2baa30168d39820a9f3",
+    "bytes": 98739,
+    "elapsed_seconds": 2.344
+  },
+  {
+    "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=1",
+    "role": "traditional_listing",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:47Z",
+    "http_status": 200,
+    "sha256": "64595aa825ef1c3ec16eeff08455c36b9b1602b9c1615ece3e81e9b6aecdcc78",
+    "bytes": 100826,
+    "elapsed_seconds": 0.516
+  },
+  {
+    "url": "https://www.bing.com/robots.txt",
+    "role": "robots",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:04:47Z",
+    "http_status": 200,
+    "sha256": "40d2da70c3b443225d5b01cc7b05117944980347637cc95ab285c6e4f5548235",
+    "bytes": 2676,
+    "elapsed_seconds": 1.797
+  },
+  {
+    "url": "https://www.bing.com/search?format=rss&q=%E8%A5%BF%E5%AE%89+%E6%9C%AA%E6%9D%A5365%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E6%96%B9",
+    "role": "anonymous_search_probe",
+    "status": "blocked",
+    "checked_at": "2026-11-27T02:04:49Z",
+    "error": "robots_or_host_denial"
+  },
+  {
+    "url": "https://www.bing.com/search?format=rss&q=%E6%B5%8E%E5%8D%97+%E6%9C%AA%E6%9D%A5365%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E6%96%B9",
+    "role": "anonymous_search_probe",
+    "status": "blocked",
+    "checked_at": "2026-11-27T02:04:49Z",
+    "error": "robots_or_host_denial"
+  },
+  {
+    "url": "https://www.bing.com/search?format=rss&q=%E5%A4%A9%E6%B4%A5+%E6%9C%AA%E6%9D%A5365%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E6%96%B9",
+    "role": "anonymous_search_probe",
+    "status": "blocked",
+    "checked_at": "2026-11-27T02:04:49Z",
+    "error": "robots_or_host_denial"
+  },
+  {
+    "url": "https://www.iccll.org/robots.txt",
+    "role": "robots",
+    "status": "failed",
+    "checked_at": "2026-11-27T02:09:34Z",
+    "http_status": 404,
+    "elapsed_seconds": 0.469,
+    "error": "HTTP Error 404: Not Found",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://www.iccll.org/",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:09:35Z",
+    "http_status": 200,
+    "sha256": "ee351ecbfa044d0e8395bc95c4d2472a3b8fdf4c9e10fdca651e3796e706737b",
+    "bytes": 33106,
+    "elapsed_seconds": 0.641
+  },
+  {
+    "url": "https://feng.ifeng.com/c/8yKyFYwjxpn",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:11:55Z",
+    "http_status": 200,
+    "sha256": "618fe0b02b6de2b0e457f50af5c5218a9d1e637e5e919675deea116e6a154477",
+    "bytes": 63516,
+    "elapsed_seconds": 0.282
+  },
+  {
+    "url": "https://www.sina.cn/news/detail/5368771845818684.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:11:55Z",
+    "http_status": 200,
+    "sha256": "be93ef3af97314662470eaf76625708db6ac04153303cc641cd233b7e6f29915",
+    "bytes": 27406,
+    "elapsed_seconds": 0.313
+  },
+  {
+    "url": "https://www.sina.cn/news/detail/5368758589195685.html",
+    "role": "decision_crosscheck_not_discovery",
+    "status": "ok",
+    "checked_at": "2026-11-27T02:11:56Z",
+    "http_status": 200,
+    "sha256": "699e7588f117a5cbd6b630dcac8f8c7ce02c0eb8f18dc164a604373359016ba7",
+    "bytes": 46621,
+    "elapsed_seconds": 0.313
+  }
+]

@@ -1,0 +1,1058 @@
+[
+  {
+    "event_id": "src_bc37cacf0821",
+    "event_name": "11.27 Mars Soil 土壤",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "Mars艺术展演空间",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_25d8ee2aba96",
+    "event_name": "中国国家话剧院出品｜辛柏青主演话剧 《苏堤春晓》",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西安·开元大剧院",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_7299dcefee33",
+    "event_name": "L2L说唱派对巡演西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西演SPACE·福星现场",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_d9377818a555",
+    "event_name": "琴韵交响・古典华章 —格里格钢协与勃一交响曲音乐会",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西安浐灞保利大剧院",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_ea683b64d816",
+    "event_name": "许钧「我“爱”世界」2026巡演-西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西演SPACE·车库LIVE",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_9b872ef73e89",
+    "event_name": "杭盖乐队2026巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西演SPACE·光圈CLUB",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_28006e7c2809",
+    "event_name": "Start Journey Idol Fes-FUYU- SJIF冬",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西演SPACE·车库LIVE",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_30eb515d67d9",
+    "event_name": "《岁月鎏金•第一季》香港影视辉煌三十年经典金曲音乐会",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西安浐灞保利大剧院",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_d522b534d2f4",
+    "event_name": "「前进」系列联合演出西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "VeinLab未来俱乐部",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_b6fc84173709",
+    "event_name": "閏×虎啸春「风生旷野」联合专场 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西演SPACE·光圈CLUB",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_e6e3b8492ee4",
+    "event_name": "西安·熊猫合唱团·我们的歌专场音乐会·西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西安音乐厅",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_f91cf2ca821e",
+    "event_name": "【售罄】张方钊「蛋巡」2026巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西演SPACE·塞斯拾陆",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_574d2859f850",
+    "event_name": "上海话剧艺术中心出品｜国风悬疑舞台剧《清明上河图密码》",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西安·开元大剧院",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_9540ed6c1d1b",
+    "event_name": "百老汇经典摇滚音乐剧《HEDWIG》（海德薇）中文版",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "陕西大剧院",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_9579b84c7e87",
+    "event_name": "五月回声乐队｜首张专辑《存在的意义》 巡演·西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "LANNE烂泥",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_32b1c43a40bb",
+    "event_name": "广顺社团「街霸」2026巡演--西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "Mars艺术展演空间",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_cf6a0861f1b1",
+    "event_name": "蒋明&空山乐队2026巡演西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "venue_name": "西演SPACE·B2 LIVE",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:43Z",
+    "last_evidence_check_at": "2026-11-27T02:04:43Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_28ce37563001",
+    "event_name": "Hello 今晚有空吗？- 李滇滇冬季巡演 济南站",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "Modernsky Lab济南",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_f68294d38fd7",
+    "event_name": "郁乐队2026-2027“惊恐症”巡演-济南站",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "济南 CaperLand雀跃之地",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_7088c8934100",
+    "event_name": "常规演出vol.3 東聲再起",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "Modernsky Lab济南",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "routine_local",
+      "reason": "routine_entertainment",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_70102be2b621",
+    "event_name": "“德奥之声”——吕思清小提琴独奏音乐会",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "山东省会大剧院",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_7c7e77d1baa9",
+    "event_name": "【特返场】开心麻花爆笑舞台剧《婿事待发》",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "济南高新区开心麻花剧场",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_dcc6d1cda891",
+    "event_name": "A公馆摇滚铁人三项2026巡演 济南站",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "济南 CaperLand雀跃之地",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_52a15466d47a",
+    "event_name": "【济南】齐爱云、张涛、同超领衔主演“秦腔名家专场”—《游西湖—鬼怨·杀生》《清风亭》",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "山东省会大剧院歌剧厅",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_d40c2ff7a6ff",
+    "event_name": "“秦腔名家专场”—《游西湖—鬼怨·杀生》《清风亭》",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "山东省会大剧院",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_31c3f1150cc7",
+    "event_name": "「她想去的地方」葡萄不愤怒2026巡演 济南站",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "济南 CaperLand雀跃之地",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_cffb527a2a3a",
+    "event_name": "脱口秀/即兴喜剧/i新喜剧开放麦|每天爆笑必打卡|文化西路|小明喜剧【脱口秀人气剧场】",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "ccpark创意港十楼小剧场",
+    "start_at": "2026-12-01",
+    "end_at": "2026-12-01",
+    "sessions": [
+      {
+        "start_at": "2026-12-01",
+        "end_at": "2026-12-01"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "routine_local",
+      "reason": "routine_entertainment",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_21c8874bde63",
+    "event_name": "曹禺经典话剧《雷雨》",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "济南剧院",
+    "start_at": "2026-12-04",
+    "end_at": "2026-12-04",
+    "sessions": [
+      {
+        "start_at": "2026-12-04",
+        "end_at": "2026-12-04"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_222b9fce6242",
+    "event_name": "悲伤玩具2026巡演「谁要来打扰我的乌托邦」济南站",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "Modernsky Lab济南",
+    "start_at": "2026-12-04",
+    "end_at": "2026-12-04",
+    "sessions": [
+      {
+        "start_at": "2026-12-04",
+        "end_at": "2026-12-04"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_96f910a50ad9",
+    "event_name": "2026廿艾·低苦艾20周年巡演济南站",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "济南 CaperLand雀跃之地",
+    "start_at": "2026-12-04",
+    "end_at": "2026-12-04",
+    "sessions": [
+      {
+        "start_at": "2026-12-04",
+        "end_at": "2026-12-04"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_21e8470f77b2",
+    "event_name": "爆笑脱口秀&即兴喜剧秀|小明喜剧（静心宿集店）|即兴喜剧秀|爆笑解压|60分钟",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "小明喜剧（静心宿集店）",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "routine_local",
+      "reason": "routine_entertainment",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_0ad9a24f0a44",
+    "event_name": "月影咏叹调——亚当·科斯米埃加钢琴独奏音乐会",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "山东省会大剧院",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "src_feb51799316a",
+    "event_name": "2026那奇沃夫“Number One Boy”Tour 济南站",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "city_slug": "jinan",
+    "venue_name": "Modernsky Lab济南",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:44Z",
+    "last_evidence_check_at": "2026-11-27T02:04:44Z",
+    "source_urls": [],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  }
+]

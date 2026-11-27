@@ -9,6 +9,15 @@ def validate(events,changes):
     errors=[];ids=set();members=set()
     meta=events.get('meta',{})
     if meta.get('api_version')!='v2' or meta.get('schema_version')!='2.0':errors.append('unsupported_contract_version')
+    catalog=meta.get('topic_catalog')
+    if catalog is not None:
+        keys=[row.get('key') for row in catalog if isinstance(row,dict)]
+        if not keys or any(not key for key in keys) or len(keys)!=len(set(keys)):errors.append('invalid_topic_catalog')
+        if meta.get('topic_count')!=len(keys):errors.append('topic_count_mismatch')
+        if meta.get('topic_keys') is not None and meta.get('topic_keys')!=keys:errors.append('topic_key_order_mismatch')
+    route_keys=meta.get('query_route_keys')
+    if route_keys is not None and (not route_keys or len(route_keys)!=len(set(route_keys)) or meta.get('query_route_count')!=len(route_keys)):
+        errors.append('invalid_query_route_catalog')
     for row in events.get('data',[]):
         key=row.get('event_id','')
         if not re.fullmatch(r'hp_[0-9a-f]{16}',key) or key in ids:errors.append('invalid_or_duplicate_canonical_id')

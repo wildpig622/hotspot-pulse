@@ -1,0 +1,22 @@
+{
+  "baseline": "4cb5e00fba48e4a3826f518df471dabbd0ac2461",
+  "changed_paths_checked": 37,
+  "contact_pattern_findings": [],
+  "credential_pattern_findings": [],
+  "unnecessary_raw_body_fields": [],
+  "local_personal_paths": [],
+  "formal_refresh_modules": [
+    "activity_registry",
+    "business_service",
+    "check_snapshot_quality",
+    "collect",
+    "event_feed",
+    "official_calendar",
+    "refresh_service",
+    "source_calendar",
+    "validate_event_feed"
+  ],
+  "production_reaches_experiment_or_provider": [],
+  "production_snapshots_modified": [],
+  "limits": "Pattern scan, not a guarantee against every kind of private information. Historical risks are separately reported and not claimed removed."
+}

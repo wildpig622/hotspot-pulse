@@ -6,7 +6,7 @@
   var ACTIVITIES_URL = "./api/v1/activities.json";
   var COVERAGE_URL = "./api/v1/coverage.json";
   var EVENT_FEED_URL = "./api/v2/events.json";
-  var TYPE_LABELS = { concert: "演出 / 演唱会", exhibition: "展会", sports: "赛事", festival: "节庆", holiday: "学生假期 / 放假调整", conference: "会议 / 峰会", other: "其他" };
+  var TYPE_LABELS = { concert: "演出 / 演唱会", exhibition: "展会", sports: "赛事", festival: "节庆", holiday: "学生假期 / 放假调整", conference: "学术与行业会议", exam: "考试与招录", other: "其他" };
   var CONTENT_LABELS = { event_announcement: "活动公告", uncertain: "活动线索待核实", ticketing_notice: "开票 / 售票信息", registration_notice: "报名信息", schedule_roundup: "排期汇总", guide: "攻略 / 购票资讯", past_report: "历史报道", other: "其他资讯" };
   var NON_EVENT_KINDS = { guide: true, schedule_roundup: true, ticketing_notice: true, registration_notice: true, other: true };
   var CONDITIONAL_EVENT = /审批中|正在审批|待审批|尚未获批|未获批准|或(?:将|定档|于)|拟定档|暂定|待官宣|尚未官宣|网传|有望|辟谣|不属实|不实消息|尚未确定|未确定|相关部门回应|官方回应/;
@@ -41,10 +41,10 @@
     if (/有哪些|有什么|攻略|指南|购票平台|票务平台|怎么买票|怎么买|如何|怎么预约|靠谱|推荐|观演攻略|出行攻略|门票价格|购票教程|抢票技巧/.test(title)) return "guide";
     if (/排期|排期表|节目单|时间表|日程安排|演出安排|展会安排|演出汇总|演出合集|演出一览|演出清单|月度演出|本月演出|活动日历|活动汇总|展会日历/.test(title)) return "schedule_roundup";
     if (CONDITIONAL_EVENT.test(title)) return "uncertain";
-    if (/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间/.test(title) && /演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "event_announcement";
+    if (/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|演出时间|比赛时间|会议时间|考试时间|考试日期|考试安排|初试时间|笔试时间|面试时间|开考/.test(title) && /演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会|秋假|春假|寒假|暑假|考研|国考|省考|事业单位|教师资格|教资|高考|中考|职业资格|公务员/.test(title)) return "event_announcement";
     if (/报名启动|报名开启|报名时间|报名截止|报名通道|开放报名|开始报名|报名即将开始|报名啦|开启报名/.test(title)) return "registration_notice";
     if (/开票|开售|售票|预售|抢票|门票|票价|发售|开抢/.test(title) && !/将于|定于|定档|举行|举办|开幕|开赛|开演|开跑|启幕|上演|开展|举办时间|活动时间|赛事时间|比赛时间/.test(title)) return "ticketing_notice";
-    if (/演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会/.test(title)) return "uncertain";
+    if (/演唱会|音乐节|展会|博览会|马拉松|体育赛事|赛事|演出|漫展|节庆|车展|展览|巡演|音乐会|嘉年华|文化节|美食节|灯会|庙会|秋假|春假|寒假|暑假|考研|国考|省考|事业单位|教师资格|教资|高考|中考|职业资格|公务员/.test(title)) return "uncertain";
     return "other";
   }
   function beijingDay(value) {
@@ -199,7 +199,7 @@
     var stale = collectedAt && beijingToday() > beijingDay(collectedAt);
     var labels = { healthy: stale ? "快照待更新" : "上次采集成功", degraded: "上次采集部分失败", failed: "最近采集失败", not_run: "等待首次采集" };
     var details = status === "healthy"
-      ? "成功 " + text(state.health.successful_feeds, state.meta.successful_feeds || 0) + " / " + text(state.health.feed_count, state.meta.feed_count || state.health.city_count || state.meta.city_count || 0) + " 个检索源；覆盖仍待补齐"
+      ? "成功 " + text(state.health.successful_feeds, state.meta.successful_feeds || 0) + " / " + text(state.health.feed_count, state.coverage.meta && state.coverage.meta.configured_feed_count || state.meta.feed_count || state.health.city_count || state.meta.city_count || 0) + " 个城市/主题检索单元；覆盖仍待补齐"
       : status === "degraded"
         ? "成功 " + text(state.health.successful_feeds, 0) + " · 失败 " + text(state.health.failed_feeds, 0) + "；保留已有数据"
         : status === "failed"
@@ -208,8 +208,10 @@
     $("healthLabel").textContent = labels[status] || "状态未知";
     $("healthDetail").textContent = details;
     $("healthDot").className = "status-dot " + (status === "healthy" && !stale ? "status-healthy" : status === "degraded" ? "status-degraded" : status === "failed" ? "status-failed" : "status-muted");
+    var scopeMeta = state.coverage.meta || {};
+    var scopeLabel = scopeMeta.city_count && scopeMeta.topic_count ? scopeMeta.city_count + "城×" + scopeMeta.topic_count + "主题" : "按配置主题";
     $("coverageSummary").textContent = "新闻线索 " + state.leads.length + " 条 · 已整理活动 " + state.activities.length + " 项 · 票务日期候选 " + state.sourceCandidates.length + " 条 · 带日期新闻候选 " + state.discoveryCandidates.length + " 条。候选可能重复，仍待核验。假期 " + state.activities.filter(function (event) { return event.event_type === "holiday"; }).length + " 项。" +
-      (state.calendarAvailable ? "活动来源与日期仍待核验，28城×6类内容持续补齐。" : "活动日历暂不可用，当前显示新闻线索。") +
+      (state.calendarAvailable ? "活动来源与日期仍待核验，" + scopeLabel + "持续补齐。" : "活动日历暂不可用，当前显示新闻线索。") +
       (state.sourceMarketSignals.length ? " 另有 " + state.sourceMarketSignals.length + " 项客源地假期信号，单独观察。" : "") +
       " 每天北京时间08:00、16:00自动更新，平台任务可能排队延迟；网页刷新读取已发布快照。日历整理于 " + formatTime(state.calendarMeta.generated_at) + "。" + (state.canonicalEvents ? " 统一活动记录 " + state.canonicalEvents.length + " 项；已明确关联的重复报道合并展示。" : "");
   }
@@ -246,6 +248,35 @@
       option.textContent = city.city_name;
       select.appendChild(option);
     });
+    if (oldValue) select.value = oldValue;
+  }
+  function fillTypes() {
+    var select = $("typeFilter");
+    var oldValue = select.value;
+    var catalog = [];
+    var seen = {};
+    var configured = (state.coverage.meta && state.coverage.meta.topic_catalog) || [];
+    if (!configured.length) configured = state.coverage.data || [];
+    configured.forEach(function (row) {
+      var key = row.key || row.topic;
+      if (!key || seen[key]) return;
+      seen[key] = true;
+      var label = row.label || TYPE_LABELS[key] || key;
+      TYPE_LABELS[key] = label;
+      catalog.push({ key: key, label: label });
+    });
+    if (!catalog.length) Object.keys(TYPE_LABELS).filter(function (key) { return key !== "other"; }).forEach(function (key) {
+      catalog.push({ key: key, label: TYPE_LABELS[key] });
+    });
+    select.innerHTML = '<option value="">全部类型</option>';
+    catalog.forEach(function (row) {
+      var option = document.createElement("option");
+      option.value = row.key;
+      option.textContent = row.label;
+      select.appendChild(option);
+    });
+    var other = document.createElement("option");
+    other.value = "other"; other.textContent = TYPE_LABELS.other; select.appendChild(other);
     if (oldValue) select.value = oldValue;
   }
   function getFilteredEvents() {
@@ -523,7 +554,7 @@
         }
       }
       selectRecordLayer();
-      fillCities(); renderMetrics(); renderEvents();
+      fillCities(); fillTypes(); renderMetrics(); renderEvents();
     }).catch(function (error) {
       $("feedError").hidden = false;
       $("feedError").textContent = "读取失败：" + error.message;

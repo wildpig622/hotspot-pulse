@@ -1,0 +1,15 @@
+{
+  "queries_with_recency_7_filter": [
+    "西安 演唱会 官宣 加场 开票",
+    "济南 演唱会 官宣 加场 开票",
+    "天津 演唱会 官宣 加场 开票",
+    "天津 济南 西安 体育 赛事 会展 官宣"
+  ],
+  "discovered_url": "https://feng.ifeng.com/c/8yKyFYwjxpn",
+  "followup_entity": "叶世荣天津加场",
+  "verification_urls": [
+    "https://www.sina.cn/news/detail/5368771845818684.html",
+    "https://www.sina.cn/news/detail/5368758589195685.html"
+  ],
+  "finding": "2026-11-24发布加场，新增2027-01-17；不把开票11月29日混为演出日；仍未独立人工验收。"
+}

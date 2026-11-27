@@ -1,0 +1,307 @@
+{
+  "as_of": "2026-11-26",
+  "input_kind": "city_category_indexes_only",
+  "benchmark_loaded_by_collector": false,
+  "routes": [
+    {
+      "city": "西安市",
+      "page": 1,
+      "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+      "status": "ok",
+      "records": 17,
+      "new_records": 17
+    },
+    {
+      "city": "西安市",
+      "page": 2,
+      "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+      "status": "ok",
+      "records": 20,
+      "new_records": 20
+    },
+    {
+      "city": "西安市",
+      "page": 3,
+      "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+      "status": "ok",
+      "records": 20,
+      "new_records": 20
+    },
+    {
+      "city": "济南市",
+      "page": 1,
+      "url": "https://www.showstart.com/event/list?cityCode=531&pageNo=1",
+      "status": "failed",
+      "stop_reason": "access_failed"
+    },
+    {
+      "city": "天津市",
+      "page": 1,
+      "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=1",
+      "status": "ok",
+      "records": 0,
+      "new_records": 0
+    },
+    {
+      "city": "天津市",
+      "page": 2,
+      "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+      "status": "ok",
+      "records": 19,
+      "new_records": 19
+    },
+    {
+      "city": "天津市",
+      "page": 3,
+      "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=3",
+      "status": "failed",
+      "stop_reason": "access_failed"
+    }
+  ],
+  "alternatives": [
+    {
+      "source_id": "bilibili-ticket-index",
+      "url": "https://show.bilibili.com/platform/home.html",
+      "role": "alternative_index",
+      "checked_at": "2026-11-26T07:38:09Z",
+      "http_status": 200,
+      "final_url": "https://show.bilibili.com/platform/home.html",
+      "status": "ok",
+      "sha256": "94d6c13bdc0066a0502ffd86f1ff2ed1c78bdbb71dc7ad7415f990ab4090c165",
+      "encoding": "utf-8",
+      "bytes": 4467,
+      "elapsed_seconds": 0.156,
+      "body_length": 4281,
+      "extraction_status": "not_adapted",
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "source_id": "damai-index",
+      "url": "https://search.damai.cn/search.htm",
+      "role": "alternative_index",
+      "status": "blocked",
+      "error": "robots_or_host_denial",
+      "checked_at": "2026-11-26T07:38:09Z",
+      "body_length": 0,
+      "extraction_status": "unavailable"
+    },
+    {
+      "source_id": "cosgo-public-calendar",
+      "url": "https://cosgo.cn/conventions/",
+      "role": "alternative_index",
+      "checked_at": "2026-11-26T07:38:10Z",
+      "http_status": 200,
+      "final_url": "https://cosgo.cn/conventions/",
+      "status": "ok",
+      "sha256": "5fced53b427063410fea05afaf0128254c5d92c48d5a0eb0d73b7e18dfedfa20",
+      "encoding": "UTF-8",
+      "bytes": 264115,
+      "elapsed_seconds": 14.703,
+      "body_length": 239494,
+      "extraction_status": "not_adapted",
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "source_id": "tianjin-local-acg",
+      "url": "https://www.022acg.com/moe/",
+      "role": "alternative_index",
+      "checked_at": "2026-11-26T07:38:26Z",
+      "status": "failed",
+      "error_type": "URLError",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.022acg.com'. (_ssl.c:1010)>",
+      "http_status": null,
+      "elapsed_seconds": 0.313,
+      "body_length": 0,
+      "extraction_status": "unavailable"
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://www.showstart.com/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:37:32Z",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 404: Not Found",
+      "http_status": 404,
+      "elapsed_seconds": 0.25
+    },
+    {
+      "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+      "role": "public_ticket_index",
+      "checked_at": "2026-11-26T07:37:33Z",
+      "http_status": 200,
+      "final_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+      "status": "ok",
+      "sha256": "fe1da564f405cbe5f751452d6eb976d9afb038986f6c34a7153a35e24b4dd024",
+      "encoding": "utf-8",
+      "bytes": 99645,
+      "elapsed_seconds": 2.953,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+      "role": "public_ticket_index",
+      "checked_at": "2026-11-26T07:37:36Z",
+      "http_status": 200,
+      "final_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+      "status": "ok",
+      "sha256": "e9004cd367414fed2f05a703ac408367cc751532a805bb3d7276cca5848e2fd0",
+      "encoding": "utf-8",
+      "bytes": 99749,
+      "elapsed_seconds": 2.422,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+      "role": "public_ticket_index",
+      "checked_at": "2026-11-26T07:37:39Z",
+      "http_status": 200,
+      "final_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+      "status": "ok",
+      "sha256": "c1e4923838063acacff6d76c30d54fb9963f0ce06fbaad58eb61cbfd138a8017",
+      "encoding": "utf-8",
+      "bytes": 99015,
+      "elapsed_seconds": 2.578,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://www.showstart.com/event/list?cityCode=531&pageNo=1",
+      "role": "public_ticket_index",
+      "checked_at": "2026-11-26T07:37:41Z",
+      "status": "failed",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out",
+      "http_status": null,
+      "elapsed_seconds": 10.156
+    },
+    {
+      "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=1",
+      "role": "public_ticket_index",
+      "checked_at": "2026-11-26T07:37:51Z",
+      "http_status": 200,
+      "final_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=1",
+      "status": "ok",
+      "sha256": "8ace8f11cfc4dbbf67980afe8e059c75c259e7830bb6e2fb8559b740897b6831",
+      "encoding": "utf-8",
+      "bytes": 100303,
+      "elapsed_seconds": 3.391,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+      "role": "public_ticket_index",
+      "checked_at": "2026-11-26T07:37:55Z",
+      "http_status": 200,
+      "final_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+      "status": "ok",
+      "sha256": "e1f666e11b5a7bf61fabd7c9d8e2f805d12c03d570f1515d96b81893127534f4",
+      "encoding": "utf-8",
+      "bytes": 100226,
+      "elapsed_seconds": 2.703,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://www.showstart.com/event/list?cityCode=22&pageNo=3",
+      "role": "public_ticket_index",
+      "checked_at": "2026-11-26T07:37:58Z",
+      "status": "failed",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out",
+      "http_status": null,
+      "elapsed_seconds": 10.125
+    },
+    {
+      "url": "https://show.bilibili.com/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:38:08Z",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 404: Not Found",
+      "http_status": 404,
+      "elapsed_seconds": 0.156
+    },
+    {
+      "url": "https://show.bilibili.com/platform/home.html",
+      "role": "alternative_index",
+      "checked_at": "2026-11-26T07:38:09Z",
+      "http_status": 200,
+      "final_url": "https://show.bilibili.com/platform/home.html",
+      "status": "ok",
+      "sha256": "94d6c13bdc0066a0502ffd86f1ff2ed1c78bdbb71dc7ad7415f990ab4090c165",
+      "encoding": "utf-8",
+      "bytes": 4467,
+      "elapsed_seconds": 0.156,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://search.damai.cn/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:38:09Z",
+      "http_status": 200,
+      "final_url": "https://search.damai.cn/robots.txt",
+      "status": "ok",
+      "sha256": "d398dc9880b38311ffe5828a411e5bc0de59f5366d5617b6293256d30cd4f5a0",
+      "encoding": "utf-8",
+      "bytes": 45,
+      "elapsed_seconds": 0.266,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://search.damai.cn/search.htm",
+      "role": "alternative_index",
+      "status": "blocked",
+      "error": "robots_or_host_denial",
+      "checked_at": "2026-11-26T07:38:09Z"
+    },
+    {
+      "url": "https://cosgo.cn/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:38:09Z",
+      "http_status": 200,
+      "final_url": "https://cosgo.cn/robots.txt",
+      "status": "ok",
+      "sha256": "11000523c742bffb6871909195cc7ca906f232b0791893add393f935b4c81927",
+      "encoding": "utf-8",
+      "bytes": 61,
+      "elapsed_seconds": 0.844,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://cosgo.cn/conventions/",
+      "role": "alternative_index",
+      "checked_at": "2026-11-26T07:38:10Z",
+      "http_status": 200,
+      "final_url": "https://cosgo.cn/conventions/",
+      "status": "ok",
+      "sha256": "5fced53b427063410fea05afaf0128254c5d92c48d5a0eb0d73b7e18dfedfa20",
+      "encoding": "UTF-8",
+      "bytes": 264115,
+      "elapsed_seconds": 14.703,
+      "archive_kind": "original_response_no_contact_match"
+    },
+    {
+      "url": "https://www.022acg.com/robots.txt",
+      "role": "robots",
+      "checked_at": "2026-11-26T07:38:25Z",
+      "status": "failed",
+      "error_type": "URLError",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.022acg.com'. (_ssl.c:1010)>",
+      "http_status": null,
+      "elapsed_seconds": 0.328
+    },
+    {
+      "url": "https://www.022acg.com/moe/",
+      "role": "alternative_index",
+      "checked_at": "2026-11-26T07:38:26Z",
+      "status": "failed",
+      "error_type": "URLError",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.022acg.com'. (_ssl.c:1010)>",
+      "http_status": null,
+      "elapsed_seconds": 0.313
+    }
+  ],
+  "elapsed_seconds": 53.781,
+  "request_count": 16,
+  "downloaded_bytes": 767626
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "query": "西安 未来365天 演唱会 官方",
+    "search_check": {
+      "url": "https://www.bing.com/search?format=rss&q=%E8%A5%BF%E5%AE%89+%E6%9C%AA%E6%9D%A5365%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E6%96%B9",
+      "role": "anonymous_search_probe",
+      "status": "blocked",
+      "error": "robots_or_host_denial",
+      "checked_at": "2026-11-27T02:04:49Z"
+    },
+    "results": [],
+    "benchmark_used": false
+  },
+  {
+    "query": "济南 未来365天 演唱会 官方",
+    "search_check": {
+      "url": "https://www.bing.com/search?format=rss&q=%E6%B5%8E%E5%8D%97+%E6%9C%AA%E6%9D%A5365%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E6%96%B9",
+      "role": "anonymous_search_probe",
+      "status": "blocked",
+      "error": "robots_or_host_denial",
+      "checked_at": "2026-11-27T02:04:49Z"
+    },
+    "results": [],
+    "benchmark_used": false
+  },
+  {
+    "query": "天津 未来365天 演唱会 官方",
+    "search_check": {
+      "url": "https://www.bing.com/search?format=rss&q=%E5%A4%A9%E6%B4%A5+%E6%9C%AA%E6%9D%A5365%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E6%96%B9",
+      "role": "anonymous_search_probe",
+      "status": "blocked",
+      "error": "robots_or_host_denial",
+      "checked_at": "2026-11-27T02:04:49Z"
+    },
+    "results": [],
+    "benchmark_used": false
+  }
+]

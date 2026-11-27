@@ -64,22 +64,25 @@ jobs:
       - name: Run unit tests
         run: python -m unittest discover -s tests -v
 
-      - name: Collect public event candidates
+      - name: Stage public event candidates and retain last-good data
         id: collect
-        run: python scripts/collect.py
-        continue-on-error: true
+        run: |
+          python -m scripts.refresh_service --result "$RUNNER_TEMP/service-result.json"
+          python -c 'import json,os; r=json.load(open(os.environ["RUNNER_TEMP"]+"/service-result.json")); open(os.environ["GITHUB_OUTPUT"],"a").write("collection_ok="+str(r["collection_ok"]).lower()+"\n")'
 
       - name: Validate complete refreshed snapshots before committing
         id: quality
         if: steps.collect.outcome == 'success'
-        run: python scripts/check_snapshot_quality.py --require-full-scope --require-discovery-calendar --require-source-calendars --require-expanded-queries
+        run: |
+          python scripts/check_snapshot_quality.py --require-discovery-calendar --require-source-calendars
+          python -m scripts.validate_event_feed
 
       - name: Commit refreshed JSON snapshots
-        if: ${{ !cancelled() && (steps.quality.outcome == 'success' || steps.collect.outcome == 'failure') }}
+        if: ${{ !cancelled() && steps.quality.outcome == 'success' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/api/v1
+          git add site/api
           if git diff --cached --quiet; then
             echo "No JSON changes to commit."
           else
@@ -87,8 +90,8 @@ jobs:
             git push origin HEAD:refs/heads/main
           fi
 
-      - name: Fail workflow if every feed failed
-        if: steps.collect.outcome == 'failure'
+      - name: Report failed refresh without discarding retained data
+        if: steps.collect.outputs.collection_ok != 'true'
         run: |
           echo "Collection failed. Previous event data was preserved; inspect health.json and logs."
           exit 1

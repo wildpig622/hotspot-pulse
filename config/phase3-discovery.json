@@ -1,0 +1,32 @@
+{
+ "version":1,"max_index_pages":5,"max_articles_per_source":10,"workers":3,"min_host_interval_seconds":1.0,
+ "sources":[
+  {"id":"national-neea","url":"https://www.neea.edu.cn/","scope":"national","topic":"exam"},
+  {"id":"national-yz","url":"https://yz.chsi.com.cn/kyzx/","scope":"national","topic":"exam"},
+  {"id":"national-ntce","url":"https://ntce.neea.edu.cn/","scope":"national","topic":"exam"},
+  {"id":"national-scs","url":"https://www.scs.gov.cn/","scope":"national","topic":"exam"},
+  {"id":"national-cpta","url":"https://www.cpta.com.cn/","scope":"national","topic":"exam"},
+  {"id":"shaanxi-exam","url":"https://www.sneea.cn/","scope":"province","topic":"exam"},
+  {"id":"shaanxi-personnel","url":"https://www.sxrsks.cn/","scope":"province","topic":"exam"},
+  {"id":"shandong-exam","url":"https://www.sdzk.cn/","scope":"province","topic":"exam"},
+  {"id":"shandong-personnel","url":"https://hrss.shandong.gov.cn/rsks/","scope":"province","topic":"exam"},
+  {"id":"tianjin-exam","url":"https://www.zhaokao.net/","scope":"city","city":"天津市","topic":"exam"},
+  {"id":"tianjin-personnel","url":"https://hrss.tj.gov.cn/jsdw/rsksw/","scope":"city","city":"天津市","topic":"exam"},
+  {"id":"xian-education","url":"https://edu.xa.gov.cn/","scope":"city","city":"西安市","topic":"holiday"},
+  {"id":"jinan-education","url":"https://jnedu.jinan.gov.cn/col/col19092/index.html","scope":"city","city":"济南市","topic":"holiday"},
+  {"id":"tianjin-education","url":"https://jy.tj.gov.cn/","scope":"city","city":"天津市","topic":"holiday"},
+  {"id":"xidian-graduate","url":"https://gr.xidian.edu.cn/","scope":"test_center","city":"西安市","topic":"exam"},
+  {"id":"xjtu-conference","url":"https://sfs.xjtu.edu.cn/","scope":"organizer","city":"西安市","topic":"conference"},
+  {"id":"sdu-conference","url":"https://www.flc.sdu.edu.cn/","scope":"organizer","city":"济南市","topic":"conference"},
+  {"id":"tust-conference","url":"https://wgy.tust.edu.cn/xwdt/tzgg/","scope":"organizer","city":"天津市","topic":"conference"},
+  {"id":"tju-conference","url":"https://news.tju.edu.cn/xw/xysx/hd.htm","scope":"organizer","city":"天津市","topic":"conference"},
+  {"id":"xian-association","url":"https://mnems.xjtu.edu.cn/","scope":"organizer","city":"西安市","topic":"conference"},
+  {"id":"jinan-association","url":"https://sklcm.sdu.edu.cn/","scope":"organizer","city":"济南市","topic":"conference"},
+  {"id":"xian-convention","url":"https://xianicec.com/","scope":"organizer","city":"西安市","topic":"exhibition"},
+  {"id":"origin-hanzhong","url":"https://jyj.hanzhong.gov.cn/","scope":"origin_market","impact_cities":["西安市"],"topic":"holiday"},
+  {"id":"tianjin-convention","url":"https://www.ncectj.com/","scope":"organizer","city":"天津市","topic":"exhibition"},
+  {"id":"jinan-performances","url":"https://zwfw.jinan.gov.cn/col/col58015/index.html","scope":"city","city":"济南市","topic":"concert"},
+  {"id":"jinan-government-education-qa","url":"https://www.jinan.gov.cn/col/col118356/index.html","scope":"city","city":"济南市","topic":"holiday"}
+ ],
+ "public_search_tasks":["西安 演唱会 官宣 加场 应援 漫展 电竞 文旅","济南 演唱会 官宣 加场 应援 漫展 电竞 文旅","天津 演唱会 官宣 加场 应援 漫展 电竞 文旅"]
+}

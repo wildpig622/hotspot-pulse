@@ -1,0 +1,145 @@
+{
+  "run": 2,
+  "completed_at": "2026-11-27T02:39:04.020688+00:00",
+  "scope": "Bounded evidence rechecks of existing three-city official/organizer records, NOT full production collection or fresh discovery.",
+  "checks": [
+    {
+      "url": "https://sfs.xjtu.edu.cn/info/1243/9348.htm",
+      "status": "ok",
+      "http_status": 200,
+      "checked_at": "2026-11-27T02:39:01Z",
+      "sha256": "a418c6c08cb9c101ebd024f603c0e22e51e4ad63d94c23e1ce883015ee4ce5f0",
+      "bytes": 49066,
+      "elapsed_seconds": 0.093,
+      "event_id": "off_1cf212722b4c",
+      "literal_evidence_matched": true,
+      "short_evidence": [
+        "会议时间：2026年12月19日"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "status": "ok",
+      "http_status": 200,
+      "checked_at": "2026-11-27T02:39:01Z",
+      "sha256": "aa4a3b6112a06e848dd406e3e83ced32ddb5116cf9a3539b1509a3680ba7f0a1",
+      "bytes": 9723,
+      "elapsed_seconds": 0.203,
+      "event_id": "off_29537fcfce98",
+      "literal_evidence_matched": true,
+      "short_evidence": [
+        "义务教育阶段寒假开始时间为 2027年1 月23 日（腊月十六，周六），寒假结束时间为 2 月 21 日"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+      "status": "ok",
+      "http_status": 200,
+      "checked_at": "2026-11-27T02:39:01Z",
+      "sha256": "a0eca577fbc80ff135cb0924a45a411a8c485861d3de339daf0d78f17034622b",
+      "bytes": 167206,
+      "elapsed_seconds": 0.593,
+      "event_id": "off_04f5d5bcf753",
+      "literal_evidence_matched": true,
+      "short_evidence": [
+        "12月6日上午"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "url": "https://www.cmeshow.cn/",
+      "status": "blocked",
+      "error": "robots_or_host_denial",
+      "checked_at": "2026-11-27T02:39:01Z",
+      "event_id": "p4_industry_jinan",
+      "literal_evidence_matched": false,
+      "short_evidence": [],
+      "review_status": "pending"
+    },
+    {
+      "url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "status": "ok",
+      "http_status": 200,
+      "checked_at": "2026-11-27T02:39:02Z",
+      "sha256": "9cc23995fa7002e8c5cc2753a835dda2256796c10ce10c359c9ee20a133a25ec",
+      "bytes": 42268,
+      "elapsed_seconds": 0.219,
+      "event_id": "p4_yeshirong_extra",
+      "literal_evidence_matched": true,
+      "short_evidence": [
+        "2027年1月17日"
+      ],
+      "review_status": "pending"
+    }
+  ],
+  "provider": [
+    {
+      "query": "西安 最近7天 演唱会 官宣 加场",
+      "check": {
+        "url": "https://www.bing.com/search?format=rss&q=%E8%A5%BF%E5%AE%89+%E6%9C%80%E8%BF%917%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E5%AE%A3+%E5%8A%A0%E5%9C%BA",
+        "role": "independent_search_provider_probe",
+        "status": "blocked",
+        "error": "robots_or_host_denial",
+        "checked_at": "2026-11-27T02:39:03Z"
+      },
+      "result_body_available": false,
+      "quality_accepted": false
+    },
+    {
+      "query": "济南 最近7天 演唱会 官宣 加场",
+      "check": {
+        "url": "https://www.bing.com/search?format=rss&q=%E6%B5%8E%E5%8D%97+%E6%9C%80%E8%BF%917%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E5%AE%A3+%E5%8A%A0%E5%9C%BA",
+        "role": "independent_search_provider_probe",
+        "status": "blocked",
+        "error": "robots_or_host_denial",
+        "checked_at": "2026-11-27T02:39:03Z"
+      },
+      "result_body_available": false,
+      "quality_accepted": false
+    },
+    {
+      "query": "天津 最近7天 演唱会 官宣 加场",
+      "check": {
+        "url": "https://www.bing.com/search?format=rss&q=%E5%A4%A9%E6%B4%A5+%E6%9C%80%E8%BF%917%E5%A4%A9+%E6%BC%94%E5%94%B1%E4%BC%9A+%E5%AE%98%E5%AE%A3+%E5%8A%A0%E5%9C%BA",
+        "role": "independent_search_provider_probe",
+        "status": "blocked",
+        "error": "robots_or_host_denial",
+        "checked_at": "2026-11-27T02:39:03Z"
+      },
+      "result_body_available": false,
+      "quality_accepted": false
+    }
+  ],
+  "actual_request_count_including_robots": 14,
+  "download_bytes": 497969,
+  "request_seconds": 2.78,
+  "status": {
+    "meta": {
+      "schema_version": "business-1",
+      "generated_at": "2026-11-27T02:39:03.830758+00:00",
+      "default_days": 90,
+      "horizon_days": 365,
+      "last_observed_at": "2026-11-27T02:39:02Z",
+      "collection_ok": true,
+      "search_mode": "manual_agent_import",
+      "official_rows_not_adapted": 0,
+      "gaps": [
+        "搜索尚非无人值守服务；需人工触发检索并导入",
+        "三城和类别覆盖不完整；全国考试不代表当地考点",
+        "日期冲突不进入日历；候选未经人工核验"
+      ]
+    },
+    "event_count": 25,
+    "observation_count": 35
+  },
+  "fresh_observations_added": 4,
+  "configured_provider_credentials": {
+    "BRAVE_SEARCH_API_KEY": false,
+    "TAVILY_API_KEY": false,
+    "SERPER_API_KEY": false
+  },
+  "paid_api_calls": 0,
+  "autonomous_search_accepted": false
+}

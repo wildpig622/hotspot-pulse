@@ -1,0 +1,104 @@
+[
+  {
+    "event_id": "p4_naying_xian",
+    "event_name": "那英我来因为你在西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "scope_level": "city",
+    "venue_name": "西安奥体中心体育馆",
+    "start_at": "2026-12-26",
+    "end_at": "2026-12-26",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:24Z",
+    "last_evidence_check_at": "2026-11-27T02:04:24Z",
+    "discovery_lane": "social_signal",
+    "evaluation_partition": "targeted_regression",
+    "source_published_at": "2026-11-22",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://sina.cn/news/detail/5367995331510509.html",
+      "https://www.sina.cn/news/detail/5368035080146914.html"
+    ],
+    "short_evidence": [
+      "2026年12月26日19:00"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_hanglong_signal",
+    "event_name": "天津恒隆漫威联动需求信号",
+    "event_type": "festival",
+    "city_name": "天津市",
+    "scope_level": "social_signal",
+    "start_at": null,
+    "end_at": null,
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:31Z",
+    "last_evidence_check_at": null,
+    "discovery_lane": "social_signal",
+    "evaluation_partition": "open_discovery",
+    "source_published_at": "2026-11-25",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.sina.cn/media/5109202031"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_yeshirong_extra",
+    "event_name": "叶世荣天津站1月17日加场",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "scope_level": "city",
+    "venue_name": "天津奥林匹克中心体育馆",
+    "start_at": "2027-01-17",
+    "end_at": "2027-01-17",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:11:55Z",
+    "last_evidence_check_at": "2026-11-27T02:11:55Z",
+    "discovery_lane": "social_signal",
+    "evaluation_partition": "open_discovery",
+    "source_published_at": "2026-11-24",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://www.sina.cn/news/detail/5368771845818684.html",
+      "https://www.sina.cn/news/detail/5368758589195685.html",
+      "https://feng.ifeng.com/c/8yKyFYwjxpn"
+    ],
+    "short_evidence": [
+      "2027年1月17日"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  }
+]

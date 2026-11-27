@@ -1,0 +1,50 @@
+{
+  "production_data_commit": "20911332dc7881cde49e25a07e264617367256dd",
+  "production_api_bytes_preserved": true,
+  "events": 25,
+  "observations": 52,
+  "calendar": 22,
+  "intelligence": 3,
+  "focus_365": 20,
+  "verified_promotions": 0,
+  "v1_contract": {
+    "status": "PASS",
+    "errors": [],
+    "news_count": 17949,
+    "activity_count": 47,
+    "source_market_signal_count": 1,
+    "discovery_candidate_count": 398,
+    "source_candidate_count": 2805,
+    "source_calendar_city_count": 29,
+    "coverage_cells": 174,
+    "city_count": 29,
+    "topic_count": 7,
+    "query_route_count": 2,
+    "expected_query_count": 406,
+    "uncollected_configured_topics": [
+      "exam"
+    ],
+    "full_scope_required": false,
+    "collection_at": "2026-11-26T18:06:18Z",
+    "verified_news": 0,
+    "verified_activities": 0,
+    "fact_completeness": "NOT_CLAIMED",
+    "automatic_verified_promotions": 0
+  },
+  "v2_contract": {
+    "status": "PASS",
+    "errors": [],
+    "event_count": 3257,
+    "source_record_count": 3267
+  },
+  "rollback_rehearsal": {
+    "prepared": true,
+    "deployed": false,
+    "mode": "previous_ui_with_current_last_good_api",
+    "preserved_api_files": 14,
+    "output": "review/rc1-rollback-final"
+  },
+  "standalone_provider_requests": 0,
+  "production_jobs_triggered": 0,
+  "business_database_writes": 0
+}

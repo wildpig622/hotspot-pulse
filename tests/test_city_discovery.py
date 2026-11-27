@@ -58,7 +58,7 @@ class CityDiscoveryTests(unittest.TestCase):
         activities = [{'event_id': 'act_one', 'related_lead_ids': ['a']}]
         self.assertEqual([r['event_id'] for r in build_discovery_candidates([first, second], activities)], ['b'])
 
-    def test_release_gate_detects_a_dropped_city_even_when_all_168_requests_succeeded(self):
+    def test_release_gate_detects_a_dropped_city_even_when_all_configured_requests_succeeded(self):
         with tempfile.TemporaryDirectory() as tmp:
             api = Path(tmp)
             snapshot = json.loads((collect.SITE_API / 'hotspots.json').read_text(encoding='utf8'))

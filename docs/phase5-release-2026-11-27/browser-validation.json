@@ -1,0 +1,42 @@
+{
+  "cities": [
+    {
+      "city": "西安市",
+      "expected_visible": "那英",
+      "count": "3 条",
+      "default_api_requests": [
+        "http://127.0.0.1:8875/api/business/focus.json"
+      ]
+    },
+    {
+      "city": "济南市",
+      "expected_visible": "徐良",
+      "count": "6 条",
+      "default_api_requests": [
+        "http://127.0.0.1:8875/api/business/focus.json"
+      ]
+    },
+    {
+      "city": "天津市",
+      "expected_visible": "老狼",
+      "count": "6 条",
+      "default_api_requests": [
+        "http://127.0.0.1:8875/api/business/focus.json"
+      ]
+    }
+  ],
+  "errors": [],
+  "legacy": {
+    "loaded_on_demand": true,
+    "result": "1749 条"
+  },
+  "screenshots": [
+    "page-xian.png",
+    "page-intelligence.png",
+    "page-jinan.png",
+    "page-tianjin.png",
+    "page-changes.png"
+  ],
+  "horizon_365_and_undated_signal": true,
+  "stale_failure_preserves_real_candidates": true
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "B01",
+    "name": "ICCLL 2027",
+    "category": "conference",
+    "city": "西安市",
+    "start": "2027-05-21",
+    "end": "2027-05-23",
+    "terms": [
+      "ICCLL"
+    ],
+    "url": "https://www.iccll.org/",
+    "basis": "phase2_official_holdout"
+  },
+  {
+    "id": "B03",
+    "name": "FICMSS 2027",
+    "category": "conference",
+    "city": "西安市",
+    "start": "2027-01-08",
+    "end": "2027-01-10",
+    "terms": [
+      "FICMSS"
+    ],
+    "url": "https://cmcs.chd.edu.cn/2026/1010/c8633a262954/page.htm",
+    "basis": "phase2_official"
+  },
+  {
+    "id": "B05",
+    "name": "文明互鉴与区域国别学术研讨会",
+    "category": "conference",
+    "city": "天津市",
+    "start": "2026-11-27",
+    "end": "2026-11-29",
+    "terms": [
+      "文明互鉴",
+      "研讨会"
+    ],
+    "url": "https://wgy.tust.edu.cn/xwdt/tzgg/cea333cbcc3749e8ade6c12f79da5ee6.htm",
+    "basis": "phase2_official"
+  },
+  {
+    "id": "B07",
+    "name": "2027国考公共科目笔试",
+    "category": "exam",
+    "city": null,
+    "scope": "national",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "terms": [
+      "公务员"
+    ],
+    "url": "https://www.beijing.gov.cn/cs/gncs/csbmts/202611/t20261116_4948266.html",
+    "basis": "phase2_official"
+  },
+  {
+    "id": "B08",
+    "name": "天津考区研究生初试",
+    "category": "exam",
+    "city": "天津市",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "terms": [
+      "研究生"
+    ],
+    "url": "https://www.tj.gov.cn/zmhd/hygqx/202610/t20261009_7390056.html",
+    "basis": "phase2_official"
+  },
+  {
+    "id": "B09",
+    "name": "天津公务员公共科目笔试",
+    "category": "exam",
+    "city": "天津市",
+    "start": "2026-12-06",
+    "end": "2026-12-06",
+    "terms": [
+      "公务员"
+    ],
+    "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+    "basis": "phase2_official",
+    "family": "tj-civil"
+  },
+  {
+    "id": "B10",
+    "name": "天津公务员专业科目笔试",
+    "category": "exam",
+    "city": "天津市",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "terms": [
+      "公务员"
+    ],
+    "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+    "basis": "phase2_official",
+    "family": "tj-civil"
+  },
+  {
+    "id": "B11",
+    "name": "济南义务教育寒假",
+    "category": "calendar",
+    "city": "济南市",
+    "start": "2027-01-23",
+    "end": "2027-02-21",
+    "terms": [
+      "寒假"
+    ],
+    "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+    "basis": "phase2_official",
+    "family": "jinan-calendar"
+  },
+  {
+    "id": "B12",
+    "name": "济南高中寒假",
+    "category": "calendar",
+    "city": "济南市",
+    "start": "2027-01-30",
+    "end": "2027-02-21",
+    "terms": [
+      "寒假"
+    ],
+    "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+    "basis": "phase2_official",
+    "family": "jinan-calendar"
+  },
+  {
+    "id": "B13",
+    "name": "济南义务教育暑假",
+    "category": "calendar",
+    "city": "济南市",
+    "start": "2027-07-07",
+    "end": "2027-08-31",
+    "terms": [
+      "暑假"
+    ],
+    "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+    "basis": "phase2_official",
+    "family": "jinan-calendar"
+  },
+  {
+    "id": "B14",
+    "name": "济南高中暑假",
+    "category": "calendar",
+    "city": "济南市",
+    "start": "2027-07-14",
+    "end": "2027-08-31",
+    "terms": [
+      "暑假"
+    ],
+    "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+    "basis": "phase2_official",
+    "family": "jinan-calendar"
+  },
+  {
+    "id": "B30",
+    "name": "我们的歌2027跨年演唱会",
+    "category": "performance",
+    "city": "济南市",
+    "start": "2026-12-31",
+    "end": "2026-12-31",
+    "terms": [
+      "跨年演唱会",
+      "我们的"
+    ],
+    "url": "https://zwfw.jinan.gov.cn/col/col58015/art/2026/art_850f05c74ea54b709e439d08aa26c9d9.html",
+    "basis": "independent_government_permission"
+  },
+  {
+    "id": "B31",
+    "name": "理查德克莱德曼爱永恒济南",
+    "category": "performance",
+    "city": "济南市",
+    "start": "2026-12-26",
+    "end": "2026-12-26",
+    "terms": [
+      "理查德",
+      "克莱德曼"
+    ],
+    "url": "https://mct.gov.cn/zwfw/wycx/qgswyyxychd/qgswyyxychdjg/xq/?id=781b85005e3a4eb3ef0f51fff0209d41",
+    "basis": "independent_government_permission"
+  },
+  {
+    "id": "B35",
+    "name": "西安IW无限世界SP01头号玩家",
+    "category": "exhibition",
+    "city": "西安市",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "terms": [
+      "IW",
+      "头号玩家"
+    ],
+    "url": "https://m.yunmanzhan.com/",
+    "basis": "independent_secondary_calendar",
+    "primary_body_validated": false
+  }
+]

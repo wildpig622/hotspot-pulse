@@ -1,0 +1,11 @@
+[
+  {
+    "benchmark_id": "B20",
+    "record_ids": [
+      "src_28ce37563001",
+      "src_a64ed3280a27"
+    ],
+    "reason": "multiple_source_records_match_same_reference",
+    "adjudicated": false
+  }
+]

@@ -1,0 +1,468 @@
+{
+  "not_a_200_row_accuracy_estimate": true,
+  "human_completed": 0,
+  "data": [
+    {
+      "sample_id": "evt_533b76a8ac73",
+      "url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/03/content_143098_3977805.htm",
+      "label": "historical_or_undetermined",
+      "reason": "日前在我市召开，没有绝对活动日期；不能用报纸日期代替活动日。",
+      "draft": null,
+      "match": "title_match",
+      "access": {
+        "url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/03/content_143098_3977805.htm",
+        "role": "independently_rediscovered_article",
+        "checked_at": "2026-11-26T07:41:14Z",
+        "http_status": 200,
+        "final_url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/03/content_143098_3977805.htm",
+        "status": "ok",
+        "sha256": "f3befd0385d49b990a0bef86b46849d3086f209f8def4ceb5709889f964c75fa",
+        "encoding": "utf8",
+        "bytes": 37140,
+        "elapsed_seconds": 0.532,
+        "original_response_sha256": "8b1fd0c3012ee952aa53153e571c0ccae0b131a1fb6a8d3461e689ee4912e8a0",
+        "original_response_encoding": "utf-8",
+        "archive_kind": "contact_redacted_derivative"
+      },
+      "rule_extraction": {
+        "event_id": "off_9557dabd0b3e",
+        "source_record_id": "https://epaper.tianjinwe.com/tjrb/html/2026-11/03/content_143098_3977805.htm",
+        "event_name": "天津日报数字报刊平台-血液与再生医学大会在津召开",
+        "event_type": "conference",
+        "city_name": "天津市",
+        "city_slug": "tianjin",
+        "city_match": "text_confirmed",
+        "scope_level": "unknown",
+        "source_scope_city": null,
+        "impact_destination_cities": [],
+        "local_demand_confirmed": false,
+        "event_date_role": "unknown",
+        "content_kind": "event_announcement",
+        "date_precision": "tbd",
+        "date_confidence": "unknown",
+        "sessions": [],
+        "start_at": null,
+        "end_at": null,
+        "review_status": "pending",
+        "event_status": "unknown",
+        "record_kind": "official_candidate",
+        "event_phase": "unscheduled",
+        "date_evidence": [
+          {
+            "quote": "2026年11月03日 星期二",
+            "date_text": "2026年11月03日",
+            "parsed": {
+              "start_at": "2026-11-03",
+              "end_at": null,
+              "date_precision": "day",
+              "date_confidence": "explicit_year",
+              "event_date_role": "ambiguous",
+              "ticket_sale_at": null,
+              "ticket_sale_date_confidence": "unknown",
+              "registration_at": null,
+              "registration_date_confidence": "unknown",
+              "reference_period_start": null,
+              "reference_period_end": null
+            },
+            "line_index": 27
+          }
+        ],
+        "content_extraction": "page_without_footer",
+        "evidence_level": "source_body",
+        "source_url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/03/content_143098_3977805.htm",
+        "first_seen_at": "2026-11-26T07:41:14Z",
+        "last_seen_at": "2026-11-26T07:41:14Z",
+        "last_evidence_check_at": "2026-11-26T07:41:14Z",
+        "source_id": "date-followup",
+        "source_count": 1,
+        "sources": [
+          {
+            "source_url": "https://epaper.tianjinwe.com/tjrb/html/2026-11/03/content_143098_3977805.htm",
+            "publisher": "date-followup",
+            "checked_at": "2026-11-26T07:41:14Z",
+            "observed_at": "2026-11-26T07:41:14Z",
+            "access_status": "body_read",
+            "verification_status": "unverified"
+          }
+        ]
+      },
+      "annotation_author": "assistant",
+      "human_label": null,
+      "annotation_status": "draft_requires_human_review",
+      "llm_method": "conversation_assistant_no_external_paid_model",
+      "evidence_gate": {
+        "passed": false,
+        "reason": "no_structured_proposal"
+      }
+    },
+    {
+      "sample_id": "evt_9a7d22816f9c",
+      "url": "https://jnxxq.jinan.gov.cn/col/col122860/art/2026/art_754579fba3924815a84452abce6a259a.html",
+      "label": "rss_missing_body_has_date",
+      "reason": "正文有10月14日至16日；2026年历史活动，不能流入未来事件。",
+      "match": "title_match",
+      "draft": {
+        "start_at": "2026-10-14",
+        "end_at": "2026-10-16",
+        "quote": "10月14日至16日",
+        "start_at_token": "10月14日",
+        "end_at_token": "16日",
+        "year_quote": "2026人工智能产业大会",
+        "date_role": "event"
+      },
+      "access": {
+        "url": "https://jnxxq.jinan.gov.cn/col/col122860/art/2026/art_754579fba3924815a84452abce6a259a.html",
+        "role": "independently_rediscovered_article",
+        "checked_at": "2026-11-26T07:41:16Z",
+        "http_status": 200,
+        "final_url": "https://jnxxq.jinan.gov.cn/col/col122860/art/2026/art_754579fba3924815a84452abce6a259a.html",
+        "status": "ok",
+        "sha256": "9c9125420a169f54bd2594e52c18c7c66aebbe2cf611a38804139c7748a1ef28",
+        "encoding": "utf-8",
+        "bytes": 12447,
+        "elapsed_seconds": 0.375,
+        "archive_kind": "original_response_no_contact_match"
+      },
+      "rule_extraction": {
+        "event_id": "off_068d043824b4",
+        "source_record_id": "https://jnxxq.jinan.gov.cn/col/col122860/art/2026/art_754579fba3924815a84452abce6a259a.html",
+        "event_name": "济南新旧动能转换起步区",
+        "event_type": "other",
+        "city_name": "济南市",
+        "city_slug": "jinan",
+        "city_match": "text_confirmed",
+        "scope_level": "unknown",
+        "source_scope_city": null,
+        "impact_destination_cities": [],
+        "local_demand_confirmed": false,
+        "event_date_role": "unknown",
+        "content_kind": "event_announcement",
+        "date_precision": "tbd",
+        "date_confidence": "unknown",
+        "sessions": [],
+        "start_at": null,
+        "end_at": null,
+        "review_status": "pending",
+        "event_status": "unknown",
+        "record_kind": "official_candidate",
+        "event_phase": "unscheduled",
+        "date_evidence": [
+          {
+            "quote": "2026-10-12",
+            "date_text": "2026-10-12",
+            "parsed": {
+              "start_at": "2026-10-12",
+              "end_at": null,
+              "date_precision": "day",
+              "date_confidence": "explicit_year",
+              "event_date_role": "ambiguous",
+              "ticket_sale_at": null,
+              "ticket_sale_date_confidence": "unknown",
+              "registration_at": null,
+              "registration_date_confidence": "unknown",
+              "reference_period_start": null,
+              "reference_period_end": null
+            },
+            "line_index": 8
+          },
+          {
+            "quote": "2026人工智能产业大会将于10月14日至16日在位于济南起步区的济南黄河国际会展中心举行。大会由中国信息通信研究院联合山东省工业和信息化厅、济南市人民政府共同主办，以“加快推进人工智能赋能新型工业化”为主题，集中展示自主创新、应用牵引、生",
+            "date_text": "10月14日",
+            "parsed": {
+              "start_at": "2026-10-14",
+              "end_at": "2026-10-16",
+              "date_precision": "day",
+              "date_confidence": "inferred_year",
+              "event_date_role": "event",
+              "ticket_sale_at": null,
+              "ticket_sale_date_confidence": "unknown",
+              "registration_at": null,
+              "registration_date_confidence": "unknown",
+              "reference_period_start": null,
+              "reference_period_end": null
+            },
+            "line_index": 15
+          },
+          {
+            "quote": "大会主论坛将于10月15日举行：",
+            "date_text": "10月15日",
+            "parsed": {
+              "start_at": "2026-10-15",
+              "end_at": null,
+              "date_precision": "day",
+              "date_confidence": "inferred_year",
+              "event_date_role": "event",
+              "ticket_sale_at": null,
+              "ticket_sale_date_confidence": "unknown",
+              "registration_at": null,
+              "registration_date_confidence": "unknown",
+              "reference_period_start": null,
+              "reference_period_end": null
+            },
+            "line_index": 16
+          }
+        ],
+        "content_extraction": "page_without_footer",
+        "evidence_level": "source_body",
+        "source_url": "https://jnxxq.jinan.gov.cn/col/col122860/art/2026/art_754579fba3924815a84452abce6a259a.html",
+        "first_seen_at": "2026-11-26T07:41:16Z",
+        "last_seen_at": "2026-11-26T07:41:16Z",
+        "last_evidence_check_at": "2026-11-26T07:41:16Z",
+        "source_id": "date-followup",
+        "source_count": 1,
+        "sources": [
+          {
+            "source_url": "https://jnxxq.jinan.gov.cn/col/col122860/art/2026/art_754579fba3924815a84452abce6a259a.html",
+            "publisher": "date-followup",
+            "checked_at": "2026-11-26T07:41:16Z",
+            "observed_at": "2026-11-26T07:41:16Z",
+            "access_status": "body_read",
+            "verification_status": "unverified"
+          }
+        ]
+      },
+      "annotation_author": "assistant",
+      "human_label": null,
+      "annotation_status": "draft_requires_human_review",
+      "llm_method": "conversation_assistant_no_external_paid_model",
+      "evidence_gate": {
+        "passed": true,
+        "reason": "proposal_pending_review"
+      }
+    },
+    {
+      "sample_id": "evt_3a01f3a6a86f",
+      "url": "https://finance.sina.cn/2026-11-09/detail-iniycrzw6539502.d.html",
+      "label": "rss_missing_body_has_date",
+      "reason": "正文11月7日至8日，实际举办地成都；既是过去事件也不是三城现场需求。",
+      "match": "official_media_reprint",
+      "draft": {
+        "start_at": "2026-11-07",
+        "end_at": "2026-11-08",
+        "quote": "11月7日至8日，2026年全国幼儿手球嘉年华",
+        "start_at_token": "11月7日",
+        "end_at_token": "8日",
+        "year_quote": "2026年全国幼儿手球嘉年华",
+        "date_role": "event"
+      },
+      "access": {
+        "url": "https://finance.sina.cn/2026-11-09/detail-iniycrzw6539502.d.html",
+        "role": "independently_rediscovered_article",
+        "checked_at": "2026-11-26T07:41:17Z",
+        "http_status": 200,
+        "final_url": "https://finance.sina.cn/2026-11-09/detail-iniycrzw6539502.d.html",
+        "status": "ok",
+        "sha256": "df774a95ff953a170c220dad73df2cb003a7a3efb949cd9b89644cce25802d99",
+        "encoding": "utf-8",
+        "bytes": 32478,
+        "elapsed_seconds": 0.266,
+        "archive_kind": "original_response_no_contact_match"
+      },
+      "rule_extraction": {
+        "event_id": "off_d6edf79c9219",
+        "source_record_id": "https://finance.sina.cn/2026-11-09/detail-iniycrzw6539502.d.html",
+        "event_name": "2026年全国幼儿手球嘉年华暨成都市第六届天府幼儿体育大会举行",
+        "event_type": "festival",
+        "city_name": "成都市",
+        "city_slug": "chengdu",
+        "city_match": "text_confirmed",
+        "scope_level": "unknown",
+        "source_scope_city": null,
+        "impact_destination_cities": [],
+        "local_demand_confirmed": false,
+        "event_date_role": "unknown",
+        "content_kind": "event_announcement",
+        "date_precision": "tbd",
+        "date_confidence": "unknown",
+        "sessions": [],
+        "start_at": null,
+        "end_at": null,
+        "review_status": "pending",
+        "event_status": "unknown",
+        "record_kind": "official_candidate",
+        "event_phase": "unscheduled",
+        "date_evidence": [
+          {
+            "quote": "中国教育新闻网讯（记者 李小伟）11月7日至8日，2026年全国幼儿手球嘉年华暨成都市第六届天府幼儿体育大会在成都市青白江区文体中心举行。来自香港、山西、河南、四川等地的67支幼儿手球队伍、789名幼儿运动员、近200名领队及教练员齐聚蓉城，",
+            "date_text": "11月7日",
+            "parsed": {
+              "start_at": "2026-11-07",
+              "end_at": "2026-11-08",
+              "date_precision": "day",
+              "date_confidence": "inferred_year",
+              "event_date_role": "ambiguous",
+              "ticket_sale_at": null,
+              "ticket_sale_date_confidence": "unknown",
+              "registration_at": null,
+              "registration_date_confidence": "unknown",
+              "reference_period_start": null,
+              "reference_period_end": null
+            },
+            "line_index": 7
+          },
+          {
+            "quote": "Sina.cn(京ICP证000007)   2026-11-26 15:41",
+            "date_text": "2026-11-26",
+            "parsed": {
+              "start_at": "2026-11-26",
+              "end_at": null,
+              "date_precision": "day",
+              "date_confidence": "explicit_year",
+              "event_date_role": "ambiguous",
+              "ticket_sale_at": null,
+              "ticket_sale_date_confidence": "unknown",
+              "registration_at": null,
+              "registration_date_confidence": "unknown",
+              "reference_period_start": null,
+              "reference_period_end": null
+            },
+            "line_index": 29
+          }
+        ],
+        "content_extraction": "page_without_footer",
+        "evidence_level": "source_body",
+        "source_url": "https://finance.sina.cn/2026-11-09/detail-iniycrzw6539502.d.html",
+        "first_seen_at": "2026-11-26T07:41:17Z",
+        "last_seen_at": "2026-11-26T07:41:17Z",
+        "last_evidence_check_at": "2026-11-26T07:41:17Z",
+        "source_id": "date-followup",
+        "source_count": 1,
+        "sources": [
+          {
+            "source_url": "https://finance.sina.cn/2026-11-09/detail-iniycrzw6539502.d.html",
+            "publisher": "date-followup",
+            "checked_at": "2026-11-26T07:41:17Z",
+            "observed_at": "2026-11-26T07:41:17Z",
+            "access_status": "body_read",
+            "verification_status": "unverified"
+          }
+        ]
+      },
+      "annotation_author": "assistant",
+      "human_label": null,
+      "annotation_status": "draft_requires_human_review",
+      "llm_method": "conversation_assistant_no_external_paid_model",
+      "evidence_gate": {
+        "passed": true,
+        "reason": "proposal_pending_review"
+      }
+    },
+    {
+      "sample_id": "evt_4e4c7dec000e",
+      "url": "https://www.sdxc.gov.cn/waplm/wapxw/202608/t20260805_17994768.htm",
+      "label": "rss_missing_body_has_date",
+      "reason": "同一活动的权威替代报道，开幕8月4日；不是已证实的RSS原始正文。",
+      "match": "related_event_not_exact_original",
+      "draft": {
+        "start_at": "2026-08-04",
+        "end_at": "2026-08-04",
+        "quote": "8月4日",
+        "start_at_token": "8月4日",
+        "end_at_token": "8月4日",
+        "year_quote": "2026中非友好走进山东",
+        "date_role": "event"
+      },
+      "access": {
+        "url": "https://www.sdxc.gov.cn/waplm/wapxw/202608/t20260805_17994768.htm",
+        "role": "independently_rediscovered_article",
+        "checked_at": "2026-11-26T07:41:18Z",
+        "http_status": 200,
+        "final_url": "https://www.sdxc.gov.cn/waplm/wapxw/202608/t20260805_17994768.htm",
+        "status": "ok",
+        "sha256": "7e291892955ec5d68110f47b1e3c6fb3f996bef8c6519602c391260a5777edbb",
+        "encoding": "utf-8",
+        "bytes": 8528,
+        "elapsed_seconds": 0.125,
+        "archive_kind": "original_response_no_contact_match"
+      },
+      "rule_extraction": {
+        "event_id": "off_9bc43a5173f9",
+        "source_record_id": "https://www.sdxc.gov.cn/waplm/wapxw/202608/t20260805_17994768.htm",
+        "event_name": "鲁非十大文化合作项目发布_山东宣传网",
+        "event_type": "other",
+        "city_name": null,
+        "city_slug": null,
+        "city_match": "not_established",
+        "scope_level": "unknown",
+        "source_scope_city": null,
+        "impact_destination_cities": [],
+        "local_demand_confirmed": false,
+        "event_date_role": "unknown",
+        "content_kind": "event_announcement",
+        "date_precision": "tbd",
+        "date_confidence": "unknown",
+        "sessions": [],
+        "start_at": null,
+        "end_at": null,
+        "review_status": "pending",
+        "event_status": "unknown",
+        "record_kind": "official_candidate",
+        "event_phase": "unscheduled",
+        "date_evidence": [
+          {
+            "quote": "大众新闻客户端2026-08-05",
+            "date_text": "2026-08-05",
+            "parsed": {
+              "start_at": null,
+              "end_at": null,
+              "date_precision": "tbd",
+              "date_confidence": "unknown",
+              "event_date_role": "unknown",
+              "ticket_sale_at": null,
+              "ticket_sale_date_confidence": "unknown",
+              "registration_at": null,
+              "registration_date_confidence": "unknown",
+              "reference_period_start": null,
+              "reference_period_end": null
+            },
+            "line_index": 2
+          },
+          {
+            "quote": "8月4日上午，2026中非友好走进山东——鲁非文化嘉年华活动在济南开幕。开幕式现场，发布了“鲁非十大文化合作项目”。",
+            "date_text": "8月4日",
+            "parsed": {
+              "start_at": null,
+              "end_at": null,
+              "date_precision": "tbd",
+              "date_confidence": "unknown",
+              "event_date_role": "unknown",
+              "ticket_sale_at": null,
+              "ticket_sale_date_confidence": "unknown",
+              "registration_at": null,
+              "registration_date_confidence": "unknown",
+              "reference_period_start": null,
+              "reference_period_end": null
+            },
+            "line_index": 3
+          }
+        ],
+        "content_extraction": "page_without_footer",
+        "evidence_level": "source_body",
+        "source_url": "https://www.sdxc.gov.cn/waplm/wapxw/202608/t20260805_17994768.htm",
+        "first_seen_at": "2026-11-26T07:41:18Z",
+        "last_seen_at": "2026-11-26T07:41:18Z",
+        "last_evidence_check_at": "2026-11-26T07:41:18Z",
+        "source_id": "date-followup",
+        "source_count": 1,
+        "sources": [
+          {
+            "source_url": "https://www.sdxc.gov.cn/waplm/wapxw/202608/t20260805_17994768.htm",
+            "publisher": "date-followup",
+            "checked_at": "2026-11-26T07:41:18Z",
+            "observed_at": "2026-11-26T07:41:18Z",
+            "access_status": "body_read",
+            "verification_status": "unverified"
+          }
+        ]
+      },
+      "annotation_author": "assistant",
+      "human_label": null,
+      "annotation_status": "draft_requires_human_review",
+      "llm_method": "conversation_assistant_no_external_paid_model",
+      "evidence_gate": {
+        "passed": true,
+        "reason": "proposal_pending_review"
+      }
+    }
+  ]
+}

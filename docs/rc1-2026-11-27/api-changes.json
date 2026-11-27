@@ -1,0 +1,699 @@
+{
+  "meta": {
+    "schema_version": "business-1",
+    "generated_at": "2026-11-27T03:16:20.144005+00:00",
+    "default_days": 90,
+    "horizon_days": 365,
+    "last_observed_at": "2026-11-27T03:16:20.004653+00:00",
+    "collection_ok": true,
+    "search_mode": "manual_agent_import",
+    "official_rows_not_adapted": 0,
+    "bootstrap_applied_this_build": true,
+    "gaps": [
+      "搜索尚非无人值守服务；需人工触发检索并导入",
+      "三城和类别覆盖不完整；全国考试不代表当地考点",
+      "日期冲突不进入日历；候选未经人工核验"
+    ]
+  },
+  "data": [
+    {
+      "venue_name": "天津大剧院歌剧厅",
+      "scope_level": "city",
+      "end_at": "2026-12-19",
+      "event_type": "concert",
+      "event_name": "老狼纯真年代天津站及加场",
+      "source_published_at": "2026-11-10",
+      "city_name": "天津市",
+      "short_evidence": [
+        "天津广播",
+        "在12月18日基础上，12月19日加开一场",
+        "天津大剧院·歌剧厅"
+      ],
+      "start_at": "2026-12-18",
+      "event_id": "p4_laolang_tianjin",
+      "discovery_lane": "search_agent",
+      "source_url": "https://www.sina.cn/news/detail/5363780549610334.html",
+      "observed_at": "2026-11-27T03:15:49Z",
+      "observation_type": "extra_show",
+      "date_review_required": false,
+      "sessions": [
+        "2026-12-18",
+        "2026-12-19"
+      ],
+      "record_id": "p4_laolang_tianjin",
+      "observation_id": "f93fdba845748391269048d8",
+      "change_kind": "status_change"
+    },
+    {
+      "venue_name": "天津奥林匹克中心体育馆",
+      "scope_level": "city",
+      "end_at": "2027-01-17",
+      "event_type": "concert",
+      "event_name": "叶世荣天津站1月17日加场",
+      "source_published_at": "2026-11-24",
+      "city_name": "天津市",
+      "short_evidence": [
+        "天津广播",
+        "演出时间增加2027年1月17日"
+      ],
+      "start_at": "2027-01-17",
+      "event_id": "p4_yeshirong_extra",
+      "discovery_lane": "social_signal",
+      "source_url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "observed_at": "2026-11-27T03:01:50Z",
+      "observation_type": "extra_show",
+      "date_review_required": false,
+      "record_id": "p4_yeshirong_extra",
+      "observation_id": "f67d2f1c85d0616fff02e86c",
+      "change_kind": "status_change"
+    },
+    {
+      "venue_name": "天津奥林匹克中心体育馆",
+      "scope_level": "city",
+      "end_at": "2027-01-17",
+      "event_type": "concert",
+      "event_name": "叶世荣天津站1月17日加场",
+      "source_published_at": "2026-11-24",
+      "city_name": "天津市",
+      "short_evidence": [
+        "2027年1月17日"
+      ],
+      "start_at": "2027-01-17",
+      "event_id": "p4_yeshirong_extra",
+      "discovery_lane": "social_signal",
+      "source_url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "observed_at": "2026-11-27T02:11:55Z",
+      "observation_type": "observed",
+      "record_id": "p4_yeshirong_extra",
+      "observation_id": "fe5cda7a5afa3ed874fc7615",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "天津大剧院歌剧厅",
+      "scope_level": "city",
+      "end_at": "2026-12-19",
+      "event_type": "concert",
+      "event_name": "老狼纯真年代天津站及加场",
+      "source_published_at": "2026-11-10",
+      "city_name": "天津市",
+      "short_evidence": [
+        "11月25日 12:19"
+      ],
+      "start_at": "2026-12-18",
+      "event_id": "p4_laolang_tianjin",
+      "discovery_lane": "search_agent",
+      "source_url": "https://feng.ifeng.com/c/8yKyFYwjxpn",
+      "observed_at": "2026-11-27T02:11:55Z",
+      "observation_type": "announced",
+      "signal_kind": "status_change",
+      "record_id": "p4_laolang_tianjin",
+      "observation_id": "dcf6fa12dc84f8eee30f7b63",
+      "change_kind": "status_change"
+    },
+    {
+      "venue_name": "天津奥林匹克中心体育馆",
+      "scope_level": "city",
+      "end_at": "2027-01-17",
+      "event_type": "concert",
+      "event_name": "叶世荣天津站1月17日加场",
+      "source_published_at": "2026-11-24",
+      "city_name": "天津市",
+      "short_evidence": [
+        "2027年1月17日"
+      ],
+      "start_at": "2027-01-17",
+      "event_id": "p4_yeshirong_extra",
+      "discovery_lane": "social_signal",
+      "source_url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "observed_at": "2026-11-27T02:11:55Z",
+      "observation_type": "extra_show",
+      "signal_kind": "status_change",
+      "record_id": "p4_yeshirong_extra",
+      "observation_id": "231ea16f373cf9dc6f306d44",
+      "change_kind": "status_change"
+    },
+    {
+      "scope_level": "organizer",
+      "end_at": "2027-05-23",
+      "event_type": "conference",
+      "event_name": "ICCLL2027西安国际会议",
+      "city_name": "西安市",
+      "short_evidence": [
+        "May 21 to 23, 2027"
+      ],
+      "start_at": "2027-05-21",
+      "event_id": "p4_iccll_regression",
+      "discovery_lane": "official_notice",
+      "source_url": "https://www.iccll.org/",
+      "observed_at": "2026-11-27T02:09:35Z",
+      "observation_type": "observed",
+      "record_id": "p4_iccll_regression",
+      "observation_id": "35c1d0c3a26e5326dba1bdd4",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "山东国际会展中心",
+      "scope_level": "city",
+      "end_at": "2027-03-14",
+      "event_type": "exhibition",
+      "event_name": "第56届中国国际医疗器械山东博览会",
+      "city_name": "济南市",
+      "short_evidence": [
+        "2027.03.12",
+        "03.14"
+      ],
+      "start_at": "2027-03-12",
+      "event_id": "p4_medical_jinan",
+      "discovery_lane": "official_notice",
+      "source_url": "https://www.chenghuaex.com/index.php",
+      "observed_at": "2026-11-27T02:04:30Z",
+      "observation_type": "observed",
+      "record_id": "p4_medical_jinan",
+      "observation_id": "24cc34c2a1aa2baa07706a96",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "山东国际会展中心",
+      "scope_level": "city",
+      "end_at": "2027-04-18",
+      "event_type": "conference",
+      "event_name": "第二十二届中国济南国际光储利用大会",
+      "city_name": "济南市",
+      "short_evidence": [
+        "2027.04.16",
+        "04.18"
+      ],
+      "start_at": "2027-04-16",
+      "event_id": "p4_solar_jinan",
+      "discovery_lane": "official_notice",
+      "source_url": "https://www.chenghuaex.com/index.php",
+      "observed_at": "2026-11-27T02:04:30Z",
+      "observation_type": "observed",
+      "record_id": "p4_solar_jinan",
+      "observation_id": "c9652d819b26bad7c93055c4",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "济南考区，具体考场见准考证",
+      "scope_level": "city",
+      "end_at": "2026-12-06",
+      "event_type": "exam",
+      "event_name": "济南2027年度公务员公共科目笔试",
+      "source_published_at": "2026-11-05",
+      "city_name": "济南市",
+      "short_evidence": [
+        "12月6日上午",
+        "在我市设置考点"
+      ],
+      "start_at": "2026-12-06",
+      "event_id": "p4_jinan_civil_public",
+      "discovery_lane": "official_notice",
+      "source_url": "https://jnhrss.jinan.gov.cn/col/col18309/art/2026/art_c9023da22f034149aa512e23fd1fc7ec.html",
+      "observed_at": "2026-11-27T02:04:30Z",
+      "observation_type": "observed",
+      "record_id": "p4_jinan_civil_public",
+      "observation_id": "f5d04567c127ae3617d8fd40",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "西电6113报考点，最终考场待准考证",
+      "scope_level": "test_center",
+      "end_at": null,
+      "event_type": "exam",
+      "event_name": "2027研考西电6113报考点范围线索",
+      "city_name": "西安市",
+      "short_evidence": [
+        "报考点6113"
+      ],
+      "start_at": null,
+      "event_id": "p4_xidian_exam",
+      "discovery_lane": "official_notice",
+      "source_url": "https://gr.xidian.edu.cn/info/1074/20864.htm",
+      "observed_at": "2026-11-27T02:04:30Z",
+      "observation_type": "observed",
+      "record_id": "p4_xidian_exam",
+      "observation_id": "6a7078749eb37f45c26ae573",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "国家会展中心天津",
+      "scope_level": "city",
+      "end_at": "2027-01-31",
+      "event_type": "exhibition",
+      "event_name": "天津NJ动漫游戏狂欢节",
+      "city_name": "天津市",
+      "short_evidence": [
+        "2027-01-30",
+        "2027-01-31"
+      ],
+      "start_at": "2027-01-30",
+      "event_id": "p4_nj_tianjin",
+      "discovery_lane": "official_notice",
+      "source_url": "https://www.ncectj.com/",
+      "observed_at": "2026-11-27T02:04:29Z",
+      "observation_type": "observed",
+      "record_id": "p4_nj_tianjin",
+      "observation_id": "3a4546d56441bdd979d999bf",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "山东国际会展中心",
+      "scope_level": "city",
+      "end_at": "2027-03-01",
+      "event_type": "exhibition",
+      "event_name": "济南国际工业智能及动力传动与自动化展览会",
+      "city_name": "济南市",
+      "short_evidence": [
+        "2027.02.26",
+        "03.01"
+      ],
+      "start_at": "2027-02-26",
+      "event_id": "p4_industry_jinan",
+      "discovery_lane": "official_notice",
+      "source_url": "https://www.cmeshow.cn/",
+      "observed_at": "2026-11-27T02:04:29Z",
+      "observation_type": "observed",
+      "record_id": "p4_industry_jinan",
+      "observation_id": "ff9260c20bdce183784e9471",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "天津奥林匹克体育中心体育馆",
+      "scope_level": "city",
+      "end_at": "2027-01-01",
+      "event_type": "concert",
+      "event_name": "林志炫天津跨年演唱会",
+      "source_published_at": "2026-09-03",
+      "city_name": "天津市",
+      "date_review_required": true,
+      "short_evidence": [
+        "2026年12月31日-2027年1月1日"
+      ],
+      "start_at": "2026-12-31",
+      "event_id": "p4_linzhixuan_tianjin",
+      "discovery_lane": "search_agent",
+      "source_url": "https://news.enorth.com.cn/system/2026/09/03/059725246.shtml",
+      "observed_at": "2026-11-27T02:04:27Z",
+      "observation_type": "observed",
+      "record_id": "p4_linzhixuan_tianjin",
+      "observation_id": "d046ac3730f56701919d223d",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "天津大剧院歌剧厅",
+      "scope_level": "city",
+      "end_at": "2026-12-19",
+      "event_type": "concert",
+      "event_name": "老狼纯真年代天津站及加场",
+      "source_published_at": "2026-11-10",
+      "city_name": "天津市",
+      "short_evidence": [
+        "2026.12.19"
+      ],
+      "start_at": "2026-12-18",
+      "event_id": "p4_laolang_tianjin",
+      "discovery_lane": "search_agent",
+      "source_url": "https://feng.ifeng.com/c/8xxZfca1753",
+      "observed_at": "2026-11-27T02:04:26Z",
+      "observation_type": "observed",
+      "record_id": "p4_laolang_tianjin",
+      "observation_id": "1c6ccdbd5b75ecd64707f135",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "济南奥体中心体育馆",
+      "scope_level": "city",
+      "end_at": "2026-12-19",
+      "event_type": "concert",
+      "event_name": "胡彦斌济南演唱会",
+      "source_published_at": "2026-11-04",
+      "city_name": "济南市",
+      "short_evidence": [
+        "12月19日"
+      ],
+      "start_at": "2026-12-19",
+      "event_id": "p4_huyanbin_jinan",
+      "discovery_lane": "search_agent",
+      "source_url": "https://www.thepaper.cn/newsDetail_forward_34402452",
+      "observed_at": "2026-11-27T02:04:26Z",
+      "observation_type": "observed",
+      "record_id": "p4_huyanbin_jinan",
+      "observation_id": "6bc7f3bc5fa092428be12b57",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "西安奥体中心体育馆",
+      "scope_level": "city",
+      "end_at": "2026-12-26",
+      "event_type": "concert",
+      "event_name": "那英我来因为你在西安站",
+      "source_published_at": "2026-11-22",
+      "city_name": "西安市",
+      "short_evidence": [
+        "2026年12月26日19:00"
+      ],
+      "start_at": "2026-12-26",
+      "event_id": "p4_naying_xian",
+      "discovery_lane": "social_signal",
+      "source_url": "https://sina.cn/news/detail/5367995331510509.html",
+      "observed_at": "2026-11-27T02:04:24Z",
+      "observation_type": "observed",
+      "record_id": "p4_naying_xian",
+      "observation_id": "7cedd04ae9355e00549ff5cc",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": "济南奥林匹克体育中心体育馆",
+      "scope_level": "city",
+      "end_at": "2026-12-06",
+      "event_type": "concert",
+      "event_name": "徐良时间折叠济南站",
+      "source_published_at": "2026-11-11",
+      "city_name": "济南市",
+      "short_evidence": [
+        "12月4日、5日、6日"
+      ],
+      "start_at": "2026-12-04",
+      "event_id": "p4_xuliang_jinan",
+      "discovery_lane": "search_agent",
+      "source_url": "https://www.thepaper.cn/newsDetail_forward_34452838",
+      "observed_at": "2026-11-27T02:04:24Z",
+      "observation_type": "observed",
+      "record_id": "p4_xuliang_jinan",
+      "observation_id": "10b16efd6928e91c6a531c1f",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "organizer",
+      "end_at": "2026-12-19",
+      "event_type": "conference",
+      "event_name": "第四届数字赋能外语教师发展研讨会",
+      "sessions": [
+        {
+          "start_at": "2026-12-19",
+          "end_at": "2026-12-19"
+        }
+      ],
+      "city_name": "西安市",
+      "short_evidence": [
+        "会议时间：2026年12月19日"
+      ],
+      "start_at": "2026-12-19",
+      "event_id": "off_1cf212722b4c",
+      "discovery_lane": "retained_official",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1243/9348.htm",
+      "observed_at": "2026-11-26T07:13:19Z",
+      "observation_type": "observed",
+      "record_id": "off_1cf212722b4c",
+      "observation_id": "346d7a9762932123983b431d",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "organizer",
+      "end_at": "2027-01-10",
+      "event_type": "conference",
+      "event_name": "第四届智能控制测量与信号系统国际会议FICMSS2027",
+      "sessions": [
+        {
+          "start_at": "2027-01-08",
+          "end_at": "2027-01-10"
+        }
+      ],
+      "city_name": "西安市",
+      "short_evidence": [
+        "FICMSS 2027将于2027年1月8日至10日在西安举行"
+      ],
+      "start_at": "2027-01-08",
+      "event_id": "off_95ad746a19c1",
+      "discovery_lane": "retained_official",
+      "source_url": "https://cmcs.chd.edu.cn/2026/1010/c8633a262954/page.htm",
+      "observed_at": "2026-11-26T07:13:19Z",
+      "observation_type": "observed",
+      "record_id": "off_95ad746a19c1",
+      "observation_id": "a538ac8cbc0f95d6ef48d273",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "organizer",
+      "end_at": "2026-12-13",
+      "event_type": "conference",
+      "event_name": "区域国别研究与国家语言能力建设学术研讨会",
+      "sessions": [
+        {
+          "start_at": "2026-12-11",
+          "end_at": "2026-12-13"
+        }
+      ],
+      "city_name": "济南市",
+      "short_evidence": [
+        "会议时间：2026年12月11日至13日"
+      ],
+      "start_at": "2026-12-11",
+      "event_id": "off_230eef02680c",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.flc.sdu.edu.cn/info/1150/23835.htm",
+      "observed_at": "2026-11-26T07:13:19Z",
+      "observation_type": "observed",
+      "record_id": "off_230eef02680c",
+      "observation_id": "62462600ea7a6630995a078c",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "city",
+      "end_at": "2027-02-21",
+      "event_type": "holiday",
+      "event_name": "济南义务教育2027寒假",
+      "sessions": [
+        {
+          "start_at": "2027-01-23",
+          "end_at": "2027-02-21"
+        }
+      ],
+      "city_name": "济南市",
+      "short_evidence": [
+        "义务教育阶段寒假开始时间为 2027年1 月23 日（腊月十六，周六），寒假结束时间为 2 月 21 日"
+      ],
+      "start_at": "2027-01-23",
+      "event_id": "off_29537fcfce98",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "observed_at": "2026-11-26T07:11:04Z",
+      "observation_type": "observed",
+      "record_id": "off_29537fcfce98",
+      "observation_id": "398bf0379545121aebf5a225",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "city",
+      "end_at": "2027-02-21",
+      "event_type": "holiday",
+      "event_name": "济南高中2027寒假",
+      "sessions": [
+        {
+          "start_at": "2027-01-30",
+          "end_at": "2027-02-21"
+        }
+      ],
+      "city_name": "济南市",
+      "short_evidence": [
+        "高中阶段学校寒假开始时间为 2027年 1 月 30 日（腊月廿三，周六），寒假结束时间为2月21日"
+      ],
+      "start_at": "2027-01-30",
+      "event_id": "off_43270b95cd9c",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "observed_at": "2026-11-26T07:11:04Z",
+      "observation_type": "observed",
+      "record_id": "off_43270b95cd9c",
+      "observation_id": "e9a0baf19e4657cd3bd4cc74",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "city",
+      "end_at": "2027-08-31",
+      "event_type": "holiday",
+      "event_name": "济南义务教育2027暑假",
+      "sessions": [
+        {
+          "start_at": "2027-07-07",
+          "end_at": "2027-08-31"
+        }
+      ],
+      "city_name": "济南市",
+      "short_evidence": [
+        "义务教育阶段学校暑假开始时间为2027 年7 月7 日（周三），暑假结束时间为 8 月 31 日"
+      ],
+      "start_at": "2027-07-07",
+      "event_id": "off_fc5e0551c22b",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "observed_at": "2026-11-26T07:11:04Z",
+      "observation_type": "observed",
+      "record_id": "off_fc5e0551c22b",
+      "observation_id": "ba5c3650d50f88af174c3e56",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "city",
+      "end_at": "2027-08-31",
+      "event_type": "holiday",
+      "event_name": "济南高中2027暑假",
+      "sessions": [
+        {
+          "start_at": "2027-07-14",
+          "end_at": "2027-08-31"
+        }
+      ],
+      "city_name": "济南市",
+      "short_evidence": [
+        "高中阶段学校暑假开始时间为2027年7月 14 日（周三），暑假结束时间为 8 月31 日"
+      ],
+      "start_at": "2027-07-14",
+      "event_id": "off_daef9e3fbe9f",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "observed_at": "2026-11-26T07:11:04Z",
+      "observation_type": "observed",
+      "record_id": "off_daef9e3fbe9f",
+      "observation_id": "b8b368ca846bc82fcc231346",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "city",
+      "end_at": "2026-12-20",
+      "event_type": "exam",
+      "event_name": "2027年全国硕士研究生招生考试天津考区",
+      "sessions": [
+        {
+          "start_at": "2026-12-19",
+          "end_at": "2026-12-20"
+        }
+      ],
+      "city_name": "天津市",
+      "short_evidence": [
+        "初试时间为今年12月19日至20日"
+      ],
+      "start_at": "2026-12-19",
+      "event_id": "off_c920f35ea2ff",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.tj.gov.cn/zmhd/hygqx/202610/t20261009_7390056.html",
+      "observed_at": "2026-11-26T07:11:04Z",
+      "observation_type": "observed",
+      "record_id": "off_c920f35ea2ff",
+      "observation_id": "a1c25608c2a5cb36095e1f94",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "city",
+      "end_at": "2026-12-06",
+      "event_type": "exam",
+      "event_name": "天津市2027年度公务员公共科目笔试",
+      "sessions": [
+        {
+          "start_at": "2026-12-06",
+          "end_at": "2026-12-06"
+        }
+      ],
+      "city_name": "天津市",
+      "short_evidence": [
+        "12月6日上午"
+      ],
+      "start_at": "2026-12-06",
+      "event_id": "off_04f5d5bcf753",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+      "observed_at": "2026-11-26T07:11:04Z",
+      "observation_type": "observed",
+      "record_id": "off_04f5d5bcf753",
+      "observation_id": "3e70911c7a1318a21dd989a3",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "city",
+      "end_at": "2026-12-05",
+      "event_type": "exam",
+      "event_name": "天津市2027年度公务员专业科目笔试",
+      "sessions": [
+        {
+          "start_at": "2026-12-05",
+          "end_at": "2026-12-05"
+        }
+      ],
+      "city_name": "天津市",
+      "short_evidence": [
+        "12月5日下午"
+      ],
+      "start_at": "2026-12-05",
+      "event_id": "off_7a191ac7f8bf",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+      "observed_at": "2026-11-26T07:11:04Z",
+      "observation_type": "observed",
+      "record_id": "off_7a191ac7f8bf",
+      "observation_id": "dea68548b0d3bc740dcfe401",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "national",
+      "end_at": "2026-12-20",
+      "event_type": "exam",
+      "event_name": "2027年全国硕士研究生招生考试初试",
+      "sessions": [
+        {
+          "start_at": "2026-12-19",
+          "end_at": "2026-12-20"
+        }
+      ],
+      "city_name": null,
+      "short_evidence": [
+        "初试时间为2026年12月19日至20日"
+      ],
+      "start_at": "2026-12-19",
+      "event_id": "off_4e9ff1b2d939",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.moe.gov.cn/srcsite/A15/moe_778/s3261/202609/t20260923_1451734.html",
+      "observed_at": "2026-11-26T07:11:03Z",
+      "observation_type": "observed",
+      "record_id": "off_4e9ff1b2d939",
+      "observation_id": "25dcdcd63ecaf2390773e30f",
+      "change_kind": "new_record"
+    },
+    {
+      "venue_name": null,
+      "scope_level": "national",
+      "end_at": "2026-11-29",
+      "event_type": "exam",
+      "event_name": "2027年度国考公共科目笔试",
+      "sessions": [
+        {
+          "start_at": "2026-11-29",
+          "end_at": "2026-11-29"
+        }
+      ],
+      "city_name": null,
+      "short_evidence": [
+        "公共科目笔试将于11月29日"
+      ],
+      "start_at": "2026-11-29",
+      "event_id": "off_4e8264020730",
+      "discovery_lane": "retained_official",
+      "source_url": "https://www.beijing.gov.cn/cs/gncs/csbmts/202611/t20261116_4948266.html",
+      "observed_at": "2026-11-26T07:11:03Z",
+      "observation_type": "observed",
+      "record_id": "off_4e8264020730",
+      "observation_id": "965fefefc8ba5f7ea2810da7",
+      "change_kind": "new_record"
+    }
+  ]
+}

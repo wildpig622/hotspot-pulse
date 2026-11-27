@@ -25,7 +25,15 @@ SITE_API = ROOT / "site" / "api" / "v1"
 CITIES_FILE = ROOT / "config" / "cities.json"
 SCOPE = json.loads((ROOT / "config" / "monitoring-scope.json").read_text(encoding="utf-8"))
 FEED_TOPICS = tuple(SCOPE["topics"])
-HOLIDAY_TERMS = ("秋假", "春假", "寒假", "暑假", "学生假期", "放假安排", "放假调整", "调休安排")
+TOPIC_BY_KEY = {topic["key"]: topic for topic in FEED_TOPICS}
+TOPIC_CATALOG = tuple({"key": topic["key"], "label": topic["label"]} for topic in FEED_TOPICS)
+_DEFAULT_QUERY_ROUTES = (
+    {"key": "year_lookback", "mode": "years", "lookback_days": 180},
+    {"key": "upcoming_months", "mode": "months", "lookback_days": 30},
+)
+QUERY_ROUTES = tuple(SCOPE.get("query_routes") or _DEFAULT_QUERY_ROUTES)
+QUERY_ROUTE_BY_KEY = {route["key"]: route for route in QUERY_ROUTES}
+HOLIDAY_TERMS = tuple(TOPIC_BY_KEY.get("holiday", {}).get("terms", ()))
 UTC = timezone.utc
 BEIJING = timezone(timedelta(hours=8))
 KEYWORDS = (
@@ -35,6 +43,9 @@ KEYWORDS = (
     "APEC", "峰会", "大会", "国际会议", "行业会议", "论坛"
 ) + HOLIDAY_TERMS
 KEYWORDS = tuple(dict.fromkeys(KEYWORDS + tuple(term for topic in FEED_TOPICS for term in topic['terms'])))
+EVENT_DISCOVERY_PATTERN = re.compile(
+    "|".join(re.escape(term) for term in sorted(KEYWORDS, key=len, reverse=True))
+) if KEYWORDS else re.compile(r"(?!x)x")
 
 GUIDE_TERMS = (
     "有哪些", "有什么", "攻略", "指南", "购票平台", "票务平台", "怎么买票",
@@ -49,13 +60,17 @@ SCHEDULE_ROUNDUP_TERMS = (
 TICKETING_TERMS = ("开票", "开售", "售票", "预售", "抢票", "门票", "票价", "发售", "开抢")
 REGISTRATION_TERMS = (
     "报名启动", "报名开启", "报名时间", "报名截止", "报名通道",
-    "开放报名", "开始报名", "报名即将开始", "报名啦", "开启报名"
+    "开放报名", "开始报名", "报名即将开始", "报名啦", "开启报名",
+    "网上确认", "缴费时间", "资格审查", "资格审核", "准考证打印", "打印准考证",
+    "成绩查询", "查询成绩", "成绩公布", "录取结果", "领取证书", "证书领取"
 )
 EVENT_DATE_CUES = (
     "将于", "定于", "定档", "举行", "举办", "开幕", "开赛", "开演",
     "开跑", "启幕", "上演", "开展", "举办时间", "活动时间", "赛事时间",
     "演出时间", "比赛时间", "展出时间", "正式举行", "将举行", "将举办",
-    "放假时间", "秋假时间", "春假时间", "寒假时间", "暑假时间", "放假", "会议时间"
+    "放假时间", "秋假时间", "春假时间", "寒假时间", "暑假时间", "放假", "会议时间",
+    "考试时间", "考试日期", "考试安排", "初试时间", "笔试时间", "笔试日期",
+    "面试时间", "面试日期", "开考时间", "开考日期", "考期", "学期时间"
 )
 PAST_REPORT_TERMS = (
     "冠军诞生", "夺冠", "圆满落幕", "圆满结束", "成功举办", "顺利举行",
@@ -116,21 +131,15 @@ def normalize_title(value: str) -> str:
 
 def classify_event(text: str) -> str:
     value = text or ""
-    if any(word in value for word in ("秋假", "春假", "寒假", "暑假", "学生假期")):
-        return "holiday"
-    if any(word in value for word in ("展会", "博览会", "展览", "茶博会", "车展", "漫展", "动漫展", "进博会", "高交会")):
-        return "exhibition"
-    if any(word in value for word in ("马拉松", "体育赛事", "赛事", "足球", "篮球", "网球", "运动会", "路跑", "比赛")):
-        return "sports"
-    if any(word in value for word in ("演唱会", "音乐节", "巡演", "音乐会", "话剧", "歌剧", "演出", "livehouse")):
-        return "concert"
-    if any(word in value for word in ("节庆", "灯会", "庙会", "烟花", "嘉年华", "文化节", "美食节")):
-        return "festival"
-    if any(word in value for word in ("APEC", "峰会", "大会", "国际会议", "行业会议", "论坛")):
-        return "conference"
-    if any(word in value for word in HOLIDAY_TERMS):
-        return "holiday"
-    return "other"
+    matches = []
+    for index, topic in enumerate(FEED_TOPICS):
+        for term in topic.get("terms", ()):
+            if term and term in value:
+                # Generic school/exam words are useful for discovery but must
+                # not override an explicitly named conference or performance.
+                priority = 10 if term in {"学期", "中小学", "义务教育", "开学", "返校", "考试", "笔试", "面试", "招录"} else int(topic.get("priority", 0))
+                matches.append((priority, len(term), -index, topic["key"]))
+    return max(matches)[-1] if matches else "other"
 
 
 def classify_content(title: str, description: str = "") -> str:
@@ -186,7 +195,7 @@ def configured_cities() -> list[dict[str, Any]]:
 
 def assess_event_city(city: dict[str, Any], title: str, description: str = "") -> str:
     """Prefer the city next to the first event name over incidental city mentions."""
-    event_match = re.search("|".join(map(re.escape, KEYWORDS)), title)
+    event_match = EVENT_DISCOVERY_PATTERN.search(title)
     hosts: list[tuple[int, str]] = []
     if event_match:
         prefix = title[max(0, event_match.start() - 18):event_match.start()]
@@ -262,7 +271,7 @@ def _date_role(text: str, start: int, end: int) -> str:
     clause = text[left:right]
     local_start, local_end = start - left, end - left
     label = re.search(
-        r"(报名时间|报名日期|报名截止|开票时间|售票时间|预售时间|比赛时间|比赛日期|演出时间|举办时间|活动时间)[：:为是\s]*$",
+        r"(报名时间|报名日期|报名截止|开票时间|售票时间|预售时间|比赛时间|比赛日期|演出时间|举办时间|活动时间|会议时间|考试时间|考试日期|考试安排|初试时间|笔试时间|笔试日期|面试时间|面试日期|开考时间|开考日期|考期)[：:为是\s]*$",
         clause[:local_start],
     )
     if label:
@@ -273,7 +282,7 @@ def _date_role(text: str, start: int, end: int) -> str:
         return "event"
     following = clause[local_end:local_end + 24]
     next_label_or_date = re.search(
-        r"报名时间|报名日期|开票时间|售票时间|预售时间|比赛时间|比赛日期|演出时间|举办时间|活动时间|(?:20\d{2}年)?\d{1,2}月\d{1,2}日|20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}",
+        r"报名时间|报名日期|开票时间|售票时间|预售时间|比赛时间|比赛日期|演出时间|举办时间|活动时间|会议时间|考试时间|考试日期|考试安排|初试时间|笔试时间|笔试日期|面试时间|面试日期|开考时间|开考日期|考期|(?:20\d{2}年)?\d{1,2}月\d{1,2}日|20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}",
         following,
     )
     if next_label_or_date:
@@ -650,8 +659,13 @@ def source_type_for(publisher: str, publisher_url: str) -> str:
     return "other"
 
 
-def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | None = None, upcoming: bool = False) -> str:
-    after = (today - timedelta(days=SCOPE["discovery_lookback_days"])).isoformat()
+def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | None = None,
+                   upcoming: bool = False, route: str | dict[str, Any] | None = None) -> str:
+    route_config = route if isinstance(route, dict) else QUERY_ROUTE_BY_KEY.get(
+        route or ("upcoming_months" if upcoming else "year_lookback"),
+        _DEFAULT_QUERY_ROUTES[1 if upcoming else 0],
+    )
+    after = (today - timedelta(days=int(route_config.get("lookback_days", SCOPE["discovery_lookback_days"])))).isoformat()
     terms = topic["terms"] if topic else KEYWORDS
     last_year = (today + timedelta(days=SCOPE["monitoring_horizon_days"])).year
     years = " OR ".join(str(year) for year in range(today.year, last_year + 1))
@@ -660,13 +674,13 @@ def build_feed_url(city: dict[str, Any], today: date, topic: dict[str, Any] | No
         + "(" + " OR ".join(terms) + ") "
         + "(" + years + ") after:" + after
     )
-    if upcoming:
+    if route_config.get("mode") == "months":
         # A second route catches announcements whose headline omits the year.
         # Month terms refer to the actual 90-day horizon, including January.
         months = sorted({(today + timedelta(days=n)).month for n in range(SCOPE['monitoring_horizon_days'] + 1)})
         query = ('"' + city['aliases'][0] + '" (' + ' OR '.join(terms) + ') ('
                  + ' OR '.join(str(month) + '月' for month in months) + ') after:'
-                 + (today - timedelta(days=30)).isoformat())
+                 + after)
     params = urllib.parse.urlencode({"q": query, "hl": "zh-CN", "gl": "CN", "ceid": "CN:zh-Hans"})
     return "https://news.google.com/rss/search?" + params
 
@@ -828,15 +842,15 @@ def run_collection(include_sources: bool = False, include_details: bool = False,
     def request_topic(pair: tuple[dict[str, Any], dict[str, Any]]) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]], str | None]:
         city, topic = pair
         found, checks = {}, []
-        for upcoming in (False, True):
-            url = build_feed_url(city, today, topic, upcoming)
+        for route in QUERY_ROUTES:
+            url = build_feed_url(city, today, topic, route=route)
             try:
                 items = parse_feed(fetch_feed(url))
                 for item in items:
                     found[(item['title'], item['url'])] = dict(item, discovery_query=url)
-                checks.append({'route': 'upcoming_months' if upcoming else 'year_lookback', 'url': url, 'status': 'ok', 'items': len(items)})
+                checks.append({'route': route['key'], 'url': url, 'status': 'ok', 'items': len(items)})
             except Exception as exc:
-                checks.append({'route': 'upcoming_months' if upcoming else 'year_lookback', 'url': url, 'status': 'failed', 'error_type': type(exc).__name__})
+                checks.append({'route': route['key'], 'url': url, 'status': 'failed', 'error_type': type(exc).__name__})
         query_checks[(city['city_name'], topic['key'])] = checks
         return city, topic, list(found.values()), None if any(row['status'] == 'ok' for row in checks) else 'AllQueryRoutesFailed'
 
@@ -928,8 +942,14 @@ def run_collection(include_sources: bool = False, include_details: bool = False,
             "uncertain_count": content_counts["uncertain"],
             "pending_count": sum(1 for e in kept if e.get("review_status") == "pending"),
             "verified_count": sum(1 for e in kept if e.get("review_status") == "verified"),
-            "city_count": len(cities), "successful_feeds": successful_feeds,
-            "feed_count": len(requests), "failed_feeds": len(requests) - successful_feeds, "rss_items_seen": total_items,
+            "city_count": len(cities), "topic_count": len(FEED_TOPICS), "topic_keys": [topic["key"] for topic in FEED_TOPICS],
+            "query_route_count": len(QUERY_ROUTES), "query_route_keys": [route["key"] for route in QUERY_ROUTES],
+            "configured_feed_count": len(requests), "configured_query_count": len(requests) * len(QUERY_ROUTES),
+            "successful_feeds": successful_feeds, "successful_queries": sum(
+                1 for row in feed_results for query in row.get("query_results", []) if query.get("status") == "ok"
+            ),
+            "feed_count": len(requests), "feed_count_note": "feed_count is city/topic cells; configured_query_count expands each cell by query route",
+            "failed_feeds": len(requests) - successful_feeds, "rss_items_seen": total_items,
             "data_note": "自动发现候选不代表官方核验；content_kind 区分活动、开票/报名、排期与攻略；只有 review_status=verified 的事件可进入正式经营判断。"
         },
         "data": kept,
@@ -938,7 +958,12 @@ def run_collection(include_sources: bool = False, include_details: bool = False,
         "api_version": "v1", "last_run_at": observed_at,
         "last_run_local": now.astimezone(BEIJING).strftime("%Y-%m-%d %H:%M:%S +08:00"),
         "status": overall_status, "source_system": "Google News RSS", "city_count": len(cities),
-        "feed_count": len(requests), "successful_feeds": successful_feeds, "failed_feeds": len(requests) - successful_feeds,
+        "topic_count": len(FEED_TOPICS), "topic_keys": [topic["key"] for topic in FEED_TOPICS],
+        "query_route_count": len(QUERY_ROUTES), "query_route_keys": [route["key"] for route in QUERY_ROUTES],
+        "configured_feed_count": len(requests), "configured_query_count": len(requests) * len(QUERY_ROUTES),
+        "feed_count": len(requests), "successful_feeds": successful_feeds, "successful_queries": sum(
+            1 for row in feed_results for query in row.get("query_results", []) if query.get("status") == "ok"
+        ), "failed_feeds": len(requests) - successful_feeds,
         "rss_items_seen": total_items, "candidate_count": len(kept), "feed_results": feed_results,
         "note": "如果 status=failed，上一份事件快照会保留，不会用空数据覆盖。"
     }

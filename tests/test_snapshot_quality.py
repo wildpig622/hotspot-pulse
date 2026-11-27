@@ -32,7 +32,7 @@ class SnapshotQualityTests(unittest.TestCase):
         feeds = [{'city_name': city['city_name'], 'topic': topic['key'], 'status': 'ok'}
                  for city in collect.configured_cities() for topic in collect.FEED_TOPICS]
         feeds[-1] = feeds[0].copy()
-        health.update(feed_results=feeds, successful_feeds=168, failed_feeds=0)
+        health.update(feed_results=feeds, successful_feeds=len(feeds), failed_feeds=0)
         path.write_text(json.dumps(health), encoding='utf-8')
         self.assertEqual(check_snapshot(self.api, require_full_scope=True)['status'], 'FAIL')
 
@@ -62,7 +62,7 @@ class SnapshotQualityTests(unittest.TestCase):
         collect.write_json(path, calendar)
         self.assertEqual(check_snapshot(self.api)['status'], 'FAIL')
 
-    def test_168_successes_cannot_hide_a_missing_second_rss_query_route(self):
+    def test_configured_successes_cannot_hide_a_missing_query_route(self):
         path=self.api/'health.json';health=json.loads(path.read_text(encoding='utf8'))
         if health.get('feed_results'):
             health['feed_results'][-1]['query_results']=[]

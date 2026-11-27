@@ -1,0 +1,110 @@
+[
+  {
+    "city": "西安",
+    "intent": "最近7天 演唱会 官宣 加场 2026 11月",
+    "query": "西安 最近7天 演唱会 官宣 加场 2026 11月",
+    "input_activity_names": false
+  },
+  {
+    "city": "西安",
+    "intent": "2027 重大 演唱会 官方",
+    "query": "西安 2027 重大 演唱会 官方",
+    "input_activity_names": false
+  },
+  {
+    "city": "西安",
+    "intent": "2026 12月 2027 1月 考试 招录 考点 公告",
+    "query": "西安 2026 12月 2027 1月 考试 招录 考点 公告",
+    "input_activity_names": false
+  },
+  {
+    "city": "西安",
+    "intent": "学校 寒假 秋假 客源地 2026 2027 校历",
+    "query": "西安 学校 寒假 秋假 客源地 2026 2027 校历",
+    "input_activity_names": false
+  },
+  {
+    "city": "西安",
+    "intent": "2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "query": "西安 2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "input_activity_names": false
+  },
+  {
+    "city": "西安",
+    "intent": "最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月",
+    "query": "西安 最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月",
+    "input_activity_names": false
+  },
+  {
+    "city": "济南",
+    "intent": "最近7天 演唱会 官宣 加场 2026 11月",
+    "query": "济南 最近7天 演唱会 官宣 加场 2026 11月",
+    "input_activity_names": false
+  },
+  {
+    "city": "济南",
+    "intent": "2027 重大 演唱会 官方",
+    "query": "济南 2027 重大 演唱会 官方",
+    "input_activity_names": false
+  },
+  {
+    "city": "济南",
+    "intent": "2026 12月 2027 1月 考试 招录 考点 公告",
+    "query": "济南 2026 12月 2027 1月 考试 招录 考点 公告",
+    "input_activity_names": false
+  },
+  {
+    "city": "济南",
+    "intent": "学校 寒假 秋假 客源地 2026 2027 校历",
+    "query": "济南 学校 寒假 秋假 客源地 2026 2027 校历",
+    "input_activity_names": false
+  },
+  {
+    "city": "济南",
+    "intent": "2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "query": "济南 2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "input_activity_names": false
+  },
+  {
+    "city": "济南",
+    "intent": "最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月",
+    "query": "济南 最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月",
+    "input_activity_names": false
+  },
+  {
+    "city": "天津",
+    "intent": "最近7天 演唱会 官宣 加场 2026 11月",
+    "query": "天津 最近7天 演唱会 官宣 加场 2026 11月",
+    "input_activity_names": false
+  },
+  {
+    "city": "天津",
+    "intent": "2027 重大 演唱会 官方",
+    "query": "天津 2027 重大 演唱会 官方",
+    "input_activity_names": false
+  },
+  {
+    "city": "天津",
+    "intent": "2026 12月 2027 1月 考试 招录 考点 公告",
+    "query": "天津 2026 12月 2027 1月 考试 招录 考点 公告",
+    "input_activity_names": false
+  },
+  {
+    "city": "天津",
+    "intent": "学校 寒假 秋假 客源地 2026 2027 校历",
+    "query": "天津 学校 寒假 秋假 客源地 2026 2027 校历",
+    "input_activity_names": false
+  },
+  {
+    "city": "天津",
+    "intent": "2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "query": "天津 2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "input_activity_names": false
+  },
+  {
+    "city": "天津",
+    "intent": "最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月",
+    "query": "天津 最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月",
+    "input_activity_names": false
+  }
+]

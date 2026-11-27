@@ -27,12 +27,12 @@ class SnapshotAuditTests(unittest.TestCase):
     def test_audit_counts_match_current_filter_and_review_flags(self):
         counts = self.report["primary_disposition_counts"]
         self.assertEqual(counts["future_dated_event_candidates"], 20)
-        self.assertEqual(counts["event_candidates_with_dates_needing_review"], 351)
-        self.assertEqual(counts["ticketing_or_registration_notices"], 22)
+        self.assertEqual(counts["event_candidates_with_dates_needing_review"], 350)
+        self.assertEqual(counts["ticketing_or_registration_notices"], 23)
         self.assertEqual(counts["schedule_roundups"], 11)
         self.assertEqual(counts["guides_or_other_information"], 17)
         self.assertEqual(counts["past_reports_or_expired_events"], 36)
-        self.assertEqual(self.report["date_review"]["event_candidates_with_any_review_flag"], 371)
+        self.assertEqual(self.report["date_review"]["event_candidates_with_any_review_flag"], 370)
         self.assertEqual(self.report["date_review"]["future_candidates_with_review_flags"], 20)
         self.assertEqual(self.report["date_review"]["future_candidates_without_review_flags"], 0)
 

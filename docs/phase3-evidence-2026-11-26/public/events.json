@@ -1,0 +1,4106 @@
+[
+  {
+    "event_id": "src_bc37cacf0821",
+    "source_record_id": "showstart_315291",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "11.27 Mars Soil 土壤",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "Mars艺术展演空间",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "西安市 Mars艺术展演空间",
+    "source_context": {
+      "city_label": "西安",
+      "title": "11.27 Mars Soil 土壤",
+      "start_at": "2026-11-27",
+      "venue_name": "Mars艺术展演空间"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315291",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_25d8ee2aba96",
+    "source_record_id": "showstart_314909",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "中国国家话剧院出品｜辛柏青主演话剧 《苏堤春晓》",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安·开元大剧院",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "西安市 西安·开元大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "中国国家话剧院出品｜辛柏青主演话剧 《苏堤春晓》",
+      "start_at": "2026-11-27",
+      "venue_name": "西安·开元大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314909",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_7299dcefee33",
+    "source_record_id": "showstart_316128",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "L2L说唱派对巡演西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·福星现场",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "西安市 西演SPACE·福星现场",
+    "source_context": {
+      "city_label": "西安",
+      "title": "L2L说唱派对巡演西安站",
+      "start_at": "2026-11-27",
+      "venue_name": "西演SPACE·福星现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316128",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_d9377818a555",
+    "source_record_id": "showstart_313440",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "琴韵交响・古典华章 —格里格钢协与勃一交响曲音乐会",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安浐灞保利大剧院",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "西安市 西安浐灞保利大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "琴韵交响・古典华章 —格里格钢协与勃一交响曲音乐会",
+      "start_at": "2026-11-27",
+      "venue_name": "西安浐灞保利大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313440",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_ea683b64d816",
+    "source_record_id": "showstart_312333",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "许钧「我“爱”世界」2026巡演-西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·车库LIVE",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "西安市 西演SPACE·车库LIVE",
+    "source_context": {
+      "city_label": "西安",
+      "title": "许钧「我“爱”世界」2026巡演-西安站",
+      "start_at": "2026-11-27",
+      "venue_name": "西演SPACE·车库LIVE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/312333",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_9b872ef73e89",
+    "source_record_id": "showstart_314319",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "杭盖乐队2026巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·光圈CLUB",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "西安市 西演SPACE·光圈CLUB",
+    "source_context": {
+      "city_label": "西安",
+      "title": "杭盖乐队2026巡演 西安站",
+      "start_at": "2026-11-27",
+      "venue_name": "西演SPACE·光圈CLUB"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314319",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_28006e7c2809",
+    "source_record_id": "showstart_315981",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "Start Journey Idol Fes-FUYU- SJIF冬",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·车库LIVE",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 西演SPACE·车库LIVE",
+    "source_context": {
+      "city_label": "西安",
+      "title": "Start Journey Idol Fes-FUYU- SJIF冬",
+      "start_at": "2026-11-28",
+      "venue_name": "西演SPACE·车库LIVE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315981",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_30eb515d67d9",
+    "source_record_id": "showstart_311189",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "《岁月鎏金•第一季》香港影视辉煌三十年经典金曲音乐会",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安浐灞保利大剧院",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 西安浐灞保利大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "《岁月鎏金•第一季》香港影视辉煌三十年经典金曲音乐会",
+      "start_at": "2026-11-28",
+      "venue_name": "西安浐灞保利大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/311189",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_d522b534d2f4",
+    "source_record_id": "showstart_313636",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "「前进」系列联合演出西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "VeinLab未来俱乐部",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 VeinLab未来俱乐部",
+    "source_context": {
+      "city_label": "西安",
+      "title": "「前进」系列联合演出西安站",
+      "start_at": "2026-11-28",
+      "venue_name": "VeinLab未来俱乐部"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313636",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_b6fc84173709",
+    "source_record_id": "showstart_314920",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "閏×虎啸春「风生旷野」联合专场 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·光圈CLUB",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 西演SPACE·光圈CLUB",
+    "source_context": {
+      "city_label": "西安",
+      "title": "閏×虎啸春「风生旷野」联合专场 西安站",
+      "start_at": "2026-11-28",
+      "venue_name": "西演SPACE·光圈CLUB"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314920",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_e6e3b8492ee4",
+    "source_record_id": "showstart_304531",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "西安·熊猫合唱团·我们的歌专场音乐会·西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安音乐厅",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 西安音乐厅",
+    "source_context": {
+      "city_label": "西安",
+      "title": "西安·熊猫合唱团·我们的歌专场音乐会·西安站",
+      "start_at": "2026-11-28",
+      "venue_name": "西安音乐厅"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/304531",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_f91cf2ca821e",
+    "source_record_id": "showstart_314566",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "【售罄】张方钊「蛋巡」2026巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·塞斯拾陆",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 西演SPACE·塞斯拾陆",
+    "source_context": {
+      "city_label": "西安",
+      "title": "【售罄】张方钊「蛋巡」2026巡演 西安站",
+      "start_at": "2026-11-28",
+      "venue_name": "西演SPACE·塞斯拾陆"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314566",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_574d2859f850",
+    "source_record_id": "showstart_311398",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "上海话剧艺术中心出品｜国风悬疑舞台剧《清明上河图密码》",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安·开元大剧院",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 西安·开元大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "上海话剧艺术中心出品｜国风悬疑舞台剧《清明上河图密码》",
+      "start_at": "2026-11-28",
+      "venue_name": "西安·开元大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/311398",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_9540ed6c1d1b",
+    "source_record_id": "showstart_302179",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "百老汇经典摇滚音乐剧《HEDWIG》（海德薇）中文版",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "陕西大剧院",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 陕西大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "百老汇经典摇滚音乐剧《HEDWIG》（海德薇）中文版",
+      "start_at": "2026-11-28",
+      "venue_name": "陕西大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/302179",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_9579b84c7e87",
+    "source_record_id": "showstart_315471",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "五月回声乐队｜首张专辑《存在的意义》 巡演·西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "LANNE烂泥",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 LANNE烂泥",
+    "source_context": {
+      "city_label": "西安",
+      "title": "五月回声乐队｜首张专辑《存在的意义》 巡演·西安站",
+      "start_at": "2026-11-28",
+      "venue_name": "LANNE烂泥"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315471",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_32b1c43a40bb",
+    "source_record_id": "showstart_315746",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "广顺社团「街霸」2026巡演--西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "Mars艺术展演空间",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 Mars艺术展演空间",
+    "source_context": {
+      "city_label": "西安",
+      "title": "广顺社团「街霸」2026巡演--西安站",
+      "start_at": "2026-11-28",
+      "venue_name": "Mars艺术展演空间"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315746",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_cf6a0861f1b1",
+    "source_record_id": "showstart_314597",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "蒋明&空山乐队2026巡演西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·B2 LIVE",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "西安市 西演SPACE·B2 LIVE",
+    "source_context": {
+      "city_label": "西安",
+      "title": "蒋明&空山乐队2026巡演西安站",
+      "start_at": "2026-11-28",
+      "venue_name": "西演SPACE·B2 LIVE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:33Z",
+    "last_seen_at": "2026-11-26T07:37:33Z",
+    "knowable_at": "2026-11-26T07:37:33Z",
+    "last_evidence_check_at": "2026-11-26T07:37:33Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314597",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=1",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:33Z",
+        "observed_at": "2026-11-26T07:37:33Z",
+        "last_observed_at": "2026-11-26T07:37:33Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_0f287de3666e",
+    "source_record_id": "showstart_315418",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "《亲爱的你啊》我怀念的流行金曲传递演唱会",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安浐灞保利大剧院",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "discovery_summary": "西安市 西安浐灞保利大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "《亲爱的你啊》我怀念的流行金曲传递演唱会",
+      "start_at": "2026-11-29",
+      "venue_name": "西安浐灞保利大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315418",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_aebc9605e016",
+    "source_record_id": "showstart_311710",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "LET'S MOVE｜北欧怪浪·音乐派对",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "陕西大剧院·戏剧厅",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "discovery_summary": "西安市 陕西大剧院·戏剧厅",
+    "source_context": {
+      "city_label": "西安",
+      "title": "LET'S MOVE｜北欧怪浪·音乐派对",
+      "start_at": "2026-11-29",
+      "venue_name": "陕西大剧院·戏剧厅"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/311710",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_b2fceea1df7b",
+    "source_record_id": "showstart_313109",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "「山风吹过乌云朵」象乐队新专辑巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·车库LIVE",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "discovery_summary": "西安市 西演SPACE·车库LIVE",
+    "source_context": {
+      "city_label": "西安",
+      "title": "「山风吹过乌云朵」象乐队新专辑巡演 西安站",
+      "start_at": "2026-11-29",
+      "venue_name": "西演SPACE·车库LIVE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313109",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_643b783f41aa",
+    "source_record_id": "showstart_315513",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "下沉广场 新专辑《时间患者》2026巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "VeinLab未来俱乐部",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "discovery_summary": "西安市 VeinLab未来俱乐部",
+    "source_context": {
+      "city_label": "西安",
+      "title": "下沉广场 新专辑《时间患者》2026巡演 西安站",
+      "start_at": "2026-11-29",
+      "venue_name": "VeinLab未来俱乐部"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315513",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_53ab20869e00",
+    "source_record_id": "showstart_310092",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "脆莓乐队「鲜活人生 Vibrant Life」·西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·塞斯拾陆",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "discovery_summary": "西安市 西演SPACE·塞斯拾陆",
+    "source_context": {
+      "city_label": "西安",
+      "title": "脆莓乐队「鲜活人生 Vibrant Life」·西安站",
+      "start_at": "2026-11-29",
+      "venue_name": "西演SPACE·塞斯拾陆"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/310092",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_5854d42fcfff",
+    "source_record_id": "showstart_313939",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "死水微澜「山的那边」2026冬季巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·光圈CLUB",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "discovery_summary": "西安市 西演SPACE·光圈CLUB",
+    "source_context": {
+      "city_label": "西安",
+      "title": "死水微澜「山的那边」2026冬季巡演 西安站",
+      "start_at": "2026-11-29",
+      "venue_name": "西演SPACE·光圈CLUB"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313939",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_7dd4076bf95f",
+    "source_record_id": "showstart_316754",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "西安｜《喜人奇妙夜》同款钟楼厨房主题｜沉浸式互动喜剧厨王争霸秀《馍法厨房》",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "大唐沉浸式剧场（西安钟楼店）",
+    "start_at": "2026-12-01",
+    "end_at": "2026-12-01",
+    "discovery_summary": "西安市 大唐沉浸式剧场（西安钟楼店）",
+    "source_context": {
+      "city_label": "西安",
+      "title": "西安｜《喜人奇妙夜》同款钟楼厨房主题｜沉浸式互动喜剧厨王争霸秀《馍法厨房》",
+      "start_at": "2026-12-01",
+      "venue_name": "大唐沉浸式剧场（西安钟楼店）"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-01",
+        "end_at": "2026-12-01"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316754",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_2b8967341b60",
+    "source_record_id": "showstart_315903",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "17路乐队「阳关引」2026巡演第五季·西北篇 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·福星现场",
+    "start_at": "2026-12-02",
+    "end_at": "2026-12-02",
+    "discovery_summary": "西安市 西演SPACE·福星现场",
+    "source_context": {
+      "city_label": "西安",
+      "title": "17路乐队「阳关引」2026巡演第五季·西北篇 西安站",
+      "start_at": "2026-12-02",
+      "venue_name": "西演SPACE·福星现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-02",
+        "end_at": "2026-12-02"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315903",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_2f822ec8b46f",
+    "source_record_id": "showstart_314741",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "街头fortune说唱派对西安站(丘比特主题巡演) | 嘉宾Threethousand***三千&莽YouKnowDat",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·车库LIVE",
+    "start_at": "2026-12-04",
+    "end_at": "2026-12-04",
+    "discovery_summary": "西安市 西演SPACE·车库LIVE",
+    "source_context": {
+      "city_label": "西安",
+      "title": "街头fortune说唱派对西安站(丘比特主题巡演) | 嘉宾Threethousand***三千&莽YouKnowDat",
+      "start_at": "2026-12-04",
+      "venue_name": "西演SPACE·车库LIVE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-04",
+        "end_at": "2026-12-04"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314741",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_8d211eee2f85",
+    "source_record_id": "showstart_312723",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "觀、悲剧药方，觀、东方分子巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·光圈CLUB",
+    "start_at": "2026-12-04",
+    "end_at": "2026-12-04",
+    "discovery_summary": "西安市 西演SPACE·光圈CLUB",
+    "source_context": {
+      "city_label": "西安",
+      "title": "觀、悲剧药方，觀、东方分子巡演 西安站",
+      "start_at": "2026-12-04",
+      "venue_name": "西演SPACE·光圈CLUB"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-04",
+        "end_at": "2026-12-04"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/312723",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_8b7c4cc5051a",
+    "source_record_id": "showstart_315978",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "「彳亍」环岛行驶2026特别巡回专场西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·B2 LIVE",
+    "start_at": "2026-12-04",
+    "end_at": "2026-12-04",
+    "discovery_summary": "西安市 西演SPACE·B2 LIVE",
+    "source_context": {
+      "city_label": "西安",
+      "title": "「彳亍」环岛行驶2026特别巡回专场西安站",
+      "start_at": "2026-12-04",
+      "venue_name": "西演SPACE·B2 LIVE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-04",
+        "end_at": "2026-12-04"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315978",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_3bf34c9df75c",
+    "source_record_id": "showstart_314146",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "千禧奇迹&太空奇缘巅峰音乐嘉年华",
+    "event_type": "festival",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "汉长安城未央宫国家遗址公园",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 汉长安城未央宫国家遗址公园",
+    "source_context": {
+      "city_label": "西安",
+      "title": "千禧奇迹&太空奇缘巅峰音乐嘉年华",
+      "start_at": "2026-12-05",
+      "venue_name": "汉长安城未央宫国家遗址公园"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314146",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_8d3d6cfccb89",
+    "source_record_id": "showstart_316594",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "TGW音乐大奖赛",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·B2 LIVE",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 西演SPACE·B2 LIVE",
+    "source_context": {
+      "city_label": "西安",
+      "title": "TGW音乐大奖赛",
+      "start_at": "2026-12-05",
+      "venue_name": "西演SPACE·B2 LIVE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316594",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_4e10a643d00a",
+    "source_record_id": "showstart_314498",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "ken！魔盗团长「赚钱给你买大房子」西安专场",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "LANNE烂泥",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 LANNE烂泥",
+    "source_context": {
+      "city_label": "西安",
+      "title": "ken！魔盗团长「赚钱给你买大房子」西安专场",
+      "start_at": "2026-12-05",
+      "venue_name": "LANNE烂泥"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314498",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_d5aacad787ca",
+    "source_record_id": "showstart_308438",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "原创音乐剧《#0528》镜框版",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "陕西大剧院",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 陕西大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "原创音乐剧《#0528》镜框版",
+      "start_at": "2026-12-05",
+      "venue_name": "陕西大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/308438",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_b7d4c92aae80",
+    "source_record_id": "showstart_315723",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "濮存昕领衔主演 易卜生经典话剧《建筑大师》首演二十周年纪念版",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安浐灞保利大剧院",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 西安浐灞保利大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "濮存昕领衔主演 易卜生经典话剧《建筑大师》首演二十周年纪念版",
+      "start_at": "2026-12-05",
+      "venue_name": "西安浐灞保利大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315723",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_29f1c920bf77",
+    "source_record_id": "showstart_311765",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "2NL KHIPHOP KPOP男团双专场 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·福星现场",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 西演SPACE·福星现场",
+    "source_context": {
+      "city_label": "西安",
+      "title": "2NL KHIPHOP KPOP男团双专场 西安站",
+      "start_at": "2026-12-05",
+      "venue_name": "西演SPACE·福星现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/311765",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_641b37c350df",
+    "source_record_id": "showstart_303853",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "歌之初乐队「相见如初」巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·塞斯拾陆",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 西演SPACE·塞斯拾陆",
+    "source_context": {
+      "city_label": "西安",
+      "title": "歌之初乐队「相见如初」巡演 西安站",
+      "start_at": "2026-12-05",
+      "venue_name": "西演SPACE·塞斯拾陆"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/303853",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_6e4a0ff315a2",
+    "source_record_id": "showstart_313263",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "程渤智「西安人的歌live·摇滚陕西话」",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·车库LIVE",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 西演SPACE·车库LIVE",
+    "source_context": {
+      "city_label": "西安",
+      "title": "程渤智「西安人的歌live·摇滚陕西话」",
+      "start_at": "2026-12-05",
+      "venue_name": "西演SPACE·车库LIVE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313263",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_908ce1c12ab3",
+    "source_record_id": "showstart_315914",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "BOBBYNOPEACE「我们这一代的天王」巡演-西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "Mars艺术展演空间",
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "discovery_summary": "西安市 Mars艺术展演空间",
+    "source_context": {
+      "city_label": "西安",
+      "title": "BOBBYNOPEACE「我们这一代的天王」巡演-西安站",
+      "start_at": "2026-12-05",
+      "venue_name": "Mars艺术展演空间"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:36Z",
+    "last_seen_at": "2026-11-26T07:37:36Z",
+    "knowable_at": "2026-11-26T07:37:36Z",
+    "last_evidence_check_at": "2026-11-26T07:37:36Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315914",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:36Z",
+        "observed_at": "2026-11-26T07:37:36Z",
+        "last_observed_at": "2026-11-26T07:37:36Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_fadfc2a0646a",
+    "source_record_id": "showstart_316685",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "小阿淇Live5.0人鱼旅社:珍珠",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·光圈CLUB",
+    "start_at": "2026-12-06",
+    "end_at": "2026-12-06",
+    "discovery_summary": "西安市 西演SPACE·光圈CLUB",
+    "source_context": {
+      "city_label": "西安",
+      "title": "小阿淇Live5.0人鱼旅社:珍珠",
+      "start_at": "2026-12-06",
+      "venue_name": "西演SPACE·光圈CLUB"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-06",
+        "end_at": "2026-12-06"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316685",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_754e5090d782",
+    "source_record_id": "showstart_316417",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "2026乌鸦庙乐队《反斗星》新专辑巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "VeinLab未来俱乐部",
+    "start_at": "2026-12-07",
+    "end_at": "2026-12-07",
+    "discovery_summary": "西安市 VeinLab未来俱乐部",
+    "source_context": {
+      "city_label": "西安",
+      "title": "2026乌鸦庙乐队《反斗星》新专辑巡演 西安站",
+      "start_at": "2026-12-07",
+      "venue_name": "VeinLab未来俱乐部"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-07",
+        "end_at": "2026-12-07"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316417",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_a3c6c4bd9717",
+    "source_record_id": "showstart_311734",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "Phillipa Soo & Steven Pasquale音乐会",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "陕西大剧院",
+    "start_at": "2026-12-10",
+    "end_at": "2026-12-10",
+    "discovery_summary": "西安市 陕西大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "Phillipa Soo & Steven Pasquale音乐会",
+      "start_at": "2026-12-10",
+      "venue_name": "陕西大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-10",
+        "end_at": "2026-12-10"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/311734",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_467ac9208a79",
+    "source_record_id": "showstart_314262",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "萨满乐队20周年巡演第2季 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·福星现场",
+    "start_at": "2026-12-11",
+    "end_at": "2026-12-11",
+    "discovery_summary": "西安市 西演SPACE·福星现场",
+    "source_context": {
+      "city_label": "西安",
+      "title": "萨满乐队20周年巡演第2季 西安站",
+      "start_at": "2026-12-11",
+      "venue_name": "西演SPACE·福星现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-11",
+        "end_at": "2026-12-11"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314262",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_5d6b2bd430dd",
+    "source_record_id": "showstart_316432",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "12/11 SAF电音节&荷兰殿堂级双人组合Sick Individuals！",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安Supermiami",
+    "start_at": "2026-12-11",
+    "end_at": "2026-12-11",
+    "discovery_summary": "西安市 西安Supermiami",
+    "source_context": {
+      "city_label": "西安",
+      "title": "12/11 SAF电音节&荷兰殿堂级双人组合Sick Individuals！",
+      "start_at": "2026-12-11",
+      "venue_name": "西安Supermiami"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-11",
+        "end_at": "2026-12-11"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316432",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_647d0e180bb4",
+    "source_record_id": "showstart_312241",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "陈德修「Kill the Monster」巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·光圈CLUB",
+    "start_at": "2026-12-12",
+    "end_at": "2026-12-12",
+    "discovery_summary": "西安市 西演SPACE·光圈CLUB",
+    "source_context": {
+      "city_label": "西安",
+      "title": "陈德修「Kill the Monster」巡演 西安站",
+      "start_at": "2026-12-12",
+      "venue_name": "西演SPACE·光圈CLUB"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-12",
+        "end_at": "2026-12-12"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/312241",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_fc0e564b2f6c",
+    "source_record_id": "showstart_314334",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "尘世与永恒：莫扎特作品交响合唱音乐会",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安音乐厅",
+    "start_at": "2026-12-12",
+    "end_at": "2026-12-12",
+    "discovery_summary": "西安市 西安音乐厅",
+    "source_context": {
+      "city_label": "西安",
+      "title": "尘世与永恒：莫扎特作品交响合唱音乐会",
+      "start_at": "2026-12-12",
+      "venue_name": "西安音乐厅"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-12",
+        "end_at": "2026-12-12"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314334",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_0699f3f1351a",
+    "source_record_id": "showstart_315472",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "磐石·暴风·苍穹｜迷蝶破茧计划·长安回声联合专场",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "LANNE烂泥",
+    "start_at": "2026-12-12",
+    "end_at": "2026-12-12",
+    "discovery_summary": "西安市 LANNE烂泥",
+    "source_context": {
+      "city_label": "西安",
+      "title": "磐石·暴风·苍穹｜迷蝶破茧计划·长安回声联合专场",
+      "start_at": "2026-12-12",
+      "venue_name": "LANNE烂泥"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-12",
+        "end_at": "2026-12-12"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315472",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_7533c5d6bc31",
+    "source_record_id": "showstart_312291",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "大粉乐队十五周年巡演 粉末登场·凝华 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·塞斯拾陆",
+    "start_at": "2026-12-12",
+    "end_at": "2026-12-12",
+    "discovery_summary": "西安市 西演SPACE·塞斯拾陆",
+    "source_context": {
+      "city_label": "西安",
+      "title": "大粉乐队十五周年巡演 粉末登场·凝华 西安站",
+      "start_at": "2026-12-12",
+      "venue_name": "西演SPACE·塞斯拾陆"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-12",
+        "end_at": "2026-12-12"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/312291",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_df80116d13ab",
+    "source_record_id": "showstart_309637",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "霉霉生日场！【Love Story】-Taylor Swift金曲演唱会 霉粉必看！@TayMe（西安站）",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·福星现场",
+    "start_at": "2026-12-12",
+    "end_at": "2026-12-12",
+    "discovery_summary": "西安市 西演SPACE·福星现场",
+    "source_context": {
+      "city_label": "西安",
+      "title": "霉霉生日场！【Love Story】-Taylor Swift金曲演唱会 霉粉必看！@TayMe（西安站）",
+      "start_at": "2026-12-12",
+      "venue_name": "西演SPACE·福星现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-12",
+        "end_at": "2026-12-12"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/309637",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_2206677fd2eb",
+    "source_record_id": "showstart_315870",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "Drogas&Hidoyard&河北爷&卡力小蛇！redpower12.12西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "Mars艺术展演空间",
+    "start_at": "2026-12-12",
+    "end_at": "2026-12-12",
+    "discovery_summary": "西安市 Mars艺术展演空间",
+    "source_context": {
+      "city_label": "西安",
+      "title": "Drogas&Hidoyard&河北爷&卡力小蛇！redpower12.12西安站",
+      "start_at": "2026-12-12",
+      "venue_name": "Mars艺术展演空间"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-12",
+        "end_at": "2026-12-12"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315870",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_b13c2bfcb15a",
+    "source_record_id": "showstart_310210",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "【限时5折起】俄罗斯芭蕾国家剧院芭蕾舞《天鹅湖》西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "陕西大剧院",
+    "start_at": "2026-12-13",
+    "end_at": "2026-12-13",
+    "discovery_summary": "西安市 陕西大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "【限时5折起】俄罗斯芭蕾国家剧院芭蕾舞《天鹅湖》西安站",
+      "start_at": "2026-12-13",
+      "venue_name": "陕西大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-13",
+        "end_at": "2026-12-13"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/310210",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_44e0191480fb",
+    "source_record_id": "showstart_310185",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "巴赫经典全集——扬·沃格勒演绎全套巴赫大提琴无伴奏组曲",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安音乐厅",
+    "start_at": "2026-12-13",
+    "end_at": "2026-12-13",
+    "discovery_summary": "西安市 西安音乐厅",
+    "source_context": {
+      "city_label": "西安",
+      "title": "巴赫经典全集——扬·沃格勒演绎全套巴赫大提琴无伴奏组曲",
+      "start_at": "2026-12-13",
+      "venue_name": "西安音乐厅"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-13",
+        "end_at": "2026-12-13"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/310185",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_7f286956f590",
+    "source_record_id": "showstart_315525",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "crazygrasses「Can you be sure?」冬日巡演西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "VeinLab未来俱乐部",
+    "start_at": "2026-12-13",
+    "end_at": "2026-12-13",
+    "discovery_summary": "西安市 VeinLab未来俱乐部",
+    "source_context": {
+      "city_label": "西安",
+      "title": "crazygrasses「Can you be sure?」冬日巡演西安站",
+      "start_at": "2026-12-13",
+      "venue_name": "VeinLab未来俱乐部"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-13",
+        "end_at": "2026-12-13"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315525",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_a4e8586809b7",
+    "source_record_id": "showstart_316279",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "TOTAL CHAOS 中国十二月之旅 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "VeinLab未来俱乐部",
+    "start_at": "2026-12-15",
+    "end_at": "2026-12-15",
+    "discovery_summary": "西安市 VeinLab未来俱乐部",
+    "source_context": {
+      "city_label": "西安",
+      "title": "TOTAL CHAOS 中国十二月之旅 西安站",
+      "start_at": "2026-12-15",
+      "venue_name": "VeinLab未来俱乐部"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-15",
+        "end_at": "2026-12-15"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316279",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_91e475de9e1a",
+    "source_record_id": "showstart_305810",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "【早鸟6折】维也纳春之声交响乐团新年音乐会-西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西安音乐厅",
+    "start_at": "2026-12-18",
+    "end_at": "2026-12-18",
+    "discovery_summary": "西安市 西安音乐厅",
+    "source_context": {
+      "city_label": "西安",
+      "title": "【早鸟6折】维也纳春之声交响乐团新年音乐会-西安站",
+      "start_at": "2026-12-18",
+      "venue_name": "西安音乐厅"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-18",
+        "end_at": "2026-12-18"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/305810",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_b021dfa25b3b",
+    "source_record_id": "showstart_292509",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "舞蹈诗剧《只此青绿》--舞绘《千里江山图》",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "陕西大剧院",
+    "start_at": "2026-12-18",
+    "end_at": "2026-12-18",
+    "discovery_summary": "西安市 陕西大剧院",
+    "source_context": {
+      "city_label": "西安",
+      "title": "舞蹈诗剧《只此青绿》--舞绘《千里江山图》",
+      "start_at": "2026-12-18",
+      "venue_name": "陕西大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-18",
+        "end_at": "2026-12-18"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/292509",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_4a0ed9fce7d6",
+    "source_record_id": "showstart_308325",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "粥粥和小伙2026放轻松巡演-西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "Mars艺术展演空间",
+    "start_at": "2026-12-18",
+    "end_at": "2026-12-18",
+    "discovery_summary": "西安市 Mars艺术展演空间",
+    "source_context": {
+      "city_label": "西安",
+      "title": "粥粥和小伙2026放轻松巡演-西安站",
+      "start_at": "2026-12-18",
+      "venue_name": "Mars艺术展演空间"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-18",
+        "end_at": "2026-12-18"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/308325",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_014d8ceb501f",
+    "source_record_id": "showstart_313162",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "A公馆摇滚铁人三项2026巡演 西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·塞斯拾陆",
+    "start_at": "2026-12-18",
+    "end_at": "2026-12-18",
+    "discovery_summary": "西安市 西演SPACE·塞斯拾陆",
+    "source_context": {
+      "city_label": "西安",
+      "title": "A公馆摇滚铁人三项2026巡演 西安站",
+      "start_at": "2026-12-18",
+      "venue_name": "西演SPACE·塞斯拾陆"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-18",
+        "end_at": "2026-12-18"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313162",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_21d41c58ac87",
+    "source_record_id": "showstart_315003",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "YG-「BIGBANG专场」20周年·室内超级粉丝派对",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "city_slug": "xian",
+    "city_match": "text_confirmed",
+    "venue_name": "西演SPACE·福星现场",
+    "start_at": "2026-12-18",
+    "end_at": "2026-12-18",
+    "discovery_summary": "西安市 西演SPACE·福星现场",
+    "source_context": {
+      "city_label": "西安",
+      "title": "YG-「BIGBANG专场」20周年·室内超级粉丝派对",
+      "start_at": "2026-12-18",
+      "venue_name": "西演SPACE·福星现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-12-18",
+        "end_at": "2026-12-18"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:39Z",
+    "last_seen_at": "2026-11-26T07:37:39Z",
+    "knowable_at": "2026-11-26T07:37:39Z",
+    "last_evidence_check_at": "2026-11-26T07:37:39Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/315003",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=29&pageNo=3",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:39Z",
+        "observed_at": "2026-11-26T07:37:39Z",
+        "last_observed_at": "2026-11-26T07:37:39Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_7341849e1988",
+    "source_record_id": "showstart_313839",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "天津·天津味沉浸式推理大戏《罪有应得》硬核癫剧｜年度巨制",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "世纪都会 戏梦时空艺术空间",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "天津市 世纪都会 戏梦时空艺术空间",
+    "source_context": {
+      "city_label": "天津",
+      "title": "天津·天津味沉浸式推理大戏《罪有应得》硬核癫剧｜年度巨制",
+      "start_at": "2026-11-27",
+      "venue_name": "世纪都会 戏梦时空艺术空间"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313839",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_36a3c9fe77a4",
+    "source_record_id": "showstart_309822",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "卡农&爱乐之城—唯美浪漫电影名曲烛光新年音乐会",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "津湾大剧院",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "天津市 津湾大剧院",
+    "source_context": {
+      "city_label": "天津",
+      "title": "卡农&爱乐之城—唯美浪漫电影名曲烛光新年音乐会",
+      "start_at": "2026-11-27",
+      "venue_name": "津湾大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/309822",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_8357a9f38f03",
+    "source_record_id": "showstart_309932",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "《魔法的世界》经典奇幻电影音乐会",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "天津大剧院",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "天津市 天津大剧院",
+    "source_context": {
+      "city_label": "天津",
+      "title": "《魔法的世界》经典奇幻电影音乐会",
+      "start_at": "2026-11-27",
+      "venue_name": "天津大剧院"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/309932",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_bee46fced23f",
+    "source_record_id": "showstart_313663",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "《南美回响》11月27日 |[南美音乐家来津]｜[国内难得一见]",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "声色音乐文化艺术空间",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "天津市 声色音乐文化艺术空间",
+    "source_context": {
+      "city_label": "天津",
+      "title": "《南美回响》11月27日 |[南美音乐家来津]｜[国内难得一见]",
+      "start_at": "2026-11-27",
+      "venue_name": "声色音乐文化艺术空间"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313663",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_961308bdbf8b",
+    "source_record_id": "showstart_314408",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "YOUNGLEGO 《驭城》2026巡演天津站",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "琉璃SPACE",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "天津市 琉璃SPACE",
+    "source_context": {
+      "city_label": "天津",
+      "title": "YOUNGLEGO 《驭城》2026巡演天津站",
+      "start_at": "2026-11-27",
+      "venue_name": "琉璃SPACE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314408",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_785ad49ce05b",
+    "source_record_id": "showstart_311997",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "新世纪&singing11.27天津站UDG专场",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "二十年音乐现场MAX",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "天津市 二十年音乐现场MAX",
+    "source_context": {
+      "city_label": "天津",
+      "title": "新世纪&singing11.27天津站UDG专场",
+      "start_at": "2026-11-27",
+      "venue_name": "二十年音乐现场MAX"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/311997",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_1b527762874f",
+    "source_record_id": "showstart_311020",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "危房改造「香火」2026巡演 天津站",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "二十年音乐现场",
+    "start_at": "2026-11-27",
+    "end_at": "2026-11-27",
+    "discovery_summary": "天津市 二十年音乐现场",
+    "source_context": {
+      "city_label": "天津",
+      "title": "危房改造「香火」2026巡演 天津站",
+      "start_at": "2026-11-27",
+      "venue_name": "二十年音乐现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-27",
+        "end_at": "2026-11-27"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/311020",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_e445edb121b0",
+    "source_record_id": "showstart_316812",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "離線俱樂部 Offline Club Vol.01",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "USOUND SPACE 游声空间",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 USOUND SPACE 游声空间",
+    "source_context": {
+      "city_label": "天津",
+      "title": "離線俱樂部 Offline Club Vol.01",
+      "start_at": "2026-11-28",
+      "venue_name": "USOUND SPACE 游声空间"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316812",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_5f6866cdc14b",
+    "source_record_id": "showstart_316806",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "【天津】【魔脱喜剧】滨江道步行街店脱口秀 | 每周一至周日 |双人特惠爆笑脱口秀喜剧大会",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "魔脱喜剧脱口秀-滨江道店",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 魔脱喜剧脱口秀-滨江道店",
+    "source_context": {
+      "city_label": "天津",
+      "title": "【天津】【魔脱喜剧】滨江道步行街店脱口秀 | 每周一至周日 |双人特惠爆笑脱口秀喜剧大会",
+      "start_at": "2026-11-28",
+      "venue_name": "魔脱喜剧脱口秀-滨江道店"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/316806",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_c52c5e6726a8",
+    "source_record_id": "showstart_314634",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "【天津】【斯拉夫的浪漫】利顺德博物馆里的音乐会",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "利顺德博物馆",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 利顺德博物馆",
+    "source_context": {
+      "city_label": "天津",
+      "title": "【天津】【斯拉夫的浪漫】利顺德博物馆里的音乐会",
+      "start_at": "2026-11-28",
+      "venue_name": "利顺德博物馆"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/314634",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_1595d64c6d72",
+    "source_record_id": "showstart_310798",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "民族管弦乐组曲《连年有余》——杨柳青民俗风情音画",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "天津大剧院音乐厅",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 天津大剧院音乐厅",
+    "source_context": {
+      "city_label": "天津",
+      "title": "民族管弦乐组曲《连年有余》——杨柳青民俗风情音画",
+      "start_at": "2026-11-28",
+      "venue_name": "天津大剧院音乐厅"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/310798",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_b7db2ef6d7d2",
+    "source_record_id": "showstart_301028",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "step.jad依加《Nightstep夜奔·巡城礼》2026保利剧院巡演",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "天津大剧院歌剧厅",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 天津大剧院歌剧厅",
+    "source_context": {
+      "city_label": "天津",
+      "title": "step.jad依加《Nightstep夜奔·巡城礼》2026保利剧院巡演",
+      "start_at": "2026-11-28",
+      "venue_name": "天津大剧院歌剧厅"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/301028",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_7c607b47cb16",
+    "source_record_id": "showstart_313476",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "顶满MAXX「FOUR CITY TOUR」天津站",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "琉璃SPACE",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 琉璃SPACE",
+    "source_context": {
+      "city_label": "天津",
+      "title": "顶满MAXX「FOUR CITY TOUR」天津站",
+      "start_at": "2026-11-28",
+      "venue_name": "琉璃SPACE"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313476",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_7aedab59b1f6",
+    "source_record_id": "showstart_311852",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "限时供暖",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "梦歌音乐现场",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 梦歌音乐现场",
+    "source_context": {
+      "city_label": "天津",
+      "title": "限时供暖",
+      "start_at": "2026-11-28",
+      "venue_name": "梦歌音乐现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/311852",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_cfa43ee97fa2",
+    "source_record_id": "showstart_304187",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "暗杠「太阳·月亮·草地」走歌人2026专辑巡唱 天津站",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "二十年音乐现场MAX",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 二十年音乐现场MAX",
+    "source_context": {
+      "city_label": "天津",
+      "title": "暗杠「太阳·月亮·草地」走歌人2026专辑巡唱 天津站",
+      "start_at": "2026-11-28",
+      "venue_name": "二十年音乐现场MAX"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/304187",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_00f2974e5822",
+    "source_record_id": "showstart_313380",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "LoudRoar呈现｜轧你嘴!!! CRUSH YOUR MOUTH!!! ～噪音～",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "GAS氣厂 & 乒乓Pingpong Space（天台店）",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 GAS氣厂 & 乒乓Pingpong Space（天台店）",
+    "source_context": {
+      "city_label": "天津",
+      "title": "LoudRoar呈现｜轧你嘴!!! CRUSH YOUR MOUTH!!! ～噪音～",
+      "start_at": "2026-11-28",
+      "venue_name": "GAS氣厂 & 乒乓Pingpong Space（天台店）"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313380",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_9eb8efa3cce5",
+    "source_record_id": "showstart_312001",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "PSY.P 2026 E.A.T“连吃带拿”巡演 天津场",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "二十年音乐现场",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 二十年音乐现场",
+    "source_context": {
+      "city_label": "天津",
+      "title": "PSY.P 2026 E.A.T“连吃带拿”巡演 天津场",
+      "start_at": "2026-11-28",
+      "venue_name": "二十年音乐现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/312001",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_9309fca77905",
+    "source_record_id": "showstart_313537",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "陈洁丽 《你happy我也Happy》 巡回演唱会 天津站",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "大麦 66Live house 天津",
+    "start_at": "2026-11-28",
+    "end_at": "2026-11-28",
+    "discovery_summary": "天津市 大麦 66Live house 天津",
+    "source_context": {
+      "city_label": "天津",
+      "title": "陈洁丽 《你happy我也Happy》 巡回演唱会 天津站",
+      "start_at": "2026-11-28",
+      "venue_name": "大麦 66Live house 天津"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-28",
+        "end_at": "2026-11-28"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/313537",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  },
+  {
+    "event_id": "src_c65f19a739e0",
+    "source_record_id": "showstart_312031",
+    "record_kind": "source_candidate",
+    "evidence_level": "ticketing_listing",
+    "event_name": "悲伤玩具2026巡演「谁要来打扰我的乌托邦」天津站",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "city_slug": "tianjin",
+    "city_match": "text_confirmed",
+    "venue_name": "二十年音乐现场",
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "discovery_summary": "天津市 二十年音乐现场",
+    "source_context": {
+      "city_label": "天津",
+      "title": "悲伤玩具2026巡演「谁要来打扰我的乌托邦」天津站",
+      "start_at": "2026-11-29",
+      "venue_name": "二十年音乐现场"
+    },
+    "date_precision": "day",
+    "date_confidence": "source_listing",
+    "event_date_role": "event",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "content_kind": "event_announcement",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "event_confirmation": "unknown",
+    "first_seen_at": "2026-11-26T07:37:55Z",
+    "last_seen_at": "2026-11-26T07:37:55Z",
+    "knowable_at": "2026-11-26T07:37:55Z",
+    "last_evidence_check_at": "2026-11-26T07:37:55Z",
+    "scope_note": "票务列表明确列出的场次开始日；尚未读取详情或主办方公告，可能与其他来源重复；规模及住宿影响未知。",
+    "source_count": 1,
+    "event_detail_url": "https://www.showstart.com/event/312031",
+    "sources": [
+      {
+        "source_url": "https://www.showstart.com/event/list?cityCode=22&pageNo=2",
+        "publisher": "秀动公开演出列表",
+        "source_type": "authorized_ticketing",
+        "checked_at": "2026-11-26T07:37:55Z",
+        "observed_at": "2026-11-26T07:37:55Z",
+        "last_observed_at": "2026-11-26T07:37:55Z",
+        "access_status": "official_listing_read",
+        "verification_status": "unverified",
+        "authority_note": "城市、名称、日期从同一活动卡片读取；详情链接仅供补查，未声称读取详情。"
+      }
+    ]
+  }
+]

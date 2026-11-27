@@ -8,6 +8,7 @@ from . import collect
 from .check_snapshot_quality import check_snapshot
 from .event_feed import build_files
 from .validate_event_feed import validate
+from .business_service import build as build_business
 
 
 def run(api, collector=None, checker=None, now=None):
@@ -45,6 +46,7 @@ def run(api, collector=None, checker=None, now=None):
                     collect.write_json(target/'health.json',attempt_health)
                     built=build_files(target,now)
                     errors.extend(validate(built['events'],built['changes'])['errors'])
+                    if not errors:build_business(target,now,bootstrap=True)
                 success=not errors
         except Exception as exc:errors.append(type(exc).__name__)
         finally:collect.SITE_API=original
@@ -68,6 +70,10 @@ def run(api, collector=None, checker=None, now=None):
                           attempted_feed_results=attempt_health.get('feed_results',[]))
             collect.write_json(api/'health.json',health)
             build_files(api,now)
+            try:build_business(api,now,collection_ok=False,bootstrap=True)
+            except Exception as exc:
+                health['business_feed_error']=type(exc).__name__
+                collect.write_json(api/'health.json',health)
     return {'collection_ok':success,'data_updated':success,'errors':errors,'last_successful_collection_at':stamp if success else last_success}
 
 

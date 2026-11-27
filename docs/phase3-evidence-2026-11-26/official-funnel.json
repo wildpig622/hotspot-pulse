@@ -1,0 +1,711 @@
+{
+  "method": "measured_parser_stages_not_manual_activity_truth",
+  "roots": 26,
+  "index_pages_attempted": 52,
+  "relevant_links_per_source_sum": 248,
+  "article_attempts": 102,
+  "extracted_article_records": 102,
+  "scheduled_records": 3,
+  "held_record_reasons": {
+    "only_non_event_or_ambiguous_dates": 62,
+    "no_date_mentions_in_extracted_text": 28,
+    "past_outside_horizon_or_multiple_windows": 2,
+    "online_or_multi_event_or_report_requires_review": 5,
+    "no_explicit_year_event_date": 2
+  },
+  "held_records": [
+    {
+      "event_id": "off_4b13cc4acf0d",
+      "event_name": "关于征集2026年度教育考试科研项目选题的通知 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2512/20-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_186bd6b5f806",
+      "event_name": "关于征集2025年度教育考试科研项目选题的通知 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2412/155-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_4948b5da16ed",
+      "event_name": "教育部教育考试院2024年（第二季度）短信通信服务成交公告 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2404/1108-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_831f020b7525",
+      "event_name": "教育部教育考试院2024年高考资源收集解析项目成交公告 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2404/703-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_50b5896cbb35",
+      "event_name": "教育部教育考试院2024年（第二季度）短信通信服务比选公告 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2404/691-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_0346e666a4d0",
+      "event_name": "2026年度国家教育考试科研规划课题立项名单公布 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2609/27-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_889c38e1bfd3",
+      "event_name": "关于2026年度国家教育考试科研规划课题拟立项名单的公示 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2608/25-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_f8757d2502be",
+      "event_name": "教育部教育考试院关于申报2026年度国家教育考试科研规划课题的公告 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2604/99-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_60eda603e52f",
+      "event_name": "2025年度国家教育考试科研规划课题立项名单公布 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2509/4-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_6b4ac6481069",
+      "event_name": "关于2025年度国家教育考试科研规划课题拟立项名单的公示 - 中国教育考试网",
+      "source_url": "https://www.neea.edu.cn/html1/report/2508/14-1.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_c71d6b8ea1c6",
+      "event_name": "关于开展2026年下半年中小学教师资格考试（面试） 报名工作的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2610/14-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_4e5582f14aee",
+      "event_name": "关于2026年下半年中小学教师资格考试（笔试） 成绩发布的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2610/12-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_1382d0b9a026",
+      "event_name": "关于开展2026年下半年中小学教师资格考试（笔试） 报名工作的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2606/25-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_690c4aad7add",
+      "event_name": "关于查询2026年上半年中小学教师资格考试（面试）结果、 考试合格证明的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2606/11-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_f1048222ecf4",
+      "event_name": "关于开展2026年上半年中小学教师资格考试（面试） 报名工作的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2604/11-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_0038d1ae6026",
+      "event_name": "关于2026年上半年中小学教师资格考试（笔试） 成绩发布的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2604/25-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_6540bd35b721",
+      "event_name": "关于开展2026年上半年中小学教师资格考试（笔试） 报名工作的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2512/78-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_b6fc6791135d",
+      "event_name": "关于查询2025年下半年中小学教师资格考试（面试）结果、 考试合格证明的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2512/74-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_eb82dfbc685a",
+      "event_name": "关于2025年下半年中小学教师资格考试（笔试） 成绩发布的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2511/70-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_bc2e6c2e45cc",
+      "event_name": "关于开展2025年下半年中小学教师资格考试（面试） 报名工作的通知",
+      "source_url": "https://ntce.neea.edu.cn/html1/report/2511/1-1.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_28b0cf1c96f8",
+      "event_name": "咸阳市长武县教育考试中心召开2027年高考体检培训会",
+      "source_url": "https://www.sneea.cn/info/1044/17947.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_6d03f2c501a6",
+      "event_name": "咸阳市淳化县教育考试中心扎实做好2027年高考报名资料审查工作",
+      "source_url": "https://www.sneea.cn/info/1044/17942.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_f3b45a1ac827",
+      "event_name": "2027年陕西省艺术类专业课省级统考在即，省教育考试院提醒各位考生：诚信应考，远离作弊",
+      "source_url": "https://www.sneea.cn/info/1027/17949.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_d9398c53933e",
+      "event_name": "2027年陕西省全国硕士研究生招生考试材料核验温馨提醒",
+      "source_url": "https://www.sneea.cn/info/1025/17843.htm",
+      "reason": "past_outside_horizon_or_multiple_windows",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_0f962003b651",
+      "event_name": "2027年陕西省全国硕士研究生招生考试网上报名公告",
+      "source_url": "https://www.sneea.cn/info/1025/17807.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_2b8a274e0a49",
+      "event_name": "宝鸡市陈仓区圆满完成2026年下半年中小学教师资格考试笔试工作",
+      "source_url": "https://www.sneea.cn/info/1043/17769.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_8371faa284c0",
+      "event_name": "咸阳市礼泉县2026年下半年中小学教师资格考试笔试圆满结束",
+      "source_url": "https://www.sneea.cn/info/1044/17766.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_bcd220070638",
+      "event_name": "2026年陕西省教育考试院第十三届国家网络安全宣传周活动",
+      "source_url": "https://www.sneea.cn/info/1024/17770.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_9094766b9b00",
+      "event_name": "2026年陕西省成人高校招生全国统一考试成绩查询公告",
+      "source_url": "https://www.sneea.cn/info/1028/17931.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_c96bd3db9208",
+      "event_name": "2026年下半年陕西省高等教育自学考试成绩发布公告",
+      "source_url": "https://www.sneea.cn/info/1032/17933.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_bd79a1808464",
+      "event_name": "我省2027年普通高校招生艺术类专业统一考试工作新闻通气会召开",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7436",
+      "reason": "online_or_multi_event_or_report_requires_review",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_e56b02ca8b86",
+      "event_name": "关于做好山东省2027年4月高等教育自学考试报名工作的通知",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7437",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_c44969b61cfe",
+      "event_name": "山东省2027年普通高等学校招生艺术类专业统一考试笔试科目考生须知",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7434",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_087ff2d17346",
+      "event_name": "山东省2027年普通高等学校招生艺术类专业统一考试现场考试科目考生须知",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7433",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_4adac0390c88",
+      "event_name": "全省2027年硕士研究生招生考试安全工作视频会议召开",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7424",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_e5741433da95",
+      "event_name": "2027年山东省硕士研究生招生考试网上报名信息审核有关事项的公告",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7390",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_08737feb483f",
+      "event_name": "2027年山东省硕士研究生招生考试网上报名安排及注意事项",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7370",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_a2ec5ac4ed25",
+      "event_name": "2027年山东省硕士研究生招生考试报考点接收范围及条件",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7367",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_5620a9e11827",
+      "event_name": "2027年山东省硕士研究生招生考试各市教育招生考试机构及招生单位联系方式",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7368",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_c5474386c4fb",
+      "event_name": "关于调整高等教育自学考试法学（专升本）等8个专业部分课程的通知",
+      "source_url": "https://www.sdzk.cn/NewsInfo.aspx?NewsID=7423",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_3f6f46fd2f1a",
+      "event_name": "2026年度省属事业单位公开招聘初级综合类岗位人员公告",
+      "source_url": "https://hrss.shandong.gov.cn/articles/ch00232/202601/f257f59a-0904-4130-935e-d959873b68d3.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_26d6f7a6b0a7",
+      "event_name": "中央机关及其直属机构2027年度考试录用公务员笔试温馨提醒和注意事项_通知公告_天津市人力资源和社会保障局",
+      "source_url": "https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261121_7660526.html",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_bffde6911842",
+      "event_name": "中央机关及其直属机构2027年度考试录用公务员笔试天津考区准考证打印须知_通知公告_天津市人力资源和社会保障局",
+      "source_url": "https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261121_7660528.html",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_c489c10b211a",
+      "event_name": "天津市2026年度房地产估价师职业资格考试、一级注册消防工程师职业资格考试温馨提示_通知公告_天津市人力资源和社会保障局",
+      "source_url": "https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261104_7649433.html",
+      "reason": "past_outside_horizon_or_multiple_windows",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_2b425258988b",
+      "event_name": "天津考区2026年度翻译专业资格（水平）考试顺利结束_动态资讯_天津市人力资源和社会保障局",
+      "source_url": "https://hrss.tj.gov.cn/jsdw/rsksw/dongtazixun4/202608/t20260817_7353687.html",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_136b33a1d0b8",
+      "event_name": "天津考区2026年度高级经济师考试顺利结束_动态资讯_天津市人力资源和社会保障局",
+      "source_url": "https://hrss.tj.gov.cn/jsdw/rsksw/dongtazixun4/202608/t20260817_7353680.html",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_5376c93a2133",
+      "event_name": "天津考区2026年度社会工作者职业资格考试顺利结束_动态资讯_天津市人力资源和社会保障局",
+      "source_url": "https://hrss.tj.gov.cn/jsdw/rsksw/dongtazixun4/202608/t20260817_7353672.html",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_f3db6de195c3",
+      "event_name": "天津市事业单位2027年度第一批集中公开招聘工作人员公告_通知公告_天津市人力资源和社会保障局",
+      "source_url": "https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261125_7663736.html",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_b2e0944635ae",
+      "event_name": "天津市人事考试劳务费实现社会保障卡发放_动态资讯_天津市人力资源和社会保障局",
+      "source_url": "https://hrss.tj.gov.cn/jsdw/rsksw/dongtazixun4/202608/t20260817_7353651.html",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_7aceea06ed39",
+      "event_name": "纪念孙中山先生诞辰160周年大会在京举行 习近平发表重要讲话",
+      "source_url": "https://edu.xa.gov.cn/xwzx/jyyw/2121057800476971009.html",
+      "reason": "no_explicit_year_event_date",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_4f5a209efb8a",
+      "event_name": "习近平出席纪念中国工农红军长征胜利90周年大会并发表重要讲话",
+      "source_url": "https://edu.xa.gov.cn/xwzx/jyyw/2113159611955658753.html",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_96009aaa8bc3",
+      "event_name": "2027年全国硕士研究生招生考试网上报名公告-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1074/20864.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_66651a437250",
+      "event_name": "2027年硕士研究生招生考试自命题科目考试大纲-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1074/20824.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_c6df84e227d3",
+      "event_name": "2027年硕士研究生招生考试自命题科目考试大纲-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1072/20834.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_140978ce4726",
+      "event_name": "2026年硕士研究生招生考试自命题科目考试大纲-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1072/17324.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_39f39d86b3ca",
+      "event_name": "走近西电2025年度优秀研究生导师 王笛 为深入学习贯彻党的二十大精神和习近平总书记关于研究生教育工作的重要指示精神，增强广大研究生导师立德树人、培根铸魂的荣誉感、使命感和责任感，树立为人师表典范和先进工作典型，西安电子科技大学2025年度共评选出10名“优秀研究生导师”。师者匠心，育人筑梦，让我们一起走近优秀研究生导师，汲取榜样的力量！个人简介王笛，计算机科学与技术学院教授，博士生导师，陕西省重点实验室、科技创新团队骨干成员，担任领域内顶级国际会议程序委员会委员/...",
+      "source_url": "https://gr.xidian.edu.cn/info/1406/18974.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_caec1c92fe24",
+      "event_name": "关于2022秋季学期研究生部分公共课课程考试的一些说明-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1052/12744.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_6126a9d2f9f2",
+      "event_name": "关于2026年秋季学期“学术规范与论文写作”、“科学道德与学风”等网上在线课程的开课通知-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1073/20794.htm",
+      "reason": "online_or_multi_event_or_report_requires_review",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_1098a414c544",
+      "event_name": "关于2026年秋季学期“学术规范与论文写作”、“科学道德与学风”等网上在线课程的开课通知-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1037/20784.htm",
+      "reason": "online_or_multi_event_or_report_requires_review",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_3c12f0661df1",
+      "event_name": "关于2026年春季学期“学术规范与论文写作”、“科学道德与学风”等网上在线课程的开课通知-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1037/18614.htm",
+      "reason": "online_or_multi_event_or_report_requires_review",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_b61d1a7a060b",
+      "event_name": "关于2025年秋季学期“学术规范与论文写作”、“科学道德与学风”等网上在线课程的开课通知-研究生院-西安电子科技大学",
+      "source_url": "https://gr.xidian.edu.cn/info/1037/17244.htm",
+      "reason": "online_or_multi_event_or_report_requires_review",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_9285d9fff015",
+      "event_name": "关于我院2027年硕士研究生招生考试211科目考试大纲修订的公告",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1243/9198.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_58f9e0b9a07a",
+      "event_name": "172026/11 中国翻译协会交通翻译专业委员会2026年年会顺利召开 我院教师作高校代表主题发言 查看详情>>",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1244/9337.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_7b9a2ade8757",
+      "event_name": "162026/11 外国语学院召开科研诚信专题学习暨学科建设研讨会议 查看详情>>",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1244/9330.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_525bc8e2d74c",
+      "event_name": "俄德系召开期中教学工作会议暨教学竞赛经验分享会",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1244/9370.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_38be2ed19bf0",
+      "event_name": "外国语言文化论坛第317讲 时间：11月20日（周五）10:00-12:00 地点：逸夫外文楼B912会议室 主讲人：王文斌",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1234/9335.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_4eea7d69099a",
+      "event_name": "外国语言文化论坛第316讲 时间：11月18日（周三）19:30-21:30 地点：腾讯会议：743 745 095 主讲人：覃朗",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1234/9334.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_ed30c33cd59a",
+      "event_name": "外国语言文化论坛第315讲 时间：11月4日（周三）19:30-21:30 地点：腾讯会议 651 170 086 主讲人：龙云飞",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1234/9280.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_e2927bf9b464",
+      "event_name": "博士生国际会议参会报告",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1243/9172.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_37186bab92ed",
+      "event_name": "把脉科研，问学有道——南京大学陈新仁教授来院开展学术座谈",
+      "source_url": "https://sfs.xjtu.edu.cn/info/1244/9368.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_0dae30660c42",
+      "event_name": "外国语学院参与承办第27届中国国际教育年会平行论坛 中蒙文明互鉴与经典互译研究中心揭牌-山东大学外国语学院",
+      "source_url": "https://www.flc.sdu.edu.cn/info/1151/23868.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_040952ff9f2f",
+      "event_name": "外国语学院召开第三届教职工代表大会第一次会议-山东大学外国语学院",
+      "source_url": "https://www.flc.sdu.edu.cn/info/1151/23740.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_7994dc2d9204",
+      "event_name": "外国语学院召开党员大会-山东大学外国语学院",
+      "source_url": "https://www.flc.sdu.edu.cn/info/1151/23919.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_cfc295120500",
+      "event_name": "胡志军教授和穆宝清教授在顶级出版社出版中华学术外译项目成果-山东大学外国语学院",
+      "source_url": "https://www.flc.sdu.edu.cn/info/1231/23629.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_05be22bf7056",
+      "event_name": "学术先行筑高地，服务社会践初心：我院临床语言学团队取得系列重要成果-山东大学外国语学院",
+      "source_url": "https://www.flc.sdu.edu.cn/info/1231/23484.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_ec311a329985",
+      "event_name": "2026年环境综合治理学术研讨会在津圆满召开",
+      "source_url": "https://news.tju.edu.cn/info/1700/621619.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_6640008b70c8",
+      "event_name": "2026国际产学研用合作会议智慧能源与信息技术主题论坛顺利举办",
+      "source_url": "https://news.tju.edu.cn/info/1700/621699.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_58073aedba54",
+      "event_name": "天津大学研究生院承办中国研究生院院长联席会2026年年会平行论坛",
+      "source_url": "https://news.tju.edu.cn/info/1700/619259.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_3705acbddee3",
+      "event_name": "天津大学2026年医科秋季专场招聘会暨医学院“人才供需”校企交流座谈会顺利举办",
+      "source_url": "https://news.tju.edu.cn/info/1700/618439.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_6568ecf6b1c2",
+      "event_name": "天津大学海洋科学与技术学院 2026年博士生学术论坛暨海马论坛顺利举办",
+      "source_url": "https://news.tju.edu.cn/info/1700/618189.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_df7058f1eb36",
+      "event_name": "外国语学院师生助力2026世界职业技术教育发展大会",
+      "source_url": "https://news.tju.edu.cn/info/1700/617419.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_53f29cd702de",
+      "event_name": "2026年天津大学博士生学术论坛微电子学院分论坛举办",
+      "source_url": "https://news.tju.edu.cn/info/1700/613869.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_d2f849f459cc",
+      "event_name": "2026电子、电气与信息工程国际会议在天津大学成功举办",
+      "source_url": "https://news.tju.edu.cn/info/1700/620029.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_75de0b9caf76",
+      "event_name": "2026年天津大学博士生交叉学术论坛医学院分论坛成功举办",
+      "source_url": "https://news.tju.edu.cn/info/1700/617439.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_05ff0adb618a",
+      "event_name": "天津大学地球系统科学学院召开《区域断裂体系相互作用及其对地震破裂的控制》研讨会",
+      "source_url": "https://news.tju.edu.cn/info/1700/620049.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_22c19ec4f7ac",
+      "event_name": "启航科研新征程，共筑科技强国梦 | 晶体材料全国重点实验室2026级新生新学期工作会议顺利召开-晶体材料全国重点实验室网站",
+      "source_url": "https://sklcm.sdu.edu.cn/info/1122/2606.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_5784eb32a9bf",
+      "event_name": "第二十届全国晶体生长与材料学术会议第一轮通知-晶体材料全国重点实验室网站",
+      "source_url": "https://sklcm.sdu.edu.cn/info/1123/2406.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_7e2489abc569",
+      "event_name": "纪念蒋民华先生诞辰九十周年系列学术报告｜国际晶体生长组织主席Elias Vlieg教授系列讲座-晶体材料全国重点实验室网站",
+      "source_url": "https://sklcm.sdu.edu.cn/info/1124/1234.htm",
+      "reason": "no_date_mentions_in_extracted_text",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_e8103394c625",
+      "event_name": "山东大学晶体材料研究院（晶体材料全国重点实验室）非事业编制人员招聘公告-晶体材料全国重点实验室网站",
+      "source_url": "https://sklcm.sdu.edu.cn/info/1123/2216.htm",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_d414e3449fae",
+      "event_name": "汉中市教研工作会议召开_汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/jyyw/202605/46a34e52ed674ecc85dbac2332711daa.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_f30d1e0e96a9",
+      "event_name": "2026年全市高考安全工作视频会议召开_汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/jyyw/202605/26910a1b526648cd8615b1c13b4c7d3a.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_394528c3393c",
+      "event_name": "中国共产党第二十届中央委员会第五次全体会议在北京开始举行_汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/szyw/202610/cdddda70a0c044ddbd9f95d1e2475d64.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_abd100ea7489",
+      "event_name": "市校安委召开2025年第三季度工作会议_汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/tpxw/202508/3520a3f4cd754bb29be0c3a64e91674a.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_09266abbed40",
+      "event_name": "陕西省教育厅办公室关于做好2025年特岗教师招聘考试工作有关事项的通知 - 汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/wjtz/202506/55ea514d401141bf9a993cc6b8620da7.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_eee43b7f2840",
+      "event_name": "宁强县教体局召开校长（园长）工作会议_汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/sdjs/202510/646c807da6414ed2bb385b88b7fa7a9f.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_a3d1ba0604ad",
+      "event_name": "勉县召开学前教育普及普惠市级督导反馈问题整改工作会议_汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/jydd/202504/9a812348b872464485da7269abfc0055.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_e983e778290c",
+      "event_name": "2026年汉中市中小学秋假时间安排 - 汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/wjtz/202611/f5200c7d4f2041edaee4a6a88be7e0a3.shtml",
+      "reason": "no_explicit_year_event_date",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_d5d6a6544eed",
+      "event_name": "感恩奋进 砥砺前行——汉中中学召开第41个教师节庆祝大会_汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/gzjy/202509/88c360aa71284dcc9484af467cff0c9b.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    },
+    {
+      "event_id": "off_f9e04e179e4e",
+      "event_name": "李强主持召开国务院常务会议 学习贯彻习近平总书记在中央政治局会议研究部署西藏日喀则市吉隆县泥石流灾害抢险救援工作时的重要讲话精神_汉中市教育局",
+      "source_url": "https://jyj.hanzhong.gov.cn/hzsjyjx/szyw/202609/363f56b241a54b34b77c0c6e3111bfc4.shtml",
+      "reason": "only_non_event_or_ambiguous_dates",
+      "human_adjudicated": false
+    }
+  ]
+}
