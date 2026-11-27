@@ -1,0 +1,17 @@
+{
+  "status": "NOT_ACCEPTED",
+  "independent_human_reviewed": 0,
+  "open_decisions": 9,
+  "open_dated_candidates": 8,
+  "open_recent7_supported_extra_show_claims": 1,
+  "open_recent7_independently_human_verified": 0,
+  "targeted_cases_excluded_from_open_rate": true,
+  "holdout_positive_count": 2,
+  "negative_control_count": 5,
+  "blind_test_limit": "Query-level separation using pre-existing independent permission references, not independent human blind adjudication.",
+  "recall": null,
+  "date_accuracy": null,
+  "city_accuracy": null,
+  "false_positive_rate": null,
+  "duplicate_rate": null
+}

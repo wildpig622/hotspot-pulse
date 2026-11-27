@@ -1,0 +1,100 @@
+[
+  {
+    "event_id": "p4_naying_xian",
+    "evaluation_partition": "targeted_regression",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_xuliang_jinan",
+    "evaluation_partition": "targeted_regression",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_laolang_tianjin",
+    "evaluation_partition": "targeted_regression",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_huyanbin_jinan",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_linzhixuan_tianjin",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_nj_tianjin",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_industry_jinan",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_medical_jinan",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_solar_jinan",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_jinan_civil_public",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_xidian_exam",
+    "evaluation_partition": "targeted_regression",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_hanglong_signal",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_iccll_regression",
+    "evaluation_partition": "targeted_regression",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  },
+  {
+    "event_id": "p4_yeshirong_extra",
+    "evaluation_partition": "open_discovery",
+    "matching_fresh_traditional_ids": [],
+    "matching_phase3_frozen_ids": [],
+    "identity_review": "diagnostic title/date/city match only; not a canonical merge or human judgement"
+  }
+]

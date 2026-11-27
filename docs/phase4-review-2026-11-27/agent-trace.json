@@ -1,0 +1,42 @@
+{
+  "execution": "live assistant web-search/read/verification loop in this chat, then decision replay with direct public-body checks",
+  "initial_queries": [
+    "西安 最近7天 演唱会 官宣 加场 2026 11月",
+    "西安 2027 重大 演唱会 官方",
+    "西安 2026 12月 2027 1月 考试 招录 考点 公告",
+    "西安 学校 寒假 秋假 客源地 2026 2027 校历",
+    "西安 2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "西安 最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月",
+    "济南 最近7天 演唱会 官宣 加场 2026 11月",
+    "济南 2027 重大 演唱会 官方",
+    "济南 2026 12月 2027 1月 考试 招录 考点 公告",
+    "济南 学校 寒假 秋假 客源地 2026 2027 校历",
+    "济南 2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "济南 最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月",
+    "天津 最近7天 演唱会 官宣 加场 2026 11月",
+    "天津 2027 重大 演唱会 官方",
+    "天津 2026 12月 2027 1月 考试 招录 考点 公告",
+    "天津 学校 寒假 秋假 客源地 2026 2027 校历",
+    "天津 2026 12月 2027 大型 会展 会议 体育赛事 官方",
+    "天津 最近一周 漫展 应援 粉丝 聚集 文旅 热点 2026 11月"
+  ],
+  "initial_query_count": 18,
+  "adaptive_query_count": 8,
+  "targeted_query_count": 9,
+  "discovered_entity_verification_queries": 1,
+  "web_search_tool_invocations": 10,
+  "web_document_open_attempts": 18,
+  "adaptive_queries": [
+    "西安 2026年12月 体育馆 演唱会 官宣 开票",
+    "天津 2026年12月31日 演唱会 官方",
+    "西安 2027 研究生 报考点 西安电子科技大学 12月19日",
+    "济南 2027 研究生 考点 12月19日"
+  ],
+  "no_initial_activity_names": true,
+  "specific_name_followups": "regression or verification only, never initial discovery inputs",
+  "standalone_status": "Bing RSS alternative actually tested but unavailable; not claiming a validated unattended web-tool service",
+  "paid_api_provisioning": false,
+  "search_currency_cost": null,
+  "assistant_token_cost": null,
+  "human_acceptance": "pending"
+}

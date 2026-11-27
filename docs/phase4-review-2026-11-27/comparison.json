@@ -1,0 +1,77 @@
+{
+  "all_records": {
+    "union_records": 59,
+    "by_lane": {
+      "traditional_collector": {
+        "records": 33,
+        "unique_ids": 33,
+        "duplicate_observations": 0,
+        "unique_contribution": 33,
+        "overlap_with_other_lanes": 0
+      },
+      "search_agent": {
+        "records": 14,
+        "unique_ids": 14,
+        "duplicate_observations": 0,
+        "unique_contribution": 4,
+        "overlap_with_other_lanes": 10
+      },
+      "official_notice": {
+        "records": 19,
+        "unique_ids": 19,
+        "duplicate_observations": 0,
+        "unique_contribution": 12,
+        "overlap_with_other_lanes": 7
+      },
+      "social_signal": {
+        "records": 3,
+        "unique_ids": 3,
+        "duplicate_observations": 0,
+        "unique_contribution": 0,
+        "overlap_with_other_lanes": 3
+      }
+    },
+    "discovery_recall": null,
+    "date_accuracy": null,
+    "acceptance": "awaiting_independent_human_review",
+    "identity_note": "Cross-source duplicates require explicit identity links; counts are record IDs, not population event totals."
+  },
+  "open_decision_records": {
+    "union_records": 9,
+    "by_lane": {
+      "traditional_collector": {
+        "records": 0,
+        "unique_ids": 0,
+        "duplicate_observations": 0,
+        "unique_contribution": 0,
+        "overlap_with_other_lanes": 0
+      },
+      "search_agent": {
+        "records": 9,
+        "unique_ids": 9,
+        "duplicate_observations": 0,
+        "unique_contribution": 2,
+        "overlap_with_other_lanes": 7
+      },
+      "official_notice": {
+        "records": 5,
+        "unique_ids": 5,
+        "duplicate_observations": 0,
+        "unique_contribution": 0,
+        "overlap_with_other_lanes": 5
+      },
+      "social_signal": {
+        "records": 2,
+        "unique_ids": 2,
+        "duplicate_observations": 0,
+        "unique_contribution": 0,
+        "overlap_with_other_lanes": 2
+      }
+    },
+    "discovery_recall": null,
+    "date_accuracy": null,
+    "acceptance": "awaiting_independent_human_review",
+    "identity_note": "Cross-source duplicates require explicit identity links; counts are record IDs, not population event totals."
+  },
+  "note": "Targeted regression and retained official records excluded from open decisions. Unlabelled traditional results require independent matching; no causal recall or uplift claim."
+}

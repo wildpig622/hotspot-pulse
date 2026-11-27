@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-11-27",
+  "direct_request_checks": 58,
+  "replay_or_run_elapsed_seconds": 0.172,
+  "fresh_request_checks_this_invocation": 0,
+  "recorded_request_elapsed_seconds": 37.863,
+  "downloaded_bytes": 2078659,
+  "paid_services_enabled": false,
+  "external_paid_model_calls": 0,
+  "total_currency_cost": null,
+  "limitations": "Web-tool search and assistant-token cost not exposed. One bounded run is not a production reliability estimate.",
+  "anonymous_provider_results": 0
+}

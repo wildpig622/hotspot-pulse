@@ -1,0 +1,587 @@
+{
+  "schema_version": "observations-1",
+  "events": {
+    "p4_naying_xian": {
+      "event_id": "p4_naying_xian",
+      "member_record_ids": [
+        "p4_naying_xian"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_a26f802003a8a08fbc9bd311"
+      ],
+      "last_observed_at": "2026-11-27T02:04:24Z",
+      "event_name": "那英我来因为你在西安站",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2026-12-26",
+      "end_at": "2026-12-26",
+      "city_name": "西安市"
+    },
+    "p4_xuliang_jinan": {
+      "event_id": "p4_xuliang_jinan",
+      "member_record_ids": [
+        "p4_xuliang_jinan"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_03b2926e63936dc5c9d0014e"
+      ],
+      "last_observed_at": "2026-11-27T02:04:24Z",
+      "event_name": "徐良时间折叠济南站",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2026-12-04",
+      "end_at": "2026-12-06",
+      "city_name": "济南市"
+    },
+    "p4_laolang_tianjin": {
+      "event_id": "p4_laolang_tianjin",
+      "member_record_ids": [
+        "p4_laolang_tianjin"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_59ddab6c5c5e0f9f8b8a6346",
+        "obs_1921e4ba3820d7ed7bb6cc05"
+      ],
+      "last_observed_at": "2026-11-27T02:11:55Z",
+      "event_name": "老狼纯真年代天津站及加场",
+      "kind": "status_change",
+      "observation_type": "announced",
+      "start_at": "2026-12-18",
+      "end_at": "2026-12-19",
+      "city_name": "天津市"
+    },
+    "p4_huyanbin_jinan": {
+      "event_id": "p4_huyanbin_jinan",
+      "member_record_ids": [
+        "p4_huyanbin_jinan"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_0b0ee0935567550444dad75a"
+      ],
+      "last_observed_at": "2026-11-27T02:04:26Z",
+      "event_name": "胡彦斌济南演唱会",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2026-12-19",
+      "end_at": "2026-12-19",
+      "city_name": "济南市"
+    },
+    "p4_linzhixuan_tianjin": {
+      "event_id": "p4_linzhixuan_tianjin",
+      "member_record_ids": [
+        "p4_linzhixuan_tianjin"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_8158ab49ceb65fec0786861f"
+      ],
+      "last_observed_at": "2026-11-27T02:04:27Z",
+      "event_name": "林志炫天津跨年演唱会",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2026-12-31",
+      "end_at": "2027-01-01",
+      "city_name": "天津市"
+    },
+    "p4_nj_tianjin": {
+      "event_id": "p4_nj_tianjin",
+      "member_record_ids": [
+        "p4_nj_tianjin"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_88a40a7744e9f92b2fe44f9c"
+      ],
+      "last_observed_at": "2026-11-27T02:04:29Z",
+      "event_name": "天津NJ动漫游戏狂欢节",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2027-01-30",
+      "end_at": "2027-01-31",
+      "city_name": "天津市"
+    },
+    "p4_industry_jinan": {
+      "event_id": "p4_industry_jinan",
+      "member_record_ids": [
+        "p4_industry_jinan"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_968997978f55b214f65d8899"
+      ],
+      "last_observed_at": "2026-11-27T02:04:29Z",
+      "event_name": "济南国际工业智能及动力传动与自动化展览会",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2027-02-26",
+      "end_at": "2027-03-01",
+      "city_name": "济南市"
+    },
+    "p4_medical_jinan": {
+      "event_id": "p4_medical_jinan",
+      "member_record_ids": [
+        "p4_medical_jinan"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_f6113629bb944a7dbda1b39a"
+      ],
+      "last_observed_at": "2026-11-27T02:04:30Z",
+      "event_name": "第56届中国国际医疗器械山东博览会",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2027-03-12",
+      "end_at": "2027-03-14",
+      "city_name": "济南市"
+    },
+    "p4_solar_jinan": {
+      "event_id": "p4_solar_jinan",
+      "member_record_ids": [
+        "p4_solar_jinan"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_150ac7d09dd3f7b0f9707114"
+      ],
+      "last_observed_at": "2026-11-27T02:04:30Z",
+      "event_name": "第二十二届中国济南国际光储利用大会",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2027-04-16",
+      "end_at": "2027-04-18",
+      "city_name": "济南市"
+    },
+    "p4_jinan_civil_public": {
+      "event_id": "p4_jinan_civil_public",
+      "member_record_ids": [
+        "p4_jinan_civil_public"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_5ebdaa2dd01a09d480411e90"
+      ],
+      "last_observed_at": "2026-11-27T02:04:30Z",
+      "event_name": "济南2027年度公务员公共科目笔试",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2026-12-06",
+      "end_at": "2026-12-06",
+      "city_name": "济南市"
+    },
+    "p4_xidian_exam": {
+      "event_id": "p4_xidian_exam",
+      "member_record_ids": [
+        "p4_xidian_exam"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_329eb4c2ef0dba269dcb016f"
+      ],
+      "last_observed_at": "2026-11-27T02:04:30Z",
+      "event_name": "2027研考西电6113报考点范围线索",
+      "kind": "unscheduled",
+      "observation_type": "observed",
+      "start_at": null,
+      "end_at": null,
+      "city_name": "西安市"
+    },
+    "p4_hanglong_signal": {
+      "event_id": "p4_hanglong_signal",
+      "member_record_ids": [
+        "p4_hanglong_signal"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_0b26a3723e9e466d2cee73a1"
+      ],
+      "last_observed_at": "2026-11-27T02:04:31Z",
+      "event_name": "天津恒隆漫威联动需求信号",
+      "kind": "unscheduled",
+      "observation_type": "observed",
+      "start_at": null,
+      "end_at": null,
+      "city_name": "天津市"
+    },
+    "p4_iccll_regression": {
+      "event_id": "p4_iccll_regression",
+      "member_record_ids": [
+        "p4_iccll_regression"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_1d1309b589a67be3332a0110"
+      ],
+      "last_observed_at": "2026-11-27T02:09:35Z",
+      "event_name": "ICCLL2027西安国际会议",
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "start_at": "2027-05-21",
+      "end_at": "2027-05-23",
+      "city_name": "西安市"
+    },
+    "p4_yeshirong_extra": {
+      "event_id": "p4_yeshirong_extra",
+      "member_record_ids": [
+        "p4_yeshirong_extra"
+      ],
+      "review_status": "pending",
+      "history": [
+        "obs_829a3ba7aa6f56a749b51dbc"
+      ],
+      "last_observed_at": "2026-11-27T02:11:55Z",
+      "event_name": "叶世荣天津站1月17日加场",
+      "kind": "status_change",
+      "observation_type": "extra_show",
+      "start_at": "2027-01-17",
+      "end_at": "2027-01-17",
+      "city_name": "天津市"
+    }
+  },
+  "observations": [
+    {
+      "canonical_id": "p4_naying_xian",
+      "record_id": "p4_naying_xian",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:24Z",
+      "source_published_at": null,
+      "source_published_date": "2026-11-22",
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://sina.cn/news/detail/5367995331510509.html",
+      "start_at": "2026-12-26",
+      "end_at": "2026-12-26",
+      "city_name": "西安市",
+      "date_evidence": [
+        {
+          "quote": "2026年12月26日19:00"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_a26f802003a8a08fbc9bd311"
+    },
+    {
+      "canonical_id": "p4_xuliang_jinan",
+      "record_id": "p4_xuliang_jinan",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:24Z",
+      "source_published_at": null,
+      "source_published_date": "2026-11-11",
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://www.thepaper.cn/newsDetail_forward_34452838",
+      "start_at": "2026-12-04",
+      "end_at": "2026-12-06",
+      "city_name": "济南市",
+      "date_evidence": [
+        {
+          "quote": "12月4日、5日、6日"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_03b2926e63936dc5c9d0014e"
+    },
+    {
+      "canonical_id": "p4_laolang_tianjin",
+      "record_id": "p4_laolang_tianjin",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:26Z",
+      "source_published_at": null,
+      "source_published_date": "2026-11-10",
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://feng.ifeng.com/c/8xxZfca1753",
+      "start_at": "2026-12-18",
+      "end_at": "2026-12-19",
+      "city_name": "天津市",
+      "date_evidence": [
+        {
+          "quote": "2026.12.19"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_59ddab6c5c5e0f9f8b8a6346"
+    },
+    {
+      "canonical_id": "p4_laolang_tianjin",
+      "record_id": "p4_laolang_tianjin",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:11:55Z",
+      "source_published_at": null,
+      "source_published_date": "2026-11-25",
+      "assertion_text": "二手正文给出加场开票时间预告，未实测交易系统是否实际开售。",
+      "kind": "status_change",
+      "observation_type": "announced",
+      "source_url": "https://feng.ifeng.com/c/8yKyFYwjxpn",
+      "start_at": "2026-12-18",
+      "end_at": "2026-12-19",
+      "city_name": "天津市",
+      "date_evidence": [
+        {
+          "quote": "11月25日 12:19"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_1921e4ba3820d7ed7bb6cc05"
+    },
+    {
+      "canonical_id": "p4_huyanbin_jinan",
+      "record_id": "p4_huyanbin_jinan",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:26Z",
+      "source_published_at": null,
+      "source_published_date": "2026-11-04",
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://www.thepaper.cn/newsDetail_forward_34402452",
+      "start_at": "2026-12-19",
+      "end_at": "2026-12-19",
+      "city_name": "济南市",
+      "date_evidence": [
+        {
+          "quote": "12月19日"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_0b0ee0935567550444dad75a"
+    },
+    {
+      "canonical_id": "p4_linzhixuan_tianjin",
+      "record_id": "p4_linzhixuan_tianjin",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:27Z",
+      "source_published_at": null,
+      "source_published_date": "2026-09-03",
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://news.enorth.com.cn/system/2026/09/03/059725246.shtml",
+      "start_at": "2026-12-31",
+      "end_at": "2027-01-01",
+      "city_name": "天津市",
+      "date_evidence": [
+        {
+          "quote": "2026年12月31日-2027年1月1日"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_8158ab49ceb65fec0786861f"
+    },
+    {
+      "canonical_id": "p4_nj_tianjin",
+      "record_id": "p4_nj_tianjin",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:29Z",
+      "source_published_at": null,
+      "source_published_date": null,
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://www.ncectj.com/",
+      "start_at": "2027-01-30",
+      "end_at": "2027-01-31",
+      "city_name": "天津市",
+      "date_evidence": [
+        {
+          "quote": "2027-01-30"
+        },
+        {
+          "quote": "2027-01-31"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_88a40a7744e9f92b2fe44f9c"
+    },
+    {
+      "canonical_id": "p4_industry_jinan",
+      "record_id": "p4_industry_jinan",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:29Z",
+      "source_published_at": null,
+      "source_published_date": null,
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://www.cmeshow.cn/",
+      "start_at": "2027-02-26",
+      "end_at": "2027-03-01",
+      "city_name": "济南市",
+      "date_evidence": [
+        {
+          "quote": "2027.02.26"
+        },
+        {
+          "quote": "03.01"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_968997978f55b214f65d8899"
+    },
+    {
+      "canonical_id": "p4_medical_jinan",
+      "record_id": "p4_medical_jinan",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:30Z",
+      "source_published_at": null,
+      "source_published_date": null,
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://www.chenghuaex.com/index.php",
+      "start_at": "2027-03-12",
+      "end_at": "2027-03-14",
+      "city_name": "济南市",
+      "date_evidence": [
+        {
+          "quote": "2027.03.12"
+        },
+        {
+          "quote": "03.14"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_f6113629bb944a7dbda1b39a"
+    },
+    {
+      "canonical_id": "p4_solar_jinan",
+      "record_id": "p4_solar_jinan",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:30Z",
+      "source_published_at": null,
+      "source_published_date": null,
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://www.chenghuaex.com/index.php",
+      "start_at": "2027-04-16",
+      "end_at": "2027-04-18",
+      "city_name": "济南市",
+      "date_evidence": [
+        {
+          "quote": "2027.04.16"
+        },
+        {
+          "quote": "04.18"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_150ac7d09dd3f7b0f9707114"
+    },
+    {
+      "canonical_id": "p4_jinan_civil_public",
+      "record_id": "p4_jinan_civil_public",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:30Z",
+      "source_published_at": null,
+      "source_published_date": "2026-11-05",
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://jnhrss.jinan.gov.cn/col/col18309/art/2026/art_c9023da22f034149aa512e23fd1fc7ec.html",
+      "start_at": "2026-12-06",
+      "end_at": "2026-12-06",
+      "city_name": "济南市",
+      "date_evidence": [
+        {
+          "quote": "12月6日上午"
+        },
+        {
+          "quote": "在我市设置考点"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_5ebdaa2dd01a09d480411e90"
+    },
+    {
+      "canonical_id": "p4_xidian_exam",
+      "record_id": "p4_xidian_exam",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:30Z",
+      "source_published_at": null,
+      "source_published_date": null,
+      "assertion_text": null,
+      "kind": "unscheduled",
+      "observation_type": "observed",
+      "source_url": "https://gr.xidian.edu.cn/info/1074/20864.htm",
+      "start_at": null,
+      "end_at": null,
+      "city_name": "西安市",
+      "date_evidence": [
+        {
+          "quote": "报考点6113"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_329eb4c2ef0dba269dcb016f"
+    },
+    {
+      "canonical_id": "p4_hanglong_signal",
+      "record_id": "p4_hanglong_signal",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:04:31Z",
+      "source_published_at": null,
+      "source_published_date": "2026-11-25",
+      "assertion_text": null,
+      "kind": "unscheduled",
+      "observation_type": "observed",
+      "source_url": "https://www.sina.cn/media/5109202031",
+      "start_at": null,
+      "end_at": null,
+      "city_name": "天津市",
+      "date_evidence": [],
+      "review_status": "pending",
+      "observation_id": "obs_0b26a3723e9e466d2cee73a1"
+    },
+    {
+      "canonical_id": "p4_iccll_regression",
+      "record_id": "p4_iccll_regression",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:09:35Z",
+      "source_published_at": null,
+      "source_published_date": null,
+      "assertion_text": null,
+      "kind": "scheduled",
+      "observation_type": "observed",
+      "source_url": "https://www.iccll.org/",
+      "start_at": "2027-05-21",
+      "end_at": "2027-05-23",
+      "city_name": "西安市",
+      "date_evidence": [
+        {
+          "quote": "May 21 to 23, 2027"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_1d1309b589a67be3332a0110"
+    },
+    {
+      "canonical_id": "p4_yeshirong_extra",
+      "record_id": "p4_yeshirong_extra",
+      "source_record_id": null,
+      "observed_at": "2026-11-27T02:11:55Z",
+      "source_published_at": null,
+      "source_published_date": "2026-11-24",
+      "assertion_text": null,
+      "kind": "status_change",
+      "observation_type": "extra_show",
+      "source_url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "start_at": "2027-01-17",
+      "end_at": "2027-01-17",
+      "city_name": "天津市",
+      "date_evidence": [
+        {
+          "quote": "2027年1月17日"
+        }
+      ],
+      "review_status": "pending",
+      "observation_id": "obs_829a3ba7aa6f56a749b51dbc"
+    }
+  ]
+}

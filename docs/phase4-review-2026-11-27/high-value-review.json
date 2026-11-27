@@ -1,0 +1,945 @@
+[
+  {
+    "event_id": "p4_naying_xian",
+    "event_name": "那英我来因为你在西安站",
+    "event_type": "concert",
+    "city_name": "西安市",
+    "scope_level": "city",
+    "venue_name": "西安奥体中心体育馆",
+    "start_at": "2026-12-26",
+    "end_at": "2026-12-26",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:24Z",
+    "last_evidence_check_at": "2026-11-27T02:04:24Z",
+    "discovery_lane": "social_signal",
+    "evaluation_partition": "targeted_regression",
+    "source_published_at": "2026-11-22",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://sina.cn/news/detail/5367995331510509.html",
+      "https://www.sina.cn/news/detail/5368035080146914.html"
+    ],
+    "short_evidence": [
+      "2026年12月26日19:00"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_xuliang_jinan",
+    "event_name": "徐良时间折叠济南站",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": "济南奥林匹克体育中心体育馆",
+    "start_at": "2026-12-04",
+    "end_at": "2026-12-06",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:24Z",
+    "last_evidence_check_at": "2026-11-27T02:04:26Z",
+    "discovery_lane": "search_agent",
+    "evaluation_partition": "targeted_regression",
+    "source_published_at": "2026-11-11",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://www.thepaper.cn/newsDetail_forward_34452838",
+      "https://www.61893.com/s-2-3fda7cb04e8cb700/"
+    ],
+    "short_evidence": [
+      "12月4日、5日、6日"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_laolang_tianjin",
+    "event_name": "老狼纯真年代天津站及加场",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "scope_level": "city",
+    "venue_name": "天津大剧院歌剧厅",
+    "start_at": "2026-12-18",
+    "end_at": "2026-12-19",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:26Z",
+    "last_evidence_check_at": "2026-11-27T02:11:55Z",
+    "discovery_lane": "search_agent",
+    "evaluation_partition": "targeted_regression",
+    "source_published_at": "2026-11-10",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://feng.ifeng.com/c/8xxZfca1753",
+      "https://www.have-tickets.com/web/detail/bXkxeTAvRnQ4RkRZYnRkY0tuRXo5Zz09.html",
+      "https://feng.ifeng.com/c/8yKyFYwjxpn"
+    ],
+    "short_evidence": [
+      "2026.12.19"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_huyanbin_jinan",
+    "event_name": "胡彦斌济南演唱会",
+    "event_type": "concert",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": "济南奥体中心体育馆",
+    "start_at": "2026-12-19",
+    "end_at": "2026-12-19",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:26Z",
+    "last_evidence_check_at": "2026-11-27T02:04:26Z",
+    "discovery_lane": "search_agent",
+    "evaluation_partition": "open_discovery",
+    "source_published_at": "2026-11-04",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://www.thepaper.cn/newsDetail_forward_34402452"
+    ],
+    "short_evidence": [
+      "12月19日"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_linzhixuan_tianjin",
+    "event_name": "林志炫天津跨年演唱会",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "scope_level": "city",
+    "venue_name": "天津奥林匹克体育中心体育馆",
+    "start_at": "2026-12-31",
+    "end_at": "2027-01-01",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:27Z",
+    "last_evidence_check_at": "2026-11-27T02:04:27Z",
+    "discovery_lane": "search_agent",
+    "evaluation_partition": "open_discovery",
+    "source_published_at": "2026-09-03",
+    "evidence_read_this_run": true,
+    "date_review_required": true,
+    "source_urls": [
+      "https://news.enorth.com.cn/system/2026/09/03/059725246.shtml",
+      "https://tj.bendibao.com/xiuxian/202691/173704.shtm"
+    ],
+    "short_evidence": [
+      "2026年12月31日-2027年1月1日"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_nj_tianjin",
+    "event_name": "天津NJ动漫游戏狂欢节",
+    "event_type": "exhibition",
+    "city_name": "天津市",
+    "scope_level": "city",
+    "venue_name": "国家会展中心天津",
+    "start_at": "2027-01-30",
+    "end_at": "2027-01-31",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:29Z",
+    "last_evidence_check_at": null,
+    "discovery_lane": "official_notice",
+    "evaluation_partition": "open_discovery",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.ncectj.com/"
+    ],
+    "short_evidence": [
+      "2027-01-30",
+      "2027-01-31"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_industry_jinan",
+    "event_name": "济南国际工业智能及动力传动与自动化展览会",
+    "event_type": "exhibition",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": "山东国际会展中心",
+    "start_at": "2027-02-26",
+    "end_at": "2027-03-01",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:29Z",
+    "last_evidence_check_at": "2026-11-27T02:04:30Z",
+    "discovery_lane": "official_notice",
+    "evaluation_partition": "open_discovery",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://www.cmeshow.cn/",
+      "https://www.chenghuaex.com/index.php"
+    ],
+    "short_evidence": [
+      "2027.02.26",
+      "03.01"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_medical_jinan",
+    "event_name": "第56届中国国际医疗器械山东博览会",
+    "event_type": "exhibition",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": "山东国际会展中心",
+    "start_at": "2027-03-12",
+    "end_at": "2027-03-14",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:30Z",
+    "last_evidence_check_at": "2026-11-27T02:04:30Z",
+    "discovery_lane": "official_notice",
+    "evaluation_partition": "open_discovery",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://www.chenghuaex.com/index.php"
+    ],
+    "short_evidence": [
+      "2027.03.12",
+      "03.14"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_solar_jinan",
+    "event_name": "第二十二届中国济南国际光储利用大会",
+    "event_type": "conference",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": "山东国际会展中心",
+    "start_at": "2027-04-16",
+    "end_at": "2027-04-18",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:30Z",
+    "last_evidence_check_at": "2026-11-27T02:04:30Z",
+    "discovery_lane": "official_notice",
+    "evaluation_partition": "open_discovery",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://www.chenghuaex.com/index.php"
+    ],
+    "short_evidence": [
+      "2027.04.16",
+      "04.18"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_jinan_civil_public",
+    "event_name": "济南2027年度公务员公共科目笔试",
+    "event_type": "exam",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": "济南考区，具体考场见准考证",
+    "start_at": "2026-12-06",
+    "end_at": "2026-12-06",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:30Z",
+    "last_evidence_check_at": "2026-11-27T02:04:30Z",
+    "discovery_lane": "official_notice",
+    "evaluation_partition": "open_discovery",
+    "source_published_at": "2026-11-05",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://jnhrss.jinan.gov.cn/col/col18309/art/2026/art_c9023da22f034149aa512e23fd1fc7ec.html"
+    ],
+    "short_evidence": [
+      "12月6日上午",
+      "在我市设置考点"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_xidian_exam",
+    "event_name": "2027研考西电6113报考点范围线索",
+    "event_type": "exam",
+    "city_name": "西安市",
+    "scope_level": "test_center",
+    "venue_name": "西电6113报考点，最终考场待准考证",
+    "start_at": null,
+    "end_at": null,
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:30Z",
+    "last_evidence_check_at": null,
+    "discovery_lane": "official_notice",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://gr.xidian.edu.cn/info/1074/20864.htm",
+      "https://yz.chsi.com.cn/yzwb/"
+    ],
+    "short_evidence": [
+      "报考点6113"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_hanglong_signal",
+    "event_name": "天津恒隆漫威联动需求信号",
+    "event_type": "festival",
+    "city_name": "天津市",
+    "scope_level": "social_signal",
+    "start_at": null,
+    "end_at": null,
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:04:31Z",
+    "last_evidence_check_at": null,
+    "discovery_lane": "social_signal",
+    "evaluation_partition": "open_discovery",
+    "source_published_at": "2026-11-25",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.sina.cn/media/5109202031"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "unknown",
+      "reason": "insufficient_demand_evidence",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_iccll_regression",
+    "event_name": "ICCLL2027西安国际会议",
+    "event_type": "conference",
+    "city_name": "西安市",
+    "scope_level": "organizer",
+    "start_at": "2027-05-21",
+    "end_at": "2027-05-23",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:09:35Z",
+    "last_evidence_check_at": "2026-11-27T02:09:35Z",
+    "discovery_lane": "official_notice",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://www.iccll.org/"
+    ],
+    "short_evidence": [
+      "May 21 to 23, 2027"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "p4_yeshirong_extra",
+    "event_name": "叶世荣天津站1月17日加场",
+    "event_type": "concert",
+    "city_name": "天津市",
+    "scope_level": "city",
+    "venue_name": "天津奥林匹克中心体育馆",
+    "start_at": "2027-01-17",
+    "end_at": "2027-01-17",
+    "review_status": "pending",
+    "event_status": "unknown",
+    "first_seen_at": "2026-11-27T02:11:55Z",
+    "last_evidence_check_at": "2026-11-27T02:11:55Z",
+    "discovery_lane": "social_signal",
+    "evaluation_partition": "open_discovery",
+    "source_published_at": "2026-11-24",
+    "evidence_read_this_run": true,
+    "source_urls": [
+      "https://www.sina.cn/news/detail/5368771845818684.html",
+      "https://www.sina.cn/news/detail/5368758589195685.html",
+      "https://feng.ifeng.com/c/8yKyFYwjxpn"
+    ],
+    "short_evidence": [
+      "2027年1月17日"
+    ],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_1cf212722b4c",
+    "event_name": "第四届数字赋能外语教师发展研讨会",
+    "event_type": "conference",
+    "city_name": "西安市",
+    "scope_level": "organizer",
+    "venue_name": null,
+    "start_at": "2026-12-19",
+    "end_at": "2026-12-19",
+    "sessions": [
+      {
+        "start_at": "2026-12-19",
+        "end_at": "2026-12-19"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:13:19Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://sfs.xjtu.edu.cn/info/1243/9348.htm"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_95ad746a19c1",
+    "event_name": "第四届智能控制测量与信号系统国际会议FICMSS2027",
+    "event_type": "conference",
+    "city_name": "西安市",
+    "scope_level": "organizer",
+    "venue_name": null,
+    "start_at": "2027-01-08",
+    "end_at": "2027-01-10",
+    "sessions": [
+      {
+        "start_at": "2027-01-08",
+        "end_at": "2027-01-10"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:13:19Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://cmcs.chd.edu.cn/2026/1010/c8633a262954/page.htm"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_4e9ff1b2d939",
+    "event_name": "2027年全国硕士研究生招生考试初试",
+    "event_type": "exam",
+    "city_name": null,
+    "scope_level": "national",
+    "venue_name": null,
+    "start_at": "2026-12-19",
+    "end_at": "2026-12-20",
+    "sessions": [
+      {
+        "start_at": "2026-12-19",
+        "end_at": "2026-12-20"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:11:03Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.moe.gov.cn/srcsite/A15/moe_778/s3261/202609/t20260923_1451734.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "scope_review",
+      "reason": "no_confirmed_local_test_area_or_venue",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_4e8264020730",
+    "event_name": "2027年度国考公共科目笔试",
+    "event_type": "exam",
+    "city_name": null,
+    "scope_level": "national",
+    "venue_name": null,
+    "start_at": "2026-11-29",
+    "end_at": "2026-11-29",
+    "sessions": [
+      {
+        "start_at": "2026-11-29",
+        "end_at": "2026-11-29"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:11:03Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.beijing.gov.cn/cs/gncs/csbmts/202611/t20261116_4948266.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "scope_review",
+      "reason": "no_confirmed_local_test_area_or_venue",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_29537fcfce98",
+    "event_name": "济南义务教育2027寒假",
+    "event_type": "holiday",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": null,
+    "start_at": "2027-01-23",
+    "end_at": "2027-02-21",
+    "sessions": [
+      {
+        "start_at": "2027-01-23",
+        "end_at": "2027-02-21"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:11:04Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "origin_market_review",
+      "reason": "school_population_movement_direction_unknown",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_43270b95cd9c",
+    "event_name": "济南高中2027寒假",
+    "event_type": "holiday",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": null,
+    "start_at": "2027-01-30",
+    "end_at": "2027-02-21",
+    "sessions": [
+      {
+        "start_at": "2027-01-30",
+        "end_at": "2027-02-21"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:11:04Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "origin_market_review",
+      "reason": "school_population_movement_direction_unknown",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_fc5e0551c22b",
+    "event_name": "济南义务教育2027暑假",
+    "event_type": "holiday",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": null,
+    "start_at": "2027-07-07",
+    "end_at": "2027-08-31",
+    "sessions": [
+      {
+        "start_at": "2027-07-07",
+        "end_at": "2027-08-31"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:11:04Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "origin_market_review",
+      "reason": "school_population_movement_direction_unknown",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_daef9e3fbe9f",
+    "event_name": "济南高中2027暑假",
+    "event_type": "holiday",
+    "city_name": "济南市",
+    "scope_level": "city",
+    "venue_name": null,
+    "start_at": "2027-07-14",
+    "end_at": "2027-08-31",
+    "sessions": [
+      {
+        "start_at": "2027-07-14",
+        "end_at": "2027-08-31"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:11:04Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "origin_market_review",
+      "reason": "school_population_movement_direction_unknown",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_230eef02680c",
+    "event_name": "区域国别研究与国家语言能力建设学术研讨会",
+    "event_type": "conference",
+    "city_name": "济南市",
+    "scope_level": "organizer",
+    "venue_name": null,
+    "start_at": "2026-12-11",
+    "end_at": "2026-12-13",
+    "sessions": [
+      {
+        "start_at": "2026-12-11",
+        "end_at": "2026-12-13"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_known_official",
+    "freshness": "previous_evidence_only",
+    "first_seen_at": null,
+    "last_evidence_check_at": "2026-11-26T07:13:19Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "evidence_read_this_run": false,
+    "source_urls": [
+      "https://www.flc.sdu.edu.cn/info/1150/23835.htm"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_c920f35ea2ff",
+    "event_name": "2027年全国硕士研究生招生考试天津考区",
+    "event_type": "exam",
+    "city_name": "天津市",
+    "scope_level": "city",
+    "venue_name": null,
+    "start_at": "2026-12-19",
+    "end_at": "2026-12-20",
+    "sessions": [
+      {
+        "start_at": "2026-12-19",
+        "end_at": "2026-12-20"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_not_rediscovered",
+    "freshness": "previous_evidence_only",
+    "last_evidence_check_at": "2026-11-26T07:11:04Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "source_urls": [
+      "https://www.tj.gov.cn/zmhd/hygqx/202610/t20261009_7390056.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_04f5d5bcf753",
+    "event_name": "天津市2027年度公务员公共科目笔试",
+    "event_type": "exam",
+    "city_name": "天津市",
+    "scope_level": "city",
+    "venue_name": null,
+    "start_at": "2026-12-06",
+    "end_at": "2026-12-06",
+    "sessions": [
+      {
+        "start_at": "2026-12-06",
+        "end_at": "2026-12-06"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_not_rediscovered",
+    "freshness": "previous_evidence_only",
+    "last_evidence_check_at": "2026-11-26T07:11:04Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "source_urls": [
+      "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  },
+  {
+    "event_id": "off_7a191ac7f8bf",
+    "event_name": "天津市2027年度公务员专业科目笔试",
+    "event_type": "exam",
+    "city_name": "天津市",
+    "scope_level": "city",
+    "venue_name": null,
+    "start_at": "2026-12-05",
+    "end_at": "2026-12-05",
+    "sessions": [
+      {
+        "start_at": "2026-12-05",
+        "end_at": "2026-12-05"
+      }
+    ],
+    "review_status": "pending",
+    "event_status": "unknown",
+    "source_presence": "retained_not_rediscovered",
+    "freshness": "previous_evidence_only",
+    "last_evidence_check_at": "2026-11-26T07:11:04Z",
+    "discovery_lane": "retained_official",
+    "evaluation_partition": "targeted_regression",
+    "source_urls": [
+      "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html"
+    ],
+    "short_evidence": [],
+    "operating_relevance_candidate": {
+      "review_priority": "priority_review",
+      "reason": "exam_or_destination_event_requires_lodging_check",
+      "audience_scale": null,
+      "scale_evidence": null,
+      "cross_city_attendance": null,
+      "lodging_increment_grade": "unknown",
+      "revenue_impact": null,
+      "note": "Candidate screening only; venue capacity and tour cities do not establish attendance or hotel demand."
+    }
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "event_id": "p4_naying_xian",
+    "status_findings": "预售11月24日10:08有工作室及演出方公开帖支持；西安预售售罄未找到可核验一手证据，保持未知。",
+    "sources": [
+      {
+        "url": "https://sina.cn/news/detail/5367995331510509.html",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:24Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2026年12月26日19:00"
+        ],
+        "sha256": "a53523a644d6b92c9112d44f5ebc8236dd91c573ac6da3356872b51614cd93f8",
+        "error": null
+      },
+      {
+        "url": "https://www.sina.cn/news/detail/5368035080146914.html",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:24Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [],
+        "sha256": "7c8796f8de5abfa12f02270f505ad398830c57a718ed9181e68c04bed41cb8ea",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": true,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_xuliang_jinan",
+    "status_findings": "政务号正文及转载一致，转载不是第二个独立发布者；不是最近7天新增官宣。",
+    "sources": [
+      {
+        "url": "https://www.thepaper.cn/newsDetail_forward_34452838",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:24Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "12月4日、5日、6日"
+        ],
+        "sha256": "25ba39ab5a1cc8b2aed3aa115dbb14d7d080914316de2f7b933ce4f6669eed30",
+        "error": null
+      },
+      {
+        "url": "https://www.61893.com/s-2-3fda7cb04e8cb700/",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:26Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "12月4日、5日、6日"
+        ],
+        "sha256": "f7d20e6b28073e0b2ac0063b39987cd96f6b128a474df4c76c492348715433d3",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_laolang_tianjin",
+    "status_findings": "二手正文报告12月18售罄、19日加场；转售平台列两日，不等于直接读到天津大剧院公告，状态仍待核实。 11月25日二手更新明确加场12:19开票，作为独立状态观察保存。",
+    "sources": [
+      {
+        "url": "https://feng.ifeng.com/c/8xxZfca1753",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:26Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2026.12.19"
+        ],
+        "sha256": "7df992115bfe071c15ab084ea7c81c7afb849656224ab4813c95d184849b52a3",
+        "error": null
+      },
+      {
+        "url": "https://www.have-tickets.com/web/detail/bXkxeTAvRnQ4RkRZYnRkY0tuRXo5Zz09.html",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:28Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2026.12.19"
+        ],
+        "sha256": "ccd95fdf002b1498d3bba16923fc7c0a445a1f788405f6828a8d05f0339683f3",
+        "error": null
+      },
+      {
+        "url": "https://feng.ifeng.com/c/8yKyFYwjxpn",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:11:55Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2026.12.19"
+        ],
+        "sha256": "618fe0b02b6de2b0e457f50af5c5218a9d1e637e5e919675deea116e6a154477",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_huyanbin_jinan",
+    "status_findings": "政务号署名济南文旅；实际观众及跨城比例未知。",
+    "sources": [
+      {
+        "url": "https://www.thepaper.cn/newsDetail_forward_34402452",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:26Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "12月19日"
+        ],
+        "sha256": "290d8f15b3824fb299b40d41f96343cd15047aee325404c9a18ec488bf0b95cb",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_linzhixuan_tianjin",
+    "status_findings": "媒体给日期范围，本地资讯只列12月31日；范围不是已证实每天一场，须回查最终场次，不制造连续场次。",
+    "sources": [
+      {
+        "url": "https://news.enorth.com.cn/system/2026/09/03/059725246.shtml",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:27Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2026年12月31日-2027年1月1日"
+        ],
+        "sha256": "8953d1ab7aff7f3fef71aa99450706e236153d822993e99cd6f80b7bc736d874",
+        "error": null
+      },
+      {
+        "url": "https://tj.bendibao.com/xiuxian/202691/173704.shtm",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:28Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [],
+        "sha256": "fc02e62ff4a1230285f2e0322772c6685d176493f1f6f763d3bad7572625ed24",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_nj_tianjin",
+    "status_findings": "官方场馆搜索索引给出排期；本轮网页读取超时，索引不等于当前正文核读，列待核实。",
+    "sources": [
+      {
+        "url": "https://www.ncectj.com/",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:29Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [],
+        "sha256": "adbd2ec356965f7e93329fdef92be705849451fbde82a7707c425ee8c336938d",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_industry_jinan",
+    "status_findings": "项目官网与主办方大展同档期，可能为同一展会子展，不能作为两个独立活动累加。远期超过90天。",
+    "sources": [
+      {
+        "url": "https://www.cmeshow.cn/",
+        "status": "blocked",
+        "checked_at": "2026-11-27T02:04:29Z",
+        "direct_body_read": false,
+        "matching_short_quotes": [],
+        "sha256": null,
+        "error": "robots_or_host_denial"
+      },
+      {
+        "url": "https://www.chenghuaex.com/index.php",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:30Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2027.02.26",
+          "03.01"
+        ],
+        "sha256": "9588fb0e326ab7e4fdb0eff1e32699193b779f889f1be88bd11ba7c9860c8db3",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_medical_jinan",
+    "status_findings": "主办方排期，当前届参展及观众规模未核实，不能套用历届数据。",
+    "sources": [
+      {
+        "url": "https://www.chenghuaex.com/index.php",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:30Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2027.03.12",
+          "03.14"
+        ],
+        "sha256": "9588fb0e326ab7e4fdb0eff1e32699193b779f889f1be88bd11ba7c9860c8db3",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_solar_jinan",
+    "status_findings": "主办方排期，规模及住宿转化未知。",
+    "sources": [
+      {
+        "url": "https://www.chenghuaex.com/index.php",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:30Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2027.04.16",
+          "04.18"
+        ],
+        "sha256": "9588fb0e326ab7e4fdb0eff1e32699193b779f889f1be88bd11ba7c9860c8db3",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_jinan_civil_public",
+    "status_findings": "2027招录年度、2026实际笔试；并非成绩查询日，已明确本地考区但具体考场未公布。",
+    "sources": [
+      {
+        "url": "https://jnhrss.jinan.gov.cn/col/col18309/art/2026/art_c9023da22f034149aa512e23fd1fc7ec.html",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:30Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "12月6日上午",
+          "在我市设置考点"
+        ],
+        "sha256": "c00b5ca76d3c6590c4e341d21be5799041b1d23e7be04311e09406477cbd8bda",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_xidian_exam",
+    "status_findings": "本地报考点接收范围与全国12月19至20日须分层关联；报名机构不直接推定为全部实际考场，保留为范围线索。",
+    "sources": [
+      {
+        "url": "https://gr.xidian.edu.cn/info/1074/20864.htm",
+        "status": "blocked",
+        "checked_at": "2026-11-27T02:04:30Z",
+        "direct_body_read": false,
+        "matching_short_quotes": [],
+        "sha256": null,
+        "error": "robots_or_host_denial"
+      },
+      {
+        "url": "https://yz.chsi.com.cn/yzwb/",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:31Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [],
+        "sha256": "99644587d587329e3bfa124d7bd5d3deec497a711a09d174231f544c4647b8aa",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_hanglong_signal",
+    "status_findings": "商场账号公开索引线索，不能把发帖日作为活动日，持续性及住宿增量未知。",
+    "sources": [
+      {
+        "url": "https://www.sina.cn/media/5109202031",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:04:31Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [],
+        "sha256": "d1514071a1bbbbbeb805a2559854912ce4743279716cb151669d838dcc221a68",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": true,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_iccll_regression",
+    "status_findings": "定向复查主办方正文，非开放发现，人数及具体场馆未验证。",
+    "sources": [
+      {
+        "url": "https://www.iccll.org/",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:09:35Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "May 21 to 23, 2027"
+        ],
+        "sha256": "ee351ecbfa044d0e8395bc95c4d2472a3b8fdf4c9e10fdca651e3796e706737b",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": false,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  },
+  {
+    "event_id": "p4_yeshirong_extra",
+    "status_findings": "带最近7日过滤的无艺人名搜索先找到加场报道，随后核读天津广播及大麦认证账号公开帖；单独记录新增1月17日，不把原1月16日重计新增。售罄仍非本次独立核验结论。",
+    "sources": [
+      {
+        "url": "https://www.sina.cn/news/detail/5368771845818684.html",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:11:55Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [
+          "2027年1月17日"
+        ],
+        "sha256": "be93ef3af97314662470eaf76625708db6ac04153303cc641cd233b7e6f29915",
+        "error": null
+      },
+      {
+        "url": "https://www.sina.cn/news/detail/5368758589195685.html",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:11:56Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [],
+        "sha256": "699e7588f117a5cbd6b630dcac8f8c7ce02c0eb8f18dc164a604373359016ba7",
+        "error": null
+      },
+      {
+        "url": "https://feng.ifeng.com/c/8yKyFYwjxpn",
+        "status": "ok",
+        "checked_at": "2026-11-27T02:11:55Z",
+        "direct_body_read": true,
+        "matching_short_quotes": [],
+        "sha256": "618fe0b02b6de2b0e457f50af5c5218a9d1e637e5e919675deea116e6a154477",
+        "error": null
+      }
+    ],
+    "recent_7_day_publication": true,
+    "cross_source_independent_verification": "not_claimed",
+    "human_acceptance": "pending"
+  }
+]
