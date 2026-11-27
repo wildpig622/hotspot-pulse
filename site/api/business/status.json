@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "schema_version": "business-1",
+    "generated_at": "2026-11-27T17:49:06+00:00",
+    "default_days": 90,
+    "horizon_days": 365,
+    "last_observed_at": "2026-11-27T03:16:20.004653+00:00",
+    "collection_ok": false,
+    "search_mode": "manual_agent_import",
+    "official_rows_not_adapted": 0,
+    "bootstrap_applied_this_build": true,
+    "gaps": [
+      "搜索尚非无人值守服务；需人工触发检索并导入",
+      "三城和类别覆盖不完整；全国考试不代表当地考点",
+      "日期冲突不进入日历；候选未经人工核验"
+    ]
+  },
+  "event_count": 25,
+  "observation_count": 52
+}
