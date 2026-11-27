@@ -1,0 +1,202 @@
+{
+  "as_of": "2026-11-27",
+  "retained_imported_events": 25,
+  "calendar_365": 23,
+  "intelligence": 2,
+  "focus_365": 21,
+  "focus_90_by_city": {
+    "西安市": 3,
+    "济南市": 6,
+    "天津市": 6
+  },
+  "review_status_counts": {
+    "pending": 25
+  },
+  "business_acceptance": {
+    "independent_human_verified": 0,
+    "date_accuracy": null,
+    "city_accuracy": null,
+    "discovery_recall": null,
+    "false_positive_rate": null,
+    "duplicate_event_rate": null,
+    "accepted": false
+  },
+  "independent_latest_runs": [
+    {
+      "run": 1,
+      "requests_including_robots": 14,
+      "literal_matched_records": 4,
+      "bytes": 502048,
+      "sum_request_seconds_not_wall_clock": 4.25
+    },
+    {
+      "run": 2,
+      "requests_including_robots": 14,
+      "literal_matched_records": 4,
+      "bytes": 497969,
+      "sum_request_seconds_not_wall_clock": 2.78
+    }
+  ],
+  "bounded_recheck_history_including_preliminary_attempts": [
+    {
+      "url": "https://sfs.xjtu.edu.cn/info/1243/9348.htm",
+      "checked_at": "2026-11-27T02:32:25Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "a418c6c08cb9c101ebd024f603c0e22e51e4ad63d94c23e1ce883015ee4ce5f0"
+    },
+    {
+      "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "checked_at": "2026-11-27T02:32:25Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "aa4a3b6112a06e848dd406e3e83ced32ddb5116cf9a3539b1509a3680ba7f0a1"
+    },
+    {
+      "url": "https://www.cmeshow.cn/",
+      "checked_at": "2026-11-27T02:32:26Z",
+      "status": "blocked"
+    },
+    {
+      "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+      "checked_at": "2026-11-27T02:32:25Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "a0eca577fbc80ff135cb0924a45a411a8c485861d3de339daf0d78f17034622b"
+    },
+    {
+      "url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "checked_at": "2026-11-27T02:32:27Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "e513f2085d4cd1b754788962d9eaecc801d6c516f49cd2a786d4c95187e17d39"
+    },
+    {
+      "url": "https://sfs.xjtu.edu.cn/info/1243/9348.htm",
+      "checked_at": "2026-11-27T02:38:57Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "a418c6c08cb9c101ebd024f603c0e22e51e4ad63d94c23e1ce883015ee4ce5f0"
+    },
+    {
+      "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "checked_at": "2026-11-27T02:38:57Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "aa4a3b6112a06e848dd406e3e83ced32ddb5116cf9a3539b1509a3680ba7f0a1"
+    },
+    {
+      "url": "https://www.cmeshow.cn/",
+      "checked_at": "2026-11-27T02:38:57Z",
+      "status": "blocked"
+    },
+    {
+      "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+      "checked_at": "2026-11-27T02:38:57Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "a0eca577fbc80ff135cb0924a45a411a8c485861d3de339daf0d78f17034622b"
+    },
+    {
+      "url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "checked_at": "2026-11-27T02:38:58Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "e064a27871f44d4788551b52a76eb91f03442de21c9ecf4f58f23b0a816d397c"
+    },
+    {
+      "url": "https://sfs.xjtu.edu.cn/info/1243/9348.htm",
+      "checked_at": "2026-11-27T02:32:33Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "a418c6c08cb9c101ebd024f603c0e22e51e4ad63d94c23e1ce883015ee4ce5f0"
+    },
+    {
+      "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "checked_at": "2026-11-27T02:32:33Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "aa4a3b6112a06e848dd406e3e83ced32ddb5116cf9a3539b1509a3680ba7f0a1"
+    },
+    {
+      "url": "https://www.cmeshow.cn/",
+      "checked_at": "2026-11-27T02:32:33Z",
+      "status": "blocked"
+    },
+    {
+      "url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "checked_at": "2026-11-27T02:32:34Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "9cc23995fa7002e8c5cc2753a835dda2256796c10ce10c359c9ee20a133a25ec"
+    },
+    {
+      "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+      "checked_at": "2026-11-27T02:32:33Z",
+      "status": "failed",
+      "error_type": "URLError",
+      "http_status": null
+    },
+    {
+      "url": "https://sfs.xjtu.edu.cn/info/1243/9348.htm",
+      "checked_at": "2026-11-27T02:39:01Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "a418c6c08cb9c101ebd024f603c0e22e51e4ad63d94c23e1ce883015ee4ce5f0"
+    },
+    {
+      "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_2535c06993fc499b856e136e646c243a.html",
+      "checked_at": "2026-11-27T02:39:01Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "aa4a3b6112a06e848dd406e3e83ced32ddb5116cf9a3539b1509a3680ba7f0a1"
+    },
+    {
+      "url": "https://www.cmeshow.cn/",
+      "checked_at": "2026-11-27T02:39:01Z",
+      "status": "blocked"
+    },
+    {
+      "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202611/t20261103_7649185.html",
+      "checked_at": "2026-11-27T02:39:01Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "a0eca577fbc80ff135cb0924a45a411a8c485861d3de339daf0d78f17034622b"
+    },
+    {
+      "url": "https://www.sina.cn/news/detail/5368771845818684.html",
+      "checked_at": "2026-11-27T02:39:02Z",
+      "status": "ok",
+      "http_status": 200,
+      "sha256": "9cc23995fa7002e8c5cc2753a835dda2256796c10ce10c359c9ee20a133a25ec"
+    }
+  ],
+  "provider_requests": 9,
+  "provider_http_200": 9,
+  "provider_returned_leads": 45,
+  "provider_automatically_registered_events": 0,
+  "provider_paid_api_calls": 0,
+  "model_api_calls": 0,
+  "monthly_account_free_balance_verified": false,
+  "keyless_sustained_rate_limit_verified": false,
+  "bytes": {
+    "focus": 21299,
+    "calendar": 23290,
+    "intelligence": 2427,
+    "changes": 22748,
+    "status": 613
+  },
+  "legacy_news_bytes": 47104272,
+  "production_json_hashes_unchanged": true,
+  "recommendation": {
+    "isolated_manual_assisted_trial": "GO",
+    "merge_and_production_deploy_now": "NO-GO"
+  },
+  "untested": [
+    "full production refresh network run",
+    "actual deployment/rollback",
+    "7-day autonomous provider stability",
+    "independent human business benchmark",
+    "historical remote Git object privacy remediation"
+  ]
+}

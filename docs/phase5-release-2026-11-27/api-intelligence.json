@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "schema_version": "business-1",
+    "generated_at": "2026-11-27T02:39:03.830758+00:00",
+    "default_days": 90,
+    "horizon_days": 365,
+    "last_observed_at": "2026-11-27T02:39:02Z",
+    "collection_ok": true,
+    "search_mode": "manual_agent_import",
+    "official_rows_not_adapted": 0,
+    "gaps": [
+      "搜索尚非无人值守服务；需人工触发检索并导入",
+      "三城和类别覆盖不完整；全国考试不代表当地考点",
+      "日期冲突不进入日历；候选未经人工核验"
+    ]
+  },
+  "data": [
+    {
+      "event_id": "p4_linzhixuan_tianjin",
+      "review_status": "pending",
+      "first_seen_at": "2026-11-27T02:04:27Z",
+      "event_name": "林志炫天津跨年演唱会",
+      "event_type": "concert",
+      "city_name": "天津市",
+      "scope_level": "city",
+      "venue_name": "天津奥林匹克体育中心体育馆",
+      "start_at": "2026-12-31",
+      "end_at": "2027-01-01",
+      "date_review_required": true,
+      "last_observed_at": "2026-11-27T02:04:27Z",
+      "source_url": "https://news.enorth.com.cn/system/2026/09/03/059725246.shtml",
+      "short_evidence": [
+        "2026年12月31日-2027年1月1日"
+      ],
+      "observation_type": "observed",
+      "operating_relevance_candidate": {
+        "review_priority": "priority_review",
+        "audience_scale": null,
+        "lodging_increment_grade": "unknown",
+        "revenue_impact": null
+      },
+      "source_presence": "retained_until_explicit_change"
+    },
+    {
+      "event_id": "p4_xidian_exam",
+      "review_status": "pending",
+      "first_seen_at": "2026-11-27T02:04:30Z",
+      "event_name": "2027研考西电6113报考点范围线索",
+      "event_type": "exam",
+      "city_name": "西安市",
+      "scope_level": "test_center",
+      "venue_name": "西电6113报考点，最终考场待准考证",
+      "last_observed_at": "2026-11-27T02:04:30Z",
+      "source_url": "https://gr.xidian.edu.cn/info/1074/20864.htm",
+      "short_evidence": [
+        "报考点6113"
+      ],
+      "observation_type": "observed",
+      "operating_relevance_candidate": {
+        "review_priority": "priority_review",
+        "audience_scale": null,
+        "lodging_increment_grade": "unknown",
+        "revenue_impact": null
+      },
+      "source_presence": "retained_until_explicit_change"
+    }
+  ]
+}

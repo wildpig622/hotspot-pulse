@@ -85,3 +85,11 @@ input:focus, select:focus { border-color: #8eafff; box-shadow: 0 0 0 3px rgba(36
   .event-sources { align-items: flex-start; text-align: left; flex-direction: row; } .panel-footer { padding: 14px 16px; } .panel-footer span { flex-basis: 100%; }
   .endpoint { flex-wrap: wrap; } .footer { flex-direction: column; }
 }
+/* Additive business view, using the existing panel and filter language. */
+.business-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+.business-filters{grid-template-columns:repeat(2,minmax(160px,260px))}
+.business-event{padding:20px;border:1px solid var(--line,#dfe5eb);border-radius:12px;background:#fff}
+.business-event h3{margin:12px 0;font-size:18px;line-height:1.5}
+.business-event p{margin:8px 0;line-height:1.6}
+.business-event small{display:block;margin-top:12px;color:#657182}
+.business-event-top{display:flex;gap:16px;align-items:center;justify-content:space-between;color:#657182;font-size:13px}

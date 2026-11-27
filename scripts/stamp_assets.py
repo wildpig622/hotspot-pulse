@@ -16,7 +16,7 @@ def main():
     index = ROOT / 'site/index.html'
     original = index.read_text(encoding='utf-8')
     updated = original
-    for name in ('app.js', 'share-image.js', 'styles.css'):
+    for name in ('app.js', 'share-image.js', 'styles.css', 'business.js'):
         content = (ROOT / 'site' / name).read_bytes().replace(b'\r\n', b'\n')
         digest = hashlib.sha1(b'blob ' + str(len(content)).encode() + b'\0' + content).hexdigest()[:12]
         updated, count = re.subn(r'\./' + re.escape(name) + r'(?:\?v=[a-f0-9]+)?(?=["\'])', './' + name + '?v=' + digest, updated)

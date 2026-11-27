@@ -41,7 +41,7 @@ def parse_events(body, source, cities, checked_at, today):
         if not city:continue
         try:
             start=date.fromisoformat(str(obj.get('startDate',''))[:10]);end=date.fromisoformat(str(obj.get('endDate') or obj.get('startDate'))[:10])
-            if end<start or end<today or (start-today).days>90:continue
+            if end<start or end<today or (start-today).days>365:continue
         except ValueError:continue
         name=obj.get('name');venue=location.get('name')
         if not isinstance(name,str) or not name or not isinstance(venue,str) or not venue:continue
@@ -50,6 +50,8 @@ def parse_events(body, source, cities, checked_at, today):
         event_status='cancelled' if status.endswith('EventCancelled') else 'postponed' if status.endswith('EventPostponed') else 'unknown'
         found.append({'event_id':'off_'+hashlib.sha256(identity.encode()).hexdigest()[:12],
                       'record_kind':'official_candidate','evidence_level':'structured_official','date_confidence':'structured_official',
+                      'source_url':source['url'],'scope_level':'city',
+                      'short_evidence':[str(obj['startDate'])[:160],str(obj.get('endDate') or obj['startDate'])[:160]],
                       'event_name':name,'city_name':city['city_name'],'city_slug':city['city_slug'],'city_match':'text_confirmed',
                       'event_type':'sports' if 'SportsEvent' in typ else 'exhibition' if 'ExhibitionEvent' in typ else 'festival' if 'Festival' in typ else 'conference' if 'BusinessEvent' in typ else 'concert',
                       'venue_name':venue,'start_at':start.isoformat(),'end_at':end.isoformat(),'sessions':[{'start_at':start.isoformat(),'end_at':end.isoformat()}],
