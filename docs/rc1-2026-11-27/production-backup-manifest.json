@@ -1,0 +1,19 @@
+{
+  "production_data_commit": "20911332dc7881cde49e25a07e264617367256dd",
+  "files": {
+    "app.js": "3dbf2e509ddc98f822b7dc2f31f9a9a75ead6f8d715dba5432c99ca909b64d39",
+    "hotspot-client.mjs": "87d78d635b2c50de8e951d35360895d770662c661907d48cef88d43ac6c0f9db",
+    "index.html": "4972cc98669d04cf80cc005ce3e461626081aba70a2d163b1d1af7819ede33b5",
+    "share-image.js": "962c1a6d8460c53598427e9f4e3599b1b95d937ae2b11523312c678a8dc43f21",
+    "styles.css": "74418d7d02dde3d598cea277a4fb6d178ad2830c44a17524ca7c510b05ceed3a",
+    "api/v1/activities.json": "4a5275a7b677f88f9ad3a20bbbfc7cc30edd23220d35b1a30f777d2b73e7522e",
+    "api/v1/cities.json": "57407cc7f80816059e794fa89f63cf2d3b4eb555f213977c9b5fa53a87c94edb",
+    "api/v1/coverage.json": "a29d3abbd4ec663b65a0869445ec6cabfeed2e4e63be410b9d2b2c000f4bf90b",
+    "api/v1/health.json": "b43f7c93027da6e9b2d25aadf89ab03a7faceb8c3b861b4f2426bc8d03dc433b",
+    "api/v1/hotspots.json": "48501d58407ec677a1450e28528cbcdac73cb7939d8fcd49948b43ea05c4f5ec",
+    "api/v2/changes.json": "0bfd999f1acd67b77e1fc27894e220a6ec20f6ee1e1938702105ffdddbf8b703",
+    "api/v2/events.json": "a3d59703aca8b5e24eec811c392f68e90fcc0fdb2fe844a9fb7965b6bbc72d8f",
+    "api/v2/state.json": "10f7d979303c41599c1e8a9b2699e38e08f6975ecf7ced28a4dfb87692d45cfb"
+  },
+  "private_archive_sha256": "8dd184b92ad4bca95b70f8ad4b0593b816fa4871d3f8480c047a95a06a4ec2df"
+}

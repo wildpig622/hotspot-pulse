@@ -28,7 +28,7 @@
     $('businessList').innerHTML = rows.map(function (r) {
       var url = source(r.source_url), review = r.review_status === 'verified' ? '已核验' : r.review_status === 'rejected' ? '已拒绝' : '待核验候选';
       var scope = r.city_name || ((r.scope_level === 'national' ? '全国公告' : '适用地区待确认') + ' · 不代表本地考点');
-      var dates = r.date_review_required ? '日期冲突，待复核' : r.start_at ? r.start_at + (r.end_at && r.end_at !== r.start_at ? ' — ' + r.end_at : '') : '未定档 / 持续信号';
+      var dates = r.date_review_required ? '日期或身份依据待复核' : r.start_at ? r.start_at + (r.end_at && r.end_at !== r.start_at ? ' — ' + r.end_at : '') : '未定档 / 持续信号';
       if (Date.now() - Date.parse(r.observed_at || r.last_observed_at) > 48 * 3600000) dates += ' · 来源超过48小时未复查，记录继续保留';
       return '<article class="business-event"><div class="business-event-top"><span class="result-count">' + esc(review) + '</span><span>' + esc(scope) + '</span></div><h3>' + esc(r.event_name) + '</h3><p>' + esc(dates) + ' · ' + esc(r.venue_name || '场地未确认') + '</p><p>' + esc(r.change_kind === 'new_record' ? '新增线索' : labels[r.observation_type] || '观察') + ' · 观察时间 ' + esc(time(r.observed_at || r.last_observed_at)) + (r.first_seen_at ? ' · 首次发现 ' + esc(time(r.first_seen_at)) : '') + '</p><p class="coverage-summary">' + esc((r.short_evidence || []).join(' / ')) + '</p>' + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">查看来源证据 ↗</a>' : '') + '<small>住宿增量与实际规模未知；状态观察仍需核验</small></article>';
     }).join('') || '<div class="empty-state">此视图暂无记录。覆盖不完整，不代表没有事件；可切换城市、365天或市场情报。</div>';

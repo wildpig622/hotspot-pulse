@@ -4,7 +4,7 @@ import {createServer} from 'node:http';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {resolve,extname,sep} from 'node:path';
 import assert from 'node:assert/strict';
-const root=resolve('review/phase5/site'), out=resolve('docs/phase5-release-2026-11-27');
+const root=resolve(process.env.REVIEW_SITE||'review/phase5/site'), out=resolve(process.env.REVIEW_OUTPUT||'docs/phase5-release-2026-11-27');
 const delay=ms=>new Promise(r=>setTimeout(r,ms));
 const server=createServer(async(req,res)=>{
   try{

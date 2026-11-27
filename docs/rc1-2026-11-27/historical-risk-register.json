@@ -1,0 +1,2711 @@
+{
+  "scope": [
+    "docs/phase2-evidence-2026-11-26",
+    "docs/phase3-evidence-2026-11-26"
+  ],
+  "inspected_path_blob_versions": 201,
+  "history_commits_touching_archives": [
+    "c4c2c5237b9dfc94b714d13313eb28135686138e",
+    "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+    "4cb5e00fba48e4a3826f518df471dabbd0ac2461"
+  ],
+  "reachable_commits_inspected": [
+    "c4c2c5237b9dfc94b714d13313eb28135686138e",
+    "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+    "29f99b024929caac9edffe03235f1ee1843f2c15",
+    "4cb5e00fba48e4a3826f518df471dabbd0ac2461"
+  ],
+  "affected_path_versions": 99,
+  "versions_with_contact_patterns": 82,
+  "versions_with_full_response_or_body": 99,
+  "contact_classification": "Pattern candidates may include institutional contacts. Not every match establishes private personal data; values are deliberately withheld. Stable ID fields excluded.",
+  "public_access": "Repository is public; versions are ancestors of the open Draft PR head. Tip deletion does not remove old commit/blob access. Anonymous HEAD checks recorded separately.",
+  "copyright_assessment": "Full third-party response/body storage has no corresponding redistribution grant recorded in this repository. This is a rights-review risk register, not a legal finding.",
+  "history_rewritten": false,
+  "force_push": false,
+  "files": [
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/02f6cc7c86d37508629e47886fd8789d761e5f0489731b7a3dfabfe462b94c08.gz",
+      "blob_sha": "3fe9120114aee763d3a364b47c45d517b2e4c5b2",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3533,
+      "sha256": "e2d487167863f11ca30c93ae9ce402be885f42fe253a09197d31256e9cfab362",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/03b9dabab19230eb83e84f52b4b46e3298396a634983084c36d8b9bfa4e69fe9.gz",
+      "blob_sha": "97ea4d5449fc2e195572098c179d1e9ae7f98900",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 9817,
+      "sha256": "7320b18ee30fde238dbe4239396e3cb975f957c0575426a8e6bec515136ae1b3",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/03ccf82268b76791cbc9751fb133d34400951c1ad33819475f756fa437252834.gz",
+      "blob_sha": "f5877d1c0c9d5c8438295b29e93c883a2f0dd8f0",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2994,
+      "sha256": "096b7b2e87dcfb450215c0ec8a66826146b9514a18a86581aa79a484079348d2",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/070bf5fec48852ed969df84df1f04dddfab5cb8fc3d176a75b3bd752f69e1888.gz",
+      "blob_sha": "ddf79b581b59a8ea7666663fcacdeb9138c24e48",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 17295,
+      "sha256": "936efb6ae735ef95461b871cd138f9148868924e54b380698f276865cf159996",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/09135e6591bfbddd1175d048d4dd4d866d7bc1ff45e900b0d0c3a928f03ba126.gz",
+      "blob_sha": "2f8e91108ca1b9d678cbc306e8e22b20d229aa53",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3894,
+      "sha256": "1fbf98701ca6e82b76ec4de8c368a019f5fbf5d04d4c97bcfefcc2b2dd36906c",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/0c2148a36956c98f6292f9e304508f17b75dd09c7662e573e285cc3f8a40c39a.gz",
+      "blob_sha": "a8baa39010a32f7d1fcb01ae2045c799da931bf3",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1740,
+      "sha256": "33d0f80921acc694d9f99cb44a0e800d29a1d8369a73981910a3b2e4b8eb7305",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/0f4cf805b58abef6a6bc512087bc4cc7f3f57b9441dc5f8d8499093ef88a6166.gz",
+      "blob_sha": "058480877a2d7f3df1a70cfbad90958c92c6c9a8",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 10763,
+      "sha256": "e72e6b077010776fbd9f72cc772a46df32aa0cae6aa05b849d607672ae07c858",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/109e59b79fa08b02da3696daeecf549048e0877688b4687232226f9ef6714d2c.gz",
+      "blob_sha": "96b0d84af2af1cb7d1865885823cefd703e07c5b",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2113,
+      "sha256": "95be4ea57ce0572762c7fa91ae082f30f4a1f96cfc8909ef99d8090145ae3e4e",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/17e0e67b306011eabb04fbc568ee30b06369254dff42e10b15d18bc343df1334.gz",
+      "blob_sha": "52e6c00a04bc7647f623e8a9e5c1b7e87bcc9083",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3285,
+      "sha256": "ade24d46db3934cf19e8dc1012cb7cc78316ca8f28329248ac92496289eb8467",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/187906f10600128a4f986b92afe11b1ab1b19c66dbc63a62d78ecb9e8d6475aa.gz",
+      "blob_sha": "8423213765bdc7b20f3237daae05ef85d1b722a5",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2849,
+      "sha256": "af661642b71825020546dc499edf0a99cb898a403240728af829ae5bf599e94e",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/19d1d2f7842e4d03333be0273cbcfcdfceb17e1459f3cfc3e2664b530f396965.gz",
+      "blob_sha": "74fbb4bb45c5d73582dd2d69c8eb4fa3618a5851",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 8709,
+      "sha256": "681d15ba83e014eef553abdde6889b47310ce05fa70a0e68eb3f16708e350a3b",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/22e7b0e6af88cb7ba66259ddb8dc633d8d2c89d7f14ee0321ab68b2623ca972c.gz",
+      "blob_sha": "5b9dcb3dd97036dabfec2004fe781eb139e40fad",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 5176,
+      "sha256": "8182fa0bebfde61ddbe9e255a10105d45b4aa6527e9bdada6d642e9d6ff50764",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 1,
+        "international_landline_candidates": 1,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/27c2e13b8b89356a67bc3bc16f6d80f2d4a2e80cab561650a7b32066b9b5424a.gz",
+      "blob_sha": "9f2e842222dddaa329a70a857b089b4e5f2c9a82",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 830,
+      "sha256": "5be974abf9b49ebd9d779820457a6a99e44d84cc50a31cc6fafec8d73cdec4e7",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/2adc6411fc42f2ee52009cbd9d314b51c3a0060d54f88a14d842c00a5bfe370d.gz",
+      "blob_sha": "89c8e6991ae723d143131f2ba746bf71edf44bf3",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2563,
+      "sha256": "07b0181c3dff6363723205dd7ff7223ad29da5612ddc62bd5e4e68895243dd5e",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/2c06aabb0fe0eb43864c3689c0f72f79cd50931cd1e964df4e20a78bc568fbd0.gz",
+      "blob_sha": "15fab88b1fa14188a4df234857cca775c53f01d3",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1274,
+      "sha256": "3739458f923c22e90fb7f352217ddd3a8559d11218ae53f43027f739ee1189f0",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/2e4737b74c4fc80adf87051097d5261387a80619b859f3c21ea8ce402b623cd3.gz",
+      "blob_sha": "c2942c82b116cf3638e1ee3d26630c4117747699",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2017,
+      "sha256": "7d397bec8e6b7124edd6c1a1d97a0ef6e766e7ecdb4ae9c36eaa124e2d567c9f",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/33a54508d6f870ec8445a2c5ba66511f9c461f0b795dec29dfa85a8e6cfffc2d.gz",
+      "blob_sha": "aef956d36b55115a49b627b8399235a2ccd94c64",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 24265,
+      "sha256": "1159e79a7b19180380caf62e82de03e1ec217a64c7f974a1950ed7624173869c",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/38cd2a30f24f30c704770ea6aba269c77a201f8c333323f88e4d3bd18ad0f87c.gz",
+      "blob_sha": "e51b45554197c9dd849c58c3d41cb39c7fde8150",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2668,
+      "sha256": "423efde6d9400c9be6809d7174618fd8841c7f306fffc9d4b23ecb3fe8672491",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/3919a7ce64e419454c92c6eb0be605d3b4fe435c171ce60595eb0c46298ab587.gz",
+      "blob_sha": "ae9e074ba40451dd0094be4da81c508dc05c2a97",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3074,
+      "sha256": "2ed6192cb6bcde9243d807a4917cf64440e15bef776aeb4da1c3d8d5e8e85da8",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/3975b69784f418781fe97ebb58d4c3c11ea100f8162944ef538b433ad49537c6.gz",
+      "blob_sha": "07014efc02bb4ecd40c2cae222f02a20b1340ec8",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4173,
+      "sha256": "b3a0c0dff276067fe4bdaa1d134eeab1105d5cfea8d631e14014bb9480fdc563",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/429c9b5ea578f7af406831145ce42e8598071b7a787a956dfcb2ee2632e7f120.gz",
+      "blob_sha": "03bd89fb9080de464f5dc7bd6e918de640e8d4b7",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 11651,
+      "sha256": "d6c5c4720497a047d2e58e1ce944366a1215e568de9fdee88a088eee1d1e3948",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/46d559ab5bad5f4c2a0ba0563f8fa9dbb40e1b72156ae038f421d0f7e91d882e.gz",
+      "blob_sha": "a006d75ee9564fe8d77693c94a4dd98906572c8a",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2439,
+      "sha256": "f44b9409ffec0a2d6d826fa5c160e997cb1ee9d9877d24fa7535d0a23d98827d",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/48e3e1fcbdd0f7ddfc5c891385be697d8f0ee7cc7fbb91d4b50c6954a249530a.gz",
+      "blob_sha": "4086397e20fd2abb46b71c09f649089b94585d58",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1212,
+      "sha256": "793acd750db8064c483c3648280e3aed931229cfc36fe3b97f7dcad373e96c04",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/4f56e4ae960bc4c16cd5bcca0829b40b262c65d1c62e14eab203aa0e0d16a2a0.gz",
+      "blob_sha": "c49f7910c5142be42ae9c84de4fd63a6cf580597",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4716,
+      "sha256": "81f8ed215b434ad7e12cef19ee5148c9321452739791103f3e7e94d6ce141631",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/4f938425e86c051ad882bd854b9dd0790d1e975c4721a36b1b5d75648f9c8b48.gz",
+      "blob_sha": "7dcfe3999d0f674a6cb3761f3a6525a106c23c00",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 8835,
+      "sha256": "95d48eca0c549d9105691195b2f7cc6e367bdf738b4dc37a52cb55b9fb9a6d30",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/518580de1c6bfc7eb5b2100ec14bf09560a7ce8067a8e8bd88a880b58cfbfb10.gz",
+      "blob_sha": "f58151f82338bb59f1680feb33a61c5f9739474d",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3068,
+      "sha256": "cbbc02a642ccb61e54eee8aa2f06e21bf3f074bf0396d130c115e5b084b03053",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/52192f9beffc3740820c95436cffcd1fbec7052e31d25bc7c1e575e436402799.gz",
+      "blob_sha": "d72456872e52c07b475c4233a8343dc1b1f150a6",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2988,
+      "sha256": "3311de761e87fc612fe896c795252f6435db0deb3936b85f9c828651680bf8ca",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/54bff60a4adc6225a427ec652eecdeecdbce06e6ca1c550f3cb9602dc6cc2260.gz",
+      "blob_sha": "57e178215007e878d4fd081384864c2d3d91d6aa",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4086,
+      "sha256": "30ed499072a601af06256ff4b5568271ac57155890c3111a307843b0be0e1b51",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/58c5ab075ee09b9152196c181e59eee9fb5bd3ad8e73196591bb3458345bc2f9.gz",
+      "blob_sha": "e4530a1585103d8435d022448456b1ffe513eb55",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 5766,
+      "sha256": "017eabfb996eef00efc355e024a4b26ed4ff08778e65b993ae1b8b72970b2679",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/5b0f208c7f2776d7101346ea9381b0ad851e6977955b7b2d0a10d5ec72889aa1.gz",
+      "blob_sha": "45bc122efca5713958489353dbc28e46f0c2683d",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3489,
+      "sha256": "bc35edbf49e11dd7957e53a2db9306aa5896bafb2b6ad41197b084502efd68f6",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/5e9fb83f2bf6d7aaa6babb4b950fa979cb32fc8beb47bbf475e848f4b0dcf628.gz",
+      "blob_sha": "c655c16d9e96956f1819df9db387bc15e0d5dd72",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 12280,
+      "sha256": "3b75dc40461debf180281b3065383e1ee4052a658f67f2dae210d6a74e08dc4d",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/64a80900478ebad17c88227a54e7741fd06a8dde7565865756264c007a50baa8.gz",
+      "blob_sha": "90882d92d14b7b7adb95a85937812db0bc94763a",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1837,
+      "sha256": "067e5286b439ed632816b934500a321c9e8a06d2f3a5c9c010bc12ce27a0b502",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/6bbeccff4614a794ce39e70bc809be827deb9e4b86978687bd016304ac318588.gz",
+      "blob_sha": "added8b47e3fbb5924aeba55374ab0c89f716226",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 8970,
+      "sha256": "f642eed66ee0e0e012b0aa783bc44346219f8e2be1d35cedfc1b822b020c7fd0",
+      "contact_pattern_counts": {
+        "email_candidates": 4,
+        "phone_candidates": 9,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/6c8c215277ab6a1af66e9d1a231daffc3ff8443afccad0e909a39fffd56f5f2e.gz",
+      "blob_sha": "c76a6ff77ed048152c0fd46c21678e02c39dda16",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1354,
+      "sha256": "8f32cd8c49e138d9abfdcf346b81aa949015b2ac37c3d9d69e17ad5c59f9f731",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/70b07e5c22c74ec409bbf2be94f2a5a3ee41f63bd8923f41408bfbb18af5afa1.gz",
+      "blob_sha": "de989a08a30a0da2202930c664c70a854084425c",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 9602,
+      "sha256": "c99b89f1e0cdee835b5656b2552f67202c5a326ea9b4cf3e9f736a2bbe4ec74d",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 1,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/7369bcc48013e01a9f5185a6db7a1e15755a8e4aafdc0c2a964824486b721ba5.gz",
+      "blob_sha": "050fabaf84eb19d74ae9eee198e7ed537f0f5948",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 9512,
+      "sha256": "04e8f45793025d34100a0eeb4ef1abc5003d9fb7367118244d997455a719748d",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/77fe2403059f8b77b06dd47338ccb9530ca7d147432f5ca1372ce85bfe7feea4.gz",
+      "blob_sha": "802dd163c0cf1e5e35f12a7d9a285070902278f9",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3267,
+      "sha256": "b08013c7ebe7a5791d6682d4df9b5d12a63662da64a1ae7b87d6145e6e95d8e1",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/7a85f631d6dfb28003fab1b6df800715d9bdea0dcf56805c60ce6520b70342f3.gz",
+      "blob_sha": "48abcea6b29462a7cde8c4c68839c6f419c0102d",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 12943,
+      "sha256": "76fc9d2ead674460d06d50a02362ca72707d6778119af3cc6437722ed8389779",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/7ad54f0ee67c81de4b90cde0824c6b872765b25908df3b1e1b368736660bfe38.gz",
+      "blob_sha": "2cc2fdb2df122bc58fdcb8d0466d96eeb57a43f4",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2778,
+      "sha256": "b40d5c49be8e52f4c612af62b6d578d82322af37cfc6f60279f60450a20b97c9",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/864407919595697c1be16700cfa1c42ec4170c737cad10c53e7aceb06da0bfe0.gz",
+      "blob_sha": "d254fee4e075160af6f4dcecb330d3b2c42e74c9",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 8783,
+      "sha256": "b47d52ebabafdd36e47928d7706070b70170b46db41909280fe011ed4213f7bf",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/8792c28366f769baeffdb454c9b8bcd4726d76bff07d54f90dd55163d8fae422.gz",
+      "blob_sha": "001ec298659384aa50d7d8d7ccf720b9c36c7e16",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1637,
+      "sha256": "f4bfe3060074ae8e68f41fdaf6b3ee90921dfda814db16b706d6cfaf0425a54a",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/87b07c4d6db952157bd75b2ef3e59e31290a90c4be1f585a3ea4314309898aa6.gz",
+      "blob_sha": "b86ef72f121ff804ba24bb79d5dc2680b17dabcc",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1294,
+      "sha256": "91d3a7c4e43a5749096d9107a4888ae6d1dad43b536ab81f949281bc423ec9e3",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/89eac5ff0decdd06a9c75130fae57c8061dbbb02056d0fa31ea97b1444bb9c77.gz",
+      "blob_sha": "b50287e9057c97e1899302b0df0470d1d55aa81b",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4498,
+      "sha256": "98d464f5bc90016589bc83acb20f9315245f7a678d7ec6ec56d7c97116bba0c3",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/8db3aeb64d3eb3a0291e0594d64e22551c232afbaa386ccf138a8459102dffd6.gz",
+      "blob_sha": "71cfca497e4ed8be5bcf9316cc599bacdb8dc156",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 10679,
+      "sha256": "23bf966c164f8854e27705a8d7f077622df4f321a498fafb914a2340c0f4026f",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/970f7674c4293792dd5458909984792f44efa85e88aa5b3653f1065efe3323a4.gz",
+      "blob_sha": "682982bdc1314547f9f9b65d8ede8ea96aefaedd",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 9095,
+      "sha256": "788836476b114c50eaaea61b427b37fca14ad12a561757d8eb12a1b354abfde2",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/99c52c35c0fe2a3487cfa32282da13f2c053c94dba38744279a9a7e27960f23d.gz",
+      "blob_sha": "eb88309a22305ce09d9c1a999f4b5c97f816d2c9",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 6169,
+      "sha256": "f4eb9e2b0dd282f531a6545aa5b0d6fbb8274b58edebc609088d1e01ee893272",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/a0eca577fbc80ff135cb0924a45a411a8c485861d3de339daf0d78f17034622b.gz",
+      "blob_sha": "bc19186951eb667dc54173c156fa9a9a3000ccc1",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 21778,
+      "sha256": "62766c5c7ab966bddaf03ca23536182f574959a70853c99ee25fd1c1daa6ef2f",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 3,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/a3df370a173acedf4e8e7f5479b61a39ffefcc309c76577c7c770a4a5a2f43ab.gz",
+      "blob_sha": "5fe89e7a56c0692bf6863cd323f1862fcce652d0",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1534,
+      "sha256": "5b705b1648f5275dfc10d8eb61d6a44d21b06f52f5cdde82d15523c143af220e",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/a418c6c08cb9c101ebd024f603c0e22e51e4ad63d94c23e1ce883015ee4ce5f0.gz",
+      "blob_sha": "998baf059ae46a9339d28d8a253e270409ba1bbc",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 8743,
+      "sha256": "5c6f0b75289286ad1a5151dccdf0b43b7921ac20c429ed9eef9434fb5ff3b0bd",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 2,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/a7567700ba033b4566840afe86ff4fbc0181b78b11528a6200f07723262549f2.gz",
+      "blob_sha": "bedb6d791faf27780848b1eda5f589a9f8adad13",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4078,
+      "sha256": "a1f6099a3780eaeefbdd562e5b89d0d2302b8f760eada1fe840d851d983e73e5",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/a7c760e935ff09c6780601880f91653976b5db9d7ee48f8ea07e34bc3e46fb87.gz",
+      "blob_sha": "8a844b6126f87624db387d2ab90ad0cf0ade0838",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 8671,
+      "sha256": "d74734bc71233e62005a6cc4791641ff86cfbbc152af8d16633a886fd9a555de",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 1,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/a7cd726a03098102baa3d02249de3b7210d713ab84b05b0269654e76b8d7da42.gz",
+      "blob_sha": "b52d7e14d699d983c2d6970df8115e4e7198febc",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 7814,
+      "sha256": "0ec827f88d670844b3066e8e092769c3da348fc8286c7431320e07b5660be3a6",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/a8372156119230e493192607f3ad82545f0e05494242e2a910b5e50752218905.gz",
+      "blob_sha": "df9a57a71b40f5c485300d8004ca2f5d160a855c",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1348,
+      "sha256": "2cc39d89e44189033205195e749c37ded5c1b5819103c5a63fae9ba4e9810a70",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/a8964acdc78277838d8c3f20df430b8095078a13d6cc5c73365d845b9929c590.gz",
+      "blob_sha": "3d71d5ecbf85880d87e23e0bc52bd7ccf9d1daf1",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1592,
+      "sha256": "c20995d3e415962e4de93c55c665459b8289df2962bbe9cef91a4b266df2d84f",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/ac644ecab028057ecc2318b7655033e4ffd0ab0db4f9acb9d4e0baa33f5e70f8.gz",
+      "blob_sha": "ff175117d0baeeab9f56a7af06ba8c79441c4cc6",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2424,
+      "sha256": "2f0d429fb7a5949a5fe74b669c2e53b0f20868afb55a95c83991cd38091f8ac0",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/add366fe94b70f7dc44918c3d8fb5eb2c03dc29cb895882e924fc2038b198501.gz",
+      "blob_sha": "8bfe5d62dbd00eef961f16d0ee35547043fd8fa6",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 14905,
+      "sha256": "535fc5287b34398138a47d528762f869745b90ddd9ae5e94ff6c909c18891672",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 2,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/b6ae9776e739c2cad3e6b3b1b3c7f4ac2291217df4130e5db9a2fe7860d43058.gz",
+      "blob_sha": "fe45d3a942615ae7954eb5fa7c0beab8b2c0e62c",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4626,
+      "sha256": "85891493ea4ff60ed23254978041158d909fb0a8618c7c2ccaf59a29ababffe2",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/ba068b690dc5549677d22786826f455740dc018ae3b235063b4ae2ac3fb17e5a.gz",
+      "blob_sha": "a7304571bc84d77fcc0711eafd551da4eac364ab",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4095,
+      "sha256": "bc7dcef9201e760b7c0eb87f9071f101fb7017106d7d28c7659d0dad3a7fcd43",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/ba2f5902b781943755bd9d396fb7e8fe55481e2d0cdbf3c1d61d53790266b8fd.gz",
+      "blob_sha": "619eb2b07e60c2c30afe12f4539f1e71b538819a",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4184,
+      "sha256": "733e6343703a0f5371250b5832fcd3fc706769e1611b5fca650fa00f6a66d4ba",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/bc6690e80cce9e35e95a50a6c51e129d9bfcb4c1b5d47dc4be621185ea37d2dd.gz",
+      "blob_sha": "b9992dd8c810671aa62d10f9f9663dde8300ac94",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2093,
+      "sha256": "bdd212c0bdac70723974e59b2c4b02ff0d2f2ae66ccb5b39f1975eee675a8d5c",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/bf0dfc88c33d1ea127f94a496b38fc2452ba936ba7b992d4672d63dc4e00524c.gz",
+      "blob_sha": "114e6b22197494ac64e8f684ed9f70c3394f2aec",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2067,
+      "sha256": "6cdc96e4076985bd93bebefa3d1aedcd1aed49a786854cd73f37d3f5dcce318f",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/c14a13b9193062bbdf43cedf3a768fa1e3c14c4a90ca54da7c7380d43b2b3e38.gz",
+      "blob_sha": "b50450eb7a4e8c92e40ca243990217b6dcdedb93",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4136,
+      "sha256": "31698d286fb57de709f11aac5e0a3058d451dc89d5d9068ad111df03417378fa",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/c3faf33c2b40b0d60fd73fa3b98602de443dfe82f71cdf2519e6c3502647e935.gz",
+      "blob_sha": "c5a115ae7c24b008b71e765d1cd3ab6cad65237b",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3267,
+      "sha256": "6a0911d76807af185284b6180a0e8a53dc004d5a89da1e5e58a21a99856179b9",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/c4e373458b691eca1a02f422a08c28a3374493be15ccdcbcf80dfd3cc7b850d6.gz",
+      "blob_sha": "f0b9496902437c720380f418424e047eff3cacd3",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2095,
+      "sha256": "660611b087915c213e375fb33f8a8b481927495b7838ec22e21fc9cf398788d0",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/c70a2a777e43d01b26d9591cd38382a50169b958cdc08e0c499fb3089def7248.gz",
+      "blob_sha": "f09f290f0bfe8043915afb6fc2613cfbdf2f06b5",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 11979,
+      "sha256": "173164168cb8abda227710920c8bc644acadc8e8a62a6598a96f294074c3f814",
+      "contact_pattern_counts": {
+        "email_candidates": 2,
+        "phone_candidates": 6,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/c87172c2b15d1cb1ddbdf5e7728c8c30e6c231c0496be61547c3413d5f00248b.gz",
+      "blob_sha": "d81d04ce25769d0388249e608c0cf9ca82d6f1d5",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2861,
+      "sha256": "81e8157738cbd09c08daa29f09316c3f759ec12705de50dfef2dd1e2f6067253",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/ca0dfd0ef4a5d2f9029b3165b85acbcc73921fdd7a96b963a2abb195ad42ee9a.gz",
+      "blob_sha": "27b32e3a659ddd308244bab0c972da9e379c37d2",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 5150,
+      "sha256": "f9df4f7b4d07e6a9595e5c613e97f6c8a421787708df396f9ca91bd226b16a9d",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/cc8688a1eea52d27c87da950912d4539b710f71b6c2f39283bdafef1da5a356c.gz",
+      "blob_sha": "a945ed632fc03109ef2e6e3ae0c997f5a200bd8d",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1257,
+      "sha256": "b28184b8a2b0ac91860cc7a9fd3563a901ac30fb741d74e58d288c2257d90c03",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/cdd7ad0d7f3a270f4067b5533b40f3d6798fa26cc92ae4fab5c497400ab28743.gz",
+      "blob_sha": "dc9ecc30aa0190f4d13fad45629f5592680b267a",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3923,
+      "sha256": "6d86fa9b35096f77cde003d1f222ec1b155fe1d45a0b7c4c78a97b96aa45fe8e",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/ce4055a62e49b0eeb7adf0f16e11f8c107d8a3c85d21faf4da0f0481028789b4.gz",
+      "blob_sha": "72da44ae004052a0f0875fc661fd40e7c2785278",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 12389,
+      "sha256": "779db2d244eef8118b44c5cd7155674b4d70842bd550b9ed3451d0a20bed727f",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/d057a7ae6323decd1ccc8d8b95edea83f1620326d668f53ac0701164c6f90d0a.gz",
+      "blob_sha": "69278ac7f12118517e66e3a61006f7296d7ac058",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1669,
+      "sha256": "771a6f81fae93098bb38171f3c390f868783bfa9b88770cc7accac0de1368a63",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/d1fafba170344d9e0c2641e5de3393e8100ba73d32a817db97974750fb8bab5a.gz",
+      "blob_sha": "ade735ac6a0db5e7ea817bcc987ce9b00bfd1c64",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3027,
+      "sha256": "6e3a98f513e561ec54a770ad04e8b7eb11c194f75c828c6b5523adc5696130a2",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/d299011cbb1c4fc08cc98db63f90ea792ec05dd07c9b47f248f80d312b9273ec.gz",
+      "blob_sha": "b6a683aa747e0aeb7d8d1649331bd775d6a96362",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4371,
+      "sha256": "7893cb13a5512e990ee0070525b29507f38173533ebb9006e7f3699734f85969",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/d433f9ea492629e86e69a5289103c97671f8608e95cd32778f80f1047be570af.gz",
+      "blob_sha": "e86f389f11d074fc408b6aa717164e1225100101",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 893,
+      "sha256": "06287c7498d46ef0079e278575e948da8ba52eb1f0490ad2f036a7f3a8cafbcb",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/d82cbbb65763575638a6cede3bbe5fcd33f3d4edd3381948bf760d703b8f7c19.gz",
+      "blob_sha": "7ff5e1a6f0d8e98e3fe35f474900ae1b5a7315b1",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 11167,
+      "sha256": "a17d996eae51f6d0d1d9f713876fb3391e83081ad47e68a94afee9d31dccb71c",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/d97f8a1fc85f8e5baf162f2a690ef7a8dd29a87afc0c883d31accae7a79cea4b.gz",
+      "blob_sha": "451dc8f70a5c8390d99731283879775761c92b79",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 3988,
+      "sha256": "9b18b964b8a283b8415581b30af57df22e3334e6ffea77be7b440da6563c9985",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/ddb4e61d61e61cf4220973b55040613a281ad375f3939678dffe3fa4fa1236ae.gz",
+      "blob_sha": "14f0f62c9d8b8cc9c9fe58e6f26d0fa33cba086d",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1299,
+      "sha256": "297e52af6a587aff0b53ead56993df85fbd15ad445f10e274dfbec93dcc780f9",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/de7067c386159ecf3f8e2bb2c0aa62aed8df52af902125f5b1c0ee6115555a29.gz",
+      "blob_sha": "f3642996d41d611d87272b0182c69e6c438e1eea",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1452,
+      "sha256": "7e129bc0bac3c6b92d6261ef665e4fedfd5bca942662a95b5688ae3e3f6564a6",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/df3159b270f3604ae8bf4bab4cca76e74c0edd9cbeec0db2f08505e381008877.gz",
+      "blob_sha": "2317b0d76103aa2a0d097802e3b7da005a649aef",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1736,
+      "sha256": "af433b02fee7a3d802c5ad54be3d8fd853bb325061602184574d8e2d1d989fdf",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/df7385239174ca4ef88045fafa707c662d0018470d4e8e851f38a394145906f5.gz",
+      "blob_sha": "f52a3572f04147e10ff9004a06158f59f0159151",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 742,
+      "sha256": "d6496486c42869443086638a648e76f5eb08616ef94a64310b184fce8ab04080",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/dfc67a7c457ccb8dc900c72d7b162eb69caa03e416f876607b3dbbc022cccc2b.gz",
+      "blob_sha": "eef396308b3ecfbac57bcba3d1e4732ffcef2b57",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 46664,
+      "sha256": "6d48ef7c42ca71dcd5694b28609d538b021b321738083b5ff4f05bd3c74cebb0",
+      "contact_pattern_counts": {
+        "email_candidates": 4,
+        "phone_candidates": 6,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/e2409b38eb07e5d38f40360bed7a6ddce05cf303dbd66edc8e154eda806a6fb1.gz",
+      "blob_sha": "c9ac7ea2d1ecc967670b2570f81cc89dab49f4a7",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 16025,
+      "sha256": "c27fa93c51d5ec8b9f945fb6f89a3bf190f2a501bdaefcac4a61919dc369383c",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/e55af872fe277d6f2a03a7bf2ba48817f8c8b4d17fd19b81012a6d930f3ba4db.gz",
+      "blob_sha": "50011c53b942250b236751efacd1ee4695b56328",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2778,
+      "sha256": "7b64dcad125bac1fcb07963be906f726e82c26960863ee4afb76d2215b7bb496",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/e73d422a03f7e50ccd5641c0de49e2f4cf39dd1d2c57204e96a53d65cc7da44b.gz",
+      "blob_sha": "67d20f49960567cb21977e5930172bcc71237a7b",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 10319,
+      "sha256": "7af59e290081ac32b7cdf28d9c8a859ebfd135e389000d52508a37711fd40136",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/ee3ea802adf2e8261f0900785ab685bc2de7764b36351c21068f65329b1b4b24.gz",
+      "blob_sha": "979960dd3c9d77fced33bedb746ec5b8bfa70c29",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2430,
+      "sha256": "e5c4773c48f2bd80c59bfc8f28ed29987f8233af974ceb6befdf4a3e28bb4e2d",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/f04ae1840cc8fbd45089f71b82c4d105f52ebabf427a426db30a2af748c2a777.gz",
+      "blob_sha": "58ddfa7813ec2df958f6591eb6c75e7095387409",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 13526,
+      "sha256": "34bb9731b261792cb694a2f05ae24bcb6a740a07c5cab0977cb4798c421a4855",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/f1397660c466b14e4847bd9af59c323fe95f9053896b69b0a8f3c34b6b57094e.gz",
+      "blob_sha": "c52c2f7fbf146cabe9d265ad1ccc489132bb608d",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 4749,
+      "sha256": "f5231cc8b59fa2515380e1c9f4bb7968fde65bd8f03181d2bc73e13f5fd3383a",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/f61dd18d4a80988510a6a775cf1531039545a5924b9911628681141c5f9852a4.gz",
+      "blob_sha": "4f47223aec4b36245732a4b5feb6a33479a11e4e",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1235,
+      "sha256": "d9755c16c6c6b60536ae1f586ba5e15bd0b841e8a92251fae5c61b0baffb44eb",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/f76066933542710bd3c1814156b400c840a716c7a33a7640e3b2e390f32df29b.gz",
+      "blob_sha": "0b91005e942ae150abf900c152eb2568a36e9f41",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 1518,
+      "sha256": "cfdade3f5e9523c58a9a71e3e4d959f001dacdc1aac9d565c8ca77ddf36d168e",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/f94e3ab797aeeff486f283a5528ae2e97db93e1d55ce5a88bf75b82866750888.gz",
+      "blob_sha": "c54e4a43a9a84878eab7eafdb3557c71fe8d133b",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2506,
+      "sha256": "349ae4037266838f0eee80fdfac31580942d5116cf3d09428e4d0bfbdbb6f6f0",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/fa373cd9a73e8fa50e6782ac0617df524aab5723bc8b04e410f0737791ceb042.gz",
+      "blob_sha": "25f2d1bc2b1c0fc3327bc65a501b84be51766503",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2796,
+      "sha256": "434b76c34b34123d300011a6ef37012923bd30e465cc594f5ce6adc79aff077e",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/fc08fa8c60da7ae30558ffa00ad23873f3a8d40f7e116adbac1acd5e89f10968.gz",
+      "blob_sha": "f120d8f10710d8b137540fa26f7b51dc5009fff5",
+      "commits_containing_this_version": [
+        "c4c2c5237b9dfc94b714d13313eb28135686138e",
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2865,
+      "sha256": "e8f48a350b13aade3d4273faba851018d8284c2c1e9e7c9ba199dd9f3c6fe69d",
+      "contact_pattern_counts": {
+        "email_candidates": 1,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_response_objects": 1
+      },
+      "first_affected_commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase3-evidence-2026-11-26/benchmark-validation/bodies.json",
+      "blob_sha": "87e6e10d04dbf8be64e40a66dd394b7d6b04b44b",
+      "commits_containing_this_version": [
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 230586,
+      "sha256": "7378e554fe31324e6a15b123185d3e98d471b7801809d2b2429d76ee6721ec9e",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 1,
+        "credential_patterns": 0,
+        "full_body_fields": 14
+      },
+      "first_affected_commit": "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+      "current_tree_path_exists": true,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ]
+    },
+    {
+      "path": "docs/phase3-evidence-2026-11-26/date-followup/annotations.json",
+      "blob_sha": "820dbb471dfb848654b351c86126e038ed10365e",
+      "commits_containing_this_version": [
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 39092,
+      "sha256": "fd05c0790c59a7f1b07b624dce235779c5f7a0f2c3707f0764dc626ca3fa9ac7",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_body_fields": 4
+      },
+      "first_affected_commit": "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+      "current_tree_path_exists": true,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase3-evidence-2026-11-26/discovered-events.json",
+      "blob_sha": "668f646f8cc8d8293c265c1f83afa52e26403503",
+      "commits_containing_this_version": [
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 261400,
+      "sha256": "5d0b4c06c451258e11e03024871399f01b79c0df74ecab2c22b9116a482d426f",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_body_fields": 2
+      },
+      "first_affected_commit": "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+      "current_tree_path_exists": true,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase3-evidence-2026-11-26/discovery/events.json",
+      "blob_sha": "a250f483f0fc680c0d22be8b57ed7c5a503fdea6",
+      "commits_containing_this_version": [
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 610829,
+      "sha256": "07933f4fe25d0123b0a4d5f5b2c026836989bd334d8562b49b1f5458056ef714",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_body_fields": 43
+      },
+      "first_affected_commit": "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+      "current_tree_path_exists": true,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase3-evidence-2026-11-26/next-90-days.json",
+      "blob_sha": "8526494067a625c5e04bb1164ad7e1ab92ef7a54",
+      "commits_containing_this_version": [
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 261785,
+      "sha256": "58a97901acabc0136630576cb53cf1ce71a04bd206812a099e4b6439f8630101",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_body_fields": 1
+      },
+      "first_affected_commit": "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+      "current_tree_path_exists": true,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    },
+    {
+      "path": "docs/phase3-evidence-2026-11-26/responses.zip",
+      "blob_sha": "f36e194f142c2e07bbcf43b3b00329ebbdde542c",
+      "commits_containing_this_version": [
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 2349487,
+      "sha256": "f83723d7f31f65c6ff93460d1c9d66fecc3a636370956ed2af7c2a39d81a8b7c",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 8,
+        "credential_patterns": 0,
+        "full_response_objects": 230
+      },
+      "first_affected_commit": "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+      "current_tree_path_exists": false,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission",
+        "public_contact_details_require_owner_review"
+      ],
+      "archive_members": [
+        "benchmark-validation/raw/09ebabe4b8c3ac95a32cf9a97569bee03bac3496da6ca9db96ce6a8cdc8a0e2b.gz",
+        "benchmark-validation/raw/13d8bbf7ced5eef4416c9bc92f8f7cb5b671111711ee8bc244f6801b0f9bc5de.gz",
+        "benchmark-validation/raw/1ba96e8b66b5cfdf05dcd1b90d185af9e72d61b4ed413d79a9608d27aa4d1b12.gz",
+        "benchmark-validation/raw/204a4b620f63d70718eda5df90905adaf346b1c4e07fdeef8d03bd29e61cad83.gz",
+        "benchmark-validation/raw/22fca9dbd4ab6779bb09c0f01219d61a792409d2ba5a88a0cfeb558a2dc685f2.gz",
+        "benchmark-validation/raw/315e2bd891d59bc2e1c0253631f8218babb3cc4c8c9b452fabb617ae63782a23.gz",
+        "benchmark-validation/raw/3303c722517919618c28ae5acaddb7876fc7916467f21bb2f9ab684f9a35a0fb.gz",
+        "benchmark-validation/raw/33a54508d6f870ec8445a2c5ba66511f9c461f0b795dec29dfa85a8e6cfffc2d.gz",
+        "benchmark-validation/raw/4f938425e86c051ad882bd854b9dd0790d1e975c4721a36b1b5d75648f9c8b48.gz",
+        "benchmark-validation/raw/506385ec38544bd27fcc0f3f648e5c5de967d009a61a370d19faabf547c432e4.gz",
+        "benchmark-validation/raw/5b0f208c7f2776d7101346ea9381b0ad851e6977955b7b2d0a10d5ec72889aa1.gz",
+        "benchmark-validation/raw/6304959c6d2962d45763c5ea5d8b2d8f3ce8e79e238761148f4c73ae86dd551d.gz",
+        "benchmark-validation/raw/6c6fcd9bb2eef538cf2025b7daf93aa68d65676f7f43b1fcfd55608253c15122.gz",
+        "benchmark-validation/raw/6ee7ad097f54538c428e1bd6e4694580d879ca95aa0ed92b24c86a68839ae490.gz",
+        "benchmark-validation/raw/6eec8ccb38397f245402c7b34db5d61725d587c31a7cf3022c02f72ba277c626.gz",
+        "benchmark-validation/raw/7d2832f1dc7d10e72cfe82f6fa0bf485a37132363f9488e36c0c32045c61ae07.gz",
+        "benchmark-validation/raw/80e4e0fb5dbb62cf88a16b5839e5c1b602ea6883680d1155424e548760912e80.gz",
+        "benchmark-validation/raw/826eb6c8bc9f4bfe5d1de29d96ad6cea8d34547bbad81df9f0a3548f19700364.gz",
+        "benchmark-validation/raw/8b05743665b38db8743b5c4da7126829e6a7bceb77b99b9dfcea232f368766a7.gz",
+        "benchmark-validation/raw/8d0f856fb2e57e886c8e6dac4a0d27ae8d5f0bf9dd41ddba9482d6b85e06c2f9.gz",
+        "benchmark-validation/raw/9318e0c8e12f8ad253b64496b08698e68441bcd2f4adb3f9f595f80d8679908d.gz",
+        "benchmark-validation/raw/93fc1e092b87cec71e0726a2f6d0c03d2e4f5bc096fad491792ce80e759d6c3f.gz",
+        "benchmark-validation/raw/9f8317a82f6cbcf83815032760e122634e72f1a612603fd18b894d2bbddc1a2d.gz",
+        "benchmark-validation/raw/a1d9717d09e66f5e72aa97b0a56609d45ea5a8b130f4662ce3ca98451a8bfc6a.gz",
+        "benchmark-validation/raw/b69ba4315f4619728f72caa4f50ff692224338dddeddb86dc3526315a03040b3.gz",
+        "benchmark-validation/raw/cf23f423477a67fe0859e809d967c5b245e59fa0c6ffa01ddb554e4e918e084d.gz",
+        "benchmark-validation/raw/d2ec4d6debd21c460914ffe043a5f0dea8e52dd155f482add16a15cdf9ac7745.gz",
+        "benchmark-validation/raw/db67e80e76d64873a57d73038d91573ea9d3def98264a7883e184ce6e77c23ad.gz",
+        "benchmark-validation/raw/e2409b38eb07e5d38f40360bed7a6ddce05cf303dbd66edc8e154eda806a6fb1.gz",
+        "benchmark-validation/raw/e8c3311d54101297f06e75eba466d3811fcc09f8ea1bf4a7d697435d7f191849.gz",
+        "date-followup/raw/016064bc183c179bdf180b1098e1ac3a02136c6c37fe9f973a9df5f925e7981e.gz",
+        "date-followup/raw/35742d3161ef94f1768b23adff913e7c777273027cbd521ff1f7785603ceff88.gz",
+        "date-followup/raw/7e291892955ec5d68110f47b1e3c6fb3f996bef8c6519602c391260a5777edbb.gz",
+        "date-followup/raw/9c9125420a169f54bd2594e52c18c7c66aebbe2cf611a38804139c7748a1ef28.gz",
+        "date-followup/raw/df774a95ff953a170c220dad73df2cb003a7a3efb949cd9b89644cce25802d99.gz",
+        "date-followup/raw/f3befd0385d49b990a0bef86b46849d3086f209f8def4ceb5709889f964c75fa.gz",
+        "discovery/raw/0063090e4b8bddd5d00efbc22ab8b1f1c605fad0b8b0803d7625eabbf2622de2.gz",
+        "discovery/raw/00e64b38a62eb264e0031e5a00c0b9c12f31e75b56141162946cf6d16ed03b51.gz",
+        "discovery/raw/00fe162c90fedb47e92c4e39693330e003346d2a493c08aae7f84ee61616d7cc.gz",
+        "discovery/raw/025ae969521d2273d60a1cbbded34d0c58c2b048037663122a11b77874bdac87.gz",
+        "discovery/raw/029986bd99b0c7317340282c5694f128e6bb032c979f4e8bc5e206f5cc6aec1f.gz",
+        "discovery/raw/030252a2ccee0526c589a35a4247fb56db60211a1922248285d96367291fdde7.gz",
+        "discovery/raw/0347ef1bfcc5a41cf4f806e72cbba5c90a9f924080949d68af59255f8f0801b1.gz",
+        "discovery/raw/04aafc92e4d9839bd2d988bd60c1e8bb3e2de8e044bda55b5da2ab07aea6f5f2.gz",
+        "discovery/raw/05b368cf55e1ccd6dcbaa1cc14d23b49d0e0d01973ca4d52ae4ca69d7e4d8470.gz",
+        "discovery/raw/063ce79c00b4b52cf2fef1d1ae8fe414bcedee794b22b68dd6e75982028076d4.gz",
+        "discovery/raw/070bf5fec48852ed969df84df1f04dddfab5cb8fc3d176a75b3bd752f69e1888.gz",
+        "discovery/raw/0739eb2160861a3a1c4c9a21b6d9ba1a6520f600a63e95195002abc676c70aff.gz",
+        "discovery/raw/089333844a04afcfce5a214368f53836271a4b9755e7ab6055540b0defa56556.gz",
+        "discovery/raw/09b9da53a3c2e18886c34011b617ee34d2e82217f243ab3a126077dd90962520.gz",
+        "discovery/raw/09ef8668123f202373db657160c934c67b5461f9d3a155e415382d84c235cbfc.gz",
+        "discovery/raw/0c9c3f7a84c687314e68702e28c2f60f92e3762cec0cfd0aa9709d6b1b21994f.gz",
+        "discovery/raw/0d83950d2ac58b8ec53131caf66ac90ab15df295e2fc12275a580d98f8800e94.gz",
+        "discovery/raw/0e7fb0ade0423fd303cea2c7e99c467bf43bdf4f0547dbcf9ad65aa2afc48b8d.gz",
+        "discovery/raw/113d52c713a54880bc61aa9ba7023c8b6b40b2f7accb244c1bc07ef28a5fd73e.gz",
+        "discovery/raw/114ae11bd3e2cb6b018431ae69178a11a63e174100bb2ad612175e098b9124b1.gz",
+        "discovery/raw/116f47ce9db20baaa919db65cd916f0891c14f3e8d778669f6898d5c38d7802b.gz",
+        "discovery/raw/120b95ddfcdb03939418a832264f27a730021ff2e1302cfbbe683d15a29b59d2.gz",
+        "discovery/raw/12ef024bc69e66ad84e057471d57d6220dbd0c3fb1886a241e886352326403d4.gz",
+        "discovery/raw/130d41ba98fb738ab56c95baf55de99b0ea47eae858dd2f6ec7550796fb869ee.gz",
+        "discovery/raw/130daf60aebddf20915486ef2cdd9967170a1d08fa6f5a2a51d7bbe4caa6ea4d.gz",
+        "discovery/raw/16116906e4f383fea676989067cac440009b425b7e90ea9673a1a33e8de4cce4.gz",
+        "discovery/raw/16d12d70a3ac42176125f98849344a1d2c95e7b8b45e4abc938e8d3dede7ac3a.gz",
+        "discovery/raw/1746e9e29200011ba05fa2406e30db8b394f647f3949bf747768b8e59b8c056c.gz",
+        "discovery/raw/19c7134fe9663ba8dbf2b7a0e1a9d2fbdb4c0a94ae8348c52661f6c4a90169f9.gz",
+        "discovery/raw/1a76e0ae3072407be132c2e9a5346bd7d2ebbf147c89c1dd11e93535d15bd222.gz",
+        "discovery/raw/1d0aef5473c5543ec51e9ea271822adbda20bc77552de8a45d2935e541a322c4.gz",
+        "discovery/raw/214456c4587984f533e48c27b8c763a2780a4efc3e30985d188e1c8816830596.gz",
+        "discovery/raw/2237ce037bc72214f2966f1400bf241660980e697804146e83d20d62ed636e77.gz",
+        "discovery/raw/23ed30a4fd6bae955236147bae6e0271bf68ea58420aa12b69433882425b646c.gz",
+        "discovery/raw/25992fd39c79132801020c09e4073619f0cfada7512c3532ac71feff0ea8a28e.gz",
+        "discovery/raw/2767a65a0d7426190c4dbaecdbc4b253bdc87b147bf2445c5b44150f6fae048f.gz",
+        "discovery/raw/2a2ec1e653520b64f06dd1c29475efad98644f49800af34543c825d339a17c04.gz",
+        "discovery/raw/2b33a40d62e94a0b88917ac9670a49bdfa583b349364b084b5cb175aa57e449e.gz",
+        "discovery/raw/2bab8a2219f5e3efeb601955c72e4178dcb51a5edc615bfb51f4936b5ff536ad.gz",
+        "discovery/raw/2db01ec4b13d94671ef1c6814c20fcb2fd80fc0a5e6a8b95a5679daa9c0c696a.gz",
+        "discovery/raw/2f4f06e2015cdfbdec52e8c7ef65da7892ffe0c78fdf0154f431dd4aa9fe8b20.gz",
+        "discovery/raw/2f59032942da8076b0cf48d4000d8237c7d8ac00e391b23ec4d882d60e6b576f.gz",
+        "discovery/raw/2fc75b27108f76b37fcfe1957abbcc61172d2f8afe640b00d495c3722f2a5dda.gz",
+        "discovery/raw/335fc5a53bc34d8bc90a33dfa153f5c67adf99d22c3b4f804ce99065d465c499.gz",
+        "discovery/raw/36f2b97dbb7f63712db96e69a2aa4f20add2f2ffed19116061b598457461edd6.gz",
+        "discovery/raw/3d219f5528511ae586e06833a0e39bbec59e7771a3f904e3908d09b9eeff22b1.gz",
+        "discovery/raw/3dae6cfd64189d9464901a903b3b788baeb62500dec2b824429d030dd0ec7b3a.gz",
+        "discovery/raw/4277134d4171ea62e908169163c556f47aff118bbbb8e997c7f426c66df104ae.gz",
+        "discovery/raw/4374e8a50f846f2ffa21042de098b136a0bfa5250b6a508539a16696a5f597d1.gz",
+        "discovery/raw/46873463e66a6868f311c5f7f370cbbbd3b026891107608d34ba15507c2f2a1b.gz",
+        "discovery/raw/4696446ca2628d7f241d231e8cbf8880a3dd3f6558ccfc1a92e11012d4e9f8ff.gz",
+        "discovery/raw/49a56170a77c38350571c3d2ba3b016e5638dfd5497c0707ad95d10817505ab0.gz",
+        "discovery/raw/4a1e8c181ba5fbc76af896457b3d803803c3cfa7146e9d2a2a829b14f1d20ad7.gz",
+        "discovery/raw/4bc05082b63310637b46b96f1de5baf162cd40781d74c141d48c1d16ceef7646.gz",
+        "discovery/raw/4f08587eacec4d79bd0ae3c3fc46d5142debc61c54773d980dc72bba4c6577e5.gz",
+        "discovery/raw/4fe3ec62f44359be9938e1055e95f82db9060acf2d0a5beb5cbb071be62f77ee.gz",
+        "discovery/raw/5117db6437ff8c846ef1e1c5ef4ea3b20ff902cf9877cfd3c26b392bcab467a6.gz",
+        "discovery/raw/539936c7679b8d1ed15f5a1a7539b8bc2f62e75f87ed8876ab735289cc6197f6.gz",
+        "discovery/raw/5806cd401aaddb47b79f7267ac982a30e0ed54a420714c5c46cae43455187b95.gz",
+        "discovery/raw/584f8eef154f0a822d148c5374565d46e3d217faabba58e955fd06eba9b28878.gz",
+        "discovery/raw/5aaf422619cf285b6101245afd7948b4ce32b7495799be5c7e8e363b626176f6.gz",
+        "discovery/raw/5bf878cf9b5f36e5fbfcf3149b34c86169359b0423f7793d1fc06dd17e63d762.gz",
+        "discovery/raw/61e2521941294625fa684614aac2fb517492c0f6f8625c571dcf829a409389e4.gz",
+        "discovery/raw/64a738fb65132e711bef7de00423aeb5b4efa17876616cf02f38580a8705f89a.gz",
+        "discovery/raw/659b7ede2fd901f55dc048d2d07ed736c4d79a51ae257a88f2490fe2b758f4e4.gz",
+        "discovery/raw/663bad49374ec913e55216021e26d399d6976bde80a0f4d09455444ecb650ff6.gz",
+        "discovery/raw/666a691de00c37bf2268b9119d155eb0c471a2550af4f47584258b42e8a4bfbb.gz",
+        "discovery/raw/683def7c2522a518a8526246096424a70ae049b8e0580e4315e7caf24352ae9a.gz",
+        "discovery/raw/6b653d83acf95f8d023b611d9eb966e9753c3e626da21c1d76f783f1b9d01c8b.gz",
+        "discovery/raw/6cab6924e1b79bf6f2e817d13799b94e258b525378ae8fab25d0329e909c3fc7.gz",
+        "discovery/raw/6d72da5498feb94de8b4f674aeb9fac146a40503a3b775dff809a5961358f1b1.gz",
+        "discovery/raw/6e0b21d7bef8d46f1cc8b209e23a25058b28de3c62af6ed771156f8175952540.gz",
+        "discovery/raw/6ea3cd79f4390cfda7618bb5cc8c9e8492cfc9c00d4cacc29bbb24a8445eee05.gz",
+        "discovery/raw/6eec8ccb38397f245402c7b34db5d61725d587c31a7cf3022c02f72ba277c626.gz",
+        "discovery/raw/742426e09870b03bd318b933929322e4d2820f37516ec17ee6e262316bf8672a.gz",
+        "discovery/raw/765c21077d102bd067ca45c389340823c486cb6ea4b94e96dd5f612760188160.gz",
+        "discovery/raw/773c745c8c2adb7313d8382f390bd2ebccda253330f42d99ce832ddc067a1581.gz",
+        "discovery/raw/77f9d0d0c2ff88ae48bfd13ade240e76bff32c2c391d37a7f6973a6b8dca4a00.gz",
+        "discovery/raw/78162bd2367c3a9c1c13cef7a9415c1a8df8306f84f7fccf93e05bac4256a1c3.gz",
+        "discovery/raw/796343c940d597094abb0d70055a56e6a94d726e7fe1093b258041c8adadf6e6.gz",
+        "discovery/raw/79d22dde4c198a3a9212d4fa5495b506b63ab7288d82e2bbc00ac6f171f60148.gz",
+        "discovery/raw/79db94f4929d9f3fb5ba105017a217ab8aa8e191bd351ca9a4b19c87a4f5fce2.gz",
+        "discovery/raw/7a392fb0daee8e554b289905019d7da66fe4f921d53b01b861d154f1795592e1.gz",
+        "discovery/raw/7b8fed680b3558f49ccd95892bb58e85aad24c6702ab9cdad01f118ef55b00b3.gz",
+        "discovery/raw/7bde611e0413f066594afa688984fc3c44a5a626abddedecc62e810ee642f670.gz",
+        "discovery/raw/7e46e15ce3aa7fabc302147f69b7e16924608ef63bf15b6095e85c35067c0d27.gz",
+        "discovery/raw/85095875f51531aa10195d2714db6fe626517f3d55369a3c90cd7a9ea7c2c110.gz",
+        "discovery/raw/864407919595697c1be16700cfa1c42ec4170c737cad10c53e7aceb06da0bfe0.gz",
+        "discovery/raw/86807be7362e46d01c3646cf71ef4ebd166eac399e5cd638862b3d72540567e7.gz",
+        "discovery/raw/87763a5630e3ec8affa88cecd00ed7fc53fc101c561174681998e3cfb0ad3b90.gz",
+        "discovery/raw/8778c8b2fdd5b930611eef7cda50156e6c6264073b6d4202a3f49ee8eb40428f.gz",
+        "discovery/raw/87bcca3af527447e47b5e24baa3a9e540a92c30f47f134a8951a1896abfcc6be.gz",
+        "discovery/raw/87edc6d7b7ad5ba5de94066743877f2a64333eb97b91439201d4bab9f7466d2d.gz",
+        "discovery/raw/8900d9b9fac794959dd5971d527c611ab9fc9ff6ede6ed6a342996a5f79465ae.gz",
+        "discovery/raw/896d4adc30a2884f094390cbc48d4ad278f95ac6be9df53aef2293b46838de4b.gz",
+        "discovery/raw/8f233f75f2658ae111927eee9a6951549d5b4575e1e24867c278b987ef69a629.gz",
+        "discovery/raw/901f4929142a24706a4ac5dfb3e0939b835ddcca12163a0e3a5a8dc062b8c7f7.gz",
+        "discovery/raw/91e35595181418c93234416a0b13e3b29d7fd3dc64b6f94cbf4d9f3494fabc64.gz",
+        "discovery/raw/922d6f2ea1534c581b24fc57958ff41e2365063ea7319b8389459e637b4ba3e6.gz",
+        "discovery/raw/925d8f5c4427ef1a8caef1a77575011a65dcdbcb3e4f25d8141c1b56992d3567.gz",
+        "discovery/raw/93fc1e092b87cec71e0726a2f6d0c03d2e4f5bc096fad491792ce80e759d6c3f.gz",
+        "discovery/raw/94909c2368a125ff1d79d3386894be53c596638057d6ed9e3c4af52175f07331.gz",
+        "discovery/raw/9847dadebe38f7c2f288566114ae6dd5e70e8629b6b5b322e437d8009d708830.gz",
+        "discovery/raw/99f6c8810fc9d5d8e7c3a5158cc701e07a4a03dc87503ea7637205f973b4e1df.gz",
+        "discovery/raw/9a24c2cca6f1f8e90867cd5641fe8ebe09b8144aa84f8b719461359d5c7e7323.gz",
+        "discovery/raw/9b417e3749969f62f5a81f1f3657dc3313bd0e2b5b5c3b54c40cf8cbe650adb4.gz",
+        "discovery/raw/9bb872407b82bce7c6cf7b094bbbe13ff46052b1bbc522bebb1622466fc70f8c.gz",
+        "discovery/raw/9e20d7d38950132ede86f3f0c01a6e20b7985962e15d09745d15b664be9ce091.gz",
+        "discovery/raw/9eca140cb8845f2c7e8f57bfc56bec8bc36ebc86fe1a1d94b7450584913d4517.gz",
+        "discovery/raw/9f1ce44b11294d78d48b5f6ac7167c9f20324249b41ac34c423268c4f2e16993.gz",
+        "discovery/raw/9f7262a4f249d9cae472d83ab14a5bc41b25ab86fc52c758ae35a24f4114afc9.gz",
+        "discovery/raw/a151dcb0440a9e5380cea5a562c38aa5aecfcf3483f0e00cc6fa84278044d3a3.gz",
+        "discovery/raw/a1d9717d09e66f5e72aa97b0a56609d45ea5a8b130f4662ce3ca98451a8bfc6a.gz",
+        "discovery/raw/a21dd4b7756968dc4bcca329128ed2d126603f76cd45ee2017a1cdcb942959aa.gz",
+        "discovery/raw/a292d8390a71fa889597c3a146c319e24c7884f2683b48432fa0fc51b278672e.gz",
+        "discovery/raw/a3749788335532b7bce9023995c4b07d11c87eb83dc8116f95d8fb11a8744794.gz",
+        "discovery/raw/a7116d6f0e5b51618d14c63bc3ec8f9bc0e1e76aeb8c0c37aaefb27625b541ea.gz",
+        "discovery/raw/a7bcc32a2166b82144d7c90f5203af636bab888d47bb6aa06aaf434992d721b4.gz",
+        "discovery/raw/a8947c7a1d3b2ab9e9b060d3a2a5ae36453c4443a0018244276e2fa0e9fae45b.gz",
+        "discovery/raw/a92543eb7a3bbba35c5b51516ab507338f1fc6342248d804c927e1e89baf655a.gz",
+        "discovery/raw/aee802496d829b4a52af3308c18b50fe8fd20071102e47ca9fd42ee2a659003d.gz",
+        "discovery/raw/af095651a2e932f264281ad9dcacf14fce814bfa43e74a9a92a0042cbe89d092.gz",
+        "discovery/raw/afd053d176b18978149732ca8116493b99c127dfa0b53c71fd88982024e6ca90.gz",
+        "discovery/raw/b08bc2d23948b7e1b81586f178d2b6e8bd39ff490462aeef54fffcbef29e72f6.gz",
+        "discovery/raw/b15efcd245260c2050dc108396208edb6a6d7837ba2ed3c300f0ef5b27cc9c5a.gz",
+        "discovery/raw/b269f0c7e66840e1e3210dc3d55f50ae765ff5229abaecc5fdcc7e8316efce2c.gz",
+        "discovery/raw/b2d3a990958123ca41fbe1c37759c88efb53dd81ab2b5d9e1d70d9deb3bebb2e.gz",
+        "discovery/raw/b3a932d813b70ceb50c2f9d0756661c30bf35640d0e0607355958ef943ff2e72.gz",
+        "discovery/raw/b472add80ed58aee6191d9dcc6ff610ff26556cbf0ff3c808636abd98a64e0d0.gz",
+        "discovery/raw/b58689efc1eef6c27f1fadce3e2c2d49476a3080e6e28d55b5cb8a90a79c5c99.gz",
+        "discovery/raw/b6637f89de3403930e35343f6943d6a60294416949a5b84c0ddfb062190f9434.gz",
+        "discovery/raw/b6e364bdc5a6029e65e28c24be2df2d68e45f05968e4556dcd46e7b6ba1e3ce2.gz",
+        "discovery/raw/bacb7ffde4973bc2f24e9c8f3429b7883eb14c0fe3ca1d9a0b9f1e79cabab514.gz",
+        "discovery/raw/c184b9d049c4a6f45de7708b17eef84fa1d8d5fbcec74f41ee693d600c8160a2.gz",
+        "discovery/raw/c273d7c031c51c3b3cc1d340e5f4ea453d4bd4d813bb12d93f6f414fb5402ad0.gz",
+        "discovery/raw/c2ebf29c84b4ac8dd0d6c83f2ed2529fa511d653377eed702aca34167db755a4.gz",
+        "discovery/raw/c3d8714454508136bf4f24267fe9c72f20083e838ccd13bfe1e22126cffd9d0a.gz",
+        "discovery/raw/c408528159fa444a820af78d24e98d550ccd95f62d980c9ff14124be2741f37a.gz",
+        "discovery/raw/c4acc49c4d1d2a8e47078f6003a6a3b0c68bfd5b6327d538c27234b53814d1c7.gz",
+        "discovery/raw/c50267922c6ad73c82fb09ff0a6c746829fac66b973f95b8f2c539ed9f3ee357.gz",
+        "discovery/raw/c6eb65623c40aabcd0023ae09b4238a7e51ce45fa4ebb78b08b51161fd27c56e.gz",
+        "discovery/raw/cb080cc9d03c74e67f6d2e89b9d7d7204d24015f6c4498198a3397c80e9fc3ae.gz",
+        "discovery/raw/cbaf1a4122cd5fe582dfb98558817d0ea9a698e1315b2e1868e41ce9103a298a.gz",
+        "discovery/raw/cc5c05a073108fd7e1b0fb7a696b93eea65fb8777d93baf227d422e450ff7479.gz",
+        "discovery/raw/ce4055a62e49b0eeb7adf0f16e11f8c107d8a3c85d21faf4da0f0481028789b4.gz",
+        "discovery/raw/ce4128293297ac5a68d98533e89c9d995386ceee764e827604cd4631fad0d448.gz",
+        "discovery/raw/ced5fd0b5eded8961265f2dac864747a4838146e59e96589b065df48187d475b.gz",
+        "discovery/raw/d0e9419c1567c82204789b0e7718d530841a03a8a2a287b79a460298ce18ed32.gz",
+        "discovery/raw/d22ec0cd2e1b94859b73519e3c0e8a0481c49f1e4da835feef1b12ed3d5809c9.gz",
+        "discovery/raw/d5ee23de3af55060fe3abdcdb09beb764ea7d6b9eb4239346d60475a6f202240.gz",
+        "discovery/raw/d6a8350cb80f269371f71ce1ad6f97cbee2e60694092cabb96ac4ff2d375bc28.gz",
+        "discovery/raw/d96cace8abc83b63d3e2a3fd3b2af3bfccbaf7773478f0d3ebafdcc8974822b7.gz",
+        "discovery/raw/dc312ae107e960ce3a82c756a9257d076fea6c0a97f613a0afbc3443351dcad0.gz",
+        "discovery/raw/dc320a063ea313f3ec19022344ffa88c5dbb93f7af72ae0046dda03bab85a97c.gz",
+        "discovery/raw/debca82f6ffe5a55fcb76d963d164897ce070f8a123da6795608eac467a3ce33.gz",
+        "discovery/raw/df7385239174ca4ef88045fafa707c662d0018470d4e8e851f38a394145906f5.gz",
+        "discovery/raw/dfc4bc8cc7bdbb5c3814bbf833ab94c8bbc494223e51a81c0c2e6a01d75b5a7c.gz",
+        "discovery/raw/e0bfab159b385269dd063fc7d62c274d767c5bd0670d4945c7b088daa8fb8433.gz",
+        "discovery/raw/e2c8df11f7d2d7c6c45a38b0032934d042414c882ead93fab22e8b963d274828.gz",
+        "discovery/raw/e853d93e50b5c5e4710b1962eb23ebdcee5be56a8afe4b39068674c307988d63.gz",
+        "discovery/raw/e8c3311d54101297f06e75eba466d3811fcc09f8ea1bf4a7d697435d7f191849.gz",
+        "discovery/raw/e8cb2afb3a835f045e1fb9b0d6805ef9895838f8d350d6ea0b75e16024d3f907.gz",
+        "discovery/raw/e8d2106ad1a6a271a331d321595ea0e441879199eb8c9585d5a6a4ea95026ca6.gz",
+        "discovery/raw/e9452e3ea58091c870ec4e8caac07e8e1d7a0435ee6e79c6deaba6d896047352.gz",
+        "discovery/raw/ea75048961fb87f1ac72be4e8ce0df30abb8903a3ecce0c9c26c83c3a28e0e77.gz",
+        "discovery/raw/ec69841b174e9869540396ce7136e878b4d7e71955160d03ed241cfc8f110074.gz",
+        "discovery/raw/ed226951380277c3b18358a30f4de4ea4d83e5d68f745cef8b9d358d1a188314.gz",
+        "discovery/raw/ed2b4043e361a0108687378f58b897c12519bf1ec2004c8b35b0e2df2b44ab06.gz",
+        "discovery/raw/ef3f2b4f4af8327e44710ace79b2a8bf6460fc75be2323087e8cdb57dbdb8681.gz",
+        "discovery/raw/f479de47f61492a119f9c27a10c7e908f2c91deb9e04fcab8450e62efd24e01e.gz",
+        "discovery/raw/f4b3949a9480c56a595a6daa993e99dad921afa05664748501cb2af11083f8c0.gz",
+        "discovery/raw/f5a4f723c675b52adbaeb4ca3b4c45040cf035c5b032d11312bb13cb01fea7bd.gz",
+        "discovery/raw/f5b788b77193664694a5294be2325b5ecdd10fc72bf3a1b50e011e57f8f1a91b.gz",
+        "discovery/raw/fc2d34879cbd2d1e9b95394b4017e8286639585e04a9d8fc7718fb6bf7d7b81e.gz",
+        "discovery/raw/fe9c210d44f6b6cbba7811c28fcd75f2add37bad15c6ac395984ee1cfc7ee4d5.gz",
+        "discovery/raw/fecdc5c119673578543a047cf3cba99158d2edd8ba409723b7c9263aed8292b9.gz",
+        "discovery/raw/ff11de1a65509f983ac8cdec11414381811af28ec45dda132175ef908fe4eef4.gz",
+        "discovery/raw/ff7ea1478870ff60ced1d043a4cb1c2f312d034472a77bcaaed3c4555f086a92.gz",
+        "public-repeat/raw/11000523c742bffb6871909195cc7ca906f232b0791893add393f935b4c81927.gz",
+        "public-repeat/raw/57a855239a2737542bd50e4dba1cda3a1a359e8954ed3aef015d000de9c9fe73.gz",
+        "public-repeat/raw/5fced53b427063410fea05afaf0128254c5d92c48d5a0eb0d73b7e18dfedfa20.gz",
+        "public-repeat/raw/94d6c13bdc0066a0502ffd86f1ff2ed1c78bdbb71dc7ad7415f990ab4090c165.gz",
+        "public-repeat/raw/b1add55fd8fb052989e857f5a48a3f9f23d2011eece97f57beb4210a69e46f30.gz",
+        "public-repeat/raw/d398dc9880b38311ffe5828a411e5bc0de59f5366d5617b6293256d30cd4f5a0.gz",
+        "public-repeat/raw/dcdcb364fb73a22a739e5290bae0f51a36f882781bff74f6146480a514cb8fc0.gz",
+        "public/raw/11000523c742bffb6871909195cc7ca906f232b0791893add393f935b4c81927.gz",
+        "public/raw/5fced53b427063410fea05afaf0128254c5d92c48d5a0eb0d73b7e18dfedfa20.gz",
+        "public/raw/8ace8f11cfc4dbbf67980afe8e059c75c259e7830bb6e2fb8559b740897b6831.gz",
+        "public/raw/94d6c13bdc0066a0502ffd86f1ff2ed1c78bdbb71dc7ad7415f990ab4090c165.gz",
+        "public/raw/c1e4923838063acacff6d76c30d54fb9963f0ce06fbaad58eb61cbfd138a8017.gz",
+        "public/raw/d398dc9880b38311ffe5828a411e5bc0de59f5366d5617b6293256d30cd4f5a0.gz",
+        "public/raw/e1f666e11b5a7bf61fabd7c9d8e2f805d12c03d570f1515d96b81893127534f4.gz",
+        "public/raw/e9004cd367414fed2f05a703ac408367cc751532a805bb3d7276cca5848e2fd0.gz",
+        "public/raw/fe1da564f405cbe5f751452d6eb976d9afb038986f6c34a7153a35e24b4dd024.gz"
+      ]
+    },
+    {
+      "path": "docs/phase3-evidence-2026-11-26/v2-compatible-pending-candidates.json",
+      "blob_sha": "b94c23e8211cee7748ee845021fe1dda8551bda2",
+      "commits_containing_this_version": [
+        "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+        "29f99b024929caac9edffe03235f1ee1843f2c15"
+      ],
+      "bytes": 250102,
+      "sha256": "9f529767387d4dee27973c4de90bde5f3e4e8088f4e45d942e236bd492c567e1",
+      "contact_pattern_counts": {
+        "email_candidates": 0,
+        "phone_candidates": 0,
+        "international_landline_candidates": 0,
+        "credential_patterns": 0,
+        "full_body_fields": 1
+      },
+      "first_affected_commit": "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+      "current_tree_path_exists": true,
+      "current_tree_blob_same": false,
+      "risk": [
+        "third_party_full_response_without_recorded_redistribution_permission"
+      ]
+    }
+  ]
+}

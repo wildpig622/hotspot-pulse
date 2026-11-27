@@ -1,0 +1,42 @@
+{
+  "unique_seed_event_ids": 25,
+  "seed_observations": 52,
+  "duplicate_event_ids_within_seed": 0,
+  "same_city_date_name_candidates_in_latest_production_v2": [],
+  "comparison_limit": "Exact date/city plus known name tokens is a bounded duplicate screen, not a proof that every semantic duplicate is absent. No identity rewrite or fuzzy merge.",
+  "related_records": [
+    {
+      "ids": [
+        "off_4e9ff1b2d939",
+        "off_c920f35ea2ff"
+      ],
+      "relation": "same_national_exam_different_scope",
+      "handling": "national awareness separate from Tianjin test-region demand; not two independent exam totals"
+    },
+    {
+      "ids": [
+        "off_04f5d5bcf753",
+        "off_7a191ac7f8bf"
+      ],
+      "relation": "same_recruitment_different_papers_dates",
+      "handling": "retain stable IDs, dates Dec6 / Dec5"
+    },
+    {
+      "ids": [
+        "off_29537fcfce98",
+        "off_43270b95cd9c",
+        "off_fc5e0551c22b",
+        "off_daef9e3fbe9f"
+      ],
+      "relation": "same_school_calendar_different_cohort_or_season",
+      "handling": "do not add overlapping school populations as independent lodging increments"
+    },
+    {
+      "ids": [
+        "p4_industry_jinan"
+      ],
+      "relation": "possible_subshow_of_equipment_fair_identity_not_confirmed",
+      "handling": "hold, do not rename or merge based on parent fair dates"
+    }
+  ]
+}

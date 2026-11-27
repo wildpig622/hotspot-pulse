@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "schema_version": "business-1",
+    "generated_at": "2026-11-27T03:16:20.144005+00:00",
+    "default_days": 90,
+    "horizon_days": 365,
+    "last_observed_at": "2026-11-27T03:16:20.004653+00:00",
+    "collection_ok": true,
+    "search_mode": "manual_agent_import",
+    "official_rows_not_adapted": 0,
+    "bootstrap_applied_this_build": true,
+    "gaps": [
+      "搜索尚非无人值守服务；需人工触发检索并导入",
+      "三城和类别覆盖不完整；全国考试不代表当地考点",
+      "日期冲突不进入日历；候选未经人工核验"
+    ]
+  },
+  "data": [
+    {
+      "event_id": "p4_nj_tianjin",
+      "review_status": "pending",
+      "first_seen_at": "2026-11-27T02:04:29Z",
+      "event_name": "天津NJ动漫游戏狂欢节",
+      "event_type": "exhibition",
+      "city_name": "天津市",
+      "scope_level": "city",
+      "venue_name": "国家会展中心天津",
+      "start_at": "2027-01-30",
+      "end_at": "2027-01-31",
+      "last_observed_at": "2026-11-27T03:16:20.003649+00:00",
+      "source_url": "https://www.ncectj.com/",
+      "short_evidence": [
+        "2027-01-30",
+        "2027-01-31"
+      ],
+      "observation_type": "observed",
+      "date_review_required": true,
+      "operating_relevance_candidate": {
+        "review_priority": "priority_review",
+        "audience_scale": null,
+        "lodging_increment_grade": "unknown",
+        "revenue_impact": null
+      },
+      "source_presence": "retained_until_explicit_change"
+    },
+    {
+      "event_id": "p4_industry_jinan",
+      "review_status": "pending",
+      "first_seen_at": "2026-11-27T02:04:29Z",
+      "event_name": "济南国际工业智能及动力传动与自动化展览会",
+      "event_type": "exhibition",
+      "city_name": "济南市",
+      "scope_level": "city",
+      "venue_name": "山东国际会展中心",
+      "start_at": "2027-02-26",
+      "end_at": "2027-03-01",
+      "last_observed_at": "2026-11-27T03:16:20.003649+00:00",
+      "source_url": "https://www.cmeshow.cn/",
+      "short_evidence": [
+        "2027.02.26",
+        "03.01"
+      ],
+      "observation_type": "observed",
+      "date_review_required": true,
+      "operating_relevance_candidate": {
+        "review_priority": "priority_review",
+        "audience_scale": null,
+        "lodging_increment_grade": "unknown",
+        "revenue_impact": null
+      },
+      "source_presence": "retained_until_explicit_change"
+    },
+    {
+      "event_id": "p4_xidian_exam",
+      "review_status": "pending",
+      "first_seen_at": "2026-11-27T02:04:30Z",
+      "event_name": "2027研考西电6113报考点范围线索",
+      "event_type": "exam",
+      "city_name": "西安市",
+      "scope_level": "test_center",
+      "venue_name": "西电6113报考点，最终考场待准考证",
+      "last_observed_at": "2026-11-27T03:16:20.004653+00:00",
+      "source_url": "https://gr.xidian.edu.cn/info/1074/20864.htm",
+      "short_evidence": [
+        "报考点6113"
+      ],
+      "observation_type": "observed",
+      "date_review_required": true,
+      "operating_relevance_candidate": {
+        "review_priority": "priority_review",
+        "audience_scale": null,
+        "lodging_increment_grade": "unknown",
+        "revenue_impact": null
+      },
+      "source_presence": "retained_until_explicit_change"
+    }
+  ]
+}

@@ -67,8 +67,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate full-scope collection and snapshot freshness
-        run: python scripts/check_snapshot_quality.py --require-full-scope --max-age-hours 24 --require-discovery-calendar --require-source-calendars --require-expanded-queries --require-city-calendar
+      - name: Validate actual snapshot contracts and freshness for the limited trial
+        run: |
+          python scripts/check_snapshot_quality.py --max-age-hours 24 --require-discovery-calendar --require-source-calendars
+          python -m scripts.validate_event_feed
+
+      - name: Assemble reviewed business state before the first publication
+        run: |
+          python -c "from pathlib import Path; from scripts.business_service import build; result=build(Path('site/api/v1'), bootstrap=True); assert result['status']['event_count'] > 0, 'Business state must not be empty'"
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

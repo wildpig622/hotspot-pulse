@@ -1,0 +1,22 @@
+{
+  "repository_visibility": "public",
+  "raw_payloads_downloaded": false,
+  "checks": [
+    {
+      "path": "docs/phase2-evidence-2026-11-26/raw/22e7b0e6af88cb7ba66259ddb8dc633d8d2c89d7f14ee0321ab68b2623ca972c.gz",
+      "commit": "c4c2c5237b9dfc94b714d13313eb28135686138e",
+      "method": "anonymous_HEAD_no_credentials",
+      "checked_at": "2026-11-27T03:11:38.597249+00:00",
+      "http_status": 200,
+      "publicly_accessible": true
+    },
+    {
+      "path": "docs/phase3-evidence-2026-11-26/responses.zip",
+      "commit": "07d5119012cfe20cb4c03889026d0b0fce9fab67",
+      "method": "anonymous_HEAD_no_credentials",
+      "checked_at": "2026-11-27T03:11:39.251708+00:00",
+      "http_status": 200,
+      "publicly_accessible": true
+    }
+  ]
+}

@@ -180,13 +180,23 @@ def merge(previous, rows, now, v2_state=None, v2_events=None):
     return state
 
 
-def build(api, now=None, imports=None, collection_ok=True):
+def build(api, now=None, imports=None, collection_ok=True, bootstrap=False, seed_path=None):
     """api is the v1 directory. Last-good state is read before any output changes."""
     api = Path(api)
     now = now or datetime.now(timezone.utc)
     output = api.parent / 'business'
-    previous = read(output / 'state.json', {})
+    state_file = output / 'state.json'
+    previous = read(state_file, {})
+    if state_file.exists() and (previous.get('schema_version') != 'business-state-1' or not isinstance(previous.get('events'), dict) or not isinstance(previous.get('observations'), list)):
+        raise ValueError('invalid_existing_business_state_keep_last_good')
     rows = list(imports or [])
+    seeded = False
+    if bootstrap and not state_file.exists():
+        batch = read(Path(seed_path) if seed_path else ROOT / 'config/business-seed.json', {})
+        if batch.get('schema_version') != 'agent-import-1' or not batch.get('data'):
+            raise ValueError('reviewed_business_seed_required')
+        rows = batch['data'] + rows
+        seeded = True
     skipped = 0
     # Only official date assertions enter automatically; general news remains v1.
     if collection_ok:
@@ -222,6 +232,7 @@ def build(api, now=None, imports=None, collection_ok=True):
             'last_observed_at': max((r['last_observed_at'] for r in all_rows), default=None),
             'collection_ok': collection_ok, 'search_mode': 'manual_agent_import',
             'official_rows_not_adapted': skipped,
+            'bootstrap_applied_this_build': seeded,
             'gaps': ['搜索尚非无人值守服务；需人工触发检索并导入', '三城和类别覆盖不完整；全国考试不代表当地考点', '日期冲突不进入日历；候选未经人工核验']}
     changes = sorted((o for o in state['observations'] if o.get('change_kind') != 'evidence_recheck'), key=lambda o: stamp(o['observed_at']), reverse=True)[:200]
     payloads = {'state': state, 'focus': {'meta': meta, 'data': [r for r in dated if r['operating_relevance_candidate']['review_priority'] in {'priority_review', 'origin_market_review'}]},
@@ -246,7 +257,7 @@ def main():
     batch = read(args.input, {})
     if batch.get('schema_version') != 'agent-import-1' or not isinstance(batch.get('data'), list):
         parser.error('agent-import-1 envelope required')
-    result = build(args.snapshot_dir, imports=batch['data'])
+    result = build(args.snapshot_dir, imports=batch['data'], bootstrap=True)
     print(json.dumps(result['status'], ensure_ascii=False))
 
 

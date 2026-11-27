@@ -19,7 +19,7 @@ def assemble(output, agent_import=None):
         if batch.get('schema_version') != 'agent-import-1' or not isinstance(batch.get('data'), list):
             raise ValueError('agent_import_envelope_required')
         rows = batch['data']
-    result = build(output / 'api/v1', imports=rows)
+    result = build(output / 'api/v1', imports=rows, bootstrap=True)
     return {'output': str(output), 'event_count': result['status']['event_count'], 'published': False,
             'warning': 'Candidate evidence is pending; validate and obtain release decision before any publication.'}
 
